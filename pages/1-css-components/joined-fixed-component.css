@@ -1,0 +1,1246 @@
+/* this is where we joins all components that are "less frequently changed" into one css file*/
+/* this will make compression better and make website a bit faster */
+/* less frequently changed component are picked because of Cache */
+
+/** ---------------PRESET STYLES------------- */
+
+/* html {
+	color-scheme: light dark;
+} */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  -webkit-tap-highlight-color: transparent;
+
+  /* font: inherit; */
+  /* list-style: none; */
+  /* list-style-type: none; */
+  /* text-decoration: none; */
+}
+
+html {
+  height: 100%;
+
+  box-sizing: inherit;
+  scroll-behavior: smooth;
+
+  /* font-size: 100%; */
+}
+
+body {
+  height: 100%;
+
+  background-color: var(--clr-gen-website-bckgrd);
+
+  /* font-family: var(--ff-primary); */
+  /* font-size: clamp(1rem, 2vw, 1.125rem); */
+  /* font-weight: var(--fw-regular); */
+  /* line-height: var(--lh-100); */
+  /* height: -webkit-fill-available; */
+  /* color: var(--clr-neutral-black); */
+}
+
+header,
+main {
+  width: min(75ch, 100 - 4rem);
+  margin-inline: auto;
+
+  overflow: hidden;
+}
+
+img,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.gen-container {
+  /* outline: 2px solid gold; */
+
+  min-width: var(--min-width__235px);
+}
+
+/** ---------------end of PRESET STYLES------------- */
+
+/* ////////////////////// */
+/* /////////////////////// */
+/* //////////////////////// */
+
+/** ---------------------FONTS------------------- */
+/* this contains details about the fonts of the website */
+
+/** ------------------NUNITO------------------- */
+/* nunito-300 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Nunito"),
+    url("../../utilities/fonts/nunito-v26-latin-300.woff2") format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    url("../../utilities/fonts/nunito-v26-latin-300.ttf") format("truetype");
+  /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+
+/* nunito-300italic - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Nunito";
+  font-style: italic;
+  font-weight: 300;
+  src: local("Nunito"),
+    url("../../utilities/fonts/nunito-v26-latin-300italic.woff2") format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    url("../../utilities/fonts/nunito-v26-latin-300italic.ttf") format("truetype");
+  /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+
+/* nunito-regular - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Nunito"),
+    url("../../utilities/fonts/nunito-v26-latin-regular.woff2") format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    url("../../utilities/fonts/nunito-v26-latin-regular.ttf") format("truetype");
+  /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+
+/* nunito-italic - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Nunito";
+  font-style: italic;
+  font-weight: 400;
+  src: local("Nunito"),
+    url("../../utilities/fonts/nunito-v26-latin-italic.woff2") format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    url("../../utilities/fonts/nunito-v26-latin-italic.ttf") format("truetype");
+  /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+
+/* nunito-500 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Nunito"),
+    url("../../utilities/fonts/nunito-v26-latin-500.woff2") format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    url("../../utilities/fonts/nunito-v26-latin-500.ttf") format("truetype");
+  /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+
+/* nunito-500italic - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Nunito";
+  font-style: italic;
+  font-weight: 500;
+  src: local("Nunito"),
+    url("../../utilities/fonts/nunito-v26-latin-500italic.woff2") format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    url("../../utilities/fonts/nunito-v26-latin-500italic.ttf") format("truetype");
+  /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+
+/* nunito-600 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  src: local("Nunito"),
+    url("../../utilities/fonts/nunito-v26-latin-600.woff2") format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    url("../../utilities/fonts/nunito-v26-latin-600.ttf") format("truetype");
+  /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+
+/* nunito-700 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Nunito"),
+    url("../../utilities/fonts/nunito-v26-latin-700.woff2") format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    url("../../utilities/fonts/nunito-v26-latin-700.ttf") format("truetype");
+  /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+
+/* nunito-700italic - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Nunito";
+  font-style: italic;
+  font-weight: 700;
+  src: local("Nunito"),
+    url("../../utilities/fonts/nunito-v26-latin-700italic.woff2") format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    url("../../utilities/fonts/nunito-v26-latin-700italic.ttf") format("truetype");
+  /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+
+/** ---------------------------ROBOTO-------------------------- */
+
+/* roboto-regular - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto"),
+    url("../../utilities/fonts/roboto-v30-latin-regular.woff2") format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    url("../../utilities/fonts/roboto-v30-latin-regular.ttf") format("truetype");
+  /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+
+/* roboto-500 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Roboto"),
+    url("../../utilities/fonts/roboto-v30-latin-500.woff2") format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    url("../../utilities/fonts/roboto-v30-latin-500.ttf") format("truetype");
+  /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+
+/** ---------------------------MONTAGU SLAB-------------------------- */
+/* montagu-slab-regular - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Montagu Slab";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Montagu Slab"),
+    url("../../utilities/fonts/montagu-slab-v12-latin-regular.woff2") format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    url("../../utilities/fonts/montagu-slab-v12-latin-regular.ttf") format("truetype");
+  /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+
+/* montagu-slab-700 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Montagu Slab";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Montagu Slab"),
+    url("../../utilities/fonts/montagu-slab-v12-latin-700.woff2") format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    url("../../utilities/fonts/montagu-slab-v12-latin-700.ttf") format("truetype");
+  /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+
+/** ---------------------end of FONTS------------------- */
+
+
+/* ////////////////////// */
+/* /////////////////////// */
+/* //////////////////////// */
+
+/** ---------------------TYPOGRAPHY------------------- */
+/* this contains styling for site Typography */
+
+:root {
+  /* ////////////////////////////////// */
+  /** Fonts */
+  --ff-primary: "Nunito", sans-serif;
+  --ff-secondary: "Montagu Slab", sans-serif;
+  --ff-btn: "Roboto", sans-serif;
+
+  --ff-body: var(--ff-primary);
+  --ff-heading: var(--ff-primary);
+
+  --fw-regular: 400;
+  --fw-semi-bold: 500;
+  --fw-bold: 700;
+
+  /* ////////////////////////////////// */
+  /* the -100, -200 at the end of the fs is just to... */
+  /* help number it and easily add sth in-between in future */
+  --fs-100: 4rem;
+  /* 64px */
+  --fs-220: 3.625rem;
+  /* 58px */
+  --fs-200: 3.375rem;
+  /* 54px */
+  --fs-300: 2.75rem;
+  /* 44px */
+  --fs-400: 2.375rem;
+  /* 38px */
+  --fs-450: 2.125rem;
+  /* 34px */
+  --fs-500: 1.875rem;
+  /* 30px */
+  --fs-550: 1.75rem;
+  /* 28px */
+  --fs-600: 1.5rem;
+  /* 24px */
+  --fs-700: 1.25rem;
+  /* 20px */
+  --fs-800: 1rem;
+  /* 16px Base Size */
+  --fs-900: 0.875rem;
+  /* 14px */
+  --fs-1000: 0.75rem;
+  /* 12px */
+  --fs-1100: 0.625rem;
+  /* 10px */
+
+  /* ////////////////////////////////// */
+  /** lh == line height */
+  --lh-100: 140%;
+  --lh-200: 136%;
+  --lh-300: 1.25rem;
+  /* 20px */
+  --lh-400: 1.364rem;
+  /* 21.82px */
+  --lh-410: 1.705rem;
+  /* 27.28px */
+  --lh-430: 2.046rem;
+  /* 32.74px */
+  --lh-500: 2.5rem;
+  /* 40px */
+  --lh-600: 3.125rem;
+  /* 50px */
+  --lh-700: 3.75rem;
+  /* 60px */
+  --lh-800: 4rem;
+  /* 64px */
+  --lh-900: 5.438rem;
+  /* 87px */
+
+
+
+  /* ////////////////////////////////// */
+  /** Card dimensions */
+  --shadow-card-width: 23rem;
+  /* 368px */
+  --shadow-card-height: 23rem;
+  /* 368px */
+
+  /* ////////////////////////////////// */
+  /** Define the spacing unit as 8 pixels */
+  --spacing-unit: 8px;
+
+  /* ////////////////////////////////// */
+  /* Link Dimensions */
+  --link__border-radius: 0.75rem;
+  /* 12px */
+
+  /* ////////////////////////////////// */
+  /** Other dimensions -- MOBILE */
+  --mfs__hero__phrase: var(--fs-600);
+  --mfs__hero__carousel: 3rem;
+  /* 32px */
+  --mfs__hero__statement: var(--fs-600);
+  --mfs__hero__cta__btn: var(--fs-700);
+
+  --mls__hero__carousel: calc(0.05 * var(--mfs__hero__carousel));
+  /* 5% --used fs*/
+
+  --mls__hero__phrase: calc(0.02 * var(--mfs__hero__phrase));
+  /* 2% --used fs*/
+
+  --mls__hero__statement: calc(0.02 * var(--mfs__hero__statement));
+  /* 2% --used fs*/
+
+  /* ////////// */
+  /* Hamburger for mobile  */
+  --width__burger: 2.5rem;
+  --height__burger: 2.5rem;
+  --height__burger-line: 5px;
+
+  /* ////////////////////////////////// */
+  /** Other dimensions -- TABLET */
+  --t-fs__hero__phrase: var(--fs-600);
+  --t-fs__hero__carousel: var(--fs-220);
+  /* 58px */
+  --t-fs__hero__statement: var(--fs-600);
+  --t-fs__hero__cta__btn: var(--fs-700);
+
+  --t-ls__hero__carousel: calc(0.05 * var(--t-fs__hero__carousel));
+  /* 5% --used fs*/
+
+  --t-ls__hero__phrase: calc(0.02 * var(--t-fs__hero__phrase));
+  /* 2% --used fs*/
+
+  --t-ls__hero__statement: calc(0.02 * var(--t-fs__hero__statement));
+  /* 2% --used fs*/
+
+  /* ////////////////////////////////// */
+  /** Other dimensions -- Desktop, laptop, larger screens */
+  --d-fs__hero__phrase: var(--fs-600);
+  --d-fs__hero__carousel: var(--fs-220);
+  /* 58px */
+  --d-fs__hero__statement: var(--fs-600);
+  --d-fs__hero__cta__btn: var(--fs-700);
+
+  --d-ls__hero__carousel: calc(0.05 * var(--d-fs__hero__carousel));
+  /* 5% --used fs*/
+
+  --d-ls__hero__phrase: calc(0.02 * var(--d-fs__hero__phrase));
+  /* 2% --used fs*/
+
+  --d-ls__hero__statement: calc(0.02 * var(--d-fs__hero__statement));
+  /* 2% --used fs*/
+
+  /* ////////////////////////////////// */
+  /** WIDTH Dimensions */
+  --width__always-fill: 100%;
+  /* makes the width always full */
+  --width__1440px: 90rem;
+  /* 1440px=100% of parent = gen-container */
+  --width__1200px: 75rem;
+  /* 83.33% of gen-container*/
+  --width__1100px: 68.75rem;
+  /* 76.38% of gen-container */
+  --width__1000px: 62.5rem;
+  /* 69.44% of gen-container */
+  --width__900px: 56.25rem;
+  /* 62.5% of gen-container */
+  --min-width__235px: 14.69rem;
+  /* min width of the gen-container */
+  --min-width__250px: 15.63rem;
+  /* revised min width of the gen-container */
+}
+
+/** ---------------------end of TYPOGRAPHY------------------- */
+
+
+/* ////////////////////// */
+/* /////////////////////// */
+/* //////////////////////// */
+
+/** ---------------------COLORS------------------- */
+/* this contains the colors used in the entire website */
+
+:root {
+  --clr-primary-100: hsl(203, 57%, 36%);
+  --clr-primary-200: hsl(201, 53%, 48%);
+  --clr-primary-600: hsl(214, 88%, 13%);
+  --clr-primary-650: hsl(214, 88%, 13%, 1);
+  --clr-secondary-500: hsl(49, 100%, 50%);
+  --clr-secondary-600: hsl(39, 89%, 45%);
+  --clr-secondary-650: hsl(39, 89%, 45%, 1);
+  --clr-tertiary-100: hsla(0, 0%, 0%, 1);
+  --clr-tertiary-200: hsl(214, 92%, 33%, 1);
+
+
+  --clr-grays-600: hsl(0, 0%, 6%);
+  --clr-grays-650: hsla(0, 0%, 69%, 1);
+  --clr-grays-700: hsla(0, 0%, 81%, 1);
+  --clr-grays-750: hsla(205, 24%, 90%, 1);
+
+  --clr-alert-error-600: hsl(0, 100%, 51%);
+  --clr-alert-success-600: hsl(144, 99%, 35%);
+
+  --clr-horizontal-line-100: hsl(216, 7%, 43%);
+  --clr-horizontal-line-200: hsla(0, 0%, 53%, 1);
+
+  /** ---background colors------ */
+  --clr-gen-website-bckgrd: hsla(210, 100%, 98%, 1);
+  --clr-header-bckgrd: hsla(0, 0%, 100%, 1);
+  --clr-footer-bckgrd: hsl(214, 88%, 13%);
+  --clr-card-bckgrd: hsl(205, 24%, 90%);
+  --clr-logo-bckgrd: hsl(0, 0%, 90%);
+  --clr-homepage-card-bckgrd: hsl(0, 0%, 100%);
+
+  /**  */
+  --clr-pure-white: hsl(0, 0%, 100%);
+  --clr-neutral-white-3: hsl(0, 0%, 100%);
+  --clr-neutral-white-2: hsla(0, 0%, 100%, 1);
+  --clr-neutral-white: hsl(210, 100%, 98%);
+  --clr-neutral-white-01: hsl(210, 100%, 98%, 1);
+  --color-white-100: hsl(206, 5%, 100%);
+  --color-white-200: hsl(206, 5%, 90%);
+  --color-white-300: hsl(206, 5%, 80%);
+  --color-white-400: hsl(206, 5%, 65%);
+  --color-white-500: hsl(206, 5%, 50%);
+
+  --color-black-100: hsl(213, 20%, 10%);
+  --color-black-200: hsl(213, 23%, 8%);
+  --color-black-300: hsl(214, 21%, 6%);
+  --color-black-400: hsl(210, 21%, 6%);
+  --color-black-500: hsl(216, 22%, 4%);
+  --color-black-600: hsl(220, 18%, 3%);
+  --color-black-700: hsl(220, 27%, 2%);
+  --color-black-800: hsl(180, 20%, 1%);
+  --clr-neutral-black: hsl(0, 0%, 0%);
+
+  /** ----Links Color for white background---- */
+  --clr-link-default: hsla(214, 88%, 13%, 1);
+  --clr-link-visited: hsla(214, 88%, 13%, 1);
+  /* hsl(214, 74%, 9%)*/
+  --clr-link-hover: hsl(39, 89%, 45%);
+  --clr-link-active: hsla(214, 40%, 13%, 1);
+  --clr-link-focus: hsla(214, 13%, 56%, 0.4);
+  --clr-link-target: hsl(214, 92%, 33%, 1);
+
+  /** ----Links Color for colored background---- */
+  --clr-link-default-2: hsl(0, 0%, 100%);
+  --clr-link-default-trans-2: hsl(0, 0%, 100%, 0.1);
+  --clr-link-visited-2: hsl(206, 5%, 100%);
+  --clr-link-hover-2: hsl(206, 5%, 50%);
+  --clr-link-active-2: hsl(206, 5%, 80%);
+  --clr-link-focus-2: hsl(206, 5%, 65%);
+  --clr-link-target-2: hsl(214, 92%, 33%, 1);
+
+  /** ---background colors for buttons------ */
+  --clr-bckgrd-btn-pri-default: hsla(214, 88%, 13%, 1);
+  --clr-bckgrd-btn-pri-hover: hsla(214, 35%, 27%, 1);
+  --clr-bckgrd-btn-pri-pressed: hsla(214, 88%, 6%, 1);
+  --clr-bckgrd-btn-pri-focus: hsla(214, 13%, 56%, 1);
+  --clr-bckgrd-btn-pri-disabled: hsla(214, 13%, 71%, 1);
+
+  --clr-bckgrd-btn-sec-default: hsl(0, 0%, 100%);
+  --clr-bckgrd-btn-sec-hover: hsl(0, 0%, 100%);
+  --clr-bckgrd-btn-sec-pressed: hsl(0, 0%, 100%);
+  --clr-bckgrd-btn-sec-focus: hsl(0, 0%, 100%);
+  --clr-bckgrd-btn-sec-disabled: hsl(0, 0%, 100%);
+
+  --clr-bckgrd-btn-succ-default: hsla(144, 99%, 35%, 1);
+  --clr-bckgrd-btn-succ-hover: hsla(144, 52%, 56%, 1);
+  --clr-bckgrd-btn-succ-pressed: hsla(144, 99%, 17%, 1);
+  --clr-bckgrd-btn-succ-focus: hsla(144, 52%, 67%, 1);
+  --clr-bckgrd-btn-succ-disabled: hsla(144, 52%, 78%, 1);
+
+  --clr-bckgrd-btn-warn-default: hsla(39, 89%, 45%, 1);
+  --clr-bckgrd-btn-warn-hover: hsla(39, 73%, 63%, 1);
+  --clr-bckgrd-btn-warn-pressed: hsla(39, 89%, 23%, 1);
+  --clr-bckgrd-btn-warn-focus: hsla(39, 73%, 73%, 1);
+  --clr-bckgrd-btn-warn-disabled: hsla(39, 73%, 82%, 1);
+
+  --clr-bckgrd-btn-error-default: hsla(0, 100%, 51%, 1);
+  --clr-bckgrd-btn-error-hover: hsla(0, 100%, 67%, 1);
+  --clr-bckgrd-btn-error-pressed: hsla(0, 96%, 25%, 1);
+  --clr-bckgrd-btn-error-focus: hsla(0, 100%, 75%, 1);
+  --clr-bckgrd-btn-error-disabled: hsla(0, 100%, 84%, 1);
+
+  /** ----border colors for buttons--- */
+  --clr-bd-btn-sec-default: hsla(214, 88%, 13%, 1);
+  --clr-bd-btn-sec-hover: hsla(214, 35%, 27%, 1);
+  --clr-bd-btn-sec-pressed: hsla(214, 88%, 6%, 1);
+  --clr-bd-btn-sec-focus: hsla(214, 13%, 56%, 1);
+  --clr-bd-btn-sec-disabled: hsla(214, 13%, 71%, 1);
+
+  /** ---text color for buttons--- */
+  --clr-txt-btn: hsla(0, 0%, 100%, 1);
+  --clr-txt-btn-sec: hsla(214, 88%, 13%, 1);
+
+  /** --------color for gradients------- */
+  --clr-gradient-100: hsla(201, 52%, 48%, 1);
+  --clr-gradient-200: hsla(214, 88%, 13%, 1);
+
+  --clr-gradient-300: hsl(310, 100%, 43%);
+  --clr-gradient-400: hsl(0, 100%, 51%);
+  --clr-gradient-500: hsl(49, 100%, 50%);
+  --clr-gradient-600: hsl(39, 89%, 45%);
+
+  /** -----BOX SHADOWS------------ */
+  /* (go to utility-classes.css to get the general style
+	 and utility class for shadows---- */
+  --gen-shadow-header: 0px 8px 28px 0px hsla(214, 88%, 13%, 0.2);
+  --gen-shadow-01: 0px 2px 6px 0px hsla(241, 37%, 12%, 0.06);
+  --gen-shadow-02: 0px 2px 12px 0px hsla(241, 37%, 12%, 0.08);
+  --gen-shadow-03: 0px 8px 28px 0px hsla(241, 37%, 12%, 0.1);
+  --gen-shadow-04: 0px 14px 42px 0px hsla(241, 37%, 12%, 0.14);
+  --gen-shadow-05: 0px 24px 65px 0px hsla(241, 37%, 12%, 0.16);
+  --gen-shadow-06: 0px 32px 72px 0px hsla(241, 37%, 12%, 0.24);
+}
+
+/** ---------------------end of COLORS------------------- */
+
+/* ////////////////////// */
+/* /////////////////////// */
+/* //////////////////////// */
+
+/** ---------------------BACK-TO-TOP function Style------------------- */
+/* these code styles the back to top function of the website */
+
+/** Mobile view */
+/* max-width: 500px */
+@media screen and (width <=31.25em) {
+  #back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    z-index: 99;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    background-color: var(--clr-secondary-650);
+    color: var(--clr-homepage-card-bckgrd);
+    cursor: pointer;
+    padding: 0.938rem;
+    border-radius: 0.75rem;
+
+    opacity: 0;
+    pointer-events: none;
+
+    transition: opacity 0.5s ease-in;
+    /* Smooth transition for opacity */
+  }
+
+  #back-to-top:hover {
+    background-color: var(--clr-primary-650);
+  }
+
+  #back-to-top:focus {
+    background-color: var(--clr-secondary-650);
+  }
+}
+
+/*        */
+/*        */
+/*        */
+/*        */
+/*        */
+
+/* Mobile landscape & Tablet Portrait screens */
+/* (min-width > 500px ) & (max-width <= 875px) */
+@media screen and (width > 31.25em) and (width <=54.69em) {
+  #back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    background-color: var(--clr-secondary-650);
+    color: var(--clr-homepage-card-bckgrd);
+    cursor: pointer;
+    padding: 0.938rem;
+    border-radius: 0.75rem;
+
+    opacity: 0;
+    pointer-events: none;
+
+    transition: opacity 0.5s ease-in;
+    /* Smooth transition for opacity */
+  }
+
+  #back-to-top:hover {
+    background-color: var(--clr-primary-650);
+  }
+
+  #back-to-top:focus {
+    background-color: var(--clr-secondary-650);
+  }
+}
+
+/*        */
+/*        */
+/*        */
+/*        */
+/*        */
+
+/** Screens > 875px */
+@media screen and (width > 54.69em) {
+  #back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    background-color: var(--clr-secondary-650);
+    color: var(--clr-homepage-card-bckgrd);
+    cursor: pointer;
+    padding: 0.938rem;
+    border-radius: 0.75rem;
+
+    opacity: 0;
+    pointer-events: none;
+
+    transition: opacity 0.5s ease-in;
+    /* Smooth transition for opacity */
+  }
+
+  #back-to-top:hover {
+    background-color: var(--clr-primary-650);
+  }
+
+  #back-to-top:focus {
+    background-color: var(--clr-secondary-650);
+  }
+}
+
+/** ---------------------end of BACK-TO-TOP function Style------------------- */
+
+
+/* ////////////////////// */
+/* /////////////////////// */
+/* //////////////////////// */
+
+/** ---------------------FOOTER------------------- */
+/* This sections contains styles for the footer of the website */
+
+:root {
+  --width__footer: var(--width__always-fill);
+  /* makes the width always full */
+  --width__footer__section1-container: 99.08%;
+  /* 74.31rem of parent = footer */
+  --width__footer__section2-container: 99.08%;
+  /* 74.31rem of parent = footer */
+  --min-width__footer: 14.31rem;
+  /* 228.96px */
+
+  --padding-top__footer__section1-sub: 0.56rem;
+  /* 9px = 0.56rem */
+  --padding-bottom__footer__section1-sub: 0.56rem;
+  /* 9px = 0.56rem */
+  --padding-left__footer__section1-sub: 0;
+  --padding-right__footer__section1-sub: 0;
+}
+
+/** ------Footer fonts & letterings----- */
+.footer__section1__sub-heading {
+  /* outline: 2px solid skyblue; */
+
+  font-family: var(--ff-primary);
+  font-size: var(--fs-600);
+  font-weight: var(--fw-bold);
+  /* 700 */
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: var(--color-white-500);
+}
+
+.footer__list-text {
+  /* outline: 2px solid red; */
+
+  font-family: var(--ff-primary);
+  font-size: var(--fs-800);
+  font-weight: var(--fw-semi-bold);
+  /* 700 */
+  line-height: 2.5rem;
+  /*40px*/
+  letter-spacing: 2%;
+  /*0.02em;*/
+  text-align: left;
+  white-space: nowrap;
+}
+
+.footer__other-text {
+  /* outline: 2px solid red; */
+
+  font-family: var(--ff-primary);
+  font-size: var(--fs-800);
+  /* 16px */
+  font-weight: var(--fw-regular);
+  line-height: 2rem;
+  /*40px*/
+  letter-spacing: 2%;
+  /*0.02em;*/
+  text-align: center;
+}
+
+.footer__list-text li {
+  /* outline: 2px solid skyblue; */
+
+  display: block;
+  margin: 0 0 0.5rem 0;
+}
+
+/** ------General Layout-------- */
+
+.footer {
+  /* outline: 4px solid rgb(185, 202, 61); */
+
+  background-color: var(--clr-bckgrd-btn-pri-default);
+  color: var(--clr-neutral-white-2);
+  max-width: var(--width__footer);
+  text-align: center;
+  margin: 0 auto;
+  padding: 3rem 3rem;
+
+  /* to arrange section1 & section 2 */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.footer-horizontal-line {
+  width: 100%;
+  max-width: var(--width__1200px);
+  border: 1px solid;
+  border-color: var(--clr-horizontal-line-200);
+  margin: 20px auto;
+}
+
+.footer__section2-container {
+  /* outline: 2px solid blue; */
+
+  width: var(--width__footer__section1-container);
+  max-width: var(--width__1200px);
+  margin: 0 auto;
+
+  /** to arrange section2 items */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  /* //////////////////// */
+  .copyright {
+    /* outline: 2px solid grey; */
+    text-align: center;
+  }
+}
+
+/** (width <= 609px) */
+@media screen and (width <=38em) {
+  .footer__section1-container {
+    /* outline: 2px solid green; */
+
+    width: var(--width__footer__section1-container);
+    max-width: var(--width__1200px);
+    margin: 0 auto;
+
+    /** to arrange section1 items */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2rem;
+
+    /* ///////////////////////// */
+    .footer__section1-part1__container {
+      /* outline: 2px solid gold; */
+
+      /** to arrange section1-part1 items */
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center;
+      row-gap: 2rem;
+    }
+
+    /* ///////////////////////// */
+    .footer__section1-part2__container {
+      /* outline: 2px solid gold; */
+
+      /** to arrange section1-part2 items */
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center;
+      row-gap: 2rem;
+    }
+
+    /* ///////////// */
+    .socials__container {
+      /* outline: 2px solid red; */
+
+      padding: 1rem 0 0 0;
+
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0.7rem;
+
+      /* /////////////// */
+      .socials__link {
+        /* outline: 2px solid white; */
+
+        display: block;
+      }
+
+      /* ////////// */
+      .socials__link-image {
+        /* outline: 2px solid pink; */
+
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        border: none;
+
+        /* ////////// */
+        &:hover {
+          scale: 1.1;
+        }
+      }
+    }
+
+    /* //////////// */
+    .footer__section1__sub-heading {
+      /* outline: 2px solid skyblue; */
+
+      font-size: var(--fs-600);
+      text-align: center;
+
+      /* //////////// */
+      @media screen and (width <=320px) {
+        font-size: var(--fs-700);
+      }
+    }
+
+    /* ////////////// */
+    .footer__list-text {
+      /* outline: 2px solid red; */
+
+      font-size: var(--fs-800);
+      text-align: center;
+      white-space: nowrap;
+
+      /* //////////// */
+      @media screen and (width <=320px) {
+        font-size: var(--fs-800);
+      }
+    }
+  }
+}
+
+/*        */
+/*        */
+/*        */
+/*        */
+/*        */
+/*        */
+
+/** (min-width > 609px ) & (max-width <= 860px) */
+@media screen and (width > 38em) and (width <=53.75em) {
+  .footer__section1-container {
+    /* outline: 2px solid green; */
+
+    width: var(--width__footer__section1-container);
+    max-width: var(--width__1200px);
+    margin: 0 auto;
+
+    /** to arrange section1 items */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    row-gap: 4rem;
+
+    /* ///////////////////////// */
+    .footer__section1-part1__container {
+      /* outline: 2px solid gold; */
+
+      width: 100%;
+      max-width: 600px;
+      margin: 0 auto;
+
+      /* to align company with contact us */
+      padding: 0 5rem 0 0;
+
+      /** to arrange section1-part1 items */
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      column-gap: 6rem;
+    }
+
+    /* ///////////////////////// */
+    .footer__section1-part2__container {
+      /* outline: 2px solid gold; */
+
+      width: 100%;
+      max-width: 600px;
+      margin: 0 auto;
+
+      /** to arrange section1-part2 items */
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      column-gap: 6rem;
+    }
+
+    /* ///////////// */
+    .socials__container {
+      /* outline: 2px solid red; */
+
+      padding: 1rem 0 0 0;
+
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0.7rem;
+
+      /* /////////////// */
+      .socials__link {
+        /* outline: 2px solid white; */
+
+        display: block;
+      }
+
+      /* ////////// */
+      .socials__link-image {
+        /* outline: 2px solid pink; */
+
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        border: none;
+
+        /* ////////// */
+        &:hover {
+          scale: 1.1;
+        }
+      }
+    }
+  }
+}
+
+/*        */
+/*        */
+/*        */
+/*        */
+/*        */
+/*        */
+
+/** (min-width > 860px ) & (max-width <= 1200px) */
+@media screen and (width > 53.75em) and (width <=75em) {
+  .footer__section1-container {
+    /* outline: 2px solid green; */
+
+    width: var(--width__footer__section1-container);
+    max-width: 792px;
+    margin: 0 auto;
+
+    /** to arrange section1 items */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    column-gap: 6rem;
+
+    /* ///////////////////////// */
+    .footer__section1-part1__container {
+      /* outline: 2px solid gold; */
+
+      /** to arrange section1-part1 items */
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      align-items: flex-start;
+      column-gap: 6rem;
+    }
+
+    /* ///////////////////////// */
+    .footer__section1-part2__container {
+      /* outline: 2px solid gold; */
+
+      flex-basis: 25%;
+
+      /** to arrange section1-part2 items */
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: flex-start;
+      row-gap: 6rem;
+    }
+
+    /* ///////////// */
+    .socials__container {
+      /* outline: 2px solid red; */
+
+      padding: 1rem 0 0 0;
+
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0.7rem;
+
+      /* /////////////// */
+      .socials__link {
+        /* outline: 2px solid white; */
+
+        display: block;
+      }
+
+      /* ////////// */
+      .socials__link-image {
+        /* outline: 2px solid pink; */
+
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        border: none;
+
+        /* ////////// */
+        &:hover {
+          scale: 1.1;
+        }
+      }
+    }
+  }
+}
+
+/*        */
+/*        */
+/*        */
+/*        */
+/*        */
+
+/** Screens > 1200px */
+@media screen and (width > 75em) {
+  .footer__section1-container {
+    /* outline: 2px solid green; */
+
+    width: var(--width__footer__section1-container);
+    max-width: var(--width__1200px);
+    margin: 0 auto;
+
+    /** to arrange section1 items */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    column-gap: 6rem;
+
+    /* ///////////////////////// */
+    .footer__section1-part1__container {
+      /* outline: 2px solid gold; */
+
+      flex-basis: 42%;
+
+      /** to arrange section1-part1 items */
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      column-gap: 8rem;
+      row-gap: 4rem;
+    }
+
+    /* ///////////////////////// */
+    .footer__section1-part2__container {
+      /* outline: 2px solid gold; */
+
+      flex-basis: 42%;
+
+      /** to arrange section1-part2 items */
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      column-gap: 8rem;
+      row-gap: 4rem;
+    }
+
+    /* ///////////// */
+    .socials__container {
+      /* outline: 2px solid red; */
+
+      padding: 1rem 0 0 0;
+
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0.7rem;
+
+      /* /////////////// */
+      .socials__link {
+        /* outline: 2px solid white; */
+
+        display: block;
+      }
+
+      /* ////////// */
+      .socials__link-image {
+        /* outline: 2px solid pink; */
+
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        border: none;
+
+        /* ////////// */
+        &:hover {
+          scale: 1.1;
+        }
+      }
+    }
+  }
+}
+
+/** ---------------------end of FOOTER------------------- */
+
+
+/* ////////////////////// */
+/* /////////////////////// */
+/* //////////////////////// */
+
+/** ---------------------FONTS------------------- */
+
+/** ---------------------end of FONTS------------------- */
+
+
+/* ////////////////////// */
+/* /////////////////////// */
+/* //////////////////////// */
+
+/** ---------------------FONTS------------------- */
+
+/** ---------------------end of FONTS------------------- */
+
+
+/* ////////////////////// */
+/* /////////////////////// */
+/* //////////////////////// */
+
+/** ---------------------FONTS------------------- */
+
+/** ---------------------end of FONTS------------------- */

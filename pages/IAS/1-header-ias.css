@@ -1,0 +1,449 @@
+/* this contain css styles for the signal app header */
+
+/** Mobile Portrait screens */
+/* (max-width <= 500px) */
+@media screen and (width <=31.25em) {
+
+	/* ///////////////// */
+	/** ----VARIABLES---  */
+	:root {
+		--width__burger: 2.5rem;
+		--height__burger: 2.5rem;
+		--height__burger-line: 5px;
+	}
+
+	/* ////////////////// */
+
+	.header {
+		/* outline: 2px solid gold; */
+
+		width: 100%;
+		background-color: var(--clr-header-bckgrd);
+
+		/* to help center the company brand */
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: center;
+		align-items: center;
+
+		/* PROBLEM: How do i prevents a small period where no 
+		heading is shown b4 "header.on-scroll" is shown?? */
+
+		transition: all 1s ease-in-out;
+
+		/* //////////////// */
+		/* this hides nav-2 at first on page load */
+		.nav-2__container {
+			display: none;
+		}
+	}
+
+	/** when you scroll down, the header changes */
+	.header.on-scroll {
+		/* outline: 2px solid green; */
+
+		width: 100%;
+		background-color: var(--clr-header-bckgrd);
+		opacity: 0.98;
+
+		position: fixed;
+		top: 0;
+		z-index: 1;
+
+		/* ////////////// */
+		/* DISPLAY==NONE on scroll */
+		.nav-1__container {
+			display: none;
+		}
+
+		.signalapp__container,
+		.faq__container,
+		.brand-logo__image-big-screen {
+			display: none;
+		}
+
+		/* /////////// */
+		/* DISPLAY==YES(inherit) on scroll */
+		.nav-2__container {
+			display: inherit;
+		}
+	}
+
+	/** styles for nav-2 items */
+	.nav-2__container {
+		outline: 2px solid lightsalmon;
+
+		background-color: inherit;
+		width: 100%;
+
+		position: relative;
+		/* to lock burger within nav-2 */
+
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+		row-gap: 1.5rem;
+	}
+
+	.brand-logo__container {
+		/* outline: 2px solid violet; */
+
+		/* just to make logo not be at extreme left */
+		position: relative;
+		left: 2%;
+	}
+
+	/* ////////////////// */
+	/* ////////////////// */
+	/** ---Style of dropdown Menu when burger.... */
+	/* is clicked to open/close dropdown menu--- */
+	.burger {
+		/* outline: 2px solid indigo; */
+
+		/* this keeps the burger-lines inside burger. 
+		The burger itself remains within nav-2 */
+		position: relative;
+
+		/*to help position so it ALWAYS aligns with 
+		X when burger active except after burger wraps 
+		into column with brand-logo__container */
+		right: 5%;
+
+		/* makes the burger div show always even 
+		when menu dropdown is active */
+		z-index: 10;
+
+		/*makes it wrap with brand-logo__container & 
+		makes it align with it when wrapped column mode */
+		margin-left: 3rem;
+
+		cursor: pointer;
+		user-select: none;
+		width: var(--width__burger);
+		/* the width of the burger div */
+		height: var(--height__burger);
+		/* the height of the burger div */
+
+		/* ///////////////////// */
+		/* this styles the span burger-lines 
+		it is used to draw the 3 lines you see */
+		.burger-line {
+			position: absolute;
+
+			width: 100%;
+			height: var(--height__burger-line);
+			opacity: 1;
+			background-color: var(--clr-bckgrd-btn-pri-default);
+			background-image: linear-gradient(270deg,
+					var(--clr-gradient-100),
+					var(--clr-gradient-200));
+
+			transform: rotate(0deg);
+			transition: all 0.35s ease-in-out;
+		}
+
+		/* arranges the burger lines within the burger div BEFORE click */
+		.burger-line:nth-child(1) {
+			top: 0;
+			left: 0;
+		}
+
+		.burger-line:nth-child(2) {
+			top: 30%;
+			left: 0;
+		}
+
+		.burger-line:nth-child(3) {
+			top: 60%;
+			left: 0;
+		}
+
+		.burger-line:last-child {
+			top: 90%;
+			left: 0;
+		}
+	}
+
+	/** this is gen style for the dropdown menu when burger is clicked */
+	.menu {
+		/* outline: 2px solid blue; */
+
+		/* this will keep menu within nav-2 */
+		/* position: absolute;  */
+
+		position: fixed;
+		/* menu is there but not within nav-2 & "header.on-scroll". its within html-body  */
+
+		top: -800%;
+		/* Hides it away by default by keeping it at negative top */
+		left: 0;
+
+		width: 100%;
+		padding: 4rem 0 2rem 0;
+		overflow: hidden;
+		color: var(--clr-neutral-white-2);
+		background-color: var(--clr-bckgrd-btn-pri-default);
+		background-image: linear-gradient(270deg,
+				var(--clr-gradient-100),
+				var(--clr-gradient-200));
+		box-shadow: var(--gen-shadow-header);
+
+		transition: all 0.35s ease-in-out;
+
+		/* //////////////////////// */
+		.menu-inner {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			row-gap: 2.5rem;
+
+			list-style: none;
+		}
+
+		/* /////////////////////// */
+		.menu-link {
+			/* outline: 2px solid gold; */
+
+			font-family: inherit;
+			font-size: var(--fs-700);
+			font-weight: var(--fw-semi-bold);
+			line-height: var(--lh-100);
+			color: var(--clr-gen-website-bckgrd);
+			background-color: var(--clr-link-default-trans-2);
+			border-radius: var(--link__border-radius);
+			text-decoration: none;
+			padding: 0.2rem 4rem;
+
+			transition: all 1s ease;
+
+			/* ////////////////////// */
+			&:hover {
+				opacity: 0.6;
+				scale: 1.1;
+			}
+
+			&:active {
+				color: var(--clr-link-active);
+				/* Change the color on click/active */
+				filter: brightness(175%);
+			}
+
+			&:focus {
+				background-color: var(--clr-link-focus);
+			}
+
+			&:disabled {
+				opacity: 0.6;
+				/* Make the link semi-transparent to indicate it's disabled */
+				pointer-events: none;
+				/* Disable pointer events on the link */
+			}
+
+			&:target {
+				background-color: var(--clr-link-target);
+				/* Style the target of the link (e.g., section being linked to) */
+			}
+		}
+	}
+
+	/* ///////////////// */
+	/* //////////////// */
+	/** Styles what happens to bugger-lines when burger is clicked */
+	.burger.is-active {
+		position: absolute;
+		top: 21%;
+		right: 5%;
+	}
+
+	.burger.is-active .burger-line:nth-child(1) {
+		top: 40%;
+		transform: rotate(135deg);
+		background-color: var(--clr-secondary-600);
+		background-image: linear-gradient(270deg,
+				var(--clr-gradient-200),
+				var(--clr-gradient-500),
+				var(--clr-gradient-200));
+	}
+
+	.burger.is-active .burger-line:nth-child(2) {
+		opacity: 0;
+		visibility: hidden;
+	}
+
+	.burger.is-active .burger-line:nth-child(3) {
+		opacity: 0;
+		visibility: hidden;
+	}
+
+	.burger.is-active .burger-line:last-child {
+		top: 40%;
+		transform: rotate(-135deg);
+		background-color: var(--clr-secondary-600);
+		background-image: linear-gradient(270deg,
+				var(--clr-gradient-200),
+				var(--clr-gradient-500),
+				var(--clr-gradient-200));
+	}
+
+	/** styles how the dropdown menu looks AFTER burger click*/
+	.menu.is-active {
+		/* Adds these properties to .menu when burger is clicked */
+
+		top: 0;
+		/* makes it show by bringing it forward */
+		width: 100%;
+		height: auto;
+		z-index: 10;
+	}
+}
+
+/*        */
+/*        */
+/*        */
+/*        */
+/*        */
+
+/** Mobile landscape & Tablet Portrait & desktop screens*/
+/* (min-width > 500px )*/
+@media screen and (width > 31.25em) {
+	.header {
+		/* outline: 2px solid gold; */
+
+		width: 100%;
+		background-color: var(--clr-header-bckgrd);
+
+		/* to help center the company brand */
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: center;
+		align-items: center;
+
+		/* PROBLEM: How do i prevents a small period where no 
+		heading is shown b4 "header.on-scroll" is shown?? */
+
+		transition: all 1s ease-in-out;
+
+		/* //////////////// */
+		/* this hides nav-2 at first on page load */
+		.nav-2__container {
+			display: none;
+		}
+	}
+
+	/** when you scroll down, the header changes */
+	.header.on-scroll {
+		/* outline: 2px solid green; */
+
+		width: 100%;
+		background-color: var(--clr-neutral-white);
+		opacity: 0.98;
+
+		position: fixed;
+		top: 0;
+		z-index: 10;
+
+		/* ////////////// */
+		/* DISPLAY==YES(INHERIT) on scroll */
+		.nav-1__container {
+			display: none;
+		}
+
+		.menu,
+		.burger,
+		.brand-logo__image-big-screen {
+			display: none;
+		}
+
+		/** logo to display for Screens > 875px */
+		@media screen and (width > 54.69em) {
+			.brand-logo__image-sm-screen {
+				display: none;
+			}
+
+			.brand-logo__image-big-screen {
+				display: inherit;
+			}
+		}
+
+		/* /////////// */
+		/* things you want to display on scroll */
+		.nav-2__container {
+			display: inherit;
+		}
+	}
+
+	/** style the nav-2 items */
+	.nav-2__container {
+		/* outline: 2px solid blue; */
+
+		width: 100%;
+		max-width: var(--width__1200px);
+
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: space-evenly;
+		align-items: center;
+		column-gap: 2rem;
+	}
+
+	/** Style for Link text */
+	.signalapp__text,
+	.faq__text {
+		/* outline: 2px solid yellow; */
+
+		font-family: var(--ff-primary);
+		font-weight: var(--fw-bold);
+		font-size: var(--fs-800);
+		letter-spacing: 2%;
+		text-align: center;
+		text-decoration: none;
+		/* color: var(--clr-link-default); */
+		border-radius: var(--link__border-radius);
+	}
+
+	/** Link Actions for White Background */
+	.signalapp__link,
+	.faq__link {
+		/* outline: 2px solid orange; */
+
+		display: block;
+		text-decoration: none;
+		/* Remove underline by default for links */
+		padding: 0.8rem 2rem;
+		border-radius: var(--link__border-radius);
+		color: inherit;
+
+		&:hover {
+			color: var(--clr-link-hover);
+			scale: 1.1;
+		}
+
+		&:active {
+			color: var(--clr-link-active);
+			filter: brightness(175%);
+		}
+
+		&:focus {
+			outline: 1px solid var(--clr-link-focus);
+			background-color: var(--clr-link-focus);
+		}
+
+		&:disabled {
+			opacity: 0.6;
+			/* Make the link semi-transparent to indicate it's disabled */
+			pointer-events: none;
+			/* Disable pointer events on the link */
+		}
+
+		&:target {
+			background-color: var(--clr-link-target);
+			/* Style the target of the link (e.g., section being linked to) */
+		}
+	}
+}

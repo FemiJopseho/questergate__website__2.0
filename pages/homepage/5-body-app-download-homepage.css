@@ -1,0 +1,569 @@
+/* this file contains code for the app_download section in the homepage */
+
+/** Mobile view */
+/* max-width: 500px */
+@media screen and (width <= 31.25em) {
+	/* ////////////////// */
+	:root {
+		--m-fs__app-down__header: var(--fs-500);
+		--m-fs__app-down__parag: var(--fs-700);
+
+		--m-ls__app-down__header: calc(
+			0.05 * var(--m-fs__app-down__header)
+		); /* 5% --used fs*/
+
+		--m-ls__app-down__parag: calc(
+			0.02 * var(--m-fs__app-down__parag)
+		); /* 2% --used fs*/
+	}
+	/* ////////////////// */
+
+	.app-download__section {
+		/* outline: 4px solid gold; */
+
+		width: 100%;
+		padding: 0;
+
+		transition: all 1s ease-in-out;
+	}
+
+	/* ////////////// */
+	.app-download__container {
+		/* outline: 4px solid purple; */
+
+		width: 100%;
+		margin: 0 auto;
+		box-shadow: var(--gen-shadow-05);
+		background-color: var(--clr-homepage-card-bckgrd);
+		padding: 5rem 0 6rem 0;
+	}
+
+	/* /////////////// */
+	.app-download__content {
+		/* outline: 2px solid blue; */
+
+		width: 100%;
+		margin: 0 auto;
+		text-align: center;
+		padding: 0 0.5rem 0 0.5rem;
+
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	/* ////////////// */
+	.app-download__header {
+		/* outline: 2px solid red; */
+
+		text-align: center;
+		color: var(--clr-tertiary-100);
+		padding: 0 0 1.5rem 0;
+
+		font-family: var(--ff-primary);
+		font-weight: var(--fw-bold);
+		font-size: var(--m-fs__app-down__header);
+		line-height: var(--lh-600);
+		letter-spacing: var(--m-ls__app-down__header);
+	}
+
+	/* ////////////////// */
+	.app-download__parag {
+		/* outline: 2px solid red; */
+
+		text-align: center;
+		color: var(--clr-tertiary-100);
+		padding: 0 0 2rem 0;
+
+		font-family: var(--ff-primary);
+		font-weight: var(--fw-regular);
+		font-size: var(--m-fs__app-down__parag);
+		line-height: var(--lh-500);
+		letter-spacing: var(--m-ls__app-down__parag);
+	}
+
+	/* /////////////// */
+	.hero__cta {
+		/* outline: 2px solid pink; */
+
+		width: 100%;
+		margin: 0 auto;
+
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		row-gap: 1rem;
+		column-gap: 2rem;
+
+		/* //////////////// */
+		.hero__cta-download-google,
+		.hero__cta-download-apple {
+			/* outline: 4px solid green; */
+
+			width: 45%;
+			min-width: 15rem;
+			max-width: 17.81rem;
+			margin: 0 auto;
+
+			background-color: var(--clr-bckgrd-btn-pri-default);
+			color: var(--clr-txt-btn);
+			border-radius: var(--fs-1000);
+		}
+
+		/* ///////////////// */
+		.hero__cta-download-link {
+			/* outline: 2px solid paleturquoise; */
+
+			display: block;
+			text-decoration: none; /* Remove underline by default for links */
+			border-radius: var(--link__border-radius);
+			color: var(--clr-link-default-2);
+			padding: 0.4rem;
+
+			&:hover {
+				color: var(--clr-link-hover-2);
+				text-decoration: none;
+			}
+
+			&:active {
+				color: var(--clr-link-active-2);
+				filter: brightness(175%);
+			}
+
+			&:disabled {
+				opacity: 0.6;
+				pointer-events: none; /* Disable pointer events on the link */
+			}
+
+			&:target {
+				background-color: var(
+					--clr-link-target-2
+				); /* Style the target of the link (e.g., section being linked to) */
+			}
+
+			/* /////////////// */
+			.hero__cta-download-inner-div {
+				/* outline: 2px solid white; */
+
+				display: flex;
+				flex-direction: row;
+				flex-wrap: nowrap;
+				justify-content: center;
+				align-items: center;
+				column-gap: 0.8rem;
+				border-radius: var(--fs-1000); /* not really doing anything */
+
+				/* /////////////// */
+				.hero__cta__download-img-google,
+				.hero__cta__download-img-apple {
+					/* outline: 2px solid maroon; */
+
+					width: 16%;
+					min-width: 38px;
+					border-radius: 50%;
+				}
+
+				/* ///////////////// */
+				.hero__cta__download-text {
+					/* outline: 2px solid maroon; */
+
+					width: 60%;
+					/* white-space: nowrap; */
+
+					font-family: var(--ff-primary);
+					font-weight: var(--fw-bold);
+					font-size: var(--fs-800);
+					letter-spacing: 2%;
+					text-align: center;
+					border-radius: var(--fs-1000); /* not really doing anything */
+				}
+			}
+		}
+	}
+}
+
+/*        */
+/*        */
+/*        */
+/*        */
+/*        */
+
+/* Mobile landscape & Tablet Portrait screens */
+/* (min-width > 500px ) & (max-width <= 875px) */
+@media screen and (width > 31.25em) and (width <= 54.69em) {
+	/* ////////////////// */
+	:root {
+		--t-fs__app-down__header: var(--fs-500);
+		--t-fs__app-down__parag: var(--fs-600);
+
+		--t-ls__app-down__header: calc(
+			0.05 * var(--t-fs__app-down__header)
+		); /* 5% --used fs*/
+
+		--t-ls__app-down__parag: calc(
+			0.02 * var(--t-fs__app-down__parag)
+		); /* 2% --used fs*/
+	}
+	/* ////////////////// */
+
+	.app-download__section {
+		/* outline: 4px solid gold; */
+
+		width: 100%;
+		padding: 0;
+
+		transition: all 1s ease-in-out;
+	}
+
+	/* ////////////// */
+	.app-download__container {
+		/* outline: 4px solid purple; */
+
+		width: 100%;
+		max-width: var(--width__1200px);
+		margin: 0 auto;
+		box-shadow: var(--gen-shadow-05);
+		background-color: var(--clr-homepage-card-bckgrd);
+		padding: 4rem 0 5rem 0;
+	}
+
+	/* /////////////// */
+	.app-download__content {
+		/* outline: 2px solid blue; */
+
+		width: 100%;
+		margin: 0 auto;
+		text-align: center;
+		padding: 0 1rem 0 1rem;
+
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	/* ////////////// */
+	.app-download__header {
+		/* outline: 2px solid red; */
+
+		text-align: center;
+		color: var(--clr-tertiary-100);
+		padding: 0 0 1rem 0;
+
+		font-family: var(--ff-primary);
+		font-weight: var(--fw-bold);
+		font-size: var(--t-fs__app-down__header);
+		line-height: var(--lh-600);
+		letter-spacing: var(--t-ls__app-down__header);
+	}
+
+	/* ////////////////// */
+	.app-download__parag {
+		/* outline: 2px solid red; */
+
+		text-align: center;
+		color: var(--clr-tertiary-100);
+		padding: 0 0 2rem 0;
+
+		font-family: var(--ff-primary);
+		font-weight: var(--fw-regular);
+		font-size: var(--t-fs__app-down__parag);
+		line-height: var(--lh-500);
+		letter-spacing: var(--t-ls__app-down__parag);
+	}
+
+	/* /////////////// */
+	.hero__cta {
+		/* outline: 2px solid pink; */
+
+		width: 80%;
+		margin: 0 auto;
+
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		row-gap: 1rem;
+		column-gap: 2rem;
+
+		/* //////////////// */
+		.hero__cta-download-google,
+		.hero__cta-download-apple {
+			/* outline: 4px solid green; */
+
+			width: 45%;
+			min-width: 15rem;
+			max-width: 17.81rem;
+			margin: 0 auto;
+
+			background-color: var(--clr-bckgrd-btn-pri-default);
+			color: var(--clr-txt-btn);
+			border-radius: var(--fs-1000);
+		}
+
+		/* ///////////////// */
+		.hero__cta-download-link {
+			/* outline: 2px solid paleturquoise; */
+
+			display: block;
+			text-decoration: none; /* Remove underline by default for links */
+			border-radius: var(--link__border-radius);
+			color: var(--clr-link-default-2);
+			padding: 0.4rem;
+
+			&:hover {
+				color: var(--clr-link-hover-2);
+				text-decoration: none;
+			}
+
+			&:active {
+				color: var(--clr-link-active-2);
+				filter: brightness(175%);
+			}
+
+			&:disabled {
+				opacity: 0.6;
+				pointer-events: none; /* Disable pointer events on the link */
+			}
+
+			&:target {
+				background-color: var(
+					--clr-link-target-2
+				); /* Style the target of the link (e.g., section being linked to) */
+			}
+
+			/* /////////////// */
+			.hero__cta-download-inner-div {
+				/* outline: 2px solid white; */
+
+				display: flex;
+				flex-direction: row;
+				flex-wrap: nowrap;
+				justify-content: center;
+				align-items: center;
+				column-gap: 0.8rem;
+				border-radius: var(--fs-1000); /* not really doing anything */
+
+				/* /////////////// */
+				.hero__cta__download-img-google,
+				.hero__cta__download-img-apple {
+					/* outline: 2px solid maroon; */
+
+					width: 16%;
+					min-width: 38px;
+					border-radius: 50%;
+				}
+
+				/* ///////////////// */
+				.hero__cta__download-text {
+					/* outline: 2px solid maroon; */
+
+					width: 60%;
+					/* white-space: nowrap; */
+
+					font-family: var(--ff-primary);
+					font-weight: var(--fw-bold);
+					font-size: var(--fs-800);
+					letter-spacing: 2%;
+					text-align: center;
+					border-radius: var(--fs-1000); /* not really doing anything */
+				}
+			}
+		}
+	}
+}
+
+/*        */
+/*        */
+/*        */
+/*        */
+/*        */
+
+/** Screens > 875px */
+@media screen and (width > 54.69em) {
+	/* ////////////////// */
+	:root {
+		--d-fs__app-down__header: var(--fs-400);
+		--d-fs__app-down__parag: var(--fs-600);
+
+		--d-ls__app-down__header: calc(
+			0.05 * var(--d-fs__app-down__header)
+		); /* 5% --used fs*/
+
+		--d-ls__app-down__parag: calc(
+			0.02 * var(--d-fs__app-down__parag)
+		); /* 2% --used fs*/
+	}
+	/* ////////////////// */
+
+	.app-download__section {
+		/* outline: 2px solid gold; */
+
+		width: 100%;
+		padding: 6rem 0 6rem 0;
+
+		transition: all 1s ease-in-out;
+	}
+
+	/* ////////////// */
+	.app-download__container {
+		/* outline: 2px solid purple; */
+
+		width: 100%;
+		max-width: var(--width__1200px);
+		margin: 0 auto;
+	}
+
+	/* /////////////// */
+	.app-download__content {
+		/* outline: 2px solid blue; */
+
+		width: 50%;
+		min-width: 40.19rem; /* 643px */
+		margin: 0 auto;
+		text-align: center;
+
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	/* ////////////// */
+	.app-download__header {
+		/* outline: 2px solid red; */
+
+		text-align: center;
+		color: var(--clr-tertiary-100);
+		padding: 0 0 2rem 0;
+
+		font-family: var(--ff-primary);
+		font-weight: var(--fw-bold);
+		font-size: var(--d-fs__app-down__header);
+		line-height: var(--lh-600);
+		letter-spacing: var(--d-ls__app-down__header);
+	}
+
+	/* ////////////////// */
+	.app-download__parag {
+		/* outline: 2px solid red; */
+
+		text-align: center;
+		color: var(--clr-tertiary-100);
+		padding: 0 0 1.5rem 0;
+
+		font-family: var(--ff-primary);
+		font-weight: var(--fw-regular);
+		font-size: var(--d-fs__app-down__parag);
+		line-height: var(--lh-500);
+		letter-spacing: var(--d-ls__app-down__parag);
+	}
+
+	/* /////////////// */
+	.hero__cta {
+		/* outline: 2px solid pink; */
+
+		width: 100%;
+		margin: 0 auto;
+
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: center;
+		align-items: center;
+		row-gap: 1rem;
+		column-gap: 2rem;
+
+		/* //////////////// */
+		.hero__cta-download-google,
+		.hero__cta-download-apple {
+			/* outline: 4px solid green; */
+
+			width: 45%;
+			min-width: 15rem;
+			max-width: 17.81rem;
+			margin: 0 auto;
+
+			background-color: var(--clr-bckgrd-btn-pri-default);
+			color: var(--clr-txt-btn);
+			border-radius: var(--fs-1000);
+		}
+
+		/* ///////////////// */
+		.hero__cta-download-link {
+			/* outline: 2px solid paleturquoise; */
+
+			display: block;
+			text-decoration: none; /* Remove underline by default for links */
+			border-radius: var(--link__border-radius);
+			color: var(--clr-link-default-2);
+			padding: 0.4rem;
+
+			&:hover {
+				color: var(--clr-link-hover-2);
+				text-decoration: none;
+			}
+
+			&:active {
+				color: var(--clr-link-active-2);
+				filter: brightness(175%);
+			}
+
+			&:disabled {
+				opacity: 0.6;
+				pointer-events: none; /* Disable pointer events on the link */
+			}
+
+			&:target {
+				background-color: var(
+					--clr-link-target-2
+				); /* Style the target of the link (e.g., section being linked to) */
+			}
+
+			/* /////////////// */
+			.hero__cta-download-inner-div {
+				/* outline: 2px solid white; */
+
+				display: flex;
+				flex-direction: row;
+				flex-wrap: nowrap;
+				justify-content: center;
+				align-items: center;
+				column-gap: 0.8rem;
+				border-radius: var(--fs-1000); /* not really doing anything */
+
+				/* /////////////// */
+				.hero__cta__download-img-google,
+				.hero__cta__download-img-apple {
+					/* outline: 2px solid maroon; */
+
+					width: 16%;
+					min-width: 38px;
+					border-radius: 50%;
+				}
+
+				/* ///////////////// */
+				.hero__cta__download-text {
+					/* outline: 2px solid maroon; */
+
+					width: 60%;
+					/* white-space: nowrap; */
+
+					font-family: var(--ff-primary);
+					font-weight: var(--fw-bold);
+					font-size: var(--fs-800);
+					letter-spacing: 2%;
+					text-align: center;
+					border-radius: var(--fs-1000); /* not really doing anything */
+				}
+			}
+		}
+	}
+}

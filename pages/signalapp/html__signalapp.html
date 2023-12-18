@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- --------------search engine robots SEO-------------- -->
+		<meta name="robots" content="index, follow" />
+
+		<meta
+			name="description"
+			content="Questergate's Signal App is your access to FREE Buy/Sell trading signals on stocks, commodities and forex market."
+		/>
+
+		<!-- -----------explorer compatibility---------- -->
+		<meta http-equiv="X-UA-Compatible" />
+
+		<!-- --------Cache control meta tag------------ -->
+		<meta http-equiv="Cache-control" content="public" max-age="7776000" />
+
+		<!-- ----------------Security---------------- -->
+		<meta http-equiv="X-Content-Type-Options" content="nosniff" />
+
+		<meta
+			http-equiv="Strict-Transport-Security"
+			content="max-age=31536000; includeSubDomains; preload"
+		/>
+
+		<meta
+			http-equiv="Content-Security-Policy"
+			content="upgrade-insecure-requests"
+		/>
+
+		<!-- -----------------CSS Resets-------------------- -->
+		<!-- Use Normalize Reset -->
+		<link rel="stylesheet" href="../../css-resets/normalize.css" />
+
+		<link
+			rel="stylesheet"
+			href="https://necolas.github.io/normalize.css/latest/normalize.css"
+		/>
+
+		<!-- -----------------FONTS (loaded for a start)-------------------- -->
+
+		<style type="text/css">
+			@font-face {
+				font-display: swap;
+				font-family: "Nunito";
+				font-style: normal;
+				font-weight: 400;
+
+				src: local("Nunito"),
+					url("../../utilities/fonts/nunito-v26-latin-regular.woff2")
+						format("woff2");
+			}
+
+			@font-face {
+				font-display: swap;
+				font-family: "Montagu Slab";
+				font-style: normal;
+				font-weight: 400;
+
+				src: local("Montagu Slab"),
+					url("../../utilities/fonts/montagu-slab-v12-latin-regular.woff2")
+						format("woff2");
+			}
+		</style>
+
+		<!-- -------Other stylesheets, and scripts---------- -->
+		<link
+			rel="stylesheet"
+			href="../1-css-components/joined-fixed-component.css"
+		/>
+		<link rel="stylesheet" href="../1-css-components/6-utility-classes.css" />
+		<link rel="stylesheet" href="./1-header-signalapp.css" />
+		<link rel="stylesheet" href="./2-hero-signalapp.css" />
+		<link rel="stylesheet" href="./3-body-main-signalapp.css" />
+
+		<!-- --------------JQUERY ACCESS via CDN and via Local server----------------- -->
+		<script
+			src="https://code.jquery.com/jquery-3.7.1.min.js"
+			integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+			crossorigin="anonymous"
+		></script>
+
+		<script src="../js-components/jquery-3.7.1.min.js"></script>
+
+		<title>Signal App</title>
+
+		<link
+			rel="icon"
+			type="image/x-icon"
+			href="../../images/QG__favicon__no__background.ico"
+		/>
+	</head>
+
+	<body>
+		<button
+			onclick="backToTop__Function()"
+			id="back-to-top"
+			class="back-to-top"
+			title="Go to top"
+		>
+			Top &#8593;
+		</button>
+
+		<div class="gen-container">
+			<header class="header" id="header">
+				<nav class="nav-1__container">
+					<div class="nav-1__brand-logo__container">
+						<a
+							href="../homepage/html__homepage.html"
+							class="nav-1__brand-logo__link"
+						>
+							<img
+								class="nav-1__brand-logo__image"
+								src="../../images/QG_LOGO_small-horizontal.jpg"
+								alt="Questergate Logo"
+							/>
+						</a>
+					</div>
+				</nav>
+
+				<nav class="nav-2__container">
+					<div class="ias__container">
+						<p class="ias__text">
+							<a href="../IAS/html__ias.html" class="ias__link">IAS</a>
+						</p>
+					</div>
+
+					<div class="brand-logo__container">
+						<a href="../homepage/html__homepage.html" class="brand-logo__link">
+							<img
+								class="brand-logo__image-sm-screen"
+								src="../../images/QG_LOGO_small-horizontal-symbol.jpg"
+								alt="Questergate Logo"
+							/>
+
+							<img
+								class="brand-logo__image-big-screen"
+								src="../../images/QG_LOGO_small-horizontal.jpg"
+								alt="Questergate Logo"
+							/>
+						</a>
+					</div>
+
+					<div class="faq__container">
+						<p class="faq__text">
+							<a href="./html__faq__signal-app.html" class="faq__link">FAQ</a>
+						</p>
+					</div>
+
+					<div class="menu" id="menu">
+						<ul class="menu-inner">
+							<li class="menu-item">
+								<a href="../homepage/html__homepage.html" class="menu-link"
+									>HOME</a
+								>
+							</li>
+
+							<li class="menu-item">
+								<a href="../about-us/html__about-us.html" class="menu-link"
+									>About</a
+								>
+							</li>
+
+							<li class="menu-item">
+								<a href="../IAS/html__ias.html" class="menu-link">IAS</a>
+							</li>
+
+							<!-- <li class="menu-item">
+								<a href="../blog/html__blog.html" class="menu-link">Blog</a>
+							</li> -->
+
+							<li class="menu-item">
+								<a href="./html__faq__signal-app.html" class="menu-link">FAQ</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="burger" id="burger">
+						<span class="burger-line"></span>
+						<span class="burger-line"></span>
+						<span class="burger-line"></span>
+						<span class="burger-line"></span>
+					</div>
+				</nav>
+			</header>
+
+			<main class="main">
+				<!-- -------START OF HERO SECTION------- -->
+				<section class="hero__container">
+					<div class="hero__background">
+						<div class="hero__background__image">
+							<div class="hero__texts">
+								<p class="hero__phrase">Lorem ipsum dolor sit.</p>
+
+								<div class="hero__carousel">
+									<p class="hero__carousel__text-1">
+										<span class="hero__animate__text">Smart</span>
+										Technology
+									</p>
+								</div>
+
+								<p class="hero__statement">
+									Financial Market Trading and Investment App and Software for
+									higher Profits for Traders, Investors and Organizations.
+								</p>
+
+								<div class="hero__cta">
+									<div class="hero__cta-download-google">
+										<a class="hero__cta-download-link" href="" target="_blank">
+											<div class="hero__cta-download-inner-div">
+												<img
+													class="hero__cta__download-img-google"
+													src="../../images/google_play_store_logo_fixed.jpg"
+													alt="google playstore logo"
+												/>
+
+												<p class="hero__cta__download-text">
+													Get it FREE on Google Play Store
+												</p>
+											</div>
+										</a>
+									</div>
+
+									<div class="hero__cta-download-apple">
+										<a class="hero__cta-download-link" href="" target="_blank">
+											<div class="hero__cta-download-inner-div">
+												<img
+													class="hero__cta__download-img-apple"
+													src="../../images/apple_store_logo_fixed.jpg"
+													alt="apple store logo"
+												/>
+
+												<p class="hero__cta__download-text">
+													Get it FREE on Apple Store
+												</p>
+											</div>
+										</a>
+									</div>
+								</div>
+
+								<div class="hero__cred">
+									<p class="hero__cred__text-1">Trusted By:</p>
+
+									<div class="hero__cred__text-2">
+										<p class="hero__cred__text-2__traders">
+											<span class="counter-1">0</span> Traders
+										</p>
+
+										<p class="hero__cred__text-2__investors">
+											<span class="counter-2">0</span> Investors
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- -------start of MORE DETAILS ABOUT PRODUCT section------- -->
+				<section class="product__section">
+					<div class="product__container">
+						<!-- Signal App sub-section for more details about the product -->
+						<div class="product__details-container">
+							<h2 class="product__heading hidden">
+								What you gain from using our Signal App
+							</h2>
+
+							<div class="product__details__image-container">
+								<img
+									class="product__details__image-desktop"
+									src="../../images/signal-app-image-desktop.jpg"
+									alt="preview of signal app on mobile"
+								/>
+
+								<img
+									class="product__details__image-tablet"
+									src="../../images/signal-app-image-tablet.jpg"
+									alt="preview of signal app on mobile"
+								/>
+
+								<img
+									class="product__details__image-mobile"
+									src="../../images/signal-app-image-mobile.jpg"
+									alt="preview of signal app on mobile"
+								/>
+							</div>
+
+							<div class="product__details__features-container hidden">
+								<p class="product__details__features">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. A,
+									eligendi!
+								</p>
+
+								<ul class="product__details__features-list">
+									<li class="product__details__features-list-items">
+										Lorem ipsum dolor sit.
+									</li>
+									<li class="product__details__features-list-items">
+										Lorem ipsum dolor sit.
+									</li>
+									<li class="product__details__features-list-items">
+										Lorem ipsum dolor sit.
+									</li>
+									<li class="product__details__features-list-items">
+										Lorem ipsum dolor sit.
+									</li>
+									<li class="product__details__features-list-items">
+										Lorem ipsum dolor sit.
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- -------start of APP DOWNLOAD section------- -->
+				<section class="playstore-download hidden">
+					<div class="hero__cta">
+						<div class="hero__cta-download-google">
+							<a class="hero__cta-download-link" href="" target="_blank">
+								<div class="hero__cta-download-inner-div">
+									<img
+										class="hero__cta__download-img-google"
+										src="../../images/google_play_store_logo_fixed.jpg"
+										alt="google playstore logo"
+									/>
+
+									<p class="hero__cta__download-text">
+										Get it FREE on Google Play Store
+									</p>
+								</div>
+							</a>
+						</div>
+
+						<div class="hero__cta-download-apple">
+							<a class="hero__cta-download-link" href="" target="_blank">
+								<div class="hero__cta-download-inner-div">
+									<img
+										class="hero__cta__download-img-apple"
+										src="../../images/apple_store_logo_fixed.jpg"
+										alt="apple store logo"
+									/>
+
+									<p class="hero__cta__download-text">
+										Get it FREE on Apple Store
+									</p>
+								</div>
+							</a>
+						</div>
+					</div>
+				</section>
+
+				<!-- -------start of FOOTER section------- -->
+				<footer class="footer">
+					<!-- footer section1 -->
+					<div class="footer__section1-container">
+						<div class="footer__section1-part1__container">
+							<!-- footer sub-section for Products -->
+							<div class="footer__products section1-item">
+								<h3 class="footer__section1__sub-heading">Products</h3>
+
+								<ul class="footer__list-text list__no-style">
+									<li>
+										<a
+											class="footer__links pad-marg-0"
+											href="../IAS/html__ias.html"
+											>Investment Analytics Software</a
+										>
+									</li>
+
+									<li>
+										<a
+											class="footer__links pad-marg-0"
+											href="../signalapp/html__signalapp.html"
+											>Signal App</a
+										>
+									</li>
+
+									<li>
+										<a class="footer__links pad-marg-0" href="#">Investments</a>
+									</li>
+								</ul>
+							</div>
+
+							<!-- footer sub-section for Company -->
+							<div class="footer__company section1-item">
+								<h3 class="footer__section1__sub-heading">Company</h3>
+
+								<ul class="footer__list-text list__no-style">
+									<li>
+										<a
+											class="footer__links pad-marg-0"
+											href="../about-us/html__about-us.html"
+											>About Us</a
+										>
+									</li>
+
+									<li>
+										<a
+											class="footer__links pad-marg-0"
+											href="../blog/html__blog.html"
+											>Blog</a
+										>
+									</li>
+
+									<li>
+										<a
+											class="footer__links pad-marg-0"
+											href="../faq/html__faq.html"
+											>FAQ</a
+										>
+									</li>
+
+									<li>
+										<a
+											class="footer__links pad-marg-0"
+											href="../contact/html__contact-us.html"
+											>Contact Us</a
+										>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="footer__section1-part2__container">
+							<!-- footer sub-section for Legal -->
+							<div class="footer__legal section1-item">
+								<h3 class="footer__section1__sub-heading">Legal</h3>
+
+								<ul class="footer__list-text list__no-style">
+									<li>
+										<a class="footer__links pad-marg-0" href="#"
+											>Terms & Conditions</a
+										>
+									</li>
+
+									<li>
+										<a class="footer__links pad-marg-0" href="#"
+											>Privacy Policy</a
+										>
+									</li>
+								</ul>
+							</div>
+
+							<!-- footer sub-section for Contact details -->
+							<div class="footer__contact-details section1-item">
+								<h3
+									class="footer__section1__sub-heading contact-details visible__nooo"
+								>
+									Contact Us
+								</h3>
+
+								<ul class="footer__list-text list__no-style">
+									<li class="contact-email">
+										<a class="footer__links pad-marg-0 no-hover-effect-1"
+											>contact@questergate.com</a
+										>
+									</li>
+
+									<li class="contact-phone">+234 814 447 7866</li>
+								</ul>
+
+								<div class="socials__container contact-social">
+									<a href="#" class="socials__link" target="_blank"
+										><img
+											class="socials__link-image"
+											src="../../images/facebook-symbol--smallest.jpg"
+											alt="facebook logo"
+										/>
+									</a>
+
+									<a href="#" class="socials__link" target="_blank"
+										><img
+											class="socials__link-image"
+											src="../../images/LinkedIn_icon_circle--smallest.jpg"
+											alt="linkedin logo"
+										/>
+									</a>
+
+									<a href="#" class="socials__link" target="_blank"
+										><img
+											class="socials__link-image"
+											src="../../images/instagram-logo-icon-7--smaller.jpg"
+											alt="instagram logo"
+										/>
+									</a>
+
+									<a href="#" class="socials__link" target="_blank"
+										><img
+											class="socials__link-image"
+											src="../../images/twitter-X-symbol.png"
+											alt="twitter logo"
+										/>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- <hr class="hr-horizontal-line"/> -->
+					<div class="footer-horizontal-line"></div>
+
+					<div class="footer__section2-container">
+						<div class="copyright">
+							<p class="footer__other-text">
+								© 2023 Questergate. All rights reserved. | RC-1814438
+							</p>
+						</div>
+					</div>
+				</footer>
+			</main>
+		</div>
+
+		<script defer src="../js-components/header__hamburger.js"></script>
+		<script defer src="../js-components/header__on-scroll.js"></script>
+		<script defer src="../js-components/back-to-top.js"></script>
+		<script defer src="../js-components/numbers-count-up-1.js"></script>
+		<script defer src="../js-components/numbers-count-up-2.js"></script>
+		<script
+			defer
+			src="../js-components/section__visible__on__scroll.js"
+		></script>
+	</body>
+</html>

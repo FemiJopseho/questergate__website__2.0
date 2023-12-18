@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- <meta http-equiv="refresh" content="3" /> -->
+
+		<!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+
+		<!-- -----------------CSS Resets-------------------- -->
+		<!-- <link rel="stylesheet" href="../../css-resets/andy-bell-reset.css"/> -->
+		<link rel="stylesheet" href="../../css-resets/normalize.css" />
+
+		<!-- Use Normalize Reset -->
+		<!-- <link
+			rel="stylesheet"
+			href="https://necolas.github.io/normalize.css/latest/normalize.css"
+		/> -->
+
+		<!-- Use Remedy (quotes.css) for how browsers should render quotes -->
+		<!-- <link
+			rel="stylesheet"
+			href="https://github.com/jensimmons/cssremedy/blob/master/css/quotes.css"
+		/> -->
+
+		<!-- ------------------------------------------------ -->
+
+		<!-- ----------------------FONTS----------------------- -->
+		<!-- Preload your custom fonts -->
+		<link
+			rel="preload"
+			href="../../utilities/fonts/nunito-v26-latin-regular.woff2"
+			as="font"
+			type="font/woff2"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="preload"
+			href="../../utilities/fonts/nunito-v26-latin-700italic.woff2"
+			as="font"
+			type="font/woff2"
+			crossorigin="anonymous"
+		/>
+		<!-- ---------------------End of FONTS----------------- -->
+
+		<!-- -------Other stylesheets, and scripts---------- -->
+
+		<link rel="stylesheet" href="../1-css-components/1-fonts.css" />
+
+		<link rel="stylesheet" href="joined__css__faq.css" />
+
+		<!-- --------------JQUERY ACCESS via CDN and via Local server----------------- -->
+		<script
+			src="https://code.jquery.com/jquery-3.7.1.min.js"
+			integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+			crossorigin="anonymous"
+		></script>
+
+		<script src="../js-components/jquery-3.7.1.min.js"></script>
+		<!-- --------------END of JQUERY ACCESS via CDN and via Local server----------------- -->
+
+		<title>FAQs</title>
+	</head>
+
+	<body>
+		<button
+			onclick="backToTop__Function()"
+			id="back-to-top"
+			class="back-to-top"
+			title="Go to top"
+		>
+			Top &#8593;
+		</button>
+
+		<div class="gen-container">
+			<header class="header" id="header">
+				<nav class="navbar-xsm-screen">
+					<div class="brand xsm__brand">
+						<img
+							class="xsm-brand__logo"
+							src="../../images/QG_LOGO_small-horizontal.jpg"
+							alt="Questergate logo"
+						/>
+					</div>
+				</nav>
+
+				<nav class="navbar">
+					<div class="brand sm-screen__brand">
+						<a href="#" class="brand__logo-link">
+							<img
+								class="brand__logo"
+								src="../../images/QG_LOGO_small-horizontal.jpg"
+								alt="Questergate logo"
+							/>
+						</a>
+					</div>
+
+					<div class="brand bg-screen__brand">
+						<a href="#" class="brand__logo-link">
+							<img
+								class="brand__logo"
+								src="../../images/QG_LOGO_small-horizontal.jpg"
+								alt="Questergate logo"
+							/>
+						</a>
+
+						<p class="brand__text">
+							<a href="#" class="brand__text-link">Questergate</a>
+						</p>
+					</div>
+
+					<div class="menu" id="menu">
+						<ul class="menu-inner">
+							<li class="menu-item menu-link-home">
+								<a href="#" class="menu-link">Home</a>
+							</li>
+							<li class="menu-item"><a href="#" class="menu-link">About</a></li>
+							<li class="menu-item">
+								<a href="#" class="menu-link">Contact</a>
+							</li>
+							<li class="menu-item">
+								<a href="#" class="menu-link">Blog</a>
+							</li>
+							<li class="menu-item">
+								<a href="#" class="menu-link">FAQs</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="menu-block dropdown-container">
+						<label for="touch" class="dropbtn">
+							<span class="dropbtn__text">Products</span
+							><i class="arrow down"></i>
+						</label>
+
+						<input type="checkbox" id="touch" />
+
+						<ul class="slide">
+							<li class="slide__items">
+								<a class="slide__items-links" href="#">Software</a>
+							</li>
+							<li class="slide__items">
+								<a class="slide__items-links" href="#">Signal App</a>
+							</li>
+							<li class="slide__items">
+								<a class="slide__items-links" href="#">Fund Management</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="burger" id="burger">
+						<span class="burger-line"></span>
+						<span class="burger-line"></span>
+						<span class="burger-line"></span>
+						<span class="burger-line"></span>
+					</div>
+				</nav>
+			</header>
+
+			<main class="main">
+				<section class="faq-title__section">
+					<div class="faq-title__container">
+						<h2 class="faq-title__text">Frequently Asked Questions</h2>
+					</div>
+				</section>
+
+				<!-- -------start of ACCORDION section------- -->
+				<section class="faq-accordion__section">
+					<div class="faq-accordion__container">
+						<!-- Accordion--FAQs on COMPANY section -->
+						<h3 class="faq-accordion__section-title">Company</h3>
+
+						<!-- Inner-Accordion -->
+						<div class="accordion">
+							<!--  -->
+							<div class="accordion-item">
+								<button
+									class="accordion-button"
+									id="accordion-button-1"
+									aria-expanded="false"
+								>
+									<span class="accordion-title"
+										>Why is the moon sometimes out during the day?</span
+									><span class="icon" aria-hidden="true"></span>
+								</button>
+
+								<div class="accordion-content">
+									<p class="accordion-content-text">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+										do eiusmod tempor incididunt ut labore et dolore magna
+										aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor
+										pretium viverra suspendisse potenti. Lorem ipsum dolor sit
+										amet consectetur adipisicing elit. Fugiat blanditiis nam
+										minima sit odio animi! Hic, vitae tempore molestiae possimus
+										voluptates laudantium optio illo cumque qui similique
+										voluptatibus aperiam earum!
+									</p>
+								</div>
+							</div>
+
+							<!--  -->
+							<div class="accordion-item">
+								<button id="accordion-button-2" aria-expanded="false">
+									<span class="accordion-title">Why is the sky blue?</span
+									><span class="icon" aria-hidden="true"></span>
+								</button>
+
+								<div class="accordion-content">
+									<p class="accordion-content-text">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+										do eiusmod tempor incididunt ut labore et dolore magna
+										aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor
+										pretium viverra suspendisse potenti.
+									</p>
+								</div>
+							</div>
+
+							<!--  -->
+							<div class="accordion-item">
+								<button id="accordion-button-3" aria-expanded="false">
+									<span class="accordion-title"
+										>Will we ever discover aliens?</span
+									><span class="icon" aria-hidden="true"></span>
+								</button>
+
+								<div class="accordion-content">
+									<p class="accordion-content-text">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+										do eiusmod tempor incididunt ut labore et dolore magna
+										aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor
+										pretium viverra suspendisse potenti.
+									</p>
+								</div>
+							</div>
+
+							<!--  -->
+							<div class="accordion-item">
+								<button id="accordion-button-4" aria-expanded="false">
+									<span class="accordion-title"
+										>How much does the Earth weigh?</span
+									><span class="icon" aria-hidden="true"></span>
+								</button>
+
+								<div class="accordion-content">
+									<p class="accordion-content-text">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+										do eiusmod tempor incididunt ut labore et dolore magna
+										aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor
+										pretium viverra suspendisse potenti.
+									</p>
+								</div>
+							</div>
+
+							<!--  -->
+							<div class="accordion-item">
+								<button id="accordion-button-5" aria-expanded="false">
+									<span class="accordion-title">How do airplanes stay up?</span
+									><span class="icon" aria-hidden="true"></span>
+								</button>
+
+								<div class="accordion-content">
+									<p class="accordion-content-text">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+										do eiusmod tempor incididunt ut labore et dolore magna
+										aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor
+										pretium viverra suspendisse potenti.
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<!-- Accordion--FAQs on SIGNAL APP section -->
+						<h3 class="faq-accordion__section-title">Signal App</h3>
+
+						<!-- Inner-Accordion -->
+						<div class="accordion">
+							<!--  -->
+							<div class="accordion-item">
+								<button id="accordion-button-1" aria-expanded="false">
+									<span class="accordion-title"
+										>Why is the moon sometimes out during the day?</span
+									><span class="icon" aria-hidden="true"></span>
+								</button>
+
+								<div class="accordion-content">
+									<p class="accordion-content-text">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+										do eiusmod tempor incididunt ut labore et dolore magna
+										aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor
+										pretium viverra suspendisse potenti.
+									</p>
+								</div>
+							</div>
+
+							<!--  -->
+							<div class="accordion-item">
+								<button id="accordion-button-2" aria-expanded="false">
+									<span class="accordion-title">Why is the sky blue?</span
+									><span class="icon" aria-hidden="true"></span>
+								</button>
+
+								<div class="accordion-content">
+									<p class="accordion-content-text">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+										do eiusmod tempor incididunt ut labore et dolore magna
+										aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor
+										pretium viverra suspendisse potenti.
+									</p>
+								</div>
+							</div>
+
+							<!--  -->
+							<div class="accordion-item">
+								<button id="accordion-button-3" aria-expanded="false">
+									<span class="accordion-title"
+										>Will we ever discover aliens?</span
+									><span class="icon" aria-hidden="true"></span>
+								</button>
+
+								<div class="accordion-content">
+									<p class="accordion-content-text">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+										do eiusmod tempor incididunt ut labore et dolore magna
+										aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor
+										pretium viverra suspendisse potenti.
+									</p>
+								</div>
+							</div>
+
+							<!--  -->
+							<div class="accordion-item">
+								<button id="accordion-button-4" aria-expanded="false">
+									<span class="accordion-title"
+										>How much does the Earth weigh?</span
+									><span class="icon" aria-hidden="true"></span>
+								</button>
+
+								<div class="accordion-content">
+									<p class="accordion-content-text">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+										do eiusmod tempor incididunt ut labore et dolore magna
+										aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor
+										pretium viverra suspendisse potenti.
+									</p>
+								</div>
+							</div>
+
+							<!--  -->
+							<div class="accordion-item">
+								<button id="accordion-button-5" aria-expanded="false">
+									<span class="accordion-title">How do airplanes stay up?</span
+									><span class="icon" aria-hidden="true"></span>
+								</button>
+
+								<div class="accordion-content">
+									<p class="accordion-content-text">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+										do eiusmod tempor incididunt ut labore et dolore magna
+										aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor
+										pretium viverra suspendisse potenti.
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<!-- Accordion--FAQs on IAS section -->
+						<h3 class="faq-accordion__section-title">
+							Investment Analytics Software (IAS)
+						</h3>
+
+						<!-- Inner-Accordion -->
+						<div class="accordion">
+							<!--  -->
+							<div class="accordion-item">
+								<button id="accordion-button-1" aria-expanded="false">
+									<span class="accordion-title"
+										>Why is the moon sometimes out during the day?</span
+									><span class="icon" aria-hidden="true"></span>
+								</button>
+
+								<div class="accordion-content">
+									<p class="accordion-content-text">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+										do eiusmod tempor incididunt ut labore et dolore magna
+										aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor
+										pretium viverra suspendisse potenti.
+									</p>
+								</div>
+							</div>
+
+							<!--  -->
+							<div class="accordion-item">
+								<button id="accordion-button-2" aria-expanded="false">
+									<span class="accordion-title">Why is the sky blue?</span
+									><span class="icon" aria-hidden="true"></span>
+								</button>
+
+								<div class="accordion-content">
+									<p class="accordion-content-text">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+										do eiusmod tempor incididunt ut labore et dolore magna
+										aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor
+										pretium viverra suspendisse potenti.
+									</p>
+								</div>
+							</div>
+
+							<!--  -->
+							<div class="accordion-item">
+								<button id="accordion-button-3" aria-expanded="false">
+									<span class="accordion-title"
+										>Will we ever discover aliens?</span
+									><span class="icon" aria-hidden="true"></span>
+								</button>
+
+								<div class="accordion-content">
+									<p class="accordion-content-text">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+										do eiusmod tempor incididunt ut labore et dolore magna
+										aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor
+										pretium viverra suspendisse potenti.
+									</p>
+								</div>
+							</div>
+
+							<!--  -->
+							<div class="accordion-item">
+								<button id="accordion-button-4" aria-expanded="false">
+									<span class="accordion-title"
+										>How much does the Earth weigh?</span
+									><span class="icon" aria-hidden="true"></span>
+								</button>
+
+								<div class="accordion-content">
+									<p class="accordion-content-text">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+										do eiusmod tempor incididunt ut labore et dolore magna
+										aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor
+										pretium viverra suspendisse potenti.
+									</p>
+								</div>
+							</div>
+
+							<!--  -->
+							<div class="accordion-item">
+								<button id="accordion-button-5" aria-expanded="false">
+									<span class="accordion-title">How do airplanes stay up?</span
+									><span class="icon" aria-hidden="true"></span>
+								</button>
+
+								<div class="accordion-content">
+									<p class="accordion-content-text">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+										do eiusmod tempor incididunt ut labore et dolore magna
+										aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor
+										pretium viverra suspendisse potenti.
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<!-- Accordion--FAQs on INVESTMENT section -->
+						<h3 class="faq-accordion__section-title">Private Investment</h3>
+
+						<!-- Inner-Accordion -->
+						<div class="accordion">
+							<!--  -->
+							<div class="accordion-item">
+								<button id="accordion-button-1" aria-expanded="false">
+									<span class="accordion-title"
+										>Why is the moon sometimes out during the day?</span
+									><span class="icon" aria-hidden="true"></span>
+								</button>
+
+								<div class="accordion-content">
+									<p class="accordion-content-text">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+										do eiusmod tempor incididunt ut labore et dolore magna
+										aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor
+										pretium viverra suspendisse potenti.
+									</p>
+								</div>
+							</div>
+
+							<!--  -->
+							<div class="accordion-item">
+								<button id="accordion-button-2" aria-expanded="false">
+									<span class="accordion-title">Why is the sky blue?</span
+									><span class="icon" aria-hidden="true"></span>
+								</button>
+
+								<div class="accordion-content">
+									<p class="accordion-content-text">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+										do eiusmod tempor incididunt ut labore et dolore magna
+										aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor
+										pretium viverra suspendisse potenti.
+									</p>
+								</div>
+							</div>
+
+							<!--  -->
+							<div class="accordion-item">
+								<button id="accordion-button-3" aria-expanded="false">
+									<span class="accordion-title"
+										>Will we ever discover aliens?</span
+									><span class="icon" aria-hidden="true"></span>
+								</button>
+
+								<div class="accordion-content">
+									<p class="accordion-content-text">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+										do eiusmod tempor incididunt ut labore et dolore magna
+										aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor
+										pretium viverra suspendisse potenti.
+									</p>
+								</div>
+							</div>
+
+							<!--  -->
+							<div class="accordion-item">
+								<button id="accordion-button-4" aria-expanded="false">
+									<span class="accordion-title"
+										>How much does the Earth weigh?</span
+									><span class="icon" aria-hidden="true"></span>
+								</button>
+
+								<div class="accordion-content">
+									<p class="accordion-content-text">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+										do eiusmod tempor incididunt ut labore et dolore magna
+										aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor
+										pretium viverra suspendisse potenti.
+									</p>
+								</div>
+							</div>
+
+							<!--  -->
+							<div class="accordion-item">
+								<button id="accordion-button-5" aria-expanded="false">
+									<span class="accordion-title">How do airplanes stay up?</span
+									><span class="icon" aria-hidden="true"></span>
+								</button>
+
+								<div class="accordion-content">
+									<p class="accordion-content-text">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+										do eiusmod tempor incididunt ut labore et dolore magna
+										aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor
+										pretium viverra suspendisse potenti.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- -------start of FOOTER section------- -->
+				<footer class="footer hidden">
+					<!-- footer section1 -->
+					<div class="footer__section1-container">
+						<div class="footer__section1-part1__container">
+							<!-- footer sub-section for Products -->
+							<div class="footer__products section1-item">
+								<h3 class="footer__section1__sub-heading">Products</h3>
+
+								<ul class="footer__list-text list__no-style">
+									<li>
+										<a class="footer__links pad-marg-0" href="#"
+											>Investment Analytics Software</a
+										>
+									</li>
+
+									<li>
+										<a class="footer__links pad-marg-0" href="#">Signal App</a>
+									</li>
+
+									<li>
+										<a class="footer__links pad-marg-0" href="#">Investments</a>
+									</li>
+								</ul>
+							</div>
+
+							<!-- footer sub-section for Company -->
+							<div class="footer__company section1-item">
+								<h3 class="footer__section1__sub-heading">Company</h3>
+
+								<ul class="footer__list-text list__no-style">
+									<li>
+										<a class="footer__links pad-marg-0" href="#">About Us</a>
+									</li>
+
+									<li>
+										<a class="footer__links pad-marg-0" href="#">Blog</a>
+									</li>
+
+									<li>
+										<a class="footer__links pad-marg-0" href="#">FAQ</a>
+									</li>
+
+									<li>
+										<a class="footer__links pad-marg-0" href="#">Contact Us</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="footer__section1-part2__container">
+							<!-- footer sub-section for Legal -->
+							<div class="footer__legal section1-item">
+								<h3 class="footer__section1__sub-heading">Legal</h3>
+
+								<ul class="footer__list-text list__no-style">
+									<li>
+										<a class="footer__links pad-marg-0" href="#"
+											>Terms & Conditions</a
+										>
+									</li>
+
+									<li>
+										<a class="footer__links pad-marg-0" href="#"
+											>Privacy Policy</a
+										>
+									</li>
+								</ul>
+							</div>
+
+							<!-- footer sub-section for Contact details -->
+							<div class="footer__contact-details section1-item">
+								<h3
+									class="footer__section1__sub-heading contact-details visible__nooo"
+								>
+									Contact Us
+								</h3>
+
+								<ul class="footer__list-text list__no-style">
+									<li class="contact-email">
+										<a class="footer__links pad-marg-0" href="#"
+											>contact@questergate.com</a
+										>
+									</li>
+
+									<li class="contact-phone">+234 814 447 7866</li>
+								</ul>
+
+								<div class="socials__container contact-social">
+									<a href="#" class="socials__link" target="_blank"
+										><img
+											class="socials__link-image"
+											src="../../images/facebook-symbol--smallest.jpg"
+											alt="facebook logo"
+										/>
+									</a>
+									<a href="#" class="socials__link" target="_blank"
+										><img
+											class="socials__link-image"
+											src="../../images/LinkedIn_icon_circle--smallest.jpg"
+											alt="linkedin logo"
+										/>
+									</a>
+									<a href="#" class="socials__link" target="_blank"
+										><img
+											class="socials__link-image"
+											src="../../images/instagram-logo-icon-7--smaller.jpg"
+											alt="instagram logo"
+										/>
+									</a>
+									<a href="#" class="socials__link" target="_blank"
+										><img
+											class="socials__link-image"
+											src="../../images/twitter-X-symbol.png"
+											alt="twitter logo"
+										/>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- <hr class="hr-horizontal-line"/> -->
+					<div class="footer-horizontal-line"></div>
+
+					<div class="footer__section2-container">
+						<div class="copyright">
+							<p class="footer__other-text">
+								© 2023 Questergate. All rights reserved. | RC-1814438
+							</p>
+						</div>
+					</div>
+				</footer>
+			</main>
+		</div>
+
+		<script src="../js-components/back-to-top.js"></script>
+		<script src="../js-components/header__hamburger.js"></script>
+		<script src="../js-components/header__dropdown-button.js"></script>
+		<script src="../js-components/faq-parent-accordion.js"></script>
+		<script src="../js-components/faq-inner-accordion.js"></script>
+		<script
+			defer
+			src="../js-components/section__visible__on__scroll.js"
+		></script>
+	</body>
+</html>

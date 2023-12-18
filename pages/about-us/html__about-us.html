@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- --------------search engine robots SEO-------------- -->
+		<meta name="robots" content="index, follow" />
+
+		<meta
+			name="description"
+			content="Questergate helps both individual investors and professional traders make more money in the financial market."
+		/>
+
+		<!-- -----------explorer compatibility---------- -->
+		<meta http-equiv="X-UA-Compatible" />
+
+		<!-- --------Cache control meta tag------------ -->
+		<meta http-equiv="Cache-control" content="public" max-age="7776000" />
+
+		<!-- ----------------Security---------------- -->
+		<meta http-equiv="X-Content-Type-Options" content="nosniff" />
+
+		<meta
+			http-equiv="Strict-Transport-Security"
+			content="max-age=31536000; includeSubDomains; preload"
+		/>
+
+		<meta
+			http-equiv="Content-Security-Policy"
+			content="upgrade-insecure-requests"
+		/>
+
+		<!-- -----------------CSS Resets-------------------- -->
+		<!-- Use Normalize Reset -->
+		<link rel="stylesheet" href="../../css-resets/normalize.css" />
+
+		<link
+			rel="stylesheet"
+			href="https://necolas.github.io/normalize.css/latest/normalize.css"
+		/>
+
+		<!-- -----------------FONTS (loaded for a start)-------------------- -->
+
+		<style type="text/css">
+			@font-face {
+				font-display: swap;
+				font-family: "Nunito";
+				font-style: normal;
+				font-weight: 400;
+
+				src: local("Nunito"),
+					url("../../utilities/fonts/nunito-v26-latin-regular.woff2")
+						format("woff2");
+			}
+
+			@font-face {
+				font-display: swap;
+				font-family: "Montagu Slab";
+				font-style: normal;
+				font-weight: 400;
+
+				src: local("Montagu Slab"),
+					url("../../utilities/fonts/montagu-slab-v12-latin-regular.woff2")
+						format("woff2");
+			}
+		</style>
+
+		<!-- -------Other stylesheets, and scripts---------- -->
+		<link
+			rel="stylesheet"
+			href="../1-css-components/joined-fixed-component.css"
+		/>
+		<link rel="stylesheet" href="../1-css-components/6-utility-classes.css" />
+		<link rel="stylesheet" href="../1-css-components/7-generic-header.css" />
+		<link rel="stylesheet" href="./2-body-content__about-us.css" />
+
+		<!-- --------------JQUERY ACCESS via CDN and via Local server----------------- -->
+		<script
+			src="https://code.jquery.com/jquery-3.7.1.min.js"
+			integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+			crossorigin="anonymous"
+		></script>
+
+		<script src="../js-components/jquery-3.7.1.min.js"></script>
+
+		<title>About Us</title>
+
+		<link
+			rel="icon"
+			type="image/x-icon"
+			href="../../images/QG__favicon__no__background.ico"
+		/>
+	</head>
+
+	<body>
+		<button
+			onclick="backToTop__Function()"
+			id="back-to-top"
+			class="back-to-top"
+			title="Go to top"
+		>
+			Top &#8593;
+		</button>
+
+		<div class="gen-container">
+			<header class="header" id="header">
+				<div class="header__items-container">
+					<nav class="navbar-xsm-screen">
+						<div class="brand xsm__brand">
+							<a
+								href="../homepage/html__homepage.html"
+								class="brand__logo-link"
+							>
+								<img
+									class="brand__logo"
+									src="../../images/QG_LOGO_small-horizontal.jpg"
+									alt="Questergate logo"
+								/>
+							</a>
+						</div>
+					</nav>
+
+					<nav class="navbar">
+						<div class="brand sm-screen__brand">
+							<a
+								href="../homepage/html__homepage.html"
+								class="brand__logo-link"
+							>
+								<img
+									class="brand__logo"
+									src="../../images/QG_LOGO_small-horizontal.jpg"
+									alt="Questergate logo"
+								/>
+							</a>
+						</div>
+
+						<div class="brand bg-screen__brand">
+							<a
+								href="../homepage/html__homepage.html"
+								class="brand__logo-link"
+							>
+								<img
+									class="brand__logo"
+									src="../../images/QG_LOGO_small-horizontal.jpg"
+									alt="Questergate logo"
+								/>
+							</a>
+
+							<p class="brand__text">
+								<a
+									href="../homepage/html__homepage.html"
+									class="brand__text-link"
+									>Questergate</a
+								>
+							</p>
+						</div>
+
+						<div class="menu" id="menu">
+							<ul class="menu-inner">
+								<li class="menu-item">
+									<a href="../homepage/html__homepage.html" class="menu-link"
+										>Home</a
+									>
+								</li>
+
+								<!-- <li class="menu-item">
+								<a href="../about-us/html__about-us.html" class="menu-link"
+									>About</a
+								>
+							</li> -->
+
+								<li class="menu-item">
+									<a href="../contact/html__contact-us.html" class="menu-link"
+										>Contact</a
+									>
+								</li>
+
+								<li class="menu-item">
+									<a href="../blog/html__blog.html" class="menu-link">Blog</a>
+								</li>
+
+								<li class="menu-item">
+									<a href="../faq/html__faq.html" class="menu-link">FAQs</a>
+								</li>
+							</ul>
+						</div>
+
+						<div class="menu-block dropdown-container">
+							<label for="header__dropbtn__checkbox" class="dropbtn">
+								<span class="dropbtn__text">Products</span
+								><i class="arrow down"></i>
+							</label>
+
+							<input type="checkbox" id="header__dropbtn__checkbox" />
+
+							<ul class="header-slide-down">
+								<li class="header-slide-down__items">
+									<a
+										class="header-slide-down__items-links"
+										href="../IAS/html__ias.html"
+										>Software</a
+									>
+								</li>
+
+								<li class="header-slide-down__items">
+									<a
+										class="header-slide-down__items-links"
+										href="../signalapp/html__signalapp.html"
+										>Signal App</a
+									>
+								</li>
+
+								<li class="header-slide-down__items">
+									<a class="header-slide-down__items-links" href="#"
+										>Fund Management</a
+									>
+								</li>
+							</ul>
+						</div>
+
+						<div class="burger" id="burger">
+							<span class="burger-line"></span>
+							<span class="burger-line"></span>
+							<span class="burger-line"></span>
+							<span class="burger-line"></span>
+						</div>
+					</nav>
+				</div>
+			</header>
+
+			<main class="main">
+				<!-- -------start of ABOUT-US MAIN IMAGE section------- -->
+				<section class="about-us__main-image__section">
+					<div class="about-us__main-image__container hidden">
+						<img
+							src="../../images/About-us__main__image__1.jpg"
+							alt="image that gives brand impression"
+							class="about-us__main-image"
+						/>
+					</div>
+				</section>
+
+				<!-- -------start of ABOUT-US TEXTS section------- -->
+				<section class="about-us__text__section">
+					<div class="about-us__text__container">
+						<div class="about-us__text">
+							<h2 class="about-us__text__header">WHO WE ARE</h2>
+
+							<p class="about-us__text__parag">
+								We’re an investment solutions company, building products to help
+								businesses and independent traders make the most out of
+								financial markets. Our primary objective is to make it easier
+								for our clients to make profit from the financial market.
+							</p>
+						</div>
+
+						<div class="about-us__text">
+							<h2 class="about-us__text__header">OUR SOLUTION</h2>
+
+							<p class="about-us__text__parag">
+								You have access to our Smart Technology which will help you make
+								Smarter, Safer, and more Profitable decisions as a financial
+								market trader and investor.
+							</p>
+						</div>
+
+						<div class="about-us__text">
+							<h2 class="about-us__text__header">OUR TECHNOLOGY</h2>
+
+							<p class="about-us__text__parag">
+								Our smart technology consists of 27 machine learning
+								quantitative investment models that are combined in different
+								arrays to make safer and more profitable investment decisions.
+							</p>
+						</div>
+
+						<div class="about-us__text">
+							<h2 class="about-us__text__header">QUALITY CONTROL</h2>
+
+							<p class="about-us__text__parag">
+								Our technology is tested on more than 3 decades of financial
+								market data and undergoes regular improvement by our research
+								and development team
+							</p>
+						</div>
+					</div>
+				</section>
+
+				<!-- -------start of EXECUTIVE TEAM section------- -->
+				<section class="about-us__exec-team__section">
+					<div class="about-us__exec-team__container">
+						<h2 class="about-us__exec-team__header hidden">MEET THE TEAM</h2>
+
+						<div class="about-us__exec-team__profile__container">
+							<div class="about-us__profile__card">
+								<div class="about-us__profile__card__img__container">
+									<img
+										class="about-us__profile__card__img"
+										src="../../images/QG_LOGO_small-vertical-symbol.jpg"
+										alt="CEO picture"
+									/>
+								</div>
+
+								<p class="about-us__profile__card__name">Oluwafemi Ojo</p>
+								<p class="about-us__profile__card__title">
+									CEO and Head of Research & Development
+								</p>
+							</div>
+
+							<div class="about-us__profile__card">
+								<div class="about-us__profile__card__img__container">
+									<img
+										class="about-us__profile__card__img"
+										src="../../images/QG_LOGO_small-vertical-symbol.jpg"
+										alt="(CTO) picture"
+									/>
+								</div>
+
+								<p class="about-us__profile__card__name">Adebayo Adewunmi</p>
+								<p class="about-us__profile__card__title">
+									Chief Technology Officer (CTO)
+								</p>
+							</div>
+
+							<div class="about-us__profile__card">
+								<div class="about-us__profile__card__img__container">
+									<img
+										class="about-us__profile__card__img"
+										src="../../images/QG_LOGO_small-vertical-symbol.jpg"
+										alt="CPO & Growth Lead picture"
+									/>
+								</div>
+
+								<p class="about-us__profile__card__name">Emmanuel Osubu</p>
+								<p class="about-us__profile__card__title">
+									Chief Product Officer & Growth Lead
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- -------start of OTHER TEAM MEMBERS section------- -->
+				<section class="about-us__other-team__section">
+					<div class="about-us__other-team__container">
+						<div class="about-us__other-team__profile__container hidden">
+							<div class="about-us__profile__card-others">
+								<div class="about-us__profile__card__img__container">
+									<img
+										class="about-us__profile__card__img"
+										src="../../images/QG_LOGO_small-vertical-symbol.jpg"
+										alt="design team 1 profile image"
+									/>
+								</div>
+
+								<p class="about-us__profile__card__name">Jennifer Ita</p>
+								<p class="about-us__profile__card__title">Lead UIUX Designer</p>
+							</div>
+
+							<div class="about-us__profile__card-others">
+								<div class="about-us__profile__card__img__container">
+									<img class="about-us__profile__card__img"
+									src="../../images/QG_LOGO_small-vertical-symbol.jpg"
+									alt="Asst. Lead UIUX Designer pic" profile image" />
+								</div>
+
+								<p class="about-us__profile__card__name">Jasper Jasper</p>
+								<p class="about-us__profile__card__title">
+									Asst. Lead UIUX Designer
+								</p>
+							</div>
+
+							<div class="about-us__profile__card-others">
+								<div class="about-us__profile__card__img__container">
+									<img class="about-us__profile__card__img"
+									src="../../images/QG_LOGO_small-vertical-symbol.jpg"
+									alt="Systems Developer pic" profile image" />
+								</div>
+
+								<p class="about-us__profile__card__name">Obinna Obinna</p>
+								<p class="about-us__profile__card__title">Systems Developer</p>
+							</div>
+
+							<div class="about-us__profile__card-others">
+								<div class="about-us__profile__card__img__container">
+									<img class="about-us__profile__card__img"
+									src="../../images/QG_LOGO_small-vertical-symbol.jpg"
+									alt="Customer Satisfaction pic" profile image" />
+								</div>
+
+								<p class="about-us__profile__card__name">
+									Anuoluwapo Anuoluwapo
+								</p>
+								<p class="about-us__profile__card__title">
+									Customer Satisfaction
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- -------start of FOOTER section------- -->
+				<footer class="footer hidden">
+					<!-- footer section1 -->
+					<div class="footer__section1-container">
+						<div class="footer__section1-part1__container">
+							<!-- footer sub-section for Products -->
+							<div class="footer__products section1-item">
+								<h3 class="footer__section1__sub-heading">Products</h3>
+
+								<ul class="footer__list-text list__no-style">
+									<li>
+										<a
+											class="footer__links pad-marg-0"
+											href="../IAS/html__ias.html"
+											>Investment Analytics Software</a
+										>
+									</li>
+
+									<li>
+										<a
+											class="footer__links pad-marg-0"
+											href="../signalapp/html__signalapp.html"
+											>Signal App</a
+										>
+									</li>
+
+									<li>
+										<a class="footer__links pad-marg-0" href="#">Investments</a>
+									</li>
+								</ul>
+							</div>
+
+							<!-- footer sub-section for Company -->
+							<div class="footer__company section1-item">
+								<h3 class="footer__section1__sub-heading">Company</h3>
+
+								<ul class="footer__list-text list__no-style">
+									<li>
+										<a
+											class="footer__links pad-marg-0"
+											href="../about-us/html__about-us.html"
+											>About Us</a
+										>
+									</li>
+
+									<li>
+										<a
+											class="footer__links pad-marg-0"
+											href="../blog/html__blog.html"
+											>Blog</a
+										>
+									</li>
+
+									<li>
+										<a
+											class="footer__links pad-marg-0"
+											href="../faq/html__faq.html"
+											>FAQ</a
+										>
+									</li>
+
+									<li>
+										<a
+											class="footer__links pad-marg-0"
+											href="../contact/html__contact-us.html"
+											>Contact Us</a
+										>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="footer__section1-part2__container">
+							<!-- footer sub-section for Legal -->
+							<div class="footer__legal section1-item">
+								<h3 class="footer__section1__sub-heading">Legal</h3>
+
+								<ul class="footer__list-text list__no-style">
+									<li>
+										<a class="footer__links pad-marg-0" href="#"
+											>Terms & Conditions</a
+										>
+									</li>
+
+									<li>
+										<a class="footer__links pad-marg-0" href="#"
+											>Privacy Policy</a
+										>
+									</li>
+								</ul>
+							</div>
+
+							<!-- footer sub-section for Contact details -->
+							<div class="footer__contact-details section1-item">
+								<h3
+									class="footer__section1__sub-heading contact-details visible__nooo"
+								>
+									Contact Us
+								</h3>
+
+								<ul class="footer__list-text list__no-style">
+									<li class="contact-email">
+										<a class="footer__links pad-marg-0 no-hover-effect-1"
+											>contact@questergate.com</a
+										>
+									</li>
+
+									<li class="contact-phone">+234 814 447 7866</li>
+								</ul>
+
+								<div class="socials__container contact-social">
+									<a href="#" class="socials__link" target="_blank"
+										><img
+											class="socials__link-image"
+											src="../../images/facebook-symbol--smallest.jpg"
+											alt="facebook logo"
+										/>
+									</a>
+
+									<a href="#" class="socials__link" target="_blank"
+										><img
+											class="socials__link-image"
+											src="../../images/LinkedIn_icon_circle--smallest.jpg"
+											alt="linkedin logo"
+										/>
+									</a>
+
+									<a href="#" class="socials__link" target="_blank"
+										><img
+											class="socials__link-image"
+											src="../../images/instagram-logo-icon-7--smaller.jpg"
+											alt="instagram logo"
+										/>
+									</a>
+
+									<a href="#" class="socials__link" target="_blank"
+										><img
+											class="socials__link-image"
+											src="../../images/twitter-X-symbol.png"
+											alt="twitter logo"
+										/>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- <hr class="hr-horizontal-line"/> -->
+					<div class="footer-horizontal-line"></div>
+
+					<div class="footer__section2-container">
+						<div class="copyright">
+							<p class="footer__other-text">
+								© 2023 Questergate. All rights reserved. | RC-1814438
+							</p>
+						</div>
+					</div>
+				</footer>
+			</main>
+		</div>
+
+		<script defer src="../js-components/back-to-top.js"></script>
+		<script defer src="../js-components/header__hamburger.js"></script>
+		<script defer src="../js-components/header__dropdown-button.js"></script>
+		<script
+			defer
+			src="../js-components/section__visible__on__scroll.js"
+		></script>
+	</body>
+</html>

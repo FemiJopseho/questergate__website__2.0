@@ -1,0 +1,223 @@
+/* this styles the general body of the faq */
+
+/** Mobile view */
+/* max-width: 500px */
+@media screen and (width <= 31.25em) {
+	/** layout for the page header section */
+	.faq-title__section {
+		/* outline: 4px solid pink; */
+
+		width: 100%;
+
+		padding: 4rem 0 0 0;
+	}
+
+	.faq-title__container {
+		/* outline: 4px solid purple; */
+
+		width: 100%;
+		max-width: var(--width__1200px);
+		margin: 0 auto;
+	}
+
+	.faq-title__text {
+		/* outline: 2px solid gray; */
+
+		padding: 0 0.5rem;
+		font-family: var(--ff-primary);
+		font-size: var(--fs-500);
+		font-weight: var(--fw-bold);
+		line-height: var(--lh-600);
+		text-align: center;
+		color: var(--clr-primary-650);
+		text-transform: uppercase;
+	}
+
+	/** layout for the accordion section */
+	.faq-accordion__section {
+		width: 100%;
+		padding: 0 0 4rem 0;
+	}
+
+	.faq-accordion__container {
+		/* outline: 4px solid green; */
+
+		padding: 0 0.8rem;
+
+		width: 100%;
+		max-width: var(--width__1200px);
+		max-width: var(--width__900px);
+		margin: 0 auto;
+	}
+
+	.faq-accordion__section-title {
+		/* outline: 2px solid blue; */
+
+		padding: 2rem 0 1rem 0;
+
+		font-family: var(--ff-primary);
+		font-size: var(--fs-600);
+		font-weight: var(--fw-bold);
+		line-height: var(--lh-430);
+		text-align: left;
+		color: var(--clr-primary-650);
+		text-transform: capitalize;
+	}
+
+	.accordion {
+		/* outline: 2px solid red; */
+
+		width: 100%;
+	}
+}
+
+/*        */
+/*        */
+/*        */
+/*        */
+/*        */
+
+/* Mobile landscape & Tablet Portrait screens */
+/* (min-width > 500px ) & (max-width <= 875px) */
+@media screen and (width > 31.25em) and (width <= 54.69em) {
+	/** layout for the page header section */
+	.faq-title__section {
+		/* outline: 4px solid pink; */
+
+		width: 100%;
+
+		padding: 4rem 0 0 0;
+	}
+
+	.faq-title__container {
+		/* outline: 4px solid purple; */
+
+		width: 100%;
+		max-width: var(--width__1200px);
+		margin: 0 auto;
+	}
+
+	.faq-title__text {
+		/* outline: 2px solid gray; */
+
+		font-family: var(--ff-primary);
+		font-size: var(--fs-400);
+		font-weight: var(--fw-bold);
+		line-height: var(--lh-600);
+		text-align: center;
+		color: var(--clr-primary-650);
+		text-transform: uppercase;
+	}
+
+	/** layout for the accordion section */
+	.faq-accordion__section {
+		width: 100%;
+		padding: 0 0 4rem 0;
+	}
+
+	.faq-accordion__container {
+		/* outline: 4px solid green; */
+
+		padding: 0 0.8rem;
+
+		width: 100%;
+		max-width: var(--width__1200px);
+		max-width: var(--width__900px);
+		margin: 0 auto;
+	}
+
+	.faq-accordion__section-title {
+		/* outline: 2px solid blue; */
+
+		padding: 4rem 0 1rem 0;
+
+		font-family: var(--ff-primary);
+		font-size: var(--fs-500);
+		font-weight: var(--fw-bold);
+		line-height: var(--lh-430);
+		text-align: left;
+		color: var(--clr-primary-650);
+		text-transform: capitalize;
+	}
+
+	.accordion {
+		/* outline: 2px solid red; */
+
+		width: 100%;
+	}
+}
+
+/*        */
+/*        */
+/*        */
+/*        */
+/*        */
+
+/** Screens > 875px */
+@media screen and (width > 54.69em) {
+	/** layout for the page header section */
+	.faq-title__section {
+		/* outline: 4px solid pink; */
+
+		width: 100%;
+
+		padding: 4rem 0 0 0;
+	}
+
+	.faq-title__container {
+		/* outline: 4px solid purple; */
+
+		width: 100%;
+		max-width: var(--width__1200px);
+		margin: 0 auto;
+	}
+
+	.faq-title__text {
+		/* outline: 2px solid gray; */
+
+		font-family: var(--ff-primary);
+		font-size: var(--fs-400);
+		font-weight: var(--fw-bold);
+		line-height: var(--lh-600);
+		text-align: center;
+		color: var(--clr-primary-650);
+		text-transform: uppercase;
+	}
+
+	/** layout for the accordion section */
+	.faq-accordion__section {
+		width: 100%;
+		padding: 0 0 4rem 0;
+	}
+
+	.faq-accordion__container {
+		/* outline: 4px solid green; */
+
+		padding: 0 0.8rem;
+
+		width: 100%;
+		max-width: var(--width__1200px);
+		max-width: var(--width__900px);
+		margin: 0 auto;
+	}
+
+	.faq-accordion__section-title {
+		/* outline: 2px solid blue; */
+
+		padding: 4rem 0 1rem 0;
+
+		font-family: var(--ff-primary);
+		font-size: var(--fs-500);
+		font-weight: var(--fw-bold);
+		line-height: var(--lh-430);
+		text-align: left;
+		color: var(--clr-primary-650);
+		text-transform: capitalize;
+	}
+
+	.accordion {
+		/* outline: 2px solid red; */
+
+		width: 100%;
+	}
+}

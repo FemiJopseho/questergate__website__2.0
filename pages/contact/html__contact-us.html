@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- --------------search engine robots SEO-------------- -->
+		<meta name="robots" content="index, follow" />
+
+		<meta
+			name="description"
+			content="Questergate helps both individual investors and professional traders make more money in the financial market."
+		/>
+
+		<!-- -----------explorer compatibility---------- -->
+		<meta http-equiv="X-UA-Compatible" />
+
+		<!-- --------Cache control meta tag------------ -->
+		<meta http-equiv="Cache-control" content="public" max-age="7776000" />
+
+		<!-- ----------------Security---------------- -->
+		<meta http-equiv="X-Content-Type-Options" content="nosniff" />
+
+		<meta
+			http-equiv="Strict-Transport-Security"
+			content="max-age=31536000; includeSubDomains; preload"
+		/>
+
+		<meta
+			http-equiv="Content-Security-Policy"
+			content="upgrade-insecure-requests"
+		/>
+
+		<!-- -----------------CSS Resets-------------------- -->
+		<!-- Use Normalize Reset -->
+		<link rel="stylesheet" href="../../css-resets/normalize.css" />
+
+		<link
+			rel="stylesheet"
+			href="https://necolas.github.io/normalize.css/latest/normalize.css"
+		/>
+
+		<!-- -----------------FONTS (loaded for a start)-------------------- -->
+
+		<style type="text/css">
+			@font-face {
+				font-display: swap;
+				font-family: "Nunito";
+				font-style: normal;
+				font-weight: 400;
+
+				src: local("Nunito"),
+					url("../../utilities/fonts/nunito-v26-latin-regular.woff2")
+						format("woff2");
+			}
+
+			@font-face {
+				font-display: swap;
+				font-family: "Montagu Slab";
+				font-style: normal;
+				font-weight: 400;
+
+				src: local("Montagu Slab"),
+					url("../../utilities/fonts/montagu-slab-v12-latin-regular.woff2")
+						format("woff2");
+			}
+		</style>
+
+		<!-- -------Other stylesheets, and scripts---------- -->
+		<link
+			rel="stylesheet"
+			href="../1-css-components/joined-fixed-component.css"
+		/>
+		<link rel="stylesheet" href="../1-css-components/6-utility-classes.css" />
+		<link rel="stylesheet" href="../1-css-components/7-generic-header.css" />
+		<link rel="stylesheet" href="./2-body-content__contact-us.css" />
+
+		<!-- --------------JQUERY ACCESS via CDN and via Local server----------------- -->
+
+		<script
+			src="https://code.jquery.com/jquery-3.7.1.min.js"
+			integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+			crossorigin="anonymous"
+		></script>
+
+		<script src="../js-components/jquery-3.7.1.min.js"></script>
+
+		<title>Contact Us</title>
+
+		<link
+			rel="icon"
+			type="image/x-icon"
+			href="../../images/QG__favicon__no__background.ico"
+		/>
+	</head>
+
+	<body>
+		<button
+			onclick="backToTop__Function()"
+			id="back-to-top"
+			class="back-to-top"
+			title="Go to top"
+		>
+			Top &#8593;
+		</button>
+
+		<div class="gen-container">
+			<header class="header" id="header">
+				<div class="header__items-container">
+					<nav class="navbar-xsm-screen">
+						<div class="brand xsm__brand">
+							<a
+								href="../homepage/html__homepage.html"
+								class="brand__logo-link"
+							>
+								<img
+									class="brand__logo"
+									src="../../images/QG_LOGO_small-horizontal.jpg"
+									alt="Questergate logo"
+								/>
+							</a>
+						</div>
+					</nav>
+
+					<nav class="navbar">
+						<div class="brand sm-screen__brand">
+							<a
+								href="../homepage/html__homepage.html"
+								class="brand__logo-link"
+							>
+								<img
+									class="brand__logo"
+									src="../../images/QG_LOGO_small-horizontal.jpg"
+									alt="Questergate logo"
+								/>
+							</a>
+						</div>
+
+						<div class="brand bg-screen__brand">
+							<a
+								href="../homepage/html__homepage.html"
+								class="brand__logo-link"
+							>
+								<img
+									class="brand__logo"
+									src="../../images/QG_LOGO_small-horizontal.jpg"
+									alt="Questergate logo"
+								/>
+							</a>
+
+							<p class="brand__text">
+								<a
+									href="../homepage/html__homepage.html"
+									class="brand__text-link"
+									>Questergate</a
+								>
+							</p>
+						</div>
+
+						<div class="menu" id="menu">
+							<ul class="menu-inner">
+								<li class="menu-item">
+									<a href="../homepage/html__homepage.html" class="menu-link"
+										>Home</a
+									>
+								</li>
+
+								<li class="menu-item">
+									<a href="../about-us/html__about-us.html" class="menu-link"
+										>About</a
+									>
+								</li>
+
+								<!-- <li class="menu-item">
+								<a href="../contact/html__contact-us.html" class="menu-link"
+									>Contact</a
+								>
+							</li> -->
+
+								<li class="menu-item">
+									<a href="../blog/html__blog.html" class="menu-link">Blog</a>
+								</li>
+
+								<li class="menu-item">
+									<a href="../faq/html__faq.html" class="menu-link">FAQs</a>
+								</li>
+							</ul>
+						</div>
+
+						<div class="menu-block dropdown-container">
+							<label for="header__dropbtn__checkbox" class="dropbtn">
+								<span class="dropbtn__text">Products</span
+								><i class="arrow down"></i>
+							</label>
+
+							<input type="checkbox" id="header__dropbtn__checkbox" />
+
+							<ul class="header-slide-down">
+								<li class="header-slide-down__items">
+									<a
+										class="header-slide-down__items-links"
+										href="../IAS/html__ias.html"
+										>Software</a
+									>
+								</li>
+
+								<li class="header-slide-down__items">
+									<a
+										class="header-slide-down__items-links"
+										href="../signalapp/html__signalapp.html"
+										>Signal App</a
+									>
+								</li>
+
+								<li class="header-slide-down__items">
+									<a class="header-slide-down__items-links" href="#"
+										>Fund Management</a
+									>
+								</li>
+							</ul>
+						</div>
+
+						<div class="burger" id="burger">
+							<span class="burger-line"></span>
+							<span class="burger-line"></span>
+							<span class="burger-line"></span>
+							<span class="burger-line"></span>
+						</div>
+					</nav>
+				</div>
+			</header>
+
+			<main class="main">
+				<!-- -------start of contact-us MAIN IMAGE section------- -->
+				<section class="contact-us__main-image__section">
+					<div class="contact-us__main-image__container">
+						<img
+							class="contact-us__main-image"
+							src="../../images/contact-us--small.jpg"
+							alt="contact us"
+						/>
+
+						<p class="contact-us__main-image__text">CONTACT US</p>
+					</div>
+				</section>
+
+				<!-- -------start of contact-us PLATFORMS section------- -->
+				<section class="contact-us__platforms__section">
+					<div class="contact-us__platforms__container">
+						<div class="contact-us__platforms__card">
+							<p class="contact-us__platforms__card-text">
+								Need help? <br />
+								Contact us on:
+							</p>
+
+							<div class="contact-us__platforms__socials__container">
+								<a
+									href=""
+									class="contact-us__platforms__socials__link"
+									target="_blank"
+								>
+									<div class="contact-us__platforms__socials__image-container">
+										<img
+											src="../../images/facebook-symbol--smallest.jpg"
+											alt="facebook icon"
+											class="contact-us__platforms__socials__image"
+										/>
+									</div>
+
+									<p class="contact-us__platforms__socials__name">Facebook</p>
+								</a>
+
+								<a
+									href=""
+									class="contact-us__platforms__socials__link"
+									target="_blank"
+								>
+									<div class="contact-us__platforms__socials__image-container">
+										<img
+											src="../../images/instagram-logo-icon-7--smaller.jpg"
+											alt="instagram icon"
+											class="contact-us__platforms__socials__image"
+										/>
+									</div>
+
+									<p class="contact-us__platforms__socials__name">Instagram</p>
+								</a>
+
+								<a
+									href=""
+									class="contact-us__platforms__socials__link"
+									target="_blank"
+								>
+									<div class="contact-us__platforms__socials__image-container">
+										<img
+											src="../../images/LinkedIn_icon_circle--smallest.jpg"
+											alt="linkedIn icon"
+											class="contact-us__platforms__socials__image"
+										/>
+									</div>
+
+									<p class="contact-us__platforms__socials__name">LinkedIn</p>
+								</a>
+							</div>
+
+							<div class="contact-us__platforms__non-socials__container">
+								<a
+									href=""
+									class="contact-us__platforms__non-socials__link"
+									target="_blank"
+								>
+									<div
+										class="contact-us__platforms__non-socials__image-container"
+									>
+										<img
+											src="../../images/contact-us-email4--fixed--smaller.jpg"
+											alt="email icon"
+											class="contact-us__platforms__non-socials__image"
+										/>
+									</div>
+
+									<p class="contact-us__platforms__non-socials__name">
+										contact@questergate.com
+									</p>
+								</a>
+
+								<a
+									href=""
+									class="contact-us__platforms__non-socials__link"
+									target="_blank"
+								>
+									<div
+										class="contact-us__platforms__non-socials__image-container"
+									>
+										<img
+											src="../../images/contact-us-phone2--smallest.jpg"
+											alt="phone call icon"
+											class="contact-us__platforms__non-socials__image"
+										/>
+									</div>
+
+									<p class="contact-us__platforms__non-socials__name">
+										+234 814 447 7866
+									</p>
+								</a>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- -------start of CONTACT FORM section------- -->
+				<section class="contact-us__contact-form__section">
+					<div class="contact-us__contact-form__container">
+						<p class="contact-us__contact-form__text hidden" id="form__text">
+							We would love to hear from you
+						</p>
+
+						<div class="contact-us__contact-form__form__container">
+							<form
+								class="contact-us__contact-form__form"
+								id="contact-form__form"
+								action="/submit"
+								method="post"
+							>
+								<div class="contact-form__form-section1__container">
+									<label for="your-fullname">
+										<input
+											type="text"
+											name="fullname"
+											id="your-fullname"
+											class="your__fullname"
+											placeholder="Full name"
+											required
+										/>
+									</label>
+
+									<label for="your-email">
+										<input
+											type="email"
+											name="email"
+											id="your-email"
+											class="your__email"
+											placeholder="Email"
+											required
+										/>
+									</label>
+
+									<label for="your-phonenumber">
+										<input
+											type="tel"
+											name="phone-number"
+											id="your-phonenumber"
+											class="your__phonenumber"
+											placeholder="Phone number"
+											required
+										/>
+									</label>
+								</div>
+
+								<div class="contact-form__form-section2__container">
+									<textarea
+										name="message"
+										id="yourmessage"
+										class="your__message"
+										cols="30"
+										rows="10"
+										placeholder="leave us a message"
+										required
+									></textarea>
+
+									<button class="contact-form__submit-button" type="submit">
+										Submit
+									</button>
+								</div>
+							</form>
+
+							<div id="success-message" class="success-message">
+								Thank you for reaching out!
+								<br />
+								We have received your message.
+								<br />
+								<br />
+								Our team will promptly review it and get back to you.
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- -------start of FOOTER section------- -->
+				<footer class="footer hidden">
+					<!-- footer section1 -->
+					<div class="footer__section1-container">
+						<div class="footer__section1-part1__container">
+							<!-- footer sub-section for Products -->
+							<div class="footer__products section1-item">
+								<h3 class="footer__section1__sub-heading">Products</h3>
+
+								<ul class="footer__list-text list__no-style">
+									<li>
+										<a
+											class="footer__links pad-marg-0"
+											href="../IAS/html__ias.html"
+											>Investment Analytics Software</a
+										>
+									</li>
+
+									<li>
+										<a
+											class="footer__links pad-marg-0"
+											href="../signalapp/html__signalapp.html"
+											>Signal App</a
+										>
+									</li>
+
+									<li>
+										<a class="footer__links pad-marg-0" href="#">Investments</a>
+									</li>
+								</ul>
+							</div>
+
+							<!-- footer sub-section for Company -->
+							<div class="footer__company section1-item">
+								<h3 class="footer__section1__sub-heading">Company</h3>
+
+								<ul class="footer__list-text list__no-style">
+									<li>
+										<a
+											class="footer__links pad-marg-0"
+											href="../about-us/html__about-us.html"
+											>About Us</a
+										>
+									</li>
+
+									<li>
+										<a
+											class="footer__links pad-marg-0"
+											href="../blog/html__blog.html"
+											>Blog</a
+										>
+									</li>
+
+									<li>
+										<a
+											class="footer__links pad-marg-0"
+											href="../faq/html__faq.html"
+											>FAQ</a
+										>
+									</li>
+
+									<li>
+										<a
+											class="footer__links pad-marg-0"
+											href="../contact/html__contact-us.html"
+											>Contact Us</a
+										>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="footer__section1-part2__container">
+							<!-- footer sub-section for Legal -->
+							<div class="footer__legal section1-item">
+								<h3 class="footer__section1__sub-heading">Legal</h3>
+
+								<ul class="footer__list-text list__no-style">
+									<li>
+										<a class="footer__links pad-marg-0" href="#"
+											>Terms & Conditions</a
+										>
+									</li>
+
+									<li>
+										<a class="footer__links pad-marg-0" href="#"
+											>Privacy Policy</a
+										>
+									</li>
+								</ul>
+							</div>
+
+							<!-- footer sub-section for Contact details -->
+							<div class="footer__contact-details section1-item">
+								<h3
+									class="footer__section1__sub-heading contact-details visible__nooo"
+								>
+									Contact Us
+								</h3>
+
+								<ul class="footer__list-text list__no-style">
+									<li class="contact-email">
+										<a class="footer__links pad-marg-0 no-hover-effect-1"
+											>contact@questergate.com</a
+										>
+									</li>
+
+									<li class="contact-phone">+234 814 447 7866</li>
+								</ul>
+
+								<div class="socials__container contact-social">
+									<a href="#" class="socials__link" target="_blank"
+										><img
+											class="socials__link-image"
+											src="../../images/facebook-symbol--smallest.jpg"
+											alt="facebook logo"
+										/>
+									</a>
+
+									<a href="#" class="socials__link" target="_blank"
+										><img
+											class="socials__link-image"
+											src="../../images/LinkedIn_icon_circle--smallest.jpg"
+											alt="linkedin logo"
+										/>
+									</a>
+
+									<a href="#" class="socials__link" target="_blank"
+										><img
+											class="socials__link-image"
+											src="../../images/instagram-logo-icon-7--smaller.jpg"
+											alt="instagram logo"
+										/>
+									</a>
+
+									<a href="#" class="socials__link" target="_blank"
+										><img
+											class="socials__link-image"
+											src="../../images/twitter-X-symbol.png"
+											alt="twitter logo"
+										/>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- <hr class="hr-horizontal-line"/> -->
+					<div class="footer-horizontal-line"></div>
+
+					<div class="footer__section2-container">
+						<div class="copyright">
+							<p class="footer__other-text">
+								© 2023 Questergate. All rights reserved. | RC-1814438
+							</p>
+						</div>
+					</div>
+				</footer>
+			</main>
+		</div>
+
+		<script defer src="../js-components/back-to-top.js"></script>
+		<script defer src="../js-components/header__hamburger.js"></script>
+		<script defer src="../js-components/header__dropdown-button.js"></script>
+		<script defer src="../js-components/contact-form__success-msg.js"></script>
+		<script
+			defer
+			src="../js-components/section__visible__on__scroll.js"
+		></script>
+	</body>
+</html>

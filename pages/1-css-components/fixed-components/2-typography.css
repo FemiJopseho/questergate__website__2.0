@@ -1,0 +1,164 @@
+/* this contains styling for site TYPOGRAPHY */
+:root {
+	/* ////////////////////////////////// */
+	/** Fonts */
+	--ff-primary: "Nunito", sans-serif;
+	--ff-secondary: "Montagu Slab", sans-serif;
+	--ff-btn: "Roboto", sans-serif;
+
+	--ff-body: var(--ff-primary);
+	--ff-heading: var(--ff-primary);
+
+	--fw-regular: 400;
+	--fw-semi-bold: 500;
+	--fw-bold: 700;
+
+	/* ////////////////////////////////// */
+	/* the -100, -200 at the end of the fs is just to... */
+	/* help number it and easily add sth in-between in future */
+	--fs-100: 4rem;
+	/* 64px */
+	--fs-220: 3.625rem;
+	/* 58px */
+	--fs-200: 3.375rem;
+	/* 54px */
+	--fs-300: 2.75rem;
+	/* 44px */
+	--fs-400: 2.375rem;
+	/* 38px */
+	--fs-450: 2.125rem;
+	/* 34px */
+	--fs-500: 1.875rem;
+	/* 30px */
+	--fs-550: 1.75rem;
+	/* 28px */
+	--fs-600: 1.5rem;
+	/* 24px */
+	--fs-700: 1.25rem;
+	/* 20px */
+	--fs-800: 1rem;
+	/* 16px Base Size */
+	--fs-900: 0.875rem;
+	/* 14px */
+	--fs-1000: 0.75rem;
+	/* 12px */
+	--fs-1100: 0.625rem;
+	/* 10px */
+
+	/* ////////////////////////////////// */
+	/** lh == line height */
+	--lh-100: 140%;
+	--lh-200: 136%;
+	--lh-300: 1.25rem;
+	/* 20px */
+	--lh-400: 1.364rem;
+	/* 21.82px */
+	--lh-410: 1.705rem;
+	/* 27.28px */
+	--lh-430: 2.046rem;
+	/* 32.74px */
+	--lh-500: 2.5rem;
+	/* 40px */
+	--lh-600: 3.125rem;
+	/* 50px */
+	--lh-700: 3.75rem;
+	/* 60px */
+	--lh-800: 4rem;
+	/* 64px */
+	--lh-900: 5.438rem;
+	/* 87px */
+
+
+
+	/* ////////////////////////////////// */
+	/** Card dimensions */
+	--shadow-card-width: 23rem;
+	/* 368px */
+	--shadow-card-height: 23rem;
+	/* 368px */
+
+	/* ////////////////////////////////// */
+	/** Define the spacing unit as 8 pixels */
+	--spacing-unit: 8px;
+
+	/* ////////////////////////////////// */
+	/* Link Dimensions */
+	--link__border-radius: 0.75rem;
+	/* 12px */
+
+	/* ////////////////////////////////// */
+	/** Other dimensions -- MOBILE */
+	--mfs__hero__phrase: var(--fs-600);
+	--mfs__hero__carousel: 3rem;
+	/* 32px */
+	--mfs__hero__statement: var(--fs-600);
+	--mfs__hero__cta__btn: var(--fs-700);
+
+	--mls__hero__carousel: calc(0.05 * var(--mfs__hero__carousel));
+	/* 5% --used fs*/
+
+	--mls__hero__phrase: calc(0.02 * var(--mfs__hero__phrase));
+	/* 2% --used fs*/
+
+	--mls__hero__statement: calc(0.02 * var(--mfs__hero__statement));
+	/* 2% --used fs*/
+
+	/* ////////// */
+	/* Hamburger for mobile  */
+	--width__burger: 2.5rem;
+	--height__burger: 2.5rem;
+	--height__burger-line: 5px;
+
+	/* ////////////////////////////////// */
+	/** Other dimensions -- TABLET */
+	--t-fs__hero__phrase: var(--fs-600);
+	--t-fs__hero__carousel: var(--fs-220);
+	/* 58px */
+	--t-fs__hero__statement: var(--fs-600);
+	--t-fs__hero__cta__btn: var(--fs-700);
+
+	--t-ls__hero__carousel: calc(0.05 * var(--t-fs__hero__carousel));
+	/* 5% --used fs*/
+
+	--t-ls__hero__phrase: calc(0.02 * var(--t-fs__hero__phrase));
+	/* 2% --used fs*/
+
+	--t-ls__hero__statement: calc(0.02 * var(--t-fs__hero__statement));
+	/* 2% --used fs*/
+
+	/* ////////////////////////////////// */
+	/** Other dimensions -- Desktop, laptop, larger screens */
+	--d-fs__hero__phrase: var(--fs-600);
+	--d-fs__hero__carousel: var(--fs-220);
+	/* 58px */
+	--d-fs__hero__statement: var(--fs-600);
+	--d-fs__hero__cta__btn: var(--fs-700);
+
+	--d-ls__hero__carousel: calc(0.05 * var(--d-fs__hero__carousel));
+	/* 5% --used fs*/
+
+	--d-ls__hero__phrase: calc(0.02 * var(--d-fs__hero__phrase));
+	/* 2% --used fs*/
+
+	--d-ls__hero__statement: calc(0.02 * var(--d-fs__hero__statement));
+	/* 2% --used fs*/
+
+	/* ////////////////////////////////// */
+	/** WIDTH Dimensions */
+	--width__always-fill: 100%;
+	/* makes the width always full */
+	--width__1440px: 90rem;
+	/* 1440px=100% of parent = gen-container */
+	--width__1200px: 75rem;
+	/* 83.33% of gen-container*/
+	--width__1100px: 68.75rem;
+	/* 76.38% of gen-container */
+	--width__1000px: 62.5rem;
+	/* 69.44% of gen-container */
+	--width__900px: 56.25rem;
+	/* 62.5% of gen-container */
+	--min-width__235px: 14.69rem;
+	/* min width of the gen-container */
+	--min-width__250px: 15.63rem;
+	/* revised min width of the gen-container */
+}

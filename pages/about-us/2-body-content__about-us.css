@@ -1,0 +1,1006 @@
+/* This code is for the styling of the general body of the ABOUT-US page */
+
+/** Mobile view */
+/* max-width: 500px */
+@media screen and (width <= 31.25em) {
+	/* ///////////////// */
+	:root {
+		--m-ff__about-us__text__header: var(--ff-primary);
+		--m-ff__about-us__text__parag: var(--ff-primary);
+		--m-ff__about-us__profile__card__name: var(--ff-primary);
+
+		--m-fs__about-us__text__header: var(--fs-600);
+		--m-fs__about-us__text__parag: var(--fs-700);
+		--m-fs__about-us__profile__card__name: var(--fs-800);
+
+		--m-ls__about-us__text__header: calc(
+			0.02 * var(--m-fs__about-us__text__header)
+		); /* 2% --used fs*/
+
+		--m-ls__about-us__text__parag: calc(
+			0.02 * var(--m-fs__about-us__text__parag)
+		); /* 2% --used fs*/
+
+		--m-ls__about-us__profile__card__name: calc(
+			0.02 * var(--m-fs__about-us__profile__card__name)
+		); /* 2% --used fs*/
+	}
+	/* ////////////////// */
+
+	/* /////////////////// */
+	/** About-us Main-Image Section */
+	/* /////////////////// */
+	.about-us__main-image__section {
+		/* outline: 4px solid gold; */
+
+		width: 100%;
+		padding: 0 0 4rem 0;
+	}
+
+	.about-us__main-image__container {
+		/* outline: 4px solid green; */
+
+		width: 100%;
+		max-width: var(--width__1200px);
+		margin: 0 auto;
+		border: none;
+
+		/* ////////////// */
+		.about-us__main-image {
+			width: 100%;
+			min-height: 40vh;
+		}
+	}
+
+	/* /////////////////// */
+	/** About-us Texts section */
+	/* /////////////////// */
+	.about-us__text__section {
+		/* outline: 4px solid skyblue; */
+
+		width: 100%;
+		padding: 0 0.5rem 6.5rem 0.5rem;
+	}
+
+	.about-us__text__container {
+		/* outline: 4px solid indianred; */
+
+		width: 100%;
+		max-width: var(--width__900px);
+		margin: 0 auto;
+
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: center;
+		align-items: center;
+		row-gap: 4rem;
+	}
+
+	.about-us__text {
+		/* outline: 2px solid black; */
+
+		width: 100%;
+		text-align: center;
+
+		/* /////////////// */
+		.about-us__text__header {
+			font-family: var(--m-ff__about-us__text__header);
+			font-size: var(--m-fs__about-us__text__header);
+			font-weight: var(--fw-bold);
+			line-height: var(--lh-410);
+			letter-spacing: var(--m-ls__about-us__text__header);
+			color: var(--clr-tertiary-100);
+
+			padding: 0 0 0.625rem 0;
+		}
+
+		/* //////////////// */
+		.about-us__text__parag {
+			font-family: var(--m-ff__about-us__text__parag);
+			font-size: var(--m-fs__about-us__text__parag);
+			font-weight: var(--fw-regular);
+			line-height: var(--lh-410);
+			letter-spacing: var(--m-ls__about-us__text__parag);
+			color: var(--clr-tertiary-100);
+		}
+	}
+
+	/* //////////////////// */
+	/** styles for EXEC TEAM section */
+	/* /////////////////// */
+	.about-us__exec-team__section {
+		/* outline: 4px solid pink; */
+
+		width: 100%;
+		padding: 0 0.5rem 4rem 0.5rem;
+	}
+
+	.about-us__exec-team__container {
+		/* outline: 4px solid purple; */
+
+		width: 100%;
+		max-width: var(--width__1200px);
+		margin: 0 auto;
+
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: center;
+		align-items: center;
+		row-gap: 4rem;
+	}
+
+	.about-us__exec-team__header {
+		/* outline: 2px solid red; */
+
+		text-align: center;
+
+		font-family: var(--m-ff__about-us__text__header);
+		font-size: var(--m-fs__about-us__text__header);
+		font-weight: var(--fw-bold);
+		line-height: var(--lh-410);
+		letter-spacing: var(--m-ls__about-us__text__header);
+		color: var(--clr-tertiary-100);
+	}
+
+	.about-us__exec-team__profile__container {
+		/* outline: 2px solid crimson; */
+
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: flex-start;
+		row-gap: 1.25rem;
+		column-gap: 2rem;
+	}
+
+	/** designing the cards for EXEC profiles */
+	.about-us__profile__card {
+		/* outline: 2px solid black; */
+
+		padding: 2rem 1rem;
+		text-align: center;
+		background-color: var(--clr-grays-750);
+		border-radius: 0.625rem;
+		box-shadow: var(--gen-shadow-02);
+
+		/* makes the cards same width and the width is constant */
+		align-self: stretch;
+		flex-grow: 0;
+		flex-shrink: 0;
+		flex-basis: 25%;
+		max-width: 25%;
+		min-width: 250px;
+
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+		align-items: center;
+		row-gap: 1.25rem;
+
+		/* //////////////// */
+		.about-us__profile__card__img__container {
+			/* outline: 2px solid pink; */
+
+			border-radius: 50%;
+
+			/* ////////////// */
+			.about-us__profile__card__img {
+				/* outline: 2px solid black; */
+
+				width: 80px;
+				height: 80px;
+				margin: 0 auto;
+
+				border-radius: 50%;
+			}
+		}
+
+		/* //////////////// */
+		.about-us__profile__card__name {
+			/* outline: 2px solid black; */
+
+			font-family: var(--m-ff__about-us__profile__card__name);
+			font-size: var(--m-fs__about-us__profile__card__name);
+			font-weight: var(--fw-bold);
+			line-height: var(--lh-400);
+			letter-spacing: var(--m-ls__about-us__profile__card__name);
+			color: var(--clr-tertiary-100);
+		}
+
+		/* /////////////////// */
+		.about-us__profile__card__title {
+			/* outline: 2px solid black; */
+
+			font-family: var(--m-ff__about-us__profile__card__name);
+			font-size: var(--m-fs__about-us__profile__card__name);
+			font-weight: var(--fw-bold);
+			line-height: var(--lh-400);
+			letter-spacing: var(--m-ls__about-us__profile__card__name);
+			color: var(--clr-tertiary-100);
+			text-align: center;
+		}
+	}
+
+	/* //////////////////// */
+	/** styles for OTHER TEAM section */
+	/* /////////////////// */
+	.about-us__other-team__section {
+		/* outline: 4px solid brown; */
+
+		width: 100%;
+		padding: 0 0.5rem 6.5rem 0.5rem;
+	}
+
+	.about-us__other-team__container {
+		/* outline: 4px solid purple; */
+
+		width: 100%;
+		max-width: var(--width__1200px);
+		margin: 0 auto;
+	}
+
+	.about-us__other-team__profile__container {
+		/* outline: 2px solid orange; */
+
+		width: 100%;
+
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: flex-start;
+		row-gap: 1.25rem;
+		column-gap: 2rem;
+	}
+
+	/** designing the cards for OTHER-TEAM profiles */
+	.about-us__profile__card-others {
+		/* outline: 2px solid black; */
+
+		padding: 2rem 1rem;
+		text-align: center;
+		background-color: var(--clr-grays-750);
+		border-radius: 0.625rem;
+		box-shadow: var(--gen-shadow-02);
+
+		/* makes the cards same width and the width is constant */
+		align-self: stretch;
+		flex-grow: 0;
+		flex-shrink: 0;
+		flex-basis: 20%;
+		max-width: 20%;
+		min-width: 250px;
+
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+		align-items: center;
+		row-gap: 1.25rem;
+
+		/* //////////////// */
+		.about-us__profile__card__img__container {
+			/* outline: 2px solid pink; */
+
+			border-radius: 50%;
+
+			/* ////////////// */
+			.about-us__profile__card__img {
+				/* outline: 2px solid black; */
+
+				width: 80px;
+				height: 80px;
+				margin: 0 auto;
+
+				border-radius: 50%;
+			}
+		}
+
+		/* //////////////// */
+		.about-us__profile__card__name {
+			/* outline: 2px solid black; */
+
+			font-family: var(--m-ff__about-us__profile__card__name);
+			font-size: var(--m-fs__about-us__profile__card__name);
+			font-weight: var(--fw-bold);
+			line-height: var(--lh-400);
+			letter-spacing: var(--m-ls__about-us__profile__card__name);
+			color: var(--clr-tertiary-100);
+		}
+
+		/* /////////////////// */
+		.about-us__profile__card__title {
+			/* outline: 2px solid black; */
+
+			font-family: var(--m-ff__about-us__profile__card__name);
+			font-size: var(--m-fs__about-us__profile__card__name);
+			font-weight: var(--fw-bold);
+			line-height: var(--lh-400);
+			letter-spacing: var(--m-ls__about-us__profile__card__name);
+			color: var(--clr-tertiary-100);
+			text-align: center;
+		}
+	}
+}
+
+/*        */
+/*        */
+/*        */
+/*        */
+/*        */
+
+/* Mobile landscape & Tablet Portrait screens */
+/* (min-width > 500px ) & (max-width <= 875px) */
+@media screen and (width > 31.25em) and (width <= 54.69em) {
+	/* ///////////////// */
+	:root {
+		--t-ff__about-us__text__header: var(--ff-primary);
+		--t-ff__about-us__text__parag: var(--ff-primary);
+		--t-ff__about-us__profile__card__name: var(--ff-primary);
+
+		--t-fs__about-us__text__header: var(--fs-600);
+		--t-fs__about-us__text__parag: var(--fs-700);
+		--t-fs__about-us__profile__card__name: var(--fs-800);
+
+		--t-ls__about-us__text__header: calc(
+			0.02 * var(--t-fs__about-us__text__header)
+		); /* 2% --used fs*/
+
+		--t-ls__about-us__text__parag: calc(
+			0.02 * var(--t-fs__about-us__text__parag)
+		); /* 2% --used fs*/
+
+		--t-ls__about-us__profile__card__name: calc(
+			0.02 * var(--t-fs__about-us__profile__card__name)
+		); /* 2% --used fs*/
+	}
+	/* ////////////////// */
+
+	/* /////////////////// */
+	/** About-us Main-Image Section */
+	/* /////////////////// */
+	.about-us__main-image__section {
+		/* outline: 4px solid gold; */
+
+		width: 100%;
+		padding: 0 0 4rem 0;
+	}
+
+	.about-us__main-image__container {
+		/* outline: 4px solid green; */
+
+		width: 100%;
+		max-width: var(--width__1200px);
+		margin: 0 auto;
+		border: none;
+
+		/* ////////////// */
+		.about-us__main-image {
+			width: 100%;
+			min-height: 40vh;
+		}
+	}
+
+	/* /////////////////// */
+	/** About-us Texts section */
+	/* /////////////////// */
+	.about-us__text__section {
+		/* outline: 4px solid skyblue; */
+
+		width: 100%;
+		padding: 0 1rem 6.5rem 1rem;
+	}
+
+	.about-us__text__container {
+		/* outline: 4px solid indianred; */
+
+		width: 100%;
+		max-width: var(--width__900px);
+		margin: 0 auto;
+
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: center;
+		align-items: center;
+		row-gap: 4rem;
+	}
+
+	.about-us__text {
+		/* outline: 2px solid black; */
+
+		width: 100%;
+		text-align: center;
+
+		/* /////////////// */
+		.about-us__text__header {
+			font-family: var(--t-ff__about-us__text__header);
+			font-size: var(--t-fs__about-us__text__header);
+			font-weight: var(--fw-bold);
+			line-height: var(--lh-410);
+			letter-spacing: var(--t-ls__about-us__text__header);
+			color: var(--clr-tertiary-100);
+
+			padding: 0 0 0.625rem 0;
+		}
+
+		/* //////////////// */
+		.about-us__text__parag {
+			font-family: var(--t-ff__about-us__text__parag);
+			font-size: var(--t-fs__about-us__text__parag);
+			font-weight: var(--fw-regular);
+			line-height: var(--lh-410);
+			letter-spacing: var(--t-ls__about-us__text__parag);
+			color: var(--clr-tertiary-100);
+		}
+	}
+
+	/* //////////////////// */
+	/** styles for EXEC TEAM section */
+	/* /////////////////// */
+	.about-us__exec-team__section {
+		/* outline: 4px solid pink; */
+
+		width: 100%;
+		padding: 0 1rem 4rem 1rem;
+	}
+
+	.about-us__exec-team__container {
+		/* outline: 4px solid purple; */
+
+		width: 100%;
+		max-width: var(--width__1200px);
+		margin: 0 auto;
+
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: center;
+		align-items: center;
+		row-gap: 4rem;
+	}
+
+	.about-us__exec-team__header {
+		/* outline: 2px solid red; */
+
+		text-align: center;
+
+		font-family: var(--t-ff__about-us__text__header);
+		font-size: var(--t-fs__about-us__text__header);
+		font-weight: var(--fw-bold);
+		line-height: var(--lh-410);
+		letter-spacing: var(--t-ls__about-us__text__header);
+		color: var(--clr-tertiary-100);
+	}
+
+	.about-us__exec-team__profile__container {
+		/* outline: 2px solid crimson; */
+
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: flex-start;
+		row-gap: 1.25rem;
+		column-gap: 2rem;
+	}
+
+	/** designing the cards for EXEC profiles */
+	.about-us__profile__card {
+		/* outline: 2px solid black; */
+
+		padding: 2rem 1rem;
+		text-align: center;
+		background-color: var(--clr-grays-750);
+		border-radius: 0.625rem;
+		box-shadow: var(--gen-shadow-02);
+
+		/* makes the cards same width and the width is constant */
+		align-self: stretch;
+		flex-grow: 0;
+		flex-shrink: 0;
+		flex-basis: 25%;
+		max-width: 25%;
+		min-width: 250px;
+
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+		align-items: center;
+		row-gap: 1.25rem;
+
+		/* //////////////// */
+		.about-us__profile__card__img__container {
+			/* outline: 2px solid pink; */
+
+			border-radius: 50%;
+
+			/* ////////////// */
+			.about-us__profile__card__img {
+				/* outline: 2px solid black; */
+
+				width: 80px;
+				height: 80px;
+				margin: 0 auto;
+
+				border-radius: 50%;
+			}
+		}
+
+		/* //////////////// */
+		.about-us__profile__card__name {
+			/* outline: 2px solid black; */
+
+			font-family: var(--t-ff__about-us__profile__card__name);
+			font-size: var(--t-fs__about-us__profile__card__name);
+			font-weight: var(--fw-bold);
+			line-height: var(--lh-400);
+			letter-spacing: var(--t-ls__about-us__profile__card__name);
+			color: var(--clr-tertiary-100);
+		}
+
+		/* /////////////////// */
+		.about-us__profile__card__title {
+			/* outline: 2px solid black; */
+
+			font-family: var(--t-ff__about-us__profile__card__name);
+			font-size: var(--t-fs__about-us__profile__card__name);
+			font-weight: var(--fw-bold);
+			line-height: var(--lh-400);
+			letter-spacing: var(--t-ls__about-us__profile__card__name);
+			color: var(--clr-tertiary-100);
+			text-align: center;
+		}
+	}
+
+	/* //////////////////// */
+	/** styles for OTHER TEAM section */
+	/* /////////////////// */
+	.about-us__other-team__section {
+		/* outline: 4px solid brown; */
+
+		width: 100%;
+		padding: 0rem 1rem 6.5rem 1rem;
+	}
+
+	.about-us__other-team__container {
+		/* outline: 4px solid purple; */
+
+		width: 100%;
+		max-width: var(--width__1200px);
+		margin: 0 auto;
+	}
+
+	.about-us__other-team__profile__container {
+		/* outline: 2px solid orange; */
+
+		width: 100%;
+
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: flex-start;
+		row-gap: 1.25rem;
+		column-gap: 2rem;
+	}
+
+	/** designing the cards for OTHER-TEAM profiles */
+	.about-us__profile__card-others {
+		/* outline: 2px solid black; */
+
+		padding: 2rem 1rem;
+		text-align: center;
+		background-color: var(--clr-grays-750);
+		border-radius: 0.625rem;
+		box-shadow: var(--gen-shadow-02);
+
+		/* makes the cards same width and the width is constant */
+		align-self: stretch;
+		flex-grow: 0;
+		flex-shrink: 0;
+		flex-basis: 20%;
+		max-width: 20%;
+		min-width: 250px;
+
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+		align-items: center;
+		row-gap: 1.25rem;
+
+		/* //////////////// */
+		.about-us__profile__card__img__container {
+			/* outline: 2px solid pink; */
+
+			border-radius: 50%;
+
+			/* ////////////// */
+			.about-us__profile__card__img {
+				/* outline: 2px solid black; */
+
+				width: 80px;
+				height: 80px;
+				margin: 0 auto;
+
+				border-radius: 50%;
+			}
+		}
+
+		/* //////////////// */
+		.about-us__profile__card__name {
+			/* outline: 2px solid black; */
+
+			font-family: var(--t-ff__about-us__profile__card__name);
+			font-size: var(--t-fs__about-us__profile__card__name);
+			font-weight: var(--fw-bold);
+			line-height: var(--lh-400);
+			letter-spacing: var(--t-ls__about-us__profile__card__name);
+			color: var(--clr-tertiary-100);
+		}
+
+		/* /////////////////// */
+		.about-us__profile__card__title {
+			/* outline: 2px solid black; */
+
+			font-family: var(--t-ff__about-us__profile__card__name);
+			font-size: var(--t-fs__about-us__profile__card__name);
+			font-weight: var(--fw-bold);
+			line-height: var(--lh-400);
+			letter-spacing: var(--t-ls__about-us__profile__card__name);
+			color: var(--clr-tertiary-100);
+			text-align: center;
+		}
+	}
+}
+
+/*        */
+/*        */
+/*        */
+/*        */
+/*        */
+
+/** Screens > 875px */
+@media screen and (width > 54.69em) {
+	/* ///////////////// */
+	:root {
+		--d-ff__about-us__text__header: var(--ff-primary);
+		--d-ff__about-us__text__parag: var(--ff-primary);
+		--d-ff__about-us__profile__card__name: var(--ff-primary);
+
+		--d-fs__about-us__text__header: var(--fs-600);
+		--d-fs__about-us__text__parag: var(--fs-700);
+		--d-fs__about-us__profile__card__name: var(--fs-800);
+
+		--d-ls__about-us__text__header: calc(
+			0.02 * var(--d-fs__about-us__text__header)
+		); /* 2% --used fs*/
+
+		--d-ls__about-us__text__parag: calc(
+			0.02 * var(--d-fs__about-us__text__parag)
+		); /* 2% --used fs*/
+
+		--d-ls__about-us__profile__card__name: calc(
+			0.02 * var(--d-fs__about-us__profile__card__name)
+		); /* 2% --used fs*/
+	}
+	/* ////////////////// */
+
+	/* /////////////////// */
+	/** About-us Main-Image Section */
+	/* /////////////////// */
+	.about-us__main-image__section {
+		/* outline: 4px solid gold; */
+
+		width: 100%;
+		padding: 0 0 4rem 0;
+	}
+
+	.about-us__main-image__container {
+		/* outline: 4px solid green; */
+
+		width: 100%;
+		max-width: var(--width__1200px);
+		margin: 0 auto;
+		border-radius: 1.875rem;
+
+		/* ////////////// */
+		.about-us__main-image {
+			width: 100%;
+			border-radius: 1.875rem;
+		}
+
+		/* /////////////////////// */
+		/* to remove the image round edges on smaller screen */
+		@media screen and (width < 1203px) {
+			.about-us__main-image__container {
+				border-radius: unset;
+			}
+
+			/* ////////////// */
+			.about-us__main-image {
+				border-radius: unset;
+			}
+		}
+	}
+
+	/* /////////////////// */
+	/** About-us Texts section */
+	/* /////////////////// */
+	.about-us__text__section {
+		/* outline: 4px solid skyblue; */
+
+		width: 100%;
+		padding: 0 0 6.5rem 0;
+	}
+
+	.about-us__text__container {
+		/* outline: 4px solid indianred; */
+
+		width: 100%;
+		max-width: var(--width__900px);
+		margin: 0 auto;
+
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: center;
+		align-items: center;
+		row-gap: 4rem;
+	}
+
+	.about-us__text {
+		/* outline: 2px solid black; */
+
+		width: 100%;
+		text-align: center;
+
+		/* /////////////// */
+		.about-us__text__header {
+			font-family: var(--d-ff__about-us__text__header);
+			font-size: var(--d-fs__about-us__text__header);
+			font-weight: var(--fw-bold);
+			line-height: var(--lh-410);
+			letter-spacing: var(--d-ls__about-us__text__header);
+			color: var(--clr-tertiary-100);
+
+			padding: 0 0 0.625rem 0;
+		}
+
+		/* //////////////// */
+		.about-us__text__parag {
+			font-family: var(--d-ff__about-us__text__parag);
+			font-size: var(--d-fs__about-us__text__parag);
+			font-weight: var(--fw-regular);
+			line-height: var(--lh-410);
+			letter-spacing: var(--d-ls__about-us__text__parag);
+			color: var(--clr-tertiary-100);
+		}
+	}
+
+	/* //////////////////// */
+	/** styles for EXEC TEAM section */
+	/* /////////////////// */
+	.about-us__exec-team__section {
+		/* outline: 4px solid pink; */
+
+		width: 100%;
+		padding: 0 0 4rem 0;
+	}
+
+	.about-us__exec-team__container {
+		/* outline: 4px solid purple; */
+
+		width: 100%;
+		max-width: var(--width__1200px);
+		margin: 0 auto;
+
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: center;
+		align-items: center;
+		row-gap: 4rem;
+	}
+
+	.about-us__exec-team__header {
+		/* outline: 2px solid red; */
+
+		text-align: center;
+
+		font-family: var(--d-ff__about-us__text__header);
+		font-size: var(--d-fs__about-us__text__header);
+		font-weight: var(--fw-bold);
+		line-height: var(--lh-410);
+		letter-spacing: var(--d-ls__about-us__text__header);
+		color: var(--clr-tertiary-100);
+	}
+
+	.about-us__exec-team__profile__container {
+		/* outline: 2px solid crimson; */
+
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: flex-start;
+		row-gap: 1.25rem;
+		column-gap: 2rem;
+	}
+
+	/** designing the cards for EXEC profiles */
+	.about-us__profile__card {
+		/* outline: 2px solid black; */
+
+		padding: 2rem 1rem;
+		text-align: center;
+		background-color: var(--clr-grays-750);
+		border-radius: 0.625rem;
+		box-shadow: var(--gen-shadow-02);
+
+		/* makes the cards same width and the width is constant */
+		align-self: stretch;
+		flex-grow: 0;
+		flex-shrink: 0;
+		flex-basis: 25%;
+		max-width: 25%;
+		min-width: 270px;
+
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+		align-items: center;
+		row-gap: 1.25rem;
+
+		/* //////////////// */
+		.about-us__profile__card__img__container {
+			/* outline: 2px solid pink; */
+
+			border-radius: 50%;
+
+			/* ////////////// */
+			.about-us__profile__card__img {
+				/* outline: 2px solid black; */
+
+				width: 80px;
+				height: 80px;
+				margin: 0 auto;
+
+				border-radius: 50%;
+			}
+		}
+
+		/* //////////////// */
+		.about-us__profile__card__name {
+			/* outline: 2px solid black; */
+
+			font-family: var(--d-ff__about-us__profile__card__name);
+			font-size: var(--d-fs__about-us__profile__card__name);
+			font-weight: var(--fw-bold);
+			line-height: var(--lh-400);
+			letter-spacing: var(--d-ls__about-us__profile__card__name);
+			color: var(--clr-tertiary-100);
+		}
+
+		/* /////////////////// */
+		.about-us__profile__card__title {
+			/* outline: 2px solid black; */
+
+			font-family: var(--d-ff__about-us__profile__card__name);
+			font-size: var(--d-fs__about-us__profile__card__name);
+			font-weight: var(--fw-bold);
+			line-height: var(--lh-400);
+			letter-spacing: var(--d-ls__about-us__profile__card__name);
+			color: var(--clr-tertiary-100);
+			text-align: center;
+		}
+	}
+
+	/* //////////////////// */
+	/** styles for OTHER TEAM section */
+	/* /////////////////// */
+	.about-us__other-team__section {
+		/* outline: 4px solid brown; */
+
+		width: 100%;
+		padding: 0 0 6.5rem 0;
+	}
+
+	.about-us__other-team__container {
+		/* outline: 4px solid purple; */
+
+		width: 100%;
+		max-width: var(--width__1200px);
+		margin: 0 auto;
+	}
+
+	.about-us__other-team__profile__container {
+		/* outline: 2px solid orange; */
+
+		width: 100%;
+
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: flex-start;
+		row-gap: 1.25rem;
+		column-gap: 2rem;
+	}
+
+	/** designing the cards for OTHER-TEAM profiles */
+	.about-us__profile__card-others {
+		/* outline: 2px solid black; */
+
+		padding: 2rem 1rem;
+		text-align: center;
+		background-color: var(--clr-grays-750);
+		border-radius: 0.625rem;
+		box-shadow: var(--gen-shadow-02);
+
+		/* makes the cards same width and the width is constant */
+		align-self: stretch;
+		flex-grow: 0;
+		flex-shrink: 0;
+		flex-basis: 20%;
+		max-width: 20%;
+		min-width: 270px;
+
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+		align-items: center;
+		row-gap: 1.25rem;
+
+		/* //////////////// */
+		.about-us__profile__card__img__container {
+			/* outline: 2px solid pink; */
+
+			border-radius: 50%;
+
+			/* ////////////// */
+			.about-us__profile__card__img {
+				/* outline: 2px solid black; */
+
+				width: 80px;
+				height: 80px;
+				margin: 0 auto;
+
+				border-radius: 50%;
+			}
+		}
+
+		/* //////////////// */
+		.about-us__profile__card__name {
+			/* outline: 2px solid black; */
+
+			font-family: var(--d-ff__about-us__profile__card__name);
+			font-size: var(--d-fs__about-us__profile__card__name);
+			font-weight: var(--fw-bold);
+			line-height: var(--lh-400);
+			letter-spacing: var(--d-ls__about-us__profile__card__name);
+			color: var(--clr-tertiary-100);
+		}
+
+		/* /////////////////// */
+		.about-us__profile__card__title {
+			/* outline: 2px solid black; */
+
+			font-family: var(--d-ff__about-us__profile__card__name);
+			font-size: var(--d-fs__about-us__profile__card__name);
+			font-weight: var(--fw-bold);
+			line-height: var(--lh-400);
+			letter-spacing: var(--d-ls__about-us__profile__card__name);
+			color: var(--clr-tertiary-100);
+			text-align: center;
+		}
+	}
+}

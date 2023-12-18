@@ -1,0 +1,495 @@
+/* this contains classes with already styled properties that you can just insert into your code */
+
+/* ----padding & margin---- */
+.pad-marg-0 {
+	padding: 0;
+	margin: 0;
+}
+
+.pad-0 {
+	padding: 0;
+}
+
+.marg-0 {
+	margin: 0;
+}
+
+.no-hover-effect-1 {
+	&:hover {
+		scale: 1;
+		color: unset;
+		background-color: unset;
+	}
+}
+
+/** ---for horizontal lines--- */
+.hr-horizontal-line {
+	width: 100%;
+	border: none;
+	/* Remove the default line */
+	border-top: 1px solid;
+	border-color: var(--clr-horizontal-line-200);
+	margin: 20px auto;
+}
+
+.div-horizontal-line {
+	width: 100%;
+	border: 1px solid;
+	border-color: var(--clr-horizontal-line-200);
+	margin: 20px auto;
+}
+
+/** -----SHADOWS------ */
+.gen-shadow-01 {
+	box-shadow: var(--gen-shadow-01);
+}
+
+.gen-shadow-02 {
+	box-shadow: var(--gen-shadow-02);
+}
+
+.gen-shadow-03 {
+	box-shadow: var(--gen-shadow-03);
+}
+
+.gen-shadow-04 {
+	box-shadow: var(--gen-shadow-04);
+}
+
+.gen-shadow-05 {
+	box-shadow: var(--gen-shadow-05);
+}
+
+.gen-shadow-06 {
+	box-shadow: var(--gen-shadow-06);
+}
+
+.gen-shadow-header {
+	box-shadow: var(--gen-shadow-header);
+}
+
+
+/** ----STYLED CLASSES FOR LIST---- */
+/* place this in the ul or ol...it will also work in li but it makes html look rough */
+.list__no-style {
+	list-style: none;
+	list-style-type: none;
+	text-decoration: none;
+}
+
+/** ----style for VISIBILITY---- */
+.visible__no {
+	visibility: hidden;
+}
+
+.visible__yes {
+	visibility: visible;
+}
+
+/** Prevent text from wrapping */
+.sentence__no-wrap {
+	white-space: nowrap;
+}
+
+/** ------BUTTON with Arrow Style------ */
+.cta__btn {
+	/* outline: 2px solid orange; */
+
+	width: 100%;
+	padding: 0.625rem 1.25rem;
+	background-color: var(--clr-primary-650);
+	color: var(--clr-neutral-white-01);
+
+	font-family: var(--ff-primary);
+	font-size: var(--fs__hero__cta__btn);
+	font-weight: var(--fw-semi-bold);
+	line-height: var(--lh-410);
+	border-radius: 1.5rem;
+
+	letter-spacing: normal;
+	cursor: pointer;
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+
+	&::after {
+		content: "";
+		display: inline-block;
+		border: 2.5px solid var(--clr-neutral-white-01);
+		padding: 0.3rem;
+		margin-left: 1rem;
+		vertical-align: baseline;
+
+		transform: rotate(45deg);
+		border-left: 0px;
+		border-bottom: 0px;
+	}
+}
+
+/** ---ANIMATION TEMPLATE--- */
+.div-to-be-animated {
+	/* input all these in the element you want to animate */
+
+	/* name of animation */
+	animation-name: animation;
+
+	/* how long the animation will last */
+	animation-duration: 10s;
+
+	/* how long b4 animation starts */
+	animation-delay: 1s;
+
+	/* how many times the animation will run */
+	animation-iteration-count: infinite;
+
+	/* should it be played normal/reverse/alternate/alternate-reverse */
+	animation-direction: normal;
+
+	/* speed curve of animation */
+	animation-timing-function: ease-in-out;
+
+	/* the styles animation will apply when b4 it start/after it ends/both  */
+	animation-fill-mode: none;
+
+	/* this pause or play animation. you can use JS to do this or hover */
+	animation-play-state: play;
+}
+
+@keyframes animation-name {
+	0% {
+		/* the style at start of animation */
+	}
+
+	50% {
+		/* style at 50% of duration */
+	}
+
+	100% {
+		/* style at end of animation */
+	}
+}
+
+/** ---------------VISIBLE & HIDDEN on SCROLL------------- */
+.hidden {
+	opacity: 0;
+	transform: translateY(100px);
+
+	transition: opacity 0.5s ease, transform 1s ease;
+}
+
+.visible {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+/** ----------------LINKS---------------- */
+.link__text {
+	font-family: var(--ff-primary);
+	font-weight: var(--fw-bold);
+	font-size: var(--fs-800);
+	letter-spacing: 2%;
+	text-align: center;
+	/* color: var(--clr-link-default); */
+}
+
+/* Link Actions for White Background */
+.link__actions-1 {
+	display: block;
+	text-decoration: none;
+	/* Remove underline by default for links */
+	padding: 0.1rem 1rem;
+	border-radius: var(--link__border-radius);
+	color: inherit;
+
+	&:visited {
+		color: var(--clr-link-visited);
+		/* Change the color for visited links */
+	}
+
+	&:hover {
+		color: var(--clr-link-hover);
+		scale: 1.1;
+	}
+
+	&:active {
+		color: var(--clr-link-active);
+		filter: brightness(175%);
+	}
+
+	&:focus {
+		outline: 1px solid var(--clr-link-focus);
+		background-color: var(--clr-link-focus);
+	}
+
+	&:disabled {
+		opacity: 0.6;
+		/* Make the link semi-transparent to indicate it's disabled */
+		pointer-events: none;
+		/* Disable pointer events on the link */
+	}
+
+	&:target {
+		background-color: var(--clr-link-target);
+		/* Style the target of the link (e.g., section being linked to) */
+	}
+}
+
+/* Link actions for Coloured Background */
+.link__actions-2 {
+	display: block;
+	text-decoration: none;
+	/* Remove underline by default for links */
+	padding: 0.1rem 1rem;
+	border-radius: var(--link__border-radius);
+	color: var(--clr-link-default-2);
+
+	&:visited {
+		color: var(--clr-link-visited-2);
+		/* Change the color for visited links */
+	}
+
+	&:hover {
+		color: var(--clr-link-hover-2);
+		text-decoration: none;
+		scale: 1.05;
+	}
+
+	&:active {
+		color: var(--clr-link-hover);
+		filter: brightness(175%);
+	}
+
+	&:focus {
+		outline: 1px solid var(--clr-link-focus-2);
+		background-color: var(--clr-link-focus-2);
+	}
+
+	&:disabled {
+		opacity: 0.6;
+		/* Make the link semi-transparent to indicate it's disabled */
+		pointer-events: none;
+		/* Disable pointer events on the link */
+	}
+
+	&:target {
+		background-color: var(--clr-link-target-2);
+		/* Style the target of the link (e.g., section being linked to) */
+	}
+}
+
+.link__action-3 {
+	/* outline: 2px solid cyan; */
+
+	display: block;
+	padding: 0;
+	text-decoration: none;
+	border-radius: var(--link__border-radius);
+	color: var(--clr-link-default-2);
+
+	/* ////////////////// */
+	&:hover {
+		color: var(--clr-link-hover-2);
+		scale: 1.04;
+	}
+
+	&:active {
+		color: var(--clr-link-hover);
+		filter: brightness(175%);
+	}
+
+	&:focus {
+		opacity: 0.6;
+	}
+
+	&:disabled {
+		opacity: 0.6;
+		/* Make the link semi-transparent to indicate it's disabled */
+		pointer-events: none;
+		/* Disable pointer events on the link */
+	}
+
+	&:target {
+		background-color: var(--clr-link-target-2);
+		/* Style the target of the link (e.g., section being linked to) */
+	}
+}
+
+.footer__links {
+	/* outline: 2px solid cyan; */
+
+	display: block;
+	padding: 0;
+	text-decoration: none;
+	border-radius: var(--link__border-radius);
+	color: var(--clr-link-default-2);
+
+	/* ////////////////// */
+	&:hover {
+		color: var(--clr-link-hover-2);
+		text-decoration: none;
+		scale: 1.05;
+	}
+
+	&:active {
+		color: var(--clr-link-hover);
+		filter: brightness(175%);
+	}
+
+	&:focus {
+		opacity: 0.6;
+	}
+
+	&:disabled {
+		opacity: 0.6;
+		/* Make the link semi-transparent to indicate it's disabled */
+		pointer-events: none;
+		/* Disable pointer events on the link */
+	}
+
+	&:target {
+		background-color: var(--clr-link-target-2);
+		/* Style the target of the link (e.g., section being linked to) */
+	}
+}
+
+
+/** ----------------BUTTONS-------------------- */
+
+.btn {
+	font-family: var(--ff-btn);
+	font-weight: var(--fw-semi-bold);
+	line-height: var(--lh-300);
+
+	padding-top: 0.625rem;
+	padding-bottom: 0.625rem;
+	padding-left: 1.25rem;
+	padding-right: 1.25rem;
+
+	border-radius: 12px;
+	cursor: pointer;
+	text-align: center;
+}
+
+/* ---------adding text-color & Background color to the buttons----------  */
+
+/** ------Style for Primary Button----- */
+.pri-btn {
+	background-color: var(--clr-bckgrd-btn-pri-default);
+	color: var(--clr-txt-btn);
+
+	&:hover {
+		background-color: var(--clr-bckgrd-btn-pri-hover);
+	}
+
+	&:active {
+		background-color: var(--clr-bckgrd-btn-pri-pressed);
+	}
+
+	&:focus {
+		background-color: var(--clr-bckgrd-btn-pri-focus);
+	}
+
+	&:disabled {
+		background-color: var(--clr-bckgrd-btn-pri-disabled);
+	}
+}
+
+/** ------Style for Secondary Button----- */
+.sec-btn {
+	background-color: var(--clr-bckgrd-btn-sec-default);
+	color: var(--clr-txt-btn-sec);
+	border: var(--clr-bd-btn-sec-default);
+
+	&:hover {
+		background-color: var(--clr-bckgrd-btn-sec-hover);
+		color: var(--clr-txt-btn-sec);
+		border: var(--clr-bd-btn-sec-default);
+	}
+
+	&:active {
+		background-color: var(--clr-bckgrd-btn-sec-pressed);
+		color: var(--clr-txt-btn-sec);
+		border: var(--clr-bd-btn-sec-default);
+	}
+
+	&:focus {
+		background-color: var(--clr-bckgrd-btn-sec-focus);
+		color: var(--clr-txt-btn-sec);
+		border: var(--clr-bd-btn-sec-default);
+	}
+
+	&:disabled {
+		background-color: var(--clr-bckgrd-btn-sec-disabled);
+		color: var(--clr-txt-btn-sec);
+		border: var(--clr-bd-btn-sec-default);
+	}
+}
+
+/* ------Style for Success Button----- */
+.succ-btn {
+	background-color: var(--clr-bckgrd-btn-succ-default);
+	color: var(--clr-txt-btn);
+
+	&:hover {
+		background-color: var(--clr-bckgrd-btn-succ-hover);
+	}
+
+	&:active {
+		background-color: var(--clr-bckgrd-btn-succ-pressed);
+	}
+
+	&:focus {
+		background-color: var(--clr-bckgrd-btn-succ-focus);
+	}
+
+	&:disabled {
+		background-color: var(--clr-bckgrd-btn-succ-disabled);
+	}
+}
+
+/* ------Style for Warning Button----- */
+.warn-btn {
+	background-color: var(--clr-bckgrd-btn-warn-default);
+	color: var(--clr-txt-btn);
+
+	&:hover {
+		background-color: var(--clr-bckgrd-btn-warn-hover);
+	}
+
+	&:active {
+		background-color: var(--clr-bckgrd-btn-warn-pressed);
+	}
+
+	&:focus {
+		background-color: var(--clr-bckgrd-btn-warn-focus);
+	}
+
+	&:disabled {
+		background-color: var(--clr-bckgrd-btn-warn-disabled);
+	}
+}
+
+/* ------Style for Error Button----- */
+.error-btn {
+	background-color: var(--clr-bckgrd-btn-error-default);
+	color: var(--clr-txt-btn);
+
+	&:hover {
+		background-color: var(--clr-bckgrd-btn-error-hover);
+	}
+
+	&:active {
+		background-color: var(--clr-bckgrd-btn-error-pressed);
+	}
+
+	&:focus {
+		background-color: var(--clr-bckgrd-btn-error-focus);
+	}
+
+	&:disabled {
+		background-color: var(--clr-bckgrd-btn-error-disabled);
+	}
+}

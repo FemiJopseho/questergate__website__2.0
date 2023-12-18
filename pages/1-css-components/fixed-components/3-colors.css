@@ -1,0 +1,135 @@
+/* this contains the colors used in the entire website */
+
+:root {
+	--clr-primary-100: hsl(203, 57%, 36%);
+	--clr-primary-200: hsl(201, 53%, 48%);
+	--clr-primary-600: hsl(214, 88%, 13%);
+	--clr-primary-650: hsl(214, 88%, 13%, 1);
+	--clr-secondary-500: hsl(49, 100%, 50%);
+	--clr-secondary-600: hsl(39, 89%, 45%);
+	--clr-secondary-650: hsl(39, 89%, 45%, 1);
+	--clr-tertiary-100: hsla(0, 0%, 0%, 1);
+	--clr-tertiary-200: hsl(214, 92%, 33%, 1);
+
+
+	--clr-grays-600: hsl(0, 0%, 6%);
+	--clr-grays-650: hsla(0, 0%, 69%, 1);
+	--clr-grays-700: hsla(0, 0%, 81%, 1);
+	--clr-grays-750: hsla(205, 24%, 90%, 1);
+
+	--clr-alert-error-600: hsl(0, 100%, 51%);
+	--clr-alert-success-600: hsl(144, 99%, 35%);
+
+	--clr-horizontal-line-100: hsl(216, 7%, 43%);
+	--clr-horizontal-line-200: hsla(0, 0%, 53%, 1);
+
+	/** ---background colors------ */
+	--clr-gen-website-bckgrd: hsla(210, 100%, 98%, 1);
+	--clr-header-bckgrd: hsla(0, 0%, 100%, 1);
+	--clr-footer-bckgrd: hsl(214, 88%, 13%);
+	--clr-card-bckgrd: hsl(205, 24%, 90%);
+	--clr-logo-bckgrd: hsl(0, 0%, 90%);
+	--clr-homepage-card-bckgrd: hsl(0, 0%, 100%);
+
+	/**  */
+	--clr-pure-white: hsl(0, 0%, 100%);
+	--clr-neutral-white-3: hsl(0, 0%, 100%);
+	--clr-neutral-white-2: hsla(0, 0%, 100%, 1);
+	--clr-neutral-white: hsl(210, 100%, 98%);
+	--clr-neutral-white-01: hsl(210, 100%, 98%, 1);
+	--color-white-100: hsl(206, 5%, 100%);
+	--color-white-200: hsl(206, 5%, 90%);
+	--color-white-300: hsl(206, 5%, 80%);
+	--color-white-400: hsl(206, 5%, 65%);
+	--color-white-500: hsl(206, 5%, 50%);
+
+	--color-black-100: hsl(213, 20%, 10%);
+	--color-black-200: hsl(213, 23%, 8%);
+	--color-black-300: hsl(214, 21%, 6%);
+	--color-black-400: hsl(210, 21%, 6%);
+	--color-black-500: hsl(216, 22%, 4%);
+	--color-black-600: hsl(220, 18%, 3%);
+	--color-black-700: hsl(220, 27%, 2%);
+	--color-black-800: hsl(180, 20%, 1%);
+	--clr-neutral-black: hsl(0, 0%, 0%);
+
+	/** ----Links Color for white background---- */
+	--clr-link-default: hsla(214, 88%, 13%, 1);
+	--clr-link-visited: hsla(214, 88%, 13%, 1);
+	/* hsl(214, 74%, 9%)*/
+	--clr-link-hover: hsl(39, 89%, 45%);
+	--clr-link-active: hsla(214, 40%, 13%, 1);
+	--clr-link-focus: hsla(214, 13%, 56%, 0.4);
+	--clr-link-target: hsl(214, 92%, 33%, 1);
+
+	/** ----Links Color for colored background---- */
+	--clr-link-default-2: hsl(0, 0%, 100%);
+	--clr-link-default-trans-2: hsl(0, 0%, 100%, 0.1);
+	--clr-link-visited-2: hsl(206, 5%, 100%);
+	--clr-link-hover-2: hsl(206, 5%, 50%);
+	--clr-link-active-2: hsl(206, 5%, 80%);
+	--clr-link-focus-2: hsl(206, 5%, 65%);
+	--clr-link-target-2: hsl(214, 92%, 33%, 1);
+
+	/** ---background colors for buttons------ */
+	--clr-bckgrd-btn-pri-default: hsla(214, 88%, 13%, 1);
+	--clr-bckgrd-btn-pri-hover: hsla(214, 35%, 27%, 1);
+	--clr-bckgrd-btn-pri-pressed: hsla(214, 88%, 6%, 1);
+	--clr-bckgrd-btn-pri-focus: hsla(214, 13%, 56%, 1);
+	--clr-bckgrd-btn-pri-disabled: hsla(214, 13%, 71%, 1);
+
+	--clr-bckgrd-btn-sec-default: hsl(0, 0%, 100%);
+	--clr-bckgrd-btn-sec-hover: hsl(0, 0%, 100%);
+	--clr-bckgrd-btn-sec-pressed: hsl(0, 0%, 100%);
+	--clr-bckgrd-btn-sec-focus: hsl(0, 0%, 100%);
+	--clr-bckgrd-btn-sec-disabled: hsl(0, 0%, 100%);
+
+	--clr-bckgrd-btn-succ-default: hsla(144, 99%, 35%, 1);
+	--clr-bckgrd-btn-succ-hover: hsla(144, 52%, 56%, 1);
+	--clr-bckgrd-btn-succ-pressed: hsla(144, 99%, 17%, 1);
+	--clr-bckgrd-btn-succ-focus: hsla(144, 52%, 67%, 1);
+	--clr-bckgrd-btn-succ-disabled: hsla(144, 52%, 78%, 1);
+
+	--clr-bckgrd-btn-warn-default: hsla(39, 89%, 45%, 1);
+	--clr-bckgrd-btn-warn-hover: hsla(39, 73%, 63%, 1);
+	--clr-bckgrd-btn-warn-pressed: hsla(39, 89%, 23%, 1);
+	--clr-bckgrd-btn-warn-focus: hsla(39, 73%, 73%, 1);
+	--clr-bckgrd-btn-warn-disabled: hsla(39, 73%, 82%, 1);
+
+	--clr-bckgrd-btn-error-default: hsla(0, 100%, 51%, 1);
+	--clr-bckgrd-btn-error-hover: hsla(0, 100%, 67%, 1);
+	--clr-bckgrd-btn-error-pressed: hsla(0, 96%, 25%, 1);
+	--clr-bckgrd-btn-error-focus: hsla(0, 100%, 75%, 1);
+	--clr-bckgrd-btn-error-disabled: hsla(0, 100%, 84%, 1);
+
+	/** ----border colors for buttons--- */
+	--clr-bd-btn-sec-default: hsla(214, 88%, 13%, 1);
+	--clr-bd-btn-sec-hover: hsla(214, 35%, 27%, 1);
+	--clr-bd-btn-sec-pressed: hsla(214, 88%, 6%, 1);
+	--clr-bd-btn-sec-focus: hsla(214, 13%, 56%, 1);
+	--clr-bd-btn-sec-disabled: hsla(214, 13%, 71%, 1);
+
+	/** ---text color for buttons--- */
+	--clr-txt-btn: hsla(0, 0%, 100%, 1);
+	--clr-txt-btn-sec: hsla(214, 88%, 13%, 1);
+
+	/** --------color for gradients------- */
+	--clr-gradient-100: hsla(201, 52%, 48%, 1);
+	--clr-gradient-200: hsla(214, 88%, 13%, 1);
+
+	--clr-gradient-300: hsl(310, 100%, 43%);
+	--clr-gradient-400: hsl(0, 100%, 51%);
+	--clr-gradient-500: hsl(49, 100%, 50%);
+	--clr-gradient-600: hsl(39, 89%, 45%);
+
+	/** -----BOX SHADOWS------------ */
+	/* (go to utility-classes.css to get the general style
+	 and utility class for shadows---- */
+	--gen-shadow-header: 0px 8px 28px 0px hsla(214, 88%, 13%, 0.2);
+	--gen-shadow-01: 0px 2px 6px 0px hsla(241, 37%, 12%, 0.06);
+	--gen-shadow-02: 0px 2px 12px 0px hsla(241, 37%, 12%, 0.08);
+	--gen-shadow-03: 0px 8px 28px 0px hsla(241, 37%, 12%, 0.1);
+	--gen-shadow-04: 0px 14px 42px 0px hsla(241, 37%, 12%, 0.14);
+	--gen-shadow-05: 0px 24px 65px 0px hsla(241, 37%, 12%, 0.16);
+	--gen-shadow-06: 0px 32px 72px 0px hsla(241, 37%, 12%, 0.24);
+}

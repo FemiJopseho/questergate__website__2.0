@@ -1,0 +1,107 @@
+/* these code styles the back to top function of the website */
+
+/** Mobile view */
+/* max-width: 500px */
+@media screen and (width <= 31.25em) {
+	#back-to-top {
+		position: fixed;
+		bottom: 20px;
+		right: 10px;
+		z-index: 99;
+		font-size: 1rem;
+		border: none;
+		outline: none;
+		background-color: var(--clr-secondary-650);
+		color: var(--clr-homepage-card-bckgrd);
+		cursor: pointer;
+		padding: 0.938rem;
+		border-radius: 0.75rem;
+
+		opacity: 0;
+		pointer-events: none;
+
+		transition: opacity 0.5s ease-in; /* Smooth transition for opacity */
+	}
+
+	#back-to-top:hover {
+		background-color: var(--clr-primary-650);
+	}
+
+	#back-to-top:focus {
+		background-color: var(--clr-secondary-650);
+	}
+}
+
+/*        */
+/*        */
+/*        */
+/*        */
+/*        */
+
+/* Mobile landscape & Tablet Portrait screens */
+/* (min-width > 500px ) & (max-width <= 875px) */
+@media screen and (width > 31.25em) and (width <= 54.69em) {
+	#back-to-top {
+		position: fixed;
+		bottom: 20px;
+		right: 30px;
+		z-index: 99;
+		font-size: 1rem;
+		border: none;
+		outline: none;
+		background-color: var(--clr-secondary-650);
+		color: var(--clr-homepage-card-bckgrd);
+		cursor: pointer;
+		padding: 0.938rem;
+		border-radius: 0.75rem;
+
+		opacity: 0;
+		pointer-events: none;
+
+		transition: opacity 0.5s ease-in; /* Smooth transition for opacity */
+	}
+
+	#back-to-top:hover {
+		background-color: var(--clr-primary-650);
+	}
+
+	#back-to-top:focus {
+		background-color: var(--clr-secondary-650);
+	}
+}
+/*        */
+/*        */
+/*        */
+/*        */
+/*        */
+
+/** Screens > 875px */
+@media screen and (width > 54.69em) {
+	#back-to-top {
+		position: fixed;
+		bottom: 20px;
+		right: 30px;
+		z-index: 99;
+		font-size: 1rem;
+		border: none;
+		outline: none;
+		background-color: var(--clr-secondary-650);
+		color: var(--clr-homepage-card-bckgrd);
+		cursor: pointer;
+		padding: 0.938rem;
+		border-radius: 0.75rem;
+
+		opacity: 0;
+		pointer-events: none;
+
+		transition: opacity 0.5s ease-in; /* Smooth transition for opacity */
+	}
+
+	#back-to-top:hover {
+		background-color: var(--clr-primary-650);
+	}
+
+	#back-to-top:focus {
+		background-color: var(--clr-secondary-650);
+	}
+}

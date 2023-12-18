@@ -1,0 +1,1595 @@
+/** ---------------------Header for Product Faq page------------------- */
+/* this is styling for headers of the faq page of products */
+
+/** ----VARIABLES---  */
+:root {
+	--width__header: 90rem;
+	/* 1440px=100% of parent = gen-container */
+	--width__navbar: 75rem;
+	/* 1200px(75rem) = 83.33% of parent*/
+	--min-width__header: 14.31rem;
+	/* 228.96px */
+	--min-width__brand: 15.625rem;
+	/* 250px */
+
+	--height-1__header: 4.4375rem;
+	/* 71px by UIUX */
+	--height-2__header: 5.5rem;
+	/* 88px */
+	--height-1__navbar: 3.5rem;
+	/* 58px by UIUX */
+	--height-2__navbar: 4.25rem;
+	/* 68px */
+
+	--pad-top-botm__header: 0.5rem;
+	/* 8px */
+	--pad-left-right__header: 0;
+	/* 120px */
+}
+
+/* Mobile Portrait screens */
+/* (max-width <= 500px) */
+@media screen and (width <=31.25em) {
+	.header {
+		/* general layout for brand, menu, & menu-block */
+		/* outline: 2px solid red; */
+
+		font-family: var(--ff-primary);
+		font-size: var(--fs-800);
+		font-weight: var(--fw-semi-bold);
+		color: var(--clr-primary-600);
+		background-color: var(--clr-header-bckgrd);
+
+		height: auto;
+		width: 100%;
+		text-align: center;
+		padding: 0;
+
+		position: relative;
+		top: 0;
+		z-index: 1;
+
+		transition: all 0.35s ease;
+
+		/* ////////////////// */
+		/* to free up the mobile view from any header until scroll*/
+		.navbar-xsm-screen {
+			display: block;
+			width: 50%;
+		}
+
+		/* ////////////////// */
+		.bg-screen__brand,
+		.sm-screen__brand,
+		.menu-block,
+		.burger,
+		.menu,
+		.header-slide-down {
+			display: none;
+		}
+	}
+
+	/** make the browser prepare to fix position of .header on-scroll */
+	/* .ancestor:hover .element {
+		will-change: opacity;
+	} */
+	.gen-container:hover .header {
+		will-change: position;
+	}
+
+	.header.on-scroll {
+		/* when you scroll, JS uses .on-scroll 
+		to add these properties to .header */
+		background: var(--clr-header-bckgrd);
+		box-shadow: var(--gen-shadow-header);
+
+		position: fixed;
+		padding-top: 0.3rem;
+		padding-bottom: 0.2rem;
+
+		/* /////////////////// */
+		.menu-block,
+		.burger,
+		.menu,
+		.header-slide-down {
+			display: block;
+		}
+
+		/* ///////////////// */
+		.navbar-xsm-screen {
+			display: none;
+		}
+	}
+
+	.navbar-xsm-screen {
+		/* outline: 2px solid blue; */
+
+		width: 100%;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.navbar {
+		/* outline: 2px solid green; */
+
+		width: 100%;
+		margin: 0 auto;
+		padding: 0 0.2rem;
+
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-between;
+		row-gap: 1rem;
+	}
+
+	/** ---general style for diff items of the Header--- */
+	.xsm__brand {
+		/* outline: 2px solid lime; */
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		/* //////////////////// */
+		.xsm-brand__logo {
+			/* outline: 2px solid darkmagenta; */
+			width: 100%;
+		}
+	}
+
+	/** ----dropdown button starts--- */
+	.menu-block {
+		/* outline: 2px solid gold; */
+
+		flex-basis: 30%;
+
+		box-shadow: var(--gen-shadow-05);
+
+		/* to lock in the .header-slide-down position */
+		position: relative;
+	}
+
+	/* when you hover on gen-container, prepare to animate background-color of dropbtn */
+	.gen-container:hover .dropbtn {
+		will-change: background-image;
+	}
+
+	/* /////////////////////////// */
+	/* style the button you click to toggle dropdown */
+	.dropbtn {
+		/* outline: 2px solid red; */
+
+		margin: 0;
+		padding: 0.2rem 0rem 1rem 0rem;
+		line-height: var(--lh-400);
+		cursor: pointer;
+
+		font-weight: var(--fw-bold);
+		border-radius: 0.3rem;
+		box-shadow: var(--gen-shadow-05);
+
+		color: var(--clr-neutral-white-2);
+		background-color: var(--clr-bckgrd-btn-pri-default);
+		background-image: linear-gradient(270deg,
+				var(--clr-gradient-200),
+				var(--clr-gradient-100));
+
+		display: block;
+		/* to make the span a Block */
+
+		/* animation to attract attention to the product button */
+		animation-name: attention-to-product;
+		animation-duration: 5s;
+		animation-timing-function: ease-in-out;
+		animation-delay: 2s;
+		animation-iteration-count: infinite;
+
+		/* /////////////////// */
+		&:hover {
+			background-color: var(--clr-bckgrd-btn-pri-default);
+			background-image: none;
+			scale: 1;
+
+			~#header__dropbtn__checkbox {
+				display: block;
+			}
+		}
+
+		/* ///////////////////// */
+		/* design the down-arrow below the dropbtn */
+		.arrow {
+			/* outline: 2px solid black; */
+			position: absolute;
+			bottom: 10%;
+			right: 45%;
+
+			border: solid var(--clr-neutral-white-2);
+			border-width: 0 0.19rem 0.19rem 0;
+			display: block;
+			padding: 0.32rem;
+		}
+
+		.down {
+			transform: rotate(45deg);
+			-webkit-transform: rotate(45deg);
+		}
+	}
+
+	/* ///////////////////// */
+	/* removing the input checkbox symbol*/
+	#header__dropbtn__checkbox {
+		/* outline: 2px solid lightsalmon; */
+		/* display: none; */
+
+		/* used this bcos i was having 
+			issues with dropdown closing when
+			i clicked on label even with JS */
+		position: absolute;
+		display: block;
+		opacity: 0;
+		top: 0;
+		height: 4rem;
+		width: 100%;
+		cursor: pointer;
+		z-index: 100;
+
+		margin: 0;
+		padding: 0;
+
+		&:hover {
+			background-color: var(--clr-bckgrd-btn-pri-default);
+			background-image: none;
+		}
+	}
+
+	/* /////////////////////////////// */
+	/* styling the dropdown*/
+	.header-slide-down {
+		/* outline: 2px solid red; */
+
+		padding: 0;
+		margin: 0;
+
+		text-align: center;
+		box-shadow: var(--gen-shadow-05);
+		border-radius: var(--link__border-radius);
+
+		background-color: var(--clr-bckgrd-btn-pri-default);
+		background-image: linear-gradient(270deg,
+				var(--clr-gradient-100),
+				var(--clr-gradient-200));
+
+		/* this makes the dropdown not affect 
+			the layout when it shows */
+		position: fixed;
+		top: 11%;
+		opacity: 1;
+		z-index: 1;
+		overflow: hidden;
+
+		/* default state of the dropdown 
+			list is "hidden=0 height" */
+		height: 0;
+
+		transition: all 0.7s ease-in-out;
+
+		/* ////////////////////////// */
+		.header-slide-down__items {
+			/* outline: 2px solid blue; */
+
+			padding: 0;
+			list-style: none;
+
+			/* ////////////////////// */
+			&:nth-child(1) {
+				/* outline: 2px solid rgb(0, 255, 60); */
+
+				margin-bottom: 1.56rem;
+			}
+
+			/* &:nth-child(2) {
+					outline: 2px solid rgb(255, 111, 0);
+
+					margin-bottom: 1.56rem;
+				} */
+
+			&:last-child {
+				/* outline: 2px solid rgb(131, 175, 36); */
+
+				margin-bottom: 0;
+			}
+
+			/* /////////////////////////// */
+			.header-slide-down__items-links {
+				/* outline: 2px solid gold; */
+
+				font-family: var(--ff-primary);
+				font-weight: var(--fw-bold);
+				font-size: var(--fs-800);
+				letter-spacing: 2%;
+				color: var(--clr-neutral-white-2);
+
+				text-decoration: none;
+
+				display: block;
+				/* width: 18.75rem; */
+				padding: 1.25rem 1.25rem 1.25rem 1.25rem;
+
+				/* ////////////////////// */
+				&:hover {
+					opacity: 0.6;
+					scale: 1.1;
+				}
+
+				&:active {
+					color: var(--clr-link-active);
+					/* Change the color on click/active */
+					filter: brightness(175%);
+				}
+
+				&:focus {
+					outline: 1px solid var(--clr-link-focus);
+					/* Add a focus outline */
+					background-color: var(--clr-link-focus);
+					/* color: var(--clr-pure-white); */
+				}
+
+				&:disabled {
+					opacity: 0.6;
+					/* Make the link semi-transparent to indicate it's disabled */
+					pointer-events: none;
+					/* Disable pointer events on the link */
+				}
+
+				&:target {
+					background-color: var(--clr-link-target);
+					/* Style the target of the link (e.g., section being linked to) */
+				}
+			}
+		}
+	}
+
+	/* /////////////////////////// */
+	/** main condition for when dropdown will show */
+	/* when input is checked, .header-slide-down height=14.9rem */
+	#header__dropbtn__checkbox:checked+.header-slide-down {
+		/* outline: 2px solid pink; */
+
+		height: 11rem;
+	}
+
+
+	@keyframes attention-to-product {
+		0% {
+			background-image: linear-gradient(270deg,
+					var(--clr-gradient-200),
+					var(--clr-gradient-100));
+		}
+
+		25% {
+			background-image: radial-gradient(circle,
+					var(--clr-gradient-200),
+					var(--clr-gradient-100));
+		}
+
+		75% {
+			background-image: radial-gradient(circle,
+					var(--clr-gradient-100),
+					var(--clr-gradient-200));
+		}
+
+		100% {
+			background-image: linear-gradient(270deg,
+					var(--clr-gradient-100),
+					var(--clr-gradient-200));
+		}
+	}
+
+	/** ----dropdown button ends--- */
+
+
+	/* //////// */
+	/** ---Style of dropdown Menu when burger
+		 is clicked to open/close dropdown menu--- */
+	.burger {
+		/* this styles the DIV of the burger-lines */
+		/* outline: 2px solid indigo; */
+
+		position: relative;
+		/* keeps burger-lines inside */
+		right: 5%;
+		z-index: 10;
+		/* makes the burger div show always even when menu is active */
+		margin-left: 1rem;
+
+		cursor: pointer;
+		user-select: none;
+		width: var(--width__burger);
+		/* the width of the burger div */
+		height: var(--height__burger);
+		/* the height of the burger div */
+
+		transition: 0.35s ease;
+
+		/* ///////////////////// */
+		.burger-line {
+			/* this styles the span burger-lines...
+					it is used to draw the 3 lines you see */
+
+			position: absolute;
+			/* display: block; */
+			width: 100%;
+			height: var(--height__burger-line);
+			opacity: 1;
+			background-color: var(--clr-bckgrd-btn-pri-default);
+			background-image: linear-gradient(270deg,
+					var(--clr-gradient-100),
+					var(--clr-gradient-200));
+
+			transform: rotate(0deg);
+			transition: 0.25s ease-in-out;
+		}
+
+		/* arranges the burger lines within the burger div BEFORE click */
+		.burger-line:nth-child(1) {
+			top: 0;
+			left: 0;
+		}
+
+		.burger-line:nth-child(2) {
+			top: 30%;
+			left: 0;
+		}
+
+		.burger-line:nth-child(3) {
+			top: 60%;
+			left: 0;
+		}
+
+		.burger-line:last-child {
+			top: 90%;
+			left: 0;
+		}
+	}
+
+	/* this is gen style for the ... */
+	/* dropdown menu when burger is clicked */
+	.menu {
+		/* outline: 2px solid blue; */
+
+		position: fixed;
+		top: -100%;
+		/* Hides it away by default */
+		left: 0;
+		width: 100%;
+		padding: 4rem 0 2rem 0;
+		overflow: hidden;
+		color: var(--clr-neutral-white-2);
+		background-color: var(--clr-bckgrd-btn-pri-default);
+		background-image: linear-gradient(270deg,
+				var(--clr-gradient-100),
+				var(--clr-gradient-200));
+		box-shadow: var(--gen-shadow-header);
+
+		transition: all 0.4s ease-in-out;
+
+		/* //////////////////////// */
+		.menu-inner {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			row-gap: 2.5rem;
+
+			list-style: none;
+		}
+
+		/* /////////////////////// */
+		.menu-link {
+			/* outline: 2px solid gold; */
+
+			font-family: inherit;
+			font-size: var(--fs-700);
+			font-weight: var(--fw-semi-bold);
+			line-height: var(--lh-100);
+			color: var(--clr-gen-website-bckgrd);
+			background-color: var(--clr-link-default-trans-2);
+			border-radius: var(--link__border-radius);
+			text-transform: uppercase;
+			text-decoration: none;
+			padding: 0.2rem 4rem;
+
+			transition: all 0.3s ease;
+
+			/* ////////////////////// */
+			&:hover {
+				opacity: 0.6;
+				scale: 1.1;
+			}
+
+			&:active {
+				color: var(--clr-link-active);
+				/* Change the color on click/active */
+				filter: brightness(175%);
+			}
+
+			&:focus {
+				background-color: var(--clr-link-focus);
+			}
+
+			&:disabled {
+				opacity: 0.6;
+				/* Make the link semi-transparent to indicate it's disabled */
+				pointer-events: none;
+				/* Disable pointer events on the link */
+			}
+
+			&:target {
+				background-color: var(--clr-link-target);
+				/* Style the target of the link (e.g., section being linked to) */
+			}
+		}
+	}
+
+	/* Styles what happens to bugger-lines when burger is clicked */
+
+	.burger.is-active {
+		position: absolute;
+		top: 15%;
+		right: 5%;
+	}
+
+	.burger.is-active .burger-line:nth-child(1) {
+		top: 40%;
+		transform: rotate(135deg);
+		background-color: var(--clr-secondary-600);
+		background-image: linear-gradient(270deg,
+				var(--clr-gradient-200),
+				var(--clr-gradient-500),
+				var(--clr-gradient-200));
+	}
+
+	.burger.is-active .burger-line:nth-child(2) {
+		opacity: 0;
+		visibility: hidden;
+	}
+
+	.burger.is-active .burger-line:nth-child(3) {
+		opacity: 0;
+		visibility: hidden;
+	}
+
+	.burger.is-active .burger-line:last-child {
+		top: 40%;
+		transform: rotate(-135deg);
+		background-color: var(--clr-secondary-600);
+		background-image: linear-gradient(270deg,
+				var(--clr-gradient-200),
+				var(--clr-gradient-500),
+				var(--clr-gradient-200));
+	}
+
+	/* styles how the dropdown menu looks AFTER burger click*/
+	.menu.is-active {
+		/* Adds these properties to .menu when burger is clicked */
+
+		top: 0;
+		/* makes it show by bringing it forward */
+		width: 100%;
+		height: auto;
+
+		~.menu-block {
+			visibility: hidden;
+			z-index: -1;
+		}
+	}
+
+}
+
+/*        */
+/*        */
+/*        */
+/*        */
+/*        */
+
+/* Mobile landscape & Tablet Portrait screens */
+/* (min-width > 500px ) & (max-width <= 875px) */
+@media screen and (width > 31.25em) and (width <=54.69em) {
+
+	/* general layout for brand, menu, & menu-block */
+	.header {
+		/* outline: 2px solid red; */
+
+		font-family: var(--ff-primary);
+		font-size: var(--fs-800);
+		font-weight: var(--fw-semi-bold);
+		color: var(--clr-primary-600);
+		background-color: var(--clr-header-bckgrd);
+
+		height: auto;
+		width: 100%;
+		text-align: center;
+		padding: 0.3rem 0;
+
+		position: relative;
+		top: 0;
+		z-index: 1;
+
+		transition: all 0.35s ease;
+
+		/* /////////////// */
+		.navbar-xsm-screen,
+		.bg-screen__brand {
+			display: none;
+		}
+	}
+
+	/** make the browser prepare to fix position of .header on-scroll */
+	/* .ancestor:hover .element {
+		will-change: opacity;
+	} */
+	.gen-container:hover .header {
+		will-change: position;
+	}
+
+	.header.on-scroll {
+		/* when you scroll, JS uses .on-scroll 
+			to add these properties to .header */
+		background: var(--clr-header-bckgrd);
+		box-shadow: var(--gen-shadow-header);
+
+		position: fixed;
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+
+	.navbar {
+		/* outline: 2px solid green; */
+
+		width: 100%;
+		margin: 0 auto;
+		padding: 0 0.2rem;
+		/* height: 4.25rem; */
+
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		align-items: center;
+		justify-content: flex-end;
+	}
+
+	/** ---general style for diff items of the Header--- */
+	.sm-screen__brand {
+		/* outline: 2px solid red; */
+
+		margin-right: auto;
+		flex-basis: 30%;
+		min-width: 8rem;
+	}
+
+	/** ----dropdown button starts--- */
+	.menu-block {
+		/* outline: 2px solid gold; */
+
+		/* flex-basis: 30%; */
+		min-width: 9.5rem;
+		margin-right: 2rem;
+
+		box-shadow: var(--gen-shadow-05);
+
+		/* to lock in the .header-slide-down position */
+		position: relative;
+	}
+
+	/* when you hover on gen-container, prepare to animate background-color of dropbtn */
+	.gen-container:hover .dropbtn {
+		will-change: background-image;
+	}
+
+	/* /////////////////////////// */
+	/* style the button you click to toggle dropdown */
+	.dropbtn {
+		/* outline: 2px solid red; */
+
+		margin: 0;
+		padding: 0.9rem 0rem 1rem 0rem;
+		line-height: var(--lh-400);
+		cursor: pointer;
+
+		font-weight: var(--fw-bold);
+		border-radius: 0.3rem;
+		box-shadow: var(--gen-shadow-05);
+
+		color: var(--clr-neutral-white-2);
+		background-color: var(--clr-bckgrd-btn-pri-default);
+		background-image: linear-gradient(270deg,
+				var(--clr-gradient-200),
+				var(--clr-gradient-100));
+
+		display: block;
+		/* to make the span a Block */
+
+		/* animation to attract attention to the product button */
+		animation-name: attention-to-product;
+		animation-duration: 5s;
+		animation-timing-function: ease-in-out;
+		animation-delay: 2s;
+		animation-iteration-count: infinite;
+
+		/* /////////////////// */
+		&:hover {
+			background-color: var(--clr-bckgrd-btn-pri-default);
+			background-image: none;
+			scale: 1;
+
+			~#header__dropbtn__checkbox {
+				display: block;
+			}
+		}
+
+		/* ///////////////////// */
+		/* design the down-arrow below the dropbtn */
+		.arrow {
+			/* outline: 2px solid black; */
+			position: absolute;
+			bottom: 10%;
+			right: 45%;
+
+			border: solid var(--clr-neutral-white-2);
+			border-width: 0 0.19rem 0.19rem 0;
+			display: block;
+			padding: 0.32rem;
+		}
+
+		.down {
+			transform: rotate(45deg);
+			-webkit-transform: rotate(45deg);
+		}
+	}
+
+	/* ///////////////////// */
+	/** removing the input checkbox symbol*/
+	#header__dropbtn__checkbox {
+		/* outline: 2px solid lightsalmon; */
+		/* display: none; */
+
+		/* used this bcos i was having 
+			issues with dropdown closing when
+			i clicked on label even with JS */
+		position: absolute;
+		display: block;
+		opacity: 0;
+		top: 0;
+		height: 4rem;
+		width: 100%;
+		cursor: pointer;
+		z-index: 100;
+
+		margin: 0;
+		padding: 0;
+
+		&:hover {
+			background-color: var(--clr-bckgrd-btn-pri-default);
+			background-image: none;
+		}
+	}
+
+	/* /////////////////////////////// */
+	/* styling the dropdown*/
+	.header-slide-down {
+		/* outline: 2px solid red; */
+
+		padding: 0;
+		margin: 0;
+
+		text-align: center;
+		box-shadow: var(--gen-shadow-05);
+		border-radius: var(--link__border-radius);
+
+		background-color: var(--clr-bckgrd-btn-pri-default);
+		background-image: linear-gradient(270deg,
+				var(--clr-gradient-200),
+				var(--clr-gradient-100));
+
+		/* this makes the dropdown not affect 
+			the layout when it shows */
+		position: fixed;
+		top: 11.5%;
+		opacity: 1;
+		z-index: 1;
+		overflow: hidden;
+
+		/* default state of the dropdown 
+			list is "hidden=0 height" */
+		height: 0;
+
+		transition: all 0.7s ease-in-out;
+
+		/* ////////////////////////// */
+		.header-slide-down__items {
+			/* outline: 2px solid blue; */
+
+			padding: 0;
+			list-style: none;
+
+			/* ////////////////////// */
+			&:nth-child(1) {
+				/* outline: 2px solid rgb(0, 255, 60); */
+
+				margin-bottom: 1.56rem;
+			}
+
+			/* &:nth-child(2) {
+					outline: 2px solid rgb(255, 111, 0);
+
+					margin-bottom: 1.56rem;
+				} */
+
+			&:last-child {
+				/* outline: 2px solid rgb(131, 175, 36); */
+
+				margin-bottom: 0;
+			}
+
+			/* /////////////////////////// */
+			.header-slide-down__items-links {
+				/* outline: 2px solid gold; */
+
+				font-family: var(--ff-primary);
+				font-weight: var(--fw-bold);
+				font-size: var(--fs-800);
+				letter-spacing: 2%;
+				color: var(--clr-neutral-white-2);
+
+				text-decoration: none;
+
+				display: block;
+				/* width: 18.75rem; */
+				padding: 1.25rem 1.25rem 1.25rem 1.25rem;
+
+				/* ////////////////////// */
+				&:hover {
+					opacity: 0.6;
+					scale: 1.1;
+				}
+
+				&:active {
+					color: var(--clr-link-active);
+					/* Change the color on click/active */
+					filter: brightness(175%);
+				}
+
+				&:focus {
+					outline: 1px solid var(--clr-link-focus);
+					/* Add a focus outline */
+					background-color: var(--clr-link-focus);
+					/* color: var(--clr-pure-white); */
+				}
+
+				&:disabled {
+					opacity: 0.6;
+					/* Make the link semi-transparent to indicate it's disabled */
+					pointer-events: none;
+					/* Disable pointer events on the link */
+				}
+
+				&:target {
+					background-color: var(--clr-link-target);
+					/* Style the target of the link (e.g., section being linked to) */
+				}
+			}
+		}
+	}
+
+	/* /////////////////////////// */
+	/* main condition for when dropdown will show */
+	/* when input is checked, .header-slide-down height=14.9rem */
+	#header__dropbtn__checkbox:checked+.header-slide-down {
+		/* outline: 2px solid pink; */
+
+		height: 11rem;
+	}
+
+	@keyframes attention-to-product {
+		0% {
+			background-image: linear-gradient(270deg,
+					var(--clr-gradient-200),
+					var(--clr-gradient-100));
+		}
+
+		25% {
+			background-image: radial-gradient(circle,
+					var(--clr-gradient-200),
+					var(--clr-gradient-100));
+		}
+
+		75% {
+			background-image: radial-gradient(circle,
+					var(--clr-gradient-100),
+					var(--clr-gradient-200));
+		}
+
+		100% {
+			background-image: linear-gradient(270deg,
+					var(--clr-gradient-100),
+					var(--clr-gradient-200));
+		}
+	}
+
+	/** ----dropdown button ends--- */
+
+	/* ////////////////////// */
+	/** ---Style of dropdown Menu when burger
+	 is clicked to open/close dropdown menu--- */
+	.burger {
+		/* this styles the DIV of the burger-lines */
+		/* outline: 2px solid indigo; */
+
+		position: relative;
+		/* keeps burger-lines inside */
+		z-index: 10;
+		/* makes the burger div show always even when menu is active */
+
+		cursor: pointer;
+		user-select: none;
+		width: var(--width__burger);
+		/* the width of the burger div */
+		height: var(--height__burger);
+		/* the height of the burger div */
+
+		transition: 0.35s ease;
+
+		/* ///////////////////// */
+		.burger-line {
+			/* this styles the span burger-lines...
+					it is used to draw the 3 lines you see */
+
+			position: absolute;
+			/* display: block; */
+			width: 100%;
+			height: var(--height__burger-line);
+			opacity: 1;
+			background-color: var(--clr-bckgrd-btn-pri-default);
+			background-image: linear-gradient(270deg,
+					var(--clr-gradient-100),
+					var(--clr-gradient-200));
+
+			transform: rotate(0deg);
+			transition: 0.35s ease-in-out;
+		}
+
+		/* arranges the burger lines within the burger div BEFORE click */
+		.burger-line:nth-child(1) {
+			top: 0;
+			left: 0;
+		}
+
+		.burger-line:nth-child(2) {
+			top: 30%;
+			left: 0;
+		}
+
+		.burger-line:nth-child(3) {
+			top: 60%;
+			left: 0;
+		}
+
+		.burger-line:last-child {
+			top: 90%;
+			left: 0;
+		}
+	}
+
+	/** this is gen style for the dropdown menu when burger is clicked */
+	.menu {
+		/* outline: 2px solid blue; */
+
+		position: fixed;
+		top: -300%;
+		/* Hides it away even in compressed screen */
+		left: 0;
+		width: 100%;
+		padding: 4rem 0 2rem 0;
+		overflow: hidden;
+		color: var(--clr-neutral-white-2);
+		background-color: var(--clr-bckgrd-btn-pri-default);
+		background-image: linear-gradient(270deg,
+				var(--clr-gradient-100),
+				var(--clr-gradient-200));
+		box-shadow: var(--gen-shadow-header);
+
+		transition: all 0.4s ease-in-out;
+
+		/* //////////////////////// */
+		.menu-inner {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			row-gap: 2.5rem;
+
+			list-style: none;
+		}
+
+		/* ///////////////// */
+		.menu-link-home {
+			display: none;
+		}
+
+		/* /////////////////////// */
+		.menu-link {
+			/* outline: 2px solid gold; */
+
+			font-family: inherit;
+			font-size: var(--fs-700);
+			font-weight: var(--fw-semi-bold);
+			line-height: var(--lh-100);
+			color: var(--clr-gen-website-bckgrd);
+			background-color: var(--clr-link-default-trans-2);
+			border-radius: var(--link__border-radius);
+			text-transform: uppercase;
+			text-decoration: none;
+			padding: 0.2rem 4rem;
+
+			transition: all 0.3s ease;
+
+			/* ////////////////////// */
+			&:hover {
+				opacity: 0.6;
+				scale: 1.1;
+			}
+
+			&:active {
+				color: var(--clr-link-active);
+				/* Change the color on click/active */
+				filter: brightness(175%);
+			}
+
+			&:focus {
+				background-color: var(--clr-link-focus);
+			}
+
+			&:disabled {
+				opacity: 0.6;
+				/* Make the link semi-transparent to indicate it's disabled */
+				pointer-events: none;
+				/* Disable pointer events on the link */
+			}
+
+			&:target {
+				background-color: var(--clr-link-target);
+				/* Style the target of the link (e.g., section being linked to) */
+			}
+		}
+	}
+
+	/** Styles what happens to bugger-lines when burger is clicked */
+	.burger.is-active {
+		position: absolute;
+		top: 25%;
+		right: 5%;
+	}
+
+	.burger.is-active .burger-line:nth-child(1) {
+		top: 40%;
+		transform: rotate(135deg);
+		background-color: var(--clr-secondary-600);
+		/* background-image: none; */
+
+		background-image: linear-gradient(270deg,
+				var(--clr-gradient-200),
+				var(--clr-gradient-500),
+				var(--clr-gradient-200));
+	}
+
+	.burger.is-active .burger-line:nth-child(2) {
+		opacity: 0;
+		visibility: hidden;
+	}
+
+	.burger.is-active .burger-line:nth-child(3) {
+		opacity: 0;
+		visibility: hidden;
+	}
+
+	.burger.is-active .burger-line:last-child {
+		top: 40%;
+		transform: rotate(-135deg);
+		background-color: var(--clr-secondary-600);
+		/* background-image: none; */
+
+		background-image: linear-gradient(270deg,
+				var(--clr-gradient-200),
+				var(--clr-gradient-500),
+				var(--clr-gradient-200));
+	}
+
+	/* styles how the dropdown menu looks AFTER burger click*/
+	.menu.is-active {
+		/* Adds these properties to .menu when burger is clicked */
+
+		top: 0;
+		/* makes it show by bringing it forward */
+		width: 100%;
+		height: auto;
+
+		~.menu-block {
+			display: none;
+			/* this fix the irregular move the dropdown when burger is clicked */
+			visibility: hidden;
+			z-index: -1;
+		}
+	}
+
+}
+
+/*        */
+/*        */
+/*        */
+/*        */
+/*        */
+
+/** Screens > 875px */
+@media screen and (width > 54.69em) {
+
+	/* ///////////////////////////////// */
+	/* general layout for brand, menu, & menu-block */
+	.header {
+		/* outline: 2px solid red; */
+
+		height: auto;
+		width: 100%;
+		min-width: var(--min-width__header);
+		margin: 0 auto;
+		padding: 0.5rem;
+
+		font-family: var(--ff-primary);
+		font-size: var(--fs-800);
+		font-weight: var(--fw-semi-bold);
+		color: var(--clr-primary-600);
+
+		background: transparent;
+		border: none;
+
+		position: relative;
+		top: 0;
+		z-index: 10;
+
+		transition: all 0.35s ease;
+
+		/* //////////////////// */
+		.navbar-xsm-screen {
+			/* outline: 2px solid magenta; */
+			display: block;
+		}
+
+		.menu {
+			/* outline: 2px solid magenta; */
+			display: block;
+		}
+
+		.menu-block {
+			/* outline: 2px solid magenta; */
+			display: block;
+		}
+
+		.sm-screen__brand,
+		.bg-screen__brand,
+		.burger {
+			display: none;
+		}
+	}
+
+	.header__items-container {
+		/* outline: 2px solid indigo; */
+
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: space-between;
+		align-items: center;
+
+		width: 100%;
+		max-width: var(--width__1200px);
+		margin: 0 auto;
+	}
+
+	/** make the browser prepare to fix position of .header on-scroll */
+	/* .ancestor:hover .element {
+		will-change: opacity;
+	} */
+	.gen-container:hover .header {
+		will-change: position;
+	}
+
+	.header.on-scroll {
+		/* when you scroll, JS uses .on-scroll to add these properties to .header */
+		background: var(--clr-header-bckgrd);
+		box-shadow: var(--gen-shadow-header);
+
+		position: fixed;
+		top: 0;
+		padding-top: 0;
+		padding-bottom: 0;
+
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.navbar {
+		/* outline: 2px solid green; */
+		width: 98%;
+		max-width: var(--width__navbar);
+		margin: 0 auto;
+		/* height: 4.25rem; */
+
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: flex-end;
+		align-items: center;
+
+		column-gap: 1.25rem;
+	}
+
+	/** ---Styles for Header Items--- */
+	.burger {
+		display: none;
+		visibility: hidden;
+	}
+
+	.brand {
+		/* outline: 2px solid purple; */
+
+		margin-right: auto;
+		flex-basis: 20%;
+		flex-shrink: 0;
+
+		/* /////////////// */
+		.brand__logo-link,
+		.brand__text-link {
+			text-decoration: none;
+			text-align: center;
+			cursor: pointer;
+		}
+
+		/* ///////////////// */
+		.brand__text {
+			display: none;
+			visibility: hidden;
+		}
+	}
+
+	.menu {
+		/* outline: 2px solid purple; */
+
+		color: inherit;
+
+		/* ///////////////////// */
+		.menu-inner {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			justify-content: space-between;
+			align-items: center;
+			column-gap: 2.5rem;
+
+			list-style: none;
+
+			transition: all 0.3s ease;
+
+			/* ///////////////////// */
+			.menu-item {
+				/* outline: 2px solid grey; */
+
+				padding: 0;
+
+				/* ///////////////////// */
+				.menu-link {
+					/* outline: 2px solid gold; */
+
+					text-align: center;
+					text-decoration: none;
+
+					font-family: var(--ff-primary);
+					font-weight: var(--fw-bold);
+					font-size: var(--fs-800);
+					letter-spacing: 2%;
+					color: inherit;
+
+					padding: 0.2rem 1rem;
+					/* border-radius: var(--link__border-radius); */
+
+					/* ///////////////////// */
+					&:visited {
+						color: var(--clr-link-visited);
+						/* Change the color for visited links */
+					}
+
+					&:hover {
+						opacity: 0.6;
+					}
+
+					&:active {
+						color: var(--clr-link-active);
+						/* Change the color on click/active */
+						filter: brightness(175%);
+					}
+
+					&:focus {
+						outline: 1px solid var(--clr-link-focus);
+						/* Add a focus outline */
+						background-color: var(--clr-link-focus);
+						/* color: var(--clr-pure-white); */
+					}
+
+					&:disabled {
+						opacity: 0.6;
+						/* Make the link semi-transparent to indicate it's disabled */
+						pointer-events: none;
+						/* Disable pointer events on the link */
+					}
+
+					&:target {
+						background-color: var(--clr-link-target);
+						/* Style the target of the link (e.g., section being linked to) */
+					}
+				}
+			}
+
+			/* ///////////////// */
+			.menu-link-home {
+				display: none;
+			}
+		}
+	}
+
+	/** ----dropdown button starts--- */
+	.menu-block {
+		/* outline: 2px solid pink; */
+
+		border-radius: var(--link__border-radius);
+		box-shadow: var(--gen-shadow-05);
+
+		/* to lock in the .header-slide-down position */
+		position: relative;
+	}
+
+	/* when you hover on gen-container, prepare to animate background-color of dropbtn */
+	.gen-container:hover .dropbtn {
+		will-change: background-image;
+	}
+
+	/* /////////////////////////// */
+	/* style the button you click to toggle dropdown */
+	.dropbtn {
+		/* outline: 2px solid red; */
+
+		padding: 1.2rem 4rem 1.2rem 2rem;
+		line-height: var(--lh-400);
+		cursor: pointer;
+
+		font-weight: var(--fw-bold);
+		border-radius: var(--link__border-radius);
+		box-shadow: var(--gen-shadow-05);
+
+		color: var(--clr-neutral-white-2);
+		background-color: var(--clr-bckgrd-btn-pri-default);
+		background-image: linear-gradient(270deg,
+				var(--clr-gradient-200),
+				var(--clr-gradient-100));
+
+		display: block;
+		/* to make the span a Block */
+		position: relative;
+
+		/* animation to attract attention to the product button */
+		animation-name: attention-to-product;
+		animation-duration: 5s;
+		animation-timing-function: ease-in-out;
+		animation-delay: 2s;
+		animation-iteration-count: infinite;
+
+		/* ///////////////////// */
+		/* design the down-arrow beside the dropbtn */
+		.arrow {
+			position: absolute;
+			top: 35%;
+			right: 15%;
+
+			border: solid var(--clr-neutral-white-2);
+			border-width: 0 0.19rem 0.19rem 0;
+			display: inline-block;
+			padding: 0.32rem;
+		}
+
+		.down {
+			transform: rotate(45deg);
+			-webkit-transform: rotate(45deg);
+		}
+
+		/* /////////////////// */
+		&:hover {
+			background-color: var(--clr-bckgrd-btn-pri-default);
+			background-image: none;
+			scale: 1;
+			animation-play-state: paused;
+
+			~#header__dropbtn__checkbox {
+				display: block;
+			}
+		}
+	}
+
+	/* ///////////////////// */
+	/* styling checkbox so it the click is not hindered by anything*/
+	#header__dropbtn__checkbox {
+		/* outline: 4px solid lightsalmon; */
+
+		display: block;
+		height: 4rem;
+		width: 100%;
+		position: absolute;
+		top: 0;
+
+		/* keeps it at the front of .dropbtn */
+		z-index: 100;
+
+		/* makes it unseen even though in front of .dropbtn */
+		opacity: 0;
+
+		cursor: pointer;
+	}
+
+	/* /////////////////////////////// */
+	/* styling the dropdown when .dropbtn is clicked*/
+	.header-slide-down {
+		/* outline: 2px solid red; */
+
+		padding: 0;
+		margin: 0;
+
+		text-align: center;
+		box-shadow: var(--gen-shadow-05);
+		border-radius: var(--link__border-radius);
+
+		background-color: var(--clr-bckgrd-btn-pri-default);
+		background-image: linear-gradient(270deg,
+				var(--clr-gradient-200),
+				var(--clr-gradient-100));
+
+		/* this makes the dropdown not affect the layout when it shows */
+		position: fixed;
+		top: 14%;
+		opacity: 1;
+		z-index: 1;
+		overflow: hidden;
+
+		/* default state of the dropdown list is "hidden=0 height" */
+		height: 0;
+
+		transition: height 0.7s ease-in-out;
+
+		/* ////////////////////////// */
+		.header-slide-down__items {
+			/* outline: 2px solid blue; */
+
+			padding: 0;
+			list-style: none;
+
+			/* ////////////////////// */
+			&:nth-child(1) {
+				/* outline: 2px solid rgb(0, 255, 60); */
+
+				margin-bottom: 1.56rem;
+			}
+
+			/* &:nth-child(2) {
+					outline: 2px solid rgb(255, 111, 0);
+
+					margin-bottom: 1.56rem;
+				} */
+
+			&:last-child {
+				/* outline: 2px solid rgb(131, 175, 36); */
+
+				margin-bottom: 0;
+			}
+
+			/* /////////////////////////// */
+			.header-slide-down__items-links {
+				/* outline: 2px solid gold; */
+
+				font-family: var(--ff-primary);
+				font-weight: var(--fw-bold);
+				font-size: var(--fs-800);
+				letter-spacing: 2%;
+				color: var(--clr-neutral-white-2);
+
+				text-decoration: none;
+
+				display: block;
+				/* width: 18.75rem; */
+				padding: 1.25rem 1.25rem 1.25rem 1.25rem;
+
+				/* ////////////////////// */
+				&:hover {
+					opacity: 0.6;
+					scale: 1.1;
+				}
+
+				&:active {
+					color: var(--clr-link-active);
+					/* Change the color on click/active */
+					filter: brightness(175%);
+				}
+
+				&:focus {
+					outline: 1px solid var(--clr-link-focus);
+					/* Add a focus outline */
+					background-color: var(--clr-link-focus);
+					/* color: var(--clr-pure-white); */
+				}
+
+				&:disabled {
+					opacity: 0.6;
+					/* Make the link semi-transparent to indicate it's disabled */
+					pointer-events: none;
+					/* Disable pointer events on the link */
+				}
+
+				&:target {
+					background-color: var(--clr-link-target);
+					/* Style the target of the link (e.g., section being linked to) */
+				}
+			}
+		}
+	}
+
+	/* /////////////////////////// */
+	/* the 2 main conditions for when dropdown will show */
+	/* when .menu-block is hovered on, .header-slide-down height=14.9rem */
+	/* .menu-block:hover .header-slide-down {
+    height: 14.9rem;
+  } */
+
+	/* when input is checked, .header-slide-down height=14.9rem */
+	#header__dropbtn__checkbox:checked+.header-slide-down {
+		/* outline: 2px solid pink; */
+
+		height: 11rem;
+	}
+
+	@keyframes attention-to-product {
+		0% {
+			background-image: linear-gradient(270deg,
+					var(--clr-gradient-200),
+					var(--clr-gradient-100));
+		}
+
+		25% {
+			background-image: radial-gradient(circle,
+					var(--clr-gradient-200),
+					var(--clr-gradient-100));
+		}
+
+		75% {
+			background-image: radial-gradient(circle,
+					var(--clr-gradient-100),
+					var(--clr-gradient-200));
+		}
+
+		100% {
+			background-image: linear-gradient(270deg,
+					var(--clr-gradient-100),
+					var(--clr-gradient-200));
+		}
+	}
+
+	/** dropdown button ends */
+}
+
+/** ---------------------end of GENERIC-HEADER------------------- */
