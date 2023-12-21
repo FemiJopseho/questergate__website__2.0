@@ -337,7 +337,7 @@
 
 	/** when you scroll down, the header changes */
 	.header.on-scroll {
-		/* outline: 2px solid green; */
+		/* outline: 4px solid green; */
 
 		width: 100%;
 		background-color: var(--clr-neutral-white);

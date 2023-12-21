@@ -2,7 +2,7 @@
 
 /** Mobile Portrait screens */
 /* (max-width <= 500px) */
-@media screen and (width <= 31.25em) {
+@media screen and (width <=31.25em) {
 	/* ///////////////// */
 	/** ----VARIABLES---  */
 	/* :root {
@@ -75,7 +75,8 @@
 		background-color: inherit;
 		width: 100%;
 
-		position: relative; /* to lock burger within nav-2 */
+		position: relative;
+		/* to lock burger within nav-2 */
 
 		display: flex;
 		flex-direction: row;
@@ -119,8 +120,10 @@
 
 		cursor: pointer;
 		user-select: none;
-		width: var(--width__burger); /* the width of the burger div */
-		height: var(--height__burger); /* the height of the burger div */
+		width: var(--width__burger);
+		/* the width of the burger div */
+		height: var(--height__burger);
+		/* the height of the burger div */
 
 		/* ///////////////////// */
 		/* this styles the span burger-lines 
@@ -132,11 +135,9 @@
 			height: var(--height__burger-line);
 			opacity: 1;
 			background-color: var(--clr-bckgrd-btn-pri-default);
-			background-image: linear-gradient(
-				270deg,
-				var(--clr-gradient-100),
-				var(--clr-gradient-200)
-			);
+			background-image: linear-gradient(270deg,
+					var(--clr-gradient-100),
+					var(--clr-gradient-200));
 
 			transform: rotate(0deg);
 			transition: all 0.35s ease-in-out;
@@ -147,14 +148,17 @@
 			top: 0;
 			left: 0;
 		}
+
 		.burger-line:nth-child(2) {
 			top: 30%;
 			left: 0;
 		}
+
 		.burger-line:nth-child(3) {
 			top: 60%;
 			left: 0;
 		}
+
 		.burger-line:last-child {
 			top: 90%;
 			left: 0;
@@ -168,9 +172,11 @@
 		/* this will keep menu within nav-2 */
 		/* position: absolute;  */
 
-		position: fixed; /* menu is there but not within nav-2 & "header.on-scroll". its within html-body  */
+		position: fixed;
+		/* menu is there but not within nav-2 & "header.on-scroll". its within html-body  */
 
-		top: -800%; /* Hides it away by default by keeping it at negative top */
+		top: -800%;
+		/* Hides it away by default by keeping it at negative top */
 		left: 0;
 
 		width: 100%;
@@ -178,11 +184,9 @@
 		overflow: hidden;
 		color: var(--clr-neutral-white-2);
 		background-color: var(--clr-bckgrd-btn-pri-default);
-		background-image: linear-gradient(
-			270deg,
-			var(--clr-gradient-100),
-			var(--clr-gradient-200)
-		);
+		background-image: linear-gradient(270deg,
+				var(--clr-gradient-100),
+				var(--clr-gradient-200));
 		box-shadow: var(--gen-shadow-header);
 
 		transition: all 0.35s ease-in-out;
@@ -221,7 +225,8 @@
 			}
 
 			&:active {
-				color: var(--clr-link-active); /* Change the color on click/active */
+				color: var(--clr-link-active);
+				/* Change the color on click/active */
 				filter: brightness(175%);
 			}
 
@@ -230,14 +235,15 @@
 			}
 
 			&:disabled {
-				opacity: 0.6; /* Make the link semi-transparent to indicate it's disabled */
-				pointer-events: none; /* Disable pointer events on the link */
+				opacity: 0.6;
+				/* Make the link semi-transparent to indicate it's disabled */
+				pointer-events: none;
+				/* Disable pointer events on the link */
 			}
 
 			&:target {
-				background-color: var(
-					--clr-link-target
-				); /* Style the target of the link (e.g., section being linked to) */
+				background-color: var(--clr-link-target);
+				/* Style the target of the link (e.g., section being linked to) */
 			}
 		}
 	}
@@ -250,42 +256,43 @@
 		top: 21%;
 		right: 5%;
 	}
+
 	.burger.is-active .burger-line:nth-child(1) {
 		top: 40%;
 		transform: rotate(135deg);
 		background-color: var(--clr-secondary-600);
-		background-image: linear-gradient(
-			270deg,
-			var(--clr-gradient-200),
-			var(--clr-gradient-500),
-			var(--clr-gradient-200)
-		);
+		background-image: linear-gradient(270deg,
+				var(--clr-gradient-200),
+				var(--clr-gradient-500),
+				var(--clr-gradient-200));
 	}
+
 	.burger.is-active .burger-line:nth-child(2) {
 		opacity: 0;
 		visibility: hidden;
 	}
+
 	.burger.is-active .burger-line:nth-child(3) {
 		opacity: 0;
 		visibility: hidden;
 	}
+
 	.burger.is-active .burger-line:last-child {
 		top: 40%;
 		transform: rotate(-135deg);
 		background-color: var(--clr-secondary-600);
-		background-image: linear-gradient(
-			270deg,
-			var(--clr-gradient-200),
-			var(--clr-gradient-500),
-			var(--clr-gradient-200)
-		);
+		background-image: linear-gradient(270deg,
+				var(--clr-gradient-200),
+				var(--clr-gradient-500),
+				var(--clr-gradient-200));
 	}
 
 	/** styles how the dropdown menu looks AFTER burger click*/
 	.menu.is-active {
 		/* Adds these properties to .menu when burger is clicked */
 
-		top: 0; /* makes it show by bringing it forward */
+		top: 0;
+		/* makes it show by bringing it forward */
 		width: 100%;
 		height: auto;
 		z-index: 10;
@@ -302,7 +309,7 @@
 /* (min-width > 500px )*/
 @media screen and (width > 31.25em) {
 	.header {
-		/* outline: 2px solid gold; */
+		/* outline: 4px solid gold; */
 
 		width: 100%;
 		background-color: var(--clr-header-bckgrd);
@@ -328,7 +335,7 @@
 
 	/** when you scroll down, the header changes */
 	.header.on-scroll {
-		/* outline: 2px solid green; */
+		/* outline: 4px solid green; */
 
 		width: 100%;
 		background-color: var(--clr-neutral-white);
@@ -349,11 +356,13 @@
 		.brand-logo__image-big-screen {
 			display: none;
 		}
+
 		/** logo to display for Screens > 875px */
 		@media screen and (width > 54.69em) {
 			.brand-logo__image-sm-screen {
 				display: none;
 			}
+
 			.brand-logo__image-big-screen {
 				display: inherit;
 			}
@@ -402,7 +411,8 @@
 		/* outline: 2px solid orange; */
 
 		display: block;
-		text-decoration: none; /* Remove underline by default for links */
+		text-decoration: none;
+		/* Remove underline by default for links */
 		padding: 0.8rem 2rem;
 		border-radius: var(--link__border-radius);
 		color: inherit;
@@ -423,14 +433,15 @@
 		}
 
 		&:disabled {
-			opacity: 0.6; /* Make the link semi-transparent to indicate it's disabled */
-			pointer-events: none; /* Disable pointer events on the link */
+			opacity: 0.6;
+			/* Make the link semi-transparent to indicate it's disabled */
+			pointer-events: none;
+			/* Disable pointer events on the link */
 		}
 
 		&:target {
-			background-color: var(
-				--clr-link-target
-			); /* Style the target of the link (e.g., section being linked to) */
+			background-color: var(--clr-link-target);
+			/* Style the target of the link (e.g., section being linked to) */
 		}
 	}
 }
