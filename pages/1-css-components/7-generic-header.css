@@ -464,9 +464,12 @@
 		top: -100%;
 		/* Hides it away by default */
 		left: 0;
+		z-index: 10;
+		overflow: hidden;
+
 		width: 100%;
 		padding: 4rem 0 2rem 0;
-		overflow: hidden;
+
 		color: var(--clr-neutral-white-2);
 		background-color: var(--clr-bckgrd-btn-pri-default);
 		background-image: linear-gradient(270deg,
@@ -478,6 +481,8 @@
 
 		/* //////////////////////// */
 		.menu-inner {
+			/* outline: 2px solid orangered; */
+
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
@@ -487,9 +492,20 @@
 			list-style: none;
 		}
 
+		/* ///////////////// */
+		.menu-item {
+			/* outline: 2px solid blue; */
+
+			width: 50%;
+			border-radius: var(--link__border-radius);
+		}
+
 		/* /////////////////////// */
 		.menu-link {
 			/* outline: 2px solid gold; */
+
+			display: block;
+			width: 100%;
 
 			font-family: inherit;
 			font-size: var(--fs-700);
@@ -580,10 +596,13 @@
 		/* makes it show by bringing it forward */
 		width: 100%;
 		height: auto;
+		z-index: 10;
 
 		~.menu-block {
-			visibility: hidden;
-			z-index: -1;
+			/* visibility: hidden;
+			z-index: -1; */
+
+			border: none;
 		}
 	}
 
@@ -636,8 +655,7 @@
 	}
 
 	.header.on-scroll {
-		/* when you scroll, JS uses .on-scroll 
-			to add these properties to .header */
+		/* when you scroll, JS uses .on-scroll to add these properties to .header */
 		background: var(--clr-header-bckgrd);
 		box-shadow: var(--gen-shadow-header);
 
@@ -668,13 +686,21 @@
 		margin-right: auto;
 		flex-basis: 30%;
 		min-width: 8rem;
+		height: 3.3rem;
+
+		/* to fix issue of center image within the image container 
+    caused by the height...and the height is to fix wobble when burger active */
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: center;
+		align-items: center;
 	}
 
 	/** ----dropdown button starts--- */
 	.menu-block {
 		/* outline: 2px solid gold; */
 
-		/* flex-basis: 30%; */
 		min-width: 9.5rem;
 		margin-right: 2rem;
 
@@ -682,6 +708,7 @@
 
 		/* to lock in the .header-slide-down position */
 		position: relative;
+
 	}
 
 	/* when you hover on gen-container, prepare to animate background-color of dropbtn */
@@ -948,7 +975,6 @@
 					it is used to draw the 3 lines you see */
 
 			position: absolute;
-			/* display: block; */
 			width: 100%;
 			height: var(--height__burger-line);
 			opacity: 1;
@@ -991,9 +1017,11 @@
 		top: -300%;
 		/* Hides it away even in compressed screen */
 		left: 0;
+		z-index: 10;
+		overflow: hidden;
+
 		width: 100%;
 		padding: 4rem 0 2rem 0;
-		overflow: hidden;
 		color: var(--clr-neutral-white-2);
 		background-color: var(--clr-bckgrd-btn-pri-default);
 		background-image: linear-gradient(270deg,
@@ -1015,6 +1043,14 @@
 		}
 
 		/* ///////////////// */
+		.menu-item {
+			/* outline: 2px solid blue; */
+
+			width: 50%;
+			border-radius: var(--link__border-radius);
+		}
+
+		/* ///////////////// */
 		.menu-link-home {
 			display: none;
 		}
@@ -1022,6 +1058,9 @@
 		/* /////////////////////// */
 		.menu-link {
 			/* outline: 2px solid gold; */
+
+			display: block;
+			width: 100%;
 
 			font-family: inherit;
 			font-size: var(--fs-700);
@@ -1068,9 +1107,10 @@
 
 	/** Styles what happens to bugger-lines when burger is clicked */
 	.burger.is-active {
-		position: absolute;
-		top: 25%;
-		right: 5%;
+		position: fixed;
+		top: 1%;
+		right: 2%;
+		z-index: 100;
 	}
 
 	.burger.is-active .burger-line:nth-child(1) {
@@ -1115,12 +1155,12 @@
 		/* makes it show by bringing it forward */
 		width: 100%;
 		height: auto;
+		z-index: 10;
 
 		~.menu-block {
-			display: none;
-			/* this fix the irregular move the dropdown when burger is clicked */
+			/* outline: 2px solid purple; */
+
 			visibility: hidden;
-			z-index: -1;
 		}
 	}
 
@@ -1224,7 +1264,6 @@
 		width: 98%;
 		max-width: var(--width__navbar);
 		margin: 0 auto;
-		/* height: 4.25rem; */
 
 		display: flex;
 		flex-direction: row;
@@ -1286,6 +1325,12 @@
 				/* outline: 2px solid grey; */
 
 				padding: 0;
+
+				/* ///////////////// */
+				&:hover {
+					scale: 1.05;
+					transform: translateY(-2px);
+				}
 
 				/* ///////////////////// */
 				.menu-link {
@@ -1356,6 +1401,8 @@
 
 		/* to lock in the .header-slide-down position */
 		position: relative;
+
+
 	}
 
 	/* when you hover on gen-container, prepare to animate background-color of dropbtn */

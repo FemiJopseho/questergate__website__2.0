@@ -125,6 +125,9 @@
 	/** -----BOX SHADOWS------------ */
 	/* (go to utility-classes.css to get the general style
 	 and utility class for shadows---- */
+
+	/* Box shadow values: offset-x offset-y blur-radius spread-radius color */
+
 	--gen-shadow-header: 0px 8px 28px 0px hsla(214, 88%, 13%, 0.2);
 	--gen-shadow-01: 0px 2px 6px 0px hsla(241, 37%, 12%, 0.06);
 	--gen-shadow-02: 0px 2px 12px 0px hsla(241, 37%, 12%, 0.08);
@@ -132,4 +135,7 @@
 	--gen-shadow-04: 0px 14px 42px 0px hsla(241, 37%, 12%, 0.14);
 	--gen-shadow-05: 0px 24px 65px 0px hsla(241, 37%, 12%, 0.16);
 	--gen-shadow-06: 0px 32px 72px 0px hsla(241, 37%, 12%, 0.24);
+
+	--thick-shadow: box-shadow: 0 5px 5px 0 rgba(0, 0, 255, 0.5);
+
 }

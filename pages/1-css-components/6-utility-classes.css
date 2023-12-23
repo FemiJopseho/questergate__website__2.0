@@ -68,6 +68,10 @@
 	box-shadow: var(--gen-shadow-header);
 }
 
+.thick-shadow {
+	box-shadow: var(--thick-shadow);
+}
+
 
 /** ----STYLED CLASSES FOR LIST---- */
 /* place this in the ul or ol...it will also work in li but it makes html look rough */
