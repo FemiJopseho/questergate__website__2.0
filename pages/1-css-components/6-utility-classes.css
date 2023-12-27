@@ -68,6 +68,10 @@
 	box-shadow: var(--gen-shadow-header);
 }
 
+.gen-shadow-3d-01 {
+	box-shadow: var(--gen-shadow-3d-01);
+}
+
 .thick-shadow {
 	box-shadow: var(--thick-shadow);
 }
@@ -96,6 +100,39 @@
 }
 
 /** ------BUTTON with Arrow Style------ */
+.link-to-button {
+	display: inline-block;
+
+	background-color: var(--clr-tertiary-200);
+	color: var(--clr-pure-white);
+	font-weight: var(--fw-bold);
+	border: none;
+	text-align: center;
+	text-decoration: none;
+	list-style-type: none;
+	padding: 0.5rem 1.5rem;
+
+	border: 1px solid var(--clr-pure-white);
+	box-shadow: 0 10px 5px -4px var(--clr-tertiary-200);
+
+
+	transition: all 0.1s ease-in-out;
+
+	/* ///////////////////// */
+	&:hover {
+		/* border: 1px solid var(--clr-pure-white); */
+		scale: 1.01;
+		/* box-shadow: 0 5px 5px 0 var(--clr-tertiary-200); */
+		/* transform: translateY(-2px); */
+	}
+
+	&:active {
+		filter: brightness(200%);
+		background-color: var(--clr-tertiary-200);
+		transform: translateY(8px);
+	}
+}
+
 .cta__btn {
 	/* outline: 2px solid orange; */
 

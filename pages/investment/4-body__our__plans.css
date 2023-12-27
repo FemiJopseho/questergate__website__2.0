@@ -1,0 +1,516 @@
+/* contains styles for INVESTMENT PAGE: */
+/* 3-things-that-makes-us-different -- Carousel section */
+
+
+
+/** Mobile view */
+/* max-width: 500px */
+@media screen and (width <=31.25em) {
+  .fund-our-plans__section {
+    /* outline: 4px solid red; */
+
+    width: 100%;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .fund-our-plans__container {
+    /* outline: 4px solid blueviolet; */
+
+    width: 100%;
+    max-width: var(--width__1200px);
+    margin: 0 auto;
+  }
+
+  .fund-our-plans__title__container {
+    /* outline: 2px solid indianred; */
+
+    width: 100%;
+
+    /* ////////////////// */
+    .fund-our-plans__title {
+      text-align: center;
+      font-family: var(--ff-primary);
+      font-size: var(--fs-600);
+      font-weight: var(--fw-bold);
+      line-height: var(--lh-600);
+      letter-spacing: 1px;
+      color: var(--clr-primary-650);
+      text-transform: capitalize;
+    }
+  }
+
+  .fund-our-plans__types {
+    /* outline: 2px solid green; */
+
+    width: 100%;
+    padding: 2rem 1rem 0rem 1rem;
+
+    text-align: left;
+    font-family: var(--ff-primary);
+    line-height: var(--lh-430);
+    letter-spacing: 1px;
+    color: var(--clr-primary-650);
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    row-gap: 4rem;
+  }
+
+  .fund-our-plans__plan {
+    /* outline: 2px solid gold; */
+
+    padding: 1rem 1rem;
+
+    background-color: var(--clr-primary-100);
+    background-image: linear-gradient(45deg,
+        var(--clr-primary-100),
+        var(--clr-primary-100),
+        var(--clr-primary-100),
+        var(--clr-primary-650));
+    box-shadow: var(--gen-shadow-3d-01);
+    border-radius: 12px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1rem;
+
+    transition: all 0.3s ease-in-out;
+
+
+    /* /////////////// */
+    &:hover {
+      scale: 1.05;
+      filter: brightness(120%);
+    }
+
+    /* /////////////// */
+    &:active {
+      scale: 1.05;
+      filter: brightness(120%);
+    }
+
+    /* /////////////// */
+    .fund-our-plans__header__h3 {
+      /* outline: 2px solid pink; */
+
+      /* padding-bottom: 1rem; */
+
+      font-size: var(--fs-700);
+      font-weight: var(--fw-bold);
+      color: var(--clr-pure-white);
+      text-transform: capitalize;
+    }
+
+    /* ///////////////// */
+    .fund-our-plans__sub-header__h4 {
+      /* outline: 2px solid pink; */
+
+      font-size: var(--fs-700);
+      font-weight: var(--fw-bold);
+      color: var(--clr-secondary-650);
+      text-transform: capitalize;
+    }
+
+    /* ///////////////// */
+    .fund-our-plans__list {
+      /* outline: 2px solid pink; */
+
+      font-size: var(--fs-800);
+      font-weight: var(--fw-semi-bold);
+      color: var(--clr-pure-white);
+      text-transform: none;
+      text-decoration: none;
+      list-style: none;
+    }
+
+    /* /////////////// */
+    .fund-our-plans__item {
+
+      padding-bottom: 1rem;
+    }
+
+    /* //////////// */
+    .fund-our-plans__item-placeholder {
+      display: none;
+    }
+
+    /* //////////////// */
+    .fund-our-plans__more-link {
+      /* outline: 2px solid pink; */
+
+      display: block;
+
+      font-size: var(--fs-700);
+      font-weight: var(--fw-bold);
+      text-decoration: none;
+      text-align: center;
+      color: var(--clr-secondary-650);
+
+      transition: all 0.3s ease-in-out;
+
+      /* ////////////// */
+      &:hover {
+        transform: translateY(-4px);
+        scale: 1.05;
+        filter: brightness(120%);
+      }
+
+      /* ////////////// */
+      &:active {
+        transform: translateY(6px);
+      }
+    }
+  }
+}
+
+/*        */
+/*        */
+/*        */
+/*        */
+/*        */
+
+/* Mobile landscape & Tablet Portrait screens */
+/* (min-width > 500px ) & (max-width <= 875px) */
+@media screen and (width > 31.25em) and (width <=54.69em) {
+  .fund-our-plans__section {
+    /* outline: 4px solid red; */
+
+    width: 100%;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  .fund-our-plans__container {
+    /* outline: 4px solid blueviolet; */
+
+    width: 100%;
+    max-width: var(--width__1200px);
+    margin: 0 auto;
+  }
+
+  .fund-our-plans__title__container {
+    /* outline: 2px solid indianred; */
+
+    width: 100%;
+
+    /* ////////////////// */
+    .fund-our-plans__title {
+      text-align: center;
+      font-family: var(--ff-primary);
+      font-size: var(--fs-500);
+      font-weight: var(--fw-bold);
+      line-height: var(--lh-600);
+      letter-spacing: 1px;
+      color: var(--clr-primary-650);
+      text-transform: capitalize;
+    }
+  }
+
+  .fund-our-plans__types {
+    /* outline: 2px solid green; */
+
+    width: 100%;
+    padding: 2rem 0rem 0rem 0rem;
+
+    text-align: left;
+    font-family: var(--ff-primary);
+    line-height: var(--lh-600);
+    letter-spacing: 1px;
+    color: var(--clr-primary-650);
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    row-gap: 4rem;
+  }
+
+  .fund-our-plans__plan {
+    /* outline: 2px solid gold; */
+
+    padding: 2rem 1rem;
+
+    background-color: var(--clr-primary-100);
+    background-image: linear-gradient(45deg,
+        var(--clr-primary-100),
+        var(--clr-primary-100),
+        var(--clr-primary-100),
+        var(--clr-primary-650));
+    box-shadow: var(--gen-shadow-3d-01);
+    border-radius: 12px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1rem;
+
+    transition: all 0.3s ease-in-out;
+
+
+    /* /////////////// */
+    &:hover {
+      scale: 1.05;
+      filter: brightness(120%);
+    }
+
+    /* /////////////// */
+    &:active {
+      scale: 1.05;
+      filter: brightness(120%);
+    }
+
+    /* /////////////// */
+    .fund-our-plans__header__h3 {
+      /* outline: 2px solid pink; */
+
+      /* padding-bottom: 1rem; */
+
+      font-size: var(--fs-550);
+      font-weight: var(--fw-bold);
+      color: var(--clr-pure-white);
+      text-transform: capitalize;
+    }
+
+    /* ///////////////// */
+    .fund-our-plans__sub-header__h4 {
+      /* outline: 2px solid pink; */
+
+      font-size: var(--fs-600);
+      font-weight: var(--fw-bold);
+      color: var(--clr-secondary-650);
+      text-transform: capitalize;
+    }
+
+    /* ///////////////// */
+    .fund-our-plans__list {
+      /* outline: 2px solid pink; */
+
+      font-size: var(--fs-700);
+      font-weight: var(--fw-semi-bold);
+      color: var(--clr-pure-white);
+      text-transform: none;
+      text-decoration: none;
+      list-style: none;
+    }
+
+    /* /////////////// */
+    .fund-our-plans__item {
+
+      padding-bottom: 0.5rem;
+    }
+
+    /* //////////// */
+    .fund-our-plans__item-placeholder {
+      display: none;
+    }
+
+    /* //////////////// */
+    .fund-our-plans__more-link {
+      /* outline: 2px solid pink; */
+
+      display: block;
+
+      font-size: var(--fs-700);
+      font-weight: var(--fw-bold);
+      text-decoration: none;
+      text-align: center;
+      color: var(--clr-secondary-650);
+
+      transition: all 0.3s ease-in-out;
+
+      /* ////////////// */
+      &:hover {
+        transform: translateY(-4px);
+        scale: 1.05;
+        filter: brightness(120%);
+      }
+
+      /* ////////////// */
+      &:active {
+        transform: translateY(6px);
+      }
+    }
+  }
+}
+
+/*        */
+/*        */
+/*        */
+/*        */
+/*        */
+
+/** Screens > 875px */
+@media screen and (width > 54.69em) {
+  .fund-our-plans__section {
+    /* outline: 4px solid red; */
+
+    width: 100%;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  .fund-our-plans__container {
+    /* outline: 4px solid blueviolet; */
+
+    width: 100%;
+    max-width: var(--width__1200px);
+    margin: 0 auto;
+  }
+
+  .fund-our-plans__title__container {
+    /* outline: 2px solid indianred; */
+
+    width: 100%;
+
+    /* ////////////////// */
+    .fund-our-plans__title {
+      text-align: center;
+      font-family: var(--ff-primary);
+      font-size: var(--fs-400);
+      font-weight: var(--fw-bold);
+      line-height: var(--lh-600);
+      letter-spacing: 1px;
+      color: var(--clr-primary-650);
+      text-transform: capitalize;
+    }
+  }
+
+  .fund-our-plans__types {
+    /* outline: 2px solid green; */
+
+    width: 100%;
+    padding: 2rem 1rem 1rem 1rem;
+
+    text-align: left;
+    font-family: var(--ff-primary);
+    line-height: var(--lh-410);
+    letter-spacing: 1px;
+    color: var(--clr-primary-650);
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 4rem;
+  }
+
+  .fund-our-plans__plan {
+    /* outline: 2px solid gold; */
+
+    padding: 1rem;
+
+    background-color: var(--clr-primary-100);
+    background-image: linear-gradient(45deg,
+        var(--clr-primary-100),
+        var(--clr-primary-100),
+        var(--clr-primary-100),
+        var(--clr-primary-650));
+    box-shadow: var(--gen-shadow-3d-01);
+    border-radius: 12px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1rem;
+
+    transition: all 0.3s ease-in-out;
+
+
+    /* /////////////// */
+    &:hover {
+      scale: 1.05;
+      filter: brightness(120%);
+    }
+
+    /* /////////////// */
+    &:active {
+      scale: 1.05;
+      filter: brightness(120%);
+    }
+
+    /* /////////////// */
+    .fund-our-plans__header__h3 {
+      /* outline: 2px solid pink; */
+
+      padding-bottom: 1rem;
+
+      font-size: var(--fs-500);
+      font-weight: var(--fw-bold);
+      color: var(--clr-pure-white);
+      text-transform: capitalize;
+    }
+
+    /* ///////////////// */
+    .fund-our-plans__sub-header__h4 {
+      /* outline: 2px solid pink; */
+
+      font-size: var(--fs-600);
+      font-weight: var(--fw-bold);
+      color: var(--clr-secondary-650);
+      text-transform: capitalize;
+    }
+
+    /* ///////////////// */
+    .fund-our-plans__list {
+      /* outline: 2px solid pink; */
+
+      font-size: var(--fs-700);
+      font-weight: var(--fw-semi-bold);
+      color: var(--clr-pure-white);
+      text-transform: none;
+      text-decoration: none;
+      list-style: none;
+    }
+
+    /* /////////////// */
+    .fund-our-plans__item {
+
+      padding-bottom: 1rem;
+    }
+
+    /* //////////// */
+    .fund-our-plans__item-placeholder {
+      visibility: hidden;
+    }
+
+    /* //////////////// */
+    .fund-our-plans__more-link {
+      /* outline: 2px solid pink; */
+
+      display: block;
+
+      font-size: var(--fs-700);
+      font-weight: var(--fw-bold);
+      text-decoration: none;
+      text-align: center;
+      color: var(--clr-secondary-650);
+
+      transition: all 0.3s ease-in-out;
+
+      /* ////////////// */
+      &:hover {
+        transform: translateY(-4px);
+        scale: 1.05;
+        filter: brightness(120%);
+      }
+
+      /* ////////////// */
+      &:active {
+        transform: translateY(6px);
+      }
+    }
+  }
+}

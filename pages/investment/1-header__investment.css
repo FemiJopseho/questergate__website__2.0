@@ -213,11 +213,6 @@
     /* REGISTER or DASHBOARD BUTTON */
     .fund-header__register {
       border-radius: 12px;
-
-      &:hover {
-        scale: 1;
-        box-shadow: 0 5px 5px 0 var(--clr-tertiary-200);
-      }
     }
 
     .fund-header__link-register {
@@ -228,10 +223,16 @@
       border: none;
 
       /* ///////////////////// */
+      &:hover {
+        border: 1px solid var(--clr-pure-white);
+        scale: 1;
+        box-shadow: 0 10px 5px -4px var(--clr-tertiary-200);
+      }
+
       &:active {
         filter: brightness(200%);
-        scale: 1.1;
         background-color: var(--clr-tertiary-200);
+        transform: translateY(5px);
       }
     }
   }
@@ -510,10 +511,6 @@
     .fund-header__register {
       border-radius: 12px;
 
-      &:hover {
-        scale: 1;
-        box-shadow: 0 5px 5px 0 var(--clr-tertiary-200);
-      }
     }
 
 
@@ -525,10 +522,17 @@
       border: none;
 
       /* ///////////////////// */
+      &:hover {
+        border: 1px solid var(--clr-pure-white);
+        scale: 1;
+        box-shadow: 0 10px 5px -4px var(--clr-tertiary-200);
+
+      }
+
       &:active {
         filter: brightness(200%);
-        scale: 1.1;
         background-color: var(--clr-tertiary-200);
+        transform: translateY(5px);
       }
     }
   }

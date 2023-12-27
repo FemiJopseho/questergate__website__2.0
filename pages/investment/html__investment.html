@@ -37,10 +37,10 @@
 		<!-- Use Normalize Reset -->
 		<link rel="stylesheet" href="../../css-resets/normalize.css" />
 
-		<link
+		<!-- <link
 			rel="stylesheet"
 			href="https://necolas.github.io/normalize.css/latest/normalize.css"
-		/>
+		/> -->
 
 		<!-- -----------------FONTS (loaded for a start)-------------------- -->
 
@@ -77,14 +77,18 @@
 		<link rel="stylesheet" href="../1-css-components/6-utility-classes.css" />
 
 		<link rel="stylesheet" href="./1-header__investment.css" />
-		<link rel="stylesheet" href="./4-body-testimonials__investments.css" />
+		<link rel="stylesheet" href="./2-hero__investment.css" />
+		<link rel="stylesheet" href="./3-body-testimonials__investments.css" />
+		<link rel="stylesheet" href="./4-body__our__plans.css" />
+		<link rel="stylesheet" href="5-calculators.css" />
+		<link rel="stylesheet" href="6-what__we__invest__in.css" />
 
 		<!-- --------------JQUERY ACCESS via CDN and via Local server----------------- -->
-		<script
+		<!-- <script
 			src="https://code.jquery.com/jquery-3.7.1.min.js"
 			integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
 			crossorigin="anonymous"
-		></script>
+		></script> -->
 
 		<script src="../js-components/jquery-3.7.1.min.js"></script>
 
@@ -136,7 +140,7 @@
 							</li>
 
 							<li class="fund-header__list__items">
-								<a href="#" class="fund-header__list__items-link">FAQ</a>
+								<a href="#" class="fund-header__list__items-link">Faq</a>
 							</li>
 
 							<li class="fund-header__list__items">
@@ -209,93 +213,53 @@
 				<!-- -------START OF HERO SECTION------- -->
 				<section class="fund-hero__section">
 					<div class="fund-hero__container">
-						<div class="fund-hero__texts__container">
-							<div class="fund-hero__texts__header">
-								<h3 class="fund-hero__texts__header-h3">
-									We help you <br />
-									<span class="fund-hero__texts__header-h3-extra"
-										><strong>achieve your financial goals</strong></span
-									>
-								</h3>
-							</div>
-
-							<div class="fund-hero__texts__footnote">
-								<p class="fund-hero__texts__footnote-p">
-									Start your investment journey today
-								</p>
-							</div>
-
-							<div class="fund-hero__texts__cta">
-								<a
-									class="fund-hero__texts__cta-button"
-									href="http://"
-									target="_self"
-									>Select a financial plan</a
-								>
-							</div>
-						</div>
-
 						<div class="fund-hero__image__container">
 							<img
-								class="fund-hero__image__desktop"
-								src="../../images/QuesterGate BANNER 0-50 desktop.jpg"
+								class="fund-hero__image__desktop carousel__image"
+								src="../../images/QG image optimised/Questergate Banner 1--landscape.jpg"
 								alt="hero image"
 							/>
 
 							<img
-								class="fund-hero__image__tablet"
-								src="../../images/QuesterGate BANNER 0-pixel-500 tablet.jpg"
+								class="fund-hero__image__tablet-land"
+								src="../../images/QG image optimised/Questergate Banner 1--landscape.jpg"
+								alt="hero image"
+							/>
+
+							<img
+								class="fund-hero__image__tablet-pot"
+								src="../../images/QG image optimised/Questergate Banner 1--potrait.jpg"
 								alt="hero image"
 							/>
 
 							<img
 								class="fund-hero__image__mobile"
-								src="../../images/QuesterGate BANNER 0-20 mobile.jpg"
+								src="../../images/QG image optimised/Questergate Banner 1--potrait.jpg"
 								alt="hero image"
 							/>
 						</div>
-					</div>
-				</section>
 
-				<!-- -------START OF What we Invest in------ -->
-				<section class="fund-what-we-invest-in__section">
-					<div class="fund-what-we-invest-in__container">
-						<h3 class="fund-what-we-invest-in__header">What We Invest In</h3>
+						<div class="fund-hero__content__container">
+							<div class="fund-hero__texts__container">
+								<p class="fund-hero__texts hero__invest__animate__text">
+									Secure your future
+								</p>
+							</div>
 
-						<div class="fund-what-we-invest-in__image__container">
-							<img
-								class="fund-what-we-invest-in__image"
-								src="../../images/financial_market_image_5-50.jpg"
-								alt="financial market image"
-							/>
-						</div>
-
-						<div class="fund-what-we-invest-in__list__container">
-							<ul class="fund-what-we-invest-in__list">
-								<li class="fund-what-we-invest-in__list__items">
-									Stock Market
-								</li>
-
-								<li class="fund-what-we-invest-in__list__items">Bond Market</li>
-
-								<li class="fund-what-we-invest-in__list__items">
-									Currency Market
-								</li>
-
-								<li class="fund-what-we-invest-in__list__items">
-									Commodities Market
-								</li>
-
-								<li class="fund-what-we-invest-in__list__items">
-									Real Estate Capital Market
-								</li>
-							</ul>
+							<div class="fund-hero__cta__container">
+								<a
+									class="fund-hero__cta-button link-to-button"
+									href="#"
+									target="_self"
+									>Select a financial plan</a
+								>
+							</div>
 						</div>
 					</div>
 				</section>
 
 				<!-- -------start of TESTIMONIALS section------- -->
-				<section class="testimonial__section hidden">
+				<section class="testimonial__section">
 					<div class="testimonial__container">
 						<h2 class="testimonial__header">What our clients say about us</h2>
 
@@ -446,77 +410,78 @@
 					</div>
 				</section>
 
-				<!-- -------START OF OUR SAVINGS & INVESTMENT Section------ -->
+				<!-- -------START OF OUR Financial Plans Section------ -->
 				<section class="fund-our-plans__section">
 					<div class="fund-our-plans__container">
 						<div class="fund-our-plans__title__container">
-							<h3 class="fund-our-plans__title">
-								Our Savings & Investment Plans
-							</h3>
+							<h3 class="fund-our-plans__title">Our Financial Plans</h3>
 						</div>
 
 						<div class="fund-our-plans__types">
 							<!-- flex-Savings plan -->
-							<div class="fund-our-plans__plan">
+							<div class="fund-our-plans__plan savings__plans">
 								<h3 class="fund-our-plans__header__h3">Savings Plan</h3>
 								<h4 class="fund-our-plans__sub-header__h4">Flex-Business</h4>
 
 								<ul class="fund-our-plans__list">
 									<li class="fund-our-plans__item">
-										✔ Minimum deposit: ₦5,000
+										✔ Minimum deposit per time: ₦5,000.
 									</li>
 
 									<li class="fund-our-plans__item">
-										✔ Interest: 15.3% in 6 months
+										✔ Interest: 15.3% in 6 months.
 									</li>
 
 									<li class="fund-our-plans__item">
-										✔ Choose any duration you want
+										✔ Choose any duration you want.
 									</li>
 
-									<li class="fund-our-plans__item">
-										✔ Keep adding to your capital as many times as you want
+									<!-- <li class="fund-our-plans__item">
+										✔ Keep adding to your capital as many times as you want.
+									</li> -->
+
+									<!-- NOTE--this is placed here to 
+										make card same height without the 
+										need to set the height in css -->
+									<li
+										class="fund-our-plans__item fund-our-plans__item-placeholder"
+									>
+										✔ Investment duration: 12 months.
 									</li>
 								</ul>
 
 								<div class="fund-our-plans__more-link__container">
-									<a
-										class="fund-our-plans__more-link"
-										href="http://"
-										target="_self"
+									<a class="fund-our-plans__more-link" href="" target="_self"
 										>Learn more</a
 									>
 								</div>
 							</div>
 
 							<!-- Fixed-investment plan -->
-							<div class="fund-our-plans__plan">
+							<div class="fund-our-plans__plan invest__plans">
 								<h3 class="fund-our-plans__header__h3">investment Plan</h3>
-								<h4 class="fund-our-plans__sub-header__h4">FIXED QG-12</h4>
+								<h4 class="fund-our-plans__sub-header__h4">fixed QG-12</h4>
 
 								<ul class="fund-our-plans__list">
 									<li class="fund-our-plans__item">
-										✔ Minimum deposit: ₦5,000
+										✔ Minimum capital: ₦100,000.
 									</li>
 
 									<li class="fund-our-plans__item">
-										✔ Interest: 15.3% in 6 months
+										✔ Interest: 35% in 12 months.
 									</li>
 
 									<li class="fund-our-plans__item">
-										✔ Choose any duration you want
+										✔ Maximum capital: ₦25,000,000.
 									</li>
 
 									<li class="fund-our-plans__item">
-										✔ Keep adding to your capital as many times as you want
+										✔ Investment duration: 12 months.
 									</li>
 								</ul>
 
 								<div class="fund-our-plans__more-link__container">
-									<a
-										class="fund-our-plans__more-link"
-										href="http://"
-										target="_self"
+									<a class="fund-our-plans__more-link" href="" target="_self"
 										>Learn more</a
 									>
 								</div>
@@ -555,6 +520,43 @@
 
 								<div class="fund-calculator__accordion__link-arrow"></div
 							></a>
+						</div>
+					</div>
+				</section>
+
+				<!-- -------START OF What we Invest in------ -->
+				<section class="fund-what-we-invest-in__section">
+					<div class="fund-what-we-invest-in__container">
+						<h3 class="fund-what-we-invest-in__header">What We Invest In</h3>
+
+						<!-- <div class="fund-what-we-invest-in__image__container">
+							<img
+								class="fund-what-we-invest-in__image"
+								src="../../images/financial_market_image_5-50.jpg"
+								alt="financial market image"
+							/>
+						</div> -->
+
+						<div class="fund-what-we-invest-in__list__container">
+							<ul class="fund-what-we-invest-in__list">
+								<li class="fund-what-we-invest-in__list__items">
+									Stock Market
+								</li>
+
+								<li class="fund-what-we-invest-in__list__items">Bond Market</li>
+
+								<li class="fund-what-we-invest-in__list__items">
+									Real Estate Market
+								</li>
+
+								<li class="fund-what-we-invest-in__list__items">
+									Commodities Market
+								</li>
+
+								<li class="fund-what-we-invest-in__list__items">
+									Currency Market
+								</li>
+							</ul>
 						</div>
 					</div>
 				</section>
@@ -778,6 +780,7 @@
 		<script src="../js-components/back-to-top.js"></script>
 		<script src="../js-components/header__on-scroll.js"></script>
 		<script src="../js-components/header__hamburger.js"></script>
+		<script src="../js-components/hero__invest__carousel__text__animation.js"></script>
 
 		<script src="../js-components/section__visible__on__scroll.js"></script>
 		<script src="../js-components/footer__currentyear__auto.js"></script>
