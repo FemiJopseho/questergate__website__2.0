@@ -454,6 +454,7 @@ video {
   --clr-secondary-500: hsl(49, 100%, 50%);
   --clr-secondary-600: hsl(39, 89%, 45%);
   --clr-secondary-650: hsl(39, 89%, 45%, 1);
+  --clr-secondary-700: hsl(240, 88%, 97%);
   --clr-tertiary-100: hsla(0, 0%, 0%, 1);
   --clr-tertiary-200: hsl(214, 92%, 33%, 1);
 

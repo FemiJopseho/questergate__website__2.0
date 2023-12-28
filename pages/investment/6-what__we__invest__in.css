@@ -223,7 +223,7 @@
   .fund-what-we-invest-in__list__container {
     /* outline: 2px solid orange; */
 
-    width: 100%;
+    width: 70%;
     padding: 1rem 0;
     height: 30dvh;
 
@@ -272,7 +272,7 @@
     /* /////////////// */
     &:nth-child(2) {
       top: 10%;
-      left: 37.5%
+      left: 37%
     }
 
     /* /////////////// */
