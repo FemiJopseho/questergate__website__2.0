@@ -64,7 +64,7 @@ video {
 .gen-container {
   /* outline: 2px solid gold; */
 
-  min-width: var(--min-width__235px);
+  min-width: var(--min-width__290px);
 }
 
 /** ---------------end of PRESET STYLES------------- */
@@ -432,7 +432,7 @@ video {
   /* 62.5% of gen-container */
   --min-width__235px: 14.69rem;
   /* min width of the gen-container */
-  --min-width__250px: 15.63rem;
+  --min-width__290px: 18.12rem;
   /* revised min width of the gen-container */
 }
 
@@ -577,6 +577,7 @@ video {
 
   --gen-shadow-header: 0px 8px 28px 0px hsla(214, 88%, 13%, 0.2);
   --gen-shadow-3d-01: 10px 10px 10px 0px hsla(241, 37%, 12%, 0.2);
+  --gen-shadow-3d-02: 10px 0px 10px 5px hsla(241, 37%, 12%, 0.2);
   --gen-shadow-01: 0px 2px 6px 0px hsla(241, 37%, 12%, 0.06);
   --gen-shadow-02: 0px 2px 12px 0px hsla(241, 37%, 12%, 0.08);
   --gen-shadow-03: 0px 8px 28px 0px hsla(241, 37%, 12%, 0.1);

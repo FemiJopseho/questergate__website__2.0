@@ -72,6 +72,10 @@
 	box-shadow: var(--gen-shadow-3d-01);
 }
 
+.gen-shadow-3d-02 {
+	box-shadow: var(--gen-shadow-3d-02);
+}
+
 .thick-shadow {
 	box-shadow: var(--thick-shadow);
 }

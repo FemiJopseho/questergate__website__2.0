@@ -46,7 +46,7 @@
 
     width: 100%;
     padding: 2rem 0;
-    height: 55dvh;
+    min-height: 10dvh;
 
     background-color: var(--clr-primary-100);
     background-image: linear-gradient(45deg,
@@ -58,6 +58,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    box-shadow: var(--gen-shadow-3d-02);
   }
 
   .fund-what-we-invest-in__list {
@@ -135,7 +136,7 @@
 
     width: 100%;
     padding: 2rem 0;
-    height: 65dvh;
+    min-height: 10dvh;
 
     background-color: var(--clr-primary-100);
     background-image: linear-gradient(45deg,
@@ -147,6 +148,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    box-shadow: var(--gen-shadow-3d-02);
   }
 
   .fund-what-we-invest-in__list {
@@ -224,8 +226,8 @@
     /* outline: 2px solid orange; */
 
     width: 70%;
-    padding: 1rem 0;
-    height: 30dvh;
+    padding: 2rem 0 1rem 0;
+    min-height: 10dvh;
 
     background-color: var(--clr-primary-100);
     background-image: linear-gradient(45deg,
@@ -237,8 +239,10 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    border-radius: 12px;
+    box-shadow: var(--gen-shadow-03);
+    /* //////////////// */
 
-    position: relative;
   }
 
   .fund-what-we-invest-in__list {
@@ -257,42 +261,16 @@
     font-weight: var(--fw-bold);
     line-height: var(--lh-600);
     letter-spacing: 1px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 1rem;
   }
 
   .fund-what-we-invest-in__list__items {
-    position: absolute;
-
-    /* first row */
-    /* /////////////// */
-    &:nth-child(1) {
-      top: 10%;
-      left: 5%;
-    }
-
-    /* /////////////// */
-    &:nth-child(2) {
-      top: 10%;
-      left: 37%
-    }
-
-    /* /////////////// */
-    &:nth-child(5) {
-      top: 10%;
-      right: 5%;
-    }
-
-    /* second row */
-    /* /////////////// */
-    &:nth-child(3) {
-      top: 60%;
-      left: 5%;
-    }
-
-    /* /////////////// */
-    &:nth-child(4) {
-      top: 60%;
-      right: 5%;
-    }
-
+    padding-bottom: 1rem;
   }
 }

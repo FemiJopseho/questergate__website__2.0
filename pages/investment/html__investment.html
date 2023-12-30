@@ -492,35 +492,375 @@
 				</section>
 
 				<!-- -------START OF CALCULATOR Section------ -->
-				<!-- I will include it at the end of everything and once i upload -->
-				<section class="fund-calculator__section">
-					<div class="fund-calculator__container">
-						<div class="fund-calculator__accordion__container">
-							<a
-								class="fund-calculator__accordion__link"
-								href="http://"
-								target="_self"
+				<!-- *add the javascript to this from the backend that makes the calculator work -->
+				<section class="fund-calc__section">
+					<div class="fund-calc__container">
+						<p class="fund-calc__title">savings &amp investment calculator</p>
+
+						<div class="savings__investment__calc__wrapper">
+							<!-- calculator for savings plans -->
+							<div
+								class="fund-calc__accordion__container savings__calc__section"
 							>
-								<div class="fund-calculator__accordion__link-text">
-									Calculator for Savings Flex Plan
+								<button class="fund-calc__accordion__button">
+									<div class="fund-calc__accordion__button--head">
+										calculate your interest for savings plan
+									</div>
+
+									<div class="fund-calc__accordion__button--arrow"></div>
+								</button>
+
+								<div class="savings__calc__container">
+									<div class="savings__calc__form">
+										<form
+											action=""
+											method="post"
+											id="id__savings__plan__form-1"
+											class="savings__plan__form-1"
+										>
+											<label
+												class="savings__initial__deposit"
+												for="savings__initial__deposit"
+												>Initial Deposit (₦):</label
+											>
+											<input
+												type="number"
+												name="initial__deposit"
+												id="id__initial__deposit"
+												placeholder="15000"
+											/>
+
+											<label class="choose__save__plan" for="choose__save__plan"
+												>Choose a savings Plan:</label
+											>
+											<select
+												name="choose__save__plan"
+												id="id__choose__save__plan"
+											>
+												<option value="" disabled selected>
+													choose a plan
+												</option>
+
+												<option value="Flex__business">
+													Flex Business (15.3% in 6 months)
+												</option>
+											</select>
+
+											<label
+												class="choose__save__duration"
+												for="choose__save__duration"
+												>choose duration of plan:</label
+											>
+											<select
+												name="choose__save__duration"
+												id="choose__save__duration"
+											>
+												<option value="" disabled selected>
+													duration of savings plan
+												</option>
+
+												<option value="6__months">6 months</option>
+
+												<option value="7__months">7 months</option>
+
+												<option value="8__months">8 months</option>
+
+												<option value="9__months">9 months</option>
+
+												<option value="10__months">10 months</option>
+
+												<option value="11__months">11 months</option>
+
+												<option value="1__year">1 year</option>
+											</select>
+
+											<button
+												type="submit"
+												class="savings__plan__submit"
+												id="id__savings__plan__submit"
+											>
+												calculate
+											</button>
+										</form>
+									</div>
+
+									<div class="savings__calc__results__container">
+										<p class="savings__calc__results__header">
+											calculator result:
+										</p>
+
+										<!-- CALC--RESULT--PART 1 -->
+										<div class="savings__calc__results__part-1">
+											<div
+												class="savings__duration__result__wrapper calc__result__wrapper"
+											>
+												<div class="savings__duration__result">Duration:</div>
+												<div class="savings__duration__result__value">YYY</div>
+											</div>
+
+											<div class="horizontal_line__calc__result"></div>
+
+											<div
+												class="savings__result__start-date__wrapper calc__result__wrapper"
+											>
+												<div class="savings__result__start-date">
+													Start Date:
+												</div>
+												<div class="savings__result__start-date__value">
+													YYY
+												</div>
+											</div>
+
+											<div class="horizontal_line__calc__result"></div>
+
+											<div
+												class="savings__result__end-date__wrapper calc__result__wrapper"
+											>
+												<div class="savings__result__end-date">End Date:</div>
+												<div class="savings__result__end-date__value">YYY</div>
+											</div>
+
+											<div class="horizontal_line__calc__result"></div>
+
+											<div
+												class="savings__result__roi--perday__wrapper calc__result__wrapper"
+											>
+												<div class="savings__result__roi--perday">
+													ROI earned per Day:
+												</div>
+
+												<div class="savings__result__roi--perday__value">
+													XYZ%
+												</div>
+											</div>
+
+											<div class="horizontal_line__calc__result"></div>
+										</div>
+
+										<!-- CALC--RESULT--PART 2-table -->
+										<div class="savings__calc__results__part-2">
+											<table class="savings__calc__results__table">
+												<thead class="savings__calc__results__table--head">
+													<tr class="savings__calc__results__table--head-row">
+														<th>
+															Amount <br />
+															saved <br />
+															(₦)
+														</th>
+
+														<th>
+															Duration <br />
+															of Savings
+														</th>
+
+														<th>
+															Interest <br />
+															earned <br />
+															(%)
+														</th>
+
+														<th>
+															Interest <br />
+															earned <br />
+															(₦)
+														</th>
+													</tr>
+												</thead>
+
+												<tbody class="savings__calc__results__table--body">
+													<tr>
+														<td>Data 1</td>
+														<td>Data 2</td>
+														<td>Data 3</td>
+														<td>Data 4</td>
+													</tr>
+
+													<tr>
+														<td>Data 1</td>
+														<td>Data 2</td>
+														<td>Data 3</td>
+														<td>Data 4</td>
+													</tr>
+
+													<tr>
+														<td>Data 1</td>
+														<td>Data 2</td>
+														<td>Data 3</td>
+														<td>Data 4</td>
+													</tr>
+													<!-- Additional rows will be added dynamically as more data comes in -->
+												</tbody>
+											</table>
+
+											<!-- <div class="horizontal_line__calc__result"></div> -->
+										</div>
+
+										<!-- CALC--RESULT--PART 3 -->
+										<div class="savings__calc__results__part-3">
+											<div
+												class="savings__results__init--total__wrapper calc__result__wrapper"
+											>
+												<div class="savings__results__init--total">
+													Total Capital + ROI
+												</div>
+
+												<div class="savings__results__init--total__value">
+													₦ XYZZZ
+												</div>
+											</div>
+
+											<div class="horizontal_line__calc__result"></div>
+
+											<div class="savings__results__add-capital">
+												Add to your savings:
+											</div>
+
+											<div
+												class="savings__results__add-capital__input__wrapper calc__result__wrapper"
+											>
+												<div class="add__to__savings__input">
+													<input
+														type="number"
+														name="add__to__savings"
+														class="add__to__savings"
+														id="id__add__to__savings"
+														placeholder="5000"
+													/>
+												</div>
+
+												<div class="day__savings__added__input">
+													<select
+														name="day__savings__added"
+														class="day__savings__added"
+														id="id__day__savings__added"
+													>
+														<option value="" disabled selected>
+															Select day added
+														</option>
+
+														<!-- <option value="1">Day 1</option>
+
+														<option value="2">Day 2</option> -->
+													</select>
+												</div>
+											</div>
+										</div>
+
+										<!-- CALC--RESULT--PART 4 -->
+										<div class="savings__calc__results__part-4">
+											<button
+												class="savings__results__add--button"
+												type="submit"
+											>
+												Add to Savings
+											</button>
+										</div>
+									</div>
 								</div>
+							</div>
 
-								<div class="fund-calculator__accordion__link-arrow"></div
-							></a>
-						</div>
-
-						<div class="fund-calculator__accordion__container">
-							<a
-								class="fund-calculator__accordion__link"
-								href="http://"
-								target="_self"
+							<!-- calculator for investment plans -->
+							<div
+								class="fund-calc__accordion__container investment__calc__section"
 							>
-								<div class="fund-calculator__accordion__link-text">
-									Calculator for Investment Fixed Plan
-								</div>
+								<button class="fund-calc__accordion__button">
+									<div class="fund-calc__accordion__button--head">
+										calculate your interest for investment plan
+									</div>
 
-								<div class="fund-calculator__accordion__link-arrow"></div
-							></a>
+									<div class="fund-calc__accordion__button--arrow"></div>
+								</button>
+
+								<div class="investment__calc__container">
+									<div class="investment__calc__form">
+										<form
+											action=""
+											method="post"
+											id="id__invest__plan__form-1"
+											class="invest__plan__form-1"
+										>
+											<label
+												class="invest__initial__deposit"
+												for="invest__initial__deposit"
+												>Capital (₦):</label
+											>
+											<input
+												type="number"
+												name="invest__initial__deposit"
+												id="id__invest__initial__deposit"
+												placeholder="100000"
+											/>
+
+											<label
+												class="choose__invest__plan"
+												for="choose__invest__plan"
+												>Choose an investment Plan:</label
+											>
+											<select
+												name="choose__invest__plan"
+												id="id__choose__invest__plan"
+											>
+												<option value="" disabled selected>
+													choose a plan
+												</option>
+
+												<option value="qg__12">QG-12 (35% per annum)</option>
+											</select>
+
+											<button
+												type="submit"
+												class="invest__plan__submit"
+												id="id__invest__plan__submit"
+											>
+												calculate
+											</button>
+										</form>
+									</div>
+
+									<div class="investment__calc__results__container">
+										<p class="investment__calc__results__header">
+											calculator result:
+										</p>
+
+										<div
+											class="invest__result__roi--naira__wrapper calc__result__wrapper"
+										>
+											<div class="invest__result__roi--percent">ROI (%)</div>
+
+											<div class="invest__result__roi--percent__value">
+												₦ 0.00
+											</div>
+										</div>
+
+										<div class="horizontal_line__calc__result"></div>
+
+										<div
+											class="invest__result__roi--naira__wrapper calc__result__wrapper"
+										>
+											<div class="invest__result__roi--naira">ROI (₦)</div>
+											<div class="invest__result__roi--naira__value">
+												₦ 0.00
+											</div>
+										</div>
+
+										<div class="horizontal_line__calc__result"></div>
+
+										<div
+											class="invest__result__roi--percent-naira__wrapper calc__result__wrapper"
+										>
+											<div class="invest__result__roi--percent-naira">
+												ROI + Capital
+											</div>
+
+											<div class="invest__result__roi--percent-naira__value">
+												₦ 0.00
+											</div>
+										</div>
+
+										<div class="horizontal_line__calc__result"></div>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</section>
@@ -529,14 +869,6 @@
 				<section class="fund-what-we-invest-in__section">
 					<div class="fund-what-we-invest-in__container">
 						<h3 class="fund-what-we-invest-in__header">What We Invest In</h3>
-
-						<!-- <div class="fund-what-we-invest-in__image__container">
-							<img
-								class="fund-what-we-invest-in__image"
-								src="../../images/financial_market_image_5-50.jpg"
-								alt="financial market image"
-							/>
-						</div> -->
 
 						<div class="fund-what-we-invest-in__list__container">
 							<ul class="fund-what-we-invest-in__list">
