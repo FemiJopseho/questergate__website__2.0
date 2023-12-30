@@ -48,8 +48,8 @@
     .savings__calc__section {
       /* outline: 3px solid salmon; */
 
-      margin-bottom: 2rem;
       width: 100%;
+      margin-bottom: 1rem;
     }
 
     /* ///////////// */
@@ -118,6 +118,8 @@
         transform: translate(-50%, -50%);
         rotate: 45deg;
 
+        transition: all 200ms ease;
+
         /* ////////////// */
         @media screen and (width > 200px) and (width < 500px) {
           right: 10%;
@@ -134,8 +136,6 @@
     width: 100%;
     max-width: var(--width__900px);
     margin: 0 auto;
-    padding-top: 2rem;
-
 
     font-family: var(--ff-primary);
     font-size: var(--fs-800);
@@ -195,6 +195,7 @@
     /* outline: 2px dashed pink; */
 
     width: 100%;
+    margin-top: 2rem;
 
     /* //////////// */
     .invest__plan__submit,
@@ -485,7 +486,7 @@
     .savings__calc__section {
       /* outline: 3px solid salmon; */
 
-      margin-bottom: 2rem;
+      margin-bottom: 1rem;
       width: 100%;
     }
 
@@ -555,6 +556,8 @@
         transform: translate(-50%, -50%);
         rotate: 45deg;
 
+        transition: all 200ms ease;
+
         /* ////////////// */
         @media screen and (width > 500px) and (width < 600px) {
           right: 10%;
@@ -564,6 +567,7 @@
         @media screen and (width > 600px) and (width < 700px) {
           right: 15%;
         }
+
       }
     }
   }
@@ -576,8 +580,6 @@
     width: 100%;
     max-width: var(--width__900px);
     margin: 0 auto;
-    padding-top: 2rem;
-
 
     font-family: var(--ff-primary);
     font-size: var(--fs-800);
@@ -637,6 +639,7 @@
     /* outline: 2px dashed pink; */
 
     width: 50%;
+    margin-top: 2rem;
 
     /* //////////// */
     /* .invest__plan__form-1,
@@ -689,11 +692,11 @@
     /* outline: 2px dashed pink; */
 
     width: 100%;
+    padding: 2.5rem 1.5rem 0 1.5rem;
 
     background-color: var(--clr-primary-100);
     border-radius: 4px;
     color: var(--clr-neutral-white-2);
-    padding: 2.5rem 1.5rem 0 1.5rem;
 
     /* ///////////////// */
     .investment__calc__results__header,
@@ -943,7 +946,7 @@
     width: 100%;
     width: fit-content;
     margin: 0 auto;
-    padding: 1rem 1rem 1rem 1rem;
+    padding: 1rem;
     border-radius: 12px;
     box-shadow: var(--gen-shadow-03);
 
@@ -952,7 +955,7 @@
     .savings__calc__section {
       /* outline: 3px solid salmon; */
 
-      margin-bottom: 2rem;
+      margin-bottom: 1rem;
       width: 100%;
     }
 
@@ -1021,6 +1024,8 @@
         right: 20%;
         transform: translate(-50%, -50%);
         rotate: 45deg;
+
+        transition: all 200ms ease;
       }
     }
   }
@@ -1033,8 +1038,6 @@
     width: 100%;
     max-width: var(--width__900px);
     margin: 0 auto;
-    padding-top: 2rem;
-
 
     font-family: var(--ff-primary);
     font-size: var(--fs-800);
@@ -1091,6 +1094,7 @@
     /* outline: 2px dashed pink; */
 
     width: 40%;
+    margin-top: 2rem;
 
     /* //////////// */
     .invest__plan__form-1 {
@@ -1146,6 +1150,7 @@
     border-radius: 4px;
     color: var(--clr-neutral-white-2);
     padding: 2.5rem 1.5rem 0 1.5rem;
+    margin-top: 2rem;
 
     /* ///////////////// */
     .investment__calc__results__header,
@@ -1337,4 +1342,66 @@
       }
     }
   }
+}
+
+/*        */
+/*        */
+/*        */
+/*        */
+/*        */
+/* GENERAL STYLE FOR CALC ACCORDION BUTTON FUNCTIONALITY */
+/* ///////////////////////// */
+/** WHEN CLOSED */
+/* ///////////////////////// */
+.investment__calc__container,
+.savings__calc__container {
+  /* outline: 2px dashed violet; */
+
+  /* when button accordion is closed */
+  max-height: 0;
+
+  /* keeps the content from showing beneath the accordion-item when closed */
+  overflow: hidden;
+
+  /* controls the transition when closing-->going to this style */
+  transition: max-height 700ms ease;
+  will-change: max-height;
+}
+
+/* /////////////////////// */
+/** WHEN OPEN */
+/* ///////////////////// */
+.savings__calc__section button[aria-expanded="true"]+.savings__calc__container,
+.investment__calc__section button[aria-expanded="true"]+.investment__calc__container {
+  /* outline: 2px dashed red; */
+
+  max-height: 50rem;
+
+  /* controls the transition when opening-->going to this style */
+  transition: max-height 2.5s ease;
+  will-change: max-height;
+}
+
+.savings__calc__section button[aria-expanded="true"],
+.investment__calc__section button[aria-expanded="true"] {
+  background-color: var(--clr-primary-200);
+  background-image: linear-gradient(45deg,
+      var(--clr-primary-200),
+      var(--clr-primary-200),
+      var(--clr-primary-200),
+      var(--clr-primary-650));
+}
+
+.savings__calc__section button[aria-expanded="true"] .fund-calc__accordion__button--arrow,
+.investment__calc__section button[aria-expanded="true"] .fund-calc__accordion__button--arrow {
+  height: 15px;
+  width: 15px;
+  border: 3px solid var(--clr-neutral-white-2);
+  border-right: none;
+  border-bottom: none;
+
+  position: absolute;
+  top: 65%;
+  transform: translate(-50%, -50%);
+  rotate: 45deg;
 }

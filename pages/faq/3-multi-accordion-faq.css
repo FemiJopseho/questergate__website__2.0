@@ -830,6 +830,8 @@
 	.parent-accordion-content {
 		/* outline: 2px solid red; */
 
+		width: 100%;
+		padding: 0rem 1rem 0rem 1rem;
 		max-height: 0;
 
 		/* keeps the content from showing beneath the accordion-item when closed */
@@ -850,13 +852,6 @@
 		line-height: var(--lh-410);
 		text-align: left;
 		color: var(--clr-tertiary-100);
-	}
-
-	.parent-accordion-content {
-		/* outline: 2px solid red; */
-
-		width: 100%;
-		padding: 0rem 1rem 0rem 1rem;
 	}
 
 	.parent-accordion-content-text {

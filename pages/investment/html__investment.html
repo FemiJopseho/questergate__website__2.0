@@ -498,11 +498,16 @@
 						<p class="fund-calc__title">savings &amp investment calculator</p>
 
 						<div class="savings__investment__calc__wrapper">
-							<!-- calculator for savings plans -->
+							<!-- *calculator for savings plans -->
 							<div
 								class="fund-calc__accordion__container savings__calc__section"
 							>
-								<button class="fund-calc__accordion__button">
+								<button
+									class="fund-calc__accordion__button"
+									id="calc-accordion-button-1"
+									aria-expanded="false"
+									data-target="#calc-accordion-button-1-content"
+								>
 									<div class="fund-calc__accordion__button--head">
 										calculate your interest for savings plan
 									</div>
@@ -510,7 +515,10 @@
 									<div class="fund-calc__accordion__button--arrow"></div>
 								</button>
 
-								<div class="savings__calc__container">
+								<div
+									class="savings__calc__container"
+									id="calc-accordion-button-1-content"
+								>
 									<div class="savings__calc__form">
 										<form
 											action=""
@@ -578,13 +586,17 @@
 												type="submit"
 												class="savings__plan__submit"
 												id="id__savings__plan__submit"
+												data-target="#calc-result-1-content"
 											>
 												calculate
 											</button>
 										</form>
 									</div>
 
-									<div class="savings__calc__results__container">
+									<div
+										class="savings__calc__results__container"
+										id="calc-result-1-content"
+									>
 										<p class="savings__calc__results__header">
 											calculator result:
 										</p>
@@ -759,11 +771,16 @@
 								</div>
 							</div>
 
-							<!-- calculator for investment plans -->
+							<!-- *calculator for investment plans -->
 							<div
 								class="fund-calc__accordion__container investment__calc__section"
 							>
-								<button class="fund-calc__accordion__button">
+								<button
+									class="fund-calc__accordion__button"
+									id="calc-accordion-button-2"
+									aria-expanded="false"
+									data-target="#calc-accordion-button-2-content"
+								>
 									<div class="fund-calc__accordion__button--head">
 										calculate your interest for investment plan
 									</div>
@@ -771,7 +788,10 @@
 									<div class="fund-calc__accordion__button--arrow"></div>
 								</button>
 
-								<div class="investment__calc__container">
+								<div
+									class="investment__calc__container"
+									id="calc-accordion-button-2-content"
+								>
 									<div class="investment__calc__form">
 										<form
 											action=""
@@ -811,13 +831,17 @@
 												type="submit"
 												class="invest__plan__submit"
 												id="id__invest__plan__submit"
+												data-target="#calc-result-1-content"
 											>
 												calculate
 											</button>
 										</form>
 									</div>
 
-									<div class="investment__calc__results__container">
+									<div
+										class="investment__calc__results__container"
+										data-target="#calc-result-2-content"
+									>
 										<p class="investment__calc__results__header">
 											calculator result:
 										</p>
@@ -1123,6 +1147,9 @@
 		<script src="../js-components/header__on-scroll.js"></script>
 		<script src="../js-components/header__hamburger.js"></script>
 		<script src="../js-components/hero__invest__carousel__text__animation.js"></script>
+		<script src="../js-components/fund__calc__accordion.js"></script>
+		<script src="../js-components/fund__calc__accordion__smooth__scroll__into__view.js"></script>
+		<!-- <script src="../js-components/fund__calc-result__accordion__smooth__scroll__into__view.js"></script> -->
 
 		<script src="../js-components/section__visible__on__scroll.js"></script>
 		<script src="../js-components/footer__currentyear__auto.js"></script>
