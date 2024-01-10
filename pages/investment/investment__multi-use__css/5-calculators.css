@@ -10,7 +10,7 @@
     /* outline: 4px solid gold; */
 
     width: 100%;
-    padding: 0 0 6rem 0;
+    padding: 0 0 4rem 0;
   }
 
   .fund-calc__container {
@@ -28,9 +28,9 @@
 
     text-align: center;
     font-family: var(--ff-primary);
-    font-size: var(--fs-500);
+    font-size: var(--fs-600);
     font-weight: var(--fw-bold);
-    line-height: var(--lh-600);
+    line-height: var(--lh-500);
     letter-spacing: 1px;
     color: var(--clr-primary-650);
     text-transform: capitalize;
@@ -62,15 +62,18 @@
 
   /** style visible part of calc accordion */
   .fund-calc__accordion__container {
+    /* outline: 2px solid rosybrown; */
+
     width: 100%;
 
     /* //////////////////// */
     .fund-calc__accordion__button {
+      /* outline: 2px solid lime; */
 
       width: 100%;
       max-width: var(--width__900px);
       margin: 0 auto;
-      padding: 1rem;
+      padding: 0.5rem 1rem;
       color: var(--clr-neutral-white-2);
       text-align: center;
       text-transform: capitalize;
@@ -78,7 +81,7 @@
 
       font-family: var(--ff-btn);
       font-size: var(--fs-800);
-      font-weight: var(--fw-bold);
+      font-weight: var(--fw-semi-bold);
 
       background-color: var(--clr-primary-100);
       background-image: linear-gradient(45deg,
@@ -97,11 +100,26 @@
 
       position: relative;
 
+      /* /////////////// */
+      &:hover {
+        filter: brightness(115%);
+        transform: translateY(-2px);
+      }
+
       /* //////////////// */
       .fund-calc__accordion__button--head {
         /* outline: 2px solid rosybrown; */
 
         margin-right: 4rem;
+      }
+
+      /* //////////// */
+      @media screen and (width > 410px) and (width < 436px) {
+        .fund-calc__accordion__button--head {
+          /* outline: 2px solid rosybrown; */
+
+          white-space: nowrap;
+        }
       }
 
       /* ////////////////// */
@@ -163,6 +181,9 @@
 
   /* ///////////// */
   input {
+    /* outline: 2px solid pink; */
+
+    padding: 0 0 0 0.5rem;
     margin: 0 0 2rem 0;
     width: 100%;
     height: 3rem;
@@ -178,7 +199,7 @@
   /* ///////////// */
   select {
     margin: 0 0 2rem 0;
-    padding: 0;
+    padding: 0 0 0 0.5rem;
     width: 100%;
     height: 3rem;
     border-radius: 4px;
@@ -254,7 +275,6 @@
       margin-bottom: 1rem;
 
       width: 100%;
-      width: fit-content;
       border: 1px solid var(--clr-primary-200);
     }
 
@@ -535,6 +555,12 @@
 
       position: relative;
 
+      /* /////////////// */
+      &:hover {
+        filter: brightness(115%);
+        transform: translateY(-2px);
+      }
+
       /* //////////////// */
       .fund-calc__accordion__button--head {
         /* outline: 2px solid rosybrown; */
@@ -607,6 +633,9 @@
 
   /* ///////////// */
   input {
+    /* outline: 2px solid pink; */
+
+    padding: 0 0 0 0.5rem;
     margin: 0 0 2rem 0;
     width: 100%;
     height: 3rem;
@@ -622,7 +651,7 @@
   /* ///////////// */
   select {
     margin: 0 0 2rem 0;
-    padding: 0;
+    padding: 0 0 0 0.5rem;
     width: 100%;
     height: 3rem;
     border-radius: 4px;
@@ -712,7 +741,6 @@
       margin-bottom: 1rem;
 
       width: 100%;
-
       border: 1px solid var(--clr-primary-200);
     }
 
@@ -973,6 +1001,7 @@
 
     /* //////////////////// */
     .fund-calc__accordion__button {
+      /* outline: 2px solid tomato; */
 
       width: 100%;
       max-width: var(--width__900px);
@@ -1003,6 +1032,12 @@
       align-items: center;
 
       position: relative;
+
+      /* /////////////// */
+      &:hover {
+        filter: brightness(115%);
+        transform: translateY(-2px);
+      }
 
       /* //////////////// */
       .fund-calc__accordion__button--head {
@@ -1062,6 +1097,9 @@
 
   /* ///////////// */
   input {
+    /* outline: 2px solid pink; */
+
+    padding: 0 0 0 0.5rem;
     margin: 0 0 2rem 0;
     width: 100%;
     height: 3rem;
@@ -1077,7 +1115,7 @@
   /* ///////////// */
   select {
     margin: 0 0 2rem 0;
-    padding: 0;
+    padding: 0 0 0 0.5rem;
     width: 100%;
     height: 3rem;
     border-radius: 4px;
@@ -1349,7 +1387,7 @@
 /*        */
 /*        */
 /*        */
-/* GENERAL STYLE FOR CALC ACCORDION BUTTON FUNCTIONALITY */
+/* GENERAL STYLE FOR CALC ACCORDION BUTTON open&close FUNCTIONALITY */
 /* ///////////////////////// */
 /** WHEN CLOSED */
 /* ///////////////////////// */

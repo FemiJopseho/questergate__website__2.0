@@ -1,0 +1,203 @@
+/* contains styles for: NEED HELP section of the Plans pages*/
+
+
+
+/** Mobile view */
+/* max-width: 500px */
+@media screen and (width <=31.25em) {
+  .plan-page__need-help__section {
+    /* outline: 4px solid gold; */
+
+    width: 100%;
+    padding-bottom: 4rem;
+  }
+
+  .plan-page__need-help__container {
+    /* outline: 4px solid blue; */
+
+    width: 100%;
+    max-width: var(--width__1200px);
+    margin: 0 auto;
+    padding: 0 0.5rem;
+
+    text-align: center;
+  }
+
+  .plan-page__need-help__sub-header {
+    /* outline: 2px solid grey; */
+
+    font-family: var(--ff-secondary);
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-600);
+    line-height: var(--lh-500);
+    color: var(--clr-primary-650);
+    text-transform: capitalize;
+
+    padding-bottom: 1rem;
+  }
+
+  .no-phrase__break {
+    white-space: wrap;
+  }
+
+  .plan-page__need-help__text {
+    /* outline: 2px solid skyblue; */
+
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-regular);
+    font-size: var(--fs-700);
+    line-height: var(--lh-410);
+    color: var(--clr-tertiary-100);
+  }
+
+  .plan-page__need-help__link {
+    /* outline: 2px solid pink; */
+
+    display: inline-block;
+    font: inherit;
+    font-weight: var(--fw-bold);
+    color: var(--clr-secondary-650);
+    text-decoration: none;
+  }
+
+  .hover-underline-animation::after {
+    background-color: var(--clr-tertiary-200);
+  }
+}
+
+/*        */
+/*        */
+/*        */
+/*        */
+/*        */
+
+/* Mobile landscape & Tablet Portrait screens */
+/* (min-width > 500px ) & (max-width <= 875px) */
+@media screen and (width > 31.25em) and (width <=54.69em) {
+  .plan-page__need-help__section {
+    /* outline: 4px solid gold; */
+
+    width: 100%;
+    padding-bottom: 4rem;
+  }
+
+  .plan-page__need-help__container {
+    /* outline: 4px solid blue; */
+
+    width: 100%;
+    max-width: var(--width__1200px);
+    margin: 0 auto;
+    padding: 0 0.5rem;
+
+    text-align: center;
+  }
+
+  .plan-page__need-help__sub-header {
+    /* outline: 2px solid grey; */
+
+    font-family: var(--ff-secondary);
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-550);
+    line-height: var(--lh-500);
+    color: var(--clr-primary-650);
+    text-transform: capitalize;
+
+    padding-bottom: 2rem;
+  }
+
+  .no-phrase__break {
+    white-space: nowrap;
+  }
+
+  .plan-page__need-help__text {
+    /* outline: 2px solid skyblue; */
+
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-regular);
+    font-size: var(--fs-700);
+    line-height: var(--lh-410);
+    color: var(--clr-tertiary-100);
+  }
+
+  .plan-page__need-help__link {
+    /* outline: 2px solid pink; */
+
+    display: inline-block;
+    font: inherit;
+    font-weight: var(--fw-bold);
+    color: var(--clr-secondary-650);
+    text-decoration: none;
+  }
+
+  .hover-underline-animation::after {
+    background-color: var(--clr-tertiary-200);
+  }
+}
+
+/*        */
+/*        */
+/*        */
+/*        */
+/*        */
+
+/** Screens > 875px */
+@media screen and (width > 54.69em) {
+  .plan-page__need-help__section {
+    /* outline: 4px solid gold; */
+
+    width: 100%;
+    padding-bottom: 6rem;
+  }
+
+  .plan-page__need-help__container {
+    /* outline: 4px solid blue; */
+
+    width: 100%;
+    max-width: var(--width__1200px);
+    margin: 0 auto;
+    padding: 0 0.5rem;
+
+    text-align: center;
+  }
+
+  .plan-page__need-help__sub-header {
+    /* outline: 2px solid grey; */
+
+    font-family: var(--ff-secondary);
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-500);
+    line-height: var(--lh-500);
+    color: var(--clr-primary-650);
+    text-transform: capitalize;
+
+    padding-bottom: 2rem;
+  }
+
+  .no-phrase__break {
+    white-space: nowrap;
+  }
+
+  .plan-page__need-help__text {
+    /* outline: 2px solid skyblue; */
+
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-regular);
+    font-size: var(--fs-600);
+    line-height: var(--lh-410);
+    color: var(--clr-tertiary-100);
+  }
+
+  .plan-page__need-help__link {
+    /* outline: 2px solid pink; */
+
+    display: inline-block;
+    font: inherit;
+    font-weight: var(--fw-bold);
+    color: var(--clr-secondary-650);
+    text-decoration: none;
+  }
+
+  .hover-underline-animation::after {
+    background-color: var(--clr-tertiary-200);
+  }
+}

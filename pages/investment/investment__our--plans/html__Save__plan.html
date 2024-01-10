@@ -9,7 +9,7 @@
 
 		<meta
 			name="description"
-			content="Questergate helps you Save & Invest in the safest way possible."
+			content="Questergate savings plan helps you save in the safest way possible."
 		/>
 
 		<!-- -----------explorer compatibility---------- -->
@@ -35,7 +35,7 @@
 
 		<!-- -----------------CSS Resets-------------------- -->
 		<!-- Use Normalize Reset -->
-		<link rel="stylesheet" href="../../css-resets/normalize.css" />
+		<link rel="stylesheet" href="../../../css-resets/normalize.css" />
 
 		<!-- <link
 			rel="stylesheet"
@@ -72,17 +72,38 @@
 
 		<link
 			rel="stylesheet"
-			href="../1-css-components/joined-fixed-component.css"
+			href="../../1-css-components/joined-fixed-component.css"
 		/>
-		<link rel="stylesheet" href="../1-css-components/6-utility-classes.css" />
+		<link
+			rel="stylesheet"
+			href="../../1-css-components/6-utility-classes.css"
+		/>
 
-		<link rel="stylesheet" href="./1-header__investment.css" />
-		<link rel="stylesheet" href="./2-hero__investment.css" />
+		<link
+			rel="stylesheet"
+			href="../investment__multi-use__css/1-header__investment.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="../investment__multi-use__css/4-body__our__plans.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="../investment__multi-use__css/7-steps__to__start__now.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="../investment__multi-use__css/5-calculators.css"
+		/>
+
+		<link rel="stylesheet" href="../2-hero__investment.css" />
 		<link rel="stylesheet" href="./3-body-testimonials__investments.css" />
-		<link rel="stylesheet" href="./4-body__our__plans.css" />
-		<link rel="stylesheet" href="5-calculators.css" />
-		<link rel="stylesheet" href="6-what__we__invest__in.css" />
-		<link rel="stylesheet" href="7-steps__to__start__now.css" />
+		<link rel="stylesheet" href="./6-what__we__invest__in.css" />
+
+		<link rel="stylesheet" href="./our-plans__page__header.css" />
+		<link rel="stylesheet" href="./savings--plan__about-plan.css" />
+		<link rel="stylesheet" href="./our-plans__page__need-help.css" />
+		<link rel="stylesheet" href="" />
 
 		<!-- --------------JQUERY ACCESS via CDN and via Local server----------------- -->
 		<!-- <script
@@ -91,18 +112,18 @@
 			crossorigin="anonymous"
 		></script> -->
 
-		<script src="../js-components/jquery-3.7.1.min.js"></script>
+		<script src="../../js-components/jquery-3.7.1.min.js"></script>
 
-		<!-- <script src="../js-components/jquery-3.7.1.min.js"></script> -->
+		<!-- <script src="../../js-components/jquery-3.7.1.min.js"></script> -->
 
 		<!-- ----------Page Title---------- -->
-		<title>Questergate Savings & Investment</title>
+		<title>Questergate Savings Plan</title>
 
 		<!-- -------------Favicon for page--------------- -->
 		<link
 			rel="icon"
 			type="image/x-icon"
-			href="../../images/QG__favicon__no__background.ico"
+			href="../../../images/QG__favicon__no__background.ico"
 		/>
 	</head>
 
@@ -122,44 +143,61 @@
 					<div class="fund-header__logo__container">
 						<a
 							class="fund-header__logo__link"
-							href="../homepage/html__homepage.html"
+							href="../investment__homepage/html__investment.html"
 							><img
 								class="fund-header__logo__img"
-								src="../../images/QG_LOGO_small-horizontal.jpg"
+								src="../../../images/QG_LOGO_small-horizontal.jpg"
 								alt="Questergate logo"
 						/></a>
 					</div>
 
 					<div class="fund-header__list__container menu" id="menu">
 						<ul class="fund-header__list">
+							<!-- <li class="fund-header__list__items">
+								<a
+									href="../investment__savings--plan/html__Save__plan.html"
+									class="fund-header__list__items-link"
+									>Save</a
+								>
+							</li> -->
+
 							<li class="fund-header__list__items">
-								<a href="#" class="fund-header__list__items-link">Save</a>
+								<a
+									href="../investment__invest--plans/"
+									class="fund-header__list__items-link"
+									>Invest</a
+								>
 							</li>
 
 							<li class="fund-header__list__items">
-								<a href="#" class="fund-header__list__items-link">Invest</a>
+								<a
+									href="../investment__faq/html__faq__investment.html"
+									class="fund-header__list__items-link"
+									>Faq</a
+								>
 							</li>
 
 							<li class="fund-header__list__items">
-								<a href="#" class="fund-header__list__items-link">Faq</a>
-							</li>
-
-							<li class="fund-header__list__items">
-								<a href="#" class="fund-header__list__items-link">How-To</a>
+								<a
+									href="../investment__how--tos/html__how-tos.html"
+									class="fund-header__list__items-link"
+									>How-To</a
+								>
 							</li>
 
 							<!-- <li class="fund-header__list__items">
-								<a href="#" class="fund-header__list__items-link">Blog</a>
-							</li> -->
+            <a href="#" class="fund-header__list__items-link">Blog</a>
+          </li> -->
 
 							<!-- <li class="fund-header__list__items">
-								<a href="#" class="fund-header__list__items-link">About Us</a>
-							</li> -->
+            <a href="#" class="fund-header__list__items-link">About Us</a>
+          </li> -->
 
 							<!-- *----LOGIN-STATUS AUTHENTICATION NEEDED----* -->
 
 							<!-- *Start of auth for for login or Sign out* -->
-							<!-- if user not logged in, show "Login In" -->
+
+							<!-- *-----------if user not logged in, show "Login In" -->
 							<li class="fund-header__list__items header__login">
 								<a
 									href="#"
@@ -168,19 +206,19 @@
 								>
 							</li>
 
-							<!-- if user logged in, show "Sign Out" -->
+							<!-- *-----------if user logged in, show "Sign Out" -->
 							<!-- <li class="fund-header__list__items header__login">
-								<a
-									href="#"
-									class="fund-header__list__items-link fund-header__link-login"
-									>Sign Out</a
-								>
-							</li> -->
+            <a
+              href="#"
+              class="fund-header__list__items-link fund-header__link-login"
+              >Sign Out</a
+            >
+          </li> -->
 							<!-- *END of auth for for login or Sign out* -->
 
 							<!-- *Start of Auth for DASHBOARD or REGISTER BUTTON* -->
 
-							<!-- if user not logged in, show Register button -->
+							<!-- *-----------if user not logged in, show Register button -->
 							<li class="fund-header__list__items fund-header__register">
 								<a
 									href="#"
@@ -189,14 +227,14 @@
 								>
 							</li>
 
-							<!-- if user is logged in, show Dashboard button -->
+							<!-- *-----------if user is logged in, show Dashboard button -->
 							<!-- <li class="fund-header__list__items fund-header__register">
-								<a
-									href="#"
-									class="fund-header__list__items-link fund-header__link-register"
-									>Dashborad</a
-								>
-							</li> -->
+            <a
+              href="#"
+              class="fund-header__list__items-link fund-header__link-register"
+              >Dashboard</a
+            >
+          </li> -->
 							<!-- *END of Auth for DASHBOARD or REGISTER BUTTON* -->
 						</ul>
 					</div>
@@ -211,279 +249,68 @@
 			</header>
 
 			<main class="main">
-				<!-- -------START OF HERO SECTION------- -->
-				<section class="fund-hero__section">
-					<div class="fund-hero__container">
-						<div class="fund-hero__image__container">
-							<img
-								class="fund-hero__image__desktop carousel__image"
-								src="../../images/QG image optimised/Questergate Banner 1--landscape.jpg"
-								alt="hero image"
-							/>
-
-							<img
-								class="fund-hero__image__tablet-land"
-								src="../../images/QG image optimised/Questergate Banner 1--landscape.jpg"
-								alt="hero image"
-							/>
-
-							<img
-								class="fund-hero__image__tablet-pot"
-								src="../../images/QG image optimised/Questergate Banner 1--potrait.jpg"
-								alt="hero image"
-							/>
-
-							<img
-								class="fund-hero__image__mobile"
-								src="../../images/QG image optimised/Questergate Banner 1--potrait.jpg"
-								alt="hero image"
-							/>
-						</div>
-
-						<div class="fund-hero__content__container">
-							<div class="fund-hero__texts__container">
-								<p class="fund-hero__texts hero__invest__animate__text">
-									Secure your future
-								</p>
-							</div>
-
-							<div class="fund-hero__cta__container">
-								<a
-									class="fund-hero__cta-button link-to-button"
-									href="#"
-									target="_self"
-									>Select a financial plan</a
-								>
-							</div>
-						</div>
+				<!-- -------START OF Our Plans Header section------- -->
+				<section class="our-plan__page__header__section">
+					<div class="our-plan__page__header__container">
+						<p class="our-plan__page__header__content">Our Savings Plan</p>
 					</div>
 				</section>
 
-				<!-- -------start of TESTIMONIALS section------- -->
-				<section class="testimonial__section">
-					<div class="testimonial__container">
-						<h2 class="testimonial__header">What our clients say about us</h2>
-
-						<!-- Testimonial Carousel sub-Section -->
-						<div class="testimonial-carousel__container">
-							<!-- insert carousel arrows here -->
-							<div class="testimonial-carousel__scroll carousel-nav">
-								<button
-									class="testimonial-carousel__scroll-left prev"
-									title="Previous"
+				<!-- -------START OF Our Savings Plans & ABOUT-PLAN Section------ -->
+				<section class="fund-our-plans__section about-plan__section">
+					<div class="fund-our-plans__container about-plan__container">
+						<div class="fund-our-plans__types about-plan__types">
+							<!-- *flex-Savings plan -->
+							<div
+								class="fund-our-plans__plan savings__plans about-plan__flex-biz__features"
+							>
+								<h4
+									class="fund-our-plans__sub-header__h4 about-plan__flex-biz__features-header"
 								>
-									<div class="left-arrow"></div>
-								</button>
+									Flex-Business Plan
+								</h4>
 
-								<button
-									class="testimonial-carousel__scroll-right next"
-									title="Next"
+								<ul
+									class="fund-our-plans__list about-plan__flex-biz__features-list"
 								>
-									<div class="right-arrow"></div>
-								</button>
-							</div>
-
-							<!-- insert carousel cards here -->
-							<div class="testimonial-carousel-card__container">
-								<div class="testimonial-carousel noanimate">
-									<div class="testimonial-carousel__card testimonial__slides">
-										<p class="testimonial-card__client-words">
-											Lorem ipsum dolor sit amet consectetur Lorem amet
-											consectetur Lorem ipsum Lorem ipsum dolor sit amet
-											consectetur Lorem amet consectetur Lorem ipsum
-										</p>
-
-										<div class="testimonial-card__client-details">
-											<div class="testimonial-card__client-image__container">
-												<img
-													class="testimonial-card__client-image"
-													src=""
-													alt="client image"
-												/>
-											</div>
-
-											<p class="testimonial-card__client-name">Lorem Ipsum 1</p>
-										</div>
-									</div>
-
-									<div class="testimonial-carousel__card testimonial__slides">
-										<p class="testimonial-card__client-words">
-											Lorem ipsum dolor sit amet consectetur Lorem amet
-											consectetur Lorem ipsum Lorem ipsum dolor sit amet
-											consectetur Lorem amet consectetur Lorem ipsum
-										</p>
-
-										<div class="testimonial-card__client-details">
-											<div class="testimonial-card__client-image__container">
-												<img
-													class="testimonial-card__client-image"
-													src=""
-													alt="client image"
-												/>
-											</div>
-
-											<p class="testimonial-card__client-name">Lorem Ipsum 2</p>
-										</div>
-									</div>
-
-									<div class="testimonial-carousel__card testimonial__slides">
-										<p class="testimonial-card__client-words">
-											Lorem ipsum dolor sit amet consectetur Lorem amet
-											consectetur Lorem ipsum Lorem ipsum dolor sit amet
-											consectetur Lorem amet consectetur Lorem ipsum
-										</p>
-
-										<div class="testimonial-card__client-details">
-											<div class="testimonial-card__client-image__container">
-												<img
-													class="testimonial-card__client-image"
-													src=""
-													alt="client image"
-												/>
-											</div>
-
-											<p class="testimonial-card__client-name">Lorem Ipsum 3</p>
-										</div>
-									</div>
-
-									<div class="testimonial-carousel__card testimonial__slides">
-										<p class="testimonial-card__client-words">
-											Lorem ipsum dolor sit amet consectetur Lorem amet
-											consectetur Lorem ipsum Lorem ipsum dolor sit amet
-											consectetur Lorem amet consectetur Lorem ipsum
-										</p>
-
-										<div class="testimonial-card__client-details">
-											<div class="testimonial-card__client-image__container">
-												<img
-													class="testimonial-card__client-image"
-													src=""
-													alt="client image"
-												/>
-											</div>
-
-											<p class="testimonial-card__client-name">Lorem Ipsum 4</p>
-										</div>
-									</div>
-
-									<div class="testimonial-carousel__card testimonial__slides">
-										<p class="testimonial-card__client-words">
-											Lorem ipsum dolor sit amet consectetur Lorem amet
-											consectetur Lorem ipsum Lorem ipsum dolor sit amet
-											consectetur Lorem amet consectetur Lorem ipsum
-										</p>
-
-										<div class="testimonial-card__client-details">
-											<div class="testimonial-card__client-image__container">
-												<img
-													class="testimonial-card__client-image"
-													src=""
-													alt="client image"
-												/>
-											</div>
-
-											<p class="testimonial-card__client-name">Lorem Ipsum 5</p>
-										</div>
-									</div>
-
-									<div class="testimonial-carousel__card testimonial__slides">
-										<p class="testimonial-card__client-words">
-											Lorem ipsum dolor sit amet consectetur Lorem amet
-											consectetur Lorem ipsum Lorem ipsum dolor sit amet
-											consectetur Lorem amet consectetur Lorem ipsum
-										</p>
-
-										<div class="testimonial-card__client-details">
-											<div class="testimonial-card__client-image__container">
-												<img
-													class="testimonial-card__client-image"
-													src=""
-													alt="client image"
-												/>
-											</div>
-
-											<p class="testimonial-card__client-name">Lorem Ipsum 6</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-
-				<!-- -------START OF OUR Financial Plans Section------ -->
-				<section class="fund-our-plans__section">
-					<div class="fund-our-plans__container">
-						<div class="fund-our-plans__title__container">
-							<h3 class="fund-our-plans__title">Our Financial Plans</h3>
-						</div>
-
-						<div class="fund-our-plans__types">
-							<!-- flex-Savings plan -->
-							<div class="fund-our-plans__plan savings__plans">
-								<h3 class="fund-our-plans__header__h3">Savings Plan</h3>
-								<h4 class="fund-our-plans__sub-header__h4">Flex-Business</h4>
-
-								<ul class="fund-our-plans__list">
-									<li class="fund-our-plans__item">
+									<li
+										class="fund-our-plans__item about-plan__flex-biz__features-items"
+									>
 										✔ Minimum deposit per time: ₦5,000.
 									</li>
 
-									<li class="fund-our-plans__item">
+									<li
+										class="fund-our-plans__item about-plan__flex-biz__features-items"
+									>
 										✔ Interest: 15.3% in 6 months.
 									</li>
 
-									<li class="fund-our-plans__item">
+									<li
+										class="fund-our-plans__item about-plan__flex-biz__features-items"
+									>
+										✔ Your savings earn interest daily.
+									</li>
+
+									<li
+										class="fund-our-plans__item about-plan__flex-biz__features-items"
+									>
 										✔ Choose any duration you want.
 									</li>
 
-									<!-- <li class="fund-our-plans__item">
-										✔ Keep adding to your capital as many times as you want.
+									<!-- <li class="fund-our-plans__item about-plan__flex-biz__features-items">
+										✔ Withdraw every 90 days.
 									</li> -->
-
-									<!-- NOTE--this is placed here to 
-										make card same height without the 
-										need to set the height in css -->
-									<li
-										class="fund-our-plans__item fund-our-plans__item-placeholder"
-									>
-										✔ Investment duration: 12 months.
-									</li>
 								</ul>
 
-								<div class="fund-our-plans__more-link__container">
-									<a class="fund-our-plans__more-link" href="" target="_self"
-										>Learn more</a
-									>
-								</div>
-							</div>
-
-							<!-- Fixed-investment plan -->
-							<div class="fund-our-plans__plan invest__plans">
-								<h3 class="fund-our-plans__header__h3">investment Plan</h3>
-								<h4 class="fund-our-plans__sub-header__h4">fixed QG-12</h4>
-
-								<ul class="fund-our-plans__list">
-									<li class="fund-our-plans__item">
-										✔ Minimum capital: ₦100,000.
-									</li>
-
-									<li class="fund-our-plans__item">
-										✔ Interest: 35% in 12 months.
-									</li>
-
-									<li class="fund-our-plans__item">
-										✔ Maximum capital: ₦25,000,000.
-									</li>
-
-									<li class="fund-our-plans__item">
-										✔ Investment duration: 12 months.
-									</li>
-								</ul>
-
-								<div class="fund-our-plans__more-link__container">
-									<a class="fund-our-plans__more-link" href="" target="_self"
-										>Learn more</a
+								<div
+									class="fund-our-plans__more-link__container about-plan__cta__container"
+								>
+									<a
+										class="fund-our-plans__more-link about-plan__cta__link"
+										href=""
+										target="_self"
+										>Ready to grow your savings? <br />
+										Click Here!</a
 									>
 								</div>
 							</div>
@@ -495,9 +322,9 @@
 				<!-- *add the javascript to this from the backend that makes the calculator work -->
 				<section class="fund-calc__section">
 					<div class="fund-calc__container">
-						<p class="fund-calc__title">savings &amp investment calculator</p>
-
 						<div class="savings__investment__calc__wrapper">
+							<p class="fund-calc__title">savings calculator</p>
+
 							<!-- *calculator for savings plans -->
 							<div
 								class="fund-calc__accordion__container savings__calc__section"
@@ -519,6 +346,7 @@
 									class="savings__calc__container"
 									id="calc-accordion-button-1-content"
 								>
+									<!-- savings calc form -->
 									<div class="savings__calc__form">
 										<form
 											action=""
@@ -535,7 +363,7 @@
 												type="number"
 												name="initial__deposit"
 												id="id__initial__deposit"
-												placeholder="15000"
+												placeholder="min. ₦5000"
 											/>
 
 											<label class="choose__save__plan" for="choose__save__plan"
@@ -593,6 +421,7 @@
 										</form>
 									</div>
 
+									<!-- savings calc result -->
 									<div
 										class="savings__calc__results__container"
 										id="calc-result-1-content"
@@ -736,7 +565,7 @@
 														name="add__to__savings"
 														class="add__to__savings"
 														id="id__add__to__savings"
-														placeholder="5000"
+														placeholder="min. ₦5000"
 													/>
 												</div>
 
@@ -770,150 +599,6 @@
 									</div>
 								</div>
 							</div>
-
-							<!-- *calculator for investment plans -->
-							<div
-								class="fund-calc__accordion__container investment__calc__section"
-							>
-								<button
-									class="fund-calc__accordion__button"
-									id="calc-accordion-button-2"
-									aria-expanded="false"
-									data-target="#calc-accordion-button-2-content"
-								>
-									<div class="fund-calc__accordion__button--head">
-										calculate your interest for investment plan
-									</div>
-
-									<div class="fund-calc__accordion__button--arrow"></div>
-								</button>
-
-								<div
-									class="investment__calc__container"
-									id="calc-accordion-button-2-content"
-								>
-									<div class="investment__calc__form">
-										<form
-											action=""
-											method="post"
-											id="id__invest__plan__form-1"
-											class="invest__plan__form-1"
-										>
-											<label
-												class="invest__initial__deposit"
-												for="invest__initial__deposit"
-												>Capital (₦):</label
-											>
-											<input
-												type="number"
-												name="invest__initial__deposit"
-												id="id__invest__initial__deposit"
-												placeholder="100000"
-											/>
-
-											<label
-												class="choose__invest__plan"
-												for="choose__invest__plan"
-												>Choose an investment Plan:</label
-											>
-											<select
-												name="choose__invest__plan"
-												id="id__choose__invest__plan"
-											>
-												<option value="" disabled selected>
-													choose a plan
-												</option>
-
-												<option value="qg__12">QG-12 (35% per annum)</option>
-											</select>
-
-											<button
-												type="submit"
-												class="invest__plan__submit"
-												id="id__invest__plan__submit"
-												data-target="#calc-result-1-content"
-											>
-												calculate
-											</button>
-										</form>
-									</div>
-
-									<div
-										class="investment__calc__results__container"
-										data-target="#calc-result-2-content"
-									>
-										<p class="investment__calc__results__header">
-											calculator result:
-										</p>
-
-										<div
-											class="invest__result__roi--naira__wrapper calc__result__wrapper"
-										>
-											<div class="invest__result__roi--percent">ROI (%)</div>
-
-											<div class="invest__result__roi--percent__value">
-												₦ 0.00
-											</div>
-										</div>
-
-										<div class="horizontal_line__calc__result"></div>
-
-										<div
-											class="invest__result__roi--naira__wrapper calc__result__wrapper"
-										>
-											<div class="invest__result__roi--naira">ROI (₦)</div>
-											<div class="invest__result__roi--naira__value">
-												₦ 0.00
-											</div>
-										</div>
-
-										<div class="horizontal_line__calc__result"></div>
-
-										<div
-											class="invest__result__roi--percent-naira__wrapper calc__result__wrapper"
-										>
-											<div class="invest__result__roi--percent-naira">
-												ROI + Capital
-											</div>
-
-											<div class="invest__result__roi--percent-naira__value">
-												₦ 0.00
-											</div>
-										</div>
-
-										<div class="horizontal_line__calc__result"></div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-
-				<!-- -------START OF What we Invest in------ -->
-				<section class="fund-what-we-invest-in__section">
-					<div class="fund-what-we-invest-in__container">
-						<h3 class="fund-what-we-invest-in__header">What We Invest In</h3>
-
-						<div class="fund-what-we-invest-in__list__container">
-							<ul class="fund-what-we-invest-in__list">
-								<li class="fund-what-we-invest-in__list__items">
-									Stock Market
-								</li>
-
-								<li class="fund-what-we-invest-in__list__items">Bond Market</li>
-
-								<li class="fund-what-we-invest-in__list__items">
-									Real Estate Market
-								</li>
-
-								<li class="fund-what-we-invest-in__list__items">
-									Commodities Market
-								</li>
-
-								<li class="fund-what-we-invest-in__list__items">
-									Currency Market
-								</li>
-							</ul>
 						</div>
 					</div>
 				</section>
@@ -976,6 +661,31 @@
 								>Start now</a
 							>
 						</div>
+					</div>
+				</section>
+
+				<!-- -------START OF Need Help? Section------ -->
+				<section class="plan-page__need-help__section">
+					<div class="plan-page__need-help__container">
+						<p class="plan-page__need-help__sub-header">
+							<span class="no-phrase__break">Do you have questions</span> or
+							<span class="no-phrase__break">you need help?</span>
+						</p>
+
+						<p class="plan-page__need-help__text">
+							Visit our
+							<a
+								class="plan-page__need-help__link hover-underline-animation"
+								href="../investment__faq/html__faq__investment.html"
+								>FAQ</a
+							>
+							page to get answers to your questions or
+							<a
+								class="plan-page__need-help__link hover-underline-animation"
+								href="../../contact/html__contact-us.html"
+								>contact us</a
+							>.
+						</p>
 					</div>
 				</section>
 
@@ -1095,7 +805,7 @@
 									<a href="#" class="socials__link" target="_blank"
 										><img
 											class="socials__link-image"
-											src="../../images/facebook-symbol--smallest.jpg"
+											src="../../../images/facebook-symbol--smallest.jpg"
 											alt="facebook logo"
 										/>
 									</a>
@@ -1103,7 +813,7 @@
 									<a href="#" class="socials__link" target="_blank"
 										><img
 											class="socials__link-image"
-											src="../../images/LinkedIn_icon_circle--smallest.jpg"
+											src="../../../images/LinkedIn_icon_circle--smallest.jpg"
 											alt="linkedin logo"
 										/>
 									</a>
@@ -1111,7 +821,7 @@
 									<a href="#" class="socials__link" target="_blank"
 										><img
 											class="socials__link-image"
-											src="../../images/instagram-logo-icon-7--smaller.jpg"
+											src="../../../images/instagram-logo-icon-7--smaller.jpg"
 											alt="instagram logo"
 										/>
 									</a>
@@ -1119,7 +829,7 @@
 									<a href="#" class="socials__link" target="_blank"
 										><img
 											class="socials__link-image"
-											src="../../images/twitter-X-symbol.png"
+											src="../../../images/twitter-X-symbol.png"
 											alt="twitter logo"
 										/>
 									</a>
@@ -1143,16 +853,16 @@
 			</main>
 		</div>
 
-		<script src="../js-components/back-to-top.js"></script>
-		<script src="../js-components/header__on-scroll.js"></script>
-		<script src="../js-components/header__hamburger.js"></script>
-		<script src="../js-components/hero__invest__carousel__text__animation.js"></script>
-		<script src="../js-components/fund__calc__accordion.js"></script>
-		<script src="../js-components/fund__calc__accordion__smooth__scroll__into__view.js"></script>
-		<!-- <script src="../js-components/fund__calc-result__accordion__smooth__scroll__into__view.js"></script> -->
+		<script src="../../js-components/back-to-top.js"></script>
+		<script src="../../js-components/header__on-scroll.js"></script>
+		<script src="../../js-components/header__hamburger.js"></script>
+		<script src="../../js-components/hero__invest__carousel__text__animation.js"></script>
+		<script src="../../js-components/fund__calc__accordion.js"></script>
+		<script src="../../js-components/fund__calc__accordion__smooth__scroll__into__view.js"></script>
+		<!-- <script src="../../js-components/fund__calc-result__accordion__smooth__scroll__into__view.js"></script> -->
 
-		<script src="../js-components/section__visible__on__scroll.js"></script>
-		<script src="../js-components/footer__currentyear__auto.js"></script>
-		<script src="../js-components/testimonial__scroll__homepage.js"></script>
+		<script src="../../js-components/section__visible__on__scroll.js"></script>
+		<script src="../../js-components/footer__currentyear__auto.js"></script>
+		<script src="../../js-components/testimonial__scroll__homepage.js"></script>
 	</body>
 </html>

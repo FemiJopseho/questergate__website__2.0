@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- --------------search engine robots & SEO-------------- -->
+		<meta name="robots" content="index, follow" />
+
+		<meta
+			name="description"
+			content="Questergate investment plan helps you invest in the safest way possible."
+		/>
+
+		<!-- -----------explorer compatibility---------- -->
+		<meta http-equiv="X-UA-Compatible" />
+
+		<meta name="theme-color" content="#0C567B" />
+
+		<!-- --------Cache control meta tag------------ -->
+		<meta http-equiv="Cache-control" content="public" max-age="7776000" />
+
+		<!-- ----------------Security---------------- -->
+		<meta http-equiv="X-Content-Type-Options" content="nosniff" />
+
+		<meta
+			http-equiv="Strict-Transport-Security"
+			content="max-age=31536000; includeSubDomains; preload"
+		/>
+
+		<meta
+			http-equiv="Content-Security-Policy"
+			content="upgrade-insecure-requests"
+		/>
+
+		<!-- -----------------CSS Resets-------------------- -->
+		<!-- Use Normalize Reset -->
+		<link rel="stylesheet" href="../../../css-resets/normalize.css" />
+
+		<!-- <link
+			rel="stylesheet"
+			href="https://necolas.github.io/normalize.css/latest/normalize.css"
+		/> -->
+
+		<!-- -----------------FONTS (loaded for a start)-------------------- -->
+
+		<style type="text/css">
+			@font-face {
+				font-display: swap;
+				font-family: "Nunito";
+				font-style: normal;
+				font-weight: 400;
+
+				src: local("Nunito"),
+					url("../../utilities/fonts/nunito-v26-latin-regular.woff2")
+						format("woff2");
+			}
+
+			@font-face {
+				font-display: swap;
+				font-family: "Montagu Slab";
+				font-style: normal;
+				font-weight: 400;
+
+				src: local("Montagu Slab"),
+					url("../../utilities/fonts/montagu-slab-v12-latin-regular.woff2")
+						format("woff2");
+			}
+		</style>
+
+		<!-- -------Other stylesheets, and scripts---------- -->
+
+		<link
+			rel="stylesheet"
+			href="../../1-css-components/joined-fixed-component.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="../../1-css-components/6-utility-classes.css"
+		/>
+
+		<link
+			rel="stylesheet"
+			href="../investment__multi-use__css/1-header__investment.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="../investment__multi-use__css/4-body__our__plans.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="../investment__multi-use__css/7-steps__to__start__now.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="../investment__multi-use__css/5-calculators.css"
+		/>
+
+		<link rel="stylesheet" href="../2-hero__investment.css" />
+		<link rel="stylesheet" href="./3-body-testimonials__investments.css" />
+		<link rel="stylesheet" href="./6-what__we__invest__in.css" />
+
+		<link rel="stylesheet" href="./our-plans__page__header.css" />
+		<link rel="stylesheet" href="./savings--plan__about-plan.css" />
+		<link rel="stylesheet" href="./our-plans__page__need-help.css" />
+		<link rel="stylesheet" href="" />
+
+		<!-- --------------JQUERY ACCESS via CDN and via Local server----------------- -->
+		<!-- <script
+			src="https://code.jquery.com/jquery-3.7.1.min.js"
+			integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+			crossorigin="anonymous"
+		></script> -->
+
+		<script src="../../js-components/jquery-3.7.1.min.js"></script>
+
+		<!-- <script src="../../js-components/jquery-3.7.1.min.js"></script> -->
+
+		<!-- ----------Page Title---------- -->
+		<title>Questergate Investment Plan</title>
+
+		<!-- -------------Favicon for page--------------- -->
+		<link
+			rel="icon"
+			type="image/x-icon"
+			href="../../../images/QG__favicon__no__background.ico"
+		/>
+	</head>
+
+	<body>
+		<button
+			onclick="backToTop__Function()"
+			id="back-to-top"
+			class="back-to-top"
+			title="Go to top"
+		>
+			Top &#8593;
+		</button>
+
+		<div class="gen-container">
+			<header class="fund-header__section header" id="header">
+				<div class="fund-header__container">
+					<div class="fund-header__logo__container">
+						<a
+							class="fund-header__logo__link"
+							href="../investment__homepage/html__investment.html"
+							><img
+								class="fund-header__logo__img"
+								src="../../../images/QG_LOGO_small-horizontal.jpg"
+								alt="Questergate logo"
+						/></a>
+					</div>
+
+					<div class="fund-header__list__container menu" id="menu">
+						<ul class="fund-header__list">
+							<!-- <li class="fund-header__list__items">
+								<a
+									href="../investment__savings--plan/html__Save__plan.html"
+									class="fund-header__list__items-link"
+									>Save</a
+								>
+							</li> -->
+
+							<li class="fund-header__list__items">
+								<a
+									href="../investment__invest--plans/"
+									class="fund-header__list__items-link"
+									>Invest</a
+								>
+							</li>
+
+							<li class="fund-header__list__items">
+								<a
+									href="../investment__faq/html__faq__investment.html"
+									class="fund-header__list__items-link"
+									>Faq</a
+								>
+							</li>
+
+							<li class="fund-header__list__items">
+								<a
+									href="../investment__how--tos/html__how-tos.html"
+									class="fund-header__list__items-link"
+									>How-To</a
+								>
+							</li>
+
+							<!-- <li class="fund-header__list__items">
+            <a href="#" class="fund-header__list__items-link">Blog</a>
+          </li> -->
+
+							<!-- <li class="fund-header__list__items">
+            <a href="#" class="fund-header__list__items-link">About Us</a>
+          </li> -->
+
+							<!-- *----LOGIN-STATUS AUTHENTICATION NEEDED----* -->
+
+							<!-- *Start of auth for for login or Sign out* -->
+
+							<!-- *-----------if user not logged in, show "Login In" -->
+							<li class="fund-header__list__items header__login">
+								<a
+									href="#"
+									class="fund-header__list__items-link fund-header__link-login"
+									>Log In</a
+								>
+							</li>
+
+							<!-- *-----------if user logged in, show "Sign Out" -->
+							<!-- <li class="fund-header__list__items header__login">
+            <a
+              href="#"
+              class="fund-header__list__items-link fund-header__link-login"
+              >Sign Out</a
+            >
+          </li> -->
+							<!-- *END of auth for for login or Sign out* -->
+
+							<!-- *Start of Auth for DASHBOARD or REGISTER BUTTON* -->
+
+							<!-- *-----------if user not logged in, show Register button -->
+							<li class="fund-header__list__items fund-header__register">
+								<a
+									href="#"
+									class="fund-header__list__items-link fund-header__link-register"
+									>Register</a
+								>
+							</li>
+
+							<!-- *-----------if user is logged in, show Dashboard button -->
+							<!-- <li class="fund-header__list__items fund-header__register">
+            <a
+              href="#"
+              class="fund-header__list__items-link fund-header__link-register"
+              >Dashboard</a
+            >
+          </li> -->
+							<!-- *END of Auth for DASHBOARD or REGISTER BUTTON* -->
+						</ul>
+					</div>
+
+					<div class="fund__header__burger burger" id="burger">
+						<span class="fund__header__burger-line"></span>
+						<span class="fund__header__burger-line"></span>
+						<span class="fund__header__burger-line"></span>
+						<span class="fund__header__burger-line"></span>
+					</div>
+				</div>
+			</header>
+
+			<main class="main">
+				<!-- -------START OF Our Plans Header section------- -->
+				<section class="our-plan__page__header__section">
+					<div class="our-plan__page__header__container">
+						<p class="our-plan__page__header__content">Our Investment Plan</p>
+					</div>
+				</section>
+
+				<!-- -------START OF Our Investment Plans & ABOUT-PLAN Section------ -->
+				<section class="fund-our-plans__section about-plan__section">
+					<div class="fund-our-plans__container about-plan__container">
+						<div class="fund-our-plans__types about-plan__types">
+							<!-- *Fixed-investment plan -->
+							<div
+								class="fund-our-plans__plan invest__plans about-plan__flex-biz__features"
+							>
+								<h4
+									class="fund-our-plans__sub-header__h4 about-plan__flex-biz__features-header"
+								>
+									fixed QG-12 plan
+								</h4>
+
+								<ul
+									class="fund-our-plans__list about-plan__flex-biz__features-list"
+								>
+									<li
+										class="fund-our-plans__item about-plan__flex-biz__features-items"
+									>
+										✔ Minimum capital: ₦100,000.
+									</li>
+
+									<li
+										class="fund-our-plans__item about-plan__flex-biz__features-items"
+									>
+										✔ Maximum capital: ₦25,000,000.
+									</li>
+
+									<li
+										class="fund-our-plans__item about-plan__flex-biz__features-items"
+									>
+										✔ Interest: 35% in 12 months.
+									</li>
+
+									<li
+										class="fund-our-plans__item about-plan__flex-biz__features-items"
+									>
+										✔ Investment duration: 12 months.
+									</li>
+
+									<li
+										class="fund-our-plans__item about-plan__flex-biz__features-items"
+									>
+										✔ Withdraw from your capital at any time.
+									</li>
+
+									<li
+										class="fund-our-plans__item about-plan__flex-biz__features-items"
+									>
+										✔ Terminate investment at any time.
+									</li>
+								</ul>
+
+								<div
+									class="fund-our-plans__more-link__container about-plan__cta__container"
+								>
+									<a
+										class="fund-our-plans__more-link about-plan__cta__link"
+										href=""
+										target="_self"
+										>Ready to grow your savings? <br />
+										Click Here!</a
+									>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- -------START OF CALCULATOR Section------ -->
+				<!-- *add the javascript to this from the backend that makes the calculator work -->
+				<section class="fund-calc__section">
+					<div class="fund-calc__container">
+						<div class="savings__investment__calc__wrapper">
+							<p class="fund-calc__title">investment calculator</p>
+
+							<!-- *calculator for investment plans -->
+							<div
+								class="fund-calc__accordion__container investment__calc__section"
+							>
+								<button
+									class="fund-calc__accordion__button"
+									id="calc-accordion-button-2"
+									aria-expanded="false"
+									data-target="#calc-accordion-button-2-content"
+								>
+									<div class="fund-calc__accordion__button--head">
+										calculate your interest for investment plan
+									</div>
+
+									<div class="fund-calc__accordion__button--arrow"></div>
+								</button>
+
+								<div
+									class="investment__calc__container"
+									id="calc-accordion-button-2-content"
+								>
+									<!-- investment calculator form -->
+									<div class="investment__calc__form">
+										<form
+											action=""
+											method="post"
+											id="id__invest__plan__form-1"
+											class="invest__plan__form-1"
+										>
+											<label
+												class="invest__initial__deposit"
+												for="invest__initial__deposit"
+												>Capital (₦):</label
+											>
+											<input
+												type="number"
+												name="invest__initial__deposit"
+												id="id__invest__initial__deposit"
+												placeholder="100000"
+											/>
+
+											<label
+												class="choose__invest__plan"
+												for="choose__invest__plan"
+												>Choose an investment Plan:</label
+											>
+											<select
+												name="choose__invest__plan"
+												id="id__choose__invest__plan"
+											>
+												<option value="" disabled selected>
+													choose a plan
+												</option>
+
+												<option value="qg__12">QG-12 (35% per annum)</option>
+											</select>
+
+											<button
+												type="submit"
+												class="invest__plan__submit"
+												id="id__invest__plan__submit"
+												data-target="#calc-result-1-content"
+											>
+												calculate
+											</button>
+										</form>
+									</div>
+
+									<!-- investment calculator result -->
+									<div
+										class="investment__calc__results__container"
+										data-target="#calc-result-2-content"
+									>
+										<p class="investment__calc__results__header">
+											calculator result:
+										</p>
+
+										<div
+											class="invest__result__roi--naira__wrapper calc__result__wrapper"
+										>
+											<div class="invest__result__roi--percent">ROI (%)</div>
+
+											<div class="invest__result__roi--percent__value">
+												₦ 0.00
+											</div>
+										</div>
+
+										<div class="horizontal_line__calc__result"></div>
+
+										<div
+											class="invest__result__roi--naira__wrapper calc__result__wrapper"
+										>
+											<div class="invest__result__roi--naira">ROI (₦)</div>
+											<div class="invest__result__roi--naira__value">
+												₦ 0.00
+											</div>
+										</div>
+
+										<div class="horizontal_line__calc__result"></div>
+
+										<div
+											class="invest__result__roi--percent-naira__wrapper calc__result__wrapper"
+										>
+											<div class="invest__result__roi--percent-naira">
+												ROI + Capital
+											</div>
+
+											<div class="invest__result__roi--percent-naira__value">
+												₦ 0.00
+											</div>
+										</div>
+
+										<div class="horizontal_line__calc__result"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- ---------START OF 3 STEPS TO SAVE & INVEST--------- -->
+				<section class="fund-get-started__section">
+					<div class="fund-get-started__container">
+						<div class="fund-get-started__header__container">
+							<p class="fund-get-started__header">how to get started</p>
+						</div>
+
+						<div class="fund-get-started__wrapper">
+							<div class="fund-get-started__number-steps__container">
+								<div class="fund-get-started__number-steps">1</div>
+								<div class="get-started__horizontal__line"></div>
+								<div class="fund-get-started__number-steps">2</div>
+								<div class="get-started__horizontal__line"></div>
+								<div class="fund-get-started__number-steps">3</div>
+							</div>
+
+							<div class="fund-get-started__text-steps__container">
+								<div class="fund-get-started__text-steps">
+									<h4 class="fund-get-started__text-steps-header">
+										Create an account
+									</h4>
+
+									<p class="fund-get-started__text-steps-p">
+										Simply click on the "Register" and enter some basic details.
+									</p>
+								</div>
+
+								<div class="fund-get-started__text-steps">
+									<h4 class="fund-get-started__text-steps-header">
+										Fund your account
+									</h4>
+
+									<p class="fund-get-started__text-steps-p">
+										You fund your account by adding money to your QG-wallet.
+									</p>
+								</div>
+
+								<div class="fund-get-started__text-steps">
+									<h4 class="fund-get-started__text-steps-header">
+										Save & Invest
+									</h4>
+
+									<p class="fund-get-started__text-steps-p">
+										You select a plan that suits your financial goal and
+										activate it.
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="get-started__start__now">
+							<a
+								class="get-started__start__now__link link-to-button"
+								href="#"
+								target="_self"
+								>Start now</a
+							>
+						</div>
+					</div>
+				</section>
+
+				<!-- -------START OF Need Help? Section------ -->
+				<section class="plan-page__need-help__section">
+					<div class="plan-page__need-help__container">
+						<p class="plan-page__need-help__sub-header">
+							<span class="no-phrase__break">Do you have questions</span> or
+							<span class="no-phrase__break">you need help?</span>
+						</p>
+
+						<p class="plan-page__need-help__text">
+							Visit our
+							<a
+								class="plan-page__need-help__link hover-underline-animation"
+								href="../investment__faq/html__faq__investment.html"
+								>FAQ</a
+							>
+							page to get answers to your questions or
+							<a
+								class="plan-page__need-help__link hover-underline-animation"
+								href="../../contact/html__contact-us.html"
+								>contact us</a
+							>.
+						</p>
+					</div>
+				</section>
+
+				<!-- -------start of FOOTER section------- -->
+				<footer class="footer hidden">
+					<!-- footer section1 -->
+					<div class="footer__section1-container">
+						<div class="footer__section1-part1__container">
+							<!-- footer sub-section for Products -->
+							<div class="footer__products section1-item">
+								<h3 class="footer__section1__sub-heading">Products</h3>
+
+								<ul class="footer__list-text list__no-style">
+									<li>
+										<a
+											class="footer__links pad-marg-0"
+											href="../IAS/html__ias.html"
+											>Investment Analytics Software</a
+										>
+									</li>
+
+									<li>
+										<a
+											class="footer__links pad-marg-0"
+											href="../signalapp/html__signalapp.html"
+											>Signal App</a
+										>
+									</li>
+
+									<li>
+										<a class="footer__links pad-marg-0" href="#">
+											Save & Invest</a
+										>
+									</li>
+								</ul>
+							</div>
+
+							<!-- footer sub-section for Company -->
+							<div class="footer__company section1-item">
+								<h3 class="footer__section1__sub-heading">Company</h3>
+
+								<ul class="footer__list-text list__no-style">
+									<li>
+										<a
+											class="footer__links pad-marg-0"
+											href="../about-us/html__about-us.html"
+											>About Us</a
+										>
+									</li>
+
+									<li>
+										<a
+											class="footer__links pad-marg-0"
+											href="../blog/html__blog.html"
+											>Blog</a
+										>
+									</li>
+
+									<li>
+										<a
+											class="footer__links pad-marg-0"
+											href="../faq/html__faq.html"
+											>FAQ</a
+										>
+									</li>
+
+									<li>
+										<a
+											class="footer__links pad-marg-0"
+											href="../contact/html__contact-us.html"
+											>Contact Us</a
+										>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="footer__section1-part2__container">
+							<!-- footer sub-section for Legal -->
+							<div class="footer__legal section1-item">
+								<h3 class="footer__section1__sub-heading">Legal</h3>
+
+								<ul class="footer__list-text list__no-style">
+									<li>
+										<a class="footer__links pad-marg-0" href="#"
+											>Terms & Conditions</a
+										>
+									</li>
+
+									<li>
+										<a class="footer__links pad-marg-0" href="#"
+											>Privacy Policy</a
+										>
+									</li>
+								</ul>
+							</div>
+
+							<!-- footer sub-section for Contact details -->
+							<div class="footer__contact-details section1-item">
+								<h3
+									class="footer__section1__sub-heading contact-details visible__nooo"
+								>
+									Contact Us
+								</h3>
+
+								<ul class="footer__list-text list__no-style">
+									<li class="contact-email">
+										<a class="footer__links pad-marg-0 no-hover-effect-1"
+											>contact@questergate.com</a
+										>
+									</li>
+
+									<li class="contact-phone">+234 814 447 7866</li>
+								</ul>
+
+								<div class="socials__container contact-social">
+									<a href="#" class="socials__link" target="_blank"
+										><img
+											class="socials__link-image"
+											src="../../../images/facebook-symbol--smallest.jpg"
+											alt="facebook logo"
+										/>
+									</a>
+
+									<a href="#" class="socials__link" target="_blank"
+										><img
+											class="socials__link-image"
+											src="../../../images/LinkedIn_icon_circle--smallest.jpg"
+											alt="linkedin logo"
+										/>
+									</a>
+
+									<a href="#" class="socials__link" target="_blank"
+										><img
+											class="socials__link-image"
+											src="../../../images/instagram-logo-icon-7--smaller.jpg"
+											alt="instagram logo"
+										/>
+									</a>
+
+									<a href="#" class="socials__link" target="_blank"
+										><img
+											class="socials__link-image"
+											src="../../../images/twitter-X-symbol.png"
+											alt="twitter logo"
+										/>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- <hr class="hr-horizontal-line"/> -->
+					<div class="footer-horizontal-line"></div>
+
+					<div class="footer__section2-container">
+						<div class="copyright">
+							<p class="footer__other-text">
+								© <span id="current__year"></span> Questergate. All rights
+								reserved. | RC-1814438
+							</p>
+						</div>
+					</div>
+				</footer>
+			</main>
+		</div>
+
+		<script src="../../js-components/back-to-top.js"></script>
+		<script src="../../js-components/header__on-scroll.js"></script>
+		<script src="../../js-components/header__hamburger.js"></script>
+		<script src="../../js-components/hero__invest__carousel__text__animation.js"></script>
+		<script src="../../js-components/fund__calc__accordion.js"></script>
+		<script src="../../js-components/fund__calc__accordion__smooth__scroll__into__view.js"></script>
+		<!-- <script src="../../js-components/fund__calc-result__accordion__smooth__scroll__into__view.js"></script> -->
+
+		<script src="../../js-components/section__visible__on__scroll.js"></script>
+		<script src="../../js-components/footer__currentyear__auto.js"></script>
+		<script src="../../js-components/testimonial__scroll__homepage.js"></script>
+	</body>
+</html>

@@ -1,0 +1,107 @@
+/* *contains styles for: header of the our plans' page */
+
+
+/** Mobile view */
+/* max-width: 500px */
+@media screen and (width <=31.25em) {
+  .our-plan__page__header__section {
+    /* outline: 4px solid gold; */
+
+    width: 100%;
+    padding: 4rem 0 0 0;
+  }
+
+  .our-plan__page__header__container {
+    /* outline: 4px solid green; */
+
+    width: 100%;
+    max-width: var(--width__1200px);
+    margin: 0 auto;
+  }
+
+  .our-plan__page__header__content {
+    /* outline: 2px solid blue; */
+
+    text-align: center;
+    text-transform: capitalize;
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-400);
+    line-height: var(--lh-600);
+    color: var(--clr-primary-650);
+  }
+}
+
+/*        */
+/*        */
+/*        */
+/*        */
+/*        */
+
+/* Mobile landscape & Tablet Portrait screens */
+/* (min-width > 500px ) & (max-width <= 875px) */
+@media screen and (width > 31.25em) and (width <=54.69em) {
+  .our-plan__page__header__section {
+    /* outline: 4px solid gold; */
+
+    width: 100%;
+    padding: 4rem 0 0 0;
+  }
+
+  .our-plan__page__header__container {
+    /* outline: 4px solid green; */
+
+    width: 100%;
+    max-width: var(--width__1200px);
+    margin: 0 auto;
+  }
+
+  .our-plan__page__header__content {
+    /* outline: 2px solid blue; */
+
+    text-align: center;
+    text-transform: capitalize;
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-300);
+    line-height: var(--lh-600);
+    color: var(--clr-primary-650);
+  }
+}
+
+/*        */
+/*        */
+/*        */
+/*        */
+/*        */
+
+/** Screens > 875px */
+@media screen and (width > 54.69em) {
+  .our-plan__page__header__section {
+    /* outline: 4px solid gold; */
+
+    width: 100%;
+    padding: 4rem 0 0 0;
+  }
+
+  .our-plan__page__header__container {
+    /* outline: 4px solid green; */
+
+    width: 100%;
+    max-width: var(--width__1200px);
+    margin: 0 auto;
+  }
+
+  .our-plan__page__header__content {
+    /* outline: 2px solid blue; */
+
+    text-align: center;
+    text-transform: capitalize;
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-200);
+    line-height: var(--lh-600);
+    color: var(--clr-primary-650);
+    padding: 1rem 0;
+  }
+}
