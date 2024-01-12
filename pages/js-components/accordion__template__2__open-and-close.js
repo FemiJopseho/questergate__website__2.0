@@ -1,9 +1,9 @@
+// *this is for accordion that OPENS & CLOSE when clicked
+
 // Wait for the DOM to be fully loaded before executing the code
 document.addEventListener("DOMContentLoaded", function () {
-	// Select all elements with the class "fund-calc__accordion__button"
-	const accordionButtons = document.querySelectorAll(
-		".fund-calc__accordion__button"
-	);
+	// Select all elements with the class "accordion__button"
+	const accordionButtons = document.querySelectorAll(".accordion__button");
 
 	// Attach a click event listener to each accordion button
 	accordionButtons.forEach((button) => {
@@ -42,4 +42,10 @@ document.addEventListener("DOMContentLoaded", function () {
 			targetContent.style.maxHeight = "0";
 		});
 	}
+
+	// Programmatically trigger a click event on the first accordion button to open it
+	const firstAccordionButton = document.getElementById(
+		"calc-accordion-button-1"
+	);
+	firstAccordionButton.click();
 });

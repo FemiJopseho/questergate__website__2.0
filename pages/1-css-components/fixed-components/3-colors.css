@@ -134,7 +134,7 @@
 
 	--gen-shadow-header: 0px 8px 28px 0px hsla(214, 88%, 13%, 0.2);
 	--gen-shadow-3d-01: 10px 10px 10px 0px hsla(241, 37%, 12%, 0.2);
-	--gen-shadow-3d-02: 10px 0px 10px 5px hsla(241, 37%, 12%, 0.2);
+	--gen-shadow-3d-02: 0px 8px 10px 5px hsla(241, 37%, 12%, 0.2);
 	--gen-shadow-01: 0px 2px 6px 0px hsla(241, 37%, 12%, 0.06);
 	--gen-shadow-02: 0px 2px 12px 0px hsla(241, 37%, 12%, 0.08);
 	--gen-shadow-03: 0px 8px 28px 0px hsla(241, 37%, 12%, 0.1);

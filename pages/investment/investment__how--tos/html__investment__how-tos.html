@@ -9,7 +9,7 @@
 
 		<meta
 			name="description"
-			content="Questergate investment plan helps you invest in the safest way possible."
+			content="Learn how to use the Savings & investment products of Questergate."
 		/>
 
 		<!-- -----------explorer compatibility---------- -->
@@ -83,31 +83,19 @@
 			rel="stylesheet"
 			href="../investment__multi-use__css/1-header__investment.css"
 		/>
-		<link
-			rel="stylesheet"
-			href="../investment__multi-use__css/4-body__our__plans.css"
-		/>
+
+		<link rel="stylesheet" href="./investment__how-to.css" />
 		<link
 			rel="stylesheet"
 			href="../investment__multi-use__css/7-steps__to__start__now.css"
 		/>
 		<link
 			rel="stylesheet"
-			href="../investment__multi-use__css/5-calculators.css"
+			href="../investment__multi-use__css/8-need-help.css"
 		/>
-
-		<link rel="stylesheet" href="../2-hero__investment.css" />
-		<link rel="stylesheet" href="./3-body-testimonials__investments.css" />
-		<link rel="stylesheet" href="./6-what__we__invest__in.css" />
 		<link
 			rel="stylesheet"
 			href="../investment__multi-use__css/9-investment__heading__for__pages.css"
-		/>
-
-		<link rel="stylesheet" href="./savings--plan__about-plan.css" />
-		<link
-			rel="stylesheet"
-			href="../investment__multi-use__css/8-need-help.css"
 		/>
 
 		<!-- --------------JQUERY ACCESS via CDN and via Local server----------------- -->
@@ -122,7 +110,7 @@
 		<!-- <script src="../../js-components/jquery-3.7.1.min.js"></script> -->
 
 		<!-- ----------Page Title---------- -->
-		<title>Questergate Investment Plan</title>
+		<title>How to use</title>
 
 		<!-- -------------Favicon for page--------------- -->
 		<link
@@ -148,7 +136,7 @@
 					<div class="fund-header__logo__container">
 						<a
 							class="fund-header__logo__link"
-							href="../investment__homepage/html__investment.html"
+							href="../../homepage/html__homepage.html"
 							><img
 								class="fund-header__logo__img"
 								src="../../../images/QG_LOGO_small-horizontal.jpg"
@@ -158,13 +146,13 @@
 
 					<div class="fund-header__list__container menu" id="menu">
 						<ul class="fund-header__list">
-							<!-- <li class="fund-header__list__items">
+							<li class="fund-header__list__items">
 								<a
 									href="../investment__savings--plan/html__Save__plan.html"
 									class="fund-header__list__items-link"
 									>Save</a
 								>
-							</li> -->
+							</li>
 
 							<li class="fund-header__list__items">
 								<a
@@ -182,21 +170,21 @@
 								>
 							</li>
 
-							<li class="fund-header__list__items">
+							<!-- <li class="fund-header__list__items">
 								<a
 									href="../investment__how--tos/html__how-tos.html"
 									class="fund-header__list__items-link"
 									>How-To</a
 								>
-							</li>
+							</li> -->
 
 							<!-- <li class="fund-header__list__items">
-            <a href="#" class="fund-header__list__items-link">Blog</a>
-          </li> -->
+								<a href="#" class="fund-header__list__items-link">Blog</a>
+							</li> -->
 
 							<!-- <li class="fund-header__list__items">
-            <a href="#" class="fund-header__list__items-link">About Us</a>
-          </li> -->
+								<a href="#" class="fund-header__list__items-link">About Us</a>
+							</li> -->
 
 							<!-- *----LOGIN-STATUS AUTHENTICATION NEEDED----* -->
 
@@ -257,208 +245,156 @@
 				<!-- -------START OF Our Plans Header section------- -->
 				<section class="fund__heading-for-pages__section hidden">
 					<div class="fund__heading-for-pages__container">
-						<p class="fund__heading-for-pages__content-title">
-							Our Investment Plan
+						<h3 class="fund__heading-for-pages__content-title">How to use</h3>
+
+						<p class="fund__heading-for-pages__content-parag">
+							Learn how to use different features of our products.
 						</p>
-
-						<!-- <p class="fund__heading-for-pages__content-parag">
-							Learn all about our savings plan here
-						</p> -->
 					</div>
 				</section>
 
-				<!-- -------START OF Our Investment Plans & ABOUT-PLAN Section------ -->
-				<section class="fund-our-plans__section about-plan__section">
-					<div class="fund-our-plans__container about-plan__container">
-						<div class="fund-our-plans__types about-plan__types">
-							<!-- *Fixed-investment plan -->
-							<div
-								class="fund-our-plans__plan invest__plans about-plan__flex-biz__features"
+				<!-- -------START OF HOW-TO SECTION------- -->
+				<section class="fund__how-to__section">
+					<div
+						class="fund__how-to__container accordion__scroll__to__view__top-border"
+					>
+						<!-- accordion buttons to be clicked -->
+						<div
+							class="fund__how-to__accordion-button__container accordion__button__container"
+						>
+							<!-- 1st accord button -->
+							<button
+								class="fund__how-to__accordion-button accordion__button"
+								href=""
+								id="calc-accordion-button-1"
+								aria-expanded="false"
+								data-target="#calc-accordion-button-1-content"
 							>
-								<h4
-									class="fund-our-plans__sub-header__h4 about-plan__flex-biz__features-header"
-								>
-									fixed QG-12 plan
-								</h4>
+								How to withdraw from your
+								<span class="sentence__no-wrap">QG-Wallet</span> into your bank
+								account
+							</button>
 
-								<ul
-									class="fund-our-plans__list about-plan__flex-biz__features-list"
-								>
-									<li
-										class="fund-our-plans__item about-plan__flex-biz__features-items"
-									>
-										✔ Minimum capital: ₦100,000.
-									</li>
+							<!-- 2nd accord button -->
+							<button
+								class="fund__how-to__accordion-button accordion__button"
+								href=""
+								id="calc-accordion-button-2"
+								aria-expanded="false"
+								data-target="#calc-accordion-button-2-content"
+							>
+								How to create a flex Savings plan
+							</button>
 
-									<li
-										class="fund-our-plans__item about-plan__flex-biz__features-items"
-									>
-										✔ Maximum capital: ₦25,000,000.
-									</li>
+							<!-- 3rd accord button -->
+							<button
+								class="fund__how-to__accordion-button accordion__button"
+								href=""
+								id="calc-accordion-button-3"
+								aria-expanded="false"
+								data-target="#calc-accordion-button-3-content"
+							>
+								How to create a fixed savings plan
+							</button>
 
-									<li
-										class="fund-our-plans__item about-plan__flex-biz__features-items"
-									>
-										✔ Interest: 35% in 12 months.
-									</li>
-
-									<li
-										class="fund-our-plans__item about-plan__flex-biz__features-items"
-									>
-										✔ Investment duration: 12 months.
-									</li>
-
-									<li
-										class="fund-our-plans__item about-plan__flex-biz__features-items"
-									>
-										✔ Withdraw from your capital at any time.
-									</li>
-
-									<li
-										class="fund-our-plans__item about-plan__flex-biz__features-items"
-									>
-										✔ Terminate investment at any time.
-									</li>
-								</ul>
-
-								<div
-									class="fund-our-plans__more-link__container about-plan__cta__container"
-								>
-									<a
-										class="fund-our-plans__more-link about-plan__cta__link"
-										href=""
-										target="_self"
-										>Ready to grow your savings? <br />
-										Click Here!</a
-									>
-								</div>
-							</div>
+							<!-- 4th accord button -->
+							<button
+								class="fund__how-to__accordion-button accordion__button"
+								href=""
+								id="calc-accordion-button-4"
+								aria-expanded="false"
+								data-target="#calc-accordion-button-4-content"
+							>
+								How to deposit funds into your
+								<span class="sentence__no-wrap">QG-Wallet</span>
+							</button>
 						</div>
-					</div>
-				</section>
 
-				<!-- -------START OF CALCULATOR Section------ -->
-				<!-- *add the javascript to this from the backend that makes the calculator work -->
-				<section class="fund-calc__section">
-					<div class="fund-calc__container">
-						<div class="savings__investment__calc__wrapper">
-							<p class="fund-calc__title">investment calculator</p>
-
-							<!-- *calculator for investment plans -->
+						<!-- accordion items opened/closed by accordion buttons -->
+						<div
+							class="fund__how-to__accordion-items__container accordion__item__container"
+						>
+							<!-- 1st accord item -->
 							<div
-								class="fund-calc__accordion__container investment__calc__section"
+								class="fund__how-to__accordion-item accordion__item"
+								id="calc-accordion-button-1-content"
 							>
-								<button
-									class="fund-calc__accordion__button"
-									id="calc-accordion-button-2"
-									aria-expanded="false"
-									data-target="#calc-accordion-button-2-content"
-								>
-									<div class="fund-calc__accordion__button--head">
-										calculate your interest for investment plan
-									</div>
+								<h3 class="fund__how-to__accordion-item__heading">
+									How to withdraw from your
+									<span class="sentence__no-wrap">QG-Wallet</span> into your
+									bank account
+								</h3>
 
-									<div class="fund-calc__accordion__button--arrow"></div>
-								</button>
+								<iframe
+									class="fund__how-to__accordion-item__link"
+									height="315"
+									src="https://www.youtube.com/embed/E8CxLY-Jfsg?si=lDT5LjDE5BhWjy09"
+									title="YouTube video player"
+									frameborder="0"
+									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+									allowfullscreen
+								></iframe>
+							</div>
 
-								<div
-									class="investment__calc__container"
-									id="calc-accordion-button-2-content"
-								>
-									<!-- investment calculator form -->
-									<div class="investment__calc__form">
-										<form
-											action=""
-											method="post"
-											id="id__invest__plan__form-1"
-											class="invest__plan__form-1"
-										>
-											<label
-												class="invest__initial__deposit"
-												for="invest__initial__deposit"
-												>Capital (₦):</label
-											>
-											<input
-												type="number"
-												name="invest__initial__deposit"
-												id="id__invest__initial__deposit"
-												placeholder="100000"
-											/>
+							<!-- 2nd accord item -->
+							<div
+								class="fund__how-to__accordion-item accordion__item"
+								id="calc-accordion-button-2-content"
+							>
+								<h3 class="fund__how-to__accordion-item__heading">
+									How to create a flex Savings plan
+								</h3>
 
-											<label
-												class="choose__invest__plan"
-												for="choose__invest__plan"
-												>Choose an investment Plan:</label
-											>
-											<select
-												name="choose__invest__plan"
-												id="id__choose__invest__plan"
-											>
-												<option value="" disabled selected>
-													choose a plan
-												</option>
+								<iframe
+									class="fund__how-to__accordion-item__link"
+									height="315"
+									src="https://www.youtube.com/embed/PE8cwWCb4uI?si=VoCLCmfij37dqaGR"
+									title="YouTube video player"
+									frameborder="0"
+									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+									allowfullscreen
+								></iframe>
+							</div>
 
-												<option value="qg__12">QG-12 (35% per annum)</option>
-											</select>
+							<!-- 3rd accord item -->
+							<div
+								class="fund__how-to__accordion-item accordion__item"
+								id="calc-accordion-button-3-content"
+							>
+								<h3 class="fund__how-to__accordion-item__heading">
+									How to create a fixed savings plan
+								</h3>
 
-											<button
-												type="submit"
-												class="invest__plan__submit"
-												id="id__invest__plan__submit"
-												data-target="#calc-result-1-content"
-											>
-												calculate
-											</button>
-										</form>
-									</div>
+								<iframe
+									class="fund__how-to__accordion-item__link"
+									height="315"
+									src="https://www.youtube.com/embed/vQkAkDk4_I4?si=tbcA-UDbuHExMee7"
+									title="YouTube video player"
+									frameborder="0"
+									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+									allowfullscreen
+								></iframe>
+							</div>
 
-									<!-- investment calculator result -->
-									<div
-										class="investment__calc__results__container"
-										data-target="#calc-result-2-content"
-									>
-										<p class="investment__calc__results__header">
-											calculator result:
-										</p>
+							<!-- 4th accord item -->
+							<div
+								class="fund__how-to__accordion-item accordion__item"
+								id="calc-accordion-button-4-content"
+							>
+								<h3 class="fund__how-to__accordion-item__heading">
+									How to deposit funds into your
+									<span class="sentence__no-wrap">QG-Wallet</span>
+								</h3>
 
-										<div
-											class="invest__result__roi--naira__wrapper calc__result__wrapper"
-										>
-											<div class="invest__result__roi--percent">ROI (%)</div>
-
-											<div class="invest__result__roi--percent__value">
-												₦ 0.00
-											</div>
-										</div>
-
-										<div class="horizontal_line__calc__result"></div>
-
-										<div
-											class="invest__result__roi--naira__wrapper calc__result__wrapper"
-										>
-											<div class="invest__result__roi--naira">ROI (₦)</div>
-											<div class="invest__result__roi--naira__value">
-												₦ 0.00
-											</div>
-										</div>
-
-										<div class="horizontal_line__calc__result"></div>
-
-										<div
-											class="invest__result__roi--percent-naira__wrapper calc__result__wrapper"
-										>
-											<div class="invest__result__roi--percent-naira">
-												ROI + Capital
-											</div>
-
-											<div class="invest__result__roi--percent-naira__value">
-												₦ 0.00
-											</div>
-										</div>
-
-										<div class="horizontal_line__calc__result"></div>
-									</div>
-								</div>
+								<iframe
+									class="fund__how-to__accordion-item__link"
+									height="315"
+									src="https://www.youtube.com/embed/_VLZDv9Q_b0?si=yNa0tBeqiQT409T2"
+									title="YouTube video player"
+									frameborder="0"
+									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+									allowfullscreen
+								></iframe>
 							</div>
 						</div>
 					</div>
@@ -497,7 +433,8 @@
 									</h4>
 
 									<p class="fund-get-started__text-steps-p">
-										You fund your account by adding money to your QG-wallet.
+										You fund your account by adding money to your
+										<span class="sentence__no-wrap">QG-wallet</span>.
 									</p>
 								</div>
 
@@ -551,7 +488,7 @@
 				</section>
 
 				<!-- -------start of FOOTER section------- -->
-				<footer class="footer hidden">
+				<footer class="footer">
 					<!-- footer section1 -->
 					<div class="footer__section1-container">
 						<div class="footer__section1-part1__container">
@@ -717,8 +654,8 @@
 		<script src="../../js-components/back-to-top.js"></script>
 		<script src="../../js-components/header__on-scroll.js"></script>
 		<script src="../../js-components/header__hamburger.js"></script>
-		<script src="../../js-components/fund__calc__accordion.js"></script>
-		<script src="../../js-components/fund__calc__accordion__smooth__scroll__into__view.js"></script>
+		<script src="../../js-components/accordion__template__1__open-only.js"></script>
+		<script src="../../js-components/accodrion__template__scroll-into-view.js"></script>
 		<!-- <script src="../../js-components/fund__calc-result__accordion__smooth__scroll__into__view.js"></script> -->
 
 		<script src="../../js-components/section__visible__on__scroll.js"></script>

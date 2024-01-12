@@ -341,11 +341,11 @@
 				cursor: auto;
 
 				font-family: var(--ff-primary);
-				font-size: var(--fs-600);
+				font-size: var(--fs-800);
 				font-weight: var(--fw-regular);
-				line-height: var(--lh-430);
+				line-height: var(--lh-400);
 				text-align: left;
-				color: var(--clr-grays-650);
+				color: var(--clr-tertiary-100);
 			}
 		}
 
@@ -371,11 +371,11 @@
 				padding: 1rem 1.1rem;
 
 				font-family: var(--ff-primary);
-				font-size: var(--fs-600);
+				font-size: var(--fs-800);
 				font-weight: var(--fw-regular);
-				line-height: var(--lh-430);
+				line-height: var(--lh-400);
 				text-align: left;
-				color: var(--clr-grays-650);
+				color: var(--clr-tertiary-100);
 			}
 
 			/* //////////// */
@@ -753,11 +753,11 @@
 				cursor: auto;
 
 				font-family: var(--ff-primary);
-				font-size: var(--fs-600);
+				font-size: var(--fs-700);
 				font-weight: var(--fw-regular);
-				line-height: var(--lh-430);
+				line-height: var(--lh-400);
 				text-align: left;
-				color: var(--clr-grays-650);
+				color: var(--clr-tertiary-100);
 			}
 		}
 
@@ -783,11 +783,11 @@
 				padding: 1rem 1.1rem;
 
 				font-family: var(--ff-primary);
-				font-size: var(--fs-600);
+				font-size: var(--fs-700);
 				font-weight: var(--fw-regular);
-				line-height: var(--lh-430);
+				line-height: var(--lh-400);
 				text-align: left;
-				color: var(--clr-grays-650);
+				color: var(--clr-tertiary-100);
 			}
 
 			/* //////////// */
@@ -900,7 +900,7 @@
 		}
 	}
 
-	/* ////////// */
+	/* /////////// */
 	/** contact platforms section */
 	/* ////////// */
 	.contact-us__platforms__section {
@@ -1167,11 +1167,11 @@
 				cursor: auto;
 
 				font-family: var(--ff-primary);
-				font-size: var(--fs-600);
+				font-size: var(--fs-700);
 				font-weight: var(--fw-regular);
 				line-height: var(--lh-430);
 				text-align: left;
-				color: var(--clr-grays-650);
+				color: var(--clr-tertiary-100);
 			}
 		}
 
@@ -1202,11 +1202,11 @@
 				padding: 1rem 1.1rem;
 
 				font-family: var(--ff-primary);
-				font-size: var(--fs-600);
+				font-size: var(--fs-700);
 				font-weight: var(--fw-regular);
 				line-height: var(--lh-430);
 				text-align: left;
-				color: var(--clr-grays-650);
+				color: var(--clr-tertiary-100);
 			}
 
 			/* //////////// */

@@ -60,7 +60,7 @@
     }
   }
 
-  /** style visible part of calc accordion */
+  /** style always visible part of calc accordion */
   .fund-calc__accordion__container {
     /* outline: 2px solid rosybrown; */
 
@@ -518,7 +518,7 @@
     }
   }
 
-  /** style visible part of calc accordion */
+  /** style always visible part of calc accordion */
   .fund-calc__accordion__container {
     width: 100%;
 
@@ -941,7 +941,7 @@
     /* outline: 4px solid gold; */
 
     width: 100%;
-    padding: 0 0 6rem 0;
+    padding: 0 0 8rem 0;
   }
 
   .fund-calc__container {
@@ -952,31 +952,15 @@
     margin: 0 auto;
   }
 
-  .fund-calc__title {
-    /* outline: 2px solid blue; */
-
-    padding-bottom: 2rem;
-
-    text-align: center;
-    font-family: var(--ff-primary);
-    font-size: var(--fs-400);
-    font-weight: var(--fw-bold);
-    line-height: var(--lh-600);
-    letter-spacing: 1px;
-    color: var(--clr-primary-650);
-    text-transform: capitalize;
-  }
-
   /** style wrapper for both save & invest calc */
   .savings__investment__calc__wrapper {
     /* outline: 2px solid red; */
 
     width: 100%;
-    width: fit-content;
     margin: 0 auto;
     padding: 1rem;
     border-radius: 12px;
-    box-shadow: var(--gen-shadow-03);
+    box-shadow: var(--gen-shadow-3d-02);
 
 
     /* //////////// */
@@ -993,6 +977,21 @@
 
       width: 100%;
     }
+  }
+
+  .fund-calc__title {
+    /* outline: 2px solid blue; */
+
+    padding-bottom: 2rem;
+
+    text-align: center;
+    font-family: var(--ff-primary);
+    font-size: var(--fs-400);
+    font-weight: var(--fw-bold);
+    line-height: var(--lh-600);
+    letter-spacing: 1px;
+    color: var(--clr-primary-650);
+    text-transform: capitalize;
   }
 
   /** style visible part of calc accordion */
@@ -1391,6 +1390,7 @@
 /* ///////////////////////// */
 /** WHEN CLOSED */
 /* ///////////////////////// */
+/* makes the height of the accordion Item to be 0 so it is not visible */
 .investment__calc__container,
 .savings__calc__container {
   /* outline: 2px dashed violet; */
@@ -1409,6 +1409,7 @@
 /* /////////////////////// */
 /** WHEN OPEN */
 /* ///////////////////// */
+/* changes the height of the accordion Item from 0 so it is visible */
 .savings__calc__section button[aria-expanded="true"]+.savings__calc__container,
 .investment__calc__section button[aria-expanded="true"]+.investment__calc__container {
   /* outline: 2px dashed red; */
@@ -1420,6 +1421,7 @@
   will-change: max-height;
 }
 
+/* style the button when it is open */
 .savings__calc__section button[aria-expanded="true"],
 .investment__calc__section button[aria-expanded="true"] {
   background-color: var(--clr-primary-200);
@@ -1430,6 +1432,7 @@
       var(--clr-primary-650));
 }
 
+/* style the button arrow when button is open */
 .savings__calc__section button[aria-expanded="true"] .fund-calc__accordion__button--arrow,
 .investment__calc__section button[aria-expanded="true"] .fund-calc__accordion__button--arrow {
   height: 15px;

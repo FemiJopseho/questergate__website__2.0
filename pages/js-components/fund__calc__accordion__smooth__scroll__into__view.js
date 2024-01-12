@@ -5,6 +5,7 @@
 // you need 2 things:
 // (1) a button you click that takes you to the section on the page....
 // (call this class: ".btn-clicked-for-scroll" & data-target="#put id of section to scroll to")
+
 // (2) the actual section on the page you want to go to when you click button in (1)....
 // (give this id="section-to-scroll-to" )
 // it also assumes you have a fixed header. you can remove that if you dont.

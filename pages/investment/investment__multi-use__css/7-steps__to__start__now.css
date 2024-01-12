@@ -10,7 +10,7 @@
     /* outline: 4px solid indigo; */
 
     width: 100%;
-    padding: 0 0 6rem 0;
+    padding: 0 0 4rem 0;
   }
 
   .fund-get-started__container {
@@ -19,7 +19,9 @@
     width: 100%;
     max-width: var(--width__1200px);
     margin: 0 auto;
-    padding: 0 0.2rem;
+    padding: 1rem 0.2rem 2rem 0.2rem;
+    border-radius: 12px;
+    box-shadow: var(--gen-shadow-3d-02);
 
     display: flex;
     flex-direction: column;
@@ -236,7 +238,9 @@
     width: 100%;
     max-width: var(--width__1200px);
     margin: 0 auto;
-    padding: 0 0.2rem;
+    padding: 1rem 0.2rem 2rem 0.2rem;
+    border-radius: 12px;
+    box-shadow: var(--gen-shadow-3d-02);
 
     display: flex;
     flex-direction: column;
@@ -419,7 +423,7 @@
     /* outline: 4px solid indigo; */
 
     width: 100%;
-    padding: 0 0 6rem 0;
+    padding: 0 0 8rem 0;
   }
 
   .fund-get-started__container {
@@ -428,7 +432,9 @@
     width: 100%;
     max-width: var(--width__1200px);
     margin: 0 auto;
-    padding: 0 0.2rem;
+    padding: 1rem 0.2rem 2rem 0.2rem;
+    border-radius: 12px;
+    box-shadow: var(--gen-shadow-3d-02);
 
     display: flex;
     flex-direction: column;
