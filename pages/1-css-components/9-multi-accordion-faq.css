@@ -1,4 +1,4 @@
-/* this code contains styles for the accordions of signal-app faq */
+/* this code contains styles for the accordions of main+IAS+signalapp faq */
 
 html {
 	/* this  makes the parent accordion remain in screen view when clicked */
@@ -18,20 +18,14 @@ html {
 
 		width: 100%;
 
-		margin: 0 auto;
-		padding: 2rem 1rem 4rem 1rem;
+		padding: 2rem 0.2rem 4rem 0.2rem;
 	}
 
 	.faq__accordion-container {
 		/* outline: 3px solid cyan; */
 
 		width: 100%;
-		margin: 0 auto;
 	}
-
-	/* 			 */
-	/* 			 */
-	/* 			 */
 
 	/** PARENT ACCORDION STYLES */
 	/* ///////////////// */
@@ -47,16 +41,18 @@ html {
 	.parent-accordion button {
 		/* outline: 2px solid brown; */
 
-		padding: 0.5rem 0.5rem;
+		padding: 0.4rem 0.5rem;
 		position: relative;
 
-		display: block;
 		text-align: left;
 		width: 100%;
-		border: none;
-		border-radius: 10px;
+		border-radius: 6px;
 		background-color: var(--clr-grays-700);
 		cursor: pointer;
+
+		border: none;
+		border-bottom: 0px solid var(--clr-secondary-650);
+		transition: border 0.3s ease;
 
 		/* ////////////// */
 		&:hover,
@@ -69,86 +65,54 @@ html {
 	.parent-accordion-title {
 		/* outline: 2px solid yellow; */
 
-		padding: 0rem 0.5rem 0rem 0;
-		display: inline-block;
+		display: block;
+		padding: 0rem;
 		width: 80%;
 
 		font-family: var(--ff-primary);
 		font-size: var(--fs-700);
 		font-weight: var(--fw-bold);
-		line-height: var(--lh-430);
+		line-height: var(--lh-400);
 		text-align: left;
 		color: var(--clr-primary-650);
 	}
 
-	/* to create accordion Circle icon on the far right of title */
+	/* accordion Circle icon */
 	.parent-accordion button .icon {
 		/* outline: 2px solid red; */
 
 		display: inline-block;
 		position: absolute;
 		top: 50%;
-		right: 0%;
+		right: 2%;
 		transform: translate(-50%, -50%);
 
 		/* the circle */
-		width: 30px;
-		height: 30px;
-		border-radius: 30px;
+		width: 20px;
+		height: 20px;
+		border-radius: 20px;
 
 		border: none;
 		background-color: var(--clr-secondary-650);
 	}
 
-	/* to create the arrow inside the accordion Circle icon */
+	/* the arrow inside the accordion Circle icon */
 	.parent-accordion button .icon::before {
 		/* outline: 2px solid green; */
 
-		display: block;
 		position: absolute;
 		content: "";
 
-		border: 3px solid var(--clr-neutral-white-2);
-		padding: 0.3rem;
+		padding: 0.2rem;
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%) rotate(45deg);
+
+		border: 3px solid var(--clr-neutral-white-2);
 		border-left: none;
 		border-top: none;
 
 		transition: all 500ms ease;
-	}
-
-	.parent-accordion-content {
-		/* outline: 2px solid red; */
-
-		max-height: 0;
-
-		/* keeps the content from showing beneath the accordion-item when closed */
-		overflow: hidden;
-
-		/* controls the transition when closing-->going to this style */
-		transition: max-height 700ms ease;
-		will-change: max-height;
-
-	}
-
-	.parent-accordion-content-text {
-		padding: 0.7rem 0.5rem 0.7rem 0.5rem;
-
-		font-family: var(--ff-primary);
-		font-size: var(--fs-800);
-		font-weight: var(--fw-regular);
-		line-height: var(--lh-410);
-		text-align: left;
-		color: var(--clr-tertiary-100);
-	}
-
-	.parent-accordion-content {
-		/* outline: 2px solid red; */
-
-		width: 100%;
-		padding: 0rem 0.5rem 0rem 0.5rem;
 	}
 
 	.parent-accordion-content-text {
@@ -164,60 +128,10 @@ html {
 		color: var(--clr-tertiary-100);
 	}
 
-	/* ///////////////// */
-	/** WHEN OPENED */
-	/* //////////////// */
-	.parent-accordion button[aria-expanded="true"] {
-		border-bottom: 3px solid var(--clr-secondary-650);
-
-		/* ////////////// */
-		&:hover,
-		&:active,
-		&:focus {
-			background-color: var(--clr-grays-750);
-		}
-	}
-
-	.parent-accordion button[aria-expanded="true"] .parent-accordion-title {
-		color: var(--clr-tertiary-200);
-	}
-
-	.parent-accordion button[aria-expanded="true"] .icon::before {
-		display: block;
-		position: absolute;
-		content: "";
-
-		border: 3px solid var(--clr-tertiary-200);
-		padding: 0.3rem;
-		top: 60%;
-		left: 50%;
-		transform: translate(-50%, -50%) rotate(45deg);
-		border-right: none;
-		border-bottom: none;
-
-		transition: all 500ms ease;
-	}
-
-	.parent-accordion button[aria-expanded="true"]+.parent-accordion-content {
-		/* outline: 2px solid red; */
-
-		max-height: 50rem;
-
-		/* controls the transition when opening-->going to this style */
-		transition: max-height 3s ease;
-		will-change: max-height;
-	}
-
-	/* 			 */
-	/* 			 */
-	/* 			 */
-
 	/** CHILD ACCORDION STYLES */
-
 	/* ///////////////// */
 	/** WHEN CLOSED */
 	/* //////////////// */
-
 	/* to make the child-accordion less wide than the parent */
 	.child-accordion-item {
 		/* outline: 2px solid brown; */
@@ -228,13 +142,12 @@ html {
 
 	/* styling the always visible part of the child accordion */
 	.child-accordion button {
-		padding: 0.5rem 0.5rem;
+		padding: 0.2rem 0.5rem;
 		width: 100%;
-		display: block;
 		position: relative;
 
 		text-align: left;
-		border-radius: 10px;
+		border-radius: 6px;
 		background-color: var(--clr-grays-650);
 		cursor: pointer;
 
@@ -251,14 +164,14 @@ html {
 	.child-accordion-title {
 		/* outline: 2px solid yellow; */
 
-		padding: 0rem 2rem 0rem 0;
-		display: inline-block;
-		width: 80%;
+		display: block;
+		padding: 0rem;
+		width: 85%;
 
 		font-family: var(--ff-primary);
 		font-size: var(--fs-800);
-		font-weight: var(--fw-bold);
-		line-height: var(--lh-430);
+		font-weight: var(--fw-semi-bold);
+		line-height: var(--lh-400);
 		text-align: left;
 		color: var(--clr-neutral-black);
 	}
@@ -270,13 +183,13 @@ html {
 		display: inline-block;
 		position: absolute;
 		top: 50%;
-		right: 0%;
+		right: 2%;
 		transform: translate(-50%, -50%);
 
 		/* the circle */
-		width: 30px;
-		height: 30px;
-		border-radius: 30px;
+		width: 20px;
+		height: 20px;
+		border-radius: 20px;
 
 		border: none;
 		background-color: var(--clr-neutral-white-2);
@@ -286,12 +199,11 @@ html {
 	.child-accordion button .icon::before {
 		/* outline: 2px solid green; */
 
-		display: block;
 		position: absolute;
 		content: "";
 
-		border: 3px solid var(--clr-neutral-black);
-		padding: 0.3rem;
+		border: 3px solid var(--clr-grays-610);
+		padding: 0.2rem;
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%) rotate(45deg);
@@ -301,22 +213,8 @@ html {
 		transition: all 500ms ease;
 	}
 
-	/* style content inside child accordion */
-	.child-accordion-content {
-		/* outline: 2px solid red; */
-
-		max-height: 0;
-
-		/* content wont show beneath the child accordion-item when closed */
-		overflow: hidden;
-
-		/* controls the transition when closing-->going to this style */
-		transition: max-height 700ms ease;
-		will-change: max-height;
-	}
-
 	.child-accordion-content-text {
-		padding: 0.7rem 0.5rem 0.7rem 0.5rem;
+		padding: 0.7rem 0.5rem;
 
 		font-family: var(--ff-primary);
 		font-size: var(--fs-800);
@@ -324,46 +222,6 @@ html {
 		line-height: var(--lh-410);
 		text-align: left;
 		color: var(--clr-tertiary-100);
-	}
-
-	/* ///////////////// */
-	/** WHEN OPENED */
-	/* //////////////// */
-	.child-accordion button[aria-expanded="true"] {
-		border-bottom: 3px solid var(--clr-secondary-650);
-
-
-		/* ////////////// */
-		&:hover {
-			background-color: var(--clr-grays-700);
-		}
-	}
-
-	.child-accordion button[aria-expanded="true"] .child-accordion-title {
-		color: var(--clr-tertiary-200);
-	}
-
-	.child-accordion button[aria-expanded="true"] .icon {
-		background-color: var(--clr-neutral-black);
-	}
-
-	.child-accordion button[aria-expanded="true"] .icon::before {
-
-		border: 3px solid var(--clr-neutral-white-2);
-		border-right: none;
-		border-bottom: none;
-
-		transition: all 500ms ease;
-	}
-
-	.child-accordion button[aria-expanded="true"]+.child-accordion-content {
-		/* outline: 2px solid red; */
-
-		max-height: 50rem;
-
-		/* controls the transition when opening-->going to this style */
-		transition: max-height 3s ease;
-		will-change: max-height;
 	}
 }
 
@@ -376,22 +234,18 @@ html {
 		/* border: 2px solid magenta; */
 
 		width: 100%;
-
-		margin: 0 auto;
-		padding: 2rem 1rem 4rem 1rem;
+		padding: 2rem 0rem 4rem 0rem;
 	}
 
 	.faq__accordion-container {
 		/* outline: 3px solid cyan; */
 
 		width: 100%;
-		max-width: var(--width__900px);
+		max-width: 600px;
 		margin: 0 auto;
-	}
 
-	/* 			 */
-	/* 			 */
-	/* 			 */
+		padding: 0 1rem;
+	}
 
 	/** PARENT ACCORDION STYLES */
 	/* ///////////////// */
@@ -410,13 +264,15 @@ html {
 		padding: 0.5rem 0.5rem;
 		position: relative;
 
-		display: block;
 		text-align: left;
 		width: 100%;
-		border: none;
-		border-radius: 10px;
 		background-color: var(--clr-grays-700);
 		cursor: pointer;
+
+		border: none;
+		border-radius: 8px;
+		border-bottom: 0px solid var(--clr-secondary-650);
+		transition: border 0.3s ease;
 
 		/* ////////////// */
 		&:hover,
@@ -429,11 +285,12 @@ html {
 	.parent-accordion-title {
 		/* outline: 2px solid yellow; */
 
-		padding: 0rem 1.5rem 0rem 0;
+		display: block;
+		padding: 0;
 		width: 80%;
 
 		font-family: var(--ff-primary);
-		font-size: var(--fs-700);
+		font-size: var(--fs-600);
 		font-weight: var(--fw-bold);
 		line-height: var(--lh-430);
 		text-align: left;
@@ -444,10 +301,10 @@ html {
 	.parent-accordion button .icon {
 		/* outline: 2px solid red; */
 
-		display: inline-block;
+		display: block;
 		position: absolute;
 		top: 50%;
-		right: 0%;
+		right: 2%;
 		transform: translate(-50%, -50%);
 
 		/* the circle */
@@ -467,112 +324,32 @@ html {
 		position: absolute;
 		content: "";
 
-		border: 3px solid var(--clr-neutral-white-2);
 		padding: 0.3rem;
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%) rotate(45deg);
+
+		border: 3px solid var(--clr-neutral-white-2);
 		border-left: none;
 		border-top: none;
 
 		transition: all 500ms ease;
 	}
 
-	.parent-accordion-content {
-		/* outline: 2px solid red; */
-
-		max-height: 0;
-
-		/* keeps the content from showing beneath the accordion-item when closed */
-		overflow: hidden;
-
-		/* controls the transition when closing-->going to this style */
-		transition: max-height 700ms ease;
-		will-change: max-height;
-
-	}
-
 	.parent-accordion-content-text {
-		padding: 0.7rem 0.5rem 0.7rem 0.5rem;
+		/* outline: 2px solid royalblue; */
+
+		padding: 1rem 0rem;
 
 		font-family: var(--ff-primary);
-		font-size: var(--fs-800);
+		font-size: var(--fs-700);
 		font-weight: var(--fw-regular);
 		line-height: var(--lh-410);
 		text-align: left;
 		color: var(--clr-tertiary-100);
 	}
-
-	.parent-accordion-content {
-		/* outline: 2px solid red; */
-
-		width: 100%;
-		padding: 0rem 0.5rem 0rem 0.5rem;
-	}
-
-	.parent-accordion-content-text {
-		/* outline: 2px solid grey; */
-
-		padding: 1rem 0;
-
-		font-family: var(--ff-primary);
-		font-size: var(--fs-800);
-		font-weight: var(--fw-regular);
-		line-height: var(--lh-410);
-		text-align: left;
-		color: var(--clr-tertiary-100);
-	}
-
-	/* ///////////////// */
-	/** WHEN OPENED */
-	/* //////////////// */
-	.parent-accordion button[aria-expanded="true"] {
-		border-bottom: 3px solid var(--clr-secondary-650);
-
-		/* ////////////// */
-		&:hover,
-		&:active,
-		&:focus {
-			background-color: var(--clr-grays-750);
-		}
-	}
-
-	.parent-accordion button[aria-expanded="true"] .parent-accordion-title {
-		color: var(--clr-tertiary-200);
-	}
-
-	.parent-accordion button[aria-expanded="true"] .icon::before {
-		display: block;
-		position: absolute;
-		content: "";
-
-		border: 3px solid var(--clr-tertiary-200);
-		padding: 0.3rem;
-		top: 60%;
-		left: 50%;
-		transform: translate(-50%, -50%) rotate(45deg);
-		border-right: none;
-		border-bottom: none;
-
-		transition: all 500ms ease;
-	}
-
-	.parent-accordion button[aria-expanded="true"]+.parent-accordion-content {
-		/* outline: 2px solid red; */
-
-		max-height: 50rem;
-
-		/* controls the transition when opening-->going to this style */
-		transition: max-height 3s ease;
-		will-change: max-height;
-	}
-
-	/* 			 */
-	/* 			 */
-	/* 			 */
 
 	/** CHILD ACCORDION STYLES */
-
 	/* ///////////////// */
 	/** WHEN CLOSED */
 	/* //////////////// */
@@ -587,9 +364,10 @@ html {
 
 	/* styling the always visible part of the child accordion */
 	.child-accordion button {
+		/* outline: 2px solid blueviolet; */
+
 		padding: 0.5rem 0.5rem;
 		width: 100%;
-		display: block;
 		position: relative;
 
 		text-align: left;
@@ -610,12 +388,13 @@ html {
 	.child-accordion-title {
 		/* outline: 2px solid yellow; */
 
-		padding: 1rem 2rem 1rem 0;
+		display: block;
+		padding: 0;
 		width: 80%;
 
 		font-family: var(--ff-primary);
 		font-size: var(--fs-800);
-		font-weight: var(--fw-bold);
+		font-weight: var(--fw-semi-bold);
 		line-height: var(--lh-430);
 		text-align: left;
 		color: var(--clr-neutral-black);
@@ -628,7 +407,7 @@ html {
 		display: inline-block;
 		position: absolute;
 		top: 50%;
-		right: 0%;
+		right: 2%;
 		transform: translate(-50%, -50%);
 
 		/* the circle */
@@ -648,33 +427,20 @@ html {
 		position: absolute;
 		content: "";
 
-		border: 3px solid var(--clr-neutral-black);
 		padding: 0.3rem;
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%) rotate(45deg);
+
+		border: 3px solid var(--clr-grays-610);
 		border-left: none;
 		border-top: none;
 
 		transition: all 500ms ease;
 	}
 
-	/* style content inside child accordion */
-	.child-accordion-content {
-		/* outline: 2px solid red; */
-
-		max-height: 0;
-
-		/* content wont show beneath the child accordion-item when closed */
-		overflow: hidden;
-
-		/* controls the transition when closing-->going to this style */
-		transition: max-height 700ms ease;
-		will-change: max-height;
-	}
-
 	.child-accordion-content-text {
-		padding: 0.7rem 0.5rem 0.7rem 0.5rem;
+		padding: 0.7rem 0.5rem;
 
 		font-family: var(--ff-primary);
 		font-size: var(--fs-800);
@@ -683,74 +449,24 @@ html {
 		text-align: left;
 		color: var(--clr-tertiary-100);
 	}
-
-	/* ///////////////// */
-	/** WHEN OPENED */
-	/* //////////////// */
-	.child-accordion button[aria-expanded="true"] {
-		border-bottom: 3px solid var(--clr-secondary-650);
-
-
-		/* ////////////// */
-		&:hover {
-			background-color: var(--clr-grays-700);
-		}
-	}
-
-	.child-accordion button[aria-expanded="true"] .child-accordion-title {
-		color: var(--clr-tertiary-200);
-	}
-
-	.child-accordion button[aria-expanded="true"] .icon {
-		background-color: var(--clr-neutral-black);
-	}
-
-	.child-accordion button[aria-expanded="true"] .icon::before {
-
-		border: 3px solid var(--clr-neutral-white-2);
-		border-right: none;
-		border-bottom: none;
-
-		transition: all 500ms ease;
-	}
-
-	.child-accordion button[aria-expanded="true"]+.child-accordion-content {
-		/* outline: 2px solid red; */
-
-		max-height: 50rem;
-
-		/* controls the transition when opening-->going to this style */
-		transition: max-height 3s ease;
-		will-change: max-height;
-	}
 }
 
 /** Screens > 875px */
 @media screen and (min-width: 54.69em) {
-
-	/** layout for the accordion section */
 	.faq__accordion-section {
 		/* border: 2px solid magenta; */
 
 		width: 100%;
-		max-width: var(--width__1200px);
-
-		margin: 0 auto;
-		padding: 4rem 1rem 4rem 1rem;
+		padding: 4rem 0rem;
 	}
 
 	.faq__accordion-container {
 		/* outline: 3px solid cyan; */
 
 		width: 100%;
-		max-width: var(--width__1200px);
-		max-width: var(--width__900px);
+		max-width: 600px;
 		margin: 0 auto;
 	}
-
-	/* 			 */
-	/* 			 */
-	/* 			 */
 
 	/** PARENT ACCORDION STYLES */
 	/* ///////////////// */
@@ -762,7 +478,6 @@ html {
 		border-bottom: 15px solid var(--clr-gen-website-bckgrd);
 	}
 
-
 	/* styling the always visible part of the accordion */
 	.parent-accordion button {
 		/* outline: 2px solid brown; */
@@ -773,10 +488,14 @@ html {
 		display: block;
 		text-align: left;
 		width: 100%;
-		border: none;
-		border-radius: 10px;
+
 		background-color: var(--clr-grays-700);
 		cursor: pointer;
+
+		border-radius: 10px;
+		border: none;
+		border-bottom: 0px solid var(--clr-secondary-650);
+		transition: border 0.3s ease;
 
 		/* ////////////// */
 		&:hover {
@@ -787,10 +506,12 @@ html {
 	.parent-accordion-title {
 		/* outline: 2px solid yellow; */
 
-		padding: 0rem 1.5rem 0rem 0;
+		display: block;
+		width: 80%;
+		padding: 0;
 
 		font-family: var(--ff-primary);
-		font-size: var(--fs-500);
+		font-size: var(--fs-600);
 		font-weight: var(--fw-bold);
 		line-height: var(--lh-430);
 		text-align: left;
@@ -801,10 +522,10 @@ html {
 	.parent-accordion button .icon {
 		/* outline: 2px solid red; */
 
-		display: inline-block;
+		display: block;
 		position: absolute;
 		top: 50%;
-		right: 0%;
+		right: 2%;
 		transform: translate(-50%, -50%);
 
 		/* the circle */
@@ -824,33 +545,22 @@ html {
 		position: absolute;
 		content: "";
 
-		border: 3px solid var(--clr-neutral-white-2);
 		padding: 0.3rem;
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%) rotate(45deg);
+
+		border: 3px solid var(--clr-neutral-white-2);
 		border-left: none;
 		border-top: none;
 
 		transition: all 500ms ease;
 	}
 
-	.parent-accordion-content {
-		/* outline: 2px solid red; */
-
-		max-height: 0;
-
-		/* keeps the content from showing beneath the accordion-item when closed */
-		overflow: hidden;
-
-		/* controls the transition when closing-->going to this style */
-		transition: max-height 700ms ease;
-		will-change: max-height;
-
-	}
-
 	.parent-accordion-content-text {
-		padding: 0.7rem 0.5rem 0.7rem 0.5rem;
+		/* outline: 2px solid pink; */
+
+		padding: 1rem 0rem;
 
 		font-family: var(--ff-primary);
 		font-size: var(--fs-700);
@@ -859,74 +569,11 @@ html {
 		text-align: left;
 		color: var(--clr-tertiary-100);
 	}
-
-	.parent-accordion-content {
-		/* outline: 2px solid red; */
-
-		width: 100%;
-		padding: 0rem 1rem 0rem 1rem;
-	}
-
-	.parent-accordion-content-text {
-		/* outline: 2px solid grey; */
-
-		padding: 1rem 0;
-
-		font-family: var(--ff-primary);
-		font-size: var(--fs-700);
-		font-weight: var(--fw-regular);
-		line-height: var(--lh-410);
-		text-align: left;
-		color: var(--clr-tertiary-100);
-	}
-
-	/* ///////////////// */
-	/** WHEN OPENED */
-	/* //////////////// */
-	.parent-accordion button[aria-expanded="true"] {
-		border-bottom: 3px solid var(--clr-secondary-650);
-	}
-
-	.parent-accordion button[aria-expanded="true"] .parent-accordion-title {
-		color: var(--clr-tertiary-200);
-	}
-
-	.parent-accordion button[aria-expanded="true"] .icon::before {
-		display: block;
-		position: absolute;
-		content: "";
-
-		border: 3px solid var(--clr-tertiary-200);
-		padding: 0.3rem;
-		top: 60%;
-		left: 50%;
-		transform: translate(-50%, -50%) rotate(45deg);
-		border-right: none;
-		border-bottom: none;
-
-		transition: all 500ms ease;
-	}
-
-	.parent-accordion button[aria-expanded="true"]+.parent-accordion-content {
-		/* outline: 2px solid red; */
-
-		max-height: 50rem;
-
-		/* controls the transition when opening-->going to this style */
-		transition: max-height 3s ease;
-		will-change: max-height;
-	}
-
-	/* 			 */
-	/* 			 */
-	/* 			 */
 
 	/** CHILD ACCORDION STYLES */
-
 	/* ///////////////// */
 	/** WHEN CLOSED */
 	/* //////////////// */
-
 	/* to make the child-accordion less wide than the parent */
 	.child-accordion-item {
 		/* outline: 2px solid brown; */
@@ -937,9 +584,8 @@ html {
 
 	/* styling the always visible part of the child accordion */
 	.child-accordion button {
-		padding: 1rem 0.5rem;
+		padding: 0.5rem 0.5rem;
 		width: 100%;
-		display: block;
 		position: relative;
 
 		text-align: left;
@@ -960,12 +606,14 @@ html {
 	.child-accordion-title {
 		/* outline: 2px solid yellow; */
 
-		padding: 1rem 1.5rem 1rem 0;
+		display: block;
+		width: 85%;
+		padding: 0;
 
 		font-family: var(--ff-primary);
 		font-size: var(--fs-700);
-		font-weight: var(--fw-bold);
-		line-height: var(--lh-430);
+		font-weight: var(--fw-semi-bold);
+		line-height: var(--lh-410);
 		text-align: left;
 		color: var(--clr-neutral-black);
 	}
@@ -974,10 +622,10 @@ html {
 	.child-accordion button .icon {
 		/* outline: 2px solid red; */
 
-		display: inline-block;
+		display: block;
 		position: absolute;
 		top: 50%;
-		right: 0%;
+		right: 2%;
 		transform: translate(-50%, -50%);
 
 		/* the circle */
@@ -997,80 +645,143 @@ html {
 		position: absolute;
 		content: "";
 
-		border: 3px solid var(--clr-neutral-black);
 		padding: 0.3rem;
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%) rotate(45deg);
+
+		border: 3px solid var(--clr-grays-610);
 		border-left: none;
 		border-top: none;
 
 		transition: all 500ms ease;
 	}
 
-	/* style content inside child accordion */
-	.child-accordion-content {
-		/* outline: 2px solid red; */
-
-		max-height: 0;
-
-		/* content wont show beneath the child accordion-item when closed */
-		overflow: hidden;
-
-		/* controls the transition when closing-->going to this style */
-		transition: max-height 700ms ease;
-		will-change: max-height;
-	}
-
 	.child-accordion-content-text {
-		padding: 0.7rem 0.5rem 0.7rem 0.5rem;
+		padding: 0.7rem 0.5rem;
 
 		font-family: var(--ff-primary);
-		font-size: var(--fs-700);
+		font-size: var(--fs-800);
 		font-weight: var(--fw-regular);
 		line-height: var(--lh-410);
 		text-align: left;
 		color: var(--clr-tertiary-100);
 	}
+}
 
-	/* ///////////////// */
-	/** WHEN OPENED */
-	/* //////////////// */
-	.child-accordion button[aria-expanded="true"] {
-		border-bottom: 3px solid var(--clr-secondary-650);
-		/* border-right: 3.5px solid var(--clr-secondary-650); */
+/* 			 */
+/* 			 */
+/* 			 */
+/* ///////////////////////// */
+/* *General styles for accordion functionality */
+/* /////////////////////// */
+
+/* /////////////// */
+/* *PARENT ACCORDION >> CLOSED */
+/* ////////////// */
+.parent-accordion-content {
+	/* outline: 2px solid red; */
+
+	width: 100%;
+	padding: 0rem 0.5rem;
+
+	max-height: 0;
+
+	overflow: hidden;
+
+	transition: max-height 700ms ease;
+	will-change: max-height;
+}
+
+/* /////////////// */
+/* *PARENT ACCORDION >> OPENED */
+/* ////////////// */
+.parent-accordion button[aria-expanded="true"] {
+	border-bottom: 3px solid var(--clr-secondary-650);
+}
+
+.parent-accordion button[aria-expanded="true"] .parent-accordion-title {
+	color: var(--clr-tertiary-200);
+}
+
+.parent-accordion button[aria-expanded="true"] .icon::before {
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%, -50%) rotate(45deg);
+
+	border: 3px solid var(--clr-tertiary-200);
+	border-right: none;
+	border-bottom: none;
+
+	transition: all 500ms ease;
+}
+
+.parent-accordion button[aria-expanded="true"]+.parent-accordion-content {
+	/* outline: 2px solid red; */
+
+	max-height: 100rem;
+
+	/* controls the transition when opening-->going to this style */
+	transition: max-height 3s ease;
+	will-change: max-height;
+}
+
+/* /////////////// */
+/* *CHILD ACCORDION >> CLOSED */
+/* ////////////// */
+/* style content inside child accordion */
+.child-accordion-content {
+	/* outline: 2px solid red; */
+
+	max-height: 0;
+
+	overflow: hidden;
+
+	transition: max-height 700ms ease;
+	will-change: max-height;
+}
+
+/* /////////////// */
+/* *CHILD ACCORDION >> OPENED */
+/* ////////////// */
+/* button */
+.child-accordion button[aria-expanded="true"] {
+	border-bottom: 3px solid var(--clr-secondary-650);
+	/* border-right: 3.5px solid var(--clr-secondary-650); */
 
 
-		/* ////////////// */
-		&:hover {
-			background-color: var(--clr-grays-700);
-		}
+	/* ////////////// */
+	&:hover {
+		background-color: var(--clr-grays-700);
 	}
+}
 
-	.child-accordion button[aria-expanded="true"] .child-accordion-title {
-		color: var(--clr-tertiary-200);
-	}
+/* title */
+.child-accordion button[aria-expanded="true"] .child-accordion-title {
+	color: var(--clr-tertiary-200);
+}
 
-	.child-accordion button[aria-expanded="true"] .icon {
-		background-color: var(--clr-neutral-black);
-	}
+/* circle */
+.child-accordion button[aria-expanded="true"] .icon {
+	background-color: var(--clr-grays-610);
+}
 
-	.child-accordion button[aria-expanded="true"] .icon::before {
+/* arrow */
+.child-accordion button[aria-expanded="true"] .icon::before {
 
-		border: 3px solid var(--clr-neutral-white-2);
-		border-right: none;
-		border-bottom: none;
+	border: 3px solid var(--clr-neutral-white-2);
+	border-right: none;
+	border-bottom: none;
 
-		transition: all 500ms ease;
-	}
+	transition: all 500ms ease;
+}
 
-	.child-accordion button[aria-expanded="true"]+.child-accordion-content {
-		/* outline: 2px solid red; */
+.child-accordion button[aria-expanded="true"]+.child-accordion-content {
+	/* outline: 2px solid red; */
 
-		max-height: 50rem;
+	max-height: 50rem;
 
-		/* controls the transition when opening-->going to this style */
-		transition: max-height 3s ease;
-		will-change: max-height;
-	}
+	/* controls the transition when opening-->going to this style */
+	transition: max-height 3s ease;
+	will-change: max-height;
 }

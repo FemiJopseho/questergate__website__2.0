@@ -1,44 +1,109 @@
-// add the smooth-scroll effect to when you click to go to a section in a page.
-// it also brings the section into view---this is important!!!
-// could have been done with css smooth-scroll & scroll-padding but it is not flexible, hence this code
+// this code is for CALCULATOR
+// it scrolls into view the element with class="A"...
+// ... when you click a element with class="B"
+// it is based on the viewport.
 
-// you need 2 things:
-// (1) a button you click that takes you to the section on the page....
-// (call this class: ".btn-clicked-for-scroll" & data-target="#put id of section to scroll to")
-
-// (2) the actual section on the page you want to go to when you click button in (1)....
-// (give this id="section-to-scroll-to" )
-// it also assumes you have a fixed header. you can remove that if you dont.
-
+/////////////////////////////
+// *SAVINGS PART
+/////////////////////////////
+// *when you click Savings Accordion Button
 document.addEventListener("DOMContentLoaded", function () {
-	// Add click event listeners to all parent accordion buttons
-	var accordionButtons = document.querySelectorAll(
-		".fund-calc__accordion__button"
+	// Set the offset value (in pixels) from the top of the viewport
+	var offsetValue = 100;
+
+	// Get all elements with class A= " savings__calc__accordion__button"
+	var buttons = document.querySelectorAll(".savings__calc__accordion__button");
+
+	// Add click event listener to each button
+	buttons.forEach(function (button) {
+		button.addEventListener("click", function () {
+			// Get the element with class B= "savings__calc__section"
+			var heading = document.querySelector(".savings__calc__section");
+
+			// Calculate the scroll position by subtracting the offset value
+			var scrollPosition = heading.offsetTop - offsetValue;
+
+			// Scroll to the heading with the adjusted offset
+			window.scrollTo({ top: scrollPosition, behavior: "smooth" });
+		});
+	});
+});
+
+// *when you click Savings Calc button
+document.addEventListener("DOMContentLoaded", function () {
+	// Set the offset value (in pixels) from the top of the viewport
+	var offsetValue = 100;
+
+	// Get all elements with class A= "savings__plan__submit"
+	var buttons = document.querySelectorAll(".savings__plan__submit");
+
+	// Add click event listener to each button
+	buttons.forEach(function (button) {
+		button.addEventListener("click", function () {
+			// Get the element with class B= "savings__calc__results__container"
+			var heading = document.querySelector(
+				".savings__calc__results__container"
+			);
+
+			// Calculate the scroll position by subtracting the offset value
+			var scrollPosition = heading.offsetTop - offsetValue;
+
+			// Scroll to the heading with the adjusted offset
+			window.scrollTo({ top: scrollPosition, behavior: "smooth" });
+		});
+	});
+});
+
+//////////////////////////////////////
+// *INVESTMENT CALC PART
+////////////////////////////////////
+// *when you click Investment Accordion Button
+document.addEventListener("DOMContentLoaded", function () {
+	// Set the offset value (in pixels) from the top of the viewport
+	var offsetValue = 100;
+
+	// Get all elements with class A= "investment__calc__accordion__button"
+	var buttons = document.querySelectorAll(
+		".investment__calc__accordion__button"
 	);
 
-	accordionButtons.forEach(function (button) {
+	// Add click event listener to each button
+	buttons.forEach(function (button) {
 		button.addEventListener("click", function () {
-			// Get the target content section ID from the data-target attribute
-			var targetId = button.getAttribute("data-target");
-			var targetSection = document.querySelector(targetId);
+			// Get the element with class B= "savings__calc__section"
+			// i used savings__calc__section here cos investment__calc__section gave me issues
+			var heading = document.querySelector(".savings__calc__section");
 
-			// Set a default offset and allow for manual adjustment
-			var defaultOffset = 0; // You can adjust this value based on your needs
-			var manualOffset = 300; // Adjust this value as needed
+			// Calculate the scroll position by subtracting the offset value
+			var scrollPosition = heading.offsetTop - offsetValue;
 
-			// Calculate the final offset
-			var offset = defaultOffset + manualOffset;
+			// Scroll to the heading with the adjusted offset
+			window.scrollTo({ top: scrollPosition, behavior: "smooth" });
+		});
+	});
+});
 
-			// Scroll to the target section with the adjusted offset
-			if (targetSection) {
-				window.scrollTo({
-					top: targetSection.offsetTop - offset,
-					behavior: "smooth",
-				});
+// *when you click Investment Calc button
+document.addEventListener("DOMContentLoaded", function () {
+	// Set the offset value (in pixels) from the top of the viewport
+	var offsetValue = 100;
 
-				// Optionally, you can toggle the accordion state or perform other actions here
-				// ...
-			}
+	// Get all elements with class A= "invest__plan__submit"
+	var buttons = document.querySelectorAll(".invest__plan__submit");
+
+	// Add click event listener to each button
+	buttons.forEach(function (button) {
+		button.addEventListener("click", function () {
+			// Get the element with class B= "investment__calc__results__container"
+			var heading = document.querySelector(
+				".investment__calc__results__container"
+			);
+
+			// Calculate the scroll position by subtracting the offset value
+			var scrollPosition = heading.offsetTop - offsetValue;
+
+			// Scroll to the heading with the adjusted offset
+			window.scrollTo({ top: scrollPosition, behavior: "smooth" });
 		});
 	});
 });
