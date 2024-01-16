@@ -9,46 +9,40 @@
     /* outline: 4px solid gold; */
 
     width: 100%;
-    padding: 2rem 0 4rem 0;
+    padding: 1rem 0 4rem 0;
   }
 
   .fund__how-to__container {
     /* outline: 4px solid green; */
 
     width: 100%;
-    max-width: var(--width__1200px);
-    margin: 0 auto;
-    padding: 0 1rem;
+    padding: 0 0.2rem;
 
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-    row-gap: 2rem;
+    row-gap: 1rem;
   }
 
   .fund__how-to__accordion-button__container {
     /* outline: 2px solid cyan; */
 
     width: 100%;
-    max-width: 400px;
-    margin: 0 auto;
 
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-    row-gap: 0.8rem;
+    row-gap: 0.4rem;
   }
 
   .fund__how-to__accordion-items__container {
     /* outline: 2px dashed brown; */
 
     width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
 
     display: flex;
     flex-direction: column;
@@ -63,7 +57,9 @@
     /* outline: 2px solid red; */
 
     width: 100%;
-    border-radius: 6px;
+    max-width: 400px;
+    margin: 0 auto;
+    border-radius: 4px;
     border: none;
     padding: 0.5rem 1rem;
     cursor: pointer;
@@ -105,8 +101,6 @@
       /* outline: 2px solid sienna; */
 
       width: 100%;
-      max-width: 400px;
-      margin: 0 auto;
 
       padding: 0 0 1rem 0;
       text-transform: capitalize;
@@ -124,7 +118,7 @@
       /* outline: 2px solid purple; */
 
       width: 100%;
-      border-radius: 6px;
+      border-radius: 4px;
       text-align: center;
     }
   }
@@ -143,7 +137,7 @@
     /* outline: 4px solid gold; */
 
     width: 100%;
-    padding: 2rem 0 6rem 0;
+    padding: 2rem 0 4rem 0;
   }
 
   .fund__how-to__container {
@@ -174,7 +168,7 @@
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-    row-gap: 0.8rem;
+    row-gap: 0.6rem;
   }
 
   .fund__how-to__accordion-items__container {
@@ -197,7 +191,7 @@
     /* outline: 2px solid red; */
 
     width: 100%;
-    border-radius: 6px;
+    border-radius: 4px;
     border: none;
     padding: 0.5rem 1rem;
     cursor: pointer;
@@ -258,7 +252,7 @@
       /* outline: 2px solid purple; */
 
       width: 100%;
-      border-radius: 6px;
+      border-radius: 4px;
       text-align: center;
     }
   }
@@ -418,19 +412,10 @@
 /* /////////////////////// */
 /** WHEN OPEN */
 /* ///////////////////// */
-/* changes the height of the accordion Item from 0 so it is visible */
-.accordion__button__container button[aria-expanded="true"]~.accordion__item {
-  /* outline: 2px dashed red; */
-
-  max-height: 50rem;
-  padding: 1rem 0 1rem 0;
-
-  transition: max-height 2.5s ease;
-  will-change: max-height;
-}
-
 /* style the button when it is open */
 .accordion__button__container button[aria-expanded="true"] {
+  /* outline: 2px solid purple; */
+
   background-color: var(--clr-primary-650);
   background-image: none;
 
@@ -442,16 +427,14 @@
   }
 }
 
-/* style the button arrow when button is open */
-.accordion__button__container button[aria-expanded="true"] .accordion__button__arrow {
-  height: 15px;
-  width: 15px;
-  border: 3px solid var(--clr-neutral-white-2);
-  border-right: none;
-  border-bottom: none;
+/* *class="accordion__item__new-height" was added via JS */
+/* changes the height of the accordion Item from 0 so it is visible */
+.accordion__item.accordion__item__new-height {
+  /* outline: 2px dashed gold; */
 
-  position: absolute;
-  top: 65%;
-  transform: translate(-50%, -50%);
-  rotate: 45deg;
+  max-height: 50rem;
+  padding: 1rem 0 1rem 0;
+
+  transition: max-height 2.5s ease;
+  will-change: max-height;
 }

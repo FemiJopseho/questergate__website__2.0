@@ -936,8 +936,9 @@
 
 		/* ////////////// */
 		&:hover {
-			background-color: hsl(0, 0%, 40%);
+			background-color: var(--clr-grays-610);
 
+			/* //////////// */
 			.child-accordion-title {
 				color: var(--clr-neutral-white-2);
 			}
@@ -964,8 +965,8 @@
 		display: inline-block;
 		position: absolute;
 		top: 50%;
-		right: 0%;
-		transform: translate(-50%, -50%);
+		right: 5%;
+		transform: translate(0%, -50%);
 
 		/* the circle */
 		width: 30px;
@@ -1010,14 +1011,14 @@
 	}
 
 	.child-accordion-content-text {
-		padding: 0.7rem 0.5rem 0.7rem 0.5rem;
+		padding: 0.7rem 0.5rem 1.5rem 0.5rem;
 
 		font-family: var(--ff-primary);
 		font-size: var(--fs-700);
 		font-weight: var(--fw-regular);
 		line-height: var(--lh-410);
 		text-align: left;
-		color: var(--clr-tertiary-100);
+		color: var(--clr-grays-610);
 	}
 
 	/* ///////////////// */

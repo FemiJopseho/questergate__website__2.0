@@ -231,12 +231,15 @@
 
 /** ----------------LINKS---------------- */
 .link__text {
+	/* outline: 2px solid red; */
+
 	font-family: var(--ff-primary);
 	font-weight: var(--fw-bold);
 	font-size: var(--fs-800);
 	letter-spacing: 2%;
 	text-align: center;
-	/* color: var(--clr-link-default); */
+	text-decoration: none;
+	color: var(--clr-link-default);
 }
 
 /* Link Actions for White Background */

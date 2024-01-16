@@ -460,6 +460,7 @@ video {
 
 
   --clr-grays-600: hsl(0, 0%, 6%);
+  --clr-grays-610: hsl(0, 0%, 40%);
   --clr-grays-650: hsla(0, 0%, 69%, 1);
   --clr-grays-700: hsla(0, 0%, 81%, 1);
   --clr-grays-750: hsla(205, 24%, 90%, 1);

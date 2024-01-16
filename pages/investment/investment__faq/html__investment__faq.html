@@ -1,0 +1,2700 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- --------------search engine robots & SEO-------------- -->
+		<meta name="robots" content="index, follow" />
+
+		<meta
+			name="description"
+			content="Find answers to your questions here on our FAQ page."
+		/>
+
+		<!-- -----------explorer compatibility---------- -->
+		<meta http-equiv="X-UA-Compatible" />
+
+		<meta name="theme-color" content="#0C567B" />
+
+		<!-- --------Cache control meta tag------------ -->
+		<meta http-equiv="Cache-control" content="public" max-age="7776000" />
+
+		<!-- ----------------Security---------------- -->
+		<meta http-equiv="X-Content-Type-Options" content="nosniff" />
+
+		<meta
+			http-equiv="Strict-Transport-Security"
+			content="max-age=31536000; includeSubDomains; preload"
+		/>
+
+		<meta
+			http-equiv="Content-Security-Policy"
+			content="upgrade-insecure-requests"
+		/>
+
+		<!-- -----------------CSS Resets-------------------- -->
+		<!-- Use Normalize Reset -->
+		<link rel="stylesheet" href="../../../css-resets/normalize.css" />
+
+		<!-- <link
+			rel="stylesheet"
+			href="https://necolas.github.io/normalize.css/latest/normalize.css"
+		/> -->
+
+		<!-- -----------------FONTS (loaded for a start)-------------------- -->
+
+		<style type="text/css">
+			@font-face {
+				font-display: swap;
+				font-family: "Nunito";
+				font-style: normal;
+				font-weight: 400;
+
+				src: local("Nunito"),
+					url("../../utilities/fonts/nunito-v26-latin-regular.woff2")
+						format("woff2");
+			}
+
+			@font-face {
+				font-display: swap;
+				font-family: "Montagu Slab";
+				font-style: normal;
+				font-weight: 400;
+
+				src: local("Montagu Slab"),
+					url("../../utilities/fonts/montagu-slab-v12-latin-regular.woff2")
+						format("woff2");
+			}
+		</style>
+
+		<!-- -------Other stylesheets, and scripts---------- -->
+
+		<link
+			rel="stylesheet"
+			href="../../1-css-components/joined-fixed-component.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="../../1-css-components/6-utility-classes.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="../investment__multi-use__css/1-fixed-header__investment.css"
+		/>
+
+		<link
+			rel="stylesheet"
+			href="../investment__multi-use__css/9-investment__heading__for__pages.css"
+		/>
+		<link rel="stylesheet" href="./investment__faq.css" />
+		<link
+			rel="stylesheet"
+			href="../investment__multi-use__css/7-steps__to__start__now.css"
+		/>
+
+		<!-- --------------JQUERY ACCESS via CDN and via Local server----------------- -->
+		<!-- <script
+			src="https://code.jquery.com/jquery-3.7.1.min.js"
+			integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+			crossorigin="anonymous"
+		></script> -->
+
+		<script src="../../js-components/jquery-3.7.1.min.js"></script>
+
+		<!-- <script src="../../js-components/jquery-3.7.1.min.js"></script> -->
+
+		<!-- ----------Page Title---------- -->
+		<title>Frequently Asked Questions (FAQ)</title>
+
+		<!-- -------------Favicon for page--------------- -->
+		<link
+			rel="icon"
+			type="image/x-icon"
+			href="../../../images/QG__favicon__no__background.ico"
+		/>
+	</head>
+
+	<body>
+		<button
+			onclick="backToTop__Function()"
+			id="back-to-top"
+			class="back-to-top"
+			title="Go to top"
+		>
+			Top &#8593;
+		</button>
+
+		<div class="gen-container">
+			<header class="fund-header__section header" id="header">
+				<div class="fund-header__container">
+					<div class="fund-header__logo__container">
+						<a
+							class="fund-header__logo__link"
+							href="../../homepage/html__homepage.html"
+							><img
+								class="fund-header__logo__img"
+								src="../../../images/QG_LOGO_small-horizontal.jpg"
+								alt="Questergate logo"
+						/></a>
+					</div>
+
+					<div class="fund-header__list__container menu" id="menu">
+						<ul class="fund-header__list">
+							<li class="fund-header__list__items">
+								<a
+									href="../investment__savings--plan/html__Save__plan.html"
+									class="fund-header__list__items-link"
+									>Save</a
+								>
+							</li>
+
+							<li class="fund-header__list__items">
+								<a
+									href="../investment__invest--plans/"
+									class="fund-header__list__items-link"
+									>Invest</a
+								>
+							</li>
+
+							<!-- <li class="fund-header__list__items">
+								<a
+									href="../investment__faq/html__faq__investment.html"
+									class="fund-header__list__items-link"
+									>Faq</a
+								>
+							</li> -->
+
+							<li class="fund-header__list__items">
+								<a
+									href="../investment__how--tos/html__faqs.html"
+									class="fund-header__list__items-link"
+									>How-To</a
+								>
+							</li>
+
+							<!-- <li class="fund-header__list__items">
+								<a href="#" class="fund-header__list__items-link">Blog</a>
+							</li> -->
+
+							<!-- <li class="fund-header__list__items">
+								<a href="#" class="fund-header__list__items-link">About Us</a>
+							</li> -->
+
+							<!-- *----LOGIN-STATUS AUTHENTICATION NEEDED----* -->
+
+							<!-- *Start of auth for for login or Sign out* -->
+
+							<!-- *-----------if user not logged in, show "Login In" -->
+							<li class="fund-header__list__items header__login">
+								<a
+									href="#"
+									class="fund-header__list__items-link fund-header__link-login"
+									>Log In</a
+								>
+							</li>
+
+							<!-- *-----------if user logged in, show "Sign Out" -->
+							<!-- <li class="fund-header__list__items header__login">
+            <a
+              href="#"
+              class="fund-header__list__items-link fund-header__link-login"
+              >Sign Out</a
+            >
+          </li> -->
+							<!-- *END of auth for for login or Sign out* -->
+
+							<!-- *Start of Auth for DASHBOARD or REGISTER BUTTON* -->
+
+							<!-- *-----------if user not logged in, show Register button -->
+							<li class="fund-header__list__items fund-header__register">
+								<a
+									href="#"
+									class="fund-header__list__items-link fund-header__link-register"
+									>Register</a
+								>
+							</li>
+
+							<!-- *-----------if user is logged in, show Dashboard button -->
+							<!-- <li class="fund-header__list__items fund-header__register">
+            <a
+              href="#"
+              class="fund-header__list__items-link fund-header__link-register"
+              >Dashboard</a
+            >
+          </li> -->
+							<!-- *END of Auth for DASHBOARD or REGISTER BUTTON* -->
+						</ul>
+					</div>
+
+					<div class="fund__header__burger burger" id="burger">
+						<span class="fund__header__burger-line"></span>
+						<span class="fund__header__burger-line"></span>
+						<span class="fund__header__burger-line"></span>
+						<span class="fund__header__burger-line"></span>
+					</div>
+				</div>
+			</header>
+
+			<main class="main">
+				<!-- -------START OF Page Title section------- -->
+				<section class="fund__heading-for-pages__section hidden">
+					<div class="fund__heading-for-pages__container">
+						<h3 class="fund__heading-for-pages__content-title">FAQ</h3>
+
+						<p class="fund__heading-for-pages__content-parag">
+							Find answers to your questions here. <br />
+							You can contact us if you have more questions.
+						</p>
+					</div>
+				</section>
+
+				<!-- -------START OF FAQ SECTION------- -->
+				<section class="fund__faq__section">
+					<div
+						class="fund__faq__container accordion__on-click__scroll-into-view"
+					>
+						<!-- *All-Parent-accordion buttons to be clicked -->
+						<div
+							class="fund__faq__parent-accordion-button__container parent__accordion__button__container"
+						>
+							<!-- 1st-parent accord button -->
+							<button
+								class="fund__faq__parent-accordion-button parent__accordion__button"
+								href=""
+								id="parent-accordion-button-1"
+								aria-expanded="false"
+								data-target="#parent-accordion-button-1-content"
+							>
+								Company
+							</button>
+
+							<!-- 2nd-parent accord button -->
+							<button
+								class="fund__faq__parent-accordion-button parent__accordion__button"
+								href=""
+								id="parent-accordion-button-2"
+								aria-expanded="false"
+								data-target="#parent-accordion-button-2-content"
+							>
+								Investment
+							</button>
+
+							<!-- 3rd-parent accord button -->
+							<button
+								class="fund__faq__parent-accordion-button parent__accordion__button"
+								href=""
+								id="parent-accordion-button-3"
+								aria-expanded="false"
+								data-target="#parent-accordion-button-3-content"
+							>
+								Risk
+							</button>
+
+							<!-- 4th-parent accord button -->
+							<button
+								class="fund__faq__parent-accordion-button parent__accordion__button"
+								href=""
+								id="parent-accordion-button-4"
+								aria-expanded="false"
+								data-target="#parent-accordion-button-4-content"
+							>
+								payment
+							</button>
+
+							<!-- 5th accord button -->
+							<button
+								class="fund__faq__parent-accordion-button parent__accordion__button"
+								href=""
+								id="parent-accordion-button-5"
+								aria-expanded="false"
+								data-target="#parent-accordion-button-5-content"
+							>
+								withdrawal
+							</button>
+
+							<!-- 6th accord button -->
+							<button
+								class="fund__faq__parent-accordion-button parent__accordion__button"
+								href=""
+								id="parent-accordion-button-6"
+								aria-expanded="false"
+								data-target="#parent-accordion-button-6-content"
+							>
+								your QG profile
+							</button>
+
+							<!-- 7th accord button -->
+							<button
+								class="fund__faq__parent-accordion-button parent__accordion__button"
+								href=""
+								id="parent-accordion-button-7"
+								aria-expanded="false"
+								data-target="#parent-accordion-button-7-content"
+							>
+								security
+							</button>
+						</div>
+
+						<!-- *All-Parent-accordion items opened/closed by Parent-accordion buttons -->
+						<div
+							class="fund__faq__parent-accordion-items__container parent__accordion__item__wrapper"
+						>
+							<!-- 1st-parent-accord item -->
+							<!-- *COMPANY -->
+							<div
+								class="fund__faq__parent-accordion-item parent__accordion__item__container"
+								id="parent-accordion-button-1-content"
+							>
+								<h3
+									class="fund__faq__parent__accordion-item__heading parent__accordion__item--heading"
+								>
+									Company
+								</h3>
+
+								<div
+									class="fund__faq__child-accord-q-and-a__wrapper child__accordion__wrapper"
+								>
+									<!-- *1st child-accord -->
+									<div
+										class="fund__faq__child-accord-q-and-a__container child-accordion__container"
+									>
+										<!-- (QUESTION) -->
+										<button
+											class="fund__faq__child-accord-question__button child-accordion__button"
+											id="child-accordion-button-1"
+											aria-expanded="false"
+											data-target="#child-accordion-content-1"
+										>
+											<p
+												class="fund__faq__child-accord-question child-accordion__button--text"
+											>
+												Lorem ipsum dolor sit amet consectetur adipisicing.
+											</p>
+
+											<span class="accordion__arrow" aria-hidden="false"></span>
+										</button>
+
+										<!-- (ANSWER) -->
+										<div
+											class="fund__faq__child__accord-answers__container child-accordion-content"
+											id="child-accordion-content-1"
+										>
+											<p
+												class="fund__faq__child__accord-answers child-accordion-content-text"
+											>
+												Lorem ipsum dolor sit amet consectetur adipisicing elit.
+												Quibusdam, facilis deleniti minus suscipit voluptatem
+												inventore illum reiciendis deserunt excepturi voluptate.
+											</p>
+										</div>
+									</div>
+
+									<!-- *2nd child-accord -->
+									<div
+										class="fund__faq__child-accord-q-and-a__container child-accordion__container"
+									>
+										<!-- (QUESTION) -->
+										<button
+											class="fund__faq__child-accord-question__button child-accordion__button"
+											id="child-accordion-button-2"
+											aria-expanded="false"
+											data-target="#child-accordion-content-2"
+										>
+											<p
+												class="fund__faq__child-accord-question child-accordion__button--text"
+											>
+												Lorem ipsum dolor sit amet consectetur adipisicing.
+											</p>
+
+											<span class="accordion__arrow" aria-hidden="true"></span>
+										</button>
+
+										<!-- (ANSWER) -->
+										<div
+											class="fund__faq__child__accord-answers__container child-accordion-content"
+											id="child-accordion-content-2"
+										>
+											<p
+												class="fund__faq__child__accord-answers child-accordion-content-text"
+											>
+												Lorem ipsum, dolor sit amet consectetur adipisicing
+												elit. Aliquam molestias officiis est assumenda ab atque
+												laboriosam quae natus voluptatem obcaecati accusantium
+												eius, voluptas blanditiis adipisci itaque! Dignissimos a
+												veritatis cupiditate!
+											</p>
+										</div>
+									</div>
+
+									<!-- *3rd child-accord -->
+									<div
+										class="fund__faq__child-accord-q-and-a__container child-accordion__container"
+									>
+										<!-- (QUESTION) -->
+										<button
+											class="fund__faq__child-accord-question__button child-accordion__button"
+											id="child-accordion-button-3"
+											aria-expanded="false"
+											data-target="#child-accordion-content-3"
+										>
+											<p
+												class="fund__faq__child-accord-question child-accordion__button--text"
+											>
+												Lorem ipsum dolor sit amet consectetur adipisicing.
+											</p>
+
+											<span class="accordion__arrow" aria-hidden="true"></span>
+										</button>
+
+										<!-- (ANSWER) -->
+										<div
+											class="fund__faq__child__accord-answers__container child-accordion-content"
+											id="child-accordion-content-3"
+										>
+											<p
+												class="fund__faq__child__accord-answers child-accordion-content-text"
+											>
+												Lorem ipsum dolor sit amet consectetur adipisicing elit.
+												Provident, porro.
+											</p>
+										</div>
+									</div>
+
+									<!-- *4th child-accord -->
+									<div
+										class="fund__faq__child-accord-q-and-a__container child-accordion__container"
+									>
+										<!-- (QUESTION) -->
+										<button
+											class="fund__faq__child-accord-question__button child-accordion__button"
+											id="child-accordion-button-1"
+											aria-expanded="false"
+											data-target="#child-accordion-content-4"
+										>
+											<p
+												class="fund__faq__child-accord-question child-accordion__button--text"
+											>
+												Lorem ipsum dolor sit amet consectetur adipisicing.
+											</p>
+
+											<span class="accordion__arrow" aria-hidden="true"></span>
+										</button>
+
+										<!-- (ANSWER) -->
+										<div
+											class="fund__faq__child__accord-answers__container child-accordion-content"
+											id="child-accordion-content-4"
+										>
+											<p
+												class="fund__faq__child__accord-answers child-accordion-content-text"
+											>
+												Lorem ipsum dolor sit amet consectetur adipisicing elit.
+												Provident, porro.
+											</p>
+										</div>
+									</div>
+
+									<!-- *5th child-accord -->
+									<div
+										class="fund__faq__child-accord-q-and-a__container child-accordion__container"
+									>
+										<!-- (QUESTION) -->
+										<button
+											class="fund__faq__child-accord-question__button child-accordion__button"
+											id="child-accordion-button-5"
+											aria-expanded="false"
+											data-target="#child-accordion-content-5"
+										>
+											<p
+												class="fund__faq__child-accord-question child-accordion__button--text"
+											>
+												Lorem ipsum dolor sit amet consectetur adipisicing.
+											</p>
+
+											<span class="accordion__arrow" aria-hidden="true"></span>
+										</button>
+
+										<!-- (ANSWER) -->
+										<div
+											class="fund__faq__child__accord-answers__container child-accordion-content"
+											id="child-accordion-content-5"
+										>
+											<p
+												class="fund__faq__child__accord-answers child-accordion-content-text"
+											>
+												Lorem ipsum dolor sit amet consectetur adipisicing elit.
+												Provident, porro.
+											</p>
+										</div>
+									</div>
+
+									<!-- *6th child-accord -->
+									<div
+										class="fund__faq__child-accord-q-and-a__container child-accordion__container"
+									>
+										<!-- (QUESTION) -->
+										<button
+											class="fund__faq__child-accord-question__button child-accordion__button"
+											id="child-accordion-button-6"
+											aria-expanded="false"
+											data-target="#child-accordion-content-6"
+										>
+											<p
+												class="fund__faq__child-accord-question child-accordion__button--text"
+											>
+												6666 Lorem ipsum dolor sit amet consectetur adipisicing.
+											</p>
+
+											<span class="accordion__arrow" aria-hidden="true"></span>
+										</button>
+
+										<!-- (ANSWER) -->
+										<div
+											class="fund__faq__child__accord-answers__container child-accordion-content"
+											id="child-accordion-content-6"
+										>
+											<p
+												class="fund__faq__child__accord-answers child-accordion-content-text"
+											>
+												Lorem ipsum dolor sit amet consectetur adipisicing elit.
+												Provident, porro.
+											</p>
+										</div>
+									</div>
+
+									<!-- *7th child-accord -->
+									<div
+										class="fund__faq__child-accord-q-and-a__container child-accordion__container"
+									>
+										<!-- (QUESTION) -->
+										<button
+											class="fund__faq__child-accord-question__button child-accordion__button"
+											id="child-accordion-button-7"
+											aria-expanded="false"
+											data-target="#child-accordion-content-7"
+										>
+											<p
+												class="fund__faq__child-accord-question child-accordion__button--text"
+											>
+												7777 Lorem ipsum dolor sit amet consectetur adipisicing.
+											</p>
+
+											<span class="accordion__arrow" aria-hidden="true"></span>
+										</button>
+
+										<!-- (ANSWER) -->
+										<div
+											class="fund__faq__child__accord-answers__container child-accordion-content"
+											id="child-accordion-content-7"
+										>
+											<p
+												class="fund__faq__child__accord-answers child-accordion-content-text"
+											>
+												Lorem ipsum dolor sit amet consectetur adipisicing elit.
+												Provident, porro.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- 2nd-parent-accord item -->
+							<!-- *INVESTMENT -->
+							<div
+								class="fund__faq__parent-accordion-item parent__accordion__item__container"
+								id="parent-accordion-button-2-content"
+							>
+								<h3
+									class="fund__faq__parent__accordion-item__heading parent__accordion__item--heading"
+								>
+									Investment
+								</h3>
+
+								<div
+									class="fund__faq__child-accord-q-and-a__wrapper child__accordion__wrapper"
+								>
+									<!-- *1st child-accord -->
+									<div
+										class="fund__faq__child-accord-q-and-a__container child-accordion__container"
+									>
+										<!-- (QUESTION) -->
+										<button
+											class="fund__faq__child-accord-question__button child-accordion__button"
+											id="child-accordion-button-1"
+											aria-expanded="false"
+											data-target="#child-accordion-content-1"
+										>
+											<p
+												class="fund__faq__child-accord-question child-accordion__button--text"
+											>
+												1 Lorem ipsum dolor sit amet consectetur adipisicing.
+											</p>
+
+											<span class="accordion__arrow" aria-hidden="false"></span>
+										</button>
+
+										<!-- (ANSWER) -->
+										<div
+											class="fund__faq__child__accord-answers__container child-accordion-content"
+											id="child-accordion-content-1"
+										>
+											<p
+												class="fund__faq__child__accord-answers child-accordion-content-text"
+											>
+												Lorem ipsum dolor sit amet consectetur adipisicing elit.
+												Quibusdam, facilis deleniti minus suscipit voluptatem
+												inventore illum reiciendis deserunt excepturi voluptate.
+											</p>
+										</div>
+									</div>
+
+									<!-- *2nd child-accord -->
+									<div
+										class="fund__faq__child-accord-q-and-a__container child-accordion__container"
+									>
+										<!-- (QUESTION) -->
+										<button
+											class="fund__faq__child-accord-question__button child-accordion__button"
+											id="child-accordion-button-2"
+											aria-expanded="false"
+											data-target="#child-accordion-content-2"
+										>
+											<p
+												class="fund__faq__child-accord-question child-accordion__button--text"
+											>
+												2 Lorem ipsum dolor sit amet consectetur adipisicing.
+											</p>
+
+											<span class="accordion__arrow" aria-hidden="true"></span>
+										</button>
+
+										<!-- (ANSWER) -->
+										<div
+											class="fund__faq__child__accord-answers__container child-accordion-content"
+											id="child-accordion-content-2"
+										>
+											<p
+												class="fund__faq__child__accord-answers child-accordion-content-text"
+											>
+												Lorem ipsum, dolor sit amet consectetur adipisicing
+												elit. Aliquam molestias officiis est assumenda ab atque
+												laboriosam quae natus voluptatem obcaecati accusantium
+												eius, voluptas blanditiis adipisci itaque! Dignissimos a
+												veritatis cupiditate!
+											</p>
+										</div>
+									</div>
+
+									<!-- *3rd child-accord -->
+									<div
+										class="fund__faq__child-accord-q-and-a__container child-accordion__container"
+									>
+										<!-- (QUESTION) -->
+										<button
+											class="fund__faq__child-accord-question__button child-accordion__button"
+											id="child-accordion-button-3"
+											aria-expanded="false"
+											data-target="#child-accordion-content-3"
+										>
+											<p
+												class="fund__faq__child-accord-question child-accordion__button--text"
+											>
+												3 Lorem ipsum dolor sit amet consectetur adipisicing.
+											</p>
+
+											<span class="accordion__arrow" aria-hidden="true"></span>
+										</button>
+
+										<!-- (ANSWER) -->
+										<div
+											class="fund__faq__child__accord-answers__container child-accordion-content"
+											id="child-accordion-content-3"
+										>
+											<p
+												class="fund__faq__child__accord-answers child-accordion-content-text"
+											>
+												Lorem ipsum dolor sit amet consectetur adipisicing elit.
+												Provident, porro.
+											</p>
+										</div>
+									</div>
+
+									<!-- *4th child-accord -->
+									<div
+										class="fund__faq__child-accord-q-and-a__container child-accordion__container"
+									>
+										<!-- (QUESTION) -->
+										<button
+											class="fund__faq__child-accord-question__button child-accordion__button"
+											id="child-accordion-button-1"
+											aria-expanded="false"
+											data-target="#child-accordion-content-4"
+										>
+											<p
+												class="fund__faq__child-accord-question child-accordion__button--text"
+											>
+												4 Lorem ipsum dolor sit amet consectetur adipisicing.
+											</p>
+
+											<span class="accordion__arrow" aria-hidden="true"></span>
+										</button>
+
+										<!-- (ANSWER) -->
+										<div
+											class="fund__faq__child__accord-answers__container child-accordion-content"
+											id="child-accordion-content-4"
+										>
+											<p
+												class="fund__faq__child__accord-answers child-accordion-content-text"
+											>
+												Lorem ipsum dolor sit amet consectetur adipisicing elit.
+												Provident, porro.
+											</p>
+										</div>
+									</div>
+
+									<!-- *5th child-accord -->
+									<div
+										class="fund__faq__child-accord-q-and-a__container child-accordion__container"
+									>
+										<!-- (QUESTION) -->
+										<button
+											class="fund__faq__child-accord-question__button child-accordion__button"
+											id="child-accordion-button-5"
+											aria-expanded="false"
+											data-target="#child-accordion-content-5"
+										>
+											<p
+												class="fund__faq__child-accord-question child-accordion__button--text"
+											>
+												5 Lorem ipsum dolor sit amet consectetur adipisicing.
+											</p>
+
+											<span class="accordion__arrow" aria-hidden="true"></span>
+										</button>
+
+										<!-- (ANSWER) -->
+										<div
+											class="fund__faq__child__accord-answers__container child-accordion-content"
+											id="child-accordion-content-5"
+										>
+											<p
+												class="fund__faq__child__accord-answers child-accordion-content-text"
+											>
+												Lorem ipsum dolor sit amet consectetur adipisicing elit.
+												Provident, porro.
+											</p>
+										</div>
+									</div>
+
+									<!-- *6th child-accord -->
+									<div
+										class="fund__faq__child-accord-q-and-a__container child-accordion__container"
+									>
+										<!-- (QUESTION) -->
+										<button
+											class="fund__faq__child-accord-question__button child-accordion__button"
+											id="child-accordion-button-6"
+											aria-expanded="false"
+											data-target="#child-accordion-content-6"
+										>
+											<p
+												class="fund__faq__child-accord-question child-accordion__button--text"
+											>
+												6 Lorem ipsum dolor sit amet consectetur adipisicing.
+											</p>
+
+											<span class="accordion__arrow" aria-hidden="true"></span>
+										</button>
+
+										<!-- (ANSWER) -->
+										<div
+											class="fund__faq__child__accord-answers__container child-accordion-content"
+											id="child-accordion-content-6"
+										>
+											<p
+												class="fund__faq__child__accord-answers child-accordion-content-text"
+											>
+												Lorem ipsum dolor sit amet consectetur adipisicing elit.
+												Provident, porro.
+											</p>
+										</div>
+									</div>
+
+									<!-- *7th child-accord -->
+									<div
+										class="fund__faq__child-accord-q-and-a__container child-accordion__container"
+									>
+										<!-- (QUESTION) -->
+										<button
+											class="fund__faq__child-accord-question__button child-accordion__button"
+											id="child-accordion-button-7"
+											aria-expanded="false"
+											data-target="#child-accordion-content-7"
+										>
+											<p
+												class="fund__faq__child-accord-question child-accordion__button--text"
+											>
+												7 Lorem ipsum dolor sit amet consectetur adipisicing.
+											</p>
+
+											<span class="accordion__arrow" aria-hidden="true"></span>
+										</button>
+
+										<!-- (ANSWER) -->
+										<div
+											class="fund__faq__child__accord-answers__container child-accordion-content"
+											id="child-accordion-content-7"
+										>
+											<p
+												class="fund__faq__child__accord-answers child-accordion-content-text"
+											>
+												Lorem ipsum dolor sit amet consectetur adipisicing elit.
+												Provident, porro.
+											</p>
+										</div>
+									</div>
+
+									<!-- *8th child-accord -->
+									<div
+										class="fund__faq__child-accord-q-and-a__container child-accordion__container"
+									>
+										<!-- (QUESTION) -->
+										<button
+											class="fund__faq__child-accord-question__button child-accordion__button"
+											id="child-accordion-button-8"
+											aria-expanded="false"
+											data-target="#child-accordion-content-8"
+										>
+											<p
+												class="fund__faq__child-accord-question child-accordion__button--text"
+											>
+												8 Lorem ipsum dolor sit amet consectetur adipisicing.
+											</p>
+
+											<span class="accordion__arrow" aria-hidden="true"></span>
+										</button>
+
+										<!-- (ANSWER) -->
+										<div
+											class="fund__faq__child__accord-answers__container child-accordion-content"
+											id="child-accordion-content-8"
+										>
+											<p
+												class="fund__faq__child__accord-answers child-accordion-content-text"
+											>
+												Lorem ipsum dolor sit amet consectetur adipisicing elit.
+												Provident, porro.
+											</p>
+										</div>
+									</div>
+
+									<!-- *9th child-accord -->
+									<div
+										class="fund__faq__child-accord-q-and-a__container child-accordion__container"
+									>
+										<!-- (QUESTION) -->
+										<button
+											class="fund__faq__child-accord-question__button child-accordion__button"
+											id="child-accordion-button-9"
+											aria-expanded="false"
+											data-target="#child-accordion-content-9"
+										>
+											<p
+												class="fund__faq__child-accord-question child-accordion__button--text"
+											>
+												9 Lorem ipsum dolor sit amet consectetur adipisicing.
+											</p>
+
+											<span class="accordion__arrow" aria-hidden="true"></span>
+										</button>
+
+										<!-- (ANSWER) -->
+										<div
+											class="fund__faq__child__accord-answers__container child-accordion-content"
+											id="child-accordion-content-9"
+										>
+											<p
+												class="fund__faq__child__accord-answers child-accordion-content-text"
+											>
+												Lorem ipsum dolor sit amet consectetur adipisicing elit.
+												Provident, porro.
+											</p>
+										</div>
+									</div>
+
+									<!-- *10th child-accord -->
+									<div
+										class="fund__faq__child-accord-q-and-a__container child-accordion__container"
+									>
+										<!-- (QUESTION) -->
+										<button
+											class="fund__faq__child-accord-question__button child-accordion__button"
+											id="child-accordion-button-10"
+											aria-expanded="false"
+											data-target="#child-accordion-content-10"
+										>
+											<p
+												class="fund__faq__child-accord-question child-accordion__button--text"
+											>
+												10 Lorem ipsum dolor sit amet consectetur adipisicing.
+											</p>
+
+											<span class="accordion__arrow" aria-hidden="true"></span>
+										</button>
+
+										<!-- (ANSWER) -->
+										<div
+											class="fund__faq__child__accord-answers__container child-accordion-content"
+											id="child-accordion-content-10"
+										>
+											<p
+												class="fund__faq__child__accord-answers child-accordion-content-text"
+											>
+												Lorem ipsum dolor sit amet consectetur adipisicing elit.
+												Provident, porro.
+											</p>
+										</div>
+									</div>
+
+									<!-- *11th child-accord -->
+									<div
+										class="fund__faq__child-accord-q-and-a__container child-accordion__container"
+									>
+										<!-- (QUESTION) -->
+										<button
+											class="fund__faq__child-accord-question__button child-accordion__button"
+											id="child-accordion-button-11"
+											aria-expanded="false"
+											data-target="#child-accordion-content-11"
+										>
+											<p
+												class="fund__faq__child-accord-question child-accordion__button--text"
+											>
+												11 Lorem ipsum dolor sit amet consectetur adipisicing.
+											</p>
+
+											<span class="accordion__arrow" aria-hidden="true"></span>
+										</button>
+
+										<!-- (ANSWER) -->
+										<div
+											class="fund__faq__child__accord-answers__container child-accordion-content"
+											id="child-accordion-content-11"
+										>
+											<p
+												class="fund__faq__child__accord-answers child-accordion-content-text"
+											>
+												Lorem ipsum dolor sit amet consectetur adipisicing elit.
+												Provident, porro.
+											</p>
+										</div>
+									</div>
+
+									<!-- *12th child-accord -->
+									<div
+										class="fund__faq__child-accord-q-and-a__container child-accordion__container"
+									>
+										<!-- (QUESTION) -->
+										<button
+											class="fund__faq__child-accord-question__button child-accordion__button"
+											id="child-accordion-button-12"
+											aria-expanded="false"
+											data-target="#child-accordion-content-12"
+										>
+											<p
+												class="fund__faq__child-accord-question child-accordion__button--text"
+											>
+												12 Lorem ipsum dolor sit amet consectetur adipisicing.
+											</p>
+
+											<span class="accordion__arrow" aria-hidden="true"></span>
+										</button>
+
+										<!-- (ANSWER) -->
+										<div
+											class="fund__faq__child__accord-answers__container child-accordion-content"
+											id="child-accordion-content-12"
+										>
+											<p
+												class="fund__faq__child__accord-answers child-accordion-content-text"
+											>
+												Lorem ipsum dolor sit amet consectetur adipisicing elit.
+												Provident, porro.
+											</p>
+										</div>
+									</div>
+
+									<!-- *13th child-accord -->
+									<div
+										class="fund__faq__child-accord-q-and-a__container child-accordion__container"
+									>
+										<!-- (QUESTION) -->
+										<button
+											class="fund__faq__child-accord-question__button child-accordion__button"
+											id="child-accordion-button-13"
+											aria-expanded="false"
+											data-target="#child-accordion-content-13"
+										>
+											<p
+												class="fund__faq__child-accord-question child-accordion__button--text"
+											>
+												13 Lorem ipsum dolor sit amet consectetur adipisicing.
+											</p>
+
+											<span class="accordion__arrow" aria-hidden="true"></span>
+										</button>
+
+										<!-- (ANSWER) -->
+										<div
+											class="fund__faq__child__accord-answers__container child-accordion-content"
+											id="child-accordion-content-13"
+										>
+											<p
+												class="fund__faq__child__accord-answers child-accordion-content-text"
+											>
+												Lorem ipsum dolor sit amet consectetur adipisicing elit.
+												Provident, porro.
+											</p>
+										</div>
+									</div>
+
+									<!-- *14th child-accord -->
+									<div
+										class="fund__faq__child-accord-q-and-a__container child-accordion__container"
+									>
+										<!-- (QUESTION) -->
+										<button
+											class="fund__faq__child-accord-question__button child-accordion__button"
+											id="child-accordion-button-14"
+											aria-expanded="false"
+											data-target="#child-accordion-content-14"
+										>
+											<p
+												class="fund__faq__child-accord-question child-accordion__button--text"
+											>
+												14 Lorem ipsum dolor sit amet consectetur adipisicing.
+											</p>
+
+											<span class="accordion__arrow" aria-hidden="true"></span>
+										</button>
+
+										<!-- (ANSWER) -->
+										<div
+											class="fund__faq__child__accord-answers__container child-accordion-content"
+											id="child-accordion-content-14"
+										>
+											<p
+												class="fund__faq__child__accord-answers child-accordion-content-text"
+											>
+												Lorem ipsum dolor sit amet consectetur adipisicing elit.
+												Provident, porro.
+											</p>
+										</div>
+									</div>
+
+									<!-- *15th child-accord -->
+									<div
+										class="fund__faq__child-accord-q-and-a__container child-accordion__container"
+									>
+										<!-- (QUESTION) -->
+										<button
+											class="fund__faq__child-accord-question__button child-accordion__button"
+											id="child-accordion-button-15"
+											aria-expanded="false"
+											data-target="#child-accordion-content-15"
+										>
+											<p
+												class="fund__faq__child-accord-question child-accordion__button--text"
+											>
+												15 Lorem ipsum dolor sit amet consectetur adipisicing.
+											</p>
+
+											<span class="accordion__arrow" aria-hidden="true"></span>
+										</button>
+
+										<!-- (ANSWER) -->
+										<div
+											class="fund__faq__child__accord-answers__container child-accordion-content"
+											id="child-accordion-content-15"
+										>
+											<p
+												class="fund__faq__child__accord-answers child-accordion-content-text"
+											>
+												Lorem ipsum dolor sit amet consectetur adipisicing elit.
+												Provident, porro.
+											</p>
+										</div>
+									</div>
+
+									<!-- *16th child-accord -->
+									<div
+										class="fund__faq__child-accord-q-and-a__container child-accordion__container"
+									>
+										<!-- (QUESTION) -->
+										<button
+											class="fund__faq__child-accord-question__button child-accordion__button"
+											id="child-accordion-button-16"
+											aria-expanded="false"
+											data-target="#child-accordion-content-16"
+										>
+											<p
+												class="fund__faq__child-accord-question child-accordion__button--text"
+											>
+												16 Lorem ipsum dolor sit amet consectetur adipisicing.
+											</p>
+
+											<span class="accordion__arrow" aria-hidden="true"></span>
+										</button>
+
+										<!-- (ANSWER) -->
+										<div
+											class="fund__faq__child__accord-answers__container child-accordion-content"
+											id="child-accordion-content-16"
+										>
+											<p
+												class="fund__faq__child__accord-answers child-accordion-content-text"
+											>
+												Lorem ipsum dolor sit amet consectetur adipisicing elit.
+												Provident, porro.
+											</p>
+										</div>
+									</div>
+
+									<!-- *17th child-accord -->
+									<div
+										class="fund__faq__child-accord-q-and-a__container child-accordion__container"
+									>
+										<!-- (QUESTION) -->
+										<button
+											class="fund__faq__child-accord-question__button child-accordion__button"
+											id="child-accordion-button-17"
+											aria-expanded="false"
+											data-target="#child-accordion-content-17"
+										>
+											<p
+												class="fund__faq__child-accord-question child-accordion__button--text"
+											>
+												17 Lorem ipsum dolor sit amet consectetur adipisicing.
+											</p>
+
+											<span class="accordion__arrow" aria-hidden="true"></span>
+										</button>
+
+										<!-- (ANSWER) -->
+										<div
+											class="fund__faq__child__accord-answers__container child-accordion-content"
+											id="child-accordion-content-17"
+										>
+											<p
+												class="fund__faq__child__accord-answers child-accordion-content-text"
+											>
+												Lorem ipsum dolor sit amet consectetur adipisicing elit.
+												Provident, porro.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- 3rd-parent accord item -->
+							<!-- *RISK -->
+							<div
+								class="fund__faq__parent-accordion-item parent__accordion__item__container"
+								id="parent-accordion-button-3-content"
+							>
+								<h3
+									class="fund__faq__parent__accordion-item__heading parent__accordion__item--heading"
+								>
+									Risk
+								</h3>
+
+								<div
+									class="fund__faq__child-accord-q-and-a__wrapper child__accordion__wrapper"
+								>
+									<!-- *1st child-accord -->
+									<div
+										class="fund__faq__child-accord-q-and-a__container child-accordion__container"
+									>
+										<!-- (QUESTION) -->
+										<button
+											class="fund__faq__child-accord-question__button child-accordion__button"
+											id="child-accordion-button-1"
+											aria-expanded="false"
+											data-target="#child-accordion-content-1"
+										>
+											<p
+												class="fund__faq__child-accord-question child-accordion__button--text"
+											>
+												1 Lorem ipsum dolor sit amet consectetur adipisicing.
+											</p>
+
+											<span class="accordion__arrow" aria-hidden="false"></span>
+										</button>
+
+										<!-- (ANSWER) -->
+										<div
+											class="fund__faq__child__accord-answers__container child-accordion-content"
+											id="child-accordion-content-1"
+										>
+											<p
+												class="fund__faq__child__accord-answers child-accordion-content-text"
+											>
+												Lorem ipsum dolor sit amet consectetur adipisicing elit.
+												Quibusdam, facilis deleniti minus suscipit voluptatem
+												inventore illum reiciendis deserunt excepturi voluptate.
+											</p>
+										</div>
+									</div>
+
+									<!-- *2nd child-accord -->
+									<div
+										class="fund__faq__child-accord-q-and-a__container child-accordion__container"
+									>
+										<!-- (QUESTION) -->
+										<button
+											class="fund__faq__child-accord-question__button child-accordion__button"
+											id="child-accordion-button-2"
+											aria-expanded="false"
+											data-target="#child-accordion-content-2"
+										>
+											<p
+												class="fund__faq__child-accord-question child-accordion__button--text"
+											>
+												2 Lorem ipsum dolor sit amet consectetur adipisicing.
+											</p>
+
+											<span class="accordion__arrow" aria-hidden="true"></span>
+										</button>
+
+										<!-- (ANSWER) -->
+										<div
+											class="fund__faq__child__accord-answers__container child-accordion-content"
+											id="child-accordion-content-2"
+										>
+											<p
+												class="fund__faq__child__accord-answers child-accordion-content-text"
+											>
+												Lorem ipsum, dolor sit amet consectetur adipisicing
+												elit. Aliquam molestias officiis est assumenda ab atque
+												laboriosam quae natus voluptatem obcaecati accusantium
+												eius, voluptas blanditiis adipisci itaque! Dignissimos a
+												veritatis cupiditate!
+											</p>
+										</div>
+									</div>
+
+									<!-- *3rd child-accord -->
+									<div
+										class="fund__faq__child-accord-q-and-a__container child-accordion__container"
+									>
+										<!-- (QUESTION) -->
+										<button
+											class="fund__faq__child-accord-question__button child-accordion__button"
+											id="child-accordion-button-3"
+											aria-expanded="false"
+											data-target="#child-accordion-content-3"
+										>
+											<p
+												class="fund__faq__child-accord-question child-accordion__button--text"
+											>
+												3 Lorem ipsum dolor sit amet consectetur adipisicing.
+											</p>
+
+											<span class="accordion__arrow" aria-hidden="true"></span>
+										</button>
+
+										<!-- (ANSWER) -->
+										<div
+											class="fund__faq__child__accord-answers__container child-accordion-content"
+											id="child-accordion-content-3"
+										>
+											<p
+												class="fund__faq__child__accord-answers child-accordion-content-text"
+											>
+												Lorem ipsum dolor sit amet consectetur adipisicing elit.
+												Provident, porro.
+											</p>
+										</div>
+									</div>
+
+									<!-- *4th child-accord -->
+									<div
+										class="fund__faq__child-accord-q-and-a__container child-accordion__container"
+									>
+										<!-- (QUESTION) -->
+										<button
+											class="fund__faq__child-accord-question__button child-accordion__button"
+											id="child-accordion-button-1"
+											aria-expanded="false"
+											data-target="#child-accordion-content-4"
+										>
+											<p
+												class="fund__faq__child-accord-question child-accordion__button--text"
+											>
+												4 Lorem ipsum dolor sit amet consectetur adipisicing.
+											</p>
+
+											<span class="accordion__arrow" aria-hidden="true"></span>
+										</button>
+
+										<!-- (ANSWER) -->
+										<div
+											class="fund__faq__child__accord-answers__container child-accordion-content"
+											id="child-accordion-content-4"
+										>
+											<p
+												class="fund__faq__child__accord-answers child-accordion-content-text"
+											>
+												Lorem ipsum dolor sit amet consectetur adipisicing elit.
+												Provident, porro.
+											</p>
+										</div>
+									</div>
+
+									<!-- *5th child-accord -->
+									<div
+										class="fund__faq__child-accord-q-and-a__container child-accordion__container"
+									>
+										<!-- (QUESTION) -->
+										<button
+											class="fund__faq__child-accord-question__button child-accordion__button"
+											id="child-accordion-button-5"
+											aria-expanded="false"
+											data-target="#child-accordion-content-5"
+										>
+											<p
+												class="fund__faq__child-accord-question child-accordion__button--text"
+											>
+												5 Lorem ipsum dolor sit amet consectetur adipisicing.
+											</p>
+
+											<span class="accordion__arrow" aria-hidden="true"></span>
+										</button>
+
+										<!-- (ANSWER) -->
+										<div
+											class="fund__faq__child__accord-answers__container child-accordion-content"
+											id="child-accordion-content-5"
+										>
+											<p
+												class="fund__faq__child__accord-answers child-accordion-content-text"
+											>
+												Lorem ipsum dolor sit amet consectetur adipisicing elit.
+												Provident, porro.
+											</p>
+										</div>
+									</div>
+
+									<!-- *6th child-accord -->
+									<div
+										class="fund__faq__child-accord-q-and-a__container child-accordion__container"
+									>
+										<!-- (QUESTION) -->
+										<button
+											class="fund__faq__child-accord-question__button child-accordion__button"
+											id="child-accordion-button-6"
+											aria-expanded="false"
+											data-target="#child-accordion-content-6"
+										>
+											<p
+												class="fund__faq__child-accord-question child-accordion__button--text"
+											>
+												6 Lorem ipsum dolor sit amet consectetur adipisicing.
+											</p>
+
+											<span class="accordion__arrow" aria-hidden="true"></span>
+										</button>
+
+										<!-- (ANSWER) -->
+										<div
+											class="fund__faq__child__accord-answers__container child-accordion-content"
+											id="child-accordion-content-6"
+										>
+											<p
+												class="fund__faq__child__accord-answers child-accordion-content-text"
+											>
+												Lorem ipsum dolor sit amet consectetur adipisicing elit.
+												Provident, porro.
+											</p>
+										</div>
+									</div>
+
+									<!-- *7th child-accord -->
+									<div
+										class="fund__faq__child-accord-q-and-a__container child-accordion__container"
+									>
+										<!-- (QUESTION) -->
+										<button
+											class="fund__faq__child-accord-question__button child-accordion__button"
+											id="child-accordion-button-7"
+											aria-expanded="false"
+											data-target="#child-accordion-content-7"
+										>
+											<p
+												class="fund__faq__child-accord-question child-accordion__button--text"
+											>
+												7 Lorem ipsum dolor sit amet consectetur adipisicing.
+											</p>
+
+											<span class="accordion__arrow" aria-hidden="true"></span>
+										</button>
+
+										<!-- (ANSWER) -->
+										<div
+											class="fund__faq__child__accord-answers__container child-accordion-content"
+											id="child-accordion-content-7"
+										>
+											<p
+												class="fund__faq__child__accord-answers child-accordion-content-text"
+											>
+												Lorem ipsum dolor sit amet consectetur adipisicing elit.
+												Provident, porro.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- 4th-parent accord item -->
+							<!-- *PAYMENT -->
+							<div
+								class="fund__faq__parent-accordion-item parent__accordion__item__container"
+								id="parent-accordion-button-4-content"
+							>
+								<h3
+									class="fund__faq__parent__accordion-item__heading parent__accordion__item--heading"
+								>
+									Payment
+								</h3>
+
+								<div
+									class="fund__faq__child-accord-q-and-a__wrapper child__accordion__wrapper"
+								>
+									<!-- *1st child-accord -->
+									<div
+										class="fund__faq__child-accord-q-and-a__container child-accordion__container"
+									>
+										<!-- (QUESTION) -->
+										<button
+											class="fund__faq__child-accord-question__button child-accordion__button"
+											id="child-accordion-button-1"
+											aria-expanded="false"
+											data-target="#child-accordion-content-1"
+										>
+											<p
+												class="fund__faq__child-accord-question child-accordion__button--text"
+											>
+												1 Lorem ipsum dolor sit amet consectetur adipisicing.
+											</p>
+
+											<span class="accordion__arrow" aria-hidden="false"></span>
+										</button>
+
+										<!-- (ANSWER) -->
+										<div
+											class="fund__faq__child__accord-answers__container child-accordion-content"
+											id="child-accordion-content-1"
+										>
+											<p
+												class="fund__faq__child__accord-answers child-accordion-content-text"
+											>
+												Lorem ipsum dolor sit amet consectetur adipisicing elit.
+												Quibusdam, facilis deleniti minus suscipit voluptatem
+												inventore illum reiciendis deserunt excepturi voluptate.
+											</p>
+										</div>
+									</div>
+
+									<!-- *2nd child-accord -->
+									<div
+										class="fund__faq__child-accord-q-and-a__container child-accordion__container"
+									>
+										<!-- (QUESTION) -->
+										<button
+											class="fund__faq__child-accord-question__button child-accordion__button"
+											id="child-accordion-button-2"
+											aria-expanded="false"
+											data-target="#child-accordion-content-2"
+										>
+											<p
+												class="fund__faq__child-accord-question child-accordion__button--text"
+											>
+												2 Lorem ipsum dolor sit amet consectetur adipisicing.
+											</p>
+
+											<span class="accordion__arrow" aria-hidden="true"></span>
+										</button>
+
+										<!-- (ANSWER) -->
+										<div
+											class="fund__faq__child__accord-answers__container child-accordion-content"
+											id="child-accordion-content-2"
+										>
+											<p
+												class="fund__faq__child__accord-answers child-accordion-content-text"
+											>
+												Lorem ipsum, dolor sit amet consectetur adipisicing
+												elit. Aliquam molestias officiis est assumenda ab atque
+												laboriosam quae natus voluptatem obcaecati accusantium
+												eius, voluptas blanditiis adipisci itaque! Dignissimos a
+												veritatis cupiditate!
+											</p>
+										</div>
+									</div>
+
+									<!-- *3rd child-accord -->
+									<div
+										class="fund__faq__child-accord-q-and-a__container child-accordion__container"
+									>
+										<!-- (QUESTION) -->
+										<button
+											class="fund__faq__child-accord-question__button child-accordion__button"
+											id="child-accordion-button-3"
+											aria-expanded="false"
+											data-target="#child-accordion-content-3"
+										>
+											<p
+												class="fund__faq__child-accord-question child-accordion__button--text"
+											>
+												3 Lorem ipsum dolor sit amet consectetur adipisicing.
+											</p>
+
+											<span class="accordion__arrow" aria-hidden="true"></span>
+										</button>
+
+										<!-- (ANSWER) -->
+										<div
+											class="fund__faq__child__accord-answers__container child-accordion-content"
+											id="child-accordion-content-3"
+										>
+											<p
+												class="fund__faq__child__accord-answers child-accordion-content-text"
+											>
+												Lorem ipsum dolor sit amet consectetur adipisicing elit.
+												Provident, porro.
+											</p>
+										</div>
+									</div>
+
+									<!-- *4th child-accord -->
+									<div
+										class="fund__faq__child-accord-q-and-a__container child-accordion__container"
+									>
+										<!-- (QUESTION) -->
+										<button
+											class="fund__faq__child-accord-question__button child-accordion__button"
+											id="child-accordion-button-1"
+											aria-expanded="false"
+											data-target="#child-accordion-content-4"
+										>
+											<p
+												class="fund__faq__child-accord-question child-accordion__button--text"
+											>
+												4 Lorem ipsum dolor sit amet consectetur adipisicing.
+											</p>
+
+											<span class="accordion__arrow" aria-hidden="true"></span>
+										</button>
+
+										<!-- (ANSWER) -->
+										<div
+											class="fund__faq__child__accord-answers__container child-accordion-content"
+											id="child-accordion-content-4"
+										>
+											<p
+												class="fund__faq__child__accord-answers child-accordion-content-text"
+											>
+												Lorem ipsum dolor sit amet consectetur adipisicing elit.
+												Provident, porro.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- 5th-parent accord item -->
+							<!-- *WIDTHDRAWAL -->
+							<div
+								class="fund__faq__parent-accordion-item parent__accordion__item__container"
+								id="parent-accordion-button-5-content"
+							>
+								<h3
+									class="fund__faq__parent__accordion-item__heading parent__accordion__item--heading"
+								>
+									Withdrawal
+								</h3>
+
+								<div
+									class="fund__faq__child-accord-q-and-a__wrapper child__accordion__wrapper"
+								>
+									<!-- *1st child-accord -->
+									<div
+										class="fund__faq__child-accord-q-and-a__container child-accordion__container"
+									>
+										<!-- (QUESTION) -->
+										<button
+											class="fund__faq__child-accord-question__button child-accordion__button"
+											id="child-accordion-button-1"
+											aria-expanded="false"
+											data-target="#child-accordion-content-1"
+										>
+											<p
+												class="fund__faq__child-accord-question child-accordion__button--text"
+											>
+												1 Lorem ipsum dolor sit amet consectetur adipisicing.
+											</p>
+
+											<span class="accordion__arrow" aria-hidden="false"></span>
+										</button>
+
+										<!-- (ANSWER) -->
+										<div
+											class="fund__faq__child__accord-answers__container child-accordion-content"
+											id="child-accordion-content-1"
+										>
+											<p
+												class="fund__faq__child__accord-answers child-accordion-content-text"
+											>
+												Lorem ipsum dolor sit amet consectetur adipisicing elit.
+												Quibusdam, facilis deleniti minus suscipit voluptatem
+												inventore illum reiciendis deserunt excepturi voluptate.
+											</p>
+										</div>
+									</div>
+
+									<!-- *2nd child-accord -->
+									<div
+										class="fund__faq__child-accord-q-and-a__container child-accordion__container"
+									>
+										<!-- (QUESTION) -->
+										<button
+											class="fund__faq__child-accord-question__button child-accordion__button"
+											id="child-accordion-button-2"
+											aria-expanded="false"
+											data-target="#child-accordion-content-2"
+										>
+											<p
+												class="fund__faq__child-accord-question child-accordion__button--text"
+											>
+												2 Lorem ipsum dolor sit amet consectetur adipisicing.
+											</p>
+
+											<span class="accordion__arrow" aria-hidden="true"></span>
+										</button>
+
+										<!-- (ANSWER) -->
+										<div
+											class="fund__faq__child__accord-answers__container child-accordion-content"
+											id="child-accordion-content-2"
+										>
+											<p
+												class="fund__faq__child__accord-answers child-accordion-content-text"
+											>
+												Lorem ipsum, dolor sit amet consectetur adipisicing
+												elit. Aliquam molestias officiis est assumenda ab atque
+												laboriosam quae natus voluptatem obcaecati accusantium
+												eius, voluptas blanditiis adipisci itaque! Dignissimos a
+												veritatis cupiditate!
+											</p>
+										</div>
+									</div>
+
+									<!-- *3rd child-accord -->
+									<div
+										class="fund__faq__child-accord-q-and-a__container child-accordion__container"
+									>
+										<!-- (QUESTION) -->
+										<button
+											class="fund__faq__child-accord-question__button child-accordion__button"
+											id="child-accordion-button-3"
+											aria-expanded="false"
+											data-target="#child-accordion-content-3"
+										>
+											<p
+												class="fund__faq__child-accord-question child-accordion__button--text"
+											>
+												3 Lorem ipsum dolor sit amet consectetur adipisicing.
+											</p>
+
+											<span class="accordion__arrow" aria-hidden="true"></span>
+										</button>
+
+										<!-- (ANSWER) -->
+										<div
+											class="fund__faq__child__accord-answers__container child-accordion-content"
+											id="child-accordion-content-3"
+										>
+											<p
+												class="fund__faq__child__accord-answers child-accordion-content-text"
+											>
+												Lorem ipsum dolor sit amet consectetur adipisicing elit.
+												Provident, porro.
+											</p>
+										</div>
+									</div>
+
+									<!-- *4th child-accord -->
+									<div
+										class="fund__faq__child-accord-q-and-a__container child-accordion__container"
+									>
+										<!-- (QUESTION) -->
+										<button
+											class="fund__faq__child-accord-question__button child-accordion__button"
+											id="child-accordion-button-1"
+											aria-expanded="false"
+											data-target="#child-accordion-content-4"
+										>
+											<p
+												class="fund__faq__child-accord-question child-accordion__button--text"
+											>
+												4 Lorem ipsum dolor sit amet consectetur adipisicing.
+											</p>
+
+											<span class="accordion__arrow" aria-hidden="true"></span>
+										</button>
+
+										<!-- (ANSWER) -->
+										<div
+											class="fund__faq__child__accord-answers__container child-accordion-content"
+											id="child-accordion-content-4"
+										>
+											<p
+												class="fund__faq__child__accord-answers child-accordion-content-text"
+											>
+												Lorem ipsum dolor sit amet consectetur adipisicing elit.
+												Provident, porro.
+											</p>
+										</div>
+									</div>
+
+									<!-- *5th child-accord -->
+									<div
+										class="fund__faq__child-accord-q-and-a__container child-accordion__container"
+									>
+										<!-- (QUESTION) -->
+										<button
+											class="fund__faq__child-accord-question__button child-accordion__button"
+											id="child-accordion-button-5"
+											aria-expanded="false"
+											data-target="#child-accordion-content-5"
+										>
+											<p
+												class="fund__faq__child-accord-question child-accordion__button--text"
+											>
+												5 Lorem ipsum dolor sit amet consectetur adipisicing.
+											</p>
+
+											<span class="accordion__arrow" aria-hidden="true"></span>
+										</button>
+
+										<!-- (ANSWER) -->
+										<div
+											class="fund__faq__child__accord-answers__container child-accordion-content"
+											id="child-accordion-content-5"
+										>
+											<p
+												class="fund__faq__child__accord-answers child-accordion-content-text"
+											>
+												Lorem ipsum dolor sit amet consectetur adipisicing elit.
+												Provident, porro.
+											</p>
+										</div>
+									</div>
+
+									<!-- *6th child-accord -->
+									<div
+										class="fund__faq__child-accord-q-and-a__container child-accordion__container"
+									>
+										<!-- (QUESTION) -->
+										<button
+											class="fund__faq__child-accord-question__button child-accordion__button"
+											id="child-accordion-button-6"
+											aria-expanded="false"
+											data-target="#child-accordion-content-6"
+										>
+											<p
+												class="fund__faq__child-accord-question child-accordion__button--text"
+											>
+												6 Lorem ipsum dolor sit amet consectetur adipisicing.
+											</p>
+
+											<span class="accordion__arrow" aria-hidden="true"></span>
+										</button>
+
+										<!-- (ANSWER) -->
+										<div
+											class="fund__faq__child__accord-answers__container child-accordion-content"
+											id="child-accordion-content-6"
+										>
+											<p
+												class="fund__faq__child__accord-answers child-accordion-content-text"
+											>
+												Lorem ipsum dolor sit amet consectetur adipisicing elit.
+												Provident, porro.
+											</p>
+										</div>
+									</div>
+
+									<!-- *7th child-accord -->
+									<div
+										class="fund__faq__child-accord-q-and-a__container child-accordion__container"
+									>
+										<!-- (QUESTION) -->
+										<button
+											class="fund__faq__child-accord-question__button child-accordion__button"
+											id="child-accordion-button-7"
+											aria-expanded="false"
+											data-target="#child-accordion-content-7"
+										>
+											<p
+												class="fund__faq__child-accord-question child-accordion__button--text"
+											>
+												7 Lorem ipsum dolor sit amet consectetur adipisicing.
+											</p>
+
+											<span class="accordion__arrow" aria-hidden="true"></span>
+										</button>
+
+										<!-- (ANSWER) -->
+										<div
+											class="fund__faq__child__accord-answers__container child-accordion-content"
+											id="child-accordion-content-7"
+										>
+											<p
+												class="fund__faq__child__accord-answers child-accordion-content-text"
+											>
+												Lorem ipsum dolor sit amet consectetur adipisicing elit.
+												Provident, porro.
+											</p>
+										</div>
+									</div>
+
+									<!-- *8th child-accord -->
+									<div
+										class="fund__faq__child-accord-q-and-a__container child-accordion__container"
+									>
+										<!-- (QUESTION) -->
+										<button
+											class="fund__faq__child-accord-question__button child-accordion__button"
+											id="child-accordion-button-8"
+											aria-expanded="false"
+											data-target="#child-accordion-content-8"
+										>
+											<p
+												class="fund__faq__child-accord-question child-accordion__button--text"
+											>
+												8 Lorem ipsum dolor sit amet consectetur adipisicing.
+											</p>
+
+											<span class="accordion__arrow" aria-hidden="true"></span>
+										</button>
+
+										<!-- (ANSWER) -->
+										<div
+											class="fund__faq__child__accord-answers__container child-accordion-content"
+											id="child-accordion-content-8"
+										>
+											<p
+												class="fund__faq__child__accord-answers child-accordion-content-text"
+											>
+												Lorem ipsum dolor sit amet consectetur adipisicing elit.
+												Provident, porro.
+											</p>
+										</div>
+									</div>
+
+									<!-- *9th child-accord -->
+									<div
+										class="fund__faq__child-accord-q-and-a__container child-accordion__container"
+									>
+										<!-- (QUESTION) -->
+										<button
+											class="fund__faq__child-accord-question__button child-accordion__button"
+											id="child-accordion-button-9"
+											aria-expanded="false"
+											data-target="#child-accordion-content-9"
+										>
+											<p
+												class="fund__faq__child-accord-question child-accordion__button--text"
+											>
+												9 Lorem ipsum dolor sit amet consectetur adipisicing.
+											</p>
+
+											<span class="accordion__arrow" aria-hidden="true"></span>
+										</button>
+
+										<!-- (ANSWER) -->
+										<div
+											class="fund__faq__child__accord-answers__container child-accordion-content"
+											id="child-accordion-content-9"
+										>
+											<p
+												class="fund__faq__child__accord-answers child-accordion-content-text"
+											>
+												Lorem ipsum dolor sit amet consectetur adipisicing elit.
+												Provident, porro.
+											</p>
+										</div>
+									</div>
+
+									<!-- *10th child-accord -->
+									<div
+										class="fund__faq__child-accord-q-and-a__container child-accordion__container"
+									>
+										<!-- (QUESTION) -->
+										<button
+											class="fund__faq__child-accord-question__button child-accordion__button"
+											id="child-accordion-button-10"
+											aria-expanded="false"
+											data-target="#child-accordion-content-10"
+										>
+											<p
+												class="fund__faq__child-accord-question child-accordion__button--text"
+											>
+												10 Lorem ipsum dolor sit amet consectetur adipisicing.
+											</p>
+
+											<span class="accordion__arrow" aria-hidden="true"></span>
+										</button>
+
+										<!-- (ANSWER) -->
+										<div
+											class="fund__faq__child__accord-answers__container child-accordion-content"
+											id="child-accordion-content-10"
+										>
+											<p
+												class="fund__faq__child__accord-answers child-accordion-content-text"
+											>
+												Lorem ipsum dolor sit amet consectetur adipisicing elit.
+												Provident, porro.
+											</p>
+										</div>
+									</div>
+
+									<!-- *11th child-accord -->
+									<div
+										class="fund__faq__child-accord-q-and-a__container child-accordion__container"
+									>
+										<!-- (QUESTION) -->
+										<button
+											class="fund__faq__child-accord-question__button child-accordion__button"
+											id="child-accordion-button-11"
+											aria-expanded="false"
+											data-target="#child-accordion-content-11"
+										>
+											<p
+												class="fund__faq__child-accord-question child-accordion__button--text"
+											>
+												11 Lorem ipsum dolor sit amet consectetur adipisicing.
+											</p>
+
+											<span class="accordion__arrow" aria-hidden="true"></span>
+										</button>
+
+										<!-- (ANSWER) -->
+										<div
+											class="fund__faq__child__accord-answers__container child-accordion-content"
+											id="child-accordion-content-11"
+										>
+											<p
+												class="fund__faq__child__accord-answers child-accordion-content-text"
+											>
+												Lorem ipsum dolor sit amet consectetur adipisicing elit.
+												Provident, porro.
+											</p>
+										</div>
+									</div>
+
+									<!-- *12th child-accord -->
+									<div
+										class="fund__faq__child-accord-q-and-a__container child-accordion__container"
+									>
+										<!-- (QUESTION) -->
+										<button
+											class="fund__faq__child-accord-question__button child-accordion__button"
+											id="child-accordion-button-12"
+											aria-expanded="false"
+											data-target="#child-accordion-content-12"
+										>
+											<p
+												class="fund__faq__child-accord-question child-accordion__button--text"
+											>
+												12 Lorem ipsum dolor sit amet consectetur adipisicing.
+											</p>
+
+											<span class="accordion__arrow" aria-hidden="true"></span>
+										</button>
+
+										<!-- (ANSWER) -->
+										<div
+											class="fund__faq__child__accord-answers__container child-accordion-content"
+											id="child-accordion-content-12"
+										>
+											<p
+												class="fund__faq__child__accord-answers child-accordion-content-text"
+											>
+												Lorem ipsum dolor sit amet consectetur adipisicing elit.
+												Provident, porro.
+											</p>
+										</div>
+									</div>
+
+									<!-- *13th child-accord -->
+									<div
+										class="fund__faq__child-accord-q-and-a__container child-accordion__container"
+									>
+										<!-- (QUESTION) -->
+										<button
+											class="fund__faq__child-accord-question__button child-accordion__button"
+											id="child-accordion-button-13"
+											aria-expanded="false"
+											data-target="#child-accordion-content-13"
+										>
+											<p
+												class="fund__faq__child-accord-question child-accordion__button--text"
+											>
+												13 Lorem ipsum dolor sit amet consectetur adipisicing.
+											</p>
+
+											<span class="accordion__arrow" aria-hidden="true"></span>
+										</button>
+
+										<!-- (ANSWER) -->
+										<div
+											class="fund__faq__child__accord-answers__container child-accordion-content"
+											id="child-accordion-content-13"
+										>
+											<p
+												class="fund__faq__child__accord-answers child-accordion-content-text"
+											>
+												Lorem ipsum dolor sit amet consectetur adipisicing elit.
+												Provident, porro.
+											</p>
+										</div>
+									</div>
+
+									<!-- *14th child-accord -->
+									<div
+										class="fund__faq__child-accord-q-and-a__container child-accordion__container"
+									>
+										<!-- (QUESTION) -->
+										<button
+											class="fund__faq__child-accord-question__button child-accordion__button"
+											id="child-accordion-button-14"
+											aria-expanded="false"
+											data-target="#child-accordion-content-14"
+										>
+											<p
+												class="fund__faq__child-accord-question child-accordion__button--text"
+											>
+												14 Lorem ipsum dolor sit amet consectetur adipisicing.
+											</p>
+
+											<span class="accordion__arrow" aria-hidden="true"></span>
+										</button>
+
+										<!-- (ANSWER) -->
+										<div
+											class="fund__faq__child__accord-answers__container child-accordion-content"
+											id="child-accordion-content-14"
+										>
+											<p
+												class="fund__faq__child__accord-answers child-accordion-content-text"
+											>
+												Lorem ipsum dolor sit amet consectetur adipisicing elit.
+												Provident, porro.
+											</p>
+										</div>
+									</div>
+
+									<!-- *15th child-accord -->
+									<div
+										class="fund__faq__child-accord-q-and-a__container child-accordion__container"
+									>
+										<!-- (QUESTION) -->
+										<button
+											class="fund__faq__child-accord-question__button child-accordion__button"
+											id="child-accordion-button-15"
+											aria-expanded="false"
+											data-target="#child-accordion-content-15"
+										>
+											<p
+												class="fund__faq__child-accord-question child-accordion__button--text"
+											>
+												15 Lorem ipsum dolor sit amet consectetur adipisicing.
+											</p>
+
+											<span class="accordion__arrow" aria-hidden="true"></span>
+										</button>
+
+										<!-- (ANSWER) -->
+										<div
+											class="fund__faq__child__accord-answers__container child-accordion-content"
+											id="child-accordion-content-15"
+										>
+											<p
+												class="fund__faq__child__accord-answers child-accordion-content-text"
+											>
+												Lorem ipsum dolor sit amet consectetur adipisicing elit.
+												Provident, porro.
+											</p>
+										</div>
+									</div>
+
+									<!-- *16th child-accord -->
+									<div
+										class="fund__faq__child-accord-q-and-a__container child-accordion__container"
+									>
+										<!-- (QUESTION) -->
+										<button
+											class="fund__faq__child-accord-question__button child-accordion__button"
+											id="child-accordion-button-16"
+											aria-expanded="false"
+											data-target="#child-accordion-content-16"
+										>
+											<p
+												class="fund__faq__child-accord-question child-accordion__button--text"
+											>
+												16 Lorem ipsum dolor sit amet consectetur adipisicing.
+											</p>
+
+											<span class="accordion__arrow" aria-hidden="true"></span>
+										</button>
+
+										<!-- (ANSWER) -->
+										<div
+											class="fund__faq__child__accord-answers__container child-accordion-content"
+											id="child-accordion-content-16"
+										>
+											<p
+												class="fund__faq__child__accord-answers child-accordion-content-text"
+											>
+												Lorem ipsum dolor sit amet consectetur adipisicing elit.
+												Provident, porro.
+											</p>
+										</div>
+									</div>
+
+									<!-- *17th child-accord -->
+									<div
+										class="fund__faq__child-accord-q-and-a__container child-accordion__container"
+									>
+										<!-- (QUESTION) -->
+										<button
+											class="fund__faq__child-accord-question__button child-accordion__button"
+											id="child-accordion-button-17"
+											aria-expanded="false"
+											data-target="#child-accordion-content-17"
+										>
+											<p
+												class="fund__faq__child-accord-question child-accordion__button--text"
+											>
+												17 Lorem ipsum dolor sit amet consectetur adipisicing.
+											</p>
+
+											<span class="accordion__arrow" aria-hidden="true"></span>
+										</button>
+
+										<!-- (ANSWER) -->
+										<div
+											class="fund__faq__child__accord-answers__container child-accordion-content"
+											id="child-accordion-content-17"
+										>
+											<p
+												class="fund__faq__child__accord-answers child-accordion-content-text"
+											>
+												Lorem ipsum dolor sit amet consectetur adipisicing elit.
+												Provident, porro.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- 6th-parent accord item -->
+							<!-- *YOUR QG PROFILE -->
+							<div
+								class="fund__faq__parent-accordion-item parent__accordion__item__container"
+								id="parent-accordion-button-6-content"
+							>
+								<h3
+									class="fund__faq__parent__accordion-item__heading parent__accordion__item--heading"
+								>
+									Your QG Profile
+								</h3>
+
+								<div
+									class="fund__faq__child-accord-q-and-a__wrapper child__accordion__wrapper"
+								>
+									<!-- *1st child-accord -->
+									<div
+										class="fund__faq__child-accord-q-and-a__container child-accordion__container"
+									>
+										<!-- (QUESTION) -->
+										<button
+											class="fund__faq__child-accord-question__button child-accordion__button"
+											id="child-accordion-button-1"
+											aria-expanded="false"
+											data-target="#child-accordion-content-1"
+										>
+											<p
+												class="fund__faq__child-accord-question child-accordion__button--text"
+											>
+												1 Lorem ipsum dolor sit amet consectetur adipisicing.
+											</p>
+
+											<span class="accordion__arrow" aria-hidden="false"></span>
+										</button>
+
+										<!-- (ANSWER) -->
+										<div
+											class="fund__faq__child__accord-answers__container child-accordion-content"
+											id="child-accordion-content-1"
+										>
+											<p
+												class="fund__faq__child__accord-answers child-accordion-content-text"
+											>
+												Lorem ipsum dolor sit amet consectetur adipisicing elit.
+												Quibusdam, facilis deleniti minus suscipit voluptatem
+												inventore illum reiciendis deserunt excepturi voluptate.
+											</p>
+										</div>
+									</div>
+
+									<!-- *2nd child-accord -->
+									<div
+										class="fund__faq__child-accord-q-and-a__container child-accordion__container"
+									>
+										<!-- (QUESTION) -->
+										<button
+											class="fund__faq__child-accord-question__button child-accordion__button"
+											id="child-accordion-button-2"
+											aria-expanded="false"
+											data-target="#child-accordion-content-2"
+										>
+											<p
+												class="fund__faq__child-accord-question child-accordion__button--text"
+											>
+												2 Lorem ipsum dolor sit amet consectetur adipisicing.
+											</p>
+
+											<span class="accordion__arrow" aria-hidden="true"></span>
+										</button>
+
+										<!-- (ANSWER) -->
+										<div
+											class="fund__faq__child__accord-answers__container child-accordion-content"
+											id="child-accordion-content-2"
+										>
+											<p
+												class="fund__faq__child__accord-answers child-accordion-content-text"
+											>
+												Lorem ipsum, dolor sit amet consectetur adipisicing
+												elit. Aliquam molestias officiis est assumenda ab atque
+												laboriosam quae natus voluptatem obcaecati accusantium
+												eius, voluptas blanditiis adipisci itaque! Dignissimos a
+												veritatis cupiditate!
+											</p>
+										</div>
+									</div>
+
+									<!-- *3rd child-accord -->
+									<div
+										class="fund__faq__child-accord-q-and-a__container child-accordion__container"
+									>
+										<!-- (QUESTION) -->
+										<button
+											class="fund__faq__child-accord-question__button child-accordion__button"
+											id="child-accordion-button-3"
+											aria-expanded="false"
+											data-target="#child-accordion-content-3"
+										>
+											<p
+												class="fund__faq__child-accord-question child-accordion__button--text"
+											>
+												3 Lorem ipsum dolor sit amet consectetur adipisicing.
+											</p>
+
+											<span class="accordion__arrow" aria-hidden="true"></span>
+										</button>
+
+										<!-- (ANSWER) -->
+										<div
+											class="fund__faq__child__accord-answers__container child-accordion-content"
+											id="child-accordion-content-3"
+										>
+											<p
+												class="fund__faq__child__accord-answers child-accordion-content-text"
+											>
+												Lorem ipsum dolor sit amet consectetur adipisicing elit.
+												Provident, porro.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- 7th-parent accord item -->
+							<!-- *SECURITY -->
+							<div
+								class="fund__faq__parent-accordion-item parent__accordion__item__container"
+								id="parent-accordion-button-7-content"
+							>
+								<h3
+									class="fund__faq__parent__accordion-item__heading parent__accordion__item--heading"
+								>
+									Security
+								</h3>
+
+								<div
+									class="fund__faq__child-accord-q-and-a__wrapper child__accordion__wrapper"
+								>
+									<!-- *1st child-accord -->
+									<div
+										class="fund__faq__child-accord-q-and-a__container child-accordion__container"
+									>
+										<!-- (QUESTION) -->
+										<button
+											class="fund__faq__child-accord-question__button child-accordion__button"
+											id="child-accordion-button-1"
+											aria-expanded="false"
+											data-target="#child-accordion-content-1"
+										>
+											<p
+												class="fund__faq__child-accord-question child-accordion__button--text"
+											>
+												1 Lorem ipsum dolor sit amet consectetur adipisicing.
+											</p>
+
+											<span class="accordion__arrow" aria-hidden="false"></span>
+										</button>
+
+										<!-- (ANSWER) -->
+										<div
+											class="fund__faq__child__accord-answers__container child-accordion-content"
+											id="child-accordion-content-1"
+										>
+											<p
+												class="fund__faq__child__accord-answers child-accordion-content-text"
+											>
+												Lorem ipsum dolor sit amet consectetur adipisicing elit.
+												Quibusdam, facilis deleniti minus suscipit voluptatem
+												inventore illum reiciendis deserunt excepturi voluptate.
+											</p>
+										</div>
+									</div>
+
+									<!-- *2nd child-accord -->
+									<div
+										class="fund__faq__child-accord-q-and-a__container child-accordion__container"
+									>
+										<!-- (QUESTION) -->
+										<button
+											class="fund__faq__child-accord-question__button child-accordion__button"
+											id="child-accordion-button-2"
+											aria-expanded="false"
+											data-target="#child-accordion-content-2"
+										>
+											<p
+												class="fund__faq__child-accord-question child-accordion__button--text"
+											>
+												2 Lorem ipsum dolor sit amet consectetur adipisicing.
+											</p>
+
+											<span class="accordion__arrow" aria-hidden="true"></span>
+										</button>
+
+										<!-- (ANSWER) -->
+										<div
+											class="fund__faq__child__accord-answers__container child-accordion-content"
+											id="child-accordion-content-2"
+										>
+											<p
+												class="fund__faq__child__accord-answers child-accordion-content-text"
+											>
+												Lorem ipsum, dolor sit amet consectetur adipisicing
+												elit. Aliquam molestias officiis est assumenda ab atque
+												laboriosam quae natus voluptatem obcaecati accusantium
+												eius, voluptas blanditiis adipisci itaque! Dignissimos a
+												veritatis cupiditate!
+											</p>
+										</div>
+									</div>
+
+									<!-- *3rd child-accord -->
+									<div
+										class="fund__faq__child-accord-q-and-a__container child-accordion__container"
+									>
+										<!-- (QUESTION) -->
+										<button
+											class="fund__faq__child-accord-question__button child-accordion__button"
+											id="child-accordion-button-3"
+											aria-expanded="false"
+											data-target="#child-accordion-content-3"
+										>
+											<p
+												class="fund__faq__child-accord-question child-accordion__button--text"
+											>
+												3 Lorem ipsum dolor sit amet consectetur adipisicing.
+											</p>
+
+											<span class="accordion__arrow" aria-hidden="true"></span>
+										</button>
+
+										<!-- (ANSWER) -->
+										<div
+											class="fund__faq__child__accord-answers__container child-accordion-content"
+											id="child-accordion-content-3"
+										>
+											<p
+												class="fund__faq__child__accord-answers child-accordion-content-text"
+											>
+												Lorem ipsum dolor sit amet consectetur adipisicing elit.
+												Provident, porro.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- ---------START OF 3 STEPS TO SAVE & INVEST--------- -->
+				<section class="fund-get-started__section">
+					<div class="fund-get-started__container">
+						<div class="fund-get-started__header__container">
+							<p class="fund-get-started__header">how to get started</p>
+						</div>
+
+						<div class="fund-get-started__wrapper">
+							<div class="fund-get-started__number-steps__container">
+								<div class="fund-get-started__number-steps">1</div>
+								<div class="get-started__horizontal__line"></div>
+								<div class="fund-get-started__number-steps">2</div>
+								<div class="get-started__horizontal__line"></div>
+								<div class="fund-get-started__number-steps">3</div>
+							</div>
+
+							<div class="fund-get-started__text-steps__container">
+								<div class="fund-get-started__text-steps">
+									<h4 class="fund-get-started__text-steps-header">
+										Create an account
+									</h4>
+
+									<p class="fund-get-started__text-steps-p">
+										Simply click on the "Register" and enter some basic details.
+									</p>
+								</div>
+
+								<div class="fund-get-started__text-steps">
+									<h4 class="fund-get-started__text-steps-header">
+										Fund your account
+									</h4>
+
+									<p class="fund-get-started__text-steps-p">
+										You fund your account by adding money to your
+										<span class="sentence__no-wrap">QG-wallet</span>.
+									</p>
+								</div>
+
+								<div class="fund-get-started__text-steps">
+									<h4 class="fund-get-started__text-steps-header">
+										Save & Invest
+									</h4>
+
+									<p class="fund-get-started__text-steps-p">
+										You select a plan that suits your financial goal and
+										activate it.
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="get-started__start__now">
+							<a
+								class="get-started__start__now__link link-to-button"
+								href="#"
+								target="_self"
+								>Start now</a
+							>
+						</div>
+					</div>
+				</section>
+
+				<!-- -------start of FOOTER section------- -->
+				<footer class="footer">
+					<!-- footer section1 -->
+					<div class="footer__section1-container">
+						<div class="footer__section1-part1__container">
+							<!-- footer sub-section for Products -->
+							<div class="footer__products section1-item">
+								<h3 class="footer__section1__sub-heading">Products</h3>
+
+								<ul class="footer__list-text list__no-style">
+									<li>
+										<a
+											class="footer__links pad-marg-0"
+											href="../IAS/html__ias.html"
+											>Investment Analytics Software</a
+										>
+									</li>
+
+									<li>
+										<a
+											class="footer__links pad-marg-0"
+											href="../signalapp/html__signalapp.html"
+											>Signal App</a
+										>
+									</li>
+
+									<li>
+										<a class="footer__links pad-marg-0" href="#">
+											Save & Invest</a
+										>
+									</li>
+								</ul>
+							</div>
+
+							<!-- footer sub-section for Company -->
+							<div class="footer__company section1-item">
+								<h3 class="footer__section1__sub-heading">Company</h3>
+
+								<ul class="footer__list-text list__no-style">
+									<li>
+										<a
+											class="footer__links pad-marg-0"
+											href="../about-us/html__about-us.html"
+											>About Us</a
+										>
+									</li>
+
+									<li>
+										<a
+											class="footer__links pad-marg-0"
+											href="../blog/html__blog.html"
+											>Blog</a
+										>
+									</li>
+
+									<li>
+										<a
+											class="footer__links pad-marg-0"
+											href="../faq/html__faq.html"
+											>FAQ</a
+										>
+									</li>
+
+									<li>
+										<a
+											class="footer__links pad-marg-0"
+											href="../contact/html__contact-us.html"
+											>Contact Us</a
+										>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="footer__section1-part2__container">
+							<!-- footer sub-section for Legal -->
+							<div class="footer__legal section1-item">
+								<h3 class="footer__section1__sub-heading">Legal</h3>
+
+								<ul class="footer__list-text list__no-style">
+									<li>
+										<a class="footer__links pad-marg-0" href="#"
+											>Terms & Conditions</a
+										>
+									</li>
+
+									<li>
+										<a class="footer__links pad-marg-0" href="#"
+											>Privacy Policy</a
+										>
+									</li>
+								</ul>
+							</div>
+
+							<!-- footer sub-section for Contact details -->
+							<div class="footer__contact-details section1-item">
+								<h3
+									class="footer__section1__sub-heading contact-details visible__nooo"
+								>
+									Contact Us
+								</h3>
+
+								<ul class="footer__list-text list__no-style">
+									<li class="contact-email">
+										<a class="footer__links pad-marg-0 no-hover-effect-1"
+											>contact@questergate.com</a
+										>
+									</li>
+
+									<li class="contact-phone">+234 814 447 7866</li>
+								</ul>
+
+								<div class="socials__container contact-social">
+									<a href="#" class="socials__link" target="_blank"
+										><img
+											class="socials__link-image"
+											src="../../../images/facebook-symbol--smallest.jpg"
+											alt="facebook logo"
+										/>
+									</a>
+
+									<a href="#" class="socials__link" target="_blank"
+										><img
+											class="socials__link-image"
+											src="../../../images/LinkedIn_icon_circle--smallest.jpg"
+											alt="linkedin logo"
+										/>
+									</a>
+
+									<a href="#" class="socials__link" target="_blank"
+										><img
+											class="socials__link-image"
+											src="../../../images/instagram-logo-icon-7--smaller.jpg"
+											alt="instagram logo"
+										/>
+									</a>
+
+									<a href="#" class="socials__link" target="_blank"
+										><img
+											class="socials__link-image"
+											src="../../../images/twitter-X-symbol.png"
+											alt="twitter logo"
+										/>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- <hr class="hr-horizontal-line"/> -->
+					<div class="footer-horizontal-line"></div>
+
+					<div class="footer__section2-container">
+						<div class="copyright">
+							<p class="footer__other-text">
+								© <span id="current__year"></span> Questergate. All rights
+								reserved. | RC-1814438
+							</p>
+						</div>
+					</div>
+				</footer>
+			</main>
+		</div>
+
+		<script src="../../js-components/back-to-top.js"></script>
+		<script src="../../js-components/header__hamburger.js"></script>
+		<script src="../../js-components/accordion__fund-faq__parent__accordion--open-only.js"></script>
+		<script src="../../js-components/accordion__fund-faq__child__accordion.js"></script>
+		<script src="../../js-components/accordion__fund-faq__scroll-into-view.js"></script>
+
+		<script src="../../js-components/section__visible__on__scroll.js"></script>
+		<script src="../../js-components/footer__currentyear__auto.js"></script>
+	</body>
+</html>

@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 			// Calculate the final offset to center the container vertically
 			var offset =
-				verticalCenterOffset - fundContainer.getBoundingClientRect().height / 3;
+				verticalCenterOffset - fundContainer.getBoundingClientRect().height / 2;
 
 			// Scroll to the accordion__scroll__to__view__top-border with the adjusted offset
 			if (fundContainer) {
