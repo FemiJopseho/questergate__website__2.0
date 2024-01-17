@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function () {
 // *when you click Investment Accordion Button
 document.addEventListener("DOMContentLoaded", function () {
 	// Set the offset value (in pixels) from the top of the viewport
-	var offsetValue = 100;
+	var offsetValue = 50;
 
 	// Get all elements with class A= "investment__calc__accordion__button"
 	var buttons = document.querySelectorAll(
@@ -70,9 +70,9 @@ document.addEventListener("DOMContentLoaded", function () {
 	// Add click event listener to each button
 	buttons.forEach(function (button) {
 		button.addEventListener("click", function () {
-			// Get the element with class B= "savings__calc__section"
-			// i used savings__calc__section here cos investment__calc__section gave me issues
-			var heading = document.querySelector(".savings__calc__section");
+			// Get the element with class B= "fund-calc__title"
+			// i used "fund-calc__title" here cos investment__calc__section gave me issues
+			var heading = document.querySelector(".fund-calc__title");
 
 			// Calculate the scroll position by subtracting the offset value
 			var scrollPosition = heading.offsetTop - offsetValue;

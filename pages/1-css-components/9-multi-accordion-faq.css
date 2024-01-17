@@ -137,7 +137,8 @@ html {
 		/* outline: 2px solid brown; */
 
 		border-bottom: 10px solid var(--clr-gen-website-bckgrd);
-		width: 97%;
+		width: 98%;
+		margin: 0 auto;
 	}
 
 	/* styling the always visible part of the child accordion */
@@ -166,7 +167,7 @@ html {
 
 		display: block;
 		padding: 0rem;
-		width: 85%;
+		width: 88%;
 
 		font-family: var(--ff-primary);
 		font-size: var(--fs-800);
@@ -308,9 +309,9 @@ html {
 		transform: translate(-50%, -50%);
 
 		/* the circle */
-		width: 30px;
-		height: 30px;
-		border-radius: 30px;
+		width: 25px;
+		height: 25px;
+		border-radius: 25px;
 
 		border: none;
 		background-color: var(--clr-secondary-650);
@@ -324,7 +325,7 @@ html {
 		position: absolute;
 		content: "";
 
-		padding: 0.3rem;
+		padding: 0.2rem;
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%) rotate(45deg);
@@ -342,7 +343,7 @@ html {
 		padding: 1rem 0rem;
 
 		font-family: var(--ff-primary);
-		font-size: var(--fs-700);
+		font-size: var(--fs-800);
 		font-weight: var(--fw-regular);
 		line-height: var(--lh-410);
 		text-align: left;
@@ -359,7 +360,8 @@ html {
 		/* outline: 2px solid brown; */
 
 		border-bottom: 10px solid var(--clr-gen-website-bckgrd);
-		width: 97%;
+		width: 98%;
+		margin: 0 auto;
 	}
 
 	/* styling the always visible part of the child accordion */
@@ -390,7 +392,7 @@ html {
 
 		display: block;
 		padding: 0;
-		width: 80%;
+		width: 85%;
 
 		font-family: var(--ff-primary);
 		font-size: var(--fs-800);
@@ -411,9 +413,9 @@ html {
 		transform: translate(-50%, -50%);
 
 		/* the circle */
-		width: 30px;
-		height: 30px;
-		border-radius: 30px;
+		width: 25px;
+		height: 25px;
+		border-radius: 25px;
 
 		border: none;
 		background-color: var(--clr-neutral-white-2);
@@ -427,7 +429,7 @@ html {
 		position: absolute;
 		content: "";
 
-		padding: 0.3rem;
+		padding: 0.2rem;
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%) rotate(45deg);
@@ -563,7 +565,7 @@ html {
 		padding: 1rem 0rem;
 
 		font-family: var(--ff-primary);
-		font-size: var(--fs-700);
+		font-size: var(--fs-800);
 		font-weight: var(--fw-regular);
 		line-height: var(--lh-410);
 		text-align: left;
@@ -579,7 +581,8 @@ html {
 		/* outline: 2px solid brown; */
 
 		border-bottom: 15px solid var(--clr-gen-website-bckgrd);
-		width: 90%;
+		width: 98%;
+		margin: 0 auto;
 	}
 
 	/* styling the always visible part of the child accordion */
