@@ -1181,7 +1181,7 @@
 		/* outline: 2px solid red; */
 
 		height: auto;
-		width: 100%;
+		width: var(--width__always-fill);
 		min-width: var(--min-width__header);
 		margin: 0 auto;
 		padding: 0.5rem;
@@ -1232,8 +1232,8 @@
 		justify-content: space-between;
 		align-items: center;
 
-		width: 100%;
-		max-width: var(--width__1200px);
+		width: var(--width__always-fill);
+		max-width: var(--width__1440px);
 		margin: 0 auto;
 	}
 
@@ -1256,7 +1256,6 @@
 		padding-bottom: 0;
 
 		width: 100%;
-		margin: 0 auto;
 	}
 
 	.navbar {

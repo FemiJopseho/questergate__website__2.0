@@ -1,0 +1,704 @@
+/* contains styles for: carousel swiper*/
+
+.testimonial__carousel__section {
+  /* outline: 4px solid gold; */
+
+  /* background-color: #d5e1ef; */
+  background-color: transparent;
+  /* background-image: linear-gradient(45deg,
+      var(--clr-gradient-100),
+      var(--clr-gradient-200)); */
+  width: 100%;
+  min-width: 250px;
+  max-width: 1440px;
+  margin: 0 auto;
+
+  height: 100%;
+}
+
+.testimonial__carousel__container {
+  /* outline: 4px solid black; */
+
+  width: 100%;
+
+  /* height == 100% of .testimonial__carousel__section */
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper {
+  /* outline: 3px dashed brown; */
+
+  width: 100%;
+  /* padding: 2rem 0; */
+  padding: 0;
+}
+
+.swiper-wrapper {
+  outline: 2px solid transparent;
+
+  /* width: 100%; */
+  /* overflow: hidden; */
+}
+
+.swiper-slide {
+  /* outline: 2px solid green; */
+
+  padding-top: 3rem;
+
+  /* center the .swiper-card within the .swiper-slide */
+  display: flex !important;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.swiper-card {
+  /* outline: 2px solid blue; */
+
+  background-color: #f9fafe;
+  opacity: 0.5;
+  box-shadow: none;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+
+  transition: transform 400ms;
+}
+
+.client__quote__container {
+  /* outline: 2px solid red; */
+
+  overflow-x: hidden;
+  overflow-y: hidden;
+  width: 90%;
+  max-width: 450px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.client__quote-icon {
+  /* outline: 2px solid pink; */
+
+  opacity: 0.05;
+  position: absolute;
+  top: 1%;
+  left: 1%;
+}
+
+.client__quote {
+  /* outline: 2px solid rebeccapurple; */
+
+  align-self: center;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  color: #73808c;
+}
+
+.client__profile__container {
+  /* outline: 2px solid yellowgreen; */
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.client__avatar {
+  /* outline: 2px solid pink; */
+
+  border: 5px solid #f9fafe;
+}
+
+.client__name-title__container {
+  /* outline: 2px solid pink; */
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.client__review__name {
+  font-family: "Hammersmith One", sans-serif;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.client__title {
+  /* outline: 2px solid purple; */
+
+  font-family: "Hammersmith One", sans-serif;
+  text-transform: capitalize;
+  font-weight: 400;
+  color: #7ccdc5;
+  font-style: italic;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  display: none !important;
+}
+
+.swiper-button-next:focus,
+.swiper-button-prev:focus {
+  outline: none;
+}
+
+.swiper__scroll {
+  /* outline: 2px solid lightsalmon; */
+
+  border: 4px solid red;
+}
+
+.pagination__container {
+  /* outline: 1px solid black; */
+
+  position: relative !important;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-pagination {
+  /* outline: 2px dashed skyblue; */
+
+  position: unset !important;
+
+}
+
+/* *Javascript influenced classes */
+.swiper-slide-active {
+  z-index: 1;
+  margin-top: 1rem;
+
+}
+
+.swiper-slide-active .swiper-card {
+  box-shadow: 0 8px 30px -7px #c9dff0;
+  opacity: 1;
+  transform: scale(1.4);
+}
+
+/** Mobile view */
+/* max-width: 500px */
+@media screen and (width <=31.25em) {
+  .swiper-card {
+    /* outline: 2px solid blue; */
+
+    /* will change with screen size */
+    /* make min-width <= 100px to avoid overlap */
+    min-width: 95px;
+
+    max-height: 310px;
+
+    border-radius: 10px;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+
+    row-gap: 0.8rem;
+  }
+
+  .swiper-slide-active .swiper-card {
+    padding-bottom: 0.3rem;
+
+    /* //////////////// */
+    @media screen and (width <=350px) {
+      min-width: 200px;
+
+      max-height: 300px;
+
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+    }
+
+    /* //////////////// */
+    @media screen and (width > 350px) and (width <=500px) {
+      min-width: 230px;
+      max-width: 320px;
+
+      min-height: 50dvh;
+      max-height: 400px;
+
+      padding-left: 0.6rem;
+      padding-right: 0.6rem;
+    }
+  }
+
+  .client__quote-icon {
+    /* outline: 2px solid pink; */
+
+    /* will change with screen size */
+    width: 30%;
+    height: 30px;
+
+    top: 3%;
+    left: 0%;
+  }
+
+  .swiper-slide-active .client__quote-icon {
+    /* outline: 2px solid red; */
+
+    /* //////////////// */
+    @media screen and (width <=350px) {
+      width: 30%;
+      height: 30px;
+
+      top: 3%;
+      left: 0%;
+    }
+
+    /* //////////////// */
+    @media screen and (width > 350px) and (width <=500px) {
+      width: 30%;
+      height: 30px;
+
+      top: 3%;
+      left: 0%;
+    }
+  }
+
+  .client__quote {
+    /* outline: 2px solid rebeccapurple; */
+
+    /* will change with screen size */
+    font-size: 0.8rem;
+    line-height: 1.5;
+  }
+
+  .client__profile__container {
+    /* outline: 2px solid yellowgreen; */
+
+    /* will change with screen size */
+    column-gap: 0.2rem;
+  }
+
+  .client__avatar {
+    /* outline: 2px solid pink; */
+
+    /* will change with screen size */
+    width: 50px;
+    height: 50px;
+    border-radius: 40px;
+    border: 5px solid #f9fafe;
+    box-shadow: 0 0 50px #ccc;
+  }
+
+  .client__name-title__container {
+    /* outline: 2px solid pink; */
+
+    row-gap: 0rem;
+  }
+
+  .client__review__name {
+    /* will change with screen size */
+    font-size: 0.8rem;
+    line-height: 1.0;
+  }
+
+  .client__title {
+    /* outline: 2px solid purple; */
+
+    /* will change with screen size */
+    font-size: 0.6rem;
+    line-height: 1.0;
+  }
+
+  .pagination__container {
+    /* outline: 1px solid black; */
+
+    margin-top: 4rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+/*        */
+/*        */
+/*        */
+/*        */
+/*        */
+
+/* Mobile landscape & Tablet Portrait screens */
+/* (min-width > 500px ) & (max-width <= 875px) */
+@media screen and (width > 31.25em) and (width <=54.68em) {
+  .swiper-card {
+    /* outline: 2px solid blue; */
+
+    /* will change with screen size */
+    /* make min-width < 200px to avoid overlaps */
+    min-width: 180px;
+    max-width: 500px;
+    margin: 0 auto;
+
+    min-height: 40dvh;
+    max-height: 250px;
+
+    border-radius: 10px;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    row-gap: 0.8rem;
+  }
+
+  .swiper-slide-active .swiper-card {
+    padding-top: 1rem;
+    padding-bottom: 0.3rem;
+
+    /* //////////////// */
+    @media screen and (width <=650px) {
+      min-width: 60dvw;
+      max-width: 500px;
+      margin: 0 auto;
+
+      min-height: 35dvh;
+      max-height: 250px;
+    }
+
+    /* //////////////// */
+    @media screen and (width > 650px) and (width <=875px) {
+      min-width: 60dvw;
+      max-width: 500px;
+      margin: 0 auto;
+
+      min-height: 35dvh;
+      max-height: 300px;
+    }
+  }
+
+  .client__quote-icon {
+    /* outline: 2px solid pink; */
+
+    /* will change with screen size */
+    width: 40px;
+    height: 40px;
+  }
+
+  .client__quote {
+    /* outline: 2px solid rebeccapurple; */
+
+    /* will change with screen size */
+    font-size: 0.8rem;
+    line-height: 1.5;
+  }
+
+  .client__profile__container {
+    /* outline: 2px solid yellowgreen; */
+
+    /* will change with screen size */
+    column-gap: 0.5rem;
+  }
+
+  .client__avatar {
+    /* outline: 2px solid pink; */
+
+    /* will change with screen size */
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    border: 5px solid #f9fafe;
+    box-shadow: 0 0 50px #ccc;
+  }
+
+  .client__name-title__container {
+    /* outline: 2px solid pink; */
+
+    row-gap: 0.1rem;
+  }
+
+  .client__review__name {
+    /* will change with screen size */
+    font-size: 1rem;
+    line-height: 1.0;
+  }
+
+  .client__title {
+    /* outline: 2px solid purple; */
+
+    /* will change with screen size */
+    font-size: 0.6rem;
+    line-height: 1.0;
+  }
+
+  .pagination__container {
+    /* outline: 1px solid black; */
+
+    margin-top: 4rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+/*        */
+/*        */
+/*        */
+/*        */
+/*        */
+
+/** Screens > 875px and <= 1400px */
+@media screen and (width > 54.68em) and (width <=87.5em) {
+  .swiper-card {
+    /* outline: 2px solid blue; */
+
+    /* will change with screen size */
+    /* make min-width < 250px to avoid overlaps */
+    min-width: 250px;
+    max-width: 600px;
+
+    min-height: 40dvh;
+    max-height: 300px;
+
+    border-radius: 10px;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    row-gap: 1rem;
+  }
+
+  .swiper-slide-active .swiper-card {
+
+    /* //////////////// */
+    @media screen and (width <=1000px) {
+      max-width: 400px;
+      margin: 0 auto;
+
+      min-height: 35dvh;
+      max-height: 250px;
+    }
+
+    /* //////////////// */
+    @media screen and (width > 1000px) and (width <=1400px) {
+      max-width: 500px;
+      margin: 0 auto;
+
+      min-height: 35dvh;
+      max-height: 300px;
+    }
+  }
+
+  .client__quote-icon {
+    /* outline: 2px solid pink; */
+
+    /* will change with screen size */
+    width: 40px;
+    height: 40px;
+  }
+
+  .swiper-slide-active .client__quote-icon {
+    /* outline: 2px solid red; */
+
+    /* //////////////// */
+    @media screen and (width <=1000px) {
+      width: 40px;
+      height: 40px;
+
+      top: 1%;
+      left: 0%;
+    }
+
+    /* //////////////// */
+    @media screen and (width > 1000px) and (width <=1400px) {
+      width: 40px;
+      height: 40px;
+
+      top: 1%;
+      left: 0%;
+    }
+  }
+
+  .client__quote {
+    /* outline: 2px solid rebeccapurple; */
+
+    /* will change with screen size */
+    font-size: 0.8rem;
+    line-height: 1.5;
+  }
+
+  .client__profile__container {
+    /* outline: 2px solid yellowgreen; */
+
+    /* will change with screen size */
+    column-gap: 0.5rem;
+  }
+
+  .client__avatar {
+    /* outline: 2px solid pink; */
+
+    /* will change with screen size */
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    border: 5px solid #f9fafe;
+    box-shadow: 0 0 50px #ccc;
+  }
+
+  .client__name-title__container {
+    /* outline: 2px solid pink; */
+
+    row-gap: 0.1rem;
+  }
+
+  .client__review__name {
+    /* will change with screen size */
+    font-size: 1rem;
+    line-height: 1.0;
+  }
+
+  .client__title {
+    /* outline: 2px solid purple; */
+
+    /* will change with screen size */
+    font-size: 0.6rem;
+    line-height: 1.0;
+  }
+
+  .pagination__container {
+    /* outline: 1px solid black; */
+
+    margin-top: 4rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+/*        */
+/*        */
+/*        */
+/*        */
+/*        */
+
+/** Screens > 1400px */
+@media screen and (width > 87.5em) {
+  .swiper-card {
+    /* outline: 2px solid blue; */
+
+    /* will change with screen size */
+    /* min-width: 350px; */
+    max-width: 600px;
+
+    min-height: 200px;
+
+    border-radius: 10px;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    row-gap: 1rem;
+  }
+
+  .client__quote-icon {
+    /* outline: 2px solid pink; */
+
+    /* will change with screen size */
+    width: 40px;
+    height: 40px;
+  }
+
+  .client__quote {
+    /* outline: 2px solid rebeccapurple; */
+
+    /* will change with screen size */
+    font-size: 0.8rem;
+    line-height: 1.5;
+  }
+
+  .client__profile__container {
+    /* outline: 2px solid yellowgreen; */
+
+    /* will change with screen size */
+    column-gap: 0.5rem;
+  }
+
+  .client__avatar {
+    /* outline: 2px solid pink; */
+
+    /* will change with screen size */
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    border: 5px solid #f9fafe;
+    box-shadow: 0 0 50px #ccc;
+  }
+
+  .client__name-title__container {
+    /* outline: 2px solid pink; */
+
+    row-gap: 0.2rem;
+  }
+
+  .client__review__name {
+    /* will change with screen size */
+    font-size: 1.3rem;
+    line-height: 1.0;
+  }
+
+  .client__title {
+    /* outline: 2px solid purple; */
+
+    /* will change with screen size */
+    font-size: 0.8rem;
+    line-height: 1.0;
+  }
+
+  .pagination__container {
+    /* outline: 1px solid black; */
+
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+  }
+}
+
+/*        */
+/*        */
+/*  Height media      */
+/*        */
+/*        */
+
+/* *for media with height <= 400px */
+/* @media screen and (max-height: 400px) {
+  .client__avatar {
+    width: 100px;
+    transform: translate(-50px, -50px);
+  }
+
+  .client__name-title__container {
+    margin: 40px 0 0 0;
+  }
+
+  .client__review__name {
+    font-size: 12px;
+  }
+
+  .client__title {
+    font-size: 10px;
+  }
+
+  .client__quote__container {
+    padding: 5px 20px 20px 20px;
+  }
+
+  .client__quote-icon {
+    width: 75px;
+    height: 75px;
+  }
+} */

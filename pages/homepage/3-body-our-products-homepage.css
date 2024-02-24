@@ -462,8 +462,8 @@
 		/* padding: 8rem 0 6rem 0; */
 		background-color: var(--clr-gen-website-bckgrd);
 
-		width: 100%;
-		max-width: var(--width__1200px);
+		width: var(--width__always-fill);
+		max-width: var(--width__1440px);
 		margin: 0 auto;
 
 		display: flex;
