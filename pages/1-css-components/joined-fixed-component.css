@@ -811,9 +811,9 @@ h6 {
 
   background-color: var(--clr-bckgrd-btn-pri-default);
   color: var(--clr-neutral-white-2);
-  max-width: var(--width__footer);
-  text-align: center;
+  width: var(--width__always-fill);
   margin: 0 auto;
+  text-align: center;
   padding: 3rem 3rem;
 
   /* to arrange section1 & section 2 */
@@ -824,9 +824,17 @@ h6 {
   align-items: flex-start;
 }
 
+.footer__section1-container {
+  /* outline: 2px solid cyan; */
+
+  width: var(--width__always-fill);
+  max-width: var(--width__1440px);
+  margin: 0 auto;
+}
+
 .footer-horizontal-line {
-  width: 100%;
-  max-width: var(--width__1200px);
+  width: var(--width__always-fill);
+  max-width: var(--width__1440px);
   border: 1px solid;
   border-color: var(--clr-horizontal-line-200);
   margin: 20px auto;
@@ -835,8 +843,8 @@ h6 {
 .footer__section2-container {
   /* outline: 2px solid blue; */
 
-  width: var(--width__footer__section1-container);
-  max-width: var(--width__1200px);
+  width: var(--width__always-fill);
+  max-width: var(--width__1440px);
   margin: 0 auto;
 
   /** to arrange section2 items */
