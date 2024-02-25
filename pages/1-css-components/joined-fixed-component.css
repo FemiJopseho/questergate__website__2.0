@@ -823,6 +823,15 @@ h6 {
   flex-wrap: nowrap;
   justify-content: center;
   align-items: flex-start;
+
+  /* ////////////////// */
+  border-top-left-radius: none;
+  border-top-right-radius: none;
+
+  @media screen and (width > 1440px) {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
 }
 
 .footer__section1-container {
