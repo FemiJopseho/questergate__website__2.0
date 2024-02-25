@@ -33,7 +33,7 @@ for (const slide of slides) {
 
 // /////////////////////////////////
 // Add a button with class "prev" and title "previous"
-const prevButton = document.querySelector(".prev");
+const prevButton = document.querySelector(".testimonial-carousel__scroll-left");
 if (prevButton) {
 	prevButton.addEventListener("click", () => {
 		swiper.slidePrev();
@@ -41,7 +41,9 @@ if (prevButton) {
 }
 
 // Add a button with class "next" and title "next"
-const nextButton = document.querySelector(".next");
+const nextButton = document.querySelector(
+	".testimonial-carousel__scroll-right"
+);
 if (nextButton) {
 	nextButton.addEventListener("click", () => {
 		swiper.slideNext();

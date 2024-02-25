@@ -78,6 +78,10 @@
 			rel="stylesheet"
 			href="../../1-css-components/6-utility-classes.css"
 		/>
+		<link
+			rel="stylesheet"
+			href="../../1-css-components/10-carousel--swipper--custom-1.css"
+		/>
 
 		<link
 			rel="stylesheet"
@@ -112,6 +116,16 @@
 		></script>
 
 		<script src="../../js-components/jquery-3.7.1.min.js"></script>
+
+		<!-- SWIPER -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+		/>
+
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+		<!-- End of SWIPER -->
 
 		<!-- ----------Page Title---------- -->
 		<title>Questergate Savings & Investment</title>
@@ -319,125 +333,246 @@
 							</div>
 
 							<!-- insert carousel cards here -->
-							<div class="testimonial-carousel-card__container">
-								<div class="testimonial-carousel noanimate">
-									<div class="testimonial-carousel__card testimonial__slides">
-										<p class="testimonial-card__client-words">
-											Lorem ipsum dolor sit amet consectetur Lorem amet
-											consectetur Lorem ipsum Lorem ipsum dolor sit amet
-											consectetur Lorem amet consectetur Lorem ipsum
-										</p>
+							<div class="testimonial__carousel__section">
+								<div class="testimonial__carousel__container">
+									<div class="swiper swiperCarousel">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide">
+												<div class="swiper-card">
+													<div class="client__quote__container">
+														<svg
+															class="client__quote-icon"
+															xmlns="http://www.w3.org/2000/svg"
+															viewBox="0 0 48 48"
+														>
+															<path
+																d="M 16.482422 8.9921875 A 1.50015 1.50015 0 0 0 15.943359 9.1074219 C 15.943359 9.1074219 13.068414 10.279429 10.357422 13.464844 C 7.6464301 16.650259 5 21.927419 5 30 A 1.50015 1.50015 0 0 0 5.015625 30.21875 A 8.5 8.5 0 0 0 13.5 39 A 8.5 8.5 0 0 0 13.5 22 A 8.5 8.5 0 0 0 8.7089844 23.480469 C 9.5777265 19.777157 11.122152 17.196657 12.642578 15.410156 C 14.931586 12.720571 17.056641 11.892578 17.056641 11.892578 A 1.50015 1.50015 0 0 0 16.482422 8.9921875 z M 37.482422 8.9921875 A 1.50015 1.50015 0 0 0 36.943359 9.1074219 C 36.943359 9.1074219 34.068414 10.279429 31.357422 13.464844 C 28.64643 16.650259 26 21.927419 26 30 A 1.50015 1.50015 0 0 0 26.015625 30.21875 A 8.5 8.5 0 0 0 34.5 39 A 8.5 8.5 0 0 0 34.5 22 A 8.5 8.5 0 0 0 29.708984 23.480469 C 30.577727 19.777157 32.122152 17.196657 33.642578 15.410156 C 35.931586 12.720571 38.056641 11.892578 38.056641 11.892578 A 1.50015 1.50015 0 0 0 37.482422 8.9921875 z"
+															/>
+														</svg>
 
-										<div class="testimonial-card__client-details">
-											<div class="testimonial-card__client-image__container">
-												<img
-													class="testimonial-card__client-image"
-													src=""
-													alt="client image"
-												/>
+														<p class="client__quote">
+															I must admit, as a software developer, I was
+															skeptical about the MindSync Neural Interface. But
+															once I saw how it could transform not just the way
+															I work but also how I engage with the world, I was
+															sold.
+														</p>
+													</div>
+
+													<div class="client__profile__container">
+														<img
+															class="client__avatar"
+															src="https://i.pravatar.cc/200?img=31"
+														/>
+
+														<div class="client__name-title__container">
+															<h1 class="client__review__name">Amy Liu</h1>
+															<h2 class="client__title">
+																Sr. Technology Analyst
+															</h2>
+														</div>
+													</div>
+												</div>
 											</div>
 
-											<p class="testimonial-card__client-name">Lorem Ipsum 1</p>
+											<div class="swiper-slide">
+												<div class="swiper-card">
+													<div class="client__quote__container">
+														<svg
+															class="client__quote-icon"
+															xmlns="http://www.w3.org/2000/svg"
+															viewBox="0 0 48 48"
+														>
+															<path
+																d="M 16.482422 8.9921875 A 1.50015 1.50015 0 0 0 15.943359 9.1074219 C 15.943359 9.1074219 13.068414 10.279429 10.357422 13.464844 C 7.6464301 16.650259 5 21.927419 5 30 A 1.50015 1.50015 0 0 0 5.015625 30.21875 A 8.5 8.5 0 0 0 13.5 39 A 8.5 8.5 0 0 0 13.5 22 A 8.5 8.5 0 0 0 8.7089844 23.480469 C 9.5777265 19.777157 11.122152 17.196657 12.642578 15.410156 C 14.931586 12.720571 17.056641 11.892578 17.056641 11.892578 A 1.50015 1.50015 0 0 0 16.482422 8.9921875 z M 37.482422 8.9921875 A 1.50015 1.50015 0 0 0 36.943359 9.1074219 C 36.943359 9.1074219 34.068414 10.279429 31.357422 13.464844 C 28.64643 16.650259 26 21.927419 26 30 A 1.50015 1.50015 0 0 0 26.015625 30.21875 A 8.5 8.5 0 0 0 34.5 39 A 8.5 8.5 0 0 0 34.5 22 A 8.5 8.5 0 0 0 29.708984 23.480469 C 30.577727 19.777157 32.122152 17.196657 33.642578 15.410156 C 35.931586 12.720571 38.056641 11.892578 38.056641 11.892578 A 1.50015 1.50015 0 0 0 37.482422 8.9921875 z"
+															/>
+														</svg>
+
+														<p class="client__quote">
+															I must admit, as a software developer, I was
+															skeptical about the MindSync Neural Interface. But
+															once I saw how it could transform not just the way
+															I work but also how I engage with the world, I was
+															sold.
+														</p>
+													</div>
+
+													<div class="client__profile__container">
+														<img
+															class="client__avatar"
+															src="https://i.pravatar.cc/200?img=26"
+														/>
+
+														<div class="client__name-title__container">
+															<h1 class="client__review__name">Amy Liu</h1>
+															<h2 class="client__title">
+																Sr. Technology Analyst
+															</h2>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="swiper-slide">
+												<div class="swiper-card">
+													<div class="client__quote__container">
+														<svg
+															class="client__quote-icon"
+															xmlns="http://www.w3.org/2000/svg"
+															viewBox="0 0 48 48"
+														>
+															<path
+																d="M 16.482422 8.9921875 A 1.50015 1.50015 0 0 0 15.943359 9.1074219 C 15.943359 9.1074219 13.068414 10.279429 10.357422 13.464844 C 7.6464301 16.650259 5 21.927419 5 30 A 1.50015 1.50015 0 0 0 5.015625 30.21875 A 8.5 8.5 0 0 0 13.5 39 A 8.5 8.5 0 0 0 13.5 22 A 8.5 8.5 0 0 0 8.7089844 23.480469 C 9.5777265 19.777157 11.122152 17.196657 12.642578 15.410156 C 14.931586 12.720571 17.056641 11.892578 17.056641 11.892578 A 1.50015 1.50015 0 0 0 16.482422 8.9921875 z M 37.482422 8.9921875 A 1.50015 1.50015 0 0 0 36.943359 9.1074219 C 36.943359 9.1074219 34.068414 10.279429 31.357422 13.464844 C 28.64643 16.650259 26 21.927419 26 30 A 1.50015 1.50015 0 0 0 26.015625 30.21875 A 8.5 8.5 0 0 0 34.5 39 A 8.5 8.5 0 0 0 34.5 22 A 8.5 8.5 0 0 0 29.708984 23.480469 C 30.577727 19.777157 32.122152 17.196657 33.642578 15.410156 C 35.931586 12.720571 38.056641 11.892578 38.056641 11.892578 A 1.50015 1.50015 0 0 0 37.482422 8.9921875 z"
+															/>
+														</svg>
+
+														<p class="client__quote">
+															I must admit, as a software developer, I was
+															skeptical about the MindSync Neural Interface. But
+															once I saw how it could transform not just the way
+															I work but also how I engage with the world, I was
+															sold.
+														</p>
+													</div>
+
+													<div class="client__profile__container">
+														<img
+															class="client__avatar"
+															src="https://i.pravatar.cc/200?img=69"
+														/>
+
+														<div class="client__name-title__container">
+															<h1 class="client__review__name">Amy Liu</h1>
+															<h2 class="client__title">
+																Sr. Technology Analyst
+															</h2>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="swiper-slide">
+												<div class="swiper-card">
+													<div class="client__quote__container">
+														<svg
+															class="client__quote-icon"
+															xmlns="http://www.w3.org/2000/svg"
+															viewBox="0 0 48 48"
+														>
+															<path
+																d="M 16.482422 8.9921875 A 1.50015 1.50015 0 0 0 15.943359 9.1074219 C 15.943359 9.1074219 13.068414 10.279429 10.357422 13.464844 C 7.6464301 16.650259 5 21.927419 5 30 A 1.50015 1.50015 0 0 0 5.015625 30.21875 A 8.5 8.5 0 0 0 13.5 39 A 8.5 8.5 0 0 0 13.5 22 A 8.5 8.5 0 0 0 8.7089844 23.480469 C 9.5777265 19.777157 11.122152 17.196657 12.642578 15.410156 C 14.931586 12.720571 17.056641 11.892578 17.056641 11.892578 A 1.50015 1.50015 0 0 0 16.482422 8.9921875 z M 37.482422 8.9921875 A 1.50015 1.50015 0 0 0 36.943359 9.1074219 C 36.943359 9.1074219 34.068414 10.279429 31.357422 13.464844 C 28.64643 16.650259 26 21.927419 26 30 A 1.50015 1.50015 0 0 0 26.015625 30.21875 A 8.5 8.5 0 0 0 34.5 39 A 8.5 8.5 0 0 0 34.5 22 A 8.5 8.5 0 0 0 29.708984 23.480469 C 30.577727 19.777157 32.122152 17.196657 33.642578 15.410156 C 35.931586 12.720571 38.056641 11.892578 38.056641 11.892578 A 1.50015 1.50015 0 0 0 37.482422 8.9921875 z"
+															/>
+														</svg>
+
+														<p class="client__quote">
+															I must admit, as a software developer, I was
+															skeptical about the MindSync Neural Interface. But
+															once I saw how it could transform not just the way
+															I work but also how I engage with the world, I was
+															sold.
+														</p>
+													</div>
+
+													<div class="client__profile__container">
+														<img
+															class="client__avatar"
+															src="https://i.pravatar.cc/200?img=59"
+														/>
+
+														<div class="client__name-title__container">
+															<h1 class="client__review__name">Amy Liu</h1>
+															<h2 class="client__title">
+																Sr. Technology Analyst
+															</h2>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="swiper-slide">
+												<div class="swiper-card">
+													<div class="client__quote__container">
+														<svg
+															class="client__quote-icon"
+															xmlns="http://www.w3.org/2000/svg"
+															viewBox="0 0 48 48"
+														>
+															<path
+																d="M 16.482422 8.9921875 A 1.50015 1.50015 0 0 0 15.943359 9.1074219 C 15.943359 9.1074219 13.068414 10.279429 10.357422 13.464844 C 7.6464301 16.650259 5 21.927419 5 30 A 1.50015 1.50015 0 0 0 5.015625 30.21875 A 8.5 8.5 0 0 0 13.5 39 A 8.5 8.5 0 0 0 13.5 22 A 8.5 8.5 0 0 0 8.7089844 23.480469 C 9.5777265 19.777157 11.122152 17.196657 12.642578 15.410156 C 14.931586 12.720571 17.056641 11.892578 17.056641 11.892578 A 1.50015 1.50015 0 0 0 16.482422 8.9921875 z M 37.482422 8.9921875 A 1.50015 1.50015 0 0 0 36.943359 9.1074219 C 36.943359 9.1074219 34.068414 10.279429 31.357422 13.464844 C 28.64643 16.650259 26 21.927419 26 30 A 1.50015 1.50015 0 0 0 26.015625 30.21875 A 8.5 8.5 0 0 0 34.5 39 A 8.5 8.5 0 0 0 34.5 22 A 8.5 8.5 0 0 0 29.708984 23.480469 C 30.577727 19.777157 32.122152 17.196657 33.642578 15.410156 C 35.931586 12.720571 38.056641 11.892578 38.056641 11.892578 A 1.50015 1.50015 0 0 0 37.482422 8.9921875 z"
+															/>
+														</svg>
+
+														<p class="client__quote">
+															I must admit, as a software developer, I was
+															skeptical about the MindSync Neural Interface. But
+															once I saw how it could transform not just the way
+															I work but also how I engage with the world, I was
+															sold.
+														</p>
+													</div>
+
+													<div class="client__profile__container">
+														<img
+															class="client__avatar"
+															src="https://i.pravatar.cc/200?img=49"
+														/>
+
+														<div class="client__name-title__container">
+															<h1 class="client__review__name">Amy Liu</h1>
+															<h2 class="client__title">
+																Sr. Technology Analyst
+															</h2>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="swiper-slide">
+												<div class="swiper-card">
+													<div class="client__quote__container">
+														<svg
+															class="client__quote-icon"
+															xmlns="http://www.w3.org/2000/svg"
+															viewBox="0 0 48 48"
+														>
+															<path
+																d="M 16.482422 8.9921875 A 1.50015 1.50015 0 0 0 15.943359 9.1074219 C 15.943359 9.1074219 13.068414 10.279429 10.357422 13.464844 C 7.6464301 16.650259 5 21.927419 5 30 A 1.50015 1.50015 0 0 0 5.015625 30.21875 A 8.5 8.5 0 0 0 13.5 39 A 8.5 8.5 0 0 0 13.5 22 A 8.5 8.5 0 0 0 8.7089844 23.480469 C 9.5777265 19.777157 11.122152 17.196657 12.642578 15.410156 C 14.931586 12.720571 17.056641 11.892578 17.056641 11.892578 A 1.50015 1.50015 0 0 0 16.482422 8.9921875 z M 37.482422 8.9921875 A 1.50015 1.50015 0 0 0 36.943359 9.1074219 C 36.943359 9.1074219 34.068414 10.279429 31.357422 13.464844 C 28.64643 16.650259 26 21.927419 26 30 A 1.50015 1.50015 0 0 0 26.015625 30.21875 A 8.5 8.5 0 0 0 34.5 39 A 8.5 8.5 0 0 0 34.5 22 A 8.5 8.5 0 0 0 29.708984 23.480469 C 30.577727 19.777157 32.122152 17.196657 33.642578 15.410156 C 35.931586 12.720571 38.056641 11.892578 38.056641 11.892578 A 1.50015 1.50015 0 0 0 37.482422 8.9921875 z"
+															/>
+														</svg>
+
+														<p class="client__quote">
+															I must admit, as a software developer, I was
+															skeptical about the MindSync Neural Interface. But
+															once I saw how it could transform not just the way
+															I work but also how I engage with the world, I was
+															sold.
+														</p>
+													</div>
+
+													<div class="client__profile__container">
+														<img
+															class="client__avatar"
+															src="https://i.pravatar.cc/200?img=68"
+														/>
+
+														<div class="client__name-title__container">
+															<h1 class="client__review__name">Amy Liu</h1>
+															<h2 class="client__title">
+																Sr. Technology Analyst
+															</h2>
+														</div>
+													</div>
+												</div>
+											</div>
 										</div>
-									</div>
 
-									<div class="testimonial-carousel__card testimonial__slides">
-										<p class="testimonial-card__client-words">
-											Lorem ipsum dolor sit amet consectetur Lorem amet
-											consectetur Lorem ipsum Lorem ipsum dolor sit amet
-											consectetur Lorem amet consectetur Lorem ipsum
-										</p>
+										<!-- swiper controls -->
+										<div class="swiper-button-next swiper__scroll"></div>
+										<div class="swiper-button-prev swiper__scroll"></div>
 
-										<div class="testimonial-card__client-details">
-											<div class="testimonial-card__client-image__container">
-												<img
-													class="testimonial-card__client-image"
-													src=""
-													alt="client image"
-												/>
-											</div>
-
-											<p class="testimonial-card__client-name">Lorem Ipsum 2</p>
-										</div>
-									</div>
-
-									<div class="testimonial-carousel__card testimonial__slides">
-										<p class="testimonial-card__client-words">
-											Lorem ipsum dolor sit amet consectetur Lorem amet
-											consectetur Lorem ipsum Lorem ipsum dolor sit amet
-											consectetur Lorem amet consectetur Lorem ipsum
-										</p>
-
-										<div class="testimonial-card__client-details">
-											<div class="testimonial-card__client-image__container">
-												<img
-													class="testimonial-card__client-image"
-													src=""
-													alt="client image"
-												/>
-											</div>
-
-											<p class="testimonial-card__client-name">Lorem Ipsum 3</p>
-										</div>
-									</div>
-
-									<div class="testimonial-carousel__card testimonial__slides">
-										<p class="testimonial-card__client-words">
-											Lorem ipsum dolor sit amet consectetur Lorem amet
-											consectetur Lorem ipsum Lorem ipsum dolor sit amet
-											consectetur Lorem amet consectetur Lorem ipsum
-										</p>
-
-										<div class="testimonial-card__client-details">
-											<div class="testimonial-card__client-image__container">
-												<img
-													class="testimonial-card__client-image"
-													src=""
-													alt="client image"
-												/>
-											</div>
-
-											<p class="testimonial-card__client-name">Lorem Ipsum 4</p>
-										</div>
-									</div>
-
-									<div class="testimonial-carousel__card testimonial__slides">
-										<p class="testimonial-card__client-words">
-											Lorem ipsum dolor sit amet consectetur Lorem amet
-											consectetur Lorem ipsum Lorem ipsum dolor sit amet
-											consectetur Lorem amet consectetur Lorem ipsum
-										</p>
-
-										<div class="testimonial-card__client-details">
-											<div class="testimonial-card__client-image__container">
-												<img
-													class="testimonial-card__client-image"
-													src=""
-													alt="client image"
-												/>
-											</div>
-
-											<p class="testimonial-card__client-name">Lorem Ipsum 5</p>
-										</div>
-									</div>
-
-									<div class="testimonial-carousel__card testimonial__slides">
-										<p class="testimonial-card__client-words">
-											Lorem ipsum dolor sit amet consectetur Lorem amet
-											consectetur Lorem ipsum Lorem ipsum dolor sit amet
-											consectetur Lorem amet consectetur Lorem ipsum
-										</p>
-
-										<div class="testimonial-card__client-details">
-											<div class="testimonial-card__client-image__container">
-												<img
-													class="testimonial-card__client-image"
-													src=""
-													alt="client image"
-												/>
-											</div>
-
-											<p class="testimonial-card__client-name">Lorem Ipsum 6</p>
+										<div class="pagination__container">
+											<!-- swiper pagination -->
+											<div class="swiper-pagination"></div>
 										</div>
 									</div>
 								</div>
@@ -941,14 +1076,10 @@
 
 						<div class="fund-what-we-invest-in__list__container">
 							<ul class="fund-what-we-invest-in__list">
-								<li class="fund-what-we-invest-in__list__items">
-									Stock Market
-								</li>
-
 								<li class="fund-what-we-invest-in__list__items">Bond Market</li>
 
 								<li class="fund-what-we-invest-in__list__items">
-									Real Estate Market
+									Currency Market
 								</li>
 
 								<li class="fund-what-we-invest-in__list__items">
@@ -956,7 +1087,11 @@
 								</li>
 
 								<li class="fund-what-we-invest-in__list__items">
-									Currency Market
+									Real Estate Market
+								</li>
+
+								<li class="fund-what-we-invest-in__list__items">
+									Stock Market
 								</li>
 							</ul>
 						</div>
@@ -1048,187 +1183,188 @@
 						</p>
 					</div>
 				</section>
-
-				<!-- -------start of FOOTER section------- -->
-				<footer class="footer">
-					<!-- footer section1 -->
-					<div class="footer__section1-container">
-						<div class="footer__section1-part1__container">
-							<!-- footer sub-section for Products -->
-							<div class="footer__products section1-item">
-								<h3 class="footer__section1__sub-heading">Products</h3>
-
-								<ul class="footer__list-text list__no-style">
-									<li>
-										<a
-											class="footer__links pad-marg-0"
-											href="../../IAS/html__ias.html"
-											>Investment Analytics Software</a
-										>
-									</li>
-
-									<li>
-										<a
-											class="footer__links pad-marg-0"
-											href="../../signalapp/html__signalapp.html"
-											>Signal App</a
-										>
-									</li>
-
-									<li>
-										<a
-											class="footer__links pad-marg-0"
-											href="../investment__homepage/html__investment.html"
-										>
-											Save & Invest</a
-										>
-									</li>
-								</ul>
-							</div>
-
-							<!-- footer sub-section for Company -->
-							<div class="footer__company section1-item">
-								<h3 class="footer__section1__sub-heading">Company</h3>
-
-								<ul class="footer__list-text list__no-style">
-									<li>
-										<a
-											class="footer__links pad-marg-0"
-											href="../../about-us/html__about-us.html"
-											>About Us</a
-										>
-									</li>
-
-									<li>
-										<a
-											class="footer__links pad-marg-0"
-											href="../../blog/html__blog.html"
-											>Blog</a
-										>
-									</li>
-
-									<li>
-										<a
-											class="footer__links pad-marg-0"
-											href="../../faq/html__faq.html"
-											>FAQ</a
-										>
-									</li>
-
-									<li>
-										<a
-											class="footer__links pad-marg-0"
-											href="../../contact/html__contact-us.html"
-											>Contact Us</a
-										>
-									</li>
-								</ul>
-							</div>
-						</div>
-
-						<div class="footer__section1-part2__container">
-							<!-- footer sub-section for Legal -->
-							<div class="footer__legal section1-item">
-								<h3 class="footer__section1__sub-heading">Legal</h3>
-
-								<ul class="footer__list-text list__no-style">
-									<li>
-										<a
-											class="footer__links pad-marg-0"
-											href="../../terms-conditions/html__terms-conditions.html"
-											>Terms & Conditions</a
-										>
-									</li>
-
-									<li>
-										<a
-											class="footer__links pad-marg-0"
-											href="../../privacy-policy/html__privacy-policy.html"
-											>Privacy Policy</a
-										>
-									</li>
-								</ul>
-							</div>
-
-							<!-- footer sub-section for Contact details -->
-							<div class="footer__contact-details section1-item">
-								<h3
-									class="footer__section1__sub-heading contact-details visible__nooo"
-								>
-									Contact Us
-								</h3>
-
-								<ul class="footer__list-text list__no-style">
-									<li class="contact-email">
-										<a class="footer__links pad-marg-0 no-hover-effect-1"
-											>contact@questergate.com</a
-										>
-									</li>
-
-									<li class="contact-phone">+234 814 447 7866</li>
-								</ul>
-
-								<div class="socials__container contact-social">
-									<a href="#" class="socials__link" target="_blank"
-										><img
-											class="socials__link-image"
-											src="../../../images/facebook-symbol--smallest.jpg"
-											alt="facebook logo"
-										/>
-									</a>
-
-									<a href="#" class="socials__link" target="_blank"
-										><img
-											class="socials__link-image"
-											src="../../../images/LinkedIn_icon_circle--smallest.jpg"
-											alt="linkedin logo"
-										/>
-									</a>
-
-									<a href="#" class="socials__link" target="_blank"
-										><img
-											class="socials__link-image"
-											src="../../../images/instagram-logo-icon-7--smaller.jpg"
-											alt="instagram logo"
-										/>
-									</a>
-
-									<a href="#" class="socials__link" target="_blank"
-										><img
-											class="socials__link-image"
-											src="../../../images/twitter-X-symbol.png"
-											alt="twitter logo"
-										/>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<!-- <hr class="hr-horizontal-line"/> -->
-					<div class="footer-horizontal-line"></div>
-
-					<div class="footer__section2-container">
-						<div class="copyright">
-							<p class="footer__other-text">
-								© <span id="current__year"></span> Questergate. All rights
-								reserved. | RC-1814438
-							</p>
-						</div>
-					</div>
-				</footer>
 			</main>
+
+			<!-- -------start of FOOTER section------- -->
+			<footer class="footer">
+				<!-- footer section1 -->
+				<div class="footer__section1-container">
+					<div class="footer__section1-part1__container">
+						<!-- footer sub-section for Products -->
+						<div class="footer__products section1-item">
+							<h3 class="footer__section1__sub-heading">Products</h3>
+
+							<ul class="footer__list-text list__no-style">
+								<li>
+									<a
+										class="footer__links pad-marg-0"
+										href="../IAS/html__ias.html"
+										>Investment Analytics Software</a
+									>
+								</li>
+
+								<li>
+									<a
+										class="footer__links pad-marg-0"
+										href="../signalapp/html__signalapp.html"
+										>Signal App</a
+									>
+								</li>
+
+								<li>
+									<a
+										class="footer__links pad-marg-0"
+										href="../investment/investment__homepage/html__investment.html"
+										>Fund Management</a
+									>
+								</li>
+
+								<!-- a list item MAY be appended here using js-->
+							</ul>
+						</div>
+
+						<!-- footer sub-section for Company -->
+						<div class="footer__company section1-item">
+							<h3 class="footer__section1__sub-heading">Company</h3>
+
+							<ul class="footer__list-text list__no-style">
+								<li>
+									<a
+										class="footer__links pad-marg-0"
+										href="../about-us/html__about-us.html"
+										>About Us</a
+									>
+								</li>
+
+								<li>
+									<a
+										class="footer__links pad-marg-0"
+										href="../blog/html__blog.html"
+										>Blog</a
+									>
+								</li>
+
+								<li>
+									<a
+										class="footer__links pad-marg-0"
+										href="../faq/html__faq.html"
+										>FAQ</a
+									>
+								</li>
+
+								<li>
+									<a
+										class="footer__links pad-marg-0"
+										href="../contact/html__contact-us.html"
+										>Contact Us</a
+									>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="footer__section1-part2__container">
+						<!-- footer sub-section for Legal -->
+						<div class="footer__legal section1-item">
+							<h3 class="footer__section1__sub-heading">Legal</h3>
+
+							<ul class="footer__list-text list__no-style">
+								<li>
+									<a
+										class="footer__links pad-marg-0"
+										href="../terms-conditions/html__terms-conditions.html"
+										>Terms & Conditions</a
+									>
+								</li>
+
+								<li>
+									<a
+										class="footer__links pad-marg-0"
+										href="../privacy-policy/html__privacy-policy.html"
+										>Privacy Policy</a
+									>
+								</li>
+							</ul>
+						</div>
+
+						<!-- footer sub-section for Contact details -->
+						<div class="footer__contact-details section1-item">
+							<h3
+								class="footer__section1__sub-heading contact-details visible__nooo"
+							>
+								Contact Us
+							</h3>
+
+							<ul class="footer__list-text list__no-style">
+								<li class="contact-email">
+									<a class="footer__links pad-marg-0 no-hover-effect-1"
+										>contact@questergate.com</a
+									>
+								</li>
+
+								<li class="contact-phone">+234 814 447 7866</li>
+							</ul>
+
+							<div class="socials__container contact-social">
+								<a href="#" class="socials__link" target="_blank"
+									><img
+										class="socials__link-image"
+										src="../../../images/facebook-symbol--smallest.jpg"
+										alt="facebook logo"
+									/>
+								</a>
+
+								<a href="#" class="socials__link" target="_blank"
+									><img
+										class="socials__link-image"
+										src="../../../images/LinkedIn_icon_circle--smallest.jpg"
+										alt="linkedin logo"
+									/>
+								</a>
+
+								<a href="#" class="socials__link" target="_blank"
+									><img
+										class="socials__link-image"
+										src="../../../images/instagram-logo-icon-7--smallest.jpg"
+										alt="instagram logo"
+									/>
+								</a>
+
+								<a href="#" class="socials__link" target="_blank"
+									><img
+										class="socials__link-image"
+										src="../../../images/twitter-X-symbol3.jpg"
+										alt="twitter logo"
+									/>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- <hr class="hr-horizontal-line"/> -->
+				<div class="footer-horizontal-line"></div>
+
+				<div class="footer__section2-container">
+					<div class="copyright">
+						<p class="footer__other-text">
+							© <span id="current__year"></span> Questergate. All rights
+							reserved. | RC-1814438
+						</p>
+					</div>
+				</div>
+			</footer>
 		</div>
 
 		<script src="../../js-components/back-to-top.js"></script>
 		<script src="../../js-components/header__on-scroll.js"></script>
 		<script src="../../js-components/header__hamburger.js"></script>
 		<script src="../../js-components/hero__invest__carousel__text__animation.js"></script>
+		<script src="../../js-components/carousel--swipper--jbg-1.js"></script>
 		<script src="../../js-components/fund__calc__accordion.js"></script>
 		<script src="../../js-components/fund__calc__accordion__smooth__scroll__into__view.js"></script>
-
 		<script src="../../js-components/section__visible__on__scroll.js"></script>
 		<script src="../../js-components/footer__currentyear__auto.js"></script>
-		<script src="../../js-components/testimonial__scroll__homepage.js"></script>
+		<script src="../../js-components/append__to__footer-list__investment.js"></script>
 	</body>
 </html>

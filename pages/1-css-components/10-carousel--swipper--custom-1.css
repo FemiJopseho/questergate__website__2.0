@@ -344,7 +344,7 @@
 
     /* will change with screen size */
     /* make min-width < 200px to avoid overlaps */
-    min-width: 180px;
+    min-width: 170px;
     max-width: 500px;
     margin: 0 auto;
 
@@ -365,8 +365,8 @@
     padding-bottom: 0.3rem;
 
     /* //////////////// */
-    @media screen and (width <=650px) {
-      min-width: 60dvw;
+    @media screen and (width > 500px) and (width <=650px) {
+      min-width: 50dvw;
       max-width: 500px;
       margin: 0 auto;
 
@@ -376,7 +376,7 @@
 
     /* //////////////// */
     @media screen and (width > 650px) and (width <=875px) {
-      min-width: 60dvw;
+      min-width: 50dvw;
       max-width: 500px;
       margin: 0 auto;
 
@@ -478,7 +478,8 @@
   .swiper-slide-active .swiper-card {
 
     /* //////////////// */
-    @media screen and (width <=1000px) {
+    @media screen and (width > 875px) and (width <=1000px) {
+      min-width: 50dvw;
       max-width: 400px;
       margin: 0 auto;
 
@@ -488,10 +489,11 @@
 
     /* //////////////// */
     @media screen and (width > 1000px) and (width <=1400px) {
+      min-width: 400px;
       max-width: 500px;
       margin: 0 auto;
 
-      min-height: 35dvh;
+      min-height: 20dvh;
       max-height: 300px;
     }
   }

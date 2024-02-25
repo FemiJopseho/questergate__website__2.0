@@ -812,6 +812,7 @@ h6 {
   background-color: var(--clr-bckgrd-btn-pri-default);
   color: var(--clr-neutral-white-2);
   width: var(--width__always-fill);
+  max-width: var(--width__1440px);
   margin: 0 auto;
   text-align: center;
   padding: 3rem 3rem;
