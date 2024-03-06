@@ -372,7 +372,10 @@
 												type="number"
 												name="initial__deposit"
 												id="id__initial__deposit"
+												min="5000"
+												max="25000000"
 												placeholder="min. ₦5000"
+												required
 											/>
 
 											<label class="choose__save__plan" for="choose__save__plan"
@@ -381,6 +384,7 @@
 											<select
 												name="choose__save__plan"
 												id="id__choose__save__plan"
+												required
 											>
 												<option value="" disabled selected>
 													choose a plan
@@ -399,6 +403,7 @@
 											<select
 												name="choose__save__duration"
 												id="choose__save__duration"
+												required
 											>
 												<option value="" disabled selected>
 													duration of savings plan
@@ -569,41 +574,64 @@
 												class="savings__results__add-capital__input__wrapper calc__result__wrapper"
 											>
 												<div class="add__to__savings__input">
-													<input
-														type="number"
-														name="add__to__savings"
-														class="add__to__savings"
-														id="id__add__to__savings"
-														placeholder="min. ₦5000"
-													/>
+													<form
+														action=""
+														method="post"
+														id="id-add__to__savings__form-1"
+														class="add__to__savings__form-1"
+													>
+														<input
+															type="number"
+															name="add__to__savings"
+															class="add__to__savings"
+															id="id__add__to__savings"
+															min="5000"
+															max="25000000"
+															placeholder="min. ₦5000"
+															required
+														/>
+													</form>
 												</div>
 
 												<div class="day__savings__added__input">
-													<select
-														name="day__savings__added"
-														class="day__savings__added"
-														id="id__day__savings__added"
+													<form
+														action=""
+														method="post"
+														id="id-add__to__savings__form-1"
+														class="add__to__savings__form-1"
 													>
-														<option value="" disabled selected>
-															Select day added
-														</option>
-
-														<!-- <option value="1">Day 1</option>
-
-														<option value="2">Day 2</option> -->
-													</select>
+														<select
+															name="day__savings__added"
+															class="day__savings__added"
+															id="id__day__savings__added"
+															required
+														>
+															<option value="" disabled selected>
+																Select day added
+															</option>
+															<!-- <option value="1">Day 1</option>
+															<option value="2">Day 2</option> -->
+														</select>
+													</form>
 												</div>
 											</div>
 										</div>
 
 										<!-- CALC--RESULT--PART 4 -->
 										<div class="savings__calc__results__part-4">
-											<button
-												class="savings__results__add--button"
-												type="submit"
+											<form
+												action=""
+												method="post"
+												id="id-add__to__savings__form-1"
+												class="add__to__savings__form-1"
 											>
-												Add to Savings
-											</button>
+												<button
+													class="savings__results__add--button"
+													type="submit"
+												>
+													Add to Savings
+												</button>
+											</form>
 										</div>
 									</div>
 								</div>
@@ -876,6 +904,7 @@
 		<script src="../../js-components/header__hamburger.js"></script>
 		<script src="../../js-components/fund__calc__accordion.js"></script>
 		<script src="../../js-components/fund__calc__accordion__smooth__scroll__into__view.js"></script>
+		<script src="../../js-components/savings__calc__form__validation.js"></script>
 		<script src="../../js-components/section__visible__on__scroll.js"></script>
 		<script src="../../js-components/footer__currentyear__auto.js"></script>
 		<script src="../../js-components/append__to__footer-list__investment.js"></script>

@@ -70,8 +70,24 @@
 
 		<!-- -------Other stylesheets---------- -->
 
-		<link rel="stylesheet" href="#" />
-		<link rel="stylesheet" href="#" />
+		<link
+			rel="stylesheet"
+			href="../1-css-components/joined-fixed-component.css"
+		/>
+		<link rel="stylesheet" href="../1-css-components/6-utility-classes.css" />
+		<link
+			rel="stylesheet"
+			href="../1-css-components/10-carousel--swipper--custom-1.css"
+		/>
+
+		<link rel="stylesheet" href="./0-training--header.css" />
+		<link rel="stylesheet" href="./1-training--hero.css" />
+		<link rel="stylesheet" href="./2-training--benefits.css" />
+		<link rel="stylesheet" href="./3-training--testimonials.css" />
+		<link rel="stylesheet" href="./4-training --cta.css" />
+		<link rel="stylesheet" href="./5-training--focus.css" />
+		<link rel="stylesheet" href="./6-training--form.css" />
+		<link rel="stylesheet" href="./7-training__payment__types.css" />
 
 		<!-- --------------JQUERY ACCESS via CDN and via Local server----------------- -->
 		<script
@@ -79,6 +95,15 @@
 			integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
 			crossorigin="anonymous"
 		></script>
+
+		<!-- SWIPER -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+		/>
+
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<!-- End of SWIPER -->
 
 		<!-- <script src="../js-components/jquery-3.7.1.min.js"></script> -->
 
@@ -94,12 +119,973 @@
 	</head>
 
 	<body>
+		<button
+			onclick="backToTop__Function()"
+			id="back-to-top"
+			class="back-to-top"
+			title="Go to top"
+		>
+			Top &#8593;
+		</button>
+
 		<div class="gen-container">
-			<header></header>
+			<header class="training__header__section">
+				<nav class="training__header__container">
+					<picture class="training__header__picture">
+						<source
+							media="(min-width: 875px)"
+							srcset="
+								../../images/QG_LOGO_horizontal_WHITE_background_(trimmed).png
+							"
+						/>
+
+						<source
+							media="(min-width: 500px)"
+							srcset="../../images/QG_LOGO_small-horizontal.jpg"
+						/>
+
+						<source
+							media="(min-width: 50px)"
+							srcset="../../images/QG_LOGO_small-horizontal.jpg"
+						/>
+
+						<img
+							src="../../images/QG_LOGO_small-horizontal.jpg"
+							alt="questergate logo"
+						/>
+					</picture>
+				</nav>
+			</header>
 
 			<main class="main">
-				<!-- -------START OF HERO SECTION------- -->
-				<section></section>
+				<!-- -------START OF HERO section------- -->
+				<section class="training-hero__section">
+					<div class="training-hero__container">
+						<div class="training-hero__content__container">
+							<h1 class="training-hero__content-header">
+								<span class="hero__content-header__part-1"> Go from</span>
+
+								<span class="hero__content-header__part-2"
+									>Beginner
+									<span class="hero__content-header__part-x">to</span>
+								</span>
+								<span class="hero__content-header__part-2"
+									>Profitable Trader</span
+								>
+
+								<span class="hero__content-header__part-3">in 3 months</span>
+							</h1>
+
+							<p class="training-hero__content-subhead">
+								the most interactive training for trading in the financial
+								market.
+							</p>
+						</div>
+					</div>
+				</section>
+
+				<!-- -------START OF "What you will learn" section------- -->
+				<section class="training__benefit-for-you__section">
+					<div class="training__benefit-for-you__container">
+						<h2 class="training__benefit-card__header">
+							The 3 Major skills you will develop <br />
+							<span class="training__benefit__header-span2"></span>
+						</h2>
+
+						<div class="training__benefit-card__container">
+							<div class="training__benefit-card__content__container">
+								<ul class="training__benefit-card__list">
+									<li class="training__benefit-card__list-items">
+										Create trading strategies that are stable and long lasting.
+									</li>
+
+									<li class="training__benefit-card__list-items">
+										Minimise your loses and never lose your capital.
+									</li>
+
+									<li class="training__benefit-card__list-items">
+										Start earning an income from the financial market.
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- -------START OF "Details about the training" section------- -->
+				<section class="training__focus__section">
+					<div class="training__focus__main-container">
+						<div class="training__focus__container">
+							<h4 class="training__focus__header">
+								You will learn how to trade these markets
+							</h4>
+
+							<div class="training__focus-card__container">
+								<ul class="training__focus-card__list">
+									<li class="training__focus-card__list-items">
+										Commodities Market
+									</li>
+
+									<li class="training__focus-card__list-items">
+										Currency(Forex) Market
+									</li>
+
+									<!-- <li class="training__focus-card__list-items">Stock Market</li> -->
+								</ul>
+							</div>
+
+							<div class="drawing-an-arrow"></div>
+
+							<div
+								class="training__focus-card__container training__features-card__container"
+							>
+								<ul
+									class="training__focus-card__list training__features-card__list"
+								>
+									<li
+										class="training__focus-card__list-items training__features-card__list-items"
+									>
+										12 weeks of training (online).
+									</li>
+
+									<li
+										class="training__focus-card__list-items training__features-card__list-items"
+									>
+										Over 72 hours of practical classes.
+									</li>
+
+									<li
+										class="training__focus-card__list-items training__features-card__list-items"
+									>
+										Access to over 30years of Trading insights.
+									</li>
+
+									<li
+										class="training__focus-card__list-items training__features-card__list-items"
+									>
+										Access to Free Trading signals for a year.
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- *-------START OF Training CTA-1 section------- -->
+				<!--
+				<section class="training__cta__section">
+					<div
+						class="training__cta__container training__cta__accordion__scroll-into-view-1"
+					>
+						<div
+							class="training__cta__content__container training__cta__content__container__forAccordion-1"
+						>
+							<p class="training__cta__content">
+								Become a profit-making Trader
+							</p>
+
+							<button
+								class="training__cta__button training__cta__accordion__button-1"
+								id="training__cta__accordion__button-id-1"
+								aria-expanded="false"
+								data-target="#training__cta__accordion__content-1"
+							>
+								Apply Now for the FREE training sessions
+							</button>
+						</div>
+					</div>
+				</section>
+				-->
+
+				<!-- *-------START OF TRAINING FORM-1 section------- -->
+				<!--
+				<section class="training-form__section">
+					<div
+						class="training-form__container training-form__container__forAccordion-1"
+						id="training__cta__accordion__content-1"
+					>
+						<h2 class="training-form__header">Apply Here</h2>
+
+						<form
+							class="training-form"
+							name="qg-training-form"
+							action="#"
+							method="post"
+							target="_self"
+							accept-charset="UTF-8"
+							validate
+							autocomplete="on"
+						>
+							<div class="training-form__elements__container">
+								<label for="f-name">First Name:</label>
+
+								<input
+									type="text"
+									id="f-name"
+									name="firstName"
+									required
+									placeholder="first name"
+								/>
+							</div>
+
+							<div class="training-form__elements__container">
+								<label for="l-name">Last Name:</label>
+
+								<input
+									type="text"
+									id="l-name"
+									name="lastName"
+									required
+									placeholder="last name"
+								/>
+							</div>
+
+							<div class="training-form__elements__container">
+								<label for="your-email">Email:</label>
+
+								<input
+									type="email"
+									id="your-email"
+									name="email"
+									required
+									placeholder="email"
+								/>
+							</div>
+
+							<div class="training-form__elements__container">
+								<label for="phone-number">Phone Number:</label>
+
+								<input
+									type="tel"
+									id="phone-number"
+									name="phoneNumber"
+									required
+									placeholder="phone number"
+								/>
+							</div>
+
+							<div class="training-form__elements__container">
+								<label for="your-country">Country:</label>
+
+								<input
+									type="text"
+									id="your-country"
+									name="country"
+									required
+									placeholder="your country"
+								/>
+							</div>
+
+							<div class="training-form__elements__container">
+								<label class="trading-knowledge-level" for="knowledge-level"
+									>What is your current level of knowledge:</label
+								>
+
+								<select id="knowledge-level" name="knowledgeLevel" required>
+									<option value="" disabled selected>Select</option>
+									<option value="beginner">No trading experience</option>
+									<option value="beginner-experience">
+										Only Demo trading experience
+									</option>
+									<option value="intermediate">Live trading experience</option>
+								</select>
+							</div>
+
+							<div
+								class="training-form__elements__container training__confirm-age"
+							>
+								<label class="trading__confirm-age__label" for="confirm-age"
+									>Confirm that you are above 21years</label
+								>
+
+								<input
+									type="checkbox"
+									class="trading__confirm-age__inputbox"
+									id="confirm-age"
+									name="confirmAge"
+									value="qualifiedAged"
+									required
+								/>
+							</div>
+
+							<input
+								type="submit"
+								class="training-form__submit-button training-form__submit-button__forAccordion-1"
+								id="training-form__submit-1"
+								value="submit"
+							/>
+						</form>
+
+						<div
+							class="training-form__after-submit__container training-form__after-submit__container__forAccordion-1"
+						>
+							<p class="training-form__after-submit__text-1">
+								Application Successful!
+							</p>
+
+							<p class="training-form__after-submit__text-2">
+								Your 3 months training starts on:
+								<span class="training-start-date">5th April, 2024.</span>
+							</p>
+
+							<p class="training-form__after-submit__text-3">
+								For more information, join the Whatsapp group:
+								<span class="training-whatsapp-link__container"
+									><a
+										href=""
+										class="training-whatsapp-link"
+										alt="training whatsapp link"
+										target="_blank"
+										>#################</a
+									>
+								</span>
+							</p>
+						</div>
+					</div>
+				</section>
+			-->
+
+				<!-- -------start of TESTIMONIALS section------- -->
+				<section class="testimonial__section">
+					<div class="testimonial__container">
+						<h2 class="testimonial__header">Feedback from our Clients</h2>
+
+						<!-- Testimonial Carousel sub-Section -->
+						<div class="testimonial-carousel__container">
+							<!-- insert carousel arrows here -->
+							<div class="testimonial-carousel__scroll carousel-nav">
+								<button
+									class="testimonial-carousel__scroll-left arrow-circle prev"
+									title="Previous"
+								>
+									<div class="left-arrow"></div>
+								</button>
+
+								<button
+									class="testimonial-carousel__scroll-right arrow-circle next"
+									title="Next"
+								>
+									<div class="right-arrow"></div>
+								</button>
+							</div>
+
+							<!-- insert carousel cards here -->
+							<div class="testimonial__carousel__section">
+								<div class="testimonial__carousel__container">
+									<div class="swiper swiperCarousel">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide">
+												<div class="swiper-card">
+													<div class="client__quote__container">
+														<svg
+															class="client__quote-icon"
+															xmlns="http://www.w3.org/2000/svg"
+															viewBox="0 0 48 48"
+														>
+															<path
+																d="M 16.482422 8.9921875 A 1.50015 1.50015 0 0 0 15.943359 9.1074219 C 15.943359 9.1074219 13.068414 10.279429 10.357422 13.464844 C 7.6464301 16.650259 5 21.927419 5 30 A 1.50015 1.50015 0 0 0 5.015625 30.21875 A 8.5 8.5 0 0 0 13.5 39 A 8.5 8.5 0 0 0 13.5 22 A 8.5 8.5 0 0 0 8.7089844 23.480469 C 9.5777265 19.777157 11.122152 17.196657 12.642578 15.410156 C 14.931586 12.720571 17.056641 11.892578 17.056641 11.892578 A 1.50015 1.50015 0 0 0 16.482422 8.9921875 z M 37.482422 8.9921875 A 1.50015 1.50015 0 0 0 36.943359 9.1074219 C 36.943359 9.1074219 34.068414 10.279429 31.357422 13.464844 C 28.64643 16.650259 26 21.927419 26 30 A 1.50015 1.50015 0 0 0 26.015625 30.21875 A 8.5 8.5 0 0 0 34.5 39 A 8.5 8.5 0 0 0 34.5 22 A 8.5 8.5 0 0 0 29.708984 23.480469 C 30.577727 19.777157 32.122152 17.196657 33.642578 15.410156 C 35.931586 12.720571 38.056641 11.892578 38.056641 11.892578 A 1.50015 1.50015 0 0 0 37.482422 8.9921875 z"
+															/>
+														</svg>
+
+														<p class="client__quote">
+															I must admit, as a software developer, I was
+															skeptical about the MindSync Neural Interface. But
+															once I saw how it could transform not just the way
+															I work but also how I engage with the world, I was
+															sold.
+														</p>
+													</div>
+
+													<div class="client__profile__container">
+														<img
+															class="client__avatar"
+															src="https://i.pravatar.cc/200?img=31"
+														/>
+
+														<div class="client__name-title__container">
+															<h1 class="client__review__name">Amy Liu</h1>
+															<h2 class="client__title">
+																Sr. Technology Analyst
+															</h2>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="swiper-slide">
+												<div class="swiper-card">
+													<div class="client__quote__container">
+														<svg
+															class="client__quote-icon"
+															xmlns="http://www.w3.org/2000/svg"
+															viewBox="0 0 48 48"
+														>
+															<path
+																d="M 16.482422 8.9921875 A 1.50015 1.50015 0 0 0 15.943359 9.1074219 C 15.943359 9.1074219 13.068414 10.279429 10.357422 13.464844 C 7.6464301 16.650259 5 21.927419 5 30 A 1.50015 1.50015 0 0 0 5.015625 30.21875 A 8.5 8.5 0 0 0 13.5 39 A 8.5 8.5 0 0 0 13.5 22 A 8.5 8.5 0 0 0 8.7089844 23.480469 C 9.5777265 19.777157 11.122152 17.196657 12.642578 15.410156 C 14.931586 12.720571 17.056641 11.892578 17.056641 11.892578 A 1.50015 1.50015 0 0 0 16.482422 8.9921875 z M 37.482422 8.9921875 A 1.50015 1.50015 0 0 0 36.943359 9.1074219 C 36.943359 9.1074219 34.068414 10.279429 31.357422 13.464844 C 28.64643 16.650259 26 21.927419 26 30 A 1.50015 1.50015 0 0 0 26.015625 30.21875 A 8.5 8.5 0 0 0 34.5 39 A 8.5 8.5 0 0 0 34.5 22 A 8.5 8.5 0 0 0 29.708984 23.480469 C 30.577727 19.777157 32.122152 17.196657 33.642578 15.410156 C 35.931586 12.720571 38.056641 11.892578 38.056641 11.892578 A 1.50015 1.50015 0 0 0 37.482422 8.9921875 z"
+															/>
+														</svg>
+
+														<p class="client__quote">
+															I must admit, as a software developer, I was
+															skeptical about the MindSync Neural Interface. But
+															once I saw how it could transform not just the way
+															I work but also how I engage with the world, I was
+															sold.
+														</p>
+													</div>
+
+													<div class="client__profile__container">
+														<img
+															class="client__avatar"
+															src="https://i.pravatar.cc/200?img=26"
+														/>
+
+														<div class="client__name-title__container">
+															<h1 class="client__review__name">Amy Liu</h1>
+															<h2 class="client__title">
+																Sr. Technology Analyst
+															</h2>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="swiper-slide">
+												<div class="swiper-card">
+													<div class="client__quote__container">
+														<svg
+															class="client__quote-icon"
+															xmlns="http://www.w3.org/2000/svg"
+															viewBox="0 0 48 48"
+														>
+															<path
+																d="M 16.482422 8.9921875 A 1.50015 1.50015 0 0 0 15.943359 9.1074219 C 15.943359 9.1074219 13.068414 10.279429 10.357422 13.464844 C 7.6464301 16.650259 5 21.927419 5 30 A 1.50015 1.50015 0 0 0 5.015625 30.21875 A 8.5 8.5 0 0 0 13.5 39 A 8.5 8.5 0 0 0 13.5 22 A 8.5 8.5 0 0 0 8.7089844 23.480469 C 9.5777265 19.777157 11.122152 17.196657 12.642578 15.410156 C 14.931586 12.720571 17.056641 11.892578 17.056641 11.892578 A 1.50015 1.50015 0 0 0 16.482422 8.9921875 z M 37.482422 8.9921875 A 1.50015 1.50015 0 0 0 36.943359 9.1074219 C 36.943359 9.1074219 34.068414 10.279429 31.357422 13.464844 C 28.64643 16.650259 26 21.927419 26 30 A 1.50015 1.50015 0 0 0 26.015625 30.21875 A 8.5 8.5 0 0 0 34.5 39 A 8.5 8.5 0 0 0 34.5 22 A 8.5 8.5 0 0 0 29.708984 23.480469 C 30.577727 19.777157 32.122152 17.196657 33.642578 15.410156 C 35.931586 12.720571 38.056641 11.892578 38.056641 11.892578 A 1.50015 1.50015 0 0 0 37.482422 8.9921875 z"
+															/>
+														</svg>
+
+														<p class="client__quote">
+															I must admit, as a software developer, I was
+															skeptical about the MindSync Neural Interface. But
+															once I saw how it could transform not just the way
+															I work but also how I engage with the world, I was
+															sold.
+														</p>
+													</div>
+
+													<div class="client__profile__container">
+														<img
+															class="client__avatar"
+															src="https://i.pravatar.cc/200?img=69"
+														/>
+
+														<div class="client__name-title__container">
+															<h1 class="client__review__name">Amy Liu</h1>
+															<h2 class="client__title">
+																Sr. Technology Analyst
+															</h2>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="swiper-slide">
+												<div class="swiper-card">
+													<div class="client__quote__container">
+														<svg
+															class="client__quote-icon"
+															xmlns="http://www.w3.org/2000/svg"
+															viewBox="0 0 48 48"
+														>
+															<path
+																d="M 16.482422 8.9921875 A 1.50015 1.50015 0 0 0 15.943359 9.1074219 C 15.943359 9.1074219 13.068414 10.279429 10.357422 13.464844 C 7.6464301 16.650259 5 21.927419 5 30 A 1.50015 1.50015 0 0 0 5.015625 30.21875 A 8.5 8.5 0 0 0 13.5 39 A 8.5 8.5 0 0 0 13.5 22 A 8.5 8.5 0 0 0 8.7089844 23.480469 C 9.5777265 19.777157 11.122152 17.196657 12.642578 15.410156 C 14.931586 12.720571 17.056641 11.892578 17.056641 11.892578 A 1.50015 1.50015 0 0 0 16.482422 8.9921875 z M 37.482422 8.9921875 A 1.50015 1.50015 0 0 0 36.943359 9.1074219 C 36.943359 9.1074219 34.068414 10.279429 31.357422 13.464844 C 28.64643 16.650259 26 21.927419 26 30 A 1.50015 1.50015 0 0 0 26.015625 30.21875 A 8.5 8.5 0 0 0 34.5 39 A 8.5 8.5 0 0 0 34.5 22 A 8.5 8.5 0 0 0 29.708984 23.480469 C 30.577727 19.777157 32.122152 17.196657 33.642578 15.410156 C 35.931586 12.720571 38.056641 11.892578 38.056641 11.892578 A 1.50015 1.50015 0 0 0 37.482422 8.9921875 z"
+															/>
+														</svg>
+
+														<p class="client__quote">
+															I must admit, as a software developer, I was
+															skeptical about the MindSync Neural Interface. But
+															once I saw how it could transform not just the way
+															I work but also how I engage with the world, I was
+															sold.
+														</p>
+													</div>
+
+													<div class="client__profile__container">
+														<img
+															class="client__avatar"
+															src="https://i.pravatar.cc/200?img=59"
+														/>
+
+														<div class="client__name-title__container">
+															<h1 class="client__review__name">Amy Liu</h1>
+															<h2 class="client__title">
+																Sr. Technology Analyst
+															</h2>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="swiper-slide">
+												<div class="swiper-card">
+													<div class="client__quote__container">
+														<svg
+															class="client__quote-icon"
+															xmlns="http://www.w3.org/2000/svg"
+															viewBox="0 0 48 48"
+														>
+															<path
+																d="M 16.482422 8.9921875 A 1.50015 1.50015 0 0 0 15.943359 9.1074219 C 15.943359 9.1074219 13.068414 10.279429 10.357422 13.464844 C 7.6464301 16.650259 5 21.927419 5 30 A 1.50015 1.50015 0 0 0 5.015625 30.21875 A 8.5 8.5 0 0 0 13.5 39 A 8.5 8.5 0 0 0 13.5 22 A 8.5 8.5 0 0 0 8.7089844 23.480469 C 9.5777265 19.777157 11.122152 17.196657 12.642578 15.410156 C 14.931586 12.720571 17.056641 11.892578 17.056641 11.892578 A 1.50015 1.50015 0 0 0 16.482422 8.9921875 z M 37.482422 8.9921875 A 1.50015 1.50015 0 0 0 36.943359 9.1074219 C 36.943359 9.1074219 34.068414 10.279429 31.357422 13.464844 C 28.64643 16.650259 26 21.927419 26 30 A 1.50015 1.50015 0 0 0 26.015625 30.21875 A 8.5 8.5 0 0 0 34.5 39 A 8.5 8.5 0 0 0 34.5 22 A 8.5 8.5 0 0 0 29.708984 23.480469 C 30.577727 19.777157 32.122152 17.196657 33.642578 15.410156 C 35.931586 12.720571 38.056641 11.892578 38.056641 11.892578 A 1.50015 1.50015 0 0 0 37.482422 8.9921875 z"
+															/>
+														</svg>
+
+														<p class="client__quote">
+															I must admit, as a software developer, I was
+															skeptical about the MindSync Neural Interface. But
+															once I saw how it could transform not just the way
+															I work but also how I engage with the world, I was
+															sold.
+														</p>
+													</div>
+
+													<div class="client__profile__container">
+														<img
+															class="client__avatar"
+															src="https://i.pravatar.cc/200?img=49"
+														/>
+
+														<div class="client__name-title__container">
+															<h1 class="client__review__name">Amy Liu</h1>
+															<h2 class="client__title">
+																Sr. Technology Analyst
+															</h2>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="swiper-slide">
+												<div class="swiper-card">
+													<div class="client__quote__container">
+														<svg
+															class="client__quote-icon"
+															xmlns="http://www.w3.org/2000/svg"
+															viewBox="0 0 48 48"
+														>
+															<path
+																d="M 16.482422 8.9921875 A 1.50015 1.50015 0 0 0 15.943359 9.1074219 C 15.943359 9.1074219 13.068414 10.279429 10.357422 13.464844 C 7.6464301 16.650259 5 21.927419 5 30 A 1.50015 1.50015 0 0 0 5.015625 30.21875 A 8.5 8.5 0 0 0 13.5 39 A 8.5 8.5 0 0 0 13.5 22 A 8.5 8.5 0 0 0 8.7089844 23.480469 C 9.5777265 19.777157 11.122152 17.196657 12.642578 15.410156 C 14.931586 12.720571 17.056641 11.892578 17.056641 11.892578 A 1.50015 1.50015 0 0 0 16.482422 8.9921875 z M 37.482422 8.9921875 A 1.50015 1.50015 0 0 0 36.943359 9.1074219 C 36.943359 9.1074219 34.068414 10.279429 31.357422 13.464844 C 28.64643 16.650259 26 21.927419 26 30 A 1.50015 1.50015 0 0 0 26.015625 30.21875 A 8.5 8.5 0 0 0 34.5 39 A 8.5 8.5 0 0 0 34.5 22 A 8.5 8.5 0 0 0 29.708984 23.480469 C 30.577727 19.777157 32.122152 17.196657 33.642578 15.410156 C 35.931586 12.720571 38.056641 11.892578 38.056641 11.892578 A 1.50015 1.50015 0 0 0 37.482422 8.9921875 z"
+															/>
+														</svg>
+
+														<p class="client__quote">
+															I must admit, as a software developer, I was
+															skeptical about the MindSync Neural Interface. But
+															once I saw how it could transform not just the way
+															I work but also how I engage with the world, I was
+															sold.
+														</p>
+													</div>
+
+													<div class="client__profile__container">
+														<img
+															class="client__avatar"
+															src="https://i.pravatar.cc/200?img=68"
+														/>
+
+														<div class="client__name-title__container">
+															<h1 class="client__review__name">Amy Liu</h1>
+															<h2 class="client__title">
+																Sr. Technology Analyst
+															</h2>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<!-- swiper controls -->
+										<div class="swiper-button-next swiper__scroll"></div>
+										<div class="swiper-button-prev swiper__scroll"></div>
+
+										<div class="pagination__container">
+											<!-- swiper pagination -->
+											<div class="swiper-pagination"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- -------START OF payment section------- -->
+				<section class="training__payment__section">
+					<div class="training__payment__container">
+						<!-- for one-on-one training -->
+						<div class="training__types__container">
+							<div class="training__types__card">
+								<div class="training__types__header-features__container">
+									<h3 class="training__types__header">One-on-One Training</h3>
+
+									<div class="training__types__features__list__container">
+										<ul class="training__types__features__list">
+											<li class="training__types__features__list-items">
+												you will get access to lots of things
+											</li>
+
+											<li class="training__types__features__list-items">
+												you will get access to lots of things
+											</li>
+
+											<li class="training__types__features__list-items">
+												you will get access to lots of things
+											</li>
+
+											<li class="training__types__features__list-items">
+												you will get access to lots of things
+											</li>
+										</ul>
+									</div>
+								</div>
+
+								<div class="training__types__drawing-an-arrow"></div>
+
+								<div class="training__types__cost__list__container">
+									<ul class="training__types__cost__list">
+										<li class="training__types__cost__list-items">
+											Duration: 3 months
+										</li>
+
+										<li class="training__types__cost__list-items">
+											Platform: Zoom Video (with access to recordings)
+										</li>
+
+										<li class="training__types__cost__list-items">
+											Fee: N50,000/month
+										</li>
+									</ul>
+								</div>
+
+								<div
+									class="training__types__cta__container training__one-on-one__cta__container"
+								>
+									<button
+										class="training__one-on-one__cta__button"
+										id="training__one-on-one__cta__button"
+										aria-expanded="false"
+										data-target="#one-on-one__payment-message"
+									>
+										Pay Now to Register
+									</button>
+
+									<div
+										class="training__one-on-one__payment-message__container training__payment__one-on-one__accordion__scroll-into-view"
+										id="one-on-one__payment-message"
+									>
+										<p class="training__payment-message__text-1">
+											Welcome Onboard!
+										</p>
+
+										<p class="training__payment-message__text-2">
+											To make payment and get more info about the One-on-One
+											training:
+										</p>
+
+										<p class="training__payment-message__text-3">
+											Contact Us on Whatsapp:
+											<span class="training-whatsapp-link__container"
+												><a
+													href=""
+													class="training-whatsapp-link"
+													alt="training whatsapp link"
+													target="_blank"
+													>#################</a
+												>
+											</span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- for group training -->
+						<div class="training__types__container">
+							<div class="training__types__card">
+								<div class="training__types__header-features__container">
+									<h3 class="training__types__header">Group Training</h3>
+
+									<div class="training__types__features__list__container">
+										<ul class="training__types__features__list">
+											<li class="training__types__features__list-items">
+												you will get access to lots of things
+											</li>
+
+											<li class="training__types__features__list-items">
+												you will get access to lots of things
+											</li>
+
+											<li class="training__types__features__list-items">
+												you will get access to lots of things
+											</li>
+
+											<li class="training__types__features__list-items">
+												you will get access to lots of things
+											</li>
+										</ul>
+									</div>
+								</div>
+
+								<div class="training__types__drawing-an-arrow"></div>
+
+								<div class="training__types__cost__list__container">
+									<ul class="training__types__cost__list">
+										<li class="training__types__cost__list-items">
+											Duration: 3 months
+										</li>
+
+										<li class="training__types__cost__list-items">
+											Platform: Zoom Video (with access to recordings)
+										</li>
+
+										<li class="training__types__cost__list-items">
+											Cost: N5,000/month
+										</li>
+									</ul>
+								</div>
+
+								<div
+									class="training__types__cta__container training__group__cta__container"
+								>
+									<p class="training__group__sub-cta">
+										Limited Slots: only 19 slots remaining!
+									</p>
+
+									<button
+										class="training__group__cta__button"
+										id="training__group__cta__button"
+										aria-expanded="false"
+										data-target="#group__payment-message"
+									>
+										Pay Now to Register
+									</button>
+
+									<div
+										class="training__group__payment-message__container training__payment__group__accordion__scroll-into-view"
+										id="group__payment-message"
+									>
+										<p class="training__payment-message__text-1">
+											Welcome Onboard!
+										</p>
+
+										<p class="training__payment-message__text-2">
+											To make payment and get more info about the Group
+											training:
+										</p>
+
+										<p class="training__payment-message__text-3">
+											Contact Us on Whatsapp:
+											<span class="training-whatsapp-link__container"
+												><a
+													href=""
+													class="training-whatsapp-link"
+													alt="training whatsapp link"
+													target="_blank"
+													>#################</a
+												>
+											</span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- -------START OF Training CTA section------- -->
+				<section class="training__cta__section">
+					<div
+						class="training__cta__container training__cta__accordion__scroll-into-view"
+					>
+						<div
+							class="training__cta__content__container training__cta__content__container__forAccordion"
+						>
+							<p class="training__cta__content">
+								Become a profit-making Trader
+							</p>
+
+							<button
+								class="training__cta__button training__cta__accordion__button"
+								id="training__cta__accordion__button-id"
+								aria-expanded="false"
+								data-target="#training__cta__accordion__content"
+							>
+								Apply Now for the FREE training sessions
+							</button>
+						</div>
+					</div>
+				</section>
+
+				<!-- -------START OF TRAINING FORM section------- -->
+				<section class="training-form__section">
+					<div
+						class="training-form__container training-form__container__forAccordion"
+						id="training__cta__accordion__content"
+					>
+						<h2 class="training-form__header">Apply Here</h2>
+
+						<form
+							class="training-form"
+							name="qg-training-form"
+							action="#"
+							method="post"
+							target="_self"
+							accept-charset="UTF-8"
+							validate
+							autocomplete="on"
+							onsubmit="return validateForm()"
+						>
+							<div class="training-form__elements__container">
+								<label for="f-name">First Name:</label>
+
+								<input
+									type="text"
+									id="f-name"
+									name="firstName"
+									required
+									placeholder="first name"
+								/>
+
+								<div class="error-message" id="error-f-name"></div>
+							</div>
+
+							<div class="training-form__elements__container">
+								<label for="l-name">Last Name:</label>
+
+								<input
+									type="text"
+									id="l-name"
+									name="lastName"
+									required
+									placeholder="last name"
+								/>
+
+								<div class="error-message" id="error-l-name"></div>
+							</div>
+
+							<div class="training-form__elements__container">
+								<label for="your-email">Email:</label>
+
+								<input
+									type="email"
+									id="your-email"
+									name="email"
+									required
+									placeholder="email"
+								/>
+
+								<div class="error-message" id="error-your-email"></div>
+							</div>
+
+							<div class="training-form__elements__container">
+								<label for="phone-number">Phone Number:</label>
+
+								<input
+									type="tel"
+									id="phone-number"
+									name="phoneNumber"
+									required
+									placeholder="phone number"
+								/>
+
+								<div class="error-message" id="error-phone-number"></div>
+							</div>
+
+							<div class="training-form__elements__container">
+								<label for="your-country">Country:</label>
+
+								<input
+									type="text"
+									id="your-country"
+									name="country"
+									required
+									placeholder="your country"
+								/>
+
+								<div class="error-message" id="error-your-country"></div>
+							</div>
+
+							<div class="training-form__elements__container">
+								<label class="trading-knowledge-level" for="knowledge-level"
+									>What is your current level of knowledge:</label
+								>
+
+								<select id="knowledge-level" name="knowledgeLevel" required>
+									<option value="" disabled selected>Select</option>
+									<option value="beginner">No trading experience</option>
+									<option value="beginner-experience">
+										Only Demo trading experience
+									</option>
+									<option value="intermediate">Live trading experience</option>
+								</select>
+
+								<div class="error-message" id="error-knowledge-level"></div>
+							</div>
+
+							<div
+								class="training-form__elements__container training__confirm-age"
+							>
+								<label class="trading__confirm-age__label" for="confirm-age"
+									>Confirm that you are above 21years</label
+								>
+
+								<input
+									type="checkbox"
+									class="trading__confirm-age__inputbox"
+									id="confirm-age"
+									name="confirmAge"
+									value="qualifiedAged"
+									required
+								/>
+
+								<div class="error-message" id="error-confirm-age"></div>
+							</div>
+
+							<input
+								type="submit"
+								class="training-form__submit-button training-form__submit-button__forAccordion"
+								id="training-form__submit"
+								value="submit"
+							/>
+						</form>
+
+						<div
+							class="training-form__after-submit__container training-form__after-submit__container__forAccordion"
+							id="success-message"
+						>
+							<p class="training-form__after-submit__text-1">
+								Application Successful!
+							</p>
+
+							<p class="training-form__after-submit__text-2">
+								Your 3 months training starts on:
+								<span class="training-start-date">5th April, 2024.</span>
+							</p>
+
+							<p class="training-form__after-submit__text-3">
+								For more information, join the Whatsapp group:
+								<span class="training-whatsapp-link__container"
+									><a
+										href=""
+										class="training-whatsapp-link"
+										alt="training whatsapp link"
+										target="_blank"
+										>#################</a
+									>
+								</span>
+							</p>
+						</div>
+					</div>
+				</section>
 			</main>
 
 			<!-- -------start of FOOTER section------- -->
@@ -273,6 +1259,15 @@
 			</footer>
 		</div>
 
-		<script defer src=""></script>
+		<script src="../js-components/back-to-top.js"></script>
+		<script src="../js-components/section__visible__on__scroll.js"></script>
+		<script src="../js-components/carousel--swipper--jbg-1.js"></script>
+		<script src="../js-components/training__payment__cta__accordion.js"></script>
+		<script src="../js-components/training__payment__cta__accordion__smooth__scroll__into__view.js"></script>
+		<script src="../js-components/training__cta__accordion.js"></script>
+		<script src="../js-components/training__cta__accordion__smooth__scroll__into__view.js"></script>
+		<script src="../js-components/training__form__validation.js"></script>
+		<script src="../js-components/footer__currentyear__auto.js"></script>
+		<script src="../js-components/append__to__footer-list.js"></script>
 	</body>
 </html>

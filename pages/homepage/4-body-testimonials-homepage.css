@@ -403,8 +403,8 @@
 			display: block;
 			background-color: var(--clr-secondary-650);
 			border: none;
-			height: 70px;
-			width: 70px;
+			height: 50px;
+			width: 50px;
 			border-radius: 50%;
 			cursor: pointer;
 

@@ -1,3 +1,6 @@
+// the code is for the swiper feature used on the website testimonials
+// *in this code, i added my own textFit() as a custom one.
+
 /**
   Swiper:
   https://swiperjs.com/
@@ -51,13 +54,44 @@ if (nextButton) {
 }
 // ///////////////////////////////////
 
+function textFit(elements, options = {}) {
+	const defaultOptions = {
+		maxFontSize: 16,
+		minFontSize: 10,
+	};
+
+	const { maxFontSize, minFontSize } = { ...defaultOptions, ...options };
+
+	for (const element of elements) {
+		const containerWidth = element.offsetWidth;
+		const containerHeight = element.offsetHeight;
+
+		let fontSize = maxFontSize;
+
+		element.style.fontSize = `${fontSize}px`;
+
+		while (
+			element.scrollWidth > containerWidth ||
+			element.scrollHeight > containerHeight
+		) {
+			fontSize--;
+
+			if (fontSize < minFontSize) {
+				break;
+			}
+
+			element.style.fontSize = `${fontSize}px`;
+		}
+	}
+}
+
 function resizeTextToFit() {
 	const quoteEls = document.getElementsByClassName("quote");
 	for (const el of quoteEls) {
 		el.style.width = el.offsetWidth;
 		el.style.height = el.offsetHeight;
 	}
-	textFit(quoteEls, { maxFontSize: 14 });
+	textFit(quoteEls, { maxFontSize: 14, minFontSize: 10 });
 }
 resizeTextToFit();
 addEventListener("resize", (event) => {

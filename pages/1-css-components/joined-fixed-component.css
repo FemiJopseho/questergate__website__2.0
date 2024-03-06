@@ -81,7 +81,7 @@ h6 {
 .gen-container {
   /* outline: 2px solid gold; */
 
-  min-width: 250px;
+  min-width: 260px;
   margin: 0 auto;
 }
 
@@ -630,8 +630,8 @@ h6 {
     background-color: var(--clr-secondary-650);
     color: var(--clr-homepage-card-bckgrd);
     cursor: pointer;
-    padding: 0.938rem;
-    border-radius: 0.75rem;
+    padding: 0.5rem;
+    border-radius: 12px;
 
     opacity: 0;
     pointer-events: none;
@@ -670,7 +670,7 @@ h6 {
     color: var(--clr-homepage-card-bckgrd);
     cursor: pointer;
     padding: 0.938rem;
-    border-radius: 0.75rem;
+    border-radius: 12px;
 
     opacity: 0;
     pointer-events: none;
@@ -708,7 +708,7 @@ h6 {
     color: var(--clr-homepage-card-bckgrd);
     cursor: pointer;
     padding: 0.938rem;
-    border-radius: 0.75rem;
+    border-radius: 12px;
 
     opacity: 0;
     pointer-events: none;

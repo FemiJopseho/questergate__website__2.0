@@ -1414,7 +1414,8 @@
 .investment__calc__section button[aria-expanded="true"]+.investment__calc__container {
   /* outline: 2px dashed red; */
 
-  max-height: 50rem;
+  /* *when button accordion is opened */
+  /* max-height: 100rem;-- this is set by javascript */
 
   /* controls the transition when opening-->going to this style */
   transition: max-height 2.5s ease;

@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
 			// If the clicked section is not expanded, expand it
 			if (!isExpanded) {
 				// Set the max-height of the content to its scrollHeight
-				targetContent.style.maxHeight = targetContent.scrollHeight + "px";
+				targetContent.style.maxHeight = 100 + "rem";
 				// Set the "aria-expanded" attribute to true for accessibility
 				this.setAttribute("aria-expanded", "true");
 			}

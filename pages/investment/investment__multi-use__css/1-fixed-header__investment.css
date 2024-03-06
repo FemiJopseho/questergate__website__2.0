@@ -230,9 +230,10 @@
       }
 
       &:active {
-        filter: brightness(200%);
+        filter: brightness(150%);
         background-color: var(--clr-tertiary-200);
         transform: translateY(5px);
+        box-shadow: 0 0px 0px 0px var(--clr-tertiary-200);
       }
     }
   }
@@ -530,9 +531,10 @@
       }
 
       &:active {
-        filter: brightness(200%);
+        filter: brightness(150%);
         background-color: var(--clr-tertiary-200);
         transform: translateY(5px);
+        box-shadow: 0 0px 0px 0px var(--clr-tertiary-200);
       }
     }
   }

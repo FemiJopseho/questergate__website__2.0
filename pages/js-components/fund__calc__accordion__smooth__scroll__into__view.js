@@ -18,12 +18,12 @@ document.addEventListener("DOMContentLoaded", function () {
 	buttons.forEach(function (button) {
 		button.addEventListener("click", function () {
 			// Get the element with class B= "savings__calc__section"
-			var heading = document.querySelector(".savings__calc__section");
+			var startingPoint = document.querySelector(".savings__calc__section");
 
 			// Calculate the scroll position by subtracting the offset value
-			var scrollPosition = heading.offsetTop - offsetValue;
+			var scrollPosition = startingPoint.offsetTop - offsetValue;
 
-			// Scroll to the heading with the adjusted offset
+			// Scroll to the startingPoint with the adjusted offset
 			window.scrollTo({ top: scrollPosition, behavior: "smooth" });
 		});
 	});
@@ -41,21 +41,23 @@ document.addEventListener("DOMContentLoaded", function () {
 	buttons.forEach(function (button) {
 		button.addEventListener("click", function () {
 			// Get the element with class B= "savings__calc__results__container"
-			var heading = document.querySelector(
+			var startingPoint = document.querySelector(
 				".savings__calc__results__container"
 			);
 
 			// Calculate the scroll position by subtracting the offset value
-			var scrollPosition = heading.offsetTop - offsetValue;
+			var scrollPosition = startingPoint.offsetTop - offsetValue;
 
-			// Scroll to the heading with the adjusted offset
+			// Scroll to the startingPoint with the adjusted offset
 			window.scrollTo({ top: scrollPosition, behavior: "smooth" });
 		});
 	});
 });
 
-//////////////////////////////////////
+////////////////////////////////////////
+
 // *INVESTMENT CALC PART
+
 ////////////////////////////////////
 // *when you click Investment Accordion Button
 document.addEventListener("DOMContentLoaded", function () {
@@ -72,12 +74,12 @@ document.addEventListener("DOMContentLoaded", function () {
 		button.addEventListener("click", function () {
 			// Get the element with class B= "fund-calc__title"
 			// i used "fund-calc__title" here cos investment__calc__section gave me issues
-			var heading = document.querySelector(".fund-calc__title");
+			var startingPoint = document.querySelector(".fund-calc__title");
 
 			// Calculate the scroll position by subtracting the offset value
-			var scrollPosition = heading.offsetTop - offsetValue;
+			var scrollPosition = startingPoint.offsetTop - offsetValue;
 
-			// Scroll to the heading with the adjusted offset
+			// Scroll to the startingPoint with the adjusted offset
 			window.scrollTo({ top: scrollPosition, behavior: "smooth" });
 		});
 	});
@@ -95,14 +97,14 @@ document.addEventListener("DOMContentLoaded", function () {
 	buttons.forEach(function (button) {
 		button.addEventListener("click", function () {
 			// Get the element with class B= "investment__calc__results__container"
-			var heading = document.querySelector(
+			var startingPoint = document.querySelector(
 				".investment__calc__results__container"
 			);
 
 			// Calculate the scroll position by subtracting the offset value
-			var scrollPosition = heading.offsetTop - offsetValue;
+			var scrollPosition = startingPoint.offsetTop - offsetValue;
 
-			// Scroll to the heading with the adjusted offset
+			// Scroll to the startingPoint with the adjusted offset
 			window.scrollTo({ top: scrollPosition, behavior: "smooth" });
 		});
 	});

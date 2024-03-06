@@ -206,7 +206,8 @@
     /* make min-width <= 100px to avoid overlap */
     min-width: 95px;
 
-    max-height: 310px;
+    min-height: 20dvh;
+    max-height: 250px;
 
     border-radius: 10px;
     padding-top: 1rem;
@@ -235,7 +236,7 @@
       min-width: 230px;
       max-width: 320px;
 
-      min-height: 50dvh;
+      /* min-height: 50dvh; */
       max-height: 400px;
 
       padding-left: 0.6rem;
@@ -348,8 +349,8 @@
     max-width: 500px;
     margin: 0 auto;
 
-    min-height: 40dvh;
-    max-height: 250px;
+    min-height: 25dvh;
+    max-height: 200px;
 
     border-radius: 10px;
     padding-top: 1rem;
@@ -370,7 +371,7 @@
       max-width: 500px;
       margin: 0 auto;
 
-      min-height: 35dvh;
+      /* min-height: 35dvh; */
       max-height: 250px;
     }
 
@@ -380,8 +381,8 @@
       max-width: 500px;
       margin: 0 auto;
 
-      min-height: 35dvh;
-      max-height: 300px;
+      /* min-height: 35dvh; */
+      max-height: 250px;
     }
   }
 
@@ -463,8 +464,8 @@
     min-width: 250px;
     max-width: 600px;
 
-    min-height: 40dvh;
-    max-height: 300px;
+    min-height: 20dvh;
+    max-height: 250px;
 
     border-radius: 10px;
     padding-top: 1.5rem;
@@ -476,14 +477,15 @@
   }
 
   .swiper-slide-active .swiper-card {
+    /* outline: 2px solid red; */
 
     /* //////////////// */
     @media screen and (width > 875px) and (width <=1000px) {
-      min-width: 50dvw;
-      max-width: 400px;
+      min-width: 400px;
+      max-width: 550px;
       margin: 0 auto;
 
-      min-height: 35dvh;
+      /* min-height: 35dvh; */
       max-height: 250px;
     }
 
@@ -493,8 +495,8 @@
       max-width: 500px;
       margin: 0 auto;
 
-      min-height: 20dvh;
-      max-height: 300px;
+      /* min-height: 20dvh; */
+      max-height: 250px;
     }
   }
 
