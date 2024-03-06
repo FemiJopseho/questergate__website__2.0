@@ -69,11 +69,11 @@
     color: var(--clr-neutral-white-2);
 
     background-color: var(--clr-secondary-650);
-    border-radius: 10px;
+
     padding: 1rem 1rem;
     border-radius: 12px;
     cursor: pointer;
-    border: 2px solid hsla(0, 0%, 0%, 0.1);
+    border: 0.1px solid hsla(0, 0%, 0%, 0.1);
     box-shadow: 0px 1px 1px hsla(0, 0%, 0%, 0.3);
     box-shadow: 0px 2px 2px hsla(0, 0%, 0%, 0.3);
     box-shadow: 0px 4px 4px hsla(0, 0%, 0%, 0.3);
@@ -182,11 +182,11 @@
     color: var(--clr-neutral-white-2);
 
     background-color: var(--clr-secondary-650);
-    border-radius: 10px;
+
     padding: 1rem 2rem;
     border-radius: 12px;
     cursor: pointer;
-    border: 2px solid hsla(0, 0%, 0%, 0.1);
+    border: 0.1px solid hsla(0, 0%, 0%, 0.1);
     box-shadow: 0px 1px 1px hsla(0, 0%, 0%, 0.3);
     box-shadow: 0px 2px 2px hsla(0, 0%, 0%, 0.3);
     box-shadow: 0px 4px 4px hsla(0, 0%, 0%, 0.3);
@@ -294,11 +294,11 @@
     color: var(--clr-neutral-white-2);
 
     background-color: var(--clr-secondary-650);
-    border-radius: 10px;
+
     padding: 1rem 2rem;
     border-radius: 12px;
     cursor: pointer;
-    border: 2px solid hsla(0, 0%, 0%, 0.1);
+    border: 0.1px solid hsla(0, 0%, 0%, 0.1);
     box-shadow: 0px 1px 1px hsla(0, 0%, 0%, 0.3);
     box-shadow: 0px 2px 2px hsla(0, 0%, 0%, 0.3);
     box-shadow: 0px 4px 4px hsla(0, 0%, 0%, 0.3);

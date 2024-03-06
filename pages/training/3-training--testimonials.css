@@ -45,15 +45,16 @@
 		/* outline: 2px solid red; */
 
 		padding: 0 0.3rem 1rem 0.3rem;
-		width: 60%;
+		width: 100%;
+		max-width: 350px;
 		margin: 0 auto;
 
-		font-family: var(--ff-secondary);
+		font-family: var(--ff-primary);
 		font-weight: var(--fw-bold);
 		font-size: var(--fs-600);
 		line-height: 1.5;
 		letter-spacing: -3%;
-		text-transform: capitalize;
+		text-transform: none;
 		text-align: center;
 		color: var(--clr-secondary-650);
 

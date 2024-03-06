@@ -3,11 +3,13 @@
 	/* outline: 2px solid gold; */
 
 	width: var(--width__always-fill);
+	max-width: var(--width__1440px);
+	margin: 0 auto;
 	min-width: var(--min-width__235px);
 	background-color: var(--clr-footer-bckgrd);
 
 	/* decides the height of hero section */
-	min-height: 80dvh;
+	min-height: 10dvh;
 }
 
 .hero__background {

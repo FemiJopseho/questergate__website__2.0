@@ -3,11 +3,13 @@
 	/* outline: 2px solid gold; */
 
 	width: var(--width__always-fill);
+	max-width: var(--width__1440px);
+	margin: 0 auto;
 	min-width: var(--min-width__235px);
 	background-color: var(--clr-footer-bckgrd);
 
 	/* decides the height of hero section */
-	min-height: 80dvh;
+	min-height: 10dvh;
 }
 
 .hero__background {
@@ -31,7 +33,7 @@
 
 /** Mobile Portrait screens */
 /* (max-width <= 500px) */
-@media screen and (width <= 31.25em) {
+@media screen and (width <=31.25em) {
 	/* /////////////// */
 
 	.hero__background__image {
@@ -92,7 +94,8 @@
 	.hero__cta {
 		/* outline: 2px solid pink; */
 
-		width: 70%; /* can't use flex basis since height is not restrained */
+		width: 70%;
+		/* can't use flex basis since height is not restrained */
 		margin: 0 auto;
 
 		display: flex;
@@ -118,7 +121,8 @@
 			/* outline: 2px solid paleturquoise; */
 
 			display: block;
-			text-decoration: none; /* Remove underline by default for links */
+			text-decoration: none;
+			/* Remove underline by default for links */
 			border-radius: var(--link__border-radius);
 			color: var(--clr-link-default-2);
 			/* padding: var(--fs-1100) var(--fs-700); */
@@ -135,14 +139,15 @@
 			}
 
 			&:disabled {
-				opacity: 0.6; /* Make the link semi-transparent to indicate it's disabled */
-				pointer-events: none; /* Disable pointer events on the link */
+				opacity: 0.6;
+				/* Make the link semi-transparent to indicate it's disabled */
+				pointer-events: none;
+				/* Disable pointer events on the link */
 			}
 
 			&:target {
-				background-color: var(
-					--clr-link-target-2
-				); /* Style the target of the link (e.g., section being linked to) */
+				background-color: var(--clr-link-target-2);
+				/* Style the target of the link (e.g., section being linked to) */
 			}
 
 			/* /////////////// */
@@ -154,7 +159,8 @@
 				flex-wrap: nowrap;
 				justify-content: space-between;
 				align-items: center;
-				border-radius: var(--fs-1000); /* not really doing anything */
+				border-radius: var(--fs-1000);
+				/* not really doing anything */
 
 				/* /////////////// */
 				.hero__cta__download-img-google,
@@ -177,7 +183,8 @@
 					font-size: var(--fs-800);
 					letter-spacing: 2%;
 					text-align: center;
-					border-radius: var(--fs-1000); /* not really doing anything */
+					border-radius: var(--fs-1000);
+					/* not really doing anything */
 				}
 			}
 		}
@@ -185,7 +192,8 @@
 
 	.hero__cred {
 		/* outline: 2px solid indigo; */
-		padding-top: 2rem; /* uiux was 3.625rem */
+		padding-top: 2rem;
+		/* uiux was 3.625rem */
 
 		/* /////////// */
 		.hero__cred__text-1 {
@@ -224,6 +232,7 @@
 		/* ///////////////////// */
 		/* hero__cred when screen size width < 299px */
 		@media screen and (width < 18.69em) {
+
 			/* /////////// */
 			.hero__cred__text-1 {
 				text-align: center;
@@ -251,7 +260,7 @@
 
 /* Mobile landscape & Tablet Portrait screens */
 /* (min-width > 500px ) & (max-width <= 875px) */
-@media screen and (width > 31.25em) and (width <= 54.69em) {
+@media screen and (width > 31.25em) and (width <=54.69em) {
 	/* //////////////// */
 
 	.hero__background__image {
@@ -352,7 +361,8 @@
 			/* outline: 2px solid paleturquoise; */
 
 			display: block;
-			text-decoration: none; /* Remove underline by default for links */
+			text-decoration: none;
+			/* Remove underline by default for links */
 			border-radius: var(--link__border-radius);
 			color: var(--clr-link-default-2);
 			padding: 0.4rem;
@@ -369,13 +379,13 @@
 
 			&:disabled {
 				opacity: 0.6;
-				pointer-events: none; /* Disable pointer events on the link */
+				pointer-events: none;
+				/* Disable pointer events on the link */
 			}
 
 			&:target {
-				background-color: var(
-					--clr-link-target-2
-				); /* Style the target of the link (e.g., section being linked to) */
+				background-color: var(--clr-link-target-2);
+				/* Style the target of the link (e.g., section being linked to) */
 			}
 
 			/* /////////////// */
@@ -388,7 +398,8 @@
 				justify-content: space-evenly;
 				align-items: center;
 				column-gap: 0.8rem;
-				border-radius: var(--fs-1000); /* not really doing anything */
+				border-radius: var(--fs-1000);
+				/* not really doing anything */
 
 				/* /////////////// */
 				.hero__cta__download-img-google,
@@ -413,7 +424,8 @@
 					font-size: clamp(var(--fs-900), var(--fs-800), var(--fs-800));
 					letter-spacing: 2%;
 					text-align: center;
-					border-radius: var(--fs-1000); /* not really doing anything */
+					border-radius: var(--fs-1000);
+					/* not really doing anything */
 				}
 			}
 		}
@@ -421,7 +433,8 @@
 
 	.hero__cred {
 		/* outline: 2px solid indigo; */
-		padding-top: 1rem; /* uiux was 3.625rem */
+		padding-top: 1rem;
+		/* uiux was 3.625rem */
 
 		/* /////////// */
 		.hero__cred__text-1 {
@@ -460,6 +473,7 @@
 		/* ///////////////////// */
 		/* hero__cred when screen size width < 299px */
 		@media screen and (width < 18.69em) {
+
 			/* /////////// */
 			.hero__cred__text-1 {
 				text-align: center;
@@ -487,6 +501,7 @@
 
 /** Screens > 875px */
 @media screen and (width > 54.69em) {
+
 	/* //////////////// */
 	.hero__background__image {
 		/* outline: 2px solid red; */
@@ -583,7 +598,8 @@
 			/* outline: 2px solid paleturquoise; */
 
 			display: block;
-			text-decoration: none; /* Remove underline by default for links */
+			text-decoration: none;
+			/* Remove underline by default for links */
 			border-radius: var(--link__border-radius);
 			color: var(--clr-link-default-2);
 			padding: 0.4rem;
@@ -600,13 +616,13 @@
 
 			&:disabled {
 				opacity: 0.6;
-				pointer-events: none; /* Disable pointer events on the link */
+				pointer-events: none;
+				/* Disable pointer events on the link */
 			}
 
 			&:target {
-				background-color: var(
-					--clr-link-target-2
-				); /* Style the target of the link (e.g., section being linked to) */
+				background-color: var(--clr-link-target-2);
+				/* Style the target of the link (e.g., section being linked to) */
 			}
 
 			/* /////////////// */
@@ -619,7 +635,8 @@
 				justify-content: center;
 				align-items: center;
 				column-gap: 0.8rem;
-				border-radius: var(--fs-1000); /* not really doing anything */
+				border-radius: var(--fs-1000);
+				/* not really doing anything */
 
 				/* /////////////// */
 				.hero__cta__download-img-google,
@@ -643,7 +660,8 @@
 					font-size: var(--fs-800);
 					letter-spacing: 2%;
 					text-align: center;
-					border-radius: var(--fs-1000); /* not really doing anything */
+					border-radius: var(--fs-1000);
+					/* not really doing anything */
 				}
 			}
 		}
@@ -691,6 +709,7 @@
 		/* ///////////////////// */
 		/* hero__cred when screen size width < 299px */
 		@media screen and (width < 18.69em) {
+
 			/* /////////// */
 			.hero__cred__text-1 {
 				text-align: center;

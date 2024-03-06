@@ -80,13 +80,12 @@
 			href="../1-css-components/10-carousel--swipper--custom-1.css"
 		/>
 
-		<link rel="stylesheet" href="./0-training--header.css" />
-		<link rel="stylesheet" href="./1-training--hero.css" />
-		<link rel="stylesheet" href="./2-training--benefits.css" />
-		<link rel="stylesheet" href="./3-training--testimonials.css" />
-		<link rel="stylesheet" href="./4-training --cta.css" />
-		<link rel="stylesheet" href="./5-training--focus.css" />
-		<link rel="stylesheet" href="./6-training--form.css" />
+		<link rel="stylesheet" href="../training/0-training--header.css" />
+		<link rel="stylesheet" href="../training/1-training--hero.css" />
+		<link rel="stylesheet" href="../training/2-training--benefits.css" />
+		<link rel="stylesheet" href="../training/3-training--testimonials.css" />
+		<link rel="stylesheet" href="../training/5-training--focus.css" />
+		<link rel="stylesheet" href="./7-training__payment__types.css" />
 
 		<!-- --------------JQUERY ACCESS via CDN and via Local server----------------- -->
 		<script
@@ -133,7 +132,9 @@
 					<picture class="training__header__picture">
 						<source
 							media="(min-width: 875px)"
-							srcset="../../images/QG_LOGO_horizontal_WHITE background (trimmed).png"
+							srcset="
+								../../images/QG_LOGO_horizontal_WHITE_background_(trimmed).png
+							"
 						/>
 
 						<source
@@ -244,16 +245,19 @@
 									>
 										12 weeks of training (online).
 									</li>
+
 									<li
 										class="training__focus-card__list-items training__features-card__list-items"
 									>
 										Over 72 hours of practical classes.
 									</li>
+
 									<li
 										class="training__focus-card__list-items training__features-card__list-items"
 									>
 										Access to over 30years of Trading insights.
 									</li>
+
 									<li
 										class="training__focus-card__list-items training__features-card__list-items"
 									>
@@ -264,180 +268,6 @@
 						</div>
 					</div>
 				</section>
-
-				<!-- *-------START OF Training CTA-1 section------- -->
-				<!--
-				<section class="training__cta__section">
-					<div
-						class="training__cta__container training__cta__accordion__scroll-into-view-1"
-					>
-						<div
-							class="training__cta__content__container training__cta__content__container__forAccordion-1"
-						>
-							<p class="training__cta__content">
-								Become a profit-making Trader
-							</p>
-
-							<button
-								class="training__cta__button training__cta__accordion__button-1"
-								id="training__cta__accordion__button-id-1"
-								aria-expanded="false"
-								data-target="#training__cta__accordion__content-1"
-							>
-								Apply Now for the FREE training sessions
-							</button>
-						</div>
-					</div>
-				</section>
-				-->
-
-				<!-- *-------START OF TRAINING FORM-1 section------- -->
-				<!--
-				<section class="training-form__section">
-					<div
-						class="training-form__container training-form__container__forAccordion-1"
-						id="training__cta__accordion__content-1"
-					>
-						<h2 class="training-form__header">Apply Here</h2>
-
-						<form
-							class="training-form"
-							name="qg-training-form"
-							action="#"
-							method="post"
-							target="_self"
-							accept-charset="UTF-8"
-							validate
-							autocomplete="on"
-						>
-							<div class="training-form__elements__container">
-								<label for="f-name">First Name:</label>
-
-								<input
-									type="text"
-									id="f-name"
-									name="firstName"
-									required
-									placeholder="first name"
-								/>
-							</div>
-
-							<div class="training-form__elements__container">
-								<label for="l-name">Last Name:</label>
-
-								<input
-									type="text"
-									id="l-name"
-									name="lastName"
-									required
-									placeholder="last name"
-								/>
-							</div>
-
-							<div class="training-form__elements__container">
-								<label for="your-email">Email:</label>
-
-								<input
-									type="email"
-									id="your-email"
-									name="email"
-									required
-									placeholder="email"
-								/>
-							</div>
-
-							<div class="training-form__elements__container">
-								<label for="phone-number">Phone Number:</label>
-
-								<input
-									type="tel"
-									id="phone-number"
-									name="phoneNumber"
-									required
-									placeholder="phone number"
-								/>
-							</div>
-
-							<div class="training-form__elements__container">
-								<label for="your-country">Country:</label>
-
-								<input
-									type="text"
-									id="your-country"
-									name="country"
-									required
-									placeholder="your country"
-								/>
-							</div>
-
-							<div class="training-form__elements__container">
-								<label class="trading-knowledge-level" for="knowledge-level"
-									>What is your current level of knowledge:</label
-								>
-
-								<select id="knowledge-level" name="knowledgeLevel" required>
-									<option value="" disabled selected>Select</option>
-									<option value="beginner">No trading experience</option>
-									<option value="beginner-experience">
-										Only Demo trading experience
-									</option>
-									<option value="intermediate">Live trading experience</option>
-								</select>
-							</div>
-
-							<div
-								class="training-form__elements__container training__confirm-age"
-							>
-								<label class="trading__confirm-age__label" for="confirm-age"
-									>Confirm that you are above 21years</label
-								>
-
-								<input
-									type="checkbox"
-									class="trading__confirm-age__inputbox"
-									id="confirm-age"
-									name="confirmAge"
-									value="qualifiedAged"
-									required
-								/>
-							</div>
-
-							<input
-								type="submit"
-								class="training-form__submit-button training-form__submit-button__forAccordion-1"
-								id="training-form__submit-1"
-								value="submit"
-							/>
-						</form>
-
-						<div
-							class="training-form__after-submit__container training-form__after-submit__container__forAccordion-1"
-						>
-							<p class="training-form__after-submit__text-1">
-								Application Successful!
-							</p>
-
-							<p class="training-form__after-submit__text-2">
-								Your 3 months training starts on:
-								<span class="training-start-date">5th April, 2024.</span>
-							</p>
-
-							<p class="training-form__after-submit__text-3">
-								For more information, join the Whatsapp group:
-								<span class="training-whatsapp-link__container"
-									><a
-										href=""
-										class="training-whatsapp-link"
-										alt="training whatsapp link"
-										target="_blank"
-										>#################</a
-									>
-								</span>
-							</p>
-						</div>
-					</div>
-				</section>
-			-->
 
 				<!-- -------start of TESTIMONIALS section------- -->
 				<section class="testimonial__section">
@@ -712,191 +542,194 @@
 					</div>
 				</section>
 
-				<!-- -------START OF Training CTA section------- -->
-				<section class="training__cta__section">
-					<div
-						class="training__cta__container training__cta__accordion__scroll-into-view"
-					>
-						<div
-							class="training__cta__content__container training__cta__content__container__forAccordion"
-						>
-							<p class="training__cta__content">
-								Become a profit-making Trader
-							</p>
+				<!-- -------START OF payment section------- -->
+				<section class="training__payment__section">
+					<div class="training__payment__container">
+						<!-- for one-on-one training -->
+						<div class="training__types__container">
+							<div class="training__types__card">
+								<div class="training__types__header-features__container">
+									<h3 class="training__types__header">One-on-One Training</h3>
 
-							<button
-								class="training__cta__button training__cta__accordion__button"
-								id="training__cta__accordion__button-id"
-								aria-expanded="false"
-								data-target="#training__cta__accordion__content"
-							>
-								Apply Now for the FREE training sessions
-							</button>
+									<div class="training__types__features__list__container">
+										<ul class="training__types__features__list">
+											<li class="training__types__features__list-items">
+												you will get access to lots of things
+											</li>
+
+											<li class="training__types__features__list-items">
+												you will get access to lots of things
+											</li>
+
+											<li class="training__types__features__list-items">
+												you will get access to lots of things
+											</li>
+
+											<li class="training__types__features__list-items">
+												you will get access to lots of things
+											</li>
+										</ul>
+									</div>
+								</div>
+
+								<div class="training__types__drawing-an-arrow"></div>
+
+								<div class="training__types__cost__list__container">
+									<ul class="training__types__cost__list">
+										<li class="training__types__cost__list-items">
+											Duration: 3 months
+										</li>
+
+										<li class="training__types__cost__list-items">
+											Platform: Zoom Video (with access to recordings)
+										</li>
+
+										<li class="training__types__cost__list-items">
+											Fee: N50,000/month
+										</li>
+									</ul>
+								</div>
+
+								<div
+									class="training__types__cta__container training__one-on-one__cta__container"
+								>
+									<button
+										class="training__one-on-one__cta__button"
+										id="training__one-on-one__cta__button"
+										aria-expanded="false"
+										data-target="#one-on-one__payment-message"
+									>
+										Pay Now to Register
+									</button>
+
+									<div
+										class="training__one-on-one__payment-message__container training__payment__one-on-one__accordion__scroll-into-view"
+										id="one-on-one__payment-message"
+									>
+										<p class="training__payment-message__text-1">
+											Welcome Onboard!
+										</p>
+
+										<p class="training__payment-message__text-2">
+											To make payment and get more info about the One-on-One
+											training:
+										</p>
+
+										<p class="training__payment-message__text-3">
+											Contact Us on Whatsapp:
+											<span class="training-whatsapp-link__container"
+												><a
+													href=""
+													class="training-whatsapp-link"
+													alt="training whatsapp link"
+													target="_blank"
+													>#################</a
+												>
+											</span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- for group training -->
+						<div class="training__types__container">
+							<div class="training__types__card">
+								<div class="training__types__header-features__container">
+									<h3 class="training__types__header">Group Training</h3>
+
+									<div class="training__types__features__list__container">
+										<ul class="training__types__features__list">
+											<li class="training__types__features__list-items">
+												you will get access to lots of things
+											</li>
+
+											<li class="training__types__features__list-items">
+												you will get access to lots of things
+											</li>
+
+											<li class="training__types__features__list-items">
+												you will get access to lots of things
+											</li>
+
+											<li class="training__types__features__list-items">
+												you will get access to lots of things
+											</li>
+										</ul>
+									</div>
+								</div>
+
+								<div class="training__types__drawing-an-arrow"></div>
+
+								<div class="training__types__cost__list__container">
+									<ul class="training__types__cost__list">
+										<li class="training__types__cost__list-items">
+											Duration: 3 months
+										</li>
+
+										<li class="training__types__cost__list-items">
+											Platform: Zoom Video (with access to recordings)
+										</li>
+
+										<li class="training__types__cost__list-items">
+											Cost: N5,000/month
+										</li>
+									</ul>
+								</div>
+
+								<div
+									class="training__types__cta__container training__group__cta__container"
+								>
+									<p class="training__group__sub-cta">
+										Limited Slots: only 19 slots remaining!
+									</p>
+
+									<button
+										class="training__group__cta__button"
+										id="training__group__cta__button"
+										aria-expanded="false"
+										data-target="#group__payment-message"
+									>
+										Pay Now to Register
+									</button>
+
+									<div
+										class="training__group__payment-message__container training__payment__group__accordion__scroll-into-view"
+										id="group__payment-message"
+									>
+										<p class="training__payment-message__text-1">
+											Welcome Onboard!
+										</p>
+
+										<p class="training__payment-message__text-2">
+											To make payment and get more info about the Group
+											training:
+										</p>
+
+										<p class="training__payment-message__text-3">
+											Contact Us on Whatsapp:
+											<span class="training-whatsapp-link__container"
+												><a
+													href=""
+													class="training-whatsapp-link"
+													alt="training whatsapp link"
+													target="_blank"
+													>#################</a
+												>
+											</span>
+										</p>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</section>
+
+				<!-- -------START OF Training CTA section------- -->
+				<!-- removed -->
 
 				<!-- -------START OF TRAINING FORM section------- -->
-				<section class="training-form__section">
-					<div
-						class="training-form__container training-form__container__forAccordion"
-						id="training__cta__accordion__content"
-					>
-						<h2 class="training-form__header">Apply Here</h2>
-
-						<form
-							class="training-form"
-							name="qg-training-form"
-							action="#"
-							method="post"
-							target="_self"
-							accept-charset="UTF-8"
-							validate
-							autocomplete="on"
-							onsubmit="return validateForm()"
-						>
-							<div class="training-form__elements__container">
-								<label for="f-name">First Name:</label>
-
-								<input
-									type="text"
-									id="f-name"
-									name="firstName"
-									required
-									placeholder="first name"
-								/>
-
-								<div class="error-message" id="error-f-name"></div>
-							</div>
-
-							<div class="training-form__elements__container">
-								<label for="l-name">Last Name:</label>
-
-								<input
-									type="text"
-									id="l-name"
-									name="lastName"
-									required
-									placeholder="last name"
-								/>
-
-								<div class="error-message" id="error-l-name"></div>
-							</div>
-
-							<div class="training-form__elements__container">
-								<label for="your-email">Email:</label>
-
-								<input
-									type="email"
-									id="your-email"
-									name="email"
-									required
-									placeholder="email"
-								/>
-
-								<div class="error-message" id="error-your-email"></div>
-							</div>
-
-							<div class="training-form__elements__container">
-								<label for="phone-number">Phone Number:</label>
-
-								<input
-									type="tel"
-									id="phone-number"
-									name="phoneNumber"
-									required
-									placeholder="phone number"
-								/>
-
-								<div class="error-message" id="error-phone-number"></div>
-							</div>
-
-							<div class="training-form__elements__container">
-								<label for="your-country">Country:</label>
-
-								<input
-									type="text"
-									id="your-country"
-									name="country"
-									required
-									placeholder="your country"
-								/>
-
-								<div class="error-message" id="error-your-country"></div>
-							</div>
-
-							<div class="training-form__elements__container">
-								<label class="trading-knowledge-level" for="knowledge-level"
-									>What is your current level of knowledge:</label
-								>
-
-								<select id="knowledge-level" name="knowledgeLevel" required>
-									<option value="" disabled selected>Select</option>
-									<option value="beginner">No trading experience</option>
-									<option value="beginner-experience">
-										Only Demo trading experience
-									</option>
-									<option value="intermediate">Live trading experience</option>
-								</select>
-
-								<div class="error-message" id="error-knowledge-level"></div>
-							</div>
-
-							<div
-								class="training-form__elements__container training__confirm-age"
-							>
-								<label class="trading__confirm-age__label" for="confirm-age"
-									>Confirm that you are above 21years</label
-								>
-
-								<input
-									type="checkbox"
-									class="trading__confirm-age__inputbox"
-									id="confirm-age"
-									name="confirmAge"
-									value="qualifiedAged"
-									required
-								/>
-
-								<div class="error-message" id="error-confirm-age"></div>
-							</div>
-
-							<input
-								type="submit"
-								class="training-form__submit-button training-form__submit-button__forAccordion"
-								id="training-form__submit"
-								value="submit"
-							/>
-						</form>
-
-						<div
-							class="training-form__after-submit__container training-form__after-submit__container__forAccordion"
-							id="success-message"
-						>
-							<p class="training-form__after-submit__text-1">
-								Application Successful!
-							</p>
-
-							<p class="training-form__after-submit__text-2">
-								Your 3 months training starts on:
-								<span class="training-start-date">5th April, 2024.</span>
-							</p>
-
-							<p class="training-form__after-submit__text-3">
-								For more information, join the Whatsapp group:
-								<span class="training-whatsapp-link__container"
-									><a
-										href=""
-										class="training-whatsapp-link"
-										alt="training whatsapp link"
-										target="_blank"
-										>#################</a
-									>
-								</span>
-							</p>
-						</div>
-					</div>
-				</section>
+				<!-- removed -->
 			</main>
 
 			<!-- -------start of FOOTER section------- -->
@@ -1073,9 +906,8 @@
 		<script src="../js-components/back-to-top.js"></script>
 		<script src="../js-components/section__visible__on__scroll.js"></script>
 		<script src="../js-components/carousel--swipper--jbg-1.js"></script>
-		<script src="../js-components/training__cta__accordion.js"></script>
-		<script src="../js-components/training__cta__accordion__smooth__scroll__into__view.js"></script>
-		<script src="../js-components/training__form__validation.js"></script>
+		<script src="../js-components/training__payment__cta__accordion.js"></script>
+		<script src="../js-components/training__payment__cta__accordion__smooth__scroll__into__view.js"></script>
 		<script src="../js-components/footer__currentyear__auto.js"></script>
 		<script src="../js-components/append__to__footer-list.js"></script>
 	</body>

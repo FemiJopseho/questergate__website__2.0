@@ -19,6 +19,7 @@
     margin: 0 auto;
   }
 
+  /* first half of the card */
   .training__focus__container {
     /* outline: 4px solid black; */
 
@@ -46,16 +47,17 @@
   .training__focus__header {
     /* outline: 2px solid purple; */
 
-    padding-bottom: 1rem;
-    width: 60%;
+    padding-bottom: 2rem;
+    width: 100%;
+    max-width: 350px;
     margin: 0 auto;
 
     font-family: var(--ff-primary);
     font-weight: var(--fw-bold);
-    font-size: var(--fs-700);
+    font-size: var(--fs-600);
     line-height: 1.5;
     letter-spacing: -3%;
-    text-transform: capitalize;
+    text-transform: none;
     text-align: center;
     color: var(--clr-secondary-650);
 
@@ -110,7 +112,7 @@
     letter-spacing: normal;
     text-transform: none;
     text-align: center;
-    color: var(--clr-primary-650);
+    color: black;
 
     /* /////////////// */
     @media screen and (width <=350px) {
@@ -118,6 +120,20 @@
     }
   }
 
+  /* kinda-middle of the card */
+  /* drawing the downward arrow */
+  .drawing-an-arrow {
+    width: 20px;
+    height: 20px;
+    margin: 0 auto;
+    border: none;
+    background-color: hsl(206, 5%, 90%, 1);
+
+    rotate: 45deg;
+    translate: 0 10px;
+  }
+
+  /* second half of the card */
   .training__features-card__container {
     /* outline: 2px solid indianred; */
 
@@ -142,17 +158,6 @@
     color: var(--clr-secondary-650);
   }
 
-  /* drawing the downward arrow */
-  .drawing-an-arrow {
-    width: 20px;
-    height: 20px;
-    margin: 0 auto;
-    border: 0px solid black;
-    background-color: hsl(206, 5%, 90%, 1);
-
-    rotate: 45deg;
-    translate: 0 10px;
-  }
 }
 
 /*        */
@@ -178,6 +183,7 @@
     margin: 0 auto;
   }
 
+  /* first half of the card */
   .training__focus__container {
     /* outline: 4px solid black; */
 
@@ -265,6 +271,20 @@
     color: var(--clr-primary-650);
   }
 
+  /* kinda-middle of the card */
+  /* drawing the downward arrow */
+  .drawing-an-arrow {
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+    border: none;
+    background-color: hsl(206, 5%, 90%, 1);
+
+    rotate: 45deg;
+    translate: 0 15px;
+  }
+
+  /* second half of the card */
   .training__features-card__container {
     /* outline: 2px solid indianred; */
 
@@ -287,18 +307,6 @@
     font-weight: var(--fw-semi-bold);
     font-size: var(--fs-700);
     color: var(--clr-secondary-650);
-  }
-
-  /* drawing the downward arrow */
-  .drawing-an-arrow {
-    width: 30px;
-    height: 30px;
-    margin: 0 auto;
-    border: 0px solid black;
-    background-color: hsl(206, 5%, 90%, 1);
-
-    rotate: 45deg;
-    translate: 0 15px;
   }
 }
 
@@ -325,6 +333,7 @@
     margin: 0 auto;
   }
 
+  /* first half of the card */
   .training__focus__container {
     /* outline: 4px solid black; */
 
@@ -404,6 +413,20 @@
     color: var(--clr-primary-650);
   }
 
+  /* kinda-middle of the card */
+  /* drawing the downward arrow */
+  .drawing-an-arrow {
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    border: none;
+    background-color: hsl(206, 5%, 90%, 1);
+
+    rotate: 45deg;
+    translate: 0 20px;
+  }
+
+  /* second half of the card */
   .training__features-card__container {
     /* outline: 2px solid indianred; */
 
@@ -428,15 +451,53 @@
     color: var(--clr-secondary-650);
   }
 
-  /* drawing the downward arrow */
-  .drawing-an-arrow {
-    width: 40px;
-    height: 40px;
-    margin: 0 auto;
-    border: 0px solid black;
-    background-color: hsl(206, 5%, 90%, 1);
+}
 
-    rotate: 45deg;
-    translate: 0 20px;
+
+/*        */
+/*        */
+/*        */
+/*        */
+/*        */
+/** ---ANIMATION--- */
+.drawing-an-arrow {
+  /* name of animation */
+  animation-name: div_arrow_color_change;
+
+  /* how long the animation will last */
+  animation-duration: 10s;
+
+  /* how long b4 animation starts */
+  animation-delay: 0ms;
+
+  /* how many times the animation will run */
+  animation-iteration-count: infinite;
+
+  /* should it be played normal/reverse/alternate/alternate-reverse */
+  animation-direction: normal;
+
+  /* speed curve of animation */
+  animation-timing-function: ease-in-out;
+
+  /* the styles animation will apply when b4 it start/after it ends/both  */
+  animation-fill-mode: none;
+}
+
+@keyframes div_arrow_color_change {
+  0% {
+    background-color: white;
   }
+
+  50% {
+    background-color: hsl(206, 5%, 90%, 1);
+  }
+
+  100% {
+    background-color: white;
+  }
+}
+
+.training__focus__section:hover {
+  /* this pause or play animation. you can use JS to do this or hover */
+  animation-play-state: paused;
 }
