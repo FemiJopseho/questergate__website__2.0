@@ -68,8 +68,6 @@
     text-align: center;
     color: var(--clr-neutral-white-2);
 
-    background-color: var(--clr-secondary-650);
-
     padding: 1rem 1rem;
     border-radius: 12px;
     cursor: pointer;
@@ -181,8 +179,6 @@
     text-align: center;
     color: var(--clr-neutral-white-2);
 
-    background-color: var(--clr-secondary-650);
-
     padding: 1rem 2rem;
     border-radius: 12px;
     cursor: pointer;
@@ -292,8 +288,6 @@
     text-transform: none;
     text-align: center;
     color: var(--clr-neutral-white-2);
-
-    background-color: var(--clr-secondary-650);
 
     padding: 1rem 2rem;
     border-radius: 12px;

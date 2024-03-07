@@ -17,14 +17,17 @@ document.addEventListener("DOMContentLoaded", function () {
 	// Add click event listener to each button
 	buttons.forEach(function (button) {
 		button.addEventListener("click", function () {
-			// Get the element with class B= "savings__calc__section"
-			var startingPoint = document.querySelector(".savings__calc__section");
+			// Check if the accordion is not already expanded
+			if (button.getAttribute("aria-expanded") === "true") {
+				// Get the element with class B= "savings__calc__section"
+				var startingPoint = document.querySelector(".savings__calc__section");
 
-			// Calculate the scroll position by subtracting the offset value
-			var scrollPosition = startingPoint.offsetTop - offsetValue;
+				// Calculate the scroll position by subtracting the offset value
+				var scrollPosition = startingPoint.offsetTop - offsetValue;
 
-			// Scroll to the startingPoint with the adjusted offset
-			window.scrollTo({ top: scrollPosition, behavior: "smooth" });
+				// Scroll to the startingPoint with the adjusted offset
+				window.scrollTo({ top: scrollPosition, behavior: "smooth" });
+			}
 		});
 	});
 });
@@ -72,15 +75,18 @@ document.addEventListener("DOMContentLoaded", function () {
 	// Add click event listener to each button
 	buttons.forEach(function (button) {
 		button.addEventListener("click", function () {
-			// Get the element with class B= "fund-calc__title"
-			// i used "fund-calc__title" here cos investment__calc__section gave me issues
-			var startingPoint = document.querySelector(".fund-calc__title");
+			// Check if the accordion is not already expanded
+			if (button.getAttribute("aria-expanded") === "true") {
+				// Get the element with class B= "fund-calc__title"
+				// i used "fund-calc__title" here cos investment__calc__section gave me issues
+				var startingPoint = document.querySelector(".fund-calc__title");
 
-			// Calculate the scroll position by subtracting the offset value
-			var scrollPosition = startingPoint.offsetTop - offsetValue;
+				// Calculate the scroll position by subtracting the offset value
+				var scrollPosition = startingPoint.offsetTop - offsetValue;
 
-			// Scroll to the startingPoint with the adjusted offset
-			window.scrollTo({ top: scrollPosition, behavior: "smooth" });
+				// Scroll to the startingPoint with the adjusted offset
+				window.scrollTo({ top: scrollPosition, behavior: "smooth" });
+			}
 		});
 	});
 });
