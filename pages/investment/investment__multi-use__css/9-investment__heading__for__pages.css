@@ -8,7 +8,9 @@
     /* outline: 4px solid gold; */
 
     width: 100%;
-    padding: 4rem 0 0 0;
+    max-width: var(--width__1440px);
+    margin: 0 auto;
+    padding-bottom: 2rem;
   }
 
   .fund__heading-for-pages__container {
@@ -63,7 +65,9 @@
     /* outline: 4px solid gold; */
 
     width: 100%;
-    padding: 4rem 0 0 0;
+    max-width: var(--width__1440px);
+    margin: 0 auto;
+    padding-bottom: 4rem;
   }
 
   .fund__heading-for-pages__container {
@@ -116,7 +120,9 @@
     /* outline: 4px solid gold; */
 
     width: 100%;
-    padding: 4rem 0 0 0;
+    max-width: var(--width__1440px);
+    margin: 0 auto;
+    padding-bottom: 4rem;
   }
 
   .fund__heading-for-pages__container {

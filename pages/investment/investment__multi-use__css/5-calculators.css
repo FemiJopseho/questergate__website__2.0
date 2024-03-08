@@ -960,6 +960,7 @@
     margin: 0 auto;
     padding: 1rem;
     border-radius: 12px;
+    box-shadow: var(--gen-shadow-3d-02a);
     box-shadow: var(--gen-shadow-3d-02);
 
 

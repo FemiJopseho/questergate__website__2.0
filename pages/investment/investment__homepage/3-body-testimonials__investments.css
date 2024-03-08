@@ -26,6 +26,7 @@
 
 		width: 100%;
 		padding: 2rem 0 3rem 0;
+		margin-bottom: 4rem;
 
 		background-image: linear-gradient(45deg,
 				var(--clr-gradient-100),
@@ -343,8 +344,11 @@
 	.testimonial__section {
 		/* outline: 4px solid gold; */
 
-		width: 100%;
+		width: var(--width__always-fill);
+		max-width: var(--width__1440px);
+		margin: 0 auto;
 		padding: 2rem 0 3rem 0;
+		margin-bottom: 4rem;
 
 		background-image: linear-gradient(45deg,
 				var(--clr-gradient-100),
@@ -355,8 +359,6 @@
 		/* outline: 3px solid green; */
 
 		width: 100%;
-		max-width: var(--width__1200px);
-		margin: 0 auto;
 	}
 
 	.testimonial__header {
@@ -654,6 +656,7 @@
 		max-width: var(--width__1440px);
 		margin: 0 auto;
 		padding: 4rem 0 3rem 0;
+		margin-bottom: 6rem;
 
 		background-image: linear-gradient(45deg,
 				var(--clr-gradient-100),

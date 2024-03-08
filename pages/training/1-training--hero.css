@@ -22,13 +22,12 @@
   justify-content: flex-start;
   align-items: flex-start;
 
-  background-color: var(--clr-primary-650);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
-.training-hero__content__container {
+.training-hero__txt-content__container {
   /* outline: 2px solid pink; */
 
   width: 100%;
@@ -54,14 +53,14 @@
   .training-hero__container {
     /* outline: 4px solid black; */
 
-    background-image: url(../../images/fin-market-2-mobile.webp);
+    background-image: url(../../images/fin-market-2-mobile.jpg);
     padding: 0rem 0.25rem 0rem 0.25rem;
 
     justify-content: center;
     align-items: center;
   }
 
-  .training-hero__content__container {
+  .training-hero__txt-content__container {
     /* outline: 2px solid pink; */
 
     width: 100%;
@@ -75,7 +74,7 @@
     row-gap: 2rem;
   }
 
-  .training-hero__content-header {
+  .training-hero__txt-content-header {
     /* outline: 2px solid green; */
 
     padding-top: 1rem;
@@ -97,7 +96,7 @@
     row-gap: 0.1rem;
 
     /* /////////////// */
-    .hero__content-header__part-1 {
+    .hero__txt-content-header__part-1 {
       /* outline: 2px solid greenyellow; */
 
       text-shadow: -2px 0px 2px black,
@@ -132,7 +131,7 @@
     }
 
     /* //////////////// */
-    .hero__content-header__part-2 {
+    .hero__txt-content-header__part-2 {
       /* outline: 2px solid greenyellow; */
 
       filter: brightness(135%);
@@ -169,7 +168,7 @@
     }
 
     /* //////////////// */
-    .hero__content-header__part-x {
+    .hero__txt-content-header__part-x {
       /* outline: 2px solid greenyellow; */
 
       display: block;
@@ -207,7 +206,7 @@
     }
 
     /* ////////////////// */
-    .hero__content-header__part-3 {
+    .hero__txt-content-header__part-3 {
       /* outline: 2px solid greenyellow; */
 
       text-shadow: -1px 0px black,
@@ -242,7 +241,7 @@
     }
   }
 
-  .training-hero__content-subhead {
+  .training-hero__txt-content-subhead {
     /* outline: 2px solid skyblue; */
 
     width: 100%;
@@ -289,13 +288,13 @@
     padding: 0rem 2rem 2rem 2rem;
   }
 
-  .training-hero__content__container {
+  .training-hero__txt-content__container {
     /* outline: 2px solid pink; */
 
     row-gap: 1rem;
   }
 
-  .training-hero__content-header {
+  .training-hero__txt-content-header {
     /* outline: 2px solid green; */
 
     width: 100%;
@@ -316,7 +315,7 @@
 
 
     /* /////////////// */
-    .hero__content-header__part-1 {
+    .hero__txt-content-header__part-1 {
       /* outline: 2px solid greenyellow; */
 
       color: var(--clr-secondary-650);
@@ -343,7 +342,7 @@
     }
 
     /* //////////////// */
-    .hero__content-header__part-2 {
+    .hero__txt-content-header__part-2 {
       /* outline: 2px solid greenyellow; */
 
       color: var(--clr-secondary-650);
@@ -372,7 +371,7 @@
     }
 
     /* //////////////// */
-    .hero__content-header__part-x {
+    .hero__txt-content-header__part-x {
       /* outline: 2px solid greenyellow; */
 
       color: var(--clr-secondary-650);
@@ -401,7 +400,7 @@
     }
 
     /* ////////////////// */
-    .hero__content-header__part-3 {
+    .hero__txt-content-header__part-3 {
       /* outline: 2px solid greenyellow; */
 
       color: var(--clr-secondary-650);
@@ -428,7 +427,7 @@
     }
   }
 
-  .training-hero__content-subhead {
+  .training-hero__txt-content-subhead {
     /* outline: 2px solid skyblue; */
 
     width: 100%;
@@ -480,14 +479,14 @@
     }
   }
 
-  .training-hero__content__container {
+  .training-hero__txt-content__container {
     /* outline: 2px solid pink; */
 
     align-items: flex-end;
     row-gap: 2rem;
   }
 
-  .training-hero__content-header {
+  .training-hero__txt-content-header {
     /* outline: 2px solid green; */
 
     width: 100%;
@@ -507,7 +506,7 @@
     row-gap: 0.2rem;
 
     /* /////////////// */
-    .hero__content-header__part-1 {
+    .hero__txt-content-header__part-1 {
       /* outline: 2px solid greenyellow; */
 
       font-size: var(--fs-200);
@@ -519,7 +518,7 @@
     }
 
     /* //////////////// */
-    .hero__content-header__part-2 {
+    .hero__txt-content-header__part-2 {
       /* outline: 2px solid greenyellow; */
 
       font-size: var(--fs-100);
@@ -533,7 +532,7 @@
     }
 
     /* //////////////// */
-    .hero__content-header__part-x {
+    .hero__txt-content-header__part-x {
       /* outline: 2px solid greenyellow; */
 
       font-size: var(--fs-200);
@@ -546,7 +545,7 @@
     }
 
     /* ////////////////// */
-    .hero__content-header__part-3 {
+    .hero__txt-content-header__part-3 {
       /* outline: 2px solid greenyellow; */
 
       font-size: var(--fs-200);
@@ -559,7 +558,7 @@
     }
   }
 
-  .training-hero__content-subhead {
+  .training-hero__txt-content-subhead {
     /* outline: 2px solid skyblue; */
 
     width: 100%;
