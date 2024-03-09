@@ -78,6 +78,8 @@
     /* outline: 4px solid gold; */
 
     width: 100%;
+    max-width: var(--width__1440px);
+    margin: 0 auto;
     padding-bottom: 6rem;
   }
 
@@ -85,8 +87,6 @@
     /* outline: 4px solid blue; */
 
     width: 100%;
-    max-width: var(--width__1200px);
-    margin: 0 auto;
     padding: 0 0.5rem;
 
     text-align: center;
@@ -146,6 +146,8 @@
     /* outline: 4px solid gold; */
 
     width: 100%;
+    max-width: var(--width__1440px);
+    margin: 0 auto;
     padding-bottom: 8rem;
   }
 
@@ -153,8 +155,6 @@
     /* outline: 4px solid blue; */
 
     width: 100%;
-    max-width: var(--width__1200px);
-    margin: 0 auto;
     padding: 0 0.5rem;
 
     text-align: center;

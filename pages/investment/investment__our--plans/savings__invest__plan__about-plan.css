@@ -7,8 +7,6 @@
     /* outline: 4px solid red; */
 
     width: 100%;
-    max-width: var(--width__1440px);
-    margin: 0 auto;
     padding-top: 0rem;
     padding-bottom: 6rem;
   }
@@ -199,8 +197,6 @@
     /* outline: 4px solid red; */
 
     width: 100%;
-    max-width: var(--width__1440px);
-    margin: 0 auto;
     padding-top: 0rem;
     padding-bottom: 6rem;
   }

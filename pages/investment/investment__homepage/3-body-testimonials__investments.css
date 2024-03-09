@@ -37,8 +37,6 @@
 		/* outline: 3px solid green; */
 
 		width: 100%;
-		max-width: var(--width__1200px);
-		margin: 0 auto;
 	}
 
 	.testimonial__header {
@@ -344,9 +342,7 @@
 	.testimonial__section {
 		/* outline: 4px solid gold; */
 
-		width: var(--width__always-fill);
-		max-width: var(--width__1440px);
-		margin: 0 auto;
+		width: 100%;
 		padding: 2rem 0 3rem 0;
 		margin-bottom: 4rem;
 
@@ -652,7 +648,7 @@
 	.testimonial__section {
 		/* outline: 4px solid gold; */
 
-		width: var(--width__always-fill);
+		width: 100%;
 		max-width: var(--width__1440px);
 		margin: 0 auto;
 		padding: 4rem 0 3rem 0;
@@ -666,7 +662,7 @@
 	.testimonial__container {
 		/* outline: 4px solid green; */
 
-		width: var(--width__always-fill);
+		width: 100%;
 	}
 
 	.testimonial__header {

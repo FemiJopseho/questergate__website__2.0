@@ -3,8 +3,8 @@
 
 
 /* Mobile & Tablet screens */
-/* (min-width > 500px ) & (max-width <= 875px) */
-@media screen and (width <=54.69em) {
+/* (max-width <= 1000px) */
+@media screen and (width <=62.5em) {
 
   /* variables for tablet */
   :root {
@@ -18,6 +18,8 @@
 
     height: auto;
     width: 100%;
+    max-width: var(--width__1440px);
+    margin: 0 auto;
     padding: 0.5rem;
 
     font-family: var(--ff-primary);
@@ -340,19 +342,20 @@
 /*        */
 /*        */
 
-/** Screens > 875px */
-@media screen and (width > 54.69em) {
+/** Screens > 1000px */
+@media screen and (width > 62.5em) {
 
   /* variables for desktop */
   :root {
     --header__d__width: var(--width__always-fill);
-    --header__d__content__width: var(--width__1200px);
+    --header__d__content__width: var(--width__1440px);
   }
 
   .fund-header__section {
     /* outline: 4px solid black; */
 
     height: auto;
+    /* so that the header edges wont show you scroll */
     width: 100%;
     padding: 0.5rem;
 
@@ -362,7 +365,9 @@
     color: var(--clr-primary-800);
     background-color: var(--clr-pure-white);
 
-    transition: all 0.35s ease;
+    transition: all 1s ease;
+    /* transition: none; */
+
 
     /* /////////// */
     .fund__header__burger {
@@ -377,17 +382,20 @@
 
     /* outline: 4px solid red; */
 
+    width: 100%;
+    padding-top: 0;
+    padding-bottom: 0;
+
     background: var(--clr-header-bckgrd);
     box-shadow: var(--gen-shadow-header);
 
     position: fixed;
     top: 0;
-    padding-top: 0;
-    padding-bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
     z-index: 100;
 
-    width: 100%;
-    margin: 0 auto;
+    /* transition: none; */
 
     /* /////////// */
     .fund__header__burger {
@@ -401,7 +409,7 @@
     /* outline: 4px solid gray; */
 
     width: 100%;
-    max-width: var(--header__d__content__width);
+    max-width: var(--width__1440px);
     margin: 0 auto;
 
     display: flex;

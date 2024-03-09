@@ -189,6 +189,8 @@
     /* outline: 4px solid gray; */
 
     width: 100%;
+    max-width: var(--width__1440px);
+    margin: 0 auto;
     padding-bottom: 8rem;
 
   }
@@ -197,8 +199,6 @@
     /* outline: 4px solid skyblue; */
 
     width: 100%;
-    max-width: var(--width__1200px);
-    margin: 0 auto;
 
     display: flex;
     flex-direction: column;

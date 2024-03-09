@@ -259,8 +259,6 @@
     /* outline: 4px solid green; */
 
     width: 100%;
-    max-width: var(--width__1200px);
-    margin: 0 auto;
     padding: 0 1rem;
 
     display: flex;
@@ -502,6 +500,8 @@
     /* outline: 4px solid gold; */
 
     width: 100%;
+    max-width: var(--width__1440px);
+    margin: 0 auto;
     padding: 6rem 0 8rem 0;
   }
 
@@ -509,8 +509,6 @@
     /* outline: 4px solid green; */
 
     width: 100%;
-    max-width: var(--width__1200px);
-    margin: 0 auto;
     padding: 0 2rem;
 
     display: flex;

@@ -3,8 +3,8 @@
 
 
 /* Mobile & Tablet screens */
-/* (min-width > 500px ) & (max-width <= 875px) */
-@media screen and (width <=54.69em) {
+/* (max-width <= 1000px) */
+@media screen and (width <=62.5em) {
 
   /* variables for tablet */
   :root {
@@ -340,8 +340,8 @@
 /*        */
 /*        */
 
-/** Screens > 875px */
-@media screen and (width > 54.69em) {
+/** Screens > 1000px */
+@media screen and (width > 62.5em) {
 
   /* variables for desktop */
   :root {
@@ -354,6 +354,8 @@
 
     height: auto;
     width: 100%;
+    max-width: var(--width__1440px);
+    margin: 0 auto;
     padding: 0.5rem;
 
     font-family: var(--ff-primary);
@@ -361,8 +363,6 @@
     font-weight: var(--fw-semi-bold);
     color: var(--clr-primary-800);
     background-color: var(--clr-pure-white);
-
-    transition: all 0.35s ease;
 
     /* /////////// */
     .fund__header__burger {
@@ -401,8 +401,6 @@
     /* outline: 4px solid gray; */
 
     width: 100%;
-    max-width: var(--header__d__content__width);
-    margin: 0 auto;
 
     display: flex;
     flex-direction: row;

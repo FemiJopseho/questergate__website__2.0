@@ -16,8 +16,6 @@
     /* outline: 4px solid darkolivegreen; */
 
     width: 100%;
-    max-width: var(--width__1200px);
-    margin: 0 auto;
   }
 
   .fund-about-us__details__heading__container {
@@ -164,8 +162,6 @@
     /* outline: 4px solid darkolivegreen; */
 
     width: 100%;
-    max-width: var(--width__1200px);
-    margin: 0 auto;
   }
 
   .fund-about-us__details__heading__container {
@@ -303,14 +299,14 @@
 
     padding: 6rem 0 6rem 0;
     width: 100%;
+    max-width: var(--width__1440px);
+    margin: 0 auto;
   }
 
   .fund-about-us__details__container {
     /* outline: 4px solid darkolivegreen; */
 
     width: 100%;
-    max-width: var(--width__1200px);
-    margin: 0 auto;
   }
 
   .fund-about-us__details__heading__container {
