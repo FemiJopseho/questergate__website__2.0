@@ -93,7 +93,7 @@
 .client__quote-icon {
   /* outline: 2px solid pink; */
 
-  opacity: 0.05;
+  opacity: 0.09;
   position: absolute;
   top: 1%;
   left: 1%;
@@ -248,7 +248,7 @@
     /* outline: 2px solid pink; */
 
     /* will change with screen size */
-    width: 30%;
+    width: 20%;
     height: 30px;
 
     top: 3%;
@@ -260,8 +260,8 @@
 
     /* //////////////// */
     @media screen and (width <=350px) {
-      width: 30%;
-      height: 30px;
+      width: 20%;
+      height: 20px;
 
       top: 3%;
       left: 0%;
@@ -269,8 +269,8 @@
 
     /* //////////////// */
     @media screen and (width > 350px) and (width <=500px) {
-      width: 30%;
-      height: 30px;
+      width: 15%;
+      height: 20px;
 
       top: 3%;
       left: 0%;
@@ -390,7 +390,7 @@
     /* outline: 2px solid pink; */
 
     /* will change with screen size */
-    width: 40px;
+    width: 25px;
     height: 40px;
   }
 
@@ -504,7 +504,7 @@
     /* outline: 2px solid pink; */
 
     /* will change with screen size */
-    width: 40px;
+    width: 35px;
     height: 40px;
   }
 
@@ -513,7 +513,7 @@
 
     /* //////////////// */
     @media screen and (width <=1000px) {
-      width: 40px;
+      width: 35px;
       height: 40px;
 
       top: 1%;
@@ -522,7 +522,7 @@
 
     /* //////////////// */
     @media screen and (width > 1000px) and (width <=1400px) {
-      width: 40px;
+      width: 35px;
       height: 40px;
 
       top: 1%;
@@ -614,7 +614,7 @@
     /* outline: 2px solid pink; */
 
     /* will change with screen size */
-    width: 40px;
+    width: 35px;
     height: 40px;
   }
 

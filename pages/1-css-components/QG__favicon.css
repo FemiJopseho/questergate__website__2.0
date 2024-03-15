@@ -1,0 +1,18 @@
+/* Default favicon */
+#favicon {
+  content: url("../../images/QG__favicon__no__background-laptop-tablet.ico");
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 650px) {
+  #favicon {
+    content: url("../../images/QG__favicon__no__background-Favicon-Phone-16-10.ico");
+  }
+}
+
+/* Media query for larger screens */
+@media screen and (min-width: 650px) {
+  #favicon {
+    content: url("../../images/QG__favicon__no__background-laptop-tablet.ico");
+  }
+}

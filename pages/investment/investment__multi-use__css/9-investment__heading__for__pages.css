@@ -187,20 +187,22 @@
     line-height: 1.5;
     color: black;
     text-align: center;
-
   }
 
-  /* 
   .fund__heading-for-pages__content-parag {
-    outline: 2px dashed blue;
+    /* outline: 2px dashed blue; */
 
-    text-align: center;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    /* padding: 1rem 0; */
+
     text-transform: none;
     font-family: var(--ff-primary);
-    font-weight: var(--fw-bold);
+    font-weight: var(--fw-regular);
     font-size: var(--fs-700);
-    line-height: var(--lh-410);
-    color: var(--clr-primary-650);
-    padding: 1rem 0;
-  } */
+    line-height: 1.5;
+    color: black;
+    text-align: center;
+  }
 }

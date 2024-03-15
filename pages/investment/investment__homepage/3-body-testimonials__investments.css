@@ -4,7 +4,7 @@
 /* max-width: 500px */
 @media screen and (width <=31.25em) {
 
-	/* ///////////// */
+	/* /////////// */
 	:root {
 		--m-background-clr__testimonial-card: var(--clr-gen-website-bckgrd);
 		--m-width__testimonial-card: 25.8rem;
@@ -19,7 +19,7 @@
 		/* 2% --used fs*/
 	}
 
-	/* //////////////// */
+	/* ////////////// */
 
 	.testimonial__section {
 		/* outline: 4px solid gold; */

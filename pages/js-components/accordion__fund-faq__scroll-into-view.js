@@ -13,14 +13,19 @@ document.addEventListener("DOMContentLoaded", function () {
 	// Add click event listener to each button
 	buttons.forEach(function (button) {
 		button.addEventListener("click", function () {
-			// Get the element with class "parent__accordion__item__wrapper"
-			var heading = document.querySelector(".parent__accordion__item__wrapper");
+			// Check if the accordion is not already expanded
+			if (button.getAttribute("aria-expanded") === "true") {
+				// Get the element with class "parent__accordion__item__wrapper"
+				var startingPoint = document.querySelector(
+					".parent__accordion__item__wrapper"
+				);
 
-			// Calculate the scroll position by subtracting the offset value
-			var scrollPosition = heading.offsetTop - offsetValue;
+				// Calculate the scroll position by subtracting the offset value
+				var scrollPosition = startingPoint.offsetTop - offsetValue;
 
-			// Scroll to the heading with the adjusted offset
-			window.scrollTo({ top: scrollPosition, behavior: "smooth" });
+				// Scroll to the startingPoint with the adjusted offset
+				window.scrollTo({ top: scrollPosition, behavior: "smooth" });
+			}
 		});
 	});
 });

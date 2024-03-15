@@ -63,41 +63,53 @@
 			}
 		</style>
 
-		<!-- -------Other stylesheets, and scripts---------- -->
-
-		<link
-			rel="stylesheet"
-			href="../../1-css-components/joined-fixed-component.css"
-		/>
-		<link
-			rel="stylesheet"
-			href="../../1-css-components/6-utility-classes.css"
-		/>
-		<link
-			rel="stylesheet"
-			href="../../1-css-components/10-carousel--swipper--custom-1.css"
-		/>
+		<!-- -------Other stylesheets---------- -->
 
 		<link
 			rel="stylesheet"
 			href="../investment__multi-use__css/1-header__investment.css"
 		/>
+		<link rel="stylesheet" href="./2-hero__investment.css" />
+
+		<!-- ASYNC CSS -->
+		<link
+			rel="stylesheet"
+			href="./3-body-testimonials__investments.css"
+			async
+		/>
+		<link
+			rel="stylesheet"
+			href="../../1-css-components/joined-fixed-component.css"
+			async
+		/>
+		<link
+			rel="stylesheet"
+			href="../../1-css-components/6-utility-classes.css"
+			async
+		/>
+		<link
+			rel="stylesheet"
+			href="../../1-css-components/10-carousel--swipper--custom-1.css"
+			async
+		/>
+
+		<!-- DEFERRED CSS -->
 		<link
 			rel="stylesheet"
 			href="../investment__multi-use__css/7-steps__to__start__now.css"
+			defer
 		/>
+		<link rel="stylesheet" href="./4-body__our__plans.css" defer />
+		<link rel="stylesheet" href="./6-what__we__invest__in.css" defer />
 		<link
 			rel="stylesheet"
 			href="../investment__multi-use__css/5-calculators.css"
+			defer
 		/>
-
-		<link rel="stylesheet" href="./2-hero__investment.css" />
-		<link rel="stylesheet" href="./3-body-testimonials__investments.css" />
-		<link rel="stylesheet" href="./4-body__our__plans.css" />
-		<link rel="stylesheet" href="./6-what__we__invest__in.css" />
 		<link
 			rel="stylesheet"
 			href="../investment__multi-use__css/8-need-help.css"
+			defer
 		/>
 
 		<!-- --------------JQUERY ACCESS via CDN and via Local server----------------- -->
@@ -126,7 +138,8 @@
 		<link
 			rel="icon"
 			type="image/x-icon"
-			href="../../../images/QG__favicon__no__background.ico"
+			href="../../../images/QG__favicon__no__background-Favicon-Phone-16-10.ico"
+			id="favicon"
 		/>
 	</head>
 
@@ -147,11 +160,85 @@
 						<a
 							class="fund-header__logo__link"
 							href="../../homepage/html__homepage.html"
-							><img
-								class="fund-header__logo__img"
-								src="../../../images/QG_LOGO_small-horizontal.jpg"
-								alt="Questergate logo"
-						/></a>
+						>
+							<picture class="fund-header__logo__pic">
+								<source
+									class="phone-small"
+									type="image/webp"
+									media="(max-width: 350px)"
+									srcset="
+										../../../images/QG_LOGO_Big-horizontal-Phone-small-350-76.webp
+									"
+								/>
+
+								<source
+									class="phone-large"
+									type="image/webp"
+									media="(max-width: 500px)"
+									srcset="
+										../../../images/QG_LOGO_Big-horizontal-Phone-large-500-109.webp
+									"
+								/>
+
+								<source
+									class="tablet-portrait"
+									type="image/webp"
+									media="(max-width: 650px)"
+									srcset="
+										../../../images/QG_LOGO_Big-horizontal-Tablet-potrait-650-141.webp
+									"
+								/>
+
+								<source
+									class="tablet-landscape"
+									type="image/webp"
+									media="(max-width: 875px)"
+									srcset="
+										../../../images/QG_LOGO_Big-horizontal-Tablet-land-875-190.webp
+									"
+								/>
+
+								<source
+									class="laptop-small"
+									type="image/webp"
+									media="(max-width: 1000px)"
+									srcset="
+										../../../images/QG_LOGO_Big-horizontal-Laptop-small-1000-217.webp
+									"
+								/>
+
+								<source
+									class="laptop-large"
+									type="image/webp"
+									srcset="
+										../../../images/QG_LOGO_Big-horizontal-Laptop-Large-1440-313.webp
+									"
+								/>
+
+								<!-- fallback -->
+								<img
+									class="fund-header__logo__pic-img"
+									sizes="(max-width: 350px) 20vw, 
+												(max-width: 500px) 20vw, 
+												(max-width: 650px) 20vw, 
+												(max-width: 875px) 20vw, 
+												(max-width: 1000px) 20vw, 
+												1440px"
+									srcset="
+										../../../images/QG__LOGO-phone-small.PNG          350w,
+										../../../images/QG__LOGO-phone-large.PNG          500w,
+										../../../images/QG__LOGO-tablet-portrait-650.PNG  650w,
+										../../../images/QG__LOGO-tablet-land-875.PNG      875w,
+										../../../images/QG__LOGO-laptop-small-1000.PNG   1000w,
+										../../../images/QG__LOGO-laptop-large-1440.PNG   1440w
+									"
+									src="../../test--images/image-label.jpg"
+									loading="lazy"
+									decoding="async"
+									fetchpriority="high"
+								/>
+							</picture>
+						</a>
 					</div>
 
 					<div class="fund-header__list__container menu" id="menu">
@@ -256,29 +343,78 @@
 				<section class="fund-hero__section">
 					<div class="fund-hero__container">
 						<div class="fund-hero__image__container">
-							<img
-								class="fund-hero__image__mobile"
-								src="../../../images/banner__1__family__potrait__Small.jpg"
-								alt="family dancing due to secured future"
-							/>
+							<picture class="fund-hero__image__pic">
+								<source
+									class="phone-small"
+									type="image/webp"
+									media="(max-width: 350px)"
+									srcset="
+										../../../images/banner__1__family__potrait-Phone-small-350-350.webp
+									"
+								/>
 
-							<img
-								class="fund-hero__image__tablet-pot"
-								src="../../../images/banner__1__family__potrait__Small.jpg"
-								alt="family dancing due to secured future"
-							/>
+								<source
+									class="phone-large"
+									type="image/webp"
+									media="(max-width: 500px)"
+									srcset="
+										../../../images/banner__1__family__potrait-Phone-large-500-500.webp
+									"
+								/>
 
-							<img
-								class="fund-hero__image__tablet-land"
-								src="../../../images/banner__1__family__landscape__Medium.jpg"
-								alt="family dancing due to secured future"
-							/>
+								<source
+									class="tablet-portrait"
+									type="image/webp"
+									media="(max-width: 650px)"
+									srcset="
+										../../../images/banner__1__family__potrait-Tablet-potrait-650-650.webp
+									"
+								/>
 
-							<img
-								class="fund-hero__image__desktop carousel__image"
-								src="../../../images/banner__1__family__landscape__Large.jpg"
-								alt="family dancing due to secured future"
-							/>
+								<source
+									class="tablet-landscape"
+									type="image/webp"
+									media="(max-width: 875px)"
+									srcset="
+										../../../images/banner__1__family__landscape-Tablet-land-875-459.webp
+									"
+								/>
+
+								<source
+									class="laptop-small"
+									type="image/webp"
+									media="(max-width: 1000px)"
+									srcset="
+										../../../images/banner__1__family__landscape-Laptop-small-1000-525.webp
+									"
+								/>
+
+								<source
+									class="laptop-large"
+									type="image/webp"
+									srcset="
+										../../../images/banner__1__family__landscape-Laptop-Large-1440-756.webp 1x
+									"
+								/>
+
+								<!-- fallback -->
+								<img
+									class="fund-hero__image__pic-img"
+									sizes="(max-width: 350px) 100vw, (max-width: 500px) 100vw, (max-width: 650px) 100vw, (max-width: 875px) 100vw, (max-width: 1000px) 100vw, 1440px"
+									srcset="
+										../../../images/banner__1__family__potrait-Phone-small-350-350.jpg      350w,
+										../../../images/banner__1__family__potrait-Phone-large-500-500.jpg      500w,
+										../../../images/banner__1__family__potrait-Tablet-potrait-650-650.jpg   650w,
+										../../../images/banner__1__family__landscape-Tablet-land-875-459.jpg    875w,
+										../../../images/banner__1__family__landscape-Laptop-small-1000-525.jpg 1000w,
+										../../../images/banner__1__family__landscape-Laptop-Large-1440-756.jpg 1440w
+									"
+									src="../../test--images/image-label.jpg"
+									loading="lazy"
+									decoding="async"
+									fetchpriority="high"
+								/>
+							</picture>
 						</div>
 
 						<div class="fund-hero__content__container">
@@ -834,7 +970,7 @@
 															viewBox="0 0 48 48"
 														>
 															<path
-																d="M 16.482422 8.9921875 A 1.50015 1.50015 0 0 0 15.943359 9.1074219 C 15.943359 9.1074219 13.068414 10.279429 10.357422 13.464844 C 7.6464301 16.650259 5 21.927419 5 30 A 1.50015 1.50015 0 0 0 5.015625 30.21875 A 8.5 8.5 0 0 0 13.5 39 A 8.5 8.5 0 0 0 13.5 22 A 8.5 8.5 0 0 0 8.7089844 23.480469 C 9.5777265 19.777157 11.122152 17.196657 12.642578 15.410156 C 14.931586 12.720571 17.056641 11.892578 17.056641 11.892578 A 1.50015 1.50015 0 0 0 16.482422 8.9921875 z M 37.482422 8.9921875 A 1.50015 1.50015 0 0 0 36.943359 9.1074219 C 36.943359 9.1074219 34.068414 10.279429 31.357422 13.464844 C 28.64643 16.650259 26 21.927419 26 30 A 1.50015 1.50015 0 0 0 26.015625 30.21875 A 8.5 8.5 0 0 0 34.5 39 A 8.5 8.5 0 0 0 34.5 22 A 8.5 8.5 0 0 0 29.708984 23.480469 C 30.577727 19.777157 32.122152 17.196657 33.642578 15.410156 C 35.931586 12.720571 38.056641 11.892578 38.056641 11.892578 A 1.50015 1.50015 0 0 0 37.482422 8.9921875 z"
+																d="M16.5 9.0A1.5 1.5 0 0 0 15.9 9.1C13.1 10.3 10.4 13.5 10.4 13.5C7.6 16.7 5 21.9 5 30A1.5 1.5 0 0 0 5.0 30.2A8.5 8.5 0 0 0 13.5 39A8.5 8.5 0 0 0 13.5 22A8.5 8.5 0 0 0 8.7 23.5C9.6 19.8 11.1 17.2 12.6 15.4C14.9 12.7 17.1 11.9 17.1 11.9A1.5 1.5 0 0 0 16.5 9.0zM37.5 9.0A1.5 1.5 0 0 0 36.9 9.1C34.1 10.3 31.4 13.5 31.4 13.5C28.6 16.7 26.0 21.9 26.0 30A1.5 1.5 0 0 0 26.0 30.2A8.5 8.5 0 0 0 34.5 39A8.5 8.5 0 0 0 34.5 22A8.5 8.5 0 0 0 29.7 23.5C30.6 19.8 32.1 17.2 33.6 15.4C35.9 12.7 38.1 11.9 38.1 11.9A1.5 1.5 0 0 0 37.5 9.0z"
 															/>
 														</svg>
 
@@ -872,7 +1008,7 @@
 															viewBox="0 0 48 48"
 														>
 															<path
-																d="M 16.482422 8.9921875 A 1.50015 1.50015 0 0 0 15.943359 9.1074219 C 15.943359 9.1074219 13.068414 10.279429 10.357422 13.464844 C 7.6464301 16.650259 5 21.927419 5 30 A 1.50015 1.50015 0 0 0 5.015625 30.21875 A 8.5 8.5 0 0 0 13.5 39 A 8.5 8.5 0 0 0 13.5 22 A 8.5 8.5 0 0 0 8.7089844 23.480469 C 9.5777265 19.777157 11.122152 17.196657 12.642578 15.410156 C 14.931586 12.720571 17.056641 11.892578 17.056641 11.892578 A 1.50015 1.50015 0 0 0 16.482422 8.9921875 z M 37.482422 8.9921875 A 1.50015 1.50015 0 0 0 36.943359 9.1074219 C 36.943359 9.1074219 34.068414 10.279429 31.357422 13.464844 C 28.64643 16.650259 26 21.927419 26 30 A 1.50015 1.50015 0 0 0 26.015625 30.21875 A 8.5 8.5 0 0 0 34.5 39 A 8.5 8.5 0 0 0 34.5 22 A 8.5 8.5 0 0 0 29.708984 23.480469 C 30.577727 19.777157 32.122152 17.196657 33.642578 15.410156 C 35.931586 12.720571 38.056641 11.892578 38.056641 11.892578 A 1.50015 1.50015 0 0 0 37.482422 8.9921875 z"
+																d="M16.5 9.0A1.5 1.5 0 0 0 15.9 9.1C13.1 10.3 10.4 13.5 10.4 13.5C7.6 16.7 5 21.9 5 30A1.5 1.5 0 0 0 5.0 30.2A8.5 8.5 0 0 0 13.5 39A8.5 8.5 0 0 0 13.5 22A8.5 8.5 0 0 0 8.7 23.5C9.6 19.8 11.1 17.2 12.6 15.4C14.9 12.7 17.1 11.9 17.1 11.9A1.5 1.5 0 0 0 16.5 9.0zM37.5 9.0A1.5 1.5 0 0 0 36.9 9.1C34.1 10.3 31.4 13.5 31.4 13.5C28.6 16.7 26.0 21.9 26.0 30A1.5 1.5 0 0 0 26.0 30.2A8.5 8.5 0 0 0 34.5 39A8.5 8.5 0 0 0 34.5 22A8.5 8.5 0 0 0 29.7 23.5C30.6 19.8 32.1 17.2 33.6 15.4C35.9 12.7 38.1 11.9 38.1 11.9A1.5 1.5 0 0 0 37.5 9.0z"
 															/>
 														</svg>
 
@@ -910,7 +1046,7 @@
 															viewBox="0 0 48 48"
 														>
 															<path
-																d="M 16.482422 8.9921875 A 1.50015 1.50015 0 0 0 15.943359 9.1074219 C 15.943359 9.1074219 13.068414 10.279429 10.357422 13.464844 C 7.6464301 16.650259 5 21.927419 5 30 A 1.50015 1.50015 0 0 0 5.015625 30.21875 A 8.5 8.5 0 0 0 13.5 39 A 8.5 8.5 0 0 0 13.5 22 A 8.5 8.5 0 0 0 8.7089844 23.480469 C 9.5777265 19.777157 11.122152 17.196657 12.642578 15.410156 C 14.931586 12.720571 17.056641 11.892578 17.056641 11.892578 A 1.50015 1.50015 0 0 0 16.482422 8.9921875 z M 37.482422 8.9921875 A 1.50015 1.50015 0 0 0 36.943359 9.1074219 C 36.943359 9.1074219 34.068414 10.279429 31.357422 13.464844 C 28.64643 16.650259 26 21.927419 26 30 A 1.50015 1.50015 0 0 0 26.015625 30.21875 A 8.5 8.5 0 0 0 34.5 39 A 8.5 8.5 0 0 0 34.5 22 A 8.5 8.5 0 0 0 29.708984 23.480469 C 30.577727 19.777157 32.122152 17.196657 33.642578 15.410156 C 35.931586 12.720571 38.056641 11.892578 38.056641 11.892578 A 1.50015 1.50015 0 0 0 37.482422 8.9921875 z"
+																d="M16.5 9.0A1.5 1.5 0 0 0 15.9 9.1C13.1 10.3 10.4 13.5 10.4 13.5C7.6 16.7 5 21.9 5 30A1.5 1.5 0 0 0 5.0 30.2A8.5 8.5 0 0 0 13.5 39A8.5 8.5 0 0 0 13.5 22A8.5 8.5 0 0 0 8.7 23.5C9.6 19.8 11.1 17.2 12.6 15.4C14.9 12.7 17.1 11.9 17.1 11.9A1.5 1.5 0 0 0 16.5 9.0zM37.5 9.0A1.5 1.5 0 0 0 36.9 9.1C34.1 10.3 31.4 13.5 31.4 13.5C28.6 16.7 26.0 21.9 26.0 30A1.5 1.5 0 0 0 26.0 30.2A8.5 8.5 0 0 0 34.5 39A8.5 8.5 0 0 0 34.5 22A8.5 8.5 0 0 0 29.7 23.5C30.6 19.8 32.1 17.2 33.6 15.4C35.9 12.7 38.1 11.9 38.1 11.9A1.5 1.5 0 0 0 37.5 9.0z"
 															/>
 														</svg>
 
@@ -948,7 +1084,7 @@
 															viewBox="0 0 48 48"
 														>
 															<path
-																d="M 16.482422 8.9921875 A 1.50015 1.50015 0 0 0 15.943359 9.1074219 C 15.943359 9.1074219 13.068414 10.279429 10.357422 13.464844 C 7.6464301 16.650259 5 21.927419 5 30 A 1.50015 1.50015 0 0 0 5.015625 30.21875 A 8.5 8.5 0 0 0 13.5 39 A 8.5 8.5 0 0 0 13.5 22 A 8.5 8.5 0 0 0 8.7089844 23.480469 C 9.5777265 19.777157 11.122152 17.196657 12.642578 15.410156 C 14.931586 12.720571 17.056641 11.892578 17.056641 11.892578 A 1.50015 1.50015 0 0 0 16.482422 8.9921875 z M 37.482422 8.9921875 A 1.50015 1.50015 0 0 0 36.943359 9.1074219 C 36.943359 9.1074219 34.068414 10.279429 31.357422 13.464844 C 28.64643 16.650259 26 21.927419 26 30 A 1.50015 1.50015 0 0 0 26.015625 30.21875 A 8.5 8.5 0 0 0 34.5 39 A 8.5 8.5 0 0 0 34.5 22 A 8.5 8.5 0 0 0 29.708984 23.480469 C 30.577727 19.777157 32.122152 17.196657 33.642578 15.410156 C 35.931586 12.720571 38.056641 11.892578 38.056641 11.892578 A 1.50015 1.50015 0 0 0 37.482422 8.9921875 z"
+																d="M16.5 9.0A1.5 1.5 0 0 0 15.9 9.1C13.1 10.3 10.4 13.5 10.4 13.5C7.6 16.7 5 21.9 5 30A1.5 1.5 0 0 0 5.0 30.2A8.5 8.5 0 0 0 13.5 39A8.5 8.5 0 0 0 13.5 22A8.5 8.5 0 0 0 8.7 23.5C9.6 19.8 11.1 17.2 12.6 15.4C14.9 12.7 17.1 11.9 17.1 11.9A1.5 1.5 0 0 0 16.5 9.0zM37.5 9.0A1.5 1.5 0 0 0 36.9 9.1C34.1 10.3 31.4 13.5 31.4 13.5C28.6 16.7 26.0 21.9 26.0 30A1.5 1.5 0 0 0 26.0 30.2A8.5 8.5 0 0 0 34.5 39A8.5 8.5 0 0 0 34.5 22A8.5 8.5 0 0 0 29.7 23.5C30.6 19.8 32.1 17.2 33.6 15.4C35.9 12.7 38.1 11.9 38.1 11.9A1.5 1.5 0 0 0 37.5 9.0z"
 															/>
 														</svg>
 
@@ -986,7 +1122,7 @@
 															viewBox="0 0 48 48"
 														>
 															<path
-																d="M 16.482422 8.9921875 A 1.50015 1.50015 0 0 0 15.943359 9.1074219 C 15.943359 9.1074219 13.068414 10.279429 10.357422 13.464844 C 7.6464301 16.650259 5 21.927419 5 30 A 1.50015 1.50015 0 0 0 5.015625 30.21875 A 8.5 8.5 0 0 0 13.5 39 A 8.5 8.5 0 0 0 13.5 22 A 8.5 8.5 0 0 0 8.7089844 23.480469 C 9.5777265 19.777157 11.122152 17.196657 12.642578 15.410156 C 14.931586 12.720571 17.056641 11.892578 17.056641 11.892578 A 1.50015 1.50015 0 0 0 16.482422 8.9921875 z M 37.482422 8.9921875 A 1.50015 1.50015 0 0 0 36.943359 9.1074219 C 36.943359 9.1074219 34.068414 10.279429 31.357422 13.464844 C 28.64643 16.650259 26 21.927419 26 30 A 1.50015 1.50015 0 0 0 26.015625 30.21875 A 8.5 8.5 0 0 0 34.5 39 A 8.5 8.5 0 0 0 34.5 22 A 8.5 8.5 0 0 0 29.708984 23.480469 C 30.577727 19.777157 32.122152 17.196657 33.642578 15.410156 C 35.931586 12.720571 38.056641 11.892578 38.056641 11.892578 A 1.50015 1.50015 0 0 0 37.482422 8.9921875 z"
+																d="M16.5 9.0A1.5 1.5 0 0 0 15.9 9.1C13.1 10.3 10.4 13.5 10.4 13.5C7.6 16.7 5 21.9 5 30A1.5 1.5 0 0 0 5.0 30.2A8.5 8.5 0 0 0 13.5 39A8.5 8.5 0 0 0 13.5 22A8.5 8.5 0 0 0 8.7 23.5C9.6 19.8 11.1 17.2 12.6 15.4C14.9 12.7 17.1 11.9 17.1 11.9A1.5 1.5 0 0 0 16.5 9.0zM37.5 9.0A1.5 1.5 0 0 0 36.9 9.1C34.1 10.3 31.4 13.5 31.4 13.5C28.6 16.7 26.0 21.9 26.0 30A1.5 1.5 0 0 0 26.0 30.2A8.5 8.5 0 0 0 34.5 39A8.5 8.5 0 0 0 34.5 22A8.5 8.5 0 0 0 29.7 23.5C30.6 19.8 32.1 17.2 33.6 15.4C35.9 12.7 38.1 11.9 38.1 11.9A1.5 1.5 0 0 0 37.5 9.0z"
 															/>
 														</svg>
 
@@ -1024,7 +1160,7 @@
 															viewBox="0 0 48 48"
 														>
 															<path
-																d="M 16.482422 8.9921875 A 1.50015 1.50015 0 0 0 15.943359 9.1074219 C 15.943359 9.1074219 13.068414 10.279429 10.357422 13.464844 C 7.6464301 16.650259 5 21.927419 5 30 A 1.50015 1.50015 0 0 0 5.015625 30.21875 A 8.5 8.5 0 0 0 13.5 39 A 8.5 8.5 0 0 0 13.5 22 A 8.5 8.5 0 0 0 8.7089844 23.480469 C 9.5777265 19.777157 11.122152 17.196657 12.642578 15.410156 C 14.931586 12.720571 17.056641 11.892578 17.056641 11.892578 A 1.50015 1.50015 0 0 0 16.482422 8.9921875 z M 37.482422 8.9921875 A 1.50015 1.50015 0 0 0 36.943359 9.1074219 C 36.943359 9.1074219 34.068414 10.279429 31.357422 13.464844 C 28.64643 16.650259 26 21.927419 26 30 A 1.50015 1.50015 0 0 0 26.015625 30.21875 A 8.5 8.5 0 0 0 34.5 39 A 8.5 8.5 0 0 0 34.5 22 A 8.5 8.5 0 0 0 29.708984 23.480469 C 30.577727 19.777157 32.122152 17.196657 33.642578 15.410156 C 35.931586 12.720571 38.056641 11.892578 38.056641 11.892578 A 1.50015 1.50015 0 0 0 37.482422 8.9921875 z"
+																d="M16.5 9.0A1.5 1.5 0 0 0 15.9 9.1C13.1 10.3 10.4 13.5 10.4 13.5C7.6 16.7 5 21.9 5 30A1.5 1.5 0 0 0 5.0 30.2A8.5 8.5 0 0 0 13.5 39A8.5 8.5 0 0 0 13.5 22A8.5 8.5 0 0 0 8.7 23.5C9.6 19.8 11.1 17.2 12.6 15.4C14.9 12.7 17.1 11.9 17.1 11.9A1.5 1.5 0 0 0 16.5 9.0zM37.5 9.0A1.5 1.5 0 0 0 36.9 9.1C34.1 10.3 31.4 13.5 31.4 13.5C28.6 16.7 26.0 21.9 26.0 30A1.5 1.5 0 0 0 26.0 30.2A8.5 8.5 0 0 0 34.5 39A8.5 8.5 0 0 0 34.5 22A8.5 8.5 0 0 0 29.7 23.5C30.6 19.8 32.1 17.2 33.6 15.4C35.9 12.7 38.1 11.9 38.1 11.9A1.5 1.5 0 0 0 37.5 9.0z"
 															/>
 														</svg>
 
@@ -1356,18 +1492,53 @@
 			</footer>
 		</div>
 
-		<script src="../../js-components/back-to-top.js"></script>
+		<!-- Other Scripts -->
 		<script src="../../js-components/append__to__header-list__investment.js"></script>
+
 		<script src="../../js-components/header__on-scroll.js"></script>
+
 		<script src="../../js-components/header__hamburger.js"></script>
-		<script src="../../js-components/carousel--swipper--jbg-1.js"></script>
-		<script src="../../js-components/fund__calc__accordion.js"></script>
-		<script src="../../js-components/fund__calc__accordion__smooth__scroll__into__view.js"></script>
-		<script src="../../js-components/savings__calc__form__validation.js"></script>
-		<script src="../../js-components/investment__calc__form__validation.js"></script>
+
 		<script src="../../js-components/section__visible__on__scroll.js"></script>
-		<script src="../../js-components/footer__currentyear__auto.js"></script>
-		<script src="../../js-components/append__to__footer-list__investment.js"></script>
-		<script src="../../js-components/footer__remove__list-items.js"></script>
+
+		<!-- DEFERRED SCRIPTS -->
+		<script defer src="../../js-components/back-to-top.js"></script>
+
+		<script
+			defer
+			src="../../js-components/carousel--swipper--jbg-1.js"
+		></script>
+
+		<script defer src="../../js-components/fund__calc__accordion.js"></script>
+
+		<script
+			defer
+			src="../../js-components/fund__calc__accordion__smooth__scroll__into__view.js"
+		></script>
+
+		<script
+			defer
+			src="../../js-components/savings__calc__form__validation.js"
+		></script>
+
+		<script
+			defer
+			src="../../js-components/investment__calc__form__validation.js"
+		></script>
+
+		<script
+			defer
+			src="../../js-components/footer__currentyear__auto.js"
+		></script>
+
+		<script
+			defer
+			src="../../js-components/append__to__footer-list__investment.js"
+		></script>
+
+		<script
+			defer
+			src="../../js-components/footer__remove__list-items.js"
+		></script>
 	</body>
 </html>

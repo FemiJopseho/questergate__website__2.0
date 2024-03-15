@@ -24,15 +24,8 @@
     width: 100%;
     padding-bottom: 2rem;
 
-    /* //////////////// */
-    .fund-hero__image__desktop,
-    .fund-hero__image__tablet-pot,
-    .fund-hero__image__tablet-land {
-      display: none;
-    }
-
     /* //////////////////// */
-    .fund-hero__image__mobile {
+    .fund-hero__image__pic {
       /* outline: 2px solid green; */
 
       width: 100%;
@@ -131,40 +124,11 @@
     width: 100%;
     padding-bottom: 2rem;
 
-    /* ///////////// */
-    @media screen and (width > 500px) and (width <=700px) {
+    /* //////////////////// */
+    .fund-hero__image__pic {
+      /* outline: 2px solid green; */
 
-      /* //////////////// */
-      .fund-hero__image__desktop,
-      .fund-hero__image__tablet-land,
-      .fund-hero__image__mobile {
-        display: none;
-      }
-
-      /* //////////////////// */
-      .fund-hero__image__tablet-pot {
-        /* outline: 2px solid green; */
-
-        width: 100%;
-      }
-    }
-
-    /* //////////////// */
-    @media screen and (width > 700px) and (width <=875px) {
-
-      /* //////////////// */
-      .fund-hero__image__desktop,
-      .fund-hero__image__tablet-pot,
-      .fund-hero__image__mobile {
-        display: none;
-      }
-
-      /* //////////////////// */
-      .fund-hero__image__tablet-land {
-        /* outline: 2px solid green; */
-
-        width: 100%;
-      }
+      width: 100%;
     }
   }
 
@@ -260,16 +224,8 @@
     width: 100%;
     padding-bottom: 4rem;
 
-    /* //////////////// */
-    .fund-hero__image__tablet-land,
-    .fund-hero__image__tablet-pot,
-    .fund-hero__image__mobile {
-      display: none;
-    }
-
     /* //////////////////// */
-    /* not needed anymore */
-    .fund-hero__image__desktop {
+    .fund-hero__image__pic {
       /* outline: 2px solid green; */
 
       width: 100%;
