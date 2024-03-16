@@ -129,12 +129,38 @@
 					<div class="fund-header__logo__container">
 						<a
 							class="fund-header__logo__link"
-							href="../../homepage/html__homepage.html"
-							><img
-								class="fund-header__logo__img"
-								src="../../../images/QG_LOGO_small-horizontal.jpg"
-								alt="Questergate logo"
-						/></a>
+							href="../investment__homepage/html__investment.html"
+						>
+							<picture class="fund-header__logo__pic">
+								<source
+									class="phone_tablet_laptop-small"
+									type="image/webp"
+									media="(max-width: 1440px)"
+									srcset="../../../images/QG_LOGO_200-43.webp"
+								/>
+
+								<source
+									class="laptop-large"
+									type="image/webp"
+									srcset="../../../images/QG_LOGO_350-76.webp"
+								/>
+
+								<!-- fallback -->
+								<img
+									class="fund-header__logo__pic-img"
+									sizes="(max-width: 1000px) 20vw, 1440px"
+									srcset="
+										../../../images/QG_LOGO_200-43.png  1440w,
+										../../../images/QG__LOGO-350-76.PNG
+									"
+									src="../../../images/QG_LOGO_350-76.png"
+									alt="questergate logo"
+									loading="lazy"
+									decoding="async"
+									fetchpriority="high"
+								/>
+							</picture>
+						</a>
 					</div>
 
 					<div class="fund-header__list__container menu" id="menu">

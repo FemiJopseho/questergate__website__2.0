@@ -88,7 +88,7 @@
     }
 
     /* ///////////////// */
-    .fund-header__logo__img {
+    .fund-header__logo__pic {
       /* outline: 2px solid orange; */
 
       width: 100%;
@@ -96,9 +96,9 @@
     }
 
     /* //////////// */
-    /* to make the logo bigger on mobile */
-    @media screen and (width < 500px) {
-      flex-basis: 50%;
+    /* *to make the logo bigger on mobile */
+    @media screen and (width <=500px) {
+      flex-basis: 40%;
     }
   }
 
@@ -250,6 +250,23 @@
     position: relative;
 
     transition: all 0.7s ease-in-out;
+
+    /* //////////// */
+    /* *to make the burger smaller on mobile */
+    /* ////////////////// */
+    @media screen and (width > 260px) and (width <=350px) {
+      flex-basis: 14%;
+    }
+
+    /* ////////////////// */
+    @media screen and (width > 350px) and (width <=420px) {
+      flex-basis: 12%;
+    }
+
+    /* ////////////////// */
+    @media screen and (width > 420px) and (width <=500px) {
+      flex-basis: 10%;
+    }
 
     /* /////////////// */
     .fund__header__burger-line {
@@ -424,7 +441,7 @@
     }
 
     /* ///////////////// */
-    .fund-header__logo__img {
+    .fund-header__logo__pic {
       /* outline: 2px solid orange; */
 
       width: 100%;

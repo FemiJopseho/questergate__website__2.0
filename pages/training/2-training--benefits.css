@@ -53,7 +53,7 @@
     @media screen and (width <=350px) {
       width: 100%;
       padding: 0 1rem 1rem 1rem;
-      font-size: var(--fs-800);
+      font-size: var(--fs-700);
     }
   }
 

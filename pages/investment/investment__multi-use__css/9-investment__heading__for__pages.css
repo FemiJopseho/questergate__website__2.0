@@ -9,6 +9,7 @@
 
     width: 100%;
     padding-bottom: 2rem;
+    padding-top: 2rem;
   }
 
   .fund__heading-for-pages__container {
@@ -32,7 +33,8 @@
   }
 
 
-  .fund__heading-for-pages__content-subtitle {
+  .fund__heading-for-pages__content-subtitle,
+  .fund__heading-for-pages__content-parag {
     /* outline: 2px solid maroon; */
 
     width: 95%;
@@ -46,23 +48,6 @@
     color: black;
     text-align: center;
   }
-
-  /* .fund__heading-for-pages__content-parag {
-    outline: 2px dashed blue;
-
-    text-align: center;
-    text-transform: none;
-    font-family: var(--ff-primary);
-    font-weight: var(--fw-bold);
-    font-size: var(--fs-800);
-    line-height: var(--lh-410);
-    color: var(--clr-primary-650);
-    padding: 1rem 0rem;
-
-    width: 100%;
-    max-width: 400px;
-    margin: 0 auto;
-  } */
 }
 
 /*        */
@@ -81,6 +66,7 @@
     max-width: var(--width__1440px);
     margin: 0 auto;
     padding-bottom: 4rem;
+    padding-top: 4rem;
   }
 
   .fund__heading-for-pages__container {
@@ -102,7 +88,8 @@
     color: var(--clr-primary-650);
   }
 
-  .fund__heading-for-pages__content-subtitle {
+  .fund__heading-for-pages__content-subtitle,
+  .fund__heading-for-pages__content-parag {
     /* outline: 2px solid maroon; */
 
     width: 100%;
@@ -117,23 +104,6 @@
     color: black;
     text-align: center;
   }
-
-  /* .fund__heading-for-pages__content-parag {
-    outline: 2px dashed blue;
-
-    text-align: center;
-    text-transform: none;
-    font-family: var(--ff-primary);
-    font-weight: var(--fw-bold);
-    font-size: var(--fs-800);
-    line-height: var(--lh-410);
-    color: var(--clr-primary-650);
-    padding: 1rem 0;
-
-    width: 100%;
-    max-width: 400px;
-    margin: 0 auto;
-  } */
 }
 
 /*        */
@@ -151,6 +121,7 @@
     max-width: var(--width__1440px);
     margin: 0 auto;
     padding-bottom: 4rem;
+    padding-top: 4rem;
   }
 
   .fund__heading-for-pages__container {
@@ -172,25 +143,9 @@
     color: var(--clr-primary-650);
   }
 
-  .fund__heading-for-pages__content-subtitle {
-    /* outline: 2px solid maroon; */
-
-    width: 100%;
-    max-width: 500px;
-    margin: 0 auto;
-    /* padding: 1rem 0; */
-
-    text-transform: none;
-    font-family: var(--ff-primary);
-    font-weight: var(--fw-regular);
-    font-size: var(--fs-700);
-    line-height: 1.5;
-    color: black;
-    text-align: center;
-  }
-
+  .fund__heading-for-pages__content-subtitle,
   .fund__heading-for-pages__content-parag {
-    /* outline: 2px dashed blue; */
+    /* outline: 2px solid maroon; */
 
     width: 100%;
     max-width: 500px;

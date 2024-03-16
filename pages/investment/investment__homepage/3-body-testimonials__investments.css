@@ -42,7 +42,7 @@
 	.testimonial__header {
 		/* outline: 2px solid red; */
 
-		padding: 0 0 2rem 0;
+		padding: 0 1rem 2rem 1rem;
 
 		font-family: var(--ff-primary);
 		font-weight: var(--fw-bold);
@@ -52,6 +52,13 @@
 		text-align: center;
 		color: var(--clr-secondary-650);
 		text-transform: capitalize;
+
+		/* /////////////// */
+		@media screen and (width <=350px) {
+			width: 100%;
+			padding: 0 1rem 2rem 1rem;
+			font-size: var(--fs-700);
+		}
 	}
 
 	/* ////////////////////////// */

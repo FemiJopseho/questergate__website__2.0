@@ -44,7 +44,7 @@
 	.testimonial__header {
 		/* outline: 2px solid red; */
 
-		padding: 0 0.3rem 1rem 0.3rem;
+		padding: 0 1rem 1rem 1rem;
 		width: 100%;
 		max-width: 350px;
 		margin: 0 auto;
@@ -61,8 +61,8 @@
 		/* /////////////// */
 		@media screen and (width <=350px) {
 			width: 100%;
-			padding: 0 1rem 0 1rem;
-			font-size: var(--fs-800);
+			padding: 0 1rem 1rem 1rem;
+			font-size: var(--fs-700);
 		}
 	}
 

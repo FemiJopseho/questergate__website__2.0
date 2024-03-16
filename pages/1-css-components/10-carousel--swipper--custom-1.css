@@ -211,7 +211,7 @@
 
     border-radius: 10px;
     padding-top: 1rem;
-    padding-bottom: 0.5rem;
+    padding-bottom: 1rem;
     padding-left: 0.8rem;
     padding-right: 0.8rem;
 
@@ -219,7 +219,7 @@
   }
 
   .swiper-slide-active .swiper-card {
-    padding-bottom: 0.3rem;
+    padding-bottom: 1rem;
 
     /* //////////////// */
     @media screen and (width <=350px) {
@@ -354,7 +354,7 @@
 
     border-radius: 10px;
     padding-top: 1rem;
-    padding-bottom: 0.5rem;
+    padding-bottom: 1rem;
     padding-left: 1rem;
     padding-right: 1rem;
 
@@ -363,7 +363,7 @@
 
   .swiper-slide-active .swiper-card {
     padding-top: 1rem;
-    padding-bottom: 0.3rem;
+    padding-bottom: 1rem;
 
     /* //////////////// */
     @media screen and (width > 500px) and (width <=650px) {
