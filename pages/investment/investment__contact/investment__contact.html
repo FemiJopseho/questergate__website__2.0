@@ -45,7 +45,7 @@
 				font-weight: 400;
 
 				src: local("Nunito"),
-					url("../../utilities/fonts/nunito-v26-latin-regular.woff2")
+					url("../../../utilities/fonts/nunito-v26-latin-regular.woff2")
 						format("woff2");
 			}
 
@@ -56,7 +56,7 @@
 				font-weight: 400;
 
 				src: local("Montagu Slab"),
-					url("../../utilities/fonts/montagu-slab-v12-latin-regular.woff2")
+					url("../../../utilities/fonts/montagu-slab-v12-latin-regular.woff2")
 						format("woff2");
 			}
 		</style>
@@ -64,11 +64,17 @@
 		<!-- -------Other stylesheets, and scripts---------- -->
 		<link
 			rel="stylesheet"
-			href="../1-css-components/joined-fixed-component.css"
+			href="../../1-css-components/joined-fixed-component.css"
 		/>
-		<link rel="stylesheet" href="../1-css-components/6-utility-classes.css" />
-		<link rel="stylesheet" href="../1-css-components/7-generic-header.css" />
-		<link rel="stylesheet" href="./2-body-content__contact-us.css" />
+		<link
+			rel="stylesheet"
+			href="../../1-css-components/6-utility-classes.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="../investment__multi-use__css/1-header__investment.css"
+		/>
+		<link rel="stylesheet" href="./investment__contact.css" />
 
 		<!-- --------------JQUERY ACCESS via CDN and via Local server----------------- -->
 
@@ -78,14 +84,15 @@
 			crossorigin="anonymous"
 		></script> -->
 
-		<script src="../js-components/jquery-3.7.1.min.js"></script>
+		<script src="../../js-components/jquery-3.7.1.min.js"></script>
 
 		<title>Contact Us</title>
 
 		<link
 			rel="icon"
 			type="image/x-icon"
-			href="../../images/QG__favicon__no__background.ico"
+			href="../../../images/QG__favicon__no__background-Favicon-Phone-16-10.ico"
+			id="favicon"
 		/>
 	</head>
 
@@ -100,144 +107,208 @@
 		</button>
 
 		<div class="gen-container">
-			<header class="header" id="header">
-				<div class="header__items-container">
-					<nav class="navbar-xsm-screen">
-						<div class="brand xsm__brand">
-							<a
-								href="../homepage/html__homepage.html"
-								class="brand__logo-link"
-							>
-								<img
-									class="brand__logo"
-									src="../../images/QG_LOGO_small-horizontal.jpg"
-									alt="Questergate logo"
-								/>
-							</a>
-						</div>
-					</nav>
+			<header class="fund-header__section header" id="header">
+				<div class="fund-header__container">
+					<div class="fund-header__logo__container">
+						<!-- <a
+							class="fund-header__logo__link"
+							href="../../homepage/html__homepage.html"
+						> -->
+						<picture class="fund-header__logo__pic">
+							<source
+								class="phone_tablet_laptop-small"
+								type="image/webp"
+								media="(max-width: 1440px)"
+								srcset="../../../images/QG_LOGO_200-43.webp"
+							/>
 
-					<nav class="navbar">
-						<div class="brand sm-screen__brand">
-							<a
-								href="../homepage/html__homepage.html"
-								class="brand__logo-link"
-							>
-								<img
-									class="brand__logo"
-									src="../../images/QG_LOGO_small-horizontal.jpg"
-									alt="Questergate logo"
-								/>
-							</a>
-						</div>
+							<source
+								class="laptop-large"
+								type="image/webp"
+								srcset="../../../images/QG_LOGO_350-76.webp"
+							/>
 
-						<div class="brand bg-screen__brand">
-							<a
-								href="../homepage/html__homepage.html"
-								class="brand__logo-link"
-							>
-								<img
-									class="brand__logo"
-									src="../../images/QG_LOGO_small-horizontal.jpg"
-									alt="Questergate logo"
-								/>
-							</a>
+							<!-- fallback -->
+							<img
+								class="fund-header__logo__pic-img"
+								sizes="(max-width: 1000px) 20vw, 1440px"
+								srcset="
+									../../../images/QG_LOGO_200-43.png  1440w,
+									../../../images/QG__LOGO-350-76.PNG
+								"
+								src="../../../images/QG_LOGO_350-76.png"
+								alt="questergate logo"
+								loading="lazy"
+								decoding="async"
+								fetchpriority="high"
+							/>
+						</picture>
+						<!-- </a> -->
+					</div>
 
-							<p class="brand__text">
+					<div class="fund-header__list__container menu" id="menu">
+						<ul class="fund-header__list">
+							<li class="fund-header__list__items">
 								<a
-									href="../homepage/html__homepage.html"
-									class="brand__text-link"
-									>Questergate</a
+									href="../investment__our--plans/html__Save__plan.html"
+									class="fund-header__list__items-link"
+									>Save</a
 								>
-							</p>
-						</div>
+							</li>
 
-						<div class="menu" id="menu">
-							<ul class="menu-inner">
-								<li class="menu-item">
-									<a href="../homepage/html__homepage.html" class="menu-link"
-										>Home</a
-									>
-								</li>
-
-								<li class="menu-item">
-									<a href="../about-us/html__about-us.html" class="menu-link"
-										>About</a
-									>
-								</li>
-
-								<!-- <li class="menu-item">
-								<a href="../contact/html__contact-us.html" class="menu-link"
-									>Contact</a
+							<li class="fund-header__list__items">
+								<a
+									href="../investment__our--plans/html__invest__plan.html"
+									class="fund-header__list__items-link"
+									>Invest</a
 								>
+							</li>
+
+							<li class="fund-header__list__items">
+								<a
+									href="../investment__faq/html__investment__faq.html"
+									class="fund-header__list__items-link"
+									>Faq</a
+								>
+							</li>
+
+							<li class="fund-header__list__items">
+								<a
+									href="../investment__how--tos/html__investment__how-tos.html"
+									class="fund-header__list__items-link"
+									>How-To</a
+								>
+							</li>
+
+							<!-- <li class="fund-header__list__items">
+								<a href="#" class="fund-header__list__items-link">Blog</a>
 							</li> -->
 
-								<li class="menu-item">
-									<a href="../blog/html__blog.html" class="menu-link">Blog</a>
-								</li>
+							<!-- <li class="fund-header__list__items">
+								<a href="#" class="fund-header__list__items-link">About Us</a>
+							</li> -->
 
-								<li class="menu-item">
-									<a href="../faq/html__faq.html" class="menu-link">FAQs</a>
-								</li>
-							</ul>
-						</div>
+							<!-- *----LOGIN-STATUS AUTHENTICATION NEEDED----* -->
 
-						<div class="menu-block dropdown-container">
-							<label for="header__dropbtn__checkbox" class="dropbtn">
-								<span class="dropbtn__text">Products</span
-								><i class="arrow down"></i>
-							</label>
+							<!-- *Start of auth for for login or Sign out* -->
 
-							<input type="checkbox" id="header__dropbtn__checkbox" />
+							<!-- *-----------if user not logged in, show "Login In" -->
+							<li class="fund-header__list__items header__login">
+								<a
+									href="#"
+									class="fund-header__list__items-link fund-header__link-login"
+									>Log In</a
+								>
+							</li>
 
-							<ul class="header-slide-down">
-								<li class="header-slide-down__items">
-									<a
-										class="header-slide-down__items-links"
-										href="../IAS/html__ias.html"
-										>Software</a
-									>
-								</li>
+							<!-- *-----------if user logged in, show "Sign Out" -->
+							<!-- <li class="fund-header__list__items header__login">
+            <a
+              href="#"
+              class="fund-header__list__items-link fund-header__link-login"
+              >Sign Out</a
+            >
+          </li> -->
+							<!-- *END of auth for for login or Sign out* -->
 
-								<li class="header-slide-down__items">
-									<a
-										class="header-slide-down__items-links"
-										href="../signalapp/html__signalapp.html"
-										>Signal App</a
-									>
-								</li>
+							<!-- *Start of Auth for DASHBOARD or REGISTER BUTTON* -->
 
-								<li class="header-slide-down__items">
-									<a
-										class="header-slide-down__items-links"
-										href="../investment/investment__homepage/html__investment.html"
-										>Fund Management</a
-									>
-								</li>
-							</ul>
-						</div>
+							<!-- *-----------if user not logged in, show Register button -->
+							<li class="fund-header__list__items fund-header__register">
+								<a
+									href="#"
+									class="fund-header__list__items-link fund-header__link-register"
+									>Register</a
+								>
+							</li>
 
-						<div class="burger" id="burger">
-							<span class="burger-line"></span>
-							<span class="burger-line"></span>
-							<span class="burger-line"></span>
-							<span class="burger-line"></span>
-						</div>
-					</nav>
+							<!-- *-----------if user is logged in, show Dashboard button -->
+							<!-- <li class="fund-header__list__items fund-header__register">
+            <a
+              href="#"
+              class="fund-header__list__items-link fund-header__link-register"
+              >Dashboard</a
+            >
+          </li> -->
+							<!-- *END of Auth for DASHBOARD or REGISTER BUTTON* -->
+						</ul>
+					</div>
+
+					<div class="fund__header__burger burger" id="burger">
+						<span class="fund__header__burger-line"></span>
+						<span class="fund__header__burger-line"></span>
+						<span class="fund__header__burger-line"></span>
+						<span class="fund__header__burger-line"></span>
+					</div>
 				</div>
 			</header>
 
 			<main class="main">
 				<!-- -------start of contact-us MAIN IMAGE section------- -->
-				<section class="contact-us__main-image__section">
-					<div class="contact-us__main-image__container">
-						<img
-							class="contact-us__main-image"
-							src="../../images/contact-us--small.jpg"
-							alt="contact us"
-						/>
+				<section class="contact-us__main-pic__section">
+					<div class="contact-us__main-pic__container">
+						<picture class="contact-us__main-pic">
+							<source
+								class="phone-small"
+								type="image/webp"
+								media="(max-width: 350px)"
+								srcset="../../../images/contact-us-Phone-small-350-83.webp"
+							/>
 
-						<p class="contact-us__main-image__text">CONTACT US</p>
+							<source
+								class="phone-large"
+								type="image/webp"
+								media="(max-width: 500px)"
+								srcset="../../../images/contact-us-Phone-large-500-119.webp"
+							/>
+
+							<source
+								class="tablet-portrait"
+								type="image/webp"
+								media="(max-width: 650px)"
+								srcset="../../../images/contact-us-Tablet-potrait-650-154.webp"
+							/>
+
+							<source
+								class="tablet-landscape"
+								type="image/webp"
+								media="(max-width: 875px)"
+								srcset="../../../images/contact-us-Tablet-land-875-208.webp"
+							/>
+
+							<source
+								class="laptop-small"
+								type="image/webp"
+								media="(max-width: 1000px)"
+								srcset="../../../images/contact-us-Laptop-small-1000-237.webp"
+							/>
+
+							<source
+								class="laptop-large"
+								type="image/webp"
+								srcset="../../../images/contact-us-Laptop-Large-1440-342.webp"
+							/>
+
+							<!-- fallback -->
+							<img
+								class="contact-us__main-pic-img"
+								sizes="(max-width: 350px) 100vw, (max-width: 500px) 100vw, (max-width: 650px) 100vw, (max-width: 875px) 100vw, (max-width: 1000px) 100vw, 1440px"
+								srcset="
+									../../../images/contact-us-Phone-small-350-83.png      350w,
+									../../../images/contact-us-Phone-large-500-119.png     500w,
+									../../../images/contact-us-Tablet-potrait-650-154.png  650w,
+									../../../images/contact-us-Tablet-land-875-208.png     875w,
+									../../../images/contact-us-Laptop-small-1000-237.png  1000w,
+									../../../images/contact-us-Laptop-Large-1440-342.png  1440w
+								"
+								src="../../../images/contact-us-Tablet-land-875-208.png"
+								loading="lazy"
+								decoding="async"
+								fetchpriority="high"
+							/>
+						</picture>
+
+						<p class="contact-us__main-pic__text">CONTACT US</p>
 					</div>
 				</section>
 
@@ -258,7 +329,7 @@
 								>
 									<div class="contact-us__platforms__socials__image-container">
 										<img
-											src="../../images/facebook-symbol--smallest.jpg"
+											src="../../../images/facebook-symbol--smallest.jpg"
 											alt="facebook icon"
 											class="contact-us__platforms__socials__image"
 										/>
@@ -274,7 +345,7 @@
 								>
 									<div class="contact-us__platforms__socials__image-container">
 										<img
-											src="../../images/instagram-logo-icon-7--smallest.jpg"
+											src="../../../images/instagram-logo-icon-7--smallest.jpg"
 											alt="instagram icon"
 											class="contact-us__platforms__socials__image"
 										/>
@@ -290,7 +361,7 @@
 								>
 									<div class="contact-us__platforms__socials__image-container">
 										<img
-											src="../../images/LinkedIn_icon_circle--smallest.jpg"
+											src="../../../images/LinkedIn_icon_circle--smallest.jpg"
 											alt="linkedIn icon"
 											class="contact-us__platforms__socials__image"
 										/>
@@ -310,7 +381,7 @@
 										class="contact-us__platforms__non-socials__image-container"
 									>
 										<img
-											src="../../images/contact-us-email4--fixed--smallest.jpg"
+											src="../../../images/contact-us-email4--fixed--smallest.jpg"
 											alt="email icon"
 											class="contact-us__platforms__non-socials__image"
 										/>
@@ -330,7 +401,7 @@
 										class="contact-us__platforms__non-socials__image-container"
 									>
 										<img
-											src="../../images/contact-us__phone2--smallest.jpg"
+											src="../../../images/contact-us__phone2--smallest.jpg"
 											alt="phone call icon"
 											class="contact-us__platforms__non-socials__image"
 										/>
@@ -438,7 +509,7 @@
 								<li>
 									<a
 										class="footer__links pad-marg-0"
-										href="../IAS/html__ias.html"
+										href="../../IAS/html__ias.html"
 										>Investment Analytics Software</a
 									>
 								</li>
@@ -446,7 +517,7 @@
 								<li>
 									<a
 										class="footer__links pad-marg-0"
-										href="../signalapp/html__signalapp.html"
+										href="../../signalapp/html__signalapp.html"
 										>Signal App</a
 									>
 								</li>
@@ -454,7 +525,7 @@
 								<li>
 									<a
 										class="footer__links pad-marg-0"
-										href="../investment/investment__homepage/html__investment.html"
+										href="../../investment/investment__homepage/html__investment.html"
 										>Fund Management</a
 									>
 								</li>
@@ -471,7 +542,7 @@
 								<li>
 									<a
 										class="footer__links pad-marg-0"
-										href="../about-us/html__about-us.html"
+										href="../../about-us/html__about-us.html"
 										>About Us</a
 									>
 								</li>
@@ -479,7 +550,7 @@
 								<li>
 									<a
 										class="footer__links pad-marg-0"
-										href="../blog/html__blog.html"
+										href="../../blog/html__blog.html"
 										>Blog</a
 									>
 								</li>
@@ -487,7 +558,7 @@
 								<li>
 									<a
 										class="footer__links pad-marg-0"
-										href="../faq/html__faq.html"
+										href="../investment__faq/html__investment__faq.html"
 										>FAQ</a
 									>
 								</li>
@@ -495,7 +566,7 @@
 								<li>
 									<a
 										class="footer__links pad-marg-0"
-										href="../contact/html__contact-us.html"
+										href="../../contact/html__contact-us.html"
 										>Contact Us</a
 									>
 								</li>
@@ -512,7 +583,7 @@
 								<li>
 									<a
 										class="footer__links pad-marg-0"
-										href="../terms-conditions/html__terms-conditions.html"
+										href="../../terms-conditions/html__terms-conditions.html"
 										>Terms & Conditions</a
 									>
 								</li>
@@ -520,7 +591,7 @@
 								<li>
 									<a
 										class="footer__links pad-marg-0"
-										href="../privacy-policy/html__privacy-policy.html"
+										href="../../privacy-policy/html__privacy-policy.html"
 										>Privacy Policy</a
 									>
 								</li>
@@ -549,7 +620,7 @@
 								<a href="#" class="socials__link" target="_blank"
 									><img
 										class="socials__link-image"
-										src="../../images/facebook-symbol--smallest.jpg"
+										src="../../../images/facebook-symbol--smallest.jpg"
 										alt="facebook logo"
 									/>
 								</a>
@@ -557,7 +628,7 @@
 								<a href="#" class="socials__link" target="_blank"
 									><img
 										class="socials__link-image"
-										src="../../images/LinkedIn_icon_circle--smallest.jpg"
+										src="../../../images/LinkedIn_icon_circle--smallest.jpg"
 										alt="linkedin logo"
 									/>
 								</a>
@@ -565,7 +636,7 @@
 								<a href="#" class="socials__link" target="_blank"
 									><img
 										class="socials__link-image"
-										src="../../images/instagram-logo-icon-7--smallest.jpg"
+										src="../../../images/instagram-logo-icon-7--smallest.jpg"
 										alt="instagram logo"
 									/>
 								</a>
@@ -573,7 +644,7 @@
 								<a href="#" class="socials__link" target="_blank"
 									><img
 										class="socials__link-image"
-										src="../../images/twitter-X-symbol3.jpg"
+										src="../../../images/twitter-X-symbol3.jpg"
 										alt="twitter logo"
 									/>
 								</a>
@@ -596,15 +667,36 @@
 			</footer>
 		</div>
 
-		<script defer src="../js-components/back-to-top.js"></script>
-		<script defer src="../js-components/header__hamburger.js"></script>
-		<script defer src="../js-components/header__dropdown-button.js"></script>
-		<script defer src="../js-components/contact-form__success-msg.js"></script>
+		<!-- Other Scripts -->
+		<script src="../../js-components/append__to__header-list__investment.js"></script>
+
+		<script src="../../js-components/header__on-scroll.js"></script>
+
+		<script src="../../js-components/header__hamburger.js"></script>
+
+		<script src="../../js-components/section__visible__on__scroll.js"></script>
+
+		<!-- DEFERRED SCRIPTS -->
+		<script defer src="../../js-components/back-to-top.js"></script>
+
 		<script
 			defer
-			src="../js-components/section__visible__on__scroll.js"
+			src="../../js-components/contact-form__success-msg.js"
 		></script>
-		<script src="../js-components/footer__currentyear__auto.js"></script>
-		<script src="../js-components/append__to__footer-list.js"></script>
+
+		<script
+			defer
+			src="../../js-components/footer__currentyear__auto.js"
+		></script>
+
+		<script
+			defer
+			src="../../js-components/append__to__footer-list__investment.js"
+		></script>
+
+		<script
+			defer
+			src="../../js-components/footer__remove__list-items.js"
+		></script>
 	</body>
 </html>
