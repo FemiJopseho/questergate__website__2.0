@@ -11,7 +11,7 @@
     width: var(--width__always-fill);
     max-width: var(--width__1440px);
     margin: 0 auto;
-    padding-bottom: 3rem;
+    padding-bottom: 8rem;
   }
 
   .training__focus__main-container {
@@ -175,7 +175,7 @@
     width: var(--width__always-fill);
     max-width: var(--width__1440px);
     margin: 0 auto;
-    padding-bottom: 4rem;
+    padding-bottom: 10rem;
   }
 
   .training__focus__main-container {
@@ -324,7 +324,7 @@
     width: var(--width__always-fill);
     max-width: var(--width__1440px);
     margin: 0 auto;
-    padding-bottom: 6rem;
+    padding-bottom: 12rem;
   }
 
   .training__focus__main-container {

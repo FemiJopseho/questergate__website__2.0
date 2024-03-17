@@ -25,18 +25,17 @@
 		/* outline: 4px solid gold; */
 
 		width: 100%;
-		padding: 2rem 0 3rem 0;
-		margin-bottom: 4rem;
-
-		background-image: linear-gradient(45deg,
-				var(--clr-gradient-100),
-				var(--clr-gradient-200));
+		padding-bottom: 8rem;
 	}
 
 	.testimonial__container {
 		/* outline: 3px solid green; */
 
 		width: 100%;
+		padding: 2rem 0;
+		background-image: linear-gradient(45deg,
+				var(--clr-gradient-100),
+				var(--clr-gradient-200));
 	}
 
 	.testimonial__header {
@@ -350,18 +349,17 @@
 		/* outline: 4px solid gold; */
 
 		width: 100%;
-		padding: 2rem 0 3rem 0;
-		margin-bottom: 4rem;
-
-		background-image: linear-gradient(45deg,
-				var(--clr-gradient-100),
-				var(--clr-gradient-200));
+		padding-bottom: 10rem;
 	}
 
 	.testimonial__container {
 		/* outline: 3px solid green; */
 
 		width: 100%;
+		padding: 4rem 0;
+		background-image: linear-gradient(45deg,
+				var(--clr-gradient-100),
+				var(--clr-gradient-200));
 	}
 
 	.testimonial__header {
@@ -658,18 +656,17 @@
 		width: 100%;
 		max-width: var(--width__1440px);
 		margin: 0 auto;
-		padding: 4rem 0 3rem 0;
-		margin-bottom: 6rem;
-
-		background-image: linear-gradient(45deg,
-				var(--clr-gradient-100),
-				var(--clr-gradient-200));
+		padding-bottom: 12rem;
 	}
 
 	.testimonial__container {
 		/* outline: 4px solid green; */
 
 		width: 100%;
+		padding: 4rem 0;
+		background-image: linear-gradient(45deg,
+				var(--clr-gradient-100),
+				var(--clr-gradient-200));
 	}
 
 	.testimonial__header {
@@ -680,7 +677,7 @@
 		font-family: var(--ff-primary);
 		font-weight: var(--fw-bold);
 		font-size: var(--fs-400);
-		line-height: var(--lh-600);
+		line-height: 1.3;
 		letter-spacing: 0em;
 		text-align: center;
 		color: var(--clr-secondary-650);

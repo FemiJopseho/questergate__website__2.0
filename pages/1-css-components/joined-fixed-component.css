@@ -514,6 +514,7 @@ h6 {
   --clr-secondary-700: hsl(240, 88%, 97%);
   --clr-tertiary-100: hsla(0, 0%, 0%, 1);
   --clr-tertiary-200: hsl(214, 92%, 33%, 1);
+  --clr-tertiary-300: hsl(144, 92%, 33%, 1);
 
 
   --clr-grays-600: hsl(0, 0%, 6%);
@@ -530,6 +531,7 @@ h6 {
 
   /** ---background colors------ */
   --clr-gen-website-bckgrd: hsla(210, 100%, 98%, 1);
+  --clr-gen-website-bckgrd-svg1: hsl(210, 100%, 98%);
   --clr-header-bckgrd: hsla(0, 0%, 100%, 1);
   --clr-footer-bckgrd: hsl(214, 88%, 13%);
   --clr-card-bckgrd: hsl(205, 24%, 90%);
@@ -796,56 +798,6 @@ h6 {
   --padding-right__footer__section1-sub: 0;
 }
 
-/** ------Footer fonts & letterings----- */
-.footer__section1__sub-heading {
-  /* outline: 2px solid skyblue; */
-
-  font-family: var(--ff-primary);
-  font-size: var(--fs-600);
-  font-weight: var(--fw-bold);
-  /* 700 */
-  line-height: 40px;
-  letter-spacing: 0.02em;
-  text-align: left;
-  color: var(--color-white-500);
-}
-
-.footer__list-text {
-  /* outline: 2px solid red; */
-
-  font-family: var(--ff-primary);
-  font-size: var(--fs-800);
-  font-weight: var(--fw-semi-bold);
-  /* 700 */
-  line-height: 2.5rem;
-  /*40px*/
-  letter-spacing: 2%;
-  /*0.02em;*/
-  text-align: left;
-  white-space: nowrap;
-}
-
-.footer__other-text {
-  /* outline: 2px solid red; */
-
-  font-family: var(--ff-primary);
-  font-size: var(--fs-800);
-  /* 16px */
-  font-weight: var(--fw-regular);
-  line-height: 2rem;
-  /*40px*/
-  letter-spacing: 2%;
-  /*0.02em;*/
-  text-align: center;
-}
-
-.footer__list-text li {
-  /* outline: 2px solid skyblue; */
-
-  display: block;
-  margin: 0 0 0.5rem 0;
-}
-
 /** ------General Layout-------- */
 
 .footer {
@@ -853,7 +805,7 @@ h6 {
 
   background-color: var(--clr-bckgrd-btn-pri-default);
   color: var(--clr-neutral-white-2);
-  width: var(--width__always-fill);
+  width: 100%;
   max-width: var(--width__1440px);
   margin: 0 auto;
   text-align: center;
@@ -911,6 +863,57 @@ h6 {
     /* outline: 2px solid grey; */
     text-align: center;
   }
+}
+
+
+/** ------Footer fonts & letterings----- */
+.footer__section1__sub-heading {
+  /* outline: 2px solid skyblue; */
+
+  font-family: var(--ff-primary);
+  font-size: var(--fs-600);
+  font-weight: var(--fw-bold);
+  /* 700 */
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: var(--color-white-500);
+}
+
+.footer__list-text {
+  /* outline: 2px solid red; */
+
+  font-family: var(--ff-primary);
+  font-size: var(--fs-800);
+  font-weight: var(--fw-semi-bold);
+  /* 700 */
+  line-height: 2.5rem;
+  /*40px*/
+  letter-spacing: 2%;
+  /*0.02em;*/
+  text-align: left;
+  white-space: nowrap;
+}
+
+.footer__other-text {
+  /* outline: 2px solid red; */
+
+  font-family: var(--ff-primary);
+  font-size: var(--fs-800);
+  /* 16px */
+  font-weight: var(--fw-regular);
+  line-height: 2rem;
+  /*40px*/
+  letter-spacing: 2%;
+  /*0.02em;*/
+  text-align: center;
+}
+
+.footer__list-text li {
+  /* outline: 2px solid skyblue; */
+
+  display: block;
+  margin: 0 0 0.5rem 0;
 }
 
 /** (width <= 609px) */

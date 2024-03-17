@@ -5,7 +5,6 @@
   width: var(--width__always-fill);
   max-width: var(--width__1440px);
   margin: 0 auto;
-  padding-bottom: 4rem;
 }
 
 .training-hero__container {
@@ -46,7 +45,7 @@
   .training-hero__section {
     /* outline: 4px solid yellowgreen; */
 
-    padding-bottom: 3rem;
+    padding-bottom: 8rem;
     margin-top: 40px;
   }
 
@@ -277,7 +276,7 @@
   .training-hero__section {
     /* outline: 4px solid yellowgreen; */
 
-    padding-bottom: 4rem;
+    padding-bottom: 10rem;
     margin-top: 45px;
   }
 
@@ -462,7 +461,7 @@
   .training-hero__section {
     /* outline: 4px solid yellowgreen; */
 
-    padding-bottom: 6rem;
+    padding-bottom: 12rem;
     margin-top: 60px;
   }
 

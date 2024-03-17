@@ -8,7 +8,7 @@
   .fund-about-us__details__section {
     /* outline: 4px solid gold; */
 
-    padding: 4rem 0 4rem 0;
+    padding: 6rem 0 6rem 0;
     width: 100%;
   }
 
@@ -23,7 +23,7 @@
 
     width: 100%;
     text-align: center;
-    padding-bottom: 4rem;
+    padding-bottom: 6rem;
 
     /* ////////////// */
     .fund-about-us__details__heading {
@@ -154,7 +154,7 @@
   .fund-about-us__details__section {
     /* outline: 4px solid gold; */
 
-    padding: 4rem 0 4rem 0;
+    padding: 6rem 0 6rem 0;
     width: 100%;
   }
 
@@ -169,7 +169,7 @@
 
     width: 100%;
     text-align: center;
-    padding-bottom: 4rem;
+    padding-bottom: 8rem;
 
     /* ////////////// */
     .fund-about-us__details__heading {
@@ -189,6 +189,10 @@
     .fund-about-us__details__heading-text {
       /* outline: 2px dashed pink; */
 
+      width: 100%;
+      max-width: 400px;
+      margin: 0 auto;
+
       font-family: var(--ff-primary);
       font-weight: var(--fw-regular);
       font-size: var(--fs-600);
@@ -205,7 +209,7 @@
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-    row-gap: 6rem;
+    row-gap: 8rem;
   }
 
   .fund-about-us__details__content__container-1,
@@ -297,7 +301,7 @@
   .fund-about-us__details__section {
     /* outline: 4px solid gold; */
 
-    padding: 6rem 0 6rem 0;
+    padding: 8rem 0 8rem 0;
     width: 100%;
     max-width: var(--width__1440px);
     margin: 0 auto;
@@ -314,7 +318,7 @@
 
     width: 100%;
     text-align: center;
-    padding-bottom: 6rem;
+    padding-bottom: 8rem;
 
     /* ////////////// */
     .fund-about-us__details__heading {
@@ -350,7 +354,7 @@
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-    row-gap: 6rem;
+    row-gap: 8rem;
   }
 
   .fund-about-us__details__content__container-1,

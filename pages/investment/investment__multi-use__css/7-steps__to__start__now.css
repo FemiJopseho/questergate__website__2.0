@@ -1,24 +1,23 @@
 /* contains styles for INVESTMENT PAGE: */
-/* CALCULATOR section */
+/* HOW TO GET STARTED section */
 
 
 
 /** Mobile view */
-/* max-width: 500px */
-@media screen and (width <=31.25em) {
+/* max-width: 691px */
+@media screen and (width <=43.18em) {
   .fund-get-started__section {
     /* outline: 4px solid indigo; */
 
     width: 100%;
-    padding: 0 0 4rem 0;
+    padding: 0 0 10rem 0;
   }
 
   .fund-get-started__container {
     /* outline: 4px solid pink; */
 
     width: 100%;
-    padding: 1rem 0.2rem 2rem 0.2rem;
-    border-radius: 12px;
+    padding: 4rem 0.2rem 4rem 0.2rem;
     box-shadow: var(--gen-shadow-3d-02);
 
     display: flex;
@@ -26,7 +25,7 @@
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-    row-gap: 1rem;
+    row-gap: 2rem;
   }
 
   .fund-get-started__header__container {
@@ -41,12 +40,21 @@
       width: 100%;
       text-align: center;
       font-family: var(--ff-primary);
-      font-size: var(--fs-600);
+      font-size: var(--fs-550);
       font-weight: var(--fw-bold);
-      line-height: var(--lh-600);
-      letter-spacing: 1px;
+      line-height: 1.3;
       color: var(--clr-primary-650);
       text-transform: capitalize;
+
+      /* //////////// */
+      @media screen and (width > 300px) and (width <=361px) {
+        font-size: var(--fs-600);
+      }
+
+      /* //////////// */
+      @media screen and (width <=300px) {
+        font-size: var(--fs-700);
+      }
     }
   }
 
@@ -54,13 +62,16 @@
     /* outline: 2px solid black; */
 
     width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding-bottom: 3rem;
 
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: flex-start;
-    column-gap: 1rem;
+    column-gap: 2rem;
   }
 
   .fund-get-started__number-steps__container {
@@ -83,71 +94,65 @@
       border-radius: 50%;
 
       font-family: var(--ff-primary);
-      font-size: var(--fs-700);
+      font-size: var(--fs-800);
       font-weight: var(--fw-bold);
-      line-height: var(--lh-410);
-      letter-spacing: 1px;
+      line-height: 1.3;
+
+      /* //////////// */
+      @media screen and (width > 200px) and (width <=400px) {
+        padding: 0.5rem 1rem;
+      }
     }
 
     /* ///////////////// */
     .get-started__horizontal__line {
       width: 0%;
-      min-height: 5dvh;
       border: 1px solid var(--clr-grays-650);
     }
 
     /* to align the numbers with the text below */
     /* ///////////// */
-    @media screen and (width >300px) and (width < 350px) {
+    @media screen and (width >420px) and (width <=691px) {
       .get-started__horizontal__line {
         /* outline: 2px solid gold; */
 
-        min-height: 8dvh;
+        min-height: 45px;
+      }
+    }
+
+    /* ///////////// */
+    @media screen and (width >400px) and (width <=420px) {
+      .get-started__horizontal__line {
+        /* outline: 2px solid gold; */
+
+        min-height: 55px;
       }
     }
 
     /* //////////// */
-    @media screen and (width > 280px) and (width < 300px) {
+    @media screen and (width > 330px) and (width <=400px) {
       .get-started__horizontal__line {
         /* outline: 2px solid gold; */
 
-        min-height: 10dvh;
+        min-height: 65px;
       }
     }
 
     /* //////////// */
-    @media screen and (width > 260px) and (width < 280px) {
+    @media screen and (width > 310px) and (width <=330px) {
       .get-started__horizontal__line {
         /* outline: 2px solid gold; */
 
-        min-height: 12dvh;
+        min-height: 75px;
       }
     }
 
     /* //////////// */
-    @media screen and (width > 240px) and (width < 260px) {
+    @media screen and (width <=310px) {
       .get-started__horizontal__line {
         /* outline: 2px solid gold; */
 
-        min-height: 16dvh;
-      }
-    }
-
-    /* //////////// */
-    @media screen and (width > 200px) and (width < 240px) {
-      .get-started__horizontal__line {
-        /* outline: 2px solid gold; */
-
-        min-height: 18dvh;
-      }
-    }
-
-    /* //////////// */
-    @media screen and (width < 200px) {
-      .get-started__horizontal__line {
-        /* outline: 2px solid gold; */
-
-        min-height: 20dvh;
+        min-height: 85px;
       }
     }
   }
@@ -175,7 +180,6 @@
       justify-content: center;
       align-items: flex-start;
       row-gap: 0.5rem;
-      text-align: left;
     }
 
     /* //////////////// */
@@ -183,10 +187,15 @@
       font-family: var(--ff-primary);
       font-size: var(--fs-700);
       font-weight: var(--fw-bold);
-      letter-spacing: 1px;
+      line-height: 1.3;
       text-transform: capitalize;
       text-align: left;
       color: var(--clr-primary-650);
+
+      /* //////////// */
+      @media screen and (width <=361px) {
+        font-size: var(--fs-800);
+      }
     }
 
     /* //////////// */
@@ -194,15 +203,14 @@
       font-family: var(--ff-primary);
       font-size: var(--fs-800);
       font-weight: var(--fw-regular);
-      line-height: var(--lh-400);
-      letter-spacing: 1px;
+      line-height: 1.5;
+      text-align: left;
       color: black;
     }
   }
 
   .get-started__start__now {
     /* outline: 2px solid brown; */
-    padding-top: 2rem;
 
     /* /////////// */
     .get-started__start__now__link {
@@ -221,23 +229,22 @@
 /*        */
 
 /* Mobile landscape & Tablet Portrait screens */
-/* (min-width > 500px ) & (max-width <= 875px) */
-@media screen and (width > 31.25em) and (width <=54.69em) {
+/* *(min-width > 691px ) & (max-width <= 875px) */
+@media screen and (width > 43.18em) and (width <=54.69em) {
   .fund-get-started__section {
     /* outline: 4px solid indigo; */
 
     width: 100%;
     max-width: var(--width__1440px);
     margin: 0 auto;
-    padding: 0 0 6rem 0;
+    padding: 0 0 8rem 0;
   }
 
   .fund-get-started__container {
     /* outline: 4px solid pink; */
 
     width: 100%;
-    padding: 1rem 0.2rem 2rem 0.2rem;
-    border-radius: 12px;
+    padding: 4rem 0.2rem 4rem 0.2rem;
     box-shadow: var(--gen-shadow-3d-02);
 
     display: flex;
@@ -279,6 +286,7 @@
     /* outline: 2px solid red; */
 
     width: 100%;
+    padding-bottom: 1rem;
 
     display: flex;
     flex-direction: row;
@@ -309,7 +317,7 @@
 
     /* to align the numbers with the text below */
     /* ///////////// */
-    @media screen and (width > 671px) and (width < 830px) {
+    @media screen and (width > 671px) and (width <=831px) {
       .get-started__horizontal__line {
         /* outline: 2px solid gold; */
 
@@ -318,7 +326,7 @@
     }
 
     /* ///////////// */
-    @media screen and (width < 671px) {
+    @media screen and (width <=671px) {
       .get-started__horizontal__line {
         /* outline: 2px solid gold; */
 
@@ -331,6 +339,7 @@
     /* outline: 2px solid black; */
 
     width: 100%;
+    padding-bottom: 3rem;
 
     display: flex;
     flex-direction: row;
@@ -348,7 +357,7 @@
       display: flex;
       flex-direction: column;
       flex-wrap: nowrap;
-      justify-content: center;
+      justify-content: space-around;
       align-items: center;
       row-gap: 1rem;
       text-align: center;
@@ -356,25 +365,18 @@
 
     /* to align the numbers with the text below */
     /* /////////// */
-    @media screen and (width > 671px) and (width < 830px) {
+    @media screen and (width > 691px) and (width <=831px) {
       .fund-get-started__text-steps {
         /* outline: 2px solid gold; */
 
         width: 27%;
-      }
-    }
-
-    /* /////////// */
-    @media screen and (width < 671px) {
-      .fund-get-started__text-steps {
-        /* outline: 2px solid gold; */
-
-        width: 30%;
+        min-height: 100px;
       }
     }
 
     /* //////////////// */
     .fund-get-started__text-steps-header {
+
       font-family: var(--ff-primary);
       font-size: var(--fs-600);
       font-weight: var(--fw-bold);
@@ -382,6 +384,14 @@
       text-transform: capitalize;
       text-align: center;
       color: var(--clr-primary-650);
+
+      /* ///////////// */
+      @media screen and (width > 691px) and (width <=832px) {
+        /* outline: 2px solid rosybrown; */
+
+        width: 100%;
+        max-width: 150px;
+      }
     }
 
     /* //////////// */
@@ -397,7 +407,6 @@
 
   .get-started__start__now {
     /* outline: 2px solid brown; */
-    padding-top: 2rem;
 
     /* /////////// */
     .get-started__start__now__link {
@@ -423,14 +432,14 @@
     width: 100%;
     max-width: var(--width__1440px);
     margin: 0 auto;
-    padding: 0 0 8rem 0;
+    padding: 0 0 12rem 0;
   }
 
   .fund-get-started__container {
     /* outline: 4px solid pink; */
 
     width: 100%;
-    padding: 1rem 0.2rem 2rem 0.2rem;
+    padding: 4rem 0.2rem;
     border-radius: 12px;
     box-shadow: var(--gen-shadow-3d-02);
 
@@ -440,6 +449,11 @@
     justify-content: center;
     align-items: center;
     row-gap: 1rem;
+
+    /* /////////////// */
+    @media screen and (width <=1460px) {
+      border-radius: 0;
+    }
   }
 
   .fund-get-started__header__container {
@@ -467,12 +481,14 @@
     /* outline: 2px solid black; */
 
     width: 100%;
+    padding: 0 1rem;
   }
 
   .fund-get-started__number-steps__container {
     /* outline: 2px solid red; */
 
     width: 100%;
+    padding-bottom: 1rem;
 
     display: flex;
     flex-direction: row;
@@ -497,11 +513,20 @@
 
     /* ///////////////// */
     .get-started__horizontal__line {
-      width: 26%;
+      width: 28%;
       border: 1px solid var(--clr-grays-650);
     }
 
     /* to align the numbers with the text below */
+    /* /////////// */
+    @media screen and (width < 1310px) {
+      .get-started__horizontal__line {
+        /* outline: 2px solid gold; */
+
+        width: 27%;
+      }
+    }
+
     /* /////////// */
     @media screen and (width < 1160px) {
       .get-started__horizontal__line {
@@ -525,6 +550,7 @@
     /* outline: 2px solid black; */
 
     width: 100%;
+    padding-bottom: 3rem;
 
     display: flex;
     flex-direction: row;
@@ -580,6 +606,12 @@
 
     /* //////////// */
     .fund-get-started__text-steps-p {
+      /* outline: 2px solid royalblue; */
+
+      width: 100%;
+      max-width: 300px;
+      margin: 0 auto;
+
       font-family: var(--ff-primary);
       font-size: var(--fs-800);
       font-weight: var(--fw-regular);
@@ -591,7 +623,6 @@
 
   .get-started__start__now {
     /* outline: 2px solid brown; */
-    padding-top: 2rem;
 
     /* /////////// */
     .get-started__start__now__link {

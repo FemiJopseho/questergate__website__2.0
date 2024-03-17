@@ -6,7 +6,7 @@
   .training__payment__section {
     /* outline: 4px solid goldenrod; */
 
-    padding-bottom: 3rem;
+    padding-bottom: 8rem;
     width: var(--width__always-fill);
   }
 
@@ -335,7 +335,7 @@
   .training__payment__section {
     /* outline: 4px solid goldenrod; */
 
-    padding-bottom: 4rem;
+    padding-bottom: 10rem;
     width: var(--width__always-fill);
     max-width: var(--width__1440px);
     margin: 0 auto;
@@ -662,7 +662,7 @@
   .training__payment__section {
     /* outline: 4px solid goldenrod; */
 
-    padding-bottom: 4rem;
+    padding-bottom: 12rem;
     width: var(--width__always-fill);
     max-width: var(--width__1440px);
     margin: 0 auto;

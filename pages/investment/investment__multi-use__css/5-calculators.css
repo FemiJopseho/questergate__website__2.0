@@ -10,7 +10,7 @@
     /* outline: 4px solid gold; */
 
     width: 100%;
-    padding: 0 0 4rem 0;
+    padding: 0 0 8rem 0;
   }
 
   .fund-calc__container {
@@ -28,8 +28,7 @@
     font-family: var(--ff-primary);
     font-size: var(--fs-600);
     font-weight: var(--fw-bold);
-    line-height: var(--lh-500);
-    letter-spacing: 1px;
+    line-height: 1.3;
     color: var(--clr-primary-650);
     text-transform: capitalize;
   }
@@ -39,7 +38,7 @@
     /* outline: 2px solid red; */
 
     width: 100%;
-    padding: 1rem 1rem 1rem 1rem;
+    padding: 2rem 1rem;
     box-shadow: var(--gen-shadow-3d-02);
 
     /* //////////// */
@@ -459,7 +458,7 @@
     /* outline: 4px solid gold; */
 
     width: 100%;
-    padding: 0 0 6rem 0;
+    padding: 0 0 10rem 0;
   }
 
   .fund-calc__container {
@@ -488,7 +487,7 @@
     /* outline: 2px solid red; */
 
     width: 100%;
-    padding: 1rem 1rem 1rem 1rem;
+    padding: 4rem 1rem;
     box-shadow: var(--gen-shadow-3d-02);
 
     /* //////////// */
@@ -932,7 +931,7 @@
     width: 100%;
     max-width: var(--width__1440px);
     margin: 0 auto;
-    padding: 0 0 8rem 0;
+    padding: 0 0 12rem 0;
   }
 
   .fund-calc__container {
@@ -946,13 +945,18 @@
   .savings__investment__calc__wrapper {
     /* outline: 2px solid red; */
 
+    padding: 4rem 1rem;
     width: 100%;
     margin: 0 auto;
-    padding: 1rem;
     border-radius: 12px;
+    border: none;
     box-shadow: var(--gen-shadow-3d-02a);
     box-shadow: var(--gen-shadow-3d-02);
 
+    /* /////////////// */
+    @media screen and (width <=1460px) {
+      border-radius: 0;
+    }
 
     /* //////////// */
     .savings__calc__section {

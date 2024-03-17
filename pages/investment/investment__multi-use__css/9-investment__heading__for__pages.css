@@ -8,8 +8,8 @@
     /* outline: 4px solid gold; */
 
     width: 100%;
-    padding-bottom: 2rem;
-    padding-top: 2rem;
+    padding-bottom: 6rem;
+    padding-top: 6rem;
   }
 
   .fund__heading-for-pages__container {
@@ -65,8 +65,8 @@
     width: 100%;
     max-width: var(--width__1440px);
     margin: 0 auto;
-    padding-bottom: 4rem;
-    padding-top: 4rem;
+    padding-bottom: 8rem;
+    padding-top: 8rem;
   }
 
   .fund__heading-for-pages__container {
@@ -120,8 +120,8 @@
     width: 100%;
     max-width: var(--width__1440px);
     margin: 0 auto;
-    padding-bottom: 4rem;
-    padding-top: 4rem;
+    padding-bottom: 10rem;
+    padding-top: 10rem;
   }
 
   .fund__heading-for-pages__container {
@@ -148,9 +148,8 @@
     /* outline: 2px solid maroon; */
 
     width: 100%;
-    max-width: 500px;
+    max-width: 450px;
     margin: 0 auto;
-    /* padding: 1rem 0; */
 
     text-transform: none;
     font-family: var(--ff-primary);

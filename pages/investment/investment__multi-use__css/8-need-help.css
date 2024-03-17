@@ -9,7 +9,7 @@
     /* outline: 4px solid gold; */
 
     width: 100%;
-    padding-bottom: 4rem;
+    padding-bottom: 8rem;
   }
 
   .plan-page__need-help__container {
@@ -80,7 +80,7 @@
     width: 100%;
     max-width: var(--width__1440px);
     margin: 0 auto;
-    padding-bottom: 6rem;
+    padding-bottom: 10rem;
   }
 
   .plan-page__need-help__container {
@@ -148,7 +148,7 @@
     width: 100%;
     max-width: var(--width__1440px);
     margin: 0 auto;
-    padding-bottom: 8rem;
+    padding-bottom: 12rem;
   }
 
   .plan-page__need-help__container {

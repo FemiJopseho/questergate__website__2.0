@@ -5,10 +5,10 @@
 
   padding: 0.2rem 0;
 
-  width: var(--width__always-fill);
+  width: 100%;
   max-width: var(--width__1440px);
   margin: 0 auto;
-  background-color: var(--clr-pure-white);
+  background-color: var(--clr-gen-website-bckgrd-svg1);
 
   position: fixed;
   top: 0%;

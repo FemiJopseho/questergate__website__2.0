@@ -11,6 +11,7 @@
 	--clr-secondary-700: hsl(240, 88%, 97%);
 	--clr-tertiary-100: hsla(0, 0%, 0%, 1);
 	--clr-tertiary-200: hsl(214, 92%, 33%, 1);
+	--clr-tertiary-300: hsl(144, 92%, 33%, 1);
 
 
 	--clr-grays-600: hsl(0, 0%, 6%);
@@ -27,6 +28,7 @@
 
 	/** ---background colors------ */
 	--clr-gen-website-bckgrd: hsla(210, 100%, 98%, 1);
+	--clr-gen-website-bckgrd-svg1: hsl(210, 100%, 98%);
 	--clr-header-bckgrd: hsla(0, 0%, 100%, 1);
 	--clr-footer-bckgrd: hsl(214, 88%, 13%);
 	--clr-card-bckgrd: hsl(205, 24%, 90%);
