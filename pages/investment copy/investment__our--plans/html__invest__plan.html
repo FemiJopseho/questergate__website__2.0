@@ -9,16 +9,16 @@
 
 		<meta
 			name="description"
-			content="Learn how to use Questergate Savings plans."
+			content="Learn how to use Questergate investment plans."
 		/>
 
 		<!-- -----------explorer compatibility---------- -->
-		<meta http-equiv="X-UA-Compatible" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
 		<meta name="theme-color" content="#0C567B" />
 
 		<!-- --------Cache control meta tag------------ -->
-		<meta http-equiv="Cache-control" content="public" max-age="7776000" />
+		<meta http-equiv="Cache-control" content="public, max-age=7776000" />
 
 		<!-- ----------------Security---------------- -->
 		<meta http-equiv="X-Content-Type-Options" content="nosniff" />
@@ -108,7 +108,7 @@
 		<script src="../../js-components/jquery-3.7.1.min.js"></script>
 
 		<!-- ----------Page Title---------- -->
-		<title>Questergate Savings Plan</title>
+		<title>Questergate Investment Plan</title>
 
 		<!-- -------------Favicon for page--------------- -->
 		<link
@@ -171,27 +171,27 @@
 
 					<div class="fund-header__list__container menu" id="menu">
 						<ul class="fund-header__list">
-							<!-- <li class="fund-header__list__items">
+							<li class="fund-header__list__items">
 								<a
 									href="../investment__our--plans/html__Save__plan.html"
 									class="fund-header__list__items-link"
 									>Save</a
 								>
-							</li> -->
+							</li>
 
-							<li class="fund-header__list__items">
+							<!-- <li class="fund-header__list__items">
 								<a
 									href="../investment__our--plans/html__invest__plan.html"
 									class="fund-header__list__items-link"
 									>Invest</a
 								>
-							</li>
+							</li> -->
 
 							<li class="fund-header__list__items">
 								<a
 									href="../investment__faq/html__investment__faq.html"
 									class="fund-header__list__items-link"
-									>Faq</a
+									>FAQs</a
 								>
 							</li>
 
@@ -271,25 +271,78 @@
 				<section class="fund-our-plans__banner__section">
 					<div class="fund-our-plans__banner__container">
 						<div class="fund-our-plans__banner__image__container">
-							<img
-								class="fund-our-plans__banner__image__mobile"
-								alt="lady sitting down relaxed"
-								loading="lazy"
-							/>
+							<picture class="fund-our-plans__banner__pic">
+								<source
+									class="phone-small"
+									type="image/webp"
+									media="(max-width: 350px)"
+									srcset="
+										../../../images/banner__2__ladysit__landscape-Phone-small-350-117.webp
+									"
+								/>
 
-							<img
-								class="fund-our-plans__banner__image__tablet-land"
-								alt="lady sitting down relaxed"
-								loading="lazy"
-							/>
+								<source
+									class="phone-large"
+									type="image/webp"
+									media="(max-width: 500px)"
+									srcset="
+										../../../images/banner__2__ladysit__landscape-Phone-large-500-167.webp
+									"
+								/>
 
-							<img
-								class="fund-our-plans__banner__image__desktop"
-								alt="lady sitting down relaxed"
-								loading="lazy"
-							/>
+								<source
+									class="tablet-portrait"
+									type="image/webp"
+									media="(max-width: 650px)"
+									srcset="
+										../../../images/banner__1__family__potrait-Tablet-potrait-650-650.webp
+									"
+								/>
 
-							<script src="../../js-components/investment__our-plans-banner-img__insertion.js"></script>
+								<source
+									class="tablet-landscape"
+									type="image/webp"
+									media="(max-width: 875px)"
+									srcset="
+										../../../images/banner__2__ladysit__landscape-Tablet-land-875-292.webp
+									"
+								/>
+
+								<source
+									class="laptop-small"
+									type="image/webp"
+									media="(max-width: 1000px)"
+									srcset="
+										../../../images/banner__2__ladysit__landscape-Laptop-small-1000-333.webp
+									"
+								/>
+
+								<source
+									class="laptop-large"
+									type="image/webp"
+									srcset="
+										../../../images/banner__2__ladysit__landscape-Laptop-Large-1440-480.webp
+									"
+								/>
+
+								<!-- fallback -->
+								<img
+									class="fund-our-plans__banner__pic-img"
+									sizes="(max-width: 350px) 100vw, (max-width: 500px) 100vw, (max-width: 650px) 100vw, (max-width: 875px) 100vw, (max-width: 1000px) 100vw, 1440px"
+									srcset="
+										../../../images/banner__2__ladysit__landscape-Phone-small-350-117.jpg     350w,
+										../../../images/banner__2__ladysit__landscape-Phone-large-500-167.jpg     500w,
+										../../../images/banner__2__ladysit__landscape-Tablet-potrait-650-217.jpg  650w,
+										../../../images/banner__2__ladysit__landscape-Tablet-land-875-292.jpg     875w,
+										../../../images/banner__2__ladysit__landscape-Laptop-small-1000-333.jpg  1000w,
+										../../../images/banner__2__ladysit__landscape-Laptop-Large-1440-480.jpg  1440w
+									"
+									src="../../../images/banner__2__ladysit__landscape-Tablet-land-875-292.jpg"
+									loading="lazy"
+									decoding="async"
+									fetchpriority="high"
+								/>
+							</picture>
 						</div>
 					</div>
 				</section>
@@ -298,24 +351,24 @@
 				<section class="fund__heading-for-pages__section hidden">
 					<div class="fund__heading-for-pages__container">
 						<p class="fund__heading-for-pages__content-title">
-							Our Savings Plan
+							Our Investment Plan
 						</p>
 
 						<p class="fund__heading-for-pages__content-subtitle">
-							Maximize the value of your savings by getting the best interest
-							rate with our secure savings plan.
+							Get access to the best interest on your investment with our highly
+							vetted investment plan.
 						</p>
 					</div>
 				</section>
 
-				<!-- -------START OF ABOUT OUR SAVINGS PLAN Section------ -->
+				<!-- -------START OF ABOUT OUR INVESTMENT PLAN Section------ -->
 				<section class="about-plan__sav-inv__section">
 					<div class="about-plan__sav-inv__container">
 						<div class="about-plan__sav-inv__types">
-							<!-- *Fixed-savings plan -->
+							<!-- *Fixed-investment plan -->
 							<div class="about-plan__sav-inv__features">
 								<h4 class="about-plan__sav-inv__features-header">
-									Flex-Business Plan
+									fixed QG-12 plan
 								</h4>
 
 								<ul class="about-plan__sav-inv__features-list">
@@ -325,7 +378,7 @@
 										>
 
 										<span class="about-plan__sav-inv__features-items-text"
-											>Interest: 15.3% in 6 months.</span
+											>Interest: 35% in 12 months.</span
 										>
 									</li>
 
@@ -335,7 +388,7 @@
 										>
 
 										<span class="about-plan__sav-inv__features-items-text"
-											>Minimum deposit per time: ₦5,000.</span
+											>Minimum capital: ₦100,000.</span
 										>
 									</li>
 
@@ -345,7 +398,7 @@
 										>
 
 										<span class="about-plan__sav-inv__features-items-text"
-											>Your savings earn interest daily.</span
+											>Maximum capital: ₦25,000,000.</span
 										>
 									</li>
 
@@ -355,14 +408,34 @@
 										>
 
 										<span class="about-plan__sav-inv__features-items-text"
-											>Choose any duration you want.</span
+											>Investment duration: 12 months.</span
+										>
+									</li>
+
+									<li class="about-plan__sav-inv__features-items">
+										<span class="about-plan__sav-inv__features-items-mark"
+											>✔</span
+										>
+
+										<span class="about-plan__sav-inv__features-items-text"
+											>Withdraw from your capital at any time.</span
+										>
+									</li>
+
+									<li class="about-plan__sav-inv__features-items">
+										<span class="about-plan__sav-inv__features-items-mark"
+											>✔</span
+										>
+
+										<span class="about-plan__sav-inv__features-items-text"
+											>Terminate investment at any time.</span
 										>
 									</li>
 								</ul>
 
 								<div class="about-plan__cta__container">
 									<a class="about-plan__cta__link" href="" target="_self"
-										>Start growing your savings Now</a
+										>Start earning your interest Now</a
 									>
 								</div>
 							</div>
@@ -375,102 +448,73 @@
 				<section class="fund-calc__section">
 					<div class="fund-calc__container">
 						<div class="savings__investment__calc__wrapper">
-							<p class="fund-calc__title">savings &amp investment calculator</p>
+							<p class="fund-calc__title">investment calculator</p>
 
-							<!-- *calculator for savings plans -->
+							<!-- *calculator for investment plans -->
 							<div
-								class="fund-calc__accordion__container savings__calc__section"
+								class="fund-calc__accordion__container investment__calc__section"
 							>
 								<button
-									class="fund-calc__accordion__button savings__calc__accordion__button"
-									id="calc-accordion-button-1"
+									class="fund-calc__accordion__button investment__calc__accordion__button"
+									id="calc-accordion-button-2"
 									aria-expanded="false"
-									data-target="#calc-accordion-button-1-content"
+									data-target="#calc-accordion-button-2-content"
 								>
 									<div class="fund-calc__accordion__button--head">
-										calculate your interest for savings plan
+										calculate your interest for investment plan
 									</div>
 
 									<div class="fund-calc__accordion__button--arrow"></div>
 								</button>
 
 								<div
-									class="savings__calc__container"
-									id="calc-accordion-button-1-content"
+									class="investment__calc__container"
+									id="calc-accordion-button-2-content"
 								>
-									<!-- savings calc form -->
-									<div class="savings__calc__form">
+									<!-- investment calculator form -->
+									<div class="investment__calc__form">
 										<form
 											action=""
 											method="post"
-											id="id__savings__plan__form-1"
-											class="savings__plan__form-1"
+											id="id__invest__plan__form-1"
+											class="invest__plan__form-1"
 										>
 											<label
-												class="savings__initial__deposit"
-												for="savings__initial__deposit"
-												>Initial Deposit (₦):</label
+												class="invest__initial__deposit"
+												for="invest__initial__deposit"
+												>Capital (₦):</label
 											>
 											<input
 												type="number"
-												name="initial__deposit"
-												id="id__initial__deposit"
-												min="5000"
+												name="invest__initial__deposit"
+												id="id__invest__initial__deposit"
+												min="100000"
 												max="25000000"
-												placeholder="min. ₦5000"
+												placeholder="100000"
 												required
 											/>
 
-											<label class="choose__save__plan" for="choose__save__plan"
-												>Choose a savings Plan:</label
+											<label
+												class="choose__invest__plan"
+												for="choose__invest__plan"
+												>Choose an investment Plan:</label
 											>
 											<select
-												name="choose__save__plan"
-												id="id__choose__save__plan"
+												name="choose__invest__plan"
+												id="id__choose__invest__plan"
 												required
 											>
 												<option value="" disabled selected>
 													choose a plan
 												</option>
 
-												<option value="Flex__business">
-													Flex Business (15.3% in 6 months)
-												</option>
-											</select>
-
-											<label
-												class="choose__save__duration"
-												for="choose__save__duration"
-												>choose duration of plan:</label
-											>
-											<select
-												name="choose__save__duration"
-												id="choose__save__duration"
-												required
-											>
-												<option value="" disabled selected>
-													duration of savings plan
-												</option>
-
-												<option value="6__months">6 months</option>
-
-												<option value="7__months">7 months</option>
-
-												<option value="8__months">8 months</option>
-
-												<option value="9__months">9 months</option>
-
-												<option value="10__months">10 months</option>
-
-												<option value="11__months">11 months</option>
-
-												<option value="1__year">1 year</option>
+												<option value="qg__12">QG-12 (35% per annum)</option>
 											</select>
 
 											<button
 												type="submit"
-												class="savings__plan__submit"
-												id="id__savings__plan__submit"
+												class="invest__plan__submit"
+												id="id__invest__plan__submit"
 												data-target="#calc-result-1-content"
 											>
 												calculate
@@ -478,204 +522,51 @@
 										</form>
 									</div>
 
-									<!-- savings calc result -->
+									<!-- investment calculator result -->
 									<div
-										class="savings__calc__results__container"
-										id="calc-result-1-content"
+										class="investment__calc__results__container"
+										data-target="#calc-result-2-content"
 									>
-										<p class="savings__calc__results__header">
+										<p class="investment__calc__results__header">
 											calculator result:
 										</p>
 
-										<!-- CALC--RESULT--PART 1 -->
-										<div class="savings__calc__results__part-1">
-											<div
-												class="savings__duration__result__wrapper calc__result__wrapper"
-											>
-												<div class="savings__duration__result">Duration:</div>
-												<div class="savings__duration__result__value">YYY</div>
-											</div>
+										<div
+											class="invest__result__roi--naira__wrapper calc__result__wrapper"
+										>
+											<div class="invest__result__roi--percent">ROI (%)</div>
 
-											<div class="horizontal_line__calc__result"></div>
-
-											<div
-												class="savings__result__start-date__wrapper calc__result__wrapper"
-											>
-												<div class="savings__result__start-date">
-													Start Date:
-												</div>
-												<div class="savings__result__start-date__value">
-													YYY
-												</div>
-											</div>
-
-											<div class="horizontal_line__calc__result"></div>
-
-											<div
-												class="savings__result__end-date__wrapper calc__result__wrapper"
-											>
-												<div class="savings__result__end-date">End Date:</div>
-												<div class="savings__result__end-date__value">YYY</div>
-											</div>
-
-											<div class="horizontal_line__calc__result"></div>
-
-											<div
-												class="savings__result__roi--perday__wrapper calc__result__wrapper"
-											>
-												<div class="savings__result__roi--perday">
-													ROI earned per Day:
-												</div>
-
-												<div class="savings__result__roi--perday__value">
-													XYZ%
-												</div>
-											</div>
-
-											<div class="horizontal_line__calc__result"></div>
-										</div>
-
-										<!-- CALC--RESULT--PART 2-table -->
-										<div class="savings__calc__results__part-2">
-											<table class="savings__calc__results__table">
-												<thead class="savings__calc__results__table--head">
-													<tr class="savings__calc__results__table--head-row">
-														<th>
-															Amount <br />
-															saved <br />
-															(₦)
-														</th>
-
-														<th>
-															Duration <br />
-															of Savings
-														</th>
-
-														<th>
-															Interest <br />
-															earned <br />
-															(%)
-														</th>
-
-														<th>
-															Interest <br />
-															earned <br />
-															(₦)
-														</th>
-													</tr>
-												</thead>
-
-												<tbody class="savings__calc__results__table--body">
-													<tr>
-														<td>Data 1</td>
-														<td>Data 2</td>
-														<td>Data 3</td>
-														<td>Data 4</td>
-													</tr>
-
-													<tr>
-														<td>Data 1</td>
-														<td>Data 2</td>
-														<td>Data 3</td>
-														<td>Data 4</td>
-													</tr>
-
-													<tr>
-														<td>Data 1</td>
-														<td>Data 2</td>
-														<td>Data 3</td>
-														<td>Data 4</td>
-													</tr>
-													<!-- Additional rows will be added dynamically as more data comes in -->
-												</tbody>
-											</table>
-
-											<!-- <div class="horizontal_line__calc__result"></div> -->
-										</div>
-
-										<!-- CALC--RESULT--PART 3 -->
-										<div class="savings__calc__results__part-3">
-											<div
-												class="savings__results__init--total__wrapper calc__result__wrapper"
-											>
-												<div class="savings__results__init--total">
-													Total Capital + ROI
-												</div>
-
-												<div class="savings__results__init--total__value">
-													₦ XYZZZ
-												</div>
-											</div>
-
-											<div class="horizontal_line__calc__result"></div>
-
-											<div class="savings__results__add-capital">
-												Add to your savings:
-											</div>
-
-											<div
-												class="savings__results__add-capital__input__wrapper calc__result__wrapper"
-											>
-												<div class="add__to__savings__input">
-													<form
-														action=""
-														method="post"
-														id="id-add__to__savings__form-1"
-														class="add__to__savings__form-1"
-													>
-														<input
-															type="number"
-															name="add__to__savings"
-															class="add__to__savings"
-															id="id__add__to__savings"
-															min="5000"
-															max="25000000"
-															placeholder="min. ₦5000"
-															required
-														/>
-													</form>
-												</div>
-
-												<div class="day__savings__added__input">
-													<form
-														action=""
-														method="post"
-														id="id-add__to__savings__form-1"
-														class="add__to__savings__form-1"
-													>
-														<select
-															name="day__savings__added"
-															class="day__savings__added"
-															id="id__day__savings__added"
-															required
-														>
-															<option value="" disabled selected>
-																Select day added
-															</option>
-															<!-- <option value="1">Day 1</option>
-															<option value="2">Day 2</option> -->
-														</select>
-													</form>
-												</div>
+											<div class="invest__result__roi--percent__value">
+												₦ 0.00
 											</div>
 										</div>
 
-										<!-- CALC--RESULT--PART 4 -->
-										<div class="savings__calc__results__part-4">
-											<form
-												action=""
-												method="post"
-												id="id-add__to__savings__form-1"
-												class="add__to__savings__form-1"
-											>
-												<button
-													class="savings__results__add--button"
-													type="submit"
-												>
-													Add to Savings
-												</button>
-											</form>
+										<div class="horizontal_line__calc__result"></div>
+
+										<div
+											class="invest__result__roi--naira__wrapper calc__result__wrapper"
+										>
+											<div class="invest__result__roi--naira">ROI (₦)</div>
+											<div class="invest__result__roi--naira__value">
+												₦ 0.00
+											</div>
 										</div>
+
+										<div class="horizontal_line__calc__result"></div>
+
+										<div
+											class="invest__result__roi--percent-naira__wrapper calc__result__wrapper"
+										>
+											<div class="invest__result__roi--percent-naira">
+												ROI + Capital
+											</div>
+
+											<div class="invest__result__roi--percent-naira__value">
+												₦ 0.00
+											</div>
+										</div>
+
+										<div class="horizontal_line__calc__result"></div>
 									</div>
 								</div>
 							</div>
@@ -833,7 +724,7 @@
 									<a
 										class="footer__links pad-marg-0"
 										href="../investment__faq/html__investment__faq.html"
-										>FAQ</a
+										>FAQs</a
 									>
 								</li>
 
@@ -947,7 +838,7 @@
 		<script src="../../js-components/header__hamburger.js"></script>
 		<script src="../../js-components/fund__calc__accordion.js"></script>
 		<script src="../../js-components/fund__calc__accordion__smooth__scroll__into__view.js"></script>
-		<script src="../../js-components/savings__calc__form__validation.js"></script>
+		<script src="../../js-components/investment__calc__form__validation.js"></script>
 		<script src="../../js-components/section__visible__on__scroll.js"></script>
 		<script src="../../js-components/footer__currentyear__auto.js"></script>
 		<script src="../../js-components/append__to__footer-list__investment.js"></script>

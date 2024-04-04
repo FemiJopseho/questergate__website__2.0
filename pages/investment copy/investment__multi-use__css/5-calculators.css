@@ -1,0 +1,1444 @@
+/* contains styles for INVESTMENT PAGE: */
+/* CALCULATOR section */
+
+
+
+/** Mobile view */
+/* max-width: 500px */
+@media screen and (width <=31.25em) {
+  .fund-calc__section {
+    /* outline: 4px solid gold; */
+
+    width: 100%;
+    padding: 0 0 8rem 0;
+  }
+
+  .fund-calc__container {
+    /* outline: 4px solid black; */
+
+    width: 100%;
+  }
+
+  .fund-calc__title {
+    /* outline: 2px solid blue; */
+
+    padding-bottom: 2rem;
+
+    text-align: center;
+    font-family: var(--ff-primary);
+    font-size: var(--fs-600);
+    font-weight: var(--fw-bold);
+    line-height: 1.3;
+    color: var(--clr-primary-650);
+    text-transform: capitalize;
+  }
+
+  /** style wrapper for both save & invest calc */
+  .savings__investment__calc__wrapper {
+    /* outline: 2px solid red; */
+
+    width: 100%;
+    padding: 2rem 1rem;
+    box-shadow: var(--gen-shadow-3d-02);
+
+    /* //////////// */
+    .savings__calc__section {
+      /* outline: 3px solid salmon; */
+
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+
+    /* ///////////// */
+    .investment__calc__section {
+      /* outline: 3px solid cyan; */
+
+      width: 100%;
+    }
+  }
+
+  /** style always visible part of calc accordion */
+  .fund-calc__accordion__container {
+    /* outline: 2px solid rosybrown; */
+
+    width: 100%;
+
+    /* //////////////////// */
+    .fund-calc__accordion__button {
+      /* outline: 2px solid lime; */
+
+      width: 100%;
+      padding: 1rem 1rem 1rem 2rem;
+      color: var(--clr-neutral-white-2);
+      text-align: center;
+      text-transform: capitalize;
+      cursor: pointer;
+
+      font-family: var(--ff-btn);
+      font-size: var(--fs-800);
+      font-weight: var(--fw-semi-bold);
+
+      background-color: var(--clr-tertiary-200);
+      background-image: linear-gradient(45deg,
+          var(--clr-tertiary-200),
+          var(--clr-tertiary-200),
+          var(--clr-tertiary-200),
+          var(--clr-primary-650));
+      border-radius: 12px;
+      border: none;
+
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center;
+
+      position: relative;
+
+      /* /////////////// */
+      &:hover {
+        filter: brightness(115%);
+        transform: translateY(-2px);
+      }
+
+      /* //////////////// */
+      .fund-calc__accordion__button--head {
+        /* outline: 2px solid rosybrown; */
+
+        margin-right: 4rem;
+      }
+
+      /* //////////// */
+      @media screen and (width > 440px) and (width <=500px) {
+        .fund-calc__accordion__button--head {
+          /* outline: 2px solid rosybrown; */
+
+          white-space: nowrap;
+        }
+      }
+
+      /* ////////////////// */
+      .fund-calc__accordion__button--arrow {
+        height: 15px;
+        width: 15px;
+        border: 3px solid var(--clr-neutral-white-2);
+        border-left: none;
+        border-top: none;
+
+        position: absolute;
+        top: 50%;
+        right: 8%;
+        transform: translate(-50%, -50%);
+        rotate: 45deg;
+
+        transition: all 200ms ease;
+      }
+    }
+  }
+
+  /** style the Investment & savings aspect of calculator */
+  .investment__calc__container,
+  .savings__calc__container {
+    /* outline: 2px dashed green; */
+
+    width: 100%;
+    max-width: var(--width__900px);
+    margin: 0 auto;
+
+    font-family: var(--ff-primary);
+    font-size: var(--fs-800);
+    font-weight: var(--fw-semi-bold);
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 2rem;
+  }
+
+  /** investment & savings calc FORM */
+  /* ////////////////// */
+  label {
+    padding: 0 0 0.5rem 0;
+    text-transform: capitalize;
+    border-radius: 4px;
+    font-weight: var(--fw-bold);
+
+    display: block;
+    text-align: center;
+  }
+
+  /* ///////////// */
+  input {
+    /* outline: 2px solid pink; */
+
+    padding: 0 0 0 0.5rem;
+    margin: 0 0 2rem 0;
+    width: 100%;
+    height: 3rem;
+    border-radius: 4px;
+    border: 1px solid var(--clr-primary-650);
+
+    /* //////////// */
+    &:focus {
+      outline-color: var(--clr-primary-650);
+    }
+  }
+
+  /* ///////////// */
+  select {
+    margin: 0 0 2rem 0;
+    padding: 0 0 0 0.5rem;
+    width: 100%;
+    height: 3rem;
+    border-radius: 4px;
+    border: 1px solid var(--clr-primary-650);
+
+    /* //////////// */
+    &:focus {
+      outline-color: var(--clr-primary-650);
+    }
+  }
+
+  .investment__calc__form,
+  .savings__calc__form {
+    /* outline: 2px dashed pink; */
+
+    width: 100%;
+    margin-top: 2rem;
+
+    /* //////////// */
+    .invest__plan__submit,
+    .savings__plan__submit {
+      background-color: var(--clr-primary-100);
+      color: var(--clr-neutral-white-2);
+
+      font-family: var(--ff-btn);
+      font-size: var(--fs-800);
+      font-weight: var(--fw-bold);
+
+      width: 100%;
+      padding: 0.8rem 0;
+      border: none;
+      border-radius: 4px;
+      text-transform: capitalize;
+      cursor: pointer;
+
+
+      /* ///////////// */
+      &:hover {
+        filter: brightness(125%);
+      }
+
+      /* //////////// */
+      &:active {
+        transform: translateY(-2px);
+      }
+
+    }
+  }
+
+  /** investment & savings calculator Result */
+  .investment__calc__results__container,
+  .savings__calc__results__container {
+    /* outline: 2px dashed pink; */
+
+    width: 100%;
+
+    background-color: var(--clr-primary-100);
+    border-radius: 4px;
+    color: var(--clr-neutral-white-2);
+    padding: 2.5rem 0.5rem 0 0.5rem;
+
+    /* ///////////////// */
+    .investment__calc__results__header,
+    .savings__calc__results__header {
+      text-transform: uppercase;
+      padding-bottom: 2rem;
+      text-align: center;
+    }
+
+    /* style horizontal lines in results */
+    /* //////////// */
+    .horizontal_line__calc__result {
+      margin-bottom: 1rem;
+
+      width: 100%;
+      border: 1px solid var(--clr-primary-200);
+    }
+
+    /* ////////////// */
+    .calc__result__wrapper {
+      text-transform: capitalize;
+
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+  }
+
+  /** style the Savings aspect of calculator */
+  /* for savings__calc__container style, check investment calc container above */
+  /* for savings__calc__form style, check investment calc form above */
+  /* for savings__calc__results styles, check investment calc result styles above */
+
+  .savings__calc__results__part-1 {
+    /* outline: 2px solid gray; */
+
+    padding-bottom: 1.5rem;
+  }
+
+  /** savings calc result PART 2 */
+  /* ////////////// */
+  .savings__calc__results__part-2 {
+    /* outline: 2px solid gray; */
+
+    padding-bottom: 2.5rem;
+    width: 100%;
+    margin: 0 auto;
+
+    /** table styles */
+    /* ////////////// */
+    /* No lines on the outer part of the table */
+    .savings__calc__results__table {
+      border-collapse: collapse;
+      border: none;
+      width: 100%;
+    }
+
+    /* //////////////// */
+    /* Table headers aligned to the left & bottom */
+    .savings__calc__results__table th {
+      text-align: center;
+      padding-bottom: 0.2rem;
+      border-right: 6px solid var(--clr-primary-200);
+      border-bottom: 6px solid var(--clr-primary-200);
+      font-weight: var(--fw-semi-bold);
+      text-transform: capitalize;
+      vertical-align: bottom;
+    }
+
+    /* ////////////// */
+    /* Table data aligned to the left */
+    .savings__calc__results__table td {
+      text-align: center;
+      padding-top: 1rem;
+      vertical-align: bottom;
+    }
+
+    /* /////////////// */
+    /* Remove right border on the last column */
+    .savings__calc__results__table th:last-child,
+    .savings__calc__results__table td:last-child {
+      border-right: none;
+    }
+
+    /* ////////////////// */
+    /* Visible line separating the rows */
+    .savings__calc__results__table tr {
+      border-bottom: 2px solid var(--clr-primary-200);
+    }
+  }
+
+  /** savings calc result PART 3 */
+  /* ////////////// */
+  .savings__calc__results__part-3 {
+    /* outline: 2px dashed pink; */
+
+    width: 100%;
+    padding-bottom: 0rem;
+
+    /* //////////////// */
+    .savings__results__init--total__wrapper {
+      /* outline: 2px dashed purple; */
+
+      width: 100%;
+    }
+
+    /* //////////// */
+    .savings__results__add-capital {
+      font-size: var(--fs-800);
+      padding-top: 1.5rem;
+      padding-bottom: 1rem;
+    }
+
+    /* /////////// */
+    .savings__results__add-capital__input__wrapper {
+      /* outline: 2px solid gray; */
+      width: 100%;
+    }
+
+    /* //////////// */
+    .add__to__savings__input {
+      /* outline: 2px solid white; */
+
+      width: 40%;
+
+      /* /////////// */
+      /* input */
+      .add__to__savings {
+        width: 100%;
+        height: 3rem;
+        cursor: text;
+      }
+    }
+
+    /* //////////////// */
+    .day__savings__added__input {
+      /* outline: 2px solid white; */
+
+      width: 45%;
+
+      /* ////////// */
+      /* select input */
+      .day__savings__added {
+        width: 100%;
+        height: 3rem;
+      }
+    }
+  }
+
+  /** savings calc result PART 4 */
+  /* ///////////// */
+  .savings__calc__results__part-4 {
+    /* outline: 2px solid brown; */
+
+    width: 45%;
+    margin: 0 auto;
+    margin-right: 0;
+    padding-bottom: 2.5rem;
+
+    /* /////////////////// */
+    .savings__results__add--button {
+      background-color: var(--clr-neutral-white-2);
+      color: var(--clr-primary-100);
+
+      font-family: var(--ff-btn);
+      font-size: var(--fs-800);
+      font-weight: var(--fw-bold);
+
+      width: 100%;
+      padding: 0.8rem 0;
+      border: none;
+      border-radius: 4px;
+      text-transform: capitalize;
+      cursor: pointer;
+
+      /* ///////////// */
+      &:hover {
+        filter: brightness(150%);
+      }
+
+      /* //////////// */
+      &:active {
+        transform: translateY(-2px);
+      }
+
+      /* ///////////// */
+      &:focus-within {
+        filter: brightness(150%);
+      }
+    }
+  }
+}
+
+/*        */
+/*        */
+/*        */
+/*        */
+/*        */
+
+/* Mobile landscape & Tablet Portrait screens */
+/* (min-width > 500px ) & (max-width <= 875px) */
+@media screen and (width > 31.25em) and (width <=54.69em) {
+  .fund-calc__section {
+    /* outline: 4px solid gold; */
+
+    width: 100%;
+    padding: 0 0 10rem 0;
+  }
+
+  .fund-calc__container {
+    /* outline: 4px solid black; */
+
+    width: 100%;
+  }
+
+  .fund-calc__title {
+    /* outline: 2px solid blue; */
+
+    padding-bottom: 2rem;
+
+    text-align: center;
+    font-family: var(--ff-primary);
+    font-size: var(--fs-500);
+    font-weight: var(--fw-bold);
+    line-height: var(--lh-600);
+    letter-spacing: 1px;
+    color: var(--clr-primary-650);
+    text-transform: capitalize;
+  }
+
+  /** style wrapper for both save & invest calc */
+  .savings__investment__calc__wrapper {
+    /* outline: 2px solid red; */
+
+    width: 100%;
+    padding: 4rem 1rem;
+    box-shadow: var(--gen-shadow-3d-02);
+
+    /* //////////// */
+    .savings__calc__section {
+      /* outline: 3px solid salmon; */
+
+      margin-bottom: 1rem;
+      width: 100%;
+    }
+
+    /* ///////////// */
+    .investment__calc__section {
+      /* outline: 3px solid cyan; */
+
+      width: 100%;
+    }
+  }
+
+  /** style always visible part of calc accordion */
+  .fund-calc__accordion__container {
+    width: 100%;
+
+    /* //////////////////// */
+    .fund-calc__accordion__button {
+
+      width: 100%;
+      max-width: var(--width__900px);
+      margin: 0 auto;
+      padding: 1rem;
+      color: var(--clr-neutral-white-2);
+      text-align: center;
+      text-transform: capitalize;
+      cursor: pointer;
+
+      font-family: var(--ff-btn);
+      font-size: var(--fs-700);
+      font-weight: var(--fw-bold);
+
+      background-color: var(--clr-tertiary-200);
+      background-image: linear-gradient(45deg,
+          var(--clr-tertiary-200),
+          var(--clr-tertiary-200),
+          var(--clr-tertiary-200),
+          var(--clr-primary-650));
+      border-radius: 12px;
+      border: none;
+
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center;
+
+      position: relative;
+
+      /* /////////////// */
+      &:hover {
+        filter: brightness(115%);
+        transform: translateY(-2px);
+      }
+
+      /* //////////////// */
+      .fund-calc__accordion__button--head {
+        /* outline: 2px solid rosybrown; */
+
+        margin-right: 4rem;
+      }
+
+      /* ////////////////// */
+      .fund-calc__accordion__button--arrow {
+        height: 15px;
+        width: 15px;
+        border: 3px solid var(--clr-neutral-white-2);
+        border-left: none;
+        border-top: none;
+
+        position: absolute;
+        top: 50%;
+        right: 15%;
+        transform: translate(-50%, -50%);
+        rotate: 45deg;
+
+        transition: all 200ms ease;
+
+        /* ////////////// */
+        @media screen and (width > 500px) and (width < 600px) {
+          right: 8%;
+        }
+
+        /* ////////////// */
+        @media screen and (width > 600px) and (width < 700px) {
+          right: 12%;
+        }
+
+      }
+    }
+  }
+
+  /** style the Investment & savings aspect of calculator */
+  .investment__calc__container,
+  .savings__calc__container {
+    /* outline: 2px dashed green; */
+
+    width: 100%;
+    max-width: var(--width__900px);
+    margin: 0 auto;
+
+    font-family: var(--ff-primary);
+    font-size: var(--fs-800);
+    font-weight: var(--fw-semi-bold);
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 2rem;
+  }
+
+  /** investment & savings calc FORM */
+  /* ////////////////// */
+  label {
+    padding: 0 0 0.5rem 0;
+    text-transform: capitalize;
+    border-radius: 4px;
+    font-weight: var(--fw-bold);
+
+    display: block;
+    text-align: center;
+  }
+
+  /* ///////////// */
+  input {
+    /* outline: 2px solid pink; */
+
+    padding: 0 0 0 0.5rem;
+    margin: 0 0 2rem 0;
+    width: 100%;
+    height: 3rem;
+    border-radius: 4px;
+    border: 1px solid var(--clr-primary-650);
+
+    /* //////////// */
+    &:focus {
+      outline-color: var(--clr-primary-650);
+    }
+  }
+
+  /* ///////////// */
+  select {
+    margin: 0 0 2rem 0;
+    padding: 0 0 0 0.5rem;
+    width: 100%;
+    height: 3rem;
+    border-radius: 4px;
+    border: 1px solid var(--clr-primary-650);
+
+    /* //////////// */
+    &:focus {
+      outline-color: var(--clr-primary-650);
+    }
+  }
+
+  .investment__calc__form,
+  .savings__calc__form {
+    /* outline: 2px dashed pink; */
+
+    width: 50%;
+    margin-top: 2rem;
+
+    /* //////////// */
+    /* .invest__plan__form-1,
+    .savings__plan__form-1 {
+      outline: 2px solid blue;
+
+      width: 100%;
+
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: flex-start;
+    } */
+
+    /* //////////// */
+    .invest__plan__submit,
+    .savings__plan__submit {
+      background-color: var(--clr-primary-100);
+      color: var(--clr-neutral-white-2);
+
+      font-family: var(--ff-btn);
+      font-size: var(--fs-800);
+      font-weight: var(--fw-bold);
+
+      width: 100%;
+      padding: 0.8rem 0;
+      border: none;
+      border-radius: 4px;
+      text-transform: capitalize;
+      cursor: pointer;
+
+
+      /* ///////////// */
+      &:hover {
+        filter: brightness(125%);
+      }
+
+      /* //////////// */
+      &:active {
+        transform: translateY(-2px);
+      }
+
+    }
+  }
+
+  /** investment & savings calculator Result */
+  .investment__calc__results__container,
+  .savings__calc__results__container {
+    /* outline: 2px dashed pink; */
+
+    width: 100%;
+    padding: 2.5rem 1.5rem 0 1.5rem;
+
+    background-color: var(--clr-primary-100);
+    border-radius: 4px;
+    color: var(--clr-neutral-white-2);
+
+    /* ///////////////// */
+    .investment__calc__results__header,
+    .savings__calc__results__header {
+      text-transform: uppercase;
+      padding-bottom: 2rem;
+      text-align: center;
+    }
+
+    /* style horizontal lines in results */
+    /* //////////// */
+    .horizontal_line__calc__result {
+      margin-bottom: 1rem;
+
+      width: 100%;
+      border: 1px solid var(--clr-primary-200);
+    }
+
+    /* ////////////// */
+    .calc__result__wrapper {
+      /* outline: 2px solid blue; */
+
+      text-transform: capitalize;
+
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+  }
+
+  /* so that invest__calc__result wont be too wide */
+  .investment__calc__results__container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  /** style the Savings aspect of calculator */
+  /* for savings__calc__container style, check investment calc container above */
+  /* for savings__calc__form style, check investment calc form above */
+  /* for savings__calc__results styles, check investment calc result styles above */
+
+  .savings__calc__results__part-1 {
+    /* outline: 2px solid gray; */
+
+    padding-bottom: 1.5rem;
+  }
+
+  /** savings calc result PART 2 */
+  /* ////////////// */
+  .savings__calc__results__part-2 {
+    /* outline: 2px solid gray; */
+
+    padding-bottom: 2.5rem;
+    width: 100%;
+
+    /** table styles */
+    /* ////////////// */
+    /* No lines on the outer part of the table */
+    .savings__calc__results__table {
+      border-collapse: collapse;
+      border: none;
+      width: 100%;
+    }
+
+    /* //////////////// */
+    /* Table headers aligned to the left & bottom */
+    .savings__calc__results__table th {
+      text-align: center;
+      padding-bottom: 0.2rem;
+      /* border-right: 6px solid var(--clr-primary-200); */
+      border-bottom: 6px solid var(--clr-primary-200);
+      font-weight: var(--fw-semi-bold);
+      text-transform: capitalize;
+      vertical-align: bottom;
+    }
+
+    /* ////////////// */
+    /* Table data aligned to the left */
+    .savings__calc__results__table td {
+      text-align: center;
+      padding-top: 1rem;
+      vertical-align: bottom;
+    }
+
+    /* /////////////// */
+    /* Remove right border on the last column */
+    .savings__calc__results__table th:last-child,
+    .savings__calc__results__table td:last-child {
+      border-right: none;
+    }
+
+    /* ////////////////// */
+    /* Visible line separating the rows */
+    .savings__calc__results__table tr {
+      border-bottom: 2px solid var(--clr-primary-200);
+    }
+  }
+
+  /** savings calc result PART 3 */
+  /* ////////////// */
+  .savings__calc__results__part-3 {
+    /* outline: 2px dashed pink; */
+
+    width: 100%;
+    padding-bottom: 0rem;
+
+    /* //////////////// */
+    .savings__results__init--total__wrapper {
+      /* outline: 2px dashed purple; */
+
+      width: 100%;
+    }
+
+    /* //////////// */
+    .savings__results__add-capital {
+      font-size: var(--fs-800);
+      padding-top: 1.5rem;
+      padding-bottom: 1rem;
+    }
+
+    /* /////////// */
+    .savings__results__add-capital__input__wrapper {
+      /* outline: 2px solid gray; */
+      width: 100%;
+    }
+
+    /* //////////// */
+    .add__to__savings__input {
+      /* outline: 2px solid white; */
+
+      width: 40%;
+
+      /* /////////// */
+      /* input */
+      .add__to__savings {
+        width: 100%;
+        height: 3rem;
+        cursor: text;
+      }
+    }
+
+    /* //////////////// */
+    .day__savings__added__input {
+      /* outline: 2px solid white; */
+
+      width: 45%;
+
+      /* ////////// */
+      /* select input */
+      .day__savings__added {
+        width: 100%;
+        height: 3rem;
+      }
+    }
+  }
+
+  /** savings calc result PART 4 */
+  /* ///////////// */
+  .savings__calc__results__part-4 {
+    /* outline: 2px solid brown; */
+
+    width: 45%;
+    margin: 0 auto;
+    margin-right: 0;
+    padding-bottom: 2.5rem;
+
+    /* /////////////////// */
+    .savings__results__add--button {
+      background-color: var(--clr-neutral-white-2);
+      color: var(--clr-primary-100);
+
+      font-family: var(--ff-btn);
+      font-size: var(--fs-800);
+      font-weight: var(--fw-bold);
+
+      width: 100%;
+      padding: 0.8rem 0;
+      border: none;
+      border-radius: 4px;
+      text-transform: capitalize;
+      cursor: pointer;
+
+      /* ///////////// */
+      &:hover {
+        filter: brightness(150%);
+      }
+
+      /* //////////// */
+      &:active {
+        transform: translateY(-2px);
+      }
+
+      /* ///////////// */
+      &:focus-within {
+        filter: brightness(150%);
+      }
+    }
+  }
+
+}
+
+/*        */
+/*        */
+/*        */
+/*        */
+/*        */
+
+/** Screens > 875px */
+@media screen and (width > 54.69em) {
+  .fund-calc__section {
+    /* outline: 4px solid gold; */
+
+    width: 100%;
+    max-width: var(--width__1440px);
+    margin: 0 auto;
+    padding: 0 0 12rem 0;
+  }
+
+  .fund-calc__container {
+    /* outline: 4px solid black; */
+
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  /** style wrapper for both save & invest calc */
+  .savings__investment__calc__wrapper {
+    /* outline: 2px solid red; */
+
+    padding: 4rem 1rem;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 12px;
+    border: none;
+    box-shadow: var(--gen-shadow-3d-02a);
+    box-shadow: var(--gen-shadow-3d-02);
+
+    /* /////////////// */
+    @media screen and (width <=1460px) {
+      border-radius: 0;
+    }
+
+    /* //////////// */
+    .savings__calc__section {
+      /* outline: 3px solid salmon; */
+
+      margin-bottom: 1rem;
+      width: 100%;
+    }
+
+    /* ///////////// */
+    .investment__calc__section {
+      /* outline: 3px solid cyan; */
+
+      width: 100%;
+    }
+  }
+
+  .fund-calc__title {
+    /* outline: 2px solid blue; */
+
+    padding-bottom: 2rem;
+
+    text-align: center;
+    font-family: var(--ff-primary);
+    font-size: var(--fs-400);
+    font-weight: var(--fw-bold);
+    line-height: var(--lh-600);
+    letter-spacing: 1px;
+    color: var(--clr-primary-650);
+    text-transform: capitalize;
+  }
+
+  /** style visible part of calc accordion */
+  .fund-calc__accordion__container {
+    width: 100%;
+
+    /* //////////////////// */
+    .fund-calc__accordion__button {
+      /* outline: 2px solid tomato; */
+
+      width: 100%;
+      max-width: var(--width__900px);
+      margin: 0 auto;
+      padding: 1rem;
+      color: var(--clr-neutral-white-2);
+      text-align: center;
+      text-transform: capitalize;
+      cursor: pointer;
+
+      font-family: var(--ff-btn);
+      font-size: var(--fs-700);
+      font-weight: var(--fw-bold);
+
+      background-color: var(--clr-tertiary-200);
+      background-image: linear-gradient(45deg,
+          var(--clr-tertiary-200),
+          var(--clr-tertiary-200),
+          var(--clr-tertiary-200),
+          var(--clr-primary-650));
+      border-radius: 12px;
+      border: none;
+
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center;
+
+      position: relative;
+
+      /* /////////////// */
+      &:hover {
+        filter: brightness(115%);
+        transform: translateY(-2px);
+      }
+
+      /* //////////////// */
+      .fund-calc__accordion__button--head {
+        /* outline: 2px solid rosybrown; */
+
+        margin-right: 4rem;
+      }
+
+      /* ////////////////// */
+      .fund-calc__accordion__button--arrow {
+        height: 15px;
+        width: 15px;
+        border: 3px solid var(--clr-neutral-white-2);
+        border-left: none;
+        border-top: none;
+
+        position: absolute;
+        top: 50%;
+        right: 20%;
+        transform: translate(-50%, -50%);
+        rotate: 45deg;
+
+        transition: all 200ms ease;
+      }
+    }
+  }
+
+  /** style the Investment & savings aspect of calculator */
+  .investment__calc__container,
+  .savings__calc__container {
+    /* outline: 2px dashed green; */
+
+    width: 100%;
+    max-width: var(--width__900px);
+    margin: 0 auto;
+
+    font-family: var(--ff-primary);
+    font-size: var(--fs-800);
+    font-weight: var(--fw-semi-bold);
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    /* align-items: flex-start; */
+    column-gap: 1rem;
+  }
+
+  /** investment & savings calc FORM */
+  /* ////////////////// */
+  label {
+    padding: 0 0 0.5rem 0;
+    text-transform: capitalize;
+    border-radius: 4px;
+    font-weight: var(--fw-bold);
+  }
+
+  /* ///////////// */
+  input {
+    /* outline: 2px solid pink; */
+
+    padding: 0 0 0 0.5rem;
+    margin: 0 0 2rem 0;
+    width: 100%;
+    height: 3rem;
+    border-radius: 4px;
+    border: 1px solid var(--clr-primary-650);
+
+    /* //////////// */
+    &:focus {
+      outline-color: var(--clr-primary-650);
+    }
+  }
+
+  /* ///////////// */
+  select {
+    margin: 0 0 2rem 0;
+    padding: 0 0 0 0.5rem;
+    width: 100%;
+    height: 3rem;
+    border-radius: 4px;
+    border: 1px solid var(--clr-primary-650);
+
+    /* //////////// */
+    &:focus {
+      outline-color: var(--clr-primary-650);
+    }
+  }
+
+  .investment__calc__form,
+  .savings__calc__form {
+    /* outline: 2px dashed pink; */
+
+    width: 40%;
+    margin-top: 2rem;
+
+    /* //////////// */
+    .invest__plan__form-1 {
+      /* outline: 2px solid blue; */
+
+      width: 100%;
+
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    /* //////////// */
+    .invest__plan__submit,
+    .savings__plan__submit {
+      background-color: var(--clr-primary-100);
+      color: var(--clr-neutral-white-2);
+
+      font-family: var(--ff-btn);
+      font-size: var(--fs-700);
+      font-weight: var(--fw-bold);
+
+      width: 100%;
+      padding: 0.8rem 0;
+      border: none;
+      border-radius: 4px;
+      text-transform: capitalize;
+      cursor: pointer;
+
+
+      /* ///////////// */
+      &:hover {
+        filter: brightness(125%);
+      }
+
+      /* //////////// */
+      &:active {
+        transform: translateY(-2px);
+      }
+
+    }
+  }
+
+  /** investment calculator Result */
+  .investment__calc__results__container,
+  .savings__calc__results__container {
+    /* outline: 2px dashed pink; */
+
+    background-color: var(--clr-primary-100);
+    width: 55%;
+    border-radius: 4px;
+    color: var(--clr-neutral-white-2);
+    padding: 2.5rem 1.5rem 0 1.5rem;
+    margin-top: 2rem;
+
+    /* ///////////////// */
+    .investment__calc__results__header,
+    .savings__calc__results__header {
+      text-transform: uppercase;
+      padding-bottom: 2rem;
+    }
+
+    /* style horizontal lines in results */
+    /* //////////// */
+    .horizontal_line__calc__result {
+      margin-bottom: 1rem;
+
+      width: 100%;
+      border: 1px solid var(--clr-primary-200);
+    }
+
+    /* ////////////// */
+    .calc__result__wrapper {
+      text-transform: capitalize;
+
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+  }
+
+  /** style the Savings aspect of calculator */
+  /* for savings__calc__container style, check investment calc container above */
+  /* for savings__calc__form style, check investment calc form above */
+  /* for savings__calc__results styles, check investment calc result styles above */
+
+  .savings__calc__results__part-1 {
+    /* outline: 2px solid gray; */
+
+    padding-bottom: 1.5rem;
+  }
+
+  /** savings calc result PART 2 */
+  /* ////////////// */
+  .savings__calc__results__part-2 {
+    /* outline: 2px solid gray; */
+
+    padding-bottom: 2.5rem;
+    width: 100%;
+
+    /** table styles */
+    /* ////////////// */
+    /* No lines on the outer part of the table */
+    .savings__calc__results__table {
+      border-collapse: collapse;
+      border: none;
+      width: 100%;
+    }
+
+    /* //////////////// */
+    /* Table headers aligned to the left & bottom */
+    .savings__calc__results__table th {
+      text-align: center;
+      padding-bottom: 0.2rem;
+      /* border-right: 6px solid var(--clr-primary-200); */
+      border-bottom: 6px solid var(--clr-primary-200);
+      font-weight: var(--fw-semi-bold);
+      text-transform: capitalize;
+      vertical-align: bottom;
+    }
+
+    /* ////////////// */
+    /* Table data aligned to the left */
+    .savings__calc__results__table td {
+      text-align: center;
+      padding-top: 1rem;
+      vertical-align: bottom;
+    }
+
+    /* /////////////// */
+    /* Remove right border on the last column */
+    .savings__calc__results__table th:last-child,
+    .savings__calc__results__table td:last-child {
+      border-right: none;
+    }
+
+    /* ////////////////// */
+    /* Visible line separating the rows */
+    .savings__calc__results__table tr {
+      border-bottom: 2px solid var(--clr-primary-200);
+    }
+  }
+
+  /** savings calc result PART 3 */
+  /* ////////////// */
+  .savings__calc__results__part-3 {
+    /* outline: 2px dashed pink; */
+
+    width: 100%;
+    padding-bottom: 0rem;
+
+    /* //////////////// */
+    .savings__results__init--total__wrapper {
+      /* outline: 2px dashed purple; */
+
+      width: 100%;
+    }
+
+    /* //////////// */
+    .savings__results__add-capital {
+      font-size: var(--fs-700);
+      padding-top: 1.5rem;
+      padding-bottom: 1rem;
+    }
+
+    /* /////////// */
+    .savings__results__add-capital__input__wrapper {
+      /* outline: 2px solid gray; */
+      width: 100%;
+    }
+
+    /* //////////// */
+    .add__to__savings__input {
+      /* outline: 2px solid white; */
+
+      width: 40%;
+
+      /* /////////// */
+      /* input */
+      .add__to__savings {
+        width: 100%;
+        height: 3rem;
+        cursor: text;
+      }
+    }
+
+    /* //////////////// */
+    .day__savings__added__input {
+      /* outline: 2px solid white; */
+
+      width: 45%;
+
+      /* ////////// */
+      /* select input */
+      .day__savings__added {
+        width: 100%;
+        height: 3rem;
+      }
+    }
+  }
+
+  /** savings calc result PART 4 */
+  /* ///////////// */
+  .savings__calc__results__part-4 {
+    /* outline: 2px solid brown; */
+
+    width: 45%;
+    margin: 0 auto;
+    margin-right: 0;
+    padding-bottom: 2.5rem;
+
+    /* /////////////////// */
+    .savings__results__add--button {
+      background-color: var(--clr-neutral-white-2);
+      color: var(--clr-primary-100);
+
+      font-family: var(--ff-btn);
+      font-size: var(--fs-800);
+      font-weight: var(--fw-bold);
+
+      width: 100%;
+      padding: 0.8rem 0;
+      border: none;
+      border-radius: 4px;
+      text-transform: capitalize;
+      cursor: pointer;
+
+      /* ///////////// */
+      &:hover {
+        filter: brightness(150%);
+      }
+
+      /* //////////// */
+      &:active {
+        transform: translateY(-2px);
+      }
+
+      /* ///////////// */
+      &:focus-within {
+        filter: brightness(150%);
+      }
+    }
+  }
+}
+
+/*        */
+/*        */
+/*        */
+/*        */
+/*        */
+/* GENERAL STYLE FOR CALC ACCORDION BUTTON open&close FUNCTIONALITY */
+/* ///////////////////////// */
+/** WHEN CLOSED */
+/* ///////////////////////// */
+/* makes the height of the accordion Item to be 0 so it is not visible */
+.investment__calc__container,
+.savings__calc__container {
+  /* outline: 2px dashed violet; */
+
+  /* when button accordion is closed */
+  max-height: 0;
+
+  /* keeps the content from showing beneath the accordion-item when closed */
+  overflow: hidden;
+
+  /* controls the transition when closing-->going to this style */
+  transition: max-height 700ms ease;
+
+}
+
+/* /////////////////////// */
+/** WHEN OPEN */
+/* ///////////////////// */
+/* changes the height of the accordion Item from 0 so it is visible */
+.savings__calc__section button[aria-expanded="true"]+.savings__calc__container,
+.investment__calc__section button[aria-expanded="true"]+.investment__calc__container {
+  /* outline: 2px dashed red; */
+
+  /* *when button accordion is opened */
+  /* max-height: 100rem;-- this is set by javascript */
+
+  /* controls the transition when opening-->going to this style */
+  transition: max-height 2.5s ease;
+
+}
+
+/* style the button when it is open */
+.savings__calc__section button[aria-expanded="true"],
+.investment__calc__section button[aria-expanded="true"] {
+  background-color: var(--clr-primary-200);
+  background-image: linear-gradient(45deg,
+      var(--clr-primary-200),
+      var(--clr-primary-200),
+      var(--clr-primary-200),
+      var(--clr-primary-650));
+}
+
+/* style the button arrow when button is open */
+.savings__calc__section button[aria-expanded="true"] .fund-calc__accordion__button--arrow,
+.investment__calc__section button[aria-expanded="true"] .fund-calc__accordion__button--arrow {
+  height: 15px;
+  width: 15px;
+  border: 3px solid var(--clr-neutral-white-2);
+  border-right: none;
+  border-bottom: none;
+
+  position: absolute;
+  top: 65%;
+  transform: translate(-50%, -50%);
+  rotate: 45deg;
+}

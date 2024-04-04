@@ -1,0 +1,105 @@
+/* contains styles for OUR SAVINGS PLANS & OUR INVESTMENT PLANS PAGE: */
+/* BANNER SECTION */
+
+/** Mobile view */
+/* max-width: 500px */
+@media screen and (width <=31.25em) {
+  .fund-our-plans__banner__section {
+    /* outline: 4px solid orange; */
+
+    width: 100%;
+  }
+
+  .fund-our-plans__banner__container {
+    /* outline: 4px solid blue; */
+
+    width: 100%;
+  }
+
+  .fund-our-plans__banner__image__container {
+    /* outline: 2px solid red; */
+
+    width: 100%;
+
+    /* //////////////////// */
+    .fund-our-plans__banner__pic {
+      /* outline: 2px solid green; */
+
+      width: 100%;
+    }
+  }
+}
+
+/*        */
+/*        */
+/*        */
+/*        */
+/*        */
+
+/* Mobile landscape & Tablet Portrait screens */
+/* (min-width > 500px ) & (max-width <= 875px) */
+@media screen and (width > 31.25em) and (width <=54.69em) {
+  .fund-our-plans__banner__section {
+    /* outline: 4px solid orange; */
+
+    width: 100%;
+  }
+
+  .fund-our-plans__banner__container {
+    /* outline: 4px solid blue; */
+
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .fund-our-plans__banner__image__container {
+    /* outline: 2px solid red; */
+
+    width: 100%;
+
+    /* //////////////////// */
+    .fund-our-plans__banner__pic {
+      /* outline: 2px solid green; */
+
+      width: 100%;
+    }
+  }
+}
+
+/*        */
+/*        */
+/*        */
+/*        */
+/*        */
+
+/** Screens > 875px */
+@media screen and (width > 54.69em) {
+
+  .fund-our-plans__banner__section {
+    /* outline: 4px solid orange; */
+
+    width: 100%;
+    max-width: var(--width__1440px);
+    margin: 0 auto;
+  }
+
+  .fund-our-plans__banner__container {
+    /* outline: 4px solid blue; */
+
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .fund-our-plans__banner__image__container {
+    /* outline: 2px solid red; */
+
+    width: 100%;
+
+    /* //////////////////// */
+    .fund-our-plans__banner__pic {
+      /* outline: 2px solid green; */
+
+      width: 100%;
+    }
+  }
+}

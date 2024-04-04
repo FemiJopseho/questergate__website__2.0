@@ -8,7 +8,7 @@
   .training__benefit-for-you__section {
     /* outline: 4px solid goldenrod; */
 
-    width: var(--width__always-fill);
+    width: 100%;
     max-width: var(--width__1440px);
     margin: 0 auto;
     padding-bottom: 8rem;
@@ -85,19 +85,18 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    row-gap: 1rem;
+    row-gap: 2rem;
   }
 
   .training__benefit-card__list-items {
     /* outline: 2px solid purple; */
 
-    width: 95%;
-    min-width: 230px;
+    /* width: 230px; */
+    max-width: 230px;
     margin: 0 auto;
-    height: 90px;
-
+    height: 150px;
     list-style: none;
-    padding: 0 2rem;
+    padding: 0rem 2rem;
 
     font-family: var(--ff-primary);
     font-weight: var(--fw-bold);
@@ -129,21 +128,6 @@
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-
-    /* /////////////// */
-    @media screen and (width <=280px) {
-      font-size: 0.9rem;
-      padding: 0 0.5rem;
-      min-width: 150px;
-    }
-
-    /* /////////////// */
-    @media screen and (width > 280px) and (width <=370px) {
-      font-size: 0.9rem;
-      padding: 0 0.5rem;
-      min-width: 230px;
-    }
-
   }
 }
 
@@ -159,7 +143,7 @@
   .training__benefit-for-you__section {
     /* outline: 4px solid goldenrod; */
 
-    width: var(--width__always-fill);
+    width: 100%;
     max-width: var(--width__1440px);
     margin: 0 auto;
     padding-bottom: 10rem;
@@ -169,6 +153,7 @@
     /* outline: 4px solid black; */
 
     width: 95%;
+    max-width: 700px;
     margin: 0 auto;
 
     display: flex;
@@ -198,6 +183,11 @@
     /* /////////////// */
     .training__benefit__header-span2 {
       white-space: nowrap;
+    }
+
+    /* /////////////// */
+    @media screen and (width > 500px) and (width <=560px) {
+      font-size: var(--fs-600);
     }
   }
 
@@ -233,8 +223,9 @@
 
     /* /////////////// */
     @media screen and (width > 500px) and (width <=600px) {
-      column-gap: 0.8rem;
-      row-gap: 0.8rem;
+      flex-wrap: wrap;
+      column-gap: 2.5rem;
+      row-gap: 2.5rem;
     }
   }
 
@@ -242,10 +233,8 @@
     /* outline: 2px solid purple; */
 
     flex-basis: 100%;
-    height: 200px;
 
     list-style: none;
-    padding: 1rem;
 
     font-family: var(--ff-primary);
     font-weight: var(--fw-bold);
@@ -272,39 +261,44 @@
     box-shadow: 0px 2px 2px hsla(0, 0%, 0%, 0.3);
     box-shadow: 0px 4px 4px hsla(0, 0%, 0%, 0.3);
 
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: center;
+    justify-content: center;
+    align-items: center; */
 
     /* /////////////// */
-    @media screen and (width > 500px) and (width <=530px) {
+    @media screen and (width > 500px) and (width <=600px) {
       font-size: var(--fs-800);
-      padding: 1.2rem 0.5rem;
-      height: 140px;
+      padding: 2rem 0.5rem;
+      height: 150px;
+      flex-basis: 40%;
     }
 
     /* /////////////// */
-    @media screen and (width > 530px) and (width <=665px) {
+    @media screen and (width > 600px) and (width <=665px) {
       font-size: var(--fs-800);
-      padding: 1.2rem 0.5rem;
-      height: 130px;
+      padding: 2.2rem 0.5rem;
+      height: 150px;
     }
 
     /* /////////////// */
     @media screen and (width > 665px) and (width <=700px) {
-      height: 180px;
+      height: 160px;
+      font-size: var(--fs-800);
+      padding: 2.5rem 1rem;
     }
 
     /* /////////////// */
     @media screen and (width > 700px) and (width <=846px) {
-      height: 170px;
+      height: 200px;
+      padding: 2.2rem 1rem;
     }
 
     /* /////////////// */
     @media screen and (width > 846px) and (width <=875px) {
-      height: 140px;
+      height: 200px;
+      padding: 2.2rem 1.5rem;
     }
   }
 }
@@ -320,7 +314,7 @@
   .training__benefit-for-you__section {
     /* outline: 4px solid goldenrod; */
 
-    width: var(--width__always-fill);
+    width: 100%;
     max-width: var(--width__1440px);
     margin: 0 auto;
     padding-bottom: 12rem;
@@ -391,7 +385,7 @@
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-    column-gap: 1rem;
+    column-gap: 2rem;
   }
 
   .training__benefit-card__list-items {

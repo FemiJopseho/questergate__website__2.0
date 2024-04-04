@@ -19,8 +19,10 @@ document.addEventListener("DOMContentLoaded", function () {
 		button.addEventListener("click", function () {
 			// Check if the accordion is not already expanded
 			if (button.getAttribute("aria-expanded") === "true") {
-				// Get the element with class B= "savings__calc__section"
-				var startingPoint = document.querySelector(".savings__calc__section");
+				// Get the element with class B= "savings__investment__calc__wrapper"
+				var startingPoint = document.querySelector(
+					".savings__investment__calc__wrapper"
+				);
 
 				// Calculate the scroll position by subtracting the offset value
 				var scrollPosition = startingPoint.offsetTop - offsetValue;
@@ -65,7 +67,7 @@ document.addEventListener("DOMContentLoaded", function () {
 // *when you click Investment Accordion Button
 document.addEventListener("DOMContentLoaded", function () {
 	// Set the offset value (in pixels) from the top of the viewport
-	var offsetValue = 50;
+	var offsetValue = 100;
 
 	// Get all elements with class A= "investment__calc__accordion__button"
 	var buttons = document.querySelectorAll(
@@ -77,9 +79,11 @@ document.addEventListener("DOMContentLoaded", function () {
 		button.addEventListener("click", function () {
 			// Check if the accordion is not already expanded
 			if (button.getAttribute("aria-expanded") === "true") {
-				// Get the element with class B= "fund-calc__title"
-				// i used "fund-calc__title" here cos investment__calc__section gave me issues
-				var startingPoint = document.querySelector(".fund-calc__title");
+				// Get the element with class B= "savings__investment__calc__wrapper"
+				// i used "savings__investment__calc__wrapper" here cos investment__calc__section gave me issues
+				var startingPoint = document.querySelector(
+					".savings__investment__calc__wrapper"
+				);
 
 				// Calculate the scroll position by subtracting the offset value
 				var scrollPosition = startingPoint.offsetTop - offsetValue;

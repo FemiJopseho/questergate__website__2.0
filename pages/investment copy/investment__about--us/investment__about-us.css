@@ -1,0 +1,427 @@
+/* contains styles for: ABOUT-US page, section on About-us__details */
+
+
+
+/** Mobile view */
+/* max-width: 500px */
+@media screen and (width <=31.25em) {
+  .fund-about-us__details__section {
+    /* outline: 4px solid gold; */
+
+    padding: 6rem 0 6rem 0;
+    width: 100%;
+  }
+
+  .fund-about-us__details__container {
+    /* outline: 4px solid darkolivegreen; */
+
+    width: 100%;
+  }
+
+  .fund-about-us__details__heading__container {
+    /* outline: 2px solid teal; */
+
+    width: 100%;
+    text-align: center;
+    padding-bottom: 6rem;
+
+    /* ////////////// */
+    .fund-about-us__details__heading {
+      /* outline: 2px solid pink; */
+
+      text-transform: capitalize;
+      padding-bottom: 1rem;
+
+      font-family: var(--ff-secondary);
+      font-weight: var(--fw-bold);
+      font-size: var(--fs-400);
+      line-height: var(--lh-600);
+      color: var(--clr-primary-650);
+    }
+
+    /* //////////// */
+    .fund-about-us__details__heading-text {
+      /* outline: 2px dashed pink; */
+
+      font-family: var(--ff-primary);
+      font-weight: var(--fw-regular);
+      font-size: var(--fs-700);
+      line-height: var(--lh-410);
+      color: var(--clr-tertiary-100);
+    }
+  }
+
+  .fund-about-us__details__content__wrapper {
+    /* outline: 3px solid black; */
+
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    row-gap: 6rem;
+  }
+
+  .fund-about-us__details__content__container-1,
+  .fund-about-us__details__content__container-2 {
+    /* outline: 2px solid blue; */
+
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2rem;
+
+    /* ////////// */
+    /* re-order image & text in "...content__container-2" */
+    .fund-about-us__details__content__text__container-2 {
+      order: 1;
+    }
+  }
+
+  /* about us page image */
+  .fund-about-us__details__content__img__container-1,
+  .fund-about-us__details__content__img__container-2 {
+    /* outline: 2px solid skyblue; */
+
+    width: 100%;
+
+    /* ///////////// */
+    .fund-about-us__details__content__img {
+      /* outline: 2px solid blueviolet; */
+
+      width: 100%;
+    }
+  }
+
+  /* about us page texts */
+  .fund-about-us__details__content__text__container-1,
+  .fund-about-us__details__content__text__container-2 {
+    /* outline: 2px solid orangered; */
+
+    width: 100%;
+    padding: 0 1rem 0 1rem;
+
+    /* ////////// */
+    .fund-about-us__details__content__text__heading {
+      /* outline: 2px solid orange; */
+
+      text-transform: capitalize;
+      text-align: center;
+      padding-bottom: 1rem;
+
+      font-family: var(--ff-secondary);
+      font-weight: var(--fw-bold);
+      font-size: var(--fs-600);
+      line-height: var(--lh-430);
+      color: var(--clr-primary-650);
+    }
+
+    /* //////////// */
+    .fund-about-us__details__content__text {
+      /* outline: 2px dashed orchid; */
+
+      width: 100%;
+      max-width: 400px;
+      margin: 0 auto;
+      padding-bottom: 1.2rem;
+      text-align: center;
+
+      font-family: var(--ff-primary);
+      font-weight: var(--fw-regular);
+      font-size: var(--fs-800);
+      line-height: var(--lh-400);
+      color: var(--clr-tertiary-100);
+
+    }
+  }
+}
+
+/*        */
+/*        */
+/*        */
+/*        */
+/*        */
+
+/* Mobile landscape & Tablet screens */
+/* (min-width > 500px ) & (max-width <= 650px) */
+@media screen and (width > 31.25em) and (width <=54.69em) {
+  .fund-about-us__details__section {
+    /* outline: 4px solid gold; */
+
+    padding: 6rem 0 6rem 0;
+    width: 100%;
+  }
+
+  .fund-about-us__details__container {
+    /* outline: 4px solid darkolivegreen; */
+
+    width: 100%;
+  }
+
+  .fund-about-us__details__heading__container {
+    /* outline: 2px solid teal; */
+
+    width: 100%;
+    text-align: center;
+    padding-bottom: 8rem;
+
+    /* ////////////// */
+    .fund-about-us__details__heading {
+      /* outline: 2px solid pink; */
+
+      text-transform: capitalize;
+      padding-bottom: 1rem;
+
+      font-family: var(--ff-secondary);
+      font-weight: var(--fw-bold);
+      font-size: var(--fs-400);
+      line-height: var(--lh-500);
+      color: var(--clr-primary-650);
+    }
+
+    /* //////////// */
+    .fund-about-us__details__heading-text {
+      /* outline: 2px dashed pink; */
+
+      width: 100%;
+      max-width: 400px;
+      margin: 0 auto;
+
+      font-family: var(--ff-primary);
+      font-weight: var(--fw-regular);
+      font-size: var(--fs-600);
+      line-height: var(--lh-410);
+      color: var(--clr-tertiary-100);
+    }
+  }
+
+  .fund-about-us__details__content__wrapper {
+    /* outline: 3px solid black; */
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    row-gap: 8rem;
+  }
+
+  .fund-about-us__details__content__container-1,
+  .fund-about-us__details__content__container-2 {
+    /* outline: 2px solid blue; */
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2rem;
+
+    /* ////////// */
+    /* re-order image & text in "...content__container-2" */
+    .fund-about-us__details__content__text__container-2 {
+      order: 1;
+    }
+  }
+
+  /* about us page image */
+  .fund-about-us__details__content__img__container-1,
+  .fund-about-us__details__content__img__container-2 {
+    /* outline: 2px solid skyblue; */
+
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+
+    /* ///////////// */
+    .fund-about-us__details__content__img {
+      /* outline: 2px solid blueviolet; */
+
+      width: 100%;
+    }
+  }
+
+  /* about us page texts */
+  .fund-about-us__details__content__text__container-1,
+  .fund-about-us__details__content__text__container-2 {
+    /* outline: 2px solid orangered; */
+
+    width: 100%;
+
+    /* ////////// */
+    .fund-about-us__details__content__text__heading {
+      /* outline: 2px solid orange; */
+
+      text-transform: capitalize;
+      text-align: center;
+      padding-bottom: 1rem;
+
+      font-family: var(--ff-secondary);
+      font-weight: var(--fw-bold);
+      font-size: var(--fs-600);
+      line-height: var(--lh-430);
+      color: var(--clr-primary-650);
+    }
+
+    /* //////////// */
+    .fund-about-us__details__content__text {
+      /* outline: 2px dashed orchid; */
+
+      width: 100%;
+      max-width: 400px;
+      margin: 0 auto;
+      padding-bottom: 1.2rem;
+      text-align: center;
+
+      font-family: var(--ff-primary);
+      font-weight: var(--fw-regular);
+      font-size: var(--fs-800);
+      line-height: var(--lh-400);
+      color: var(--clr-tertiary-100);
+
+    }
+  }
+}
+
+
+/*        */
+/*        */
+/*        */
+/*        */
+/*        */
+
+/** Screens > 875px */
+@media screen and (width > 54.69em) {
+  .fund-about-us__details__section {
+    /* outline: 4px solid gold; */
+
+    padding: 8rem 0 8rem 0;
+    width: 100%;
+    max-width: var(--width__1440px);
+    margin: 0 auto;
+  }
+
+  .fund-about-us__details__container {
+    /* outline: 4px solid darkolivegreen; */
+
+    width: 100%;
+  }
+
+  .fund-about-us__details__heading__container {
+    /* outline: 2px solid teal; */
+
+    width: 100%;
+    text-align: center;
+    padding-bottom: 8rem;
+
+    /* ////////////// */
+    .fund-about-us__details__heading {
+      /* outline: 2px solid pink; */
+
+      text-transform: capitalize;
+      padding-bottom: 1rem;
+
+      font-family: var(--ff-secondary);
+      font-weight: var(--fw-bold);
+      font-size: var(--fs-400);
+      line-height: var(--lh-500);
+      color: var(--clr-primary-650);
+    }
+
+    /* //////////// */
+    .fund-about-us__details__heading-text {
+      /* outline: 2px dashed pink; */
+
+      font-family: var(--ff-primary);
+      font-weight: var(--fw-regular);
+      font-size: var(--fs-600);
+      line-height: var(--lh-410);
+      color: var(--clr-tertiary-100);
+    }
+  }
+
+  .fund-about-us__details__content__wrapper {
+    /* outline: 3px solid black; */
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    row-gap: 8rem;
+  }
+
+  .fund-about-us__details__content__container-1,
+  .fund-about-us__details__content__container-2 {
+    /* outline: 2px solid blue; */
+
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    column-gap: 2rem;
+  }
+
+  /* about us page image */
+  .fund-about-us__details__content__img__container-1,
+  .fund-about-us__details__content__img__container-2 {
+    /* outline: 2px solid skyblue; */
+
+    width: 100%;
+
+    /* ///////////// */
+    .fund-about-us__details__content__img {
+      /* outline: 2px solid blueviolet; */
+
+      width: 100%;
+    }
+  }
+
+  /* about us page texts */
+  .fund-about-us__details__content__text__container-1,
+  .fund-about-us__details__content__text__container-2 {
+    /* outline: 2px solid orangered; */
+
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+
+    /* ////////// */
+    .fund-about-us__details__content__text__heading {
+      /* outline: 2px solid orange; */
+
+      text-transform: capitalize;
+      padding-bottom: 1rem;
+
+      font-family: var(--ff-secondary);
+      font-weight: var(--fw-bold);
+      font-size: var(--fs-600);
+      line-height: var(--lh-430);
+      color: var(--clr-primary-650);
+    }
+
+    /* //////////// */
+    .fund-about-us__details__content__text {
+      /* outline: 2px dashed orchid; */
+
+      font-family: var(--ff-primary);
+      font-weight: var(--fw-regular);
+      font-size: var(--fs-800);
+      line-height: var(--lh-400);
+      color: var(--clr-tertiary-100);
+
+      padding-bottom: 1.2rem;
+    }
+  }
+}

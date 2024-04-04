@@ -11,7 +11,7 @@
     width: var(--width__always-fill);
     max-width: var(--width__1440px);
     margin: 0 auto;
-    padding-bottom: 8rem;
+    padding-bottom: 6rem;
   }
 
   .training__focus__main-container {
@@ -123,14 +123,14 @@
   /* kinda-middle of the card */
   /* drawing the downward arrow */
   .drawing-an-arrow {
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     margin: 0 auto;
     border: none;
     background-color: hsl(206, 5%, 90%, 1);
 
     rotate: 45deg;
-    translate: 0 10px;
+    translate: 0 12.5px;
   }
 
   /* second half of the card */
@@ -175,7 +175,7 @@
     width: var(--width__always-fill);
     max-width: var(--width__1440px);
     margin: 0 auto;
-    padding-bottom: 10rem;
+    padding-bottom: 8rem;
   }
 
   .training__focus__main-container {
@@ -324,7 +324,7 @@
     width: var(--width__always-fill);
     max-width: var(--width__1440px);
     margin: 0 auto;
-    padding-bottom: 12rem;
+    padding-bottom: 8rem;
   }
 
   .training__focus__main-container {
@@ -462,7 +462,7 @@
 /** ---ANIMATION--- */
 .drawing-an-arrow {
   /* name of animation */
-  animation-name: div_arrow_color_change;
+  animation-name: focus--div_arrow_color_change;
 
   /* how long the animation will last */
   animation-duration: 10s;
@@ -483,17 +483,70 @@
   animation-fill-mode: none;
 }
 
-@keyframes div_arrow_color_change {
+@keyframes focus--div_arrow_color_change {
   0% {
-    background-color: white;
+    background-color: transparent;
+    border-top: 0px;
+    border-right: 0;
+    border-bottom: 0px;
+    border-left: 0px;
   }
 
-  50% {
+  20% {
     background-color: hsl(206, 5%, 90%, 1);
+    border-top: 0px;
+    border-right: 1px solid var(--clr-secondary-650);
+    border-bottom: 0px;
+    border-left: 0px;
+  }
+
+  40% {
+    background-color: hsl(206, 5%, 90%, 1);
+    border-top: 0px;
+    border-right: 1px solid var(--clr-secondary-650);
+    border-bottom: 1px solid var(--clr-secondary-650);
+    border-left: 0px;
+  }
+
+
+  50% {
+    background-color: transparent;
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+    border-left: 0px;
+  }
+
+  60% {
+    background-color: white;
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+    border-left: 1px solid var(--clr-secondary-650);
+  }
+
+  80% {
+    background-color: white;
+    border-top: 1px solid var(--clr-secondary-650);
+    border-right: 0px;
+    border-bottom: 0px;
+    border-left: 1px solid var(--clr-secondary-650);
+  }
+
+  96% {
+    background-color: white;
+    border-top: 1px solid var(--clr-secondary-650);
+    border-right: 0px;
+    border-bottom: 0px;
+    border-left: 1px solid var(--clr-secondary-650);
   }
 
   100% {
-    background-color: white;
+    background-color: transparent;
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+    border-left: 0px;
   }
 }
 

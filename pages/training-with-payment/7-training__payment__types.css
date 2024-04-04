@@ -6,8 +6,9 @@
   .training__payment__section {
     /* outline: 4px solid goldenrod; */
 
+    padding-top: 1rem;
     padding-bottom: 8rem;
-    width: var(--width__always-fill);
+    width: 100%;
   }
 
   .training__payment__container {
@@ -20,7 +21,7 @@
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: flex-start;
-    row-gap: 3rem;
+    row-gap: 6rem;
   }
 
   /* styles the background and height of card */
@@ -31,7 +32,7 @@
     max-width: 600px;
     margin: 0 auto;
     min-height: 300px;
-    padding-bottom: 0rem;
+    padding-bottom: 1.5rem;
 
     border-radius: 12px;
     border: 0.1px solid hsla(0, 0%, 0%, 0.2);
@@ -142,14 +143,14 @@
   /* kinda-middle of the card */
   /* drawing the downward arrow */
   .training__types__drawing-an-arrow {
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     margin: 0 auto;
-    border: none;
+    border: 0px solid var(--clr-secondary-650);
     background-color: hsl(206, 5%, 90%, 1);
 
     rotate: 45deg;
-    translate: 0 -10px;
+    translate: 0 -12.5px;
   }
 
   /* 2nd half of the card */
@@ -335,8 +336,9 @@
   .training__payment__section {
     /* outline: 4px solid goldenrod; */
 
+    padding-top: 2rem;
     padding-bottom: 10rem;
-    width: var(--width__always-fill);
+    width: 100%;
     max-width: var(--width__1440px);
     margin: 0 auto;
   }
@@ -351,7 +353,7 @@
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: flex-start;
-    row-gap: 3rem;
+    row-gap: 6rem;
   }
 
   /* styles the background and height of card */
@@ -362,7 +364,7 @@
     max-width: 600px;
     margin: 0 auto;
     min-height: 550px;
-    padding-bottom: 0rem;
+    padding-bottom: 1.5rem;
 
     border-radius: 12px;
     border: 0.1px solid hsla(0, 0%, 0%, 0.2);
@@ -476,7 +478,7 @@
     width: 40px;
     height: 40px;
     margin: 0 auto;
-    border: 0px solid black;
+    border: 0px solid var(--clr-secondary-650);
     background-color: hsl(206, 5%, 90%, 1);
 
     rotate: 45deg;
@@ -662,8 +664,9 @@
   .training__payment__section {
     /* outline: 4px solid goldenrod; */
 
+    padding-top: 2rem;
     padding-bottom: 12rem;
-    width: var(--width__always-fill);
+    width: 100%;
     max-width: var(--width__1440px);
     margin: 0 auto;
   }
@@ -696,7 +699,7 @@
     flex-basis: 70%;
     margin: 0 auto;
     min-height: 625px;
-    padding-bottom: 0rem;
+    padding-bottom: 2rem;
 
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
@@ -813,7 +816,7 @@
     width: 40px;
     height: 40px;
     margin: 0 auto;
-    border: 0px solid black;
+    border: none;
     background-color: hsl(206, 5%, 90%, 1);
 
     rotate: 45deg;
@@ -995,7 +998,7 @@
 /** ---ANIMATION--- */
 .training__types__drawing-an-arrow {
   /* name of animation */
-  animation-name: div_arrow_color_change;
+  animation-name: payment--div_arrow_color_change;
 
   /* how long the animation will last */
   animation-duration: 7s;
@@ -1016,17 +1019,62 @@
   animation-fill-mode: none;
 }
 
-@keyframes div_arrow_color_change {
+@keyframes payment--div_arrow_color_change {
   0% {
-    background-color: white;
+    background-color: transparent;
+    border-top: 0px;
+    border-right: 0;
+    border-bottom: 0px;
+    border-left: 0px;
   }
 
+  20% {
+    background-color: white;
+    border-top: 0px;
+    border-right: 1px solid var(--clr-secondary-650);
+    border-bottom: 0px;
+    border-left: 0px;
+  }
+
+  40% {
+    background-color: white;
+    border-top: 0px;
+    border-right: 1px solid var(--clr-secondary-650);
+    border-bottom: 1px solid var(--clr-secondary-650);
+    border-left: 0px;
+  }
+
+
   50% {
+    background-color: transparent;
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+    border-left: 0px;
+  }
+
+  60% {
     background-color: hsl(206, 5%, 90%, 1);
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+    border-left: 1px solid var(--clr-secondary-650);
+  }
+
+  80% {
+    background-color: hsl(206, 5%, 90%, 1);
+    border-top: 1px solid var(--clr-secondary-650);
+    border-right: 0px;
+    border-bottom: 0px;
+    border-left: 1px solid var(--clr-secondary-650);
   }
 
   100% {
-    background-color: white;
+    background-color: transparent;
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+    border-left: 0px;
   }
 }
 

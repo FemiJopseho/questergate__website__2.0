@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	const increment = 1;
 
 	// Set the interval duration (adjust as needed for speed)
-	const intervalDuration = 10; // in milliseconds
+	const intervalDuration = 30; // in milliseconds
 
 	// Calculate the step based on the increment and duration
 	const step = (targetCount * increment) / (1278 / intervalDuration);

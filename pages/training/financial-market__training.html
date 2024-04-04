@@ -13,12 +13,12 @@
 		/>
 
 		<!-- -----------explorer compatibility---------- -->
-		<meta http-equiv="X-UA-Compatible" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
 		<meta name="theme-color" content="#0C567B" />
 
 		<!-- --------Cache control meta tag------------ -->
-		<meta http-equiv="Cache-control" content="public" max-age="7776000" />
+		<meta http-equiv="Cache-control" content="public, max-age=7776000" />
 
 		<!-- ----------------Security---------------- -->
 		<meta http-equiv="X-Content-Type-Options" content="nosniff" />
@@ -186,8 +186,22 @@
 								>
 							</h1>
 
+							<div class="hero__cred">
+								<p class="hero__cred__text-1">Trusted By:</p>
+
+								<div class="hero__cred__text-2">
+									<p class="hero__cred__text-2__traders">
+										<span class="counter-1">0</span> Traders
+									</p>
+
+									<!-- <p class="hero__cred__text-2__investors">
+										<span class="counter-2">0</span> Investors
+									</p> -->
+								</div>
+							</div>
+
 							<p class="training-hero__txt-content-subhead">
-								the most interactive training for trading in the financial
+								The most effective way to learn how to trade the financial
 								market.
 							</p>
 						</div>
@@ -198,7 +212,7 @@
 				<section class="training__benefit-for-you__section">
 					<div class="training__benefit-for-you__container">
 						<h2 class="training__benefit-card__header">
-							The 3 Major skills you will develop <br />
+							3 Trading skills you will learn <br />
 							<span class="training__benefit__header-span2"></span>
 						</h2>
 
@@ -206,15 +220,17 @@
 							<div class="training__benefit-card__content__container">
 								<ul class="training__benefit-card__list">
 									<li class="training__benefit-card__list-items">
-										Create trading strategies that are stable and long lasting.
+										How to create trading strategies that are stable and
+										profitable.
 									</li>
 
 									<li class="training__benefit-card__list-items">
-										Minimise your loses and never lose your capital.
+										Ways to minimise your loses and never wipeout your capital.
 									</li>
 
 									<li class="training__benefit-card__list-items">
-										Start earning an income from the financial market.
+										Different ways to earn steady income from the financial
+										market.
 									</li>
 								</ul>
 							</div>
@@ -277,6 +293,26 @@
 									</li>
 								</ul>
 							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- -------START OF Training CTA__1 section------- -->
+				<section class="training__cta__1__section">
+					<div class="training__cta__1__container">
+						<div class="training__cta__1__content__container">
+							<p class="training__cta__content">
+								Start your journey to become a profitable trader
+							</p>
+
+							<a
+								href="#training__cta__2__section-id"
+								class="training__cta__button"
+								id="training__cta__1__button-id"
+								aria-expanded="false"
+							>
+								Click here
+							</a>
 						</div>
 					</div>
 				</section>
@@ -731,6 +767,12 @@
 				<!-- -------START OF payment section------- -->
 				<!-- removed -->
 
+				<!-- Move from CTA__1 to CTA__2 -->
+				<section
+					id="training__cta__2__section-id"
+					class="training__cta__2__section"
+				></section>
+
 				<!-- -------START OF Training CTA section------- -->
 				<section class="training__cta__section">
 					<div
@@ -740,7 +782,7 @@
 							class="training__cta__content__container training__cta__content__container__forAccordion"
 						>
 							<p class="training__cta__content">
-								Become a profit-making Trader
+								Become a profit making Trader
 							</p>
 
 							<button
@@ -749,7 +791,7 @@
 								aria-expanded="false"
 								data-target="#training__cta__accordion__content"
 							>
-								Apply Now for the FREE training sessions
+								Apply for the FREE training sessions
 							</button>
 						</div>
 					</div>
@@ -964,7 +1006,7 @@
 								<li>
 									<a
 										class="footer__links pad-marg-0"
-										href="../about-us/html__about-us.html"
+										href="../investment/investment__about--us/html__investment__about-us.html"
 										>About Us</a
 									>
 								</li>
@@ -980,7 +1022,7 @@
 								<li>
 									<a
 										class="footer__links pad-marg-0"
-										href="../faq/html__faq.html"
+										href="../investment/investment__faq/html__investment__faq.html"
 										>FAQ</a
 									>
 								</li>
@@ -988,7 +1030,7 @@
 								<li>
 									<a
 										class="footer__links pad-marg-0"
-										href="../contact/html__contact-us.html"
+										href="../investment/investment__contact/investment__contact.html"
 										>Contact Us</a
 									>
 								</li>
@@ -1039,7 +1081,12 @@
 							</ul>
 
 							<div class="socials__container contact-social">
-								<a href="#" class="socials__link" target="_blank"
+								<!-- facebook -->
+								<a
+									href="#"
+									class="socials__link"
+									id="remove__footer__social-face"
+									target="_blank"
 									><img
 										class="socials__link-image"
 										src="../../images/facebook-symbol--smallest.jpg"
@@ -1047,6 +1094,7 @@
 									/>
 								</a>
 
+								<!-- linkedin -->
 								<a href="#" class="socials__link" target="_blank"
 									><img
 										class="socials__link-image"
@@ -1055,6 +1103,7 @@
 									/>
 								</a>
 
+								<!-- instagram -->
 								<a href="#" class="socials__link" target="_blank"
 									><img
 										class="socials__link-image"
@@ -1063,7 +1112,12 @@
 									/>
 								</a>
 
-								<a href="#" class="socials__link" target="_blank"
+								<!-- X -->
+								<a
+									href="#"
+									class="socials__link"
+									id="remove__footer__social-x"
+									target="_blank"
 									><img
 										class="socials__link-image"
 										src="../../images/twitter-X-symbol3.jpg"
@@ -1089,9 +1143,12 @@
 			</footer>
 		</div>
 
+		<script src="../js-components/header__on__scroll__with__training.js"></script>
 		<script src="../js-components/back-to-top.js"></script>
 		<script src="../js-components/section__visible__on__scroll.js"></script>
+		<script src="../js-components/numbers-count-up-1__training.js"></script>
 		<script src="../js-components/carousel--swipper--jbg-1.js"></script>
+		<script src="../js-components/training__cta__1__affect__cta-accordion.js"></script>
 		<script src="../js-components/training__cta__accordion.js"></script>
 		<script src="../js-components/training__cta__accordion__smooth__scroll__into__view.js"></script>
 		<script src="../js-components/training__form__validation.js"></script>

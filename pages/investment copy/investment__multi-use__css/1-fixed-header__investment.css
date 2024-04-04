@@ -1,0 +1,556 @@
+/* contains styles for INVESTMENT PAGE: */
+/* HEADER SECTION */
+
+
+/* Mobile & Tablet screens */
+/* (max-width <= 1000px) */
+@media screen and (width <=62.5em) {
+
+  /* variables for tablet */
+  :root {
+    --width__fund-burger: var(--width__burger);
+    --height__fund-burger: var(--height__burger);
+    --height__fund-burger-line: var(--height__burger-line);
+  }
+
+  .fund-header__section {
+    /* outline: 4px solid black; */
+
+    height: auto;
+    width: 100%;
+    padding: 0.5rem;
+
+    font-family: var(--ff-primary);
+    font-size: var(--fs-800);
+    font-weight: var(--fw-semi-bold);
+    color: var(--clr-primary-800);
+    background-color: var(--clr-pure-white);
+
+    position: relative;
+    z-index: 100;
+
+    transition: all 0.35s ease;
+  }
+
+  /* when you scroll, JS uses .on-scroll to add these properties to .header */
+  /* .header.on-scroll {
+
+    outline: 4px solid red;
+
+    background: var(--clr-header-bckgrd);
+    box-shadow: var(--gen-shadow-header);
+
+    position: fixed;
+    padding-top: 0;
+    padding-bottom: 0;
+    z-index: 100;
+
+    width: 100%;
+    margin: 0 auto;
+  } */
+
+  .fund-header__container {
+    /* outline: 4px solid gray; */
+
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /** ---general style for diff items of the Header--- */
+
+  .fund-header__logo__container {
+    /* outline: 2px solid red; */
+
+    border: none;
+    text-align: center;
+    flex-basis: 30%;
+    height: 3rem;
+
+    /* to fix issue of center image within the image container 
+    caused by the height...and the height is to fix wobble when burger active */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+
+    /* //////////////// */
+    .fund-header__logo__link {
+      /* outline: 2px solid pink; */
+
+      display: block;
+      width: 100%;
+    }
+
+    /* ///////////////// */
+    .fund-header__logo__pic {
+      /* outline: 2px solid orange; */
+
+      width: 100%;
+      height: auto;
+    }
+
+    /* //////////// */
+    /* *to make the logo bigger on mobile */
+    @media screen and (width <=500px) {
+      flex-basis: 40%;
+    }
+  }
+
+  .fund-header__list__container {
+    /* outline: 2px solid blue; */
+
+    display: block;
+    position: fixed;
+    top: -150%;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+
+    background-color: var(--clr-pure-white);
+    background-image: linear-gradient(-45deg,
+        var(--clr-pure-white),
+        var(--clr-pure-white),
+        var(--clr-neutral-white-01),
+        var(--clr-neutral-white-01),
+        var(--color-white-300),
+        var(--color-white-300));
+    box-shadow: var(--gen-shadow-header);
+
+    font-family: var(--ff-primary);
+    font-size: var(--fs-700);
+    font-weight: var(--fw-semi-bold);
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--clr-primary-800);
+    padding: 4rem 0 2rem 0;
+
+    transition: all 0.5s ease-in-out;
+
+    /* ////////////// */
+    .fund-header__list {
+      /* outline: 2px solid skyblue; */
+
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: center;
+      row-gap: 2rem;
+
+      text-decoration: none;
+      list-style-type: none;
+    }
+
+    /* /////////////// */
+    .fund-header__list__items {
+      /* outline: 2px solid purple; */
+
+      width: 50%;
+      margin: 0 auto;
+      text-align: center;
+      border-radius: 12px;
+
+      transition: all 0.1s ease-in-out;
+
+      /* ///////////////// */
+      &:hover {
+        scale: 1.05;
+        transform: translateY(-2px);
+      }
+    }
+
+    /* ////////////// */
+    .fund-header__list__items-link {
+      /* outline: 2px solid orange; */
+
+      display: block;
+      width: 100%;
+      padding: 0.5rem 0;
+      white-space: nowrap;
+      text-align: center;
+      text-decoration: none;
+      color: inherit;
+      letter-spacing: 2%;
+      border: 2px solid var(--clr-bckgrd-btn-pri-default);
+      border-radius: 12px;
+
+      /* ///////////////////// */
+      &:active {
+        filter: brightness(200%);
+        scale: 1.1;
+        background-color: var(--clr-pure-white);
+      }
+
+      &:disabled {
+        opacity: 0.6;
+        /* Make the link semi-transparent to indicate it's disabled */
+        pointer-events: none;
+        /* Disable pointer events on the link */
+      }
+
+      &:target {
+        background-color: var(--clr-link-target);
+        /* Style the target of the link (e.g., section being linked to) */
+      }
+    }
+
+    /* ///////////// */
+    /* LOGIN or SIGN OUT TEXT */
+    .fund-header__link-login {
+      color: var(--clr-tertiary-200);
+      font-weight: var(--fw-bold);
+    }
+
+    /* ///////////////// */
+    /* REGISTER or DASHBOARD BUTTON */
+    .fund-header__register {
+      border-radius: 12px;
+    }
+
+    .fund-header__link-register {
+      background-color: var(--clr-tertiary-200);
+      color: var(--clr-pure-white);
+      font-weight: var(--fw-bold);
+      border-radius: 12px;
+      border: none;
+
+      /* ///////////////////// */
+      &:hover {
+        border: 1px solid var(--clr-pure-white);
+        scale: 1;
+        box-shadow: 0 10px 5px -4px var(--clr-tertiary-200);
+      }
+
+      &:active {
+        filter: brightness(150%);
+        background-color: var(--clr-tertiary-200);
+        transform: translateY(5px);
+        box-shadow: 0 0px 0px 0px var(--clr-tertiary-200);
+      }
+    }
+  }
+
+  .fund__header__burger {
+    /* outline: 2px solid indigo; */
+
+    width: var(--width__fund-burger);
+    height: var(--height__fund-burger);
+    cursor: pointer;
+    user-select: none;
+    /* margin: 0.3rem 0; */
+
+    position: relative;
+
+    transition: all 0.7s ease-in-out;
+
+    /* //////////// */
+    /* *to make the burger smaller on mobile */
+    /* ////////////////// */
+    @media screen and (width > 260px) and (width <=350px) {
+      flex-basis: 14%;
+    }
+
+    /* ////////////////// */
+    @media screen and (width > 350px) and (width <=420px) {
+      flex-basis: 12%;
+    }
+
+    /* ////////////////// */
+    @media screen and (width > 420px) and (width <=500px) {
+      flex-basis: 10%;
+    }
+
+    /* /////////////// */
+    .fund__header__burger-line {
+      position: absolute;
+
+      width: 100%;
+      height: var(--height__fund-burger-line);
+      border: none;
+      background-color: var(--clr-bckgrd-btn-pri-default);
+      background-image: linear-gradient(270deg,
+          var(--clr-gradient-100),
+          var(--clr-gradient-200));
+
+      transition: all 0.5s ease-in-out;
+    }
+
+    /* //////////////// */
+    .fund__header__burger-line:nth-child(1) {
+      top: 0;
+    }
+
+    .fund__header__burger-line:nth-child(2) {
+      top: 30%;
+    }
+
+    .fund__header__burger-line:nth-child(3) {
+      top: 60%;
+    }
+
+    .fund__header__burger-line:nth-child(4) {
+      top: 90%;
+    }
+  }
+
+  /** Styles what happens to bugger-lines when burger is clicked */
+
+  /* when menu is active */
+  .fund-header__list__container.is-active {
+    top: 0;
+  }
+
+  /* when burger is-active */
+  .fund__header__burger.is-active {
+    /* outline: 2px solid red; */
+
+    position: fixed;
+    top: 1.8%;
+    right: 2%;
+    z-index: 100;
+  }
+
+  .fund__header__burger.is-active .fund__header__burger-line:nth-child(1) {
+    top: 40%;
+    transform: rotate(135deg);
+
+    background-color: var(--clr-secondary-600);
+    background-image: linear-gradient(270deg,
+        var(--clr-gradient-200),
+        var(--clr-gradient-500),
+        var(--clr-gradient-200));
+  }
+
+  .fund__header__burger.is-active .fund__header__burger-line:nth-child(2) {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .fund__header__burger.is-active .fund__header__burger-line:nth-child(3) {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .fund__header__burger.is-active .fund__header__burger-line:nth-child(4) {
+    top: 40%;
+    transform: rotate(-135deg);
+
+    background-color: var(--clr-secondary-600);
+    background-image: linear-gradient(270deg,
+        var(--clr-gradient-200),
+        var(--clr-gradient-500),
+        var(--clr-gradient-200));
+  }
+}
+
+/*        */
+/*        */
+/*        */
+/*        */
+/*        */
+
+/** Screens > 1000px */
+@media screen and (width > 62.5em) {
+
+  /* variables for desktop */
+  :root {
+    --header__d__width: var(--width__always-fill);
+    --header__d__content__width: var(--width__1200px);
+  }
+
+  .fund-header__section {
+    /* outline: 4px solid black; */
+
+    height: auto;
+    width: 100%;
+    max-width: var(--width__1440px);
+    margin: 0 auto;
+    padding: 0.5rem;
+
+    font-family: var(--ff-primary);
+    font-size: var(--fs-700);
+    font-weight: var(--fw-semi-bold);
+    color: var(--clr-primary-800);
+    background-color: var(--clr-pure-white);
+
+    /* /////////// */
+    .fund__header__burger {
+      /* outline: 2px solid indigo; */
+      display: none;
+      visibility: hidden;
+    }
+  }
+
+  /* when you scroll, JS uses .on-scroll to add these properties to .header */
+  /* .header.on-scroll {
+
+    outline: 4px solid red;
+
+    background: var(--clr-header-bckgrd);
+    box-shadow: var(--gen-shadow-header);
+
+    position: fixed;
+    top: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    z-index: 100;
+
+    width: 100%;
+    margin: 0 auto;
+
+    .fund__header__burger {
+      outline: 2px solid indigo;
+
+      display: none;
+      visibility: hidden;
+    }
+  } */
+
+  .fund-header__container {
+    /* outline: 4px solid gray; */
+
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .fund-header__logo__container {
+    /* outline: 2px solid red; */
+
+    border: none;
+    text-align: center;
+    flex-basis: 20%;
+
+    /* //////////////// */
+    .fund-header__logo__link {
+      /* outline: 2px solid pink; */
+
+      width: 100%;
+    }
+
+    /* ///////////////// */
+    .fund-header__logo__pic {
+      /* outline: 2px solid orange; */
+
+      width: 100%;
+    }
+  }
+
+  .fund-header__list__container {
+    /* outline: 2px solid blue; */
+
+    text-align: center;
+    flex-basis: 60%;
+
+    /* ////////////// */
+    .fund-header__list {
+      /* outline: 2px solid skyblue; */
+
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: center;
+
+      text-decoration: none;
+      list-style-type: none;
+      text-align: center;
+    }
+
+    /* /////////////// */
+    .fund-header__list__items {
+      /* outline: 2px solid purple; */
+
+      text-align: center;
+      border-radius: 12px;
+
+      transition: all 0.3s ease-in-out;
+
+      /* ///////////////// */
+      &:hover {
+        scale: 1.1;
+        transform: translateY(-2px);
+      }
+    }
+
+    /* ////////////// */
+    .fund-header__list__items-link {
+      /* outline: 2px solid orange; */
+
+      display: block;
+      padding: 0.25rem 0.5rem;
+      text-decoration: none;
+      color: inherit;
+      letter-spacing: 2%;
+      border-radius: 12px;
+
+      /* ///////////////////// */
+      &:active {
+        filter: brightness(200%);
+        scale: 1.1;
+      }
+
+      &:disabled {
+        opacity: 0.6;
+        /* Make the link semi-transparent to indicate it's disabled */
+        pointer-events: none;
+        /* Disable pointer events on the link */
+      }
+
+      &:target {
+        background-color: var(--clr-link-target);
+        /* Style the target of the link (e.g., section being linked to) */
+      }
+    }
+
+    /* ///////////// */
+    /* LOGIN or SIGN OUT TEXT */
+    .fund-header__link-login {
+      color: var(--clr-tertiary-200);
+      font-weight: var(--fw-bold);
+    }
+
+    /* ///////////////// */
+    /* REGISTER or DASHBOARD BUTTON */
+    .fund-header__register {
+      border-radius: 12px;
+
+    }
+
+
+    .fund-header__link-register {
+      background-color: var(--clr-tertiary-200);
+      color: var(--clr-pure-white);
+      font-weight: var(--fw-bold);
+      border-radius: 12px;
+      border: none;
+
+      /* ///////////////////// */
+      &:hover {
+        border: 1px solid var(--clr-pure-white);
+        scale: 1;
+        box-shadow: 0 10px 5px -4px var(--clr-tertiary-200);
+
+      }
+
+      &:active {
+        filter: brightness(150%);
+        background-color: var(--clr-tertiary-200);
+        transform: translateY(5px);
+        box-shadow: 0 0px 0px 0px var(--clr-tertiary-200);
+      }
+    }
+  }
+}

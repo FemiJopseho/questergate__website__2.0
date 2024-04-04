@@ -2,7 +2,8 @@
 
 /** Mobile view */
 /* max-width: 500px */
-@media screen and (width <= 31.25em) {
+@media screen and (width <=31.25em) {
+
 	/** layout for the page header section */
 	.faq-title__section {
 		/* outline: 4px solid pink; */
@@ -79,7 +80,8 @@
 
 /* Mobile landscape & Tablet Portrait screens */
 /* (min-width > 500px ) & (max-width <= 875px) */
-@media screen and (width > 31.25em) and (width <= 54.69em) {
+@media screen and (width > 31.25em) and (width <=54.69em) {
+
 	/** layout for the page header section */
 	.faq-title__section {
 		/* outline: 4px solid pink; */
@@ -155,6 +157,7 @@
 
 /** Screens > 875px */
 @media screen and (width > 54.69em) {
+
 	/** layout for the page header section */
 	.faq-title__section {
 		/* outline: 4px solid pink; */

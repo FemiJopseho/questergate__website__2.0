@@ -1026,7 +1026,7 @@
 
   /* controls the transition when closing-->going to this style */
   transition: max-height 1200ms ease-in-out;
-  will-change: max-height;
+
 }
 
 /* /////////////////////// */

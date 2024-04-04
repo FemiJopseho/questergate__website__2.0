@@ -1,14 +1,49 @@
-/* contains styles for: CTA section of the training webpage*/
+/* contains styles for: all the CTA sections (cta__1, cta__2, cta)`  of the training webpage*/
 
 
 
 /** Mobile view */
 /* max-width: 500px */
 @media screen and (width <=31.25em) {
+  .training__cta__1__section {
+    /* outline: 4px solid green; */
+
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+    padding-bottom: 8rem;
+
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* ////////////// */
+    .training__cta__button {
+      /* outline: 2px solid black; */
+
+      display: block;
+      text-align: center;
+      text-decoration: none;
+      margin-top: 1rem;
+    }
+  }
+
+  /* to serve as arrival point for when cta__1 is clicked */
+  .training__cta__2__section {
+    /* outline wont show cos no content */
+    /* outline-color: 2px solid purple; */
+
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+  }
+
   .training__cta__section {
     /* outline: 4px solid gold; */
 
-    width: var(--width__always-fill);
+    width: 100%;
     margin: 0 auto;
     padding-bottom: 0rem;
   }
@@ -125,10 +160,46 @@
 /* Mobile landscape & Tablet Portrait screens */
 /* (min-width > 500px ) & (max-width <= 875px) */
 @media screen and (width > 31.25em) and (width <=54.69em) {
+  .training__cta__1__section {
+    /* outline: 4px solid green; */
+
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+    padding-bottom: 8rem;
+
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* ////////////// */
+    .training__cta__button {
+      /* outline: 2px solid black; */
+
+      display: block;
+      text-align: center;
+      text-decoration: none;
+      margin-top: 1rem;
+    }
+  }
+
+  /* to serve as arrival point for when cta__1 is clicked */
+  .training__cta__2__section {
+    /* outline wont show cos no content */
+    /* outline-color: 2px solid purple; */
+
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+  }
+
+
   .training__cta__section {
     /* outline: 4px solid gold; */
 
-    width: var(--width__always-fill);
+    width: 100%;
     max-width: var(--width__1440px);
     margin: 0 auto;
     padding-bottom: 0rem;
@@ -238,10 +309,46 @@
 
 /** Screens > 875px */
 @media screen and (width > 54.69em) {
+  .training__cta__1__section {
+    /* outline: 4px solid green; */
+
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+    padding-bottom: 8rem;
+
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* ////////////// */
+    .training__cta__button {
+      /* outline: 2px solid black; */
+
+      display: block;
+      text-align: center;
+      text-decoration: none;
+      margin-top: 1rem;
+    }
+  }
+
+  /* to serve as arrival point for when cta__1 is clicked */
+  .training__cta__2__section {
+    /* outline wont show cos no content */
+    /* outline-color: 2px solid purple; */
+
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+  }
+
+
   .training__cta__section {
     /* outline: 4px solid gold; */
 
-    width: var(--width__always-fill);
+    width: 100%;
     max-width: var(--width__1440px);
     margin: 0 auto;
     /* padding: 0 because of FORM dropdown */

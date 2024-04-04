@@ -1,0 +1,293 @@
+/* contains styles for INVESTMENT PAGE: */
+/* HERO SECTION */
+
+/** Mobile view */
+/* max-width: 500px */
+@media screen and (width <=31.25em) {
+  .fund-hero__section {
+    /* outline: 4px solid orange; */
+
+    width: 100%;
+    padding-bottom: 8rem;
+  }
+
+  .fund-hero__container {
+    /* outline: 4px solid blue; */
+
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .fund-hero__image__container {
+    /* outline: 2px solid red; */
+
+    width: 100%;
+    padding-bottom: 2rem;
+
+    /* //////////////////// */
+    .fund-hero__image__pic {
+      /* outline: 2px solid green; */
+
+      width: 100%;
+    }
+  }
+
+  .fund-hero__content__container {
+    /* outline: 2px solid pink; */
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    row-gap: 1rem;
+
+    padding: 0 0.5rem;
+  }
+
+  .fund-hero__content__subhead {
+    /* outline: 2px solid black; */
+
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-800);
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-transform: none;
+    text-align: center;
+    color: var(--clr-alert-error-600);
+  }
+
+  .fund-hero__content__header {
+    /* outline: 2px solid orange; */
+
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-700);
+    line-height: 1.3;
+    letter-spacing: -3%;
+    text-transform: capitalize;
+    text-align: center;
+    color: var(--clr-tertiary-200);
+  }
+
+  .fund-hero__content__text {
+    /* outline: 2px solid black; */
+
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-semi-bold);
+    font-size: var(--fs-700);
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-transform: none;
+    text-align: center;
+    color: var(--clr-tertiary-100);
+  }
+
+}
+
+/*        */
+/*        */
+/*        */
+/*        */
+/*        */
+
+/* Mobile landscape & Tablet Portrait screens */
+/* (min-width > 500px ) & (max-width <= 875px) */
+@media screen and (width > 31.25em) and (width <=54.69em) {
+  .fund-hero__section {
+    /* outline: 4px solid orange; */
+
+    padding-bottom: 10rem;
+    width: 100%;
+  }
+
+  .fund-hero__container {
+    /* outline: 4px solid blue; */
+
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .fund-hero__image__container {
+    /* outline: 2px solid red; */
+
+    width: 100%;
+    padding-bottom: 2rem;
+
+    /* //////////////////// */
+    .fund-hero__image__pic {
+      /* outline: 2px solid green; */
+
+      width: 100%;
+    }
+  }
+
+  .fund-hero__content__container {
+    /* outline: 2px solid pink; */
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    row-gap: 1rem;
+  }
+
+  .fund-hero__content__subhead {
+    /* outline: 2px solid black; */
+
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-700);
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-transform: none;
+    text-align: center;
+    color: var(--clr-alert-error-600);
+  }
+
+  .fund-hero__content__header {
+    /* outline: 2px solid orange; */
+
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-semi-bold);
+    font-size: var(--fs-550);
+    line-height: 1.3;
+    letter-spacing: -3%;
+    text-transform: capitalize;
+    text-align: center;
+    color: var(--clr-tertiary-200);
+  }
+
+  .fund-hero__content__text {
+    /* outline: 2px solid black; */
+
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-semi-bold);
+    font-size: var(--fs-600);
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-transform: none;
+    text-align: center;
+    color: var(--clr-tertiary-100);
+  }
+
+}
+
+/*        */
+/*        */
+/*        */
+/*        */
+/*        */
+
+/** Screens > 875px */
+@media screen and (width > 54.69em) {
+
+  .fund-hero__section {
+    /* outline: 4px solid orange; */
+
+    width: 100%;
+    max-width: var(--width__1440px);
+    margin: 0 auto;
+    padding-bottom: 12rem;
+  }
+
+  .fund-hero__container {
+    /* outline: 4px solid blue; */
+
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .fund-hero__image__container {
+    /* outline: 2px solid red; */
+
+    width: 100%;
+    padding-bottom: 4rem;
+
+    /* //////////////////// */
+    .fund-hero__image__pic {
+      /* outline: 2px solid green; */
+
+      width: 100%;
+    }
+  }
+
+  .fund-hero__content__container {
+    /* outline: 2px solid pink; */
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    row-gap: 1rem;
+  }
+
+  .fund-hero__content__subhead {
+    /* outline: 2px solid black; */
+
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-700);
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-transform: none;
+    text-align: center;
+    color: var(--clr-alert-error-600);
+  }
+
+  .fund-hero__content__header {
+    /* outline: 2px solid orange; */
+
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-semi-bold);
+    font-size: var(--fs-400);
+    line-height: 1.3;
+    letter-spacing: -3%;
+    text-transform: capitalize;
+    text-align: center;
+    color: var(--clr-tertiary-200);
+  }
+
+  .fund-hero__content__text {
+    /* outline: 2px solid black; */
+
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-semi-bold);
+    font-size: var(--fs-600);
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-transform: none;
+    text-align: center;
+    color: var(--clr-tertiary-100);
+  }
+}

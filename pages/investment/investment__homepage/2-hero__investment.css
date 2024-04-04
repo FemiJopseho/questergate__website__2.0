@@ -46,23 +46,6 @@
     padding: 0 0.5rem;
   }
 
-  .fund-hero__content__subhead {
-    /* outline: 2px solid black; */
-
-    width: 100%;
-    max-width: 500px;
-    margin: 0 auto;
-
-    font-family: var(--ff-primary);
-    font-weight: var(--fw-bold);
-    font-size: var(--fs-800);
-    line-height: 1.5;
-    letter-spacing: normal;
-    text-transform: none;
-    text-align: center;
-    color: var(--clr-alert-error-600);
-  }
-
   .fund-hero__content__header {
     /* outline: 2px solid orange; */
 
@@ -76,23 +59,49 @@
     color: var(--clr-tertiary-200);
   }
 
+  .fund-hero__content__text__container {
+    /* outline: 2px solid green; */
+
+    width: 100%;
+    max-width: fit-content;
+    margin-bottom: 1.5rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+
+    padding: 0.8rem 1.2rem;
+    border-radius: 30px;
+    border: none;
+    background-color: var(--clr-tertiary-200);
+    background-image: linear-gradient(45deg,
+        var(--clr-tertiary-200),
+        var(--clr-primary-200),
+        var(--clr-tertiary-200),
+        var(--clr-tertiary-200),
+        var(--clr-tertiary-200),
+        var(--clr-primary-200));
+
+    /* /////////// */
+    @media screen and (width <=352px) {
+      padding: 0.6rem 1rem;
+      border-radius: 20px;
+    }
+  }
+
   .fund-hero__content__text {
     /* outline: 2px solid black; */
 
     width: 100%;
-    max-width: 400px;
-    margin: 0 auto;
 
     font-family: var(--ff-primary);
-    font-weight: var(--fw-semi-bold);
-    font-size: var(--fs-700);
-    line-height: 1.5;
-    letter-spacing: normal;
+    font-weight: var(--fw-regular);
+    font-size: var(--fs-800);
+    line-height: 1.3;
     text-transform: none;
     text-align: center;
-    color: var(--clr-tertiary-100);
+    color: var(--clr-neutral-white-2);
+    border-radius: 30px;
+    border: none;
   }
-
 }
 
 /*        */
@@ -144,23 +153,6 @@
     row-gap: 1rem;
   }
 
-  .fund-hero__content__subhead {
-    /* outline: 2px solid black; */
-
-    width: 100%;
-    max-width: 500px;
-    margin: 0 auto;
-
-    font-family: var(--ff-primary);
-    font-weight: var(--fw-bold);
-    font-size: var(--fs-700);
-    line-height: 1.5;
-    letter-spacing: normal;
-    text-transform: none;
-    text-align: center;
-    color: var(--clr-alert-error-600);
-  }
-
   .fund-hero__content__header {
     /* outline: 2px solid orange; */
 
@@ -174,23 +166,43 @@
     color: var(--clr-tertiary-200);
   }
 
+  .fund-hero__content__text__container {
+    /* outline: 2px solid green; */
+
+    width: 100%;
+    max-width: fit-content;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+    padding: 0.8rem 1.2rem;
+    border-radius: 30px;
+    border: none;
+    background-color: var(--clr-tertiary-200);
+    background-image: linear-gradient(45deg,
+        var(--clr-tertiary-200),
+        var(--clr-primary-200),
+        var(--clr-tertiary-200),
+        var(--clr-tertiary-200),
+        var(--clr-tertiary-200),
+        var(--clr-primary-200));
+  }
+
   .fund-hero__content__text {
     /* outline: 2px solid black; */
 
     width: 100%;
-    max-width: 400px;
-    margin: 0 auto;
 
     font-family: var(--ff-primary);
-    font-weight: var(--fw-semi-bold);
+    font-weight: var(--fw-regular);
     font-size: var(--fs-600);
-    line-height: 1.5;
-    letter-spacing: normal;
+    line-height: 1.3;
     text-transform: none;
     text-align: center;
-    color: var(--clr-tertiary-100);
+    color: var(--clr-neutral-white-2);
+    border-radius: 30px;
+    border: none;
   }
-
 }
 
 /*        */
@@ -244,23 +256,6 @@
     row-gap: 1rem;
   }
 
-  .fund-hero__content__subhead {
-    /* outline: 2px solid black; */
-
-    width: 100%;
-    max-width: 500px;
-    margin: 0 auto;
-
-    font-family: var(--ff-primary);
-    font-weight: var(--fw-bold);
-    font-size: var(--fs-700);
-    line-height: 1.5;
-    letter-spacing: normal;
-    text-transform: none;
-    text-align: center;
-    color: var(--clr-alert-error-600);
-  }
-
   .fund-hero__content__header {
     /* outline: 2px solid orange; */
 
@@ -274,20 +269,39 @@
     color: var(--clr-tertiary-200);
   }
 
+  .fund-hero__content__text__container {
+    /* outline: 2px solid indigo; */
+
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 2rem;
+
+    padding: 0.8rem 1rem;
+    border-radius: 30px;
+    border: none;
+    background-color: var(--clr-tertiary-200);
+    background-image: linear-gradient(45deg,
+        var(--clr-tertiary-200),
+        var(--clr-primary-200),
+        var(--clr-tertiary-200),
+        var(--clr-tertiary-200),
+        var(--clr-tertiary-200),
+        var(--clr-primary-200));
+  }
+
   .fund-hero__content__text {
     /* outline: 2px solid black; */
 
     width: 100%;
-    max-width: 400px;
-    margin: 0 auto;
 
     font-family: var(--ff-primary);
-    font-weight: var(--fw-semi-bold);
+    font-weight: var(--fw-regular);
     font-size: var(--fs-600);
-    line-height: 1.5;
-    letter-spacing: normal;
+    line-height: 1.3;
     text-transform: none;
     text-align: center;
-    color: var(--clr-tertiary-100);
+    color: var(--clr-neutral-white-2);
+    border-radius: 30px;
+    border: none;
   }
 }

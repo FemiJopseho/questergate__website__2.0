@@ -1,3 +1,8 @@
+// this code removes elements from html. it has 2 ways of doing that:
+
+// ///////////////////////////////////////////
+/////////////////////////////////////////////
+// *METHOD 1: Remove List from UL/OL based on their position(index)
 // This code removes the first 2 list items from the footer product
 
 // Get the <ul> element by its class name
@@ -19,3 +24,27 @@ if (list) {
 } else {
 	console.log("List element not found.");
 }
+
+//
+//
+//
+// ///////////////////////////////////////////
+/////////////////////////////////////////////
+// *METHOD 3: Combined removal-- remove elements based on class/id
+function removeElements(classesAndIds) {
+	classesAndIds.forEach(function (classOrId) {
+		var element = document.querySelector(classOrId);
+		if (element) {
+			element.remove();
+		} else {
+			console.log("Element with class/id '" + classOrId + "' not found.");
+		}
+	});
+}
+
+// input the elements class/id and call the removeElements()
+var classesAndIds = [
+	"#remove__footer__social-face",
+	"#remove__footer__social-x",
+];
+removeElements(classesAndIds);

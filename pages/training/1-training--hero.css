@@ -13,7 +13,6 @@
   width: 100%;
   max-width: var(--width__1440px);
   margin: 0 auto;
-  min-height: 70dvh;
 
   display: flex;
   flex-direction: row;
@@ -26,64 +25,89 @@
   background-size: cover;
 }
 
-.training-hero__txt-content__container {
-  /* outline: 2px solid pink; */
-
-  width: 100%;
-
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-
-
 /** Mobile view */
 /* max-width: 500px */
 @media screen and (width <=31.25em) {
   .training-hero__section {
     /* outline: 4px solid yellowgreen; */
 
-    padding-bottom: 8rem;
-    margin-top: 40px;
+    margin-bottom: 8rem;
+    /* margin-top: 40px; */
+    height: 100vh;
+    max-height: 700px;
   }
 
   .training-hero__container {
     /* outline: 4px solid black; */
 
-    background-image: url(../../images/fin-market-2-mobile.jpg);
-    padding: 0rem 0.25rem 0rem 0.25rem;
+    height: inherit;
+    max-height: inherit;
+    padding: 0rem 0.5rem 0.5rem 0.5rem;
 
     justify-content: center;
     align-items: center;
+
+    /* background-color: var(--clr-primary-200);
+    background-image: linear-gradient(45deg,
+        var(--clr-primary-100),
+        var(--clr-primary-200),
+        var(--clr-primary-100),
+        var(--clr-primary-200),
+        var(--clr-primary-200),
+        var(--clr-primary-200),
+        var(--clr-primary-200),
+        var(--clr-primary-200),
+        var(--clr-primary-100),
+        var(--clr-primary-100),
+        var(--clr-primary-200),
+        var(--clr-primary-100),
+        var(--clr-primary-100)); */
+
+    background-image: url(../../images/fin-market-2-Tablet-land-875-490.jpeg);
+    background-image: -webkit-image-set(url(../../images/fin-market-2-Tablet-land-875-490.webp));
+    background-image: image-set(url(../../images/fin-market-2-Tablet-land-875-490.webp));
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    /* //////////////// */
+    @media screen and (width <=350px) {
+      background-image: url(../../images/fin-market-2-Tablet-land-875-490.jpeg);
+      background-image: -webkit-image-set(url(../../images/fin-market-2-Tablet-land-875-490.webp));
+      background-image: image-set(url(../../images/fin-market-2-Tablet-land-875-490.webp));
+    }
   }
 
   .training-hero__txt-content__container {
     /* outline: 2px solid pink; */
 
     width: 100%;
-    padding-bottom: 1rem;
+    height: inherit;
+    max-height: inherit;
+    position: relative;
 
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: flex-start;
-    row-gap: 2rem;
+    row-gap: 2rem; */
   }
 
   .training-hero__txt-content-header {
     /* outline: 2px solid green; */
 
-    padding-top: 1rem;
     width: 100%;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
 
     font-family: var(--ff-secondary);
     font-weight: var(--fw-bold);
     line-height: 1.5;
-    letter-spacing: -3%;
-    text-transform: capitalize;
+    text-transform: none;
     color: var(--clr-secondary-650);
     text-align: center;
 
@@ -105,27 +129,27 @@
 
       /* ///////////////// */
       @media screen and (width <=250px) {
-        font-size: 1.5rem;
+        /* font-size: 1.3rem; */
       }
 
       /* ////////////// */
       @media screen and (width > 250px) and (width <=300px) {
-        font-size: 1.6rem;
+        /* font-size: 1.4rem; */
       }
 
       /* ////////////// */
       @media screen and (width > 300px) and (width <=350px) {
-        font-size: 1.9rem;
+        /* font-size: 1.5rem; */
       }
 
       /* ////////////// */
       @media screen and (width > 350px) and (width <=400px) {
-        font-size: 2.29rem;
+        font-size: 2rem;
       }
 
       /* ////////////// */
       @media screen and (width > 400px) {
-        font-size: 2.6rem;
+        font-size: 2.4rem;
       }
     }
 
@@ -135,34 +159,42 @@
 
       filter: brightness(135%);
 
-      text-shadow: -4px 0px 8px black,
+      text-shadow: -1px 0px black,
         1px 0px black,
         0px -1px black,
-        0px 2px 2px black;
+        0px 1.5px 1px black;
 
       /* ///////////////// */
-      @media screen and (width <=250px) {
-        font-size: 1.5rem;
+      @media screen and (width <=285px) {
+        /* font-size: 1.6rem; */
+        font-size: 2.0rem;
       }
 
       /* ////////////// */
-      @media screen and (width > 250px) and (width <=300px) {
-        font-size: 1.6rem;
+      @media screen and (width > 285px) and (width <=316px) {
+        /* font-size: 1.8rem; */
+        font-size: 2.0rem;
       }
 
       /* ////////////// */
-      @media screen and (width > 300px) and (width <=350px) {
-        font-size: 1.9rem;
+      @media screen and (width > 316px) and (width <=350px) {
+        /* outline: 2px solid red; */
+
+        font-size: 2.0rem;
       }
 
       /* ////////////// */
       @media screen and (width > 350px) and (width <=400px) {
-        font-size: 2.29rem;
+        /* outline: 2px solid red; */
+
+        font-size: 2.2rem;
       }
 
       /* ////////////// */
       @media screen and (width > 400px) {
-        font-size: 2.6rem;
+        /* outline: 2px solid red; */
+
+        font-size: 2.5rem;
       }
     }
 
@@ -173,34 +205,34 @@
       display: block;
       filter: brightness(65%);
 
-      text-shadow: -4px 0px 8px black,
+      text-shadow: -1px 0px black,
         1px 0px black,
         0px -1px black,
         0px 2px 2px black;
 
       /* ///////////////// */
       @media screen and (width <=250px) {
-        font-size: 1.5rem;
+        /* font-size: 1.3rem; */
       }
 
       /* ////////////// */
       @media screen and (width > 250px) and (width <=300px) {
-        font-size: 1.6rem;
+        /* font-size: 1.4rem; */
       }
 
       /* ////////////// */
       @media screen and (width > 300px) and (width <=350px) {
-        font-size: 1.9rem;
+        /* font-size: 1.5rem; */
       }
 
       /* ////////////// */
       @media screen and (width > 350px) and (width <=400px) {
-        font-size: 2.29rem;
+        font-size: 2rem;
       }
 
       /* ////////////// */
       @media screen and (width > 400px) {
-        font-size: 2.6rem;
+        font-size: 2.4rem;
       }
     }
 
@@ -215,27 +247,27 @@
 
       /* ///////////////// */
       @media screen and (width <=250px) {
-        font-size: 1.5rem;
+        /* font-size: 1.3rem; */
       }
 
       /* ////////////// */
       @media screen and (width > 250px) and (width <=300px) {
-        font-size: 1.6rem;
+        /* font-size: 1.4rem; */
       }
 
       /* ////////////// */
       @media screen and (width > 300px) and (width <=350px) {
-        font-size: 1.9rem;
+        /* font-size: 1.5rem; */
       }
 
       /* ////////////// */
       @media screen and (width > 350px) and (width <=400px) {
-        font-size: 2.29rem;
+        font-size: 2rem;
       }
 
       /* ////////////// */
       @media screen and (width > 400px) {
-        font-size: 2.6rem;
+        font-size: 2.4rem;
       }
     }
   }
@@ -244,23 +276,83 @@
     /* outline: 2px solid skyblue; */
 
     width: 100%;
-    max-width: 400px;
+    max-width: 320px;
     margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 2%;
 
     font-family: var(--ff-primary);
     font-weight: var(--fw-bold);
     font-size: var(--fs-700);
     line-height: 1.5;
-    letter-spacing: -3%;
-    text-transform: capitalize;
+    text-transform: none;
     text-align: center;
     color: white;
     filter: brightness(200%);
 
-    text-shadow: -1px 0px black,
-      1px 0px black,
-      0px -1px black,
-      0px 3px 3px black;
+    /* ///////////////// */
+    @media screen and (width <=250px) {
+      font-size: var(--fs-800);
+      /* top: 70%; */
+    }
+
+    /* ////////////// */
+    @media screen and (width > 250px) and (width <=331px) {
+      font-size: var(--fs-800);
+      /* top: 70%; */
+    }
+
+    /* ////////////// */
+    @media screen and (width > 330px) and (width <=350px) {
+      /* top: 63%; */
+    }
+
+    /* ////////////// */
+    @media screen and (width > 350px) and (width <=400px) {
+      /* top: 63%; */
+    }
+
+    /* ////////////// */
+    @media screen and (width > 400px) {
+      /* top: 75%; */
+    }
+  }
+
+  .hero__cred {
+    /* outline: 2px solid indigo; */
+
+    position: absolute;
+    bottom: 17%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    /* /////////// */
+    .hero__cred__text-1 {
+      color: white;
+      font-family: var(--ff-primary);
+      font-size: var(--fs-800);
+      font-weight: var(--fw-bold);
+      line-height: 1.5;
+
+      text-align: center;
+      padding: 0 0 0.2rem 0;
+      white-space: nowrap;
+    }
+
+    /* ////////////// */
+    .hero__cred__text-2 {
+      /* outline: 2px solid maroon; */
+
+      color: var(--clr-secondary-650);
+      font-family: var(--ff-primary);
+      font-size: var(--fs-800);
+      font-weight: var(--fw-bold);
+      line-height: 1.5;
+      white-space: nowrap;
+      text-align: center;
+    }
   }
 }
 
@@ -276,21 +368,58 @@
   .training-hero__section {
     /* outline: 4px solid yellowgreen; */
 
-    padding-bottom: 10rem;
-    margin-top: 45px;
+    margin-bottom: 10rem;
+    /* margin-top: 45px; */
+    height: 100vh;
+    max-height: 800px;
   }
 
   .training-hero__container {
-    /* outline: 4px solid black; */
+    /* outline: 4px solid red; */
 
-    background-image: url(../../images/fin-market-2-tablet.jpg);
-    padding: 0rem 2rem 2rem 2rem;
+    padding: 0rem 0rem 2rem 2rem;
+    height: 100vh;
+    max-height: 700px;
+
+    /* background-color: var(--clr-primary-200);
+    background-image: linear-gradient(45deg,
+        var(--clr-primary-100),
+        var(--clr-primary-200),
+        var(--clr-primary-100),
+        var(--clr-primary-200),
+        var(--clr-primary-200),
+        var(--clr-primary-200),
+        var(--clr-primary-200),
+        var(--clr-primary-200),
+        var(--clr-primary-100),
+        var(--clr-primary-100),
+        var(--clr-primary-200),
+        var(--clr-primary-100),
+        var(--clr-primary-100)); */
+
+    background-image: url(../../images/fin-market-2-Tablet-land-875-490.jpeg);
+    background-image: -webkit-image-set(url(../../images/fin-market-2-Tablet-land-875-490.webp));
+    background-image: image-set(url(../../images/fin-market-2-Tablet-land-875-490.webp));
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    /* //////////////// */
+    @media screen and (width > 500px) and (width <=650px) {
+      background-image: url(../../images/fin-market-2-Tablet-potrait-650-364.jpeg);
+      background-image: -webkit-image-set(url(../../images/fin-market-2-Tablet-potrait-650-364.webp));
+      background-image: image-set(url(../../images/fin-market-2-Tablet-potrait-650-364.webp));
+    }
   }
 
   .training-hero__txt-content__container {
     /* outline: 2px solid pink; */
 
-    row-gap: 1rem;
+    width: 100%;
+    height: inherit;
+    max-height: inherit;
+    position: relative;
   }
 
   .training-hero__txt-content-header {
@@ -302,8 +431,12 @@
     font-weight: var(--fw-bold);
     line-height: 1.3;
     letter-spacing: -3%;
-    text-transform: capitalize;
+    text-transform: none;
     text-align: left;
+
+    position: absolute;
+    top: 2%;
+    left: 0%;
 
     display: flex;
     flex-direction: column;
@@ -312,8 +445,8 @@
     align-items: flex-start;
     row-gap: 0.2rem;
 
-
     /* /////////////// */
+    /* Go from */
     .hero__txt-content-header__part-1 {
       /* outline: 2px solid greenyellow; */
 
@@ -326,21 +459,22 @@
 
       /* ///////////////// */
       @media screen and (width > 500px) and (width <=575px) {
-        font-size: 2.2rem;
+        font-size: 2.5rem;
+      }
+
+      /* ///////////////// */
+      @media screen and (width > 575px) and (width <=650px) {
+        font-size: 3rem;
       }
 
       /* ////////////// */
-      @media screen and (width > 575px) and (width <=690px) {
-        font-size: 2.8rem;
-      }
-
-      /* ////////////// */
-      @media screen and (width > 690px) {
-        font-size: 3.4rem;
+      @media screen and (width > 650px) {
+        font-size: 3.5rem;
       }
     }
 
     /* //////////////// */
+    /* Beginner Profitable trader */
     .hero__txt-content-header__part-2 {
       /* outline: 2px solid greenyellow; */
 
@@ -353,23 +487,25 @@
         0px 1px black;
 
       /* ///////////////// */
-      @media screen and (width > 500px) and (width <=590px) {
-        font-size: 2.8rem;
+      @media screen and (width > 500px) and (width <=575px) {
+        font-size: 3rem;
+        filter: brightness(120%);
+      }
+
+      /* ///////////////// */
+      @media screen and (width > 575px) and (width <=650px) {
+        font-size: 3.5rem;
         filter: brightness(120%);
       }
 
       /* ////////////// */
-      @media screen and (width > 590px) and (width <=690px) {
-        font-size: 3.4rem;
-      }
-
-      /* ////////////// */
-      @media screen and (width > 690px) {
+      @media screen and (width > 650px) {
         font-size: 4rem;
       }
     }
 
     /* //////////////// */
+    /* to */
     .hero__txt-content-header__part-x {
       /* outline: 2px solid greenyellow; */
 
@@ -380,25 +516,26 @@
         1px 0px black,
         0px -1px black,
         0px 1px black;
+      /* font-size: 3rem; */
 
       /* ///////////////// */
-      @media screen and (width > 500px) and (width <=590px) {
-        font-size: 2.2rem;
-        filter: brightness(80%);
+      @media screen and (width > 500px) and (width <=575px) {
+        font-size: 2.5rem;
+      }
+
+      /* ///////////////// */
+      @media screen and (width > 575px) and (width <=650px) {
+        font-size: 3rem;
       }
 
       /* ////////////// */
-      @media screen and (width > 590px) and (width <=690px) {
-        font-size: 2.8rem;
-      }
-
-      /* ////////////// */
-      @media screen and (width > 690px) {
-        font-size: 3.4rem;
+      @media screen and (width > 650px) {
+        font-size: 3.5rem;
       }
     }
 
     /* ////////////////// */
+    /* in 3 months */
     .hero__txt-content-header__part-3 {
       /* outline: 2px solid greenyellow; */
 
@@ -411,17 +548,17 @@
 
       /* ///////////////// */
       @media screen and (width > 500px) and (width <=575px) {
-        font-size: 2.2rem;
+        font-size: 2.5rem;
+      }
+
+      /* ///////////////// */
+      @media screen and (width > 575px) and (width <=650px) {
+        font-size: 3rem;
       }
 
       /* ////////////// */
-      @media screen and (width > 575px) and (width <=690px) {
-        font-size: 2.8rem;
-      }
-
-      /* ////////////// */
-      @media screen and (width > 690px) {
-        font-size: 3.4rem;
+      @media screen and (width > 650px) {
+        font-size: 3.5rem;
       }
     }
   }
@@ -430,23 +567,115 @@
     /* outline: 2px solid skyblue; */
 
     width: 100%;
-    max-width: 400px;
+    position: absolute;
 
     font-family: var(--ff-primary);
     font-weight: var(--fw-bold);
-    font-size: var(--fs-600);
     line-height: 1.5;
-    letter-spacing: -3%;
-    text-transform: capitalize;
-    text-align: left;
-    color: var(--clr-secondary-650);
+    text-transform: none;
     color: white;
     filter: brightness(200%);
 
-    text-shadow: -1px 0px black,
-      1px 0px black,
-      0px -1px black,
-      0px 3px 3px black;
+    /* ///////////////// */
+    @media screen and (width > 500px) and (width <=700px) {
+      right: 1%;
+      bottom: 2%;
+      max-width: 339px;
+      font-size: var(--fs-700);
+      text-align: right;
+    }
+
+    /* ////////////// */
+    @media screen and (width > 700px) {
+      right: 0%;
+      bottom: 2%;
+      max-width: 400px;
+      font-size: var(--fs-600);
+      text-align: left;
+    }
+  }
+
+  .hero__cred {
+    /* outline: 2px solid indigo; */
+
+    position: absolute;
+
+    /* ///////////////// */
+    @media screen and (width > 500px) and (width <=575px) {
+      right: 2%;
+      bottom: 12%;
+    }
+
+    /* ///////////////// */
+    @media screen and (width > 575px) and (width <=650px) {
+      right: 2%;
+      bottom: 12%;
+    }
+
+    /* ////////////// */
+    @media screen and (width > 650px) {
+      left: 0%;
+      bottom: 2%;
+    }
+
+    /* heights */
+    /* @media screen and (height <= 400px) {
+      outline: 2px solid blue;
+
+      top: 90%;
+    }
+
+    @media screen and (height > 400px) and (height <= 550px) {
+      outline: 2px solid green;
+
+      margin-top: 5rem;
+      top: 45%;
+    }
+
+    @media screen and (height > 550px) {
+      outline: 2px solid red;
+
+      margin-top: 5rem;
+      top: 40%;
+    } */
+
+    /* /////////// */
+    .hero__cred__text-1 {
+      color: white;
+      font-family: var(--ff-primary);
+      font-size: var(--fs-700);
+      font-weight: var(--fw-semi-bold);
+      line-height: 1.5;
+
+      text-align: left;
+      padding: 0 0 0.2rem 0;
+      white-space: nowrap;
+
+      /* ////////////// */
+      @media screen and (width > 500px) and (width <=700px) {
+        font-size: var(--fs-800);
+        font-weight: var(--fw-bold);
+      }
+    }
+
+    /* ////////////// */
+    .hero__cred__text-2 {
+      /* outline: 2px solid maroon; */
+
+      color: var(--clr-secondary-650);
+      font-family: var(--ff-primary);
+      font-size: var(--fs-700);
+      font-weight: var(--fw-bold);
+      line-height: 1.5;
+      white-space: nowrap;
+      text-align: left;
+
+      /* ////////////// */
+      @media screen and (width > 500px) and (width <=700px) {
+        font-size: var(--fs-800);
+        font-weight: var(--fw-bold);
+      }
+    }
   }
 }
 
@@ -461,54 +690,97 @@
   .training-hero__section {
     /* outline: 4px solid yellowgreen; */
 
-    padding-bottom: 12rem;
-    margin-top: 60px;
+    margin-bottom: 12rem;
+    /* margin-top: 50px; */
+    height: 100vh;
+    max-height: 800px;
   }
 
   .training-hero__container {
     /* outline: 4px solid black; */
 
-    background-image: url(../../images/fin-market-2-desktop.jpg);
-    padding: 0rem 0rem 2rem 9rem;
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
+    height: inherit;
+    max-height: inherit;
+    padding: 0rem 0rem 2rem 0rem;
 
+
+    /* background-color: var(--clr-primary-200);
+    background-image: linear-gradient(45deg,
+        var(--clr-primary-100),
+        var(--clr-primary-200),
+        var(--clr-primary-100),
+        var(--clr-primary-200),
+        var(--clr-primary-200),
+        var(--clr-primary-200),
+        var(--clr-primary-200),
+        var(--clr-primary-200),
+        var(--clr-primary-100),
+        var(--clr-primary-100),
+        var(--clr-primary-200),
+        var(--clr-primary-100),
+        var(--clr-primary-100)); */
+
+    background-image: url(../../images/fin-market-2-Laptop-Large-1440-807.jpeg);
+    background-image: -webkit-image-set(url(../../images/fin-market-2-Laptop-Large-1440-807.webp));
+    background-image: image-set(url(../../images/fin-market-2-Laptop-Large-1440-807.webp));
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    /* //////////////// */
     @media screen and (width > 875px) and (width <=1200px) {
-      padding-left: 4rem;
+
+      background-image: url(../../images/fin-market-2-Laptop-small-1000-560.jpeg);
+      background-image: -webkit-image-set(url(../../images/fin-market-2-Laptop-small-1000-560.webp));
+      background-image: image-set(url(../../images/fin-market-2-Laptop-small-1000-560.webp));
     }
   }
 
   .training-hero__txt-content__container {
     /* outline: 2px solid pink; */
 
-    align-items: flex-end;
-    row-gap: 2rem;
+    width: 100%;
+    height: inherit;
+    max-height: inherit;
+    position: relative;
   }
 
   .training-hero__txt-content-header {
     /* outline: 2px solid green; */
 
-    width: 100%;
+    width: fit-content;
 
     font-family: var(--ff-secondary);
     font-weight: var(--fw-bold);
     line-height: 1.3;
     letter-spacing: -3%;
-    text-transform: capitalize;
+    text-transform: none;
     text-align: left;
+
+    position: absolute;
+    top: 3%;
+    left: 5%;
 
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: flex-start;
     align-items: flex-start;
-    row-gap: 0.2rem;
+    row-gap: 0.1rem;
+
 
     /* /////////////// */
+    @media screen and (width > 1200px) {
+      left: 8%;
+    }
+
+    /* /////////////// */
+    /* Go from */
     .hero__txt-content-header__part-1 {
       /* outline: 2px solid greenyellow; */
 
-      font-size: var(--fs-200);
+      font-size: var(--fs-100);
       color: var(--clr-secondary-650);
       text-shadow: -2px 0px 2px black,
         1px 0px black,
@@ -517,10 +789,11 @@
     }
 
     /* //////////////// */
+    /* beginner profitable trader */
     .hero__txt-content-header__part-2 {
       /* outline: 2px solid greenyellow; */
 
-      font-size: var(--fs-100);
+      font-size: 5rem;
       color: var(--clr-secondary-650);
       filter: brightness(125%);
 
@@ -531,10 +804,11 @@
     }
 
     /* //////////////// */
+    /* to */
     .hero__txt-content-header__part-x {
       /* outline: 2px solid greenyellow; */
 
-      font-size: var(--fs-200);
+      font-size: var(--fs-100);
       filter: brightness(75%);
 
       text-shadow: -2px 0px 2px black,
@@ -544,10 +818,11 @@
     }
 
     /* ////////////////// */
+    /* in 3 months */
     .hero__txt-content-header__part-3 {
       /* outline: 2px solid greenyellow; */
 
-      font-size: var(--fs-200);
+      font-size: var(--fs-100);
       color: var(--clr-secondary-650);
 
       text-shadow: -1px 0px black,
@@ -561,21 +836,80 @@
     /* outline: 2px solid skyblue; */
 
     width: 100%;
-    max-width: 450px;
+    max-width: 400px;
+
+    position: absolute;
+    bottom: 2%;
+    right: 1%;
 
     font-family: var(--ff-primary);
     font-weight: var(--fw-bold);
-    font-size: var(--fs-500);
+    font-size: var(--fs-600);
     line-height: 1.5;
-    letter-spacing: -3%;
-    text-transform: capitalize;
+    text-transform: none;
     text-align: left;
     color: white;
     filter: brightness(200%);
 
-    text-shadow: -1px 0px black,
+    /* text-shadow: -1px 0px black,
       1px 0px black,
       0px -1px black,
-      0px 3px 3px black;
+      0px 3px 3px black; */
+
+    /* /////////////// */
+    @media screen and (width > 1200px) {
+      right: 5%;
+      max-width: 450px;
+      font-size: var(--fs-550);
+    }
+  }
+
+  .hero__cred {
+    /* outline: 2px solid indigo; */
+
+    position: absolute;
+    bottom: 3%;
+    left: 5%;
+
+    /* /////////////// */
+    @media screen and (width > 1200px) {
+      left: 8%;
+    }
+
+    /* /////////// */
+    .hero__cred__text-1 {
+      color: white;
+      font-family: var(--ff-primary);
+      font-size: var(--fs-700);
+      font-weight: var(--fw-semi-bold);
+      line-height: 1.5;
+
+      text-align: left;
+      padding: 0 0 0.5rem 0;
+      white-space: nowrap;
+
+      /* /////////////// */
+      @media screen and (width > 1200px) {
+        font-size: var(--fs-600);
+      }
+    }
+
+    /* ////////////// */
+    .hero__cred__text-2 {
+      /* outline: 2px solid maroon; */
+
+      color: var(--clr-secondary-650);
+      font-family: var(--ff-primary);
+      font-size: var(--fs-700);
+      font-weight: var(--fw-bold);
+      line-height: 1.5;
+      white-space: nowrap;
+      text-align: left;
+
+      /* /////////////// */
+      @media screen and (width > 1200px) {
+        font-size: var(--fs-600);
+      }
+    }
   }
 }

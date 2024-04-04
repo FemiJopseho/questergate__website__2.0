@@ -1,0 +1,1943 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- --------------search engine robots & SEO-------------- -->
+		<meta name="robots" content="index, follow" />
+
+		<meta name="description" content="Find answers to your questions here." />
+
+		<!-- -----------explorer compatibility---------- -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+		<meta name="theme-color" content="#0C567B" />
+
+		<!-- --------Cache control meta tag------------ -->
+		<meta http-equiv="Cache-control" content="public, max-age=7776000" />
+
+		<!-- ----------------Security---------------- -->
+		<meta http-equiv="X-Content-Type-Options" content="nosniff" />
+
+		<meta
+			http-equiv="Strict-Transport-Security"
+			content="max-age=31536000; includeSubDomains; preload"
+		/>
+
+		<meta
+			http-equiv="Content-Security-Policy"
+			content="upgrade-insecure-requests"
+		/>
+
+		<!-- -----------------CSS Resets-------------------- -->
+		<!-- Use Normalize Reset -->
+		<link rel="stylesheet" href="../../../css-resets/normalize.css" />
+
+		<!-- -----------------FONTS (loaded for a start)-------------------- -->
+
+		<style type="text/css">
+			@font-face {
+				font-display: swap;
+				font-family: "Nunito";
+				font-style: normal;
+				font-weight: 400;
+
+				src: local("Nunito"),
+					url("../../../utilities/fonts/nunito-v26-latin-regular.woff2")
+						format("woff2");
+			}
+
+			@font-face {
+				font-display: swap;
+				font-family: "Montagu Slab";
+				font-style: normal;
+				font-weight: 400;
+
+				src: local("Montagu Slab"),
+					url("../../../utilities/fonts/montagu-slab-v12-latin-regular.woff2")
+						format("woff2");
+			}
+		</style>
+
+		<!-- -------Other stylesheets, and scripts---------- -->
+
+		<link
+			rel="stylesheet"
+			href="../../1-css-components/joined-fixed-component.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="../../1-css-components/6-utility-classes.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="../investment__multi-use__css/1-header__investment.css"
+		/>
+
+		<link
+			rel="stylesheet"
+			href="../investment__multi-use__css/9-investment__heading__for__pages.css"
+		/>
+		<link rel="stylesheet" href="./investment__faq.css" />
+		<link
+			rel="stylesheet"
+			href="../investment__multi-use__css/7-steps__to__start__now.css"
+		/>
+
+		<!-- --------------JQUERY ACCESS via CDN and via Local server----------------- -->
+		<!-- <script
+			src="https://code.jquery.com/jquery-3.7.1.min.js"
+			integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+			crossorigin="anonymous"
+		></script> -->
+
+		<script src="../../js-components/jquery-3.7.1.min.js"></script>
+
+		<!-- ----------Page Title---------- -->
+		<title>Frequently Asked Questions</title>
+
+		<!-- -------------Favicon for page--------------- -->
+		<link
+			rel="icon"
+			type="image/x-icon"
+			href="../../../images/QG__favicon__no__background-Favicon-Phone-16-10.ico"
+			id="favicon"
+		/>
+	</head>
+
+	<body>
+		<button
+			onclick="backToTop__Function()"
+			id="back-to-top"
+			class="back-to-top"
+			title="Go to top"
+		>
+			Top &#8593;
+		</button>
+
+		<div class="gen-container">
+			<header class="fund-header__section header" id="header">
+				<div class="fund-header__container">
+					<div class="fund-header__logo__container">
+						<a
+							class="fund-header__logo__link"
+							href="../investment__homepage/html__investment.html"
+						>
+							<picture class="fund-header__logo__pic">
+								<source
+									class="phone_tablet_laptop-small"
+									type="image/webp"
+									media="(max-width: 1440px)"
+									srcset="../../../images/QG_LOGO_200-43.webp"
+								/>
+
+								<source
+									class="laptop-large"
+									type="image/webp"
+									srcset="../../../images/QG_LOGO_350-76.webp"
+								/>
+
+								<!-- fallback -->
+								<img
+									class="fund-header__logo__pic-img"
+									sizes="(max-width: 1000px) 20vw, 1440px"
+									srcset="
+										../../../images/QG_LOGO_200-43.png  1440w,
+										../../../images/QG__LOGO-350-76.PNG
+									"
+									src="../../../images/QG_LOGO_350-76.png"
+									alt="questergate logo"
+									loading="lazy"
+									decoding="async"
+									fetchpriority="high"
+								/>
+							</picture>
+						</a>
+					</div>
+
+					<div class="fund-header__list__container menu" id="menu">
+						<ul class="fund-header__list">
+							<li class="fund-header__list__items">
+								<a
+									href="../investment__our--plans/html__Save__plan.html"
+									class="fund-header__list__items-link"
+									>Save</a
+								>
+							</li>
+
+							<li class="fund-header__list__items">
+								<a
+									href="../investment__our--plans/html__invest__plan.html"
+									class="fund-header__list__items-link"
+									>Invest</a
+								>
+							</li>
+
+							<!-- <li class="fund-header__list__items">
+								<a
+									href="../investment__faq/html__faq__investment.html"
+									class="fund-header__list__items-link"
+									>Faq</a
+								>
+							</li> -->
+
+							<li class="fund-header__list__items">
+								<a
+									href="../investment__how--tos/html__investment__how-tos.html"
+									class="fund-header__list__items-link"
+									>How-To</a
+								>
+							</li>
+
+							<!-- <li class="fund-header__list__items">
+								<a href="#" class="fund-header__list__items-link">Blog</a>
+							</li> -->
+
+							<!-- <li class="fund-header__list__items">
+								<a href="#" class="fund-header__list__items-link">About Us</a>
+							</li> -->
+
+							<!-- *----LOGIN-STATUS AUTHENTICATION NEEDED----* -->
+
+							<!-- *Start of auth for for login or Sign out* -->
+
+							<!-- *-----------if user not logged in, show "Login In" -->
+							<li class="fund-header__list__items header__login">
+								<a
+									href="#"
+									class="fund-header__list__items-link fund-header__link-login"
+									>Log In</a
+								>
+							</li>
+
+							<!-- *-----------if user logged in, show "Sign Out" -->
+							<!-- <li class="fund-header__list__items header__login">
+            <a
+              href="#"
+              class="fund-header__list__items-link fund-header__link-login"
+              >Sign Out</a
+            >
+          </li> -->
+							<!-- *END of auth for for login or Sign out* -->
+
+							<!-- *Start of Auth for DASHBOARD or REGISTER BUTTON* -->
+
+							<!-- *-----------if user not logged in, show Register button -->
+							<li class="fund-header__list__items fund-header__register">
+								<a
+									href="#"
+									class="fund-header__list__items-link fund-header__link-register"
+									>Register</a
+								>
+							</li>
+
+							<!-- *-----------if user is logged in, show Dashboard button -->
+							<!-- <li class="fund-header__list__items fund-header__register">
+            <a
+              href="#"
+              class="fund-header__list__items-link fund-header__link-register"
+              >Dashboard</a
+            >
+          </li> -->
+							<!-- *END of Auth for DASHBOARD or REGISTER BUTTON* -->
+						</ul>
+					</div>
+
+					<div class="fund__header__burger burger" id="burger">
+						<span class="fund__header__burger-line"></span>
+						<span class="fund__header__burger-line"></span>
+						<span class="fund__header__burger-line"></span>
+						<span class="fund__header__burger-line"></span>
+					</div>
+				</div>
+			</header>
+
+			<main class="main">
+				<!-- -------START OF Page Title section------- -->
+				<section class="fund__heading-for-pages__section hidden">
+					<div class="fund__heading-for-pages__container">
+						<h3 class="fund__heading-for-pages__content-title">FAQ</h3>
+
+						<p class="fund__heading-for-pages__content-parag">
+							Find answers to your questions here. <br />
+							You can contact us if you have more questions.
+						</p>
+					</div>
+				</section>
+
+				<!-- -------START OF FAQ SECTION------- -->
+				<section class="fund__faq__section">
+					<div class="fund__faq__container">
+						<!-- *All-Parent-accordion buttons to be clicked -->
+						<div
+							class="fund__faq__parent-accordion-button__container parent__accordion__button__container"
+						>
+							<!-- 1st-parent accord button -->
+							<button
+								class="fund__faq__parent-accordion-button parent__accordion__button"
+								href=""
+								id="parent-accordion-button-1"
+								aria-expanded="false"
+								data-target="#parent-accordion-button-1-content"
+							>
+								Company
+							</button>
+
+							<!-- 2nd-parent accord button -->
+							<button
+								class="fund__faq__parent-accordion-button parent__accordion__button"
+								href=""
+								id="parent-accordion-button-2"
+								aria-expanded="false"
+								data-target="#parent-accordion-button-2-content"
+							>
+								Savings & Investment
+							</button>
+
+							<!-- 3rd-parent accord button -->
+							<button
+								class="fund__faq__parent-accordion-button parent__accordion__button"
+								href=""
+								id="parent-accordion-button-3"
+								aria-expanded="false"
+								data-target="#parent-accordion-button-3-content"
+							>
+								Risk
+							</button>
+
+							<!-- 4th-parent accord button -->
+							<button
+								class="fund__faq__parent-accordion-button parent__accordion__button"
+								href=""
+								id="parent-accordion-button-4"
+								aria-expanded="false"
+								data-target="#parent-accordion-button-4-content"
+							>
+								payment
+							</button>
+
+							<!-- 5th accord button -->
+							<button
+								class="fund__faq__parent-accordion-button parent__accordion__button"
+								href=""
+								id="parent-accordion-button-5"
+								aria-expanded="false"
+								data-target="#parent-accordion-button-5-content"
+							>
+								withdrawal
+							</button>
+
+							<!-- 6th accord button -->
+							<button
+								class="fund__faq__parent-accordion-button parent__accordion__button"
+								href=""
+								id="parent-accordion-button-6"
+								aria-expanded="false"
+								data-target="#parent-accordion-button-6-content"
+							>
+								your QG profile
+							</button>
+
+							<!-- 7th accord button -->
+							<button
+								class="fund__faq__parent-accordion-button parent__accordion__button"
+								href=""
+								id="parent-accordion-button-7"
+								aria-expanded="false"
+								data-target="#parent-accordion-button-7-content"
+							>
+								security
+							</button>
+						</div>
+
+						<!-- *All-Parent-accordion items opened/closed by Parent-accordion buttons -->
+						<div
+							class="fund__faq__parent-accordion-items__container parent__accordion__item__wrapper"
+						>
+							<!-- 1st-parent-accord item -->
+							<!-- *COMPANY -->
+							<div
+								class="fund__faq__parent-accordion-item parent__accordion__item__container"
+								id="parent-accordion-button-1-content"
+							>
+								<h3
+									class="fund__faq__parent__accordion-item__heading parent__accordion__item--heading"
+								>
+									Company
+								</h3>
+
+								<div
+									class="fund__faq__child-accord-q-and-a__wrapper child__accordion__wrapper"
+								>
+									<!-- *1st child-accord -->
+									<div
+										class="fund__faq__child-accord-q-and-a__container child-accordion__container"
+									>
+										<!-- (QUESTION) -->
+										<button
+											class="fund__faq__child-accord-question__button child-accordion__button"
+											id="child-accordion-button-1"
+											aria-expanded="false"
+											data-target="#child-accordion-content-1"
+										>
+											<p
+												class="fund__faq__child-accord-question child-accordion__button--text"
+											>
+												What we do for you at Questergate
+											</p>
+
+											<span class="accordion__arrow" aria-hidden="false"></span>
+										</button>
+
+										<!-- (ANSWER) -->
+										<div
+											class="fund__faq__child__accord-answers__container child-accordion-content"
+											id="child-accordion-content-1"
+										>
+											<p
+												class="fund__faq__child__accord-answers child-accordion-content-text"
+											>
+												We help you get more value from your Savings & Investments.
+												<br><br>
+												We do this by providing you with:
+												<br>
+												<ul class="child-accordion-content-text__list">
+													<li class="child-accordion-content-text__list-item">Higher Returns on your Saving & Investments.</li>
+													<li class="child-accordion-content-text__list-item">A secure place for your funds.</li>
+												</ul>
+											</p>
+										</div>
+									</div>
+
+									<!-- *2nd child-accord -->
+									<div
+										class="fund__faq__child-accord-q-and-a__container child-accordion__container"
+									>
+										<!-- (QUESTION) -->
+										<button
+											class="fund__faq__child-accord-question__button child-accordion__button"
+											id="child-accordion-button-2"
+											aria-expanded="false"
+											data-target="#child-accordion-content-2"
+										>
+											<p
+												class="fund__faq__child-accord-question child-accordion__button--text"
+											>
+												Why should I Save & Invest with Questergate?
+											</p>
+
+											<span class="accordion__arrow" aria-hidden="true"></span>
+										</button>
+
+										<!-- (ANSWER) -->
+										<div
+											class="fund__faq__child__accord-answers__container child-accordion-content"
+											id="child-accordion-content-2"
+										>
+											<p
+												class="fund__faq__child__accord-answers child-accordion-content-text"
+											>
+												<ul class="child-accordion-content-text__list">
+													<li class="child-accordion-content-text__list-item">Higher returns on savings & investments.</li>
+													<li class="child-accordion-content-text__list-item">Safety of your funds.</li>
+													<li class="child-accordion-content-text__list-item">All your savings and investments are insured.</li>
+												</ul>
+											</p>
+										</div>
+									</div>
+
+									<!-- *3rd child-accord -->
+									<div
+										class="fund__faq__child-accord-q-and-a__container child-accordion__container"
+									>
+										<!-- (QUESTION) -->
+										<button
+											class="fund__faq__child-accord-question__button child-accordion__button"
+											id="child-accordion-button-3"
+											aria-expanded="false"
+											data-target="#child-accordion-content-3"
+										>
+											<p
+												class="fund__faq__child-accord-question child-accordion__button--text"
+											>
+												In what countries does Questergate operate in?
+											</p>
+
+											<span class="accordion__arrow" aria-hidden="true"></span>
+										</button>
+
+										<!-- (ANSWER) -->
+										<div
+											class="fund__faq__child__accord-answers__container child-accordion-content"
+											id="child-accordion-content-3"
+										>
+											<p
+												class="fund__faq__child__accord-answers child-accordion-content-text"
+											>
+												We currently operate from within Nigeria. And we make investments in many other countries.
+											</p>
+										</div>
+									</div>
+
+									<!-- *4th child-accord -->
+									<div
+										class="fund__faq__child-accord-q-and-a__container child-accordion__container"
+									>
+										<!-- (QUESTION) -->
+										<button
+											class="fund__faq__child-accord-question__button child-accordion__button"
+											id="child-accordion-button-1"
+											aria-expanded="false"
+											data-target="#child-accordion-content-4"
+										>
+											<p
+												class="fund__faq__child-accord-question child-accordion__button--text"
+											>
+												How does Questergate operate?
+											</p>
+
+											<span class="accordion__arrow" aria-hidden="true"></span>
+										</button>
+
+										<!-- (ANSWER) -->
+										<div
+											class="fund__faq__child__accord-answers__container child-accordion-content"
+											id="child-accordion-content-4"
+										>
+											<p
+												class="fund__faq__child__accord-answers child-accordion-content-text"
+											>
+												Unlike most savings & investments companies who use the expertise of a third party companies to save and invest client fund, we never use a third party.
+											<br><br>
+											We only use our in-house expertise to save & invest your funds.
+											<br><br>
+											We are in control of your money from start to end so there is no risk of any mistake by a 3rd party.
+											</p>
+										</div>
+									</div>
+
+									<!-- *5th child-accord -->
+									<div
+										class="fund__faq__child-accord-q-and-a__container child-accordion__container"
+									>
+										<!-- (QUESTION) -->
+										<button
+											class="fund__faq__child-accord-question__button child-accordion__button"
+											id="child-accordion-button-5"
+											aria-expanded="false"
+											data-target="#child-accordion-content-5"
+										>
+											<p
+												class="fund__faq__child-accord-question child-accordion__button--text"
+											>
+												What does Questergate do with my funds?
+											</p>
+
+											<span class="accordion__arrow" aria-hidden="true"></span>
+										</button>
+
+										<!-- (ANSWER) -->
+										<div
+											class="fund__faq__child__accord-answers__container child-accordion-content"
+											id="child-accordion-content-5"
+										>
+											<p
+												class="fund__faq__child__accord-answers child-accordion-content-text"
+											>
+											First, we take some of your money and put it in an insurance to ensure that your money is fully protected.
+											<br><br>
+											We invest your savings and investments into assets with low risk.
+											And we hedge every investment we make to ensure that your funds are always secured.
+											
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+
+							<!-- 2nd-parent-accord item -->
+							<!-- *SAVINGS & INVESTMENT -->
+							<div
+								class="fund__faq__parent-accordion-item parent__accordion__item__container"
+								id="parent-accordion-button-2-content"
+							>
+								<h3
+									class="fund__faq__parent__accordion-item__heading parent__accordion__item--heading"
+								>
+									Saving & Investing
+								</h3>
+								<div class="parent__accordion__item--heading--arrow"></div>
+
+								<div
+									class="fund__faq__child-accord-q-and-a__wrapper child__accordion__wrapper"
+								>
+									<!-- *1st child-accord -->
+									<div
+										class="fund__faq__child-accord-q-and-a__container child-accordion__container"
+									>
+										<!-- (QUESTION) -->
+										<button
+											class="fund__faq__child-accord-question__button child-accordion__button"
+											id="child-accordion-button-1"
+											aria-expanded="false"
+											data-target="#child-accordion-content-1"
+										>
+											<p
+												class="fund__faq__child-accord-question child-accordion__button--text"
+											>
+												How to Save and Invest in Questergate
+											</p>
+
+											<span class="accordion__arrow" aria-hidden="false"></span>
+										</button>
+
+										<!-- (ANSWER) -->
+										<div
+											class="fund__faq__child__accord-answers__container child-accordion-content"
+											id="child-accordion-content-1"
+										>
+											<p
+												class="fund__faq__child__accord-answers child-accordion-content-text"
+											>
+											<b>1st step:</b> Log-in, go to your profile and fund your QG-Wallet.
+<br><br>
+											<b>2nd step:</b> Select a savings or investment plan and input an amount you want to save or invest.
+<br><br>
+											<b>3rd step:</b> Activate the plan by clicking the <b>activate</b> button.
+											</p>
+										</div>
+									</div>
+
+									<!-- *2nd child-accord -->
+									<div
+										class="fund__faq__child-accord-q-and-a__container child-accordion__container"
+									>
+										<!-- (QUESTION) -->
+										<button
+											class="fund__faq__child-accord-question__button child-accordion__button"
+											id="child-accordion-button-2"
+											aria-expanded="false"
+											data-target="#child-accordion-content-2"
+										>
+											<p
+												class="fund__faq__child-accord-question child-accordion__button--text"
+											>
+												What is my "QG-Wallet Fund"?
+											</p>
+
+											<span class="accordion__arrow" aria-hidden="true"></span>
+										</button>
+
+										<!-- (ANSWER) -->
+										<div
+											class="fund__faq__child__accord-answers__container child-accordion-content"
+											id="child-accordion-content-2"
+										>
+											<p
+												class="fund__faq__child__accord-answers child-accordion-content-text"
+											>
+											This is the money you have available for withdrawal in your QG-wallet. <br><br> The money in your QG-Wallet has not been saved or invested yet.
+											</p>
+										</div>
+									</div>
+
+									<!-- *3rd child-accord -->
+									<div
+										class="fund__faq__child-accord-q-and-a__container child-accordion__container"
+									>
+										<!-- (QUESTION) -->
+										<button
+											class="fund__faq__child-accord-question__button child-accordion__button"
+											id="child-accordion-button-3"
+											aria-expanded="false"
+											data-target="#child-accordion-content-3"
+										>
+											<p
+												class="fund__faq__child-accord-question child-accordion__button--text"
+											>
+												What is "Invested Capital"?
+											</p>
+
+											<span class="accordion__arrow" aria-hidden="true"></span>
+										</button>
+
+										<!-- (ANSWER) -->
+										<div
+											class="fund__faq__child__accord-answers__container child-accordion-content"
+											id="child-accordion-content-3"
+										>
+											<p
+												class="fund__faq__child__accord-answers child-accordion-content-text"
+											>
+											This is the money you have invested into an investment plan with QuesterGate.
+											</p>
+										</div>
+									</div>
+
+									<!-- *4th child-accord -->
+									<div
+										class="fund__faq__child-accord-q-and-a__container child-accordion__container"
+									>
+										<!-- (QUESTION) -->
+										<button
+											class="fund__faq__child-accord-question__button child-accordion__button"
+											id="child-accordion-button-1"
+											aria-expanded="false"
+											data-target="#child-accordion-content-4"
+										>
+											<p
+												class="fund__faq__child-accord-question child-accordion__button--text"
+											>
+												What is "Saved Capital"?
+											</p>
+
+											<span class="accordion__arrow" aria-hidden="true"></span>
+										</button>
+
+										<!-- (ANSWER) -->
+										<div
+											class="fund__faq__child__accord-answers__container child-accordion-content"
+											id="child-accordion-content-4"
+										>
+											<p
+												class="fund__faq__child__accord-answers child-accordion-content-text"
+											>
+											This is the money you have saved into a savings plan with QuesterGate.
+											</p>
+										</div>
+									</div>
+
+									<!-- *5th child-accord -->
+									<div
+										class="fund__faq__child-accord-q-and-a__container child-accordion__container"
+									>
+										<!-- (QUESTION) -->
+										<button
+											class="fund__faq__child-accord-question__button child-accordion__button"
+											id="child-accordion-button-5"
+											aria-expanded="false"
+											data-target="#child-accordion-content-5"
+										>
+											<p
+												class="fund__faq__child-accord-question child-accordion__button--text"
+											>
+												What is a "QG-PLAN"?
+											</p>
+
+											<span class="accordion__arrow" aria-hidden="true"></span>
+										</button>
+
+										<!-- (ANSWER) -->
+										<div
+											class="fund__faq__child__accord-answers__container child-accordion-content"
+											id="child-accordion-content-5"
+										>
+											<p
+												class="fund__faq__child__accord-answers child-accordion-content-text"
+											>
+											These are the different savings and investment plans you can choose from at QuesterGate.
+<br><br>
+											The different investment plans offer different Returns.
+											<br><br>
+											<a href="http://../../investment__our--plans/html__Save__plan.html"><b>click here for Savings Plan</b></a>.
+											<br><br>
+											<a href="http://../../investment__our--plans/html__invest__plan.html"><b>click here for Investment Plan</b></a>.
+											</p>
+										</div>
+									</div>
+
+									<!-- *6th child-accord -->
+									<div
+										class="fund__faq__child-accord-q-and-a__container child-accordion__container"
+									>
+										<!-- (QUESTION) -->
+										<button
+											class="fund__faq__child-accord-question__button child-accordion__button"
+											id="child-accordion-button-6"
+											aria-expanded="false"
+											data-target="#child-accordion-content-6"
+										>
+											<p
+												class="fund__faq__child-accord-question child-accordion__button--text"
+											>
+												Can I terminate my savings or investments at anytime?
+											</p>
+
+											<span class="accordion__arrow" aria-hidden="true"></span>
+										</button>
+
+										<!-- (ANSWER) -->
+										<div
+											class="fund__faq__child__accord-answers__container child-accordion-content"
+											id="child-accordion-content-6"
+										>
+											<p
+												class="fund__faq__child__accord-answers child-accordion-content-text"
+											>
+											Yes.
+											<br>
+											<br>
+
+											<b>Note:</b> Termination of a QG-plan before the duration ends will attract a Termination penalty which are:
+											<ul class="child-accordion-content-text__list">
+												<li class="child-accordion-content-text__list-item">Loss of Returns on that savings or investment.</li>
+												<li class="child-accordion-content-text__list-item">Penalty of 20% of the capital in that QG-plan.</li>
+											</ul>
+											</p>
+										</div>
+									</div>
+
+									<!-- *7th child-accord -->
+									<div
+										class="fund__faq__child-accord-q-and-a__container child-accordion__container"
+									>
+										<!-- (QUESTION) -->
+										<button
+											class="fund__faq__child-accord-question__button child-accordion__button"
+											id="child-accordion-button-7"
+											aria-expanded="false"
+											data-target="#child-accordion-content-7"
+										>
+											<p
+												class="fund__faq__child-accord-question child-accordion__button--text"
+											>
+												Can i monitor my savings & investments?
+											</p>
+
+											<span class="accordion__arrow" aria-hidden="true"></span>
+										</button>
+
+										<!-- (ANSWER) -->
+										<div
+											class="fund__faq__child__accord-answers__container child-accordion-content"
+											id="child-accordion-content-7"
+										>
+											<p
+												class="fund__faq__child__accord-answers child-accordion-content-text"
+											>
+											Yes you can monitor your investment from your Profile page.
+											</p>
+										</div>
+									</div>
+
+									<!-- *8th child-accord -->
+									<div
+										class="fund__faq__child-accord-q-and-a__container child-accordion__container"
+									>
+										<!-- (QUESTION) -->
+										<button
+											class="fund__faq__child-accord-question__button child-accordion__button"
+											id="child-accordion-button-8"
+											aria-expanded="false"
+											data-target="#child-accordion-content-8"
+										>
+											<p
+												class="fund__faq__child-accord-question child-accordion__button--text"
+											>
+												When will my Returns be paid?
+											</p>
+
+											<span class="accordion__arrow" aria-hidden="true"></span>
+										</button>
+
+										<!-- (ANSWER) -->
+										<div
+											class="fund__faq__child__accord-answers__container child-accordion-content"
+											id="child-accordion-content-8"
+										>
+											<p
+												class="fund__faq__child__accord-answers child-accordion-content-text"
+											>
+											The Returns from your savings or investments is paid at the end of the savings or investment duration. 
+											<br><br>
+											Immediately after the duration ends, you will see your returns and your capital in your QG-Wallet on your profile page.
+											<br><br> And then you can proceed to withdraw it directly into your bank account.
+											</p>
+										</div>
+									</div>
+
+									<!-- *9th child-accord -->
+									<div
+										class="fund__faq__child-accord-q-and-a__container child-accordion__container"
+									>
+										<!-- (QUESTION) -->
+										<button
+											class="fund__faq__child-accord-question__button child-accordion__button"
+											id="child-accordion-button-9"
+											aria-expanded="false"
+											data-target="#child-accordion-content-9"
+										>
+											<p
+												class="fund__faq__child-accord-question child-accordion__button--text"
+											>
+												Can i have multiple investments?
+											</p>
+
+											<span class="accordion__arrow" aria-hidden="true"></span>
+										</button>
+
+										<!-- (ANSWER) -->
+										<div
+											class="fund__faq__child__accord-answers__container child-accordion-content"
+											id="child-accordion-content-9"
+										>
+											<p
+												class="fund__faq__child__accord-answers child-accordion-content-text"
+											>
+											Yes! you can.
+											</p>
+										</div>
+									</div>
+
+									<!-- *10th child-accord -->
+									<div
+										class="fund__faq__child-accord-q-and-a__container child-accordion__container"
+									>
+										<!-- (QUESTION) -->
+										<button
+											class="fund__faq__child-accord-question__button child-accordion__button"
+											id="child-accordion-button-10"
+											aria-expanded="false"
+											data-target="#child-accordion-content-10"
+										>
+											<p
+												class="fund__faq__child-accord-question child-accordion__button--text"
+											>
+											Can i have multiple Savings at same time?
+											
+											</p>
+
+											<span class="accordion__arrow" aria-hidden="true"></span>
+										</button>
+
+										<!-- (ANSWER) -->
+										<div
+											class="fund__faq__child__accord-answers__container child-accordion-content"
+											id="child-accordion-content-10"
+										>
+											<p
+												class="fund__faq__child__accord-answers child-accordion-content-text"
+											>
+											Yes! you can.
+											</p>
+										</div>
+									</div>
+
+									<!-- *11th child-accord -->
+									<div
+										class="fund__faq__child-accord-q-and-a__container child-accordion__container"
+									>
+										<!-- (QUESTION) -->
+										<button
+											class="fund__faq__child-accord-question__button child-accordion__button"
+											id="child-accordion-button-11"
+											aria-expanded="false"
+											data-target="#child-accordion-content-11"
+										>
+											<p
+												class="fund__faq__child-accord-question child-accordion__button--text"
+											>
+												Can I keep adding funds to an active Savings plan?
+											</p>
+
+											<span class="accordion__arrow" aria-hidden="true"></span>
+										</button>
+
+										<!-- (ANSWER) -->
+										<div
+											class="fund__faq__child__accord-answers__container child-accordion-content"
+											id="child-accordion-content-11"
+										>
+											<p
+												class="fund__faq__child__accord-answers child-accordion-content-text"
+											>
+												Yes you can keep adding funds to an active savings plan at any time.
+												<br>This is why it is called a <b>"FLEX"</b> Savings plan. It is flexible.
+												
+												<br><br><b>Note:</b> The minimum fund you can add per time is 5,000 naira.
+											</p>
+										</div>
+									</div>
+
+									<!-- *12th child-accord -->
+									<div
+										class="fund__faq__child-accord-q-and-a__container child-accordion__container"
+									>
+										<!-- (QUESTION) -->
+										<button
+											class="fund__faq__child-accord-question__button child-accordion__button"
+											id="child-accordion-button-12"
+											aria-expanded="false"
+											data-target="#child-accordion-content-12"
+										>
+											<p
+												class="fund__faq__child-accord-question child-accordion__button--text"
+											>
+											Can I keep adding funds to an active Investment plan?
+											</p>
+
+											<span class="accordion__arrow" aria-hidden="true"></span>
+										</button>
+
+										<!-- (ANSWER) -->
+										<div
+											class="fund__faq__child__accord-answers__container child-accordion-content"
+											id="child-accordion-content-12"
+										>
+											<p
+												class="fund__faq__child__accord-answers child-accordion-content-text"
+											>
+											No! <br><br>
+											You cannot add funds to an active investment. <br>This is why it is called a <b>"FIXED"</b> investment plan.
+											<br><br>
+											But you can choose to open a new investment plan and invest the funds there.
+										</p>
+										</div>
+									</div>
+
+									<!-- *13th child-accord -->
+									<div
+										class="fund__faq__child-accord-q-and-a__container child-accordion__container"
+									>
+										<!-- (QUESTION) -->
+										<button
+											class="fund__faq__child-accord-question__button child-accordion__button"
+											id="child-accordion-button-13"
+											aria-expanded="false"
+											data-target="#child-accordion-content-13"
+										>
+											<p
+												class="fund__faq__child-accord-question child-accordion__button--text"
+											>
+												Can we save as a group?
+											</p>
+
+											<span class="accordion__arrow" aria-hidden="true"></span>
+										</button>
+
+										<!-- (ANSWER) -->
+										<div
+											class="fund__faq__child__accord-answers__container child-accordion-content"
+											id="child-accordion-content-13"
+										>
+											<p
+												class="fund__faq__child__accord-answers child-accordion-content-text"
+											>
+											Yes.
+										<br><br> Contact us for more information on this.
+											</p>
+										</div>
+									</div>
+
+								</div>
+							</div>
+
+
+
+							<!-- 3rd-parent accord item -->
+							<!-- *RISK -->
+							<div
+								class="fund__faq__parent-accordion-item parent__accordion__item__container"
+								id="parent-accordion-button-3-content"
+							>
+								<h3
+									class="fund__faq__parent__accordion-item__heading parent__accordion__item--heading"
+								>
+									Risk
+								</h3>
+								<div class="parent__accordion__item--heading--arrow"></div>
+
+								<div
+									class="fund__faq__child-accord-q-and-a__wrapper child__accordion__wrapper"
+								>
+									<!-- *1st child-accord -->
+									<div
+										class="fund__faq__child-accord-q-and-a__container child-accordion__container"
+									>
+										<!-- (QUESTION) -->
+										<button
+											class="fund__faq__child-accord-question__button child-accordion__button"
+											id="child-accordion-button-1"
+											aria-expanded="false"
+											data-target="#child-accordion-content-1"
+										>
+											<p
+												class="fund__faq__child-accord-question child-accordion__button--text"
+											>
+												Does Questergate engage in high risk assets?
+											</p>
+
+											<span class="accordion__arrow" aria-hidden="false"></span>
+										</button>
+
+										<!-- (ANSWER) -->
+										<div
+											class="fund__faq__child__accord-answers__container child-accordion-content"
+											id="child-accordion-content-1"
+										>
+											<p
+												class="fund__faq__child__accord-answers child-accordion-content-text"
+											>
+												No. We only invest in <b>low risk</b> assets.
+											</p>
+										</div>
+									</div>
+
+									<!-- *2nd child-accord -->
+									<div
+										class="fund__faq__child-accord-q-and-a__container child-accordion__container"
+									>
+										<!-- (QUESTION) -->
+										<button
+											class="fund__faq__child-accord-question__button child-accordion__button"
+											id="child-accordion-button-2"
+											aria-expanded="false"
+											data-target="#child-accordion-content-2"
+										>
+											<p
+												class="fund__faq__child-accord-question child-accordion__button--text"
+											>
+												What type of investments does Questergate do?
+											</p>
+
+											<span class="accordion__arrow" aria-hidden="true"></span>
+										</button>
+
+										<!-- (ANSWER) -->
+										<div
+											class="fund__faq__child__accord-answers__container child-accordion-content"
+											id="child-accordion-content-2"
+										>
+											<p
+												class="fund__faq__child__accord-answers child-accordion-content-text"
+											>
+											We invest in low risk asset classes in the global financial market such as Bonds, Equities, Fixed income Assets, Money Markets, Currency Markets, Commodities, etc.
+											</p>
+										</div>
+									</div>
+
+									<!-- *3rd child-accord -->
+									<div
+										class="fund__faq__child-accord-q-and-a__container child-accordion__container"
+									>
+										<!-- (QUESTION) -->
+										<button
+											class="fund__faq__child-accord-question__button child-accordion__button"
+											id="child-accordion-button-3"
+											aria-expanded="false"
+											data-target="#child-accordion-content-3"
+										>
+											<p
+												class="fund__faq__child-accord-question child-accordion__button--text"
+											>
+												Does Questergate invest in Cryptocurrencies?
+											</p>
+
+											<span class="accordion__arrow" aria-hidden="true"></span>
+										</button>
+
+										<!-- (ANSWER) -->
+										<div
+											class="fund__faq__child__accord-answers__container child-accordion-content"
+											id="child-accordion-content-3"
+										>
+											<p
+												class="fund__faq__child__accord-answers child-accordion-content-text"
+											>
+											No. 
+											<br><br>
+											We do not invest in the Cryptocurrency market.
+											<br><br>
+											This is because we consider Cryptocurrencies to be high risk.
+											</p>
+										</div>
+									</div>
+
+									<!-- *4th child-accord -->
+									<div
+										class="fund__faq__child-accord-q-and-a__container child-accordion__container"
+									>
+										<!-- (QUESTION) -->
+										<button
+											class="fund__faq__child-accord-question__button child-accordion__button"
+											id="child-accordion-button-1"
+											aria-expanded="false"
+											data-target="#child-accordion-content-4"
+										>
+											<p
+												class="fund__faq__child-accord-question child-accordion__button--text"
+											>
+												Is my funds safe with Questergate?
+											</p>
+
+											<span class="accordion__arrow" aria-hidden="true"></span>
+										</button>
+
+										<!-- (ANSWER) -->
+										<div
+											class="fund__faq__child__accord-answers__container child-accordion-content"
+											id="child-accordion-content-4"
+										>
+											<p
+												class="fund__faq__child__accord-answers child-accordion-content-text"
+											>
+												Your funds are safe with us.
+<br><br>
+												Here are the 2 reasons why:
+												<br>
+												<ul class="child-accordion-content-text__list">
+													<li class="child-accordion-content-text__list-item">Your funds are insured against any loss.</li>
+													<li class="child-accordion-content-text__list-item">Your funds are placed in only low risk assets.</li>
+												</ul>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+							<!-- 4th-parent accord item -->
+							<!-- *PAYMENT -->
+							<div
+								class="fund__faq__parent-accordion-item parent__accordion__item__container"
+								id="parent-accordion-button-4-content"
+							>
+								<h3
+									class="fund__faq__parent__accordion-item__heading parent__accordion__item--heading"
+								>
+									Payment
+								</h3>
+								<div class="parent__accordion__item--heading--arrow"></div>
+
+								<div
+									class="fund__faq__child-accord-q-and-a__wrapper child__accordion__wrapper"
+								>
+									<!-- *1st child-accord -->
+									<div
+										class="fund__faq__child-accord-q-and-a__container child-accordion__container"
+									>
+										<!-- (QUESTION) -->
+										<button
+											class="fund__faq__child-accord-question__button child-accordion__button"
+											id="child-accordion-button-1"
+											aria-expanded="false"
+											data-target="#child-accordion-content-1"
+										>
+											<p
+												class="fund__faq__child-accord-question child-accordion__button--text"
+											>
+												How to deposit funds into your QG-Wallet
+											</p>
+
+											<span class="accordion__arrow" aria-hidden="false"></span>
+										</button>
+
+										<!-- (ANSWER) -->
+										<div
+											class="fund__faq__child__accord-answers__container child-accordion-content"
+											id="child-accordion-content-1"
+										>
+											<p
+												class="fund__faq__child__accord-answers child-accordion-content-text"
+											>
+											<iframe
+											class="investment__faq__video"
+											height="315"
+											src="https://www.youtube.com/embed/_VLZDv9Q_b0?si=yNa0tBeqiQT409T2"
+											title="YouTube video player"
+											frameborder="0"
+											allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+											allowfullscreen
+										></iframe>
+
+												<br><br>
+											<b>1st step:</b> Log-in, go to your profile and fund your QG-Wallet.
+<br><br>
+											<b>2nd step:</b> Select Deposit and follow the instructions there.
+<br><br>
+											<b>3rd step:</b> Your QG-Wallet will be credited in less than 15 minutes.
+											</p>
+										</div>
+									</div>
+
+									<!-- *2nd child-accord -->
+									<div
+										class="fund__faq__child-accord-q-and-a__container child-accordion__container"
+									>
+										<!-- (QUESTION) -->
+										<button
+											class="fund__faq__child-accord-question__button child-accordion__button"
+											id="child-accordion-button-2"
+											aria-expanded="false"
+											data-target="#child-accordion-content-2"
+										>
+											<p
+												class="fund__faq__child-accord-question child-accordion__button--text"
+											>
+												How do I know my payment has been confirmed?
+											</p>
+
+											<span class="accordion__arrow" aria-hidden="true"></span>
+										</button>
+
+										<!-- (ANSWER) -->
+										<div
+											class="fund__faq__child__accord-answers__container child-accordion-content"
+											id="child-accordion-content-2"
+										>
+											<p
+												class="fund__faq__child__accord-answers child-accordion-content-text"
+											>
+											Once you see your funds shown in your QG-Wallet, then it means your payment has been confirmed.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+
+							<!-- 5th-parent accord item -->
+							<!-- *WIDTHDRAWAL -->
+							<div
+								class="fund__faq__parent-accordion-item parent__accordion__item__container"
+								id="parent-accordion-button-5-content"
+							>
+								<h3
+									class="fund__faq__parent__accordion-item__heading parent__accordion__item--heading"
+								>
+									Withdrawal
+								</h3>
+								<div class="parent__accordion__item--heading--arrow"></div>
+
+								<div
+									class="fund__faq__child-accord-q-and-a__wrapper child__accordion__wrapper"
+								>
+									<!-- *1st child-accord -->
+									<div
+										class="fund__faq__child-accord-q-and-a__container child-accordion__container"
+									>
+										<!-- (QUESTION) -->
+										<button
+											class="fund__faq__child-accord-question__button child-accordion__button"
+											id="child-accordion-button-1"
+											aria-expanded="false"
+											data-target="#child-accordion-content-1"
+										>
+											<p
+												class="fund__faq__child-accord-question child-accordion__button--text"
+											>
+												How to withdraw your funds from your QG-wallet into your bank account.
+											</p>
+
+											<span class="accordion__arrow" aria-hidden="false"></span>
+										</button>
+
+										<!-- (ANSWER) -->
+										<div
+											class="fund__faq__child__accord-answers__container child-accordion-content"
+											id="child-accordion-content-1"
+										>
+											<p
+												class="fund__faq__child__accord-answers child-accordion-content-text"
+											>
+											<iframe
+											class="investment__faq__video"
+											height="315"
+											src="https://www.youtube.com/embed/E8CxLY-Jfsg?si=lDT5LjDE5BhWjy09"
+											title="YouTube video player"
+											frameborder="0"
+											allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+											allowfullscreen
+										></iframe>
+
+
+<br><br>
+												<b>1st step:</b> Log-in, go to your Profile, select withdrawal button.
+<br><br>
+												<b>2nd step:</b> Enter the amount you want to withdraw from your QG-Wallet and click on complete.
+<br><br>
+												And your bank account will be credited with your funds immediately.
+											</p>
+										</div>
+									</div>
+
+									<!-- *2nd child-accord -->
+									<div
+										class="fund__faq__child-accord-q-and-a__container child-accordion__container"
+									>
+										<!-- (QUESTION) -->
+										<button
+											class="fund__faq__child-accord-question__button child-accordion__button"
+											id="child-accordion-button-2"
+											aria-expanded="false"
+											data-target="#child-accordion-content-2"
+										>
+											<p
+												class="fund__faq__child-accord-question child-accordion__button--text"
+											>
+												When will the returns be paid?
+											</p>
+
+											<span class="accordion__arrow" aria-hidden="true"></span>
+										</button>
+
+										<!-- (ANSWER) -->
+										<div
+											class="fund__faq__child__accord-answers__container child-accordion-content"
+											id="child-accordion-content-2"
+										>
+											<p
+												class="fund__faq__child__accord-answers child-accordion-content-text"
+											>
+											Returns from your savings and investments are paid at the end of the plan duration.
+<br><br>
+											You will see the returns and total capital reflect in your QG-Wallet immediately the plan duration ends.
+											</p>
+										</div>
+									</div>
+
+									<!-- *3rd child-accord -->
+									<div
+										class="fund__faq__child-accord-q-and-a__container child-accordion__container"
+									>
+										<!-- (QUESTION) -->
+										<button
+											class="fund__faq__child-accord-question__button child-accordion__button"
+											id="child-accordion-button-3"
+											aria-expanded="false"
+											data-target="#child-accordion-content-3"
+										>
+											<p
+												class="fund__faq__child-accord-question child-accordion__button--text"
+											>
+												Can I withdraw funds from a QG-plan directly into my QG-wallet?
+											</p>
+
+											<span class="accordion__arrow" aria-hidden="true"></span>
+										</button>
+
+										<!-- (ANSWER) -->
+										<div
+											class="fund__faq__child__accord-answers__container child-accordion-content"
+											id="child-accordion-content-3"
+										>
+											<p
+												class="fund__faq__child__accord-answers child-accordion-content-text"
+											>
+											No.
+<br><br>
+											First, you terminate the QG-plan and the funds will be moved to your QG-wallet.
+											<br><br>
+											And then from your QG-Wallet you can transfer the funds directly into your bank account.
+											</p>
+										</div>
+									</div>
+
+									<!-- *4th child-accord -->
+									<div
+										class="fund__faq__child-accord-q-and-a__container child-accordion__container"
+									>
+										<!-- (QUESTION) -->
+										<button
+											class="fund__faq__child-accord-question__button child-accordion__button"
+											id="child-accordion-button-1"
+											aria-expanded="false"
+											data-target="#child-accordion-content-4"
+										>
+											<p
+												class="fund__faq__child-accord-question child-accordion__button--text"
+											>
+												Can I withdraw funds into a bank account with a different name?
+											</p>
+
+											<span class="accordion__arrow" aria-hidden="true"></span>
+										</button>
+
+										<!-- (ANSWER) -->
+										<div
+											class="fund__faq__child__accord-answers__container child-accordion-content"
+											id="child-accordion-content-4"
+										>
+											<p
+												class="fund__faq__child__accord-answers child-accordion-content-text"
+											>
+											No. 
+											<br>
+											To ensure security of your funds, we only allow withdrawal into a bank account that has the same name as the name on your profile.
+											</p>
+										</div>
+									</div>
+
+								</div>
+							</div>
+
+
+
+							<!-- 6th-parent accord item -->
+							<!-- *YOUR QG PROFILE -->
+							<div
+								class="fund__faq__parent-accordion-item parent__accordion__item__container"
+								id="parent-accordion-button-6-content"
+							>
+								<h3
+									class="fund__faq__parent__accordion-item__heading parent__accordion__item--heading"
+								>
+									Your QG Profile
+								</h3>
+								<div class="parent__accordion__item--heading--arrow"></div>
+
+								<div
+									class="fund__faq__child-accord-q-and-a__wrapper child__accordion__wrapper"
+								>
+									<!-- *1st child-accord -->
+									<div
+										class="fund__faq__child-accord-q-and-a__container child-accordion__container"
+									>
+										<!-- (QUESTION) -->
+										<button
+											class="fund__faq__child-accord-question__button child-accordion__button"
+											id="child-accordion-button-1"
+											aria-expanded="false"
+											data-target="#child-accordion-content-1"
+										>
+											<p
+												class="fund__faq__child-accord-question child-accordion__button--text"
+											>
+												What is QG-Wallet?
+											</p>
+
+											<span class="accordion__arrow" aria-hidden="false"></span>
+										</button>
+
+										<!-- (ANSWER) -->
+										<div
+											class="fund__faq__child__accord-answers__container child-accordion-content"
+											id="child-accordion-content-1"
+										>
+											<p
+												class="fund__faq__child__accord-answers child-accordion-content-text"
+											>
+											When you deposit money from your bank account, the money appears in your QG-Wallet.
+<br><br>
+											When your savings or investment duration is complete, your capital and returns are paid into your QG-Wallet.
+											<br><br>
+											From your QG-wallet, you can withdraw money directly into your bank account.
+											</p>
+										</div>
+									</div>
+
+									<!-- *2nd child-accord -->
+									<div
+										class="fund__faq__child-accord-q-and-a__container child-accordion__container"
+									>
+										<!-- (QUESTION) -->
+										<button
+											class="fund__faq__child-accord-question__button child-accordion__button"
+											id="child-accordion-button-2"
+											aria-expanded="false"
+											data-target="#child-accordion-content-2"
+										>
+											<p
+												class="fund__faq__child-accord-question child-accordion__button--text"
+											>
+												Why do i need to provide next of Kin information?
+											</p>
+
+											<span class="accordion__arrow" aria-hidden="true"></span>
+										</button>
+
+										<!-- (ANSWER) -->
+										<div
+											class="fund__faq__child__accord-answers__container child-accordion-content"
+											id="child-accordion-content-2"
+										>
+											<p
+												class="fund__faq__child__accord-answers child-accordion-content-text"
+											>
+											This is to ensure there is someone who can get the rights to your Funds in the case where a Saver or an Investor is incapacitated.
+											</p>
+										</div>
+									</div>
+
+									<!-- *3rd child-accord -->
+									<div
+										class="fund__faq__child-accord-q-and-a__container child-accordion__container"
+									>
+										<!-- (QUESTION) -->
+										<button
+											class="fund__faq__child-accord-question__button child-accordion__button"
+											id="child-accordion-button-3"
+											aria-expanded="false"
+											data-target="#child-accordion-content-3"
+										>
+											<p
+												class="fund__faq__child-accord-question child-accordion__button--text"
+											>
+												Can I change my bank account details?
+											</p>
+
+											<span class="accordion__arrow" aria-hidden="true"></span>
+										</button>
+
+										<!-- (ANSWER) -->
+										<div
+											class="fund__faq__child__accord-answers__container child-accordion-content"
+											id="child-accordion-content-3"
+										>
+											<p
+												class="fund__faq__child__accord-answers child-accordion-content-text"
+											>
+											Yes you can change your bank account details. 
+											
+											<br><br>
+											You can do that in your Profile under the "My bio-data" section.
+
+											<br><br>
+											<b>Note:</b> To ensure compliance with KYC standards, the name on the bank account must be the same as the name on your profile.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+
+							<!-- 7th-parent accord item -->
+							<!-- *SECURITY -->
+							<div
+								class="fund__faq__parent-accordion-item parent__accordion__item__container"
+								id="parent-accordion-button-7-content"
+							>
+								<h3
+									class="fund__faq__parent__accordion-item__heading parent__accordion__item--heading"
+								>
+									Security
+								</h3>
+								<div class="parent__accordion__item--heading--arrow"></div>
+
+								<div
+									class="fund__faq__child-accord-q-and-a__wrapper child__accordion__wrapper"
+								>
+									<!-- *1st child-accord -->
+									<div
+										class="fund__faq__child-accord-q-and-a__container child-accordion__container"
+									>
+										<!-- (QUESTION) -->
+										<button
+											class="fund__faq__child-accord-question__button child-accordion__button"
+											id="child-accordion-button-1"
+											aria-expanded="false"
+											data-target="#child-accordion-content-1"
+										>
+											<p
+												class="fund__faq__child-accord-question child-accordion__button--text"
+											>
+												Are my personal details safe with Questergate?
+											</p>
+
+											<span class="accordion__arrow" aria-hidden="false"></span>
+										</button>
+
+										<!-- (ANSWER) -->
+										<div
+											class="fund__faq__child__accord-answers__container child-accordion-content"
+											id="child-accordion-content-1"
+										>
+											<p
+												class="fund__faq__child__accord-answers child-accordion-content-text"
+											>
+											Yes. Your data is safe because we make use of the latest standards in high-level security, data encryption, and bank-grade payment security.
+											</p>
+										</div>
+									</div>
+
+									<!-- *2nd child-accord -->
+									<div
+										class="fund__faq__child-accord-q-and-a__container child-accordion__container"
+									>
+										<!-- (QUESTION) -->
+										<button
+											class="fund__faq__child-accord-question__button child-accordion__button"
+											id="child-accordion-button-2"
+											aria-expanded="false"
+											data-target="#child-accordion-content-2"
+										>
+											<p
+												class="fund__faq__child-accord-question child-accordion__button--text"
+											>
+												Are my personal details shared with a third party?
+											</p>
+
+											<span class="accordion__arrow" aria-hidden="true"></span>
+										</button>
+
+										<!-- (ANSWER) -->
+										<div
+											class="fund__faq__child__accord-answers__container child-accordion-content"
+											id="child-accordion-content-2"
+										>
+											<p
+												class="fund__faq__child__accord-answers child-accordion-content-text"
+											>
+											No. We do not share our user’s personal and financial information with any third party. <br><br>Your privacy is a major priority for us at QuesterGate.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- ---------START OF 3 STEPS TO SAVE & INVEST--------- -->
+				<section class="fund-get-started__section">
+					<div class="fund-get-started__container">
+						<div class="fund-get-started__header__container">
+							<p class="fund-get-started__header">how to get started</p>
+						</div>
+
+						<div class="fund-get-started__wrapper">
+							<div class="fund-get-started__number-steps__container">
+								<div class="fund-get-started__number-steps">1</div>
+								<div class="get-started__horizontal__line"></div>
+								<div class="fund-get-started__number-steps">2</div>
+								<div class="get-started__horizontal__line"></div>
+								<div class="fund-get-started__number-steps">3</div>
+							</div>
+
+							<div class="fund-get-started__text-steps__container">
+								<div class="fund-get-started__text-steps">
+									<h4 class="fund-get-started__text-steps-header">
+										Create an account
+									</h4>
+
+									<p class="fund-get-started__text-steps-p">
+										Simply click on the "Register" and enter some basic details.
+									</p>
+								</div>
+
+								<div class="fund-get-started__text-steps">
+									<h4 class="fund-get-started__text-steps-header">
+										Fund your account
+									</h4>
+
+									<p class="fund-get-started__text-steps-p">
+										You fund your account by adding money to your
+										<span class="sentence__no-wrap">QG-wallet</span>.
+									</p>
+								</div>
+
+								<div class="fund-get-started__text-steps">
+									<h4 class="fund-get-started__text-steps-header">
+										Save & Invest
+									</h4>
+
+									<p class="fund-get-started__text-steps-p">
+										You select a plan that suits your financial goal and
+										activate it.
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="get-started__start__now">
+							<a
+								class="get-started__start__now__link link-to-button"
+								href="#"
+								target="_self"
+								>Start now</a
+							>
+						</div>
+					</div>
+				</section>
+			</main>
+
+			<!-- -------start of FOOTER section------- -->
+			<footer class="footer">
+				<!-- footer section1 -->
+				<div class="footer__section1-container">
+					<div class="footer__section1-part1__container">
+						<!-- footer sub-section for Products -->
+						<div class="footer__products section1-item">
+							<h3 class="footer__section1__sub-heading">Products</h3>
+
+							<ul class="footer__list-text list__no-style">
+								<li>
+									<a
+										class="footer__links pad-marg-0"
+										href="../../IAS/html__ias.html"
+										>Investment Analytics Software</a
+									>
+								</li>
+
+								<li>
+									<a
+										class="footer__links pad-marg-0"
+										href="../../signalapp/html__signalapp.html"
+										>Signal App</a
+									>
+								</li>
+
+								<li>
+									<a
+										class="footer__links pad-marg-0"
+										href="../../investment/investment__homepage/html__investment.html"
+										>Fund Management</a
+									>
+								</li>
+
+								<!-- a list item MAY be appended here using js-->
+							</ul>
+						</div>
+
+						<!-- footer sub-section for Company -->
+						<div class="footer__company section1-item">
+							<h3 class="footer__section1__sub-heading">Company</h3>
+
+							<ul class="footer__list-text list__no-style">
+								<li>
+									<a
+										class="footer__links pad-marg-0"
+										href="../../about-us/html__about-us.html"
+										>About Us</a
+									>
+								</li>
+
+								<li>
+									<a
+										class="footer__links pad-marg-0"
+										href="../../blog/html__blog.html"
+										>Blog</a
+									>
+								</li>
+
+								<li>
+									<a
+										class="footer__links pad-marg-0"
+										href="../investment__faq/html__investment__faq.html"
+										>FAQ</a
+									>
+								</li>
+
+								<li>
+									<a
+										class="footer__links pad-marg-0"
+										href="../../contact/html__contact-us.html"
+										>Contact Us</a
+									>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="footer__section1-part2__container">
+						<!-- footer sub-section for Legal -->
+						<div class="footer__legal section1-item">
+							<h3 class="footer__section1__sub-heading">Legal</h3>
+
+							<ul class="footer__list-text list__no-style">
+								<li>
+									<a
+										class="footer__links pad-marg-0"
+										href="../../terms-conditions/html__terms-conditions.html"
+										>Terms & Conditions</a
+									>
+								</li>
+
+								<li>
+									<a
+										class="footer__links pad-marg-0"
+										href="../../privacy-policy/html__privacy-policy.html"
+										>Privacy Policy</a
+									>
+								</li>
+							</ul>
+						</div>
+
+						<!-- footer sub-section for Contact details -->
+						<div class="footer__contact-details section1-item">
+							<h3
+								class="footer__section1__sub-heading contact-details visible__nooo"
+							>
+								Contact Us
+							</h3>
+
+							<ul class="footer__list-text list__no-style">
+								<li class="contact-email">
+									<a class="footer__links pad-marg-0 no-hover-effect-1"
+										>contact@questergate.com</a
+									>
+								</li>
+
+								<li class="contact-phone">+234 814 447 7866</li>
+							</ul>
+
+							<div class="socials__container contact-social">
+								<a href="#" class="socials__link" target="_blank"
+									><img
+										class="socials__link-image"
+										src="../../../images/facebook-symbol--smallest.jpg"
+										alt="facebook logo"
+									/>
+								</a>
+
+								<a href="#" class="socials__link" target="_blank"
+									><img
+										class="socials__link-image"
+										src="../../../images/LinkedIn_icon_circle--smallest.jpg"
+										alt="linkedin logo"
+									/>
+								</a>
+
+								<a href="#" class="socials__link" target="_blank"
+									><img
+										class="socials__link-image"
+										src="../../../images/instagram-logo-icon-7--smallest.jpg"
+										alt="instagram logo"
+									/>
+								</a>
+
+								<a href="#" class="socials__link" target="_blank"
+									><img
+										class="socials__link-image"
+										src="../../../images/twitter-X-symbol3.jpg"
+										alt="twitter logo"
+									/>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- <hr class="hr-horizontal-line"/> -->
+				<div class="footer-horizontal-line"></div>
+
+				<div class="footer__section2-container">
+					<div class="copyright">
+						<p class="footer__other-text">
+							© <span id="current__year"></span> Questergate. All rights
+							reserved. | RC-1814438
+						</p>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+		<script src="../../js-components/back-to-top.js"></script>
+		<script src="../../js-components/append__to__header-list__investment.js"></script>
+		<!-- <script src="../../js-components/header__on-scroll.js"></script> -->
+		<script src="../../js-components/header__hamburger.js"></script>
+		<script src="../../js-components/accordion__fund-faq__parent__accordion--open-only.js"></script>
+		<script src="../../js-components/accordion__fund-faq__child__accordion.js"></script>
+		<script src="../../js-components/accordion__fund-faq__scroll-into-view.js"></script>
+
+		<script src="../../js-components/section__visible__on__scroll.js"></script>
+		<script src="../../js-components/footer__currentyear__auto.js"></script>
+		<script src="../../js-components/append__to__footer-list__investment.js"></script>
+		<script src="../../js-components/footer__remove__list-items.js"></script>
+	</body>
+</html>

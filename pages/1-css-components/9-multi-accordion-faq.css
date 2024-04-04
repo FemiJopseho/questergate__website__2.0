@@ -693,7 +693,7 @@ html {
 	overflow: hidden;
 
 	transition: max-height 700ms ease;
-	will-change: max-height;
+
 }
 
 /* /////////////// */
@@ -726,7 +726,7 @@ html {
 
 	/* controls the transition when opening-->going to this style */
 	transition: max-height 3s ease;
-	will-change: max-height;
+
 }
 
 /* /////////////// */
@@ -741,7 +741,7 @@ html {
 	overflow: hidden;
 
 	transition: max-height 700ms ease;
-	will-change: max-height;
+
 }
 
 /* /////////////// */
@@ -786,5 +786,5 @@ html {
 
 	/* controls the transition when opening-->going to this style */
 	transition: max-height 3s ease;
-	will-change: max-height;
+
 }

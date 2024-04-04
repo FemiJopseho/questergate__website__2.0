@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- --------------search engine robots & SEO-------------- -->
+		<meta name="robots" content="index, follow" />
+
+		<meta
+			name="description"
+			content="At Questergate, our mission is to help you grow your savings & investments in a safe way."
+		/>
+
+		<!-- -----------explorer compatibility---------- -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+		<meta name="theme-color" content="#0C567B" />
+
+		<!-- --------Cache control meta tag------------ -->
+		<meta http-equiv="Cache-control" content="public, max-age=7776000" />
+
+		<!-- ----------------Security---------------- -->
+		<meta http-equiv="X-Content-Type-Options" content="nosniff" />
+
+		<meta
+			http-equiv="Strict-Transport-Security"
+			content="max-age=31536000; includeSubDomains; preload"
+		/>
+
+		<meta
+			http-equiv="Content-Security-Policy"
+			content="upgrade-insecure-requests"
+		/>
+
+		<!-- -----------------CSS Resets-------------------- -->
+		<!-- Use Normalize Reset -->
+		<link rel="stylesheet" href="../../../css-resets/normalize.css" />
+
+		<!-- -----------------FONTS (loaded for a start)-------------------- -->
+
+		<style type="text/css">
+			@font-face {
+				font-display: swap;
+				font-family: "Nunito";
+				font-style: normal;
+				font-weight: 400;
+
+				src: local("Nunito"),
+					url("../../../utilities/fonts/nunito-v26-latin-regular.woff2")
+						format("woff2");
+			}
+
+			@font-face {
+				font-display: swap;
+				font-family: "Montagu Slab";
+				font-style: normal;
+				font-weight: 400;
+
+				src: local("Montagu Slab"),
+					url("../../../utilities/fonts/montagu-slab-v12-latin-regular.woff2")
+						format("woff2");
+			}
+		</style>
+
+		<!-- -------Other stylesheets, and scripts---------- -->
+
+		<link
+			rel="stylesheet"
+			href="../../1-css-components/joined-fixed-component.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="../../1-css-components/6-utility-classes.css"
+		/>
+
+		<link
+			rel="stylesheet"
+			href="../investment__multi-use__css/1-header__investment.css"
+		/>
+
+		<link rel="stylesheet" href="./investment__about-us.css" />
+		<link
+			rel="stylesheet"
+			href="../investment__multi-use__css/8-need-help.css"
+		/>
+
+		<!-- --------------JQUERY ACCESS via CDN and via Local server----------------- -->
+		<!-- <script
+			src="https://code.jquery.com/jquery-3.7.1.min.js"
+			integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+			crossorigin="anonymous"
+		></script> -->
+
+		<script src="../../js-components/jquery-3.7.1.min.js"></script>
+
+		<!-- ----------Page Title---------- -->
+		<title>About Us</title>
+
+		<!-- -------------Favicon for page--------------- -->
+		<link
+			rel="icon"
+			type="image/x-icon"
+			href="../../../images/QG__favicon__no__background-Favicon-Phone-16-10.ico"
+			id="favicon"
+		/>
+	</head>
+
+	<body>
+		<button
+			onclick="backToTop__Function()"
+			id="back-to-top"
+			class="back-to-top"
+			title="Go to top"
+		>
+			Top &#8593;
+		</button>
+
+		<div class="gen-container">
+			<header class="fund-header__section header" id="header">
+				<div class="fund-header__container">
+					<div class="fund-header__logo__container">
+						<a
+							class="fund-header__logo__link"
+							href="../investment__homepage/html__investment.html"
+						>
+							<picture class="fund-header__logo__pic">
+								<source
+									class="phone_tablet_laptop-small"
+									type="image/webp"
+									media="(max-width: 1440px)"
+									srcset="../../../images/QG_LOGO_200-43.webp"
+								/>
+
+								<source
+									class="laptop-large"
+									type="image/webp"
+									srcset="../../../images/QG_LOGO_350-76.webp"
+								/>
+
+								<!-- fallback -->
+								<img
+									class="fund-header__logo__pic-img"
+									sizes="(max-width: 1000px) 20vw, 1440px"
+									srcset="
+										../../../images/QG_LOGO_200-43.png  1440w,
+										../../../images/QG__LOGO-350-76.PNG
+									"
+									src="../../../images/QG_LOGO_350-76.png"
+									alt="questergate logo"
+									loading="lazy"
+									decoding="async"
+									fetchpriority="high"
+								/>
+							</picture>
+						</a>
+					</div>
+
+					<div class="fund-header__list__container menu" id="menu">
+						<ul class="fund-header__list">
+							<li class="fund-header__list__items">
+								<a
+									href="../investment__our--plans/html__Save__plan.html"
+									class="fund-header__list__items-link"
+									>Save</a
+								>
+							</li>
+
+							<li class="fund-header__list__items">
+								<a
+									href="../investment__our--plans/html__invest__plan.html"
+									class="fund-header__list__items-link"
+									>Invest</a
+								>
+							</li>
+
+							<li class="fund-header__list__items">
+								<a
+									href="../investment__faq/html__investment__faq.html"
+									class="fund-header__list__items-link"
+									>FAQs</a
+								>
+							</li>
+
+							<li class="fund-header__list__items">
+								<a
+									href="../investment__how--tos/html__investment__how-tos.html"
+									class="fund-header__list__items-link"
+									>How-To</a
+								>
+							</li>
+
+							<!-- <li class="fund-header__list__items">
+								<a href="#" class="fund-header__list__items-link">Blog</a>
+							</li> -->
+
+							<!-- <li class="fund-header__list__items">
+								<a href="#" class="fund-header__list__items-link">About Us</a>
+							</li> -->
+
+							<!-- *----LOGIN-STATUS AUTHENTICATION NEEDED----* -->
+
+							<!-- *Start of auth for for login or Sign out* -->
+
+							<!-- *-----------if user not logged in, show "Login In" -->
+							<li class="fund-header__list__items header__login">
+								<a
+									href="#"
+									class="fund-header__list__items-link fund-header__link-login"
+									>Log In</a
+								>
+							</li>
+
+							<!-- *-----------if user logged in, show "Sign Out" -->
+							<!-- <li class="fund-header__list__items header__login">
+            <a
+              href="#"
+              class="fund-header__list__items-link fund-header__link-login"
+              >Sign Out</a
+            >
+          </li> -->
+							<!-- *END of auth for for login or Sign out* -->
+
+							<!-- *Start of Auth for DASHBOARD or REGISTER BUTTON* -->
+
+							<!-- *-----------if user not logged in, show Register button -->
+							<li class="fund-header__list__items fund-header__register">
+								<a
+									href="#"
+									class="fund-header__list__items-link fund-header__link-register"
+									>Register</a
+								>
+							</li>
+
+							<!-- *-----------if user is logged in, show Dashboard button -->
+							<!-- <li class="fund-header__list__items fund-header__register">
+            <a
+              href="#"
+              class="fund-header__list__items-link fund-header__link-register"
+              >Dashboard</a
+            >
+          </li> -->
+							<!-- *END of Auth for DASHBOARD or REGISTER BUTTON* -->
+						</ul>
+					</div>
+
+					<div class="fund__header__burger burger" id="burger">
+						<span class="fund__header__burger-line"></span>
+						<span class="fund__header__burger-line"></span>
+						<span class="fund__header__burger-line"></span>
+						<span class="fund__header__burger-line"></span>
+					</div>
+				</div>
+			</header>
+
+			<main class="main">
+				<!-- -------START OF ABOUT-US SECTION------- -->
+				<section class="fund-about-us__details__section">
+					<div class="fund-about-us__details__container">
+						<div class="fund-about-us__details__heading__container">
+							<h2 class="fund-about-us__details__heading">our mission</h2>
+
+							<p class="fund-about-us__details__heading-text">
+								To help you grow your savings & investments in a safe way.
+							</p>
+						</div>
+
+						<div class="fund-about-us__details__content__wrapper">
+							<!-- about us details--part 1 -->
+							<div class="fund-about-us__details__content__container-1">
+								<div class="fund-about-us__details__content__img__container-1">
+									<picture class="fund-about-us__details__content__img">
+										<source
+											type="image/webp"
+											srcset="../../../images/holding__hands.webp"
+										/>
+
+										<!-- fallback -->
+										<img
+											src="../../../images/holding__hands.jpg"
+											alt="team work"
+										/>
+									</picture>
+								</div>
+
+								<div class="fund-about-us__details__content__text__container-1">
+									<!-- About who we are and our passion & mission -->
+									<h3 class="fund-about-us__details__content__text__heading">
+										Who We Are
+									</h3>
+
+									<p class="fund-about-us__details__content__text">
+										At Questergate, we're passionate about your financial
+										security.
+									</p>
+
+									<p class="fund-about-us__details__content__text">
+										We prioritize the safety of your funds above all else, and
+										we will never compromise on that principle.
+									</p>
+
+									<p class="fund-about-us__details__content__text">
+										Our mission is to help you cultivate good money habits while
+										helping you maximizing the value of your savings &amp
+										investments.
+									</p>
+								</div>
+							</div>
+
+							<!-- about us details--part 2 -->
+							<div class="fund-about-us__details__content__container-2">
+								<div class="fund-about-us__details__content__text__container-2">
+									<!-- About our Investment Technology & safety -->
+									<h3 class="fund-about-us__details__content__text__heading">
+										How we achieve fund safety
+									</h3>
+
+									<p class="fund-about-us__details__content__text">
+										At Questergate, we ensure the safety of your funds through
+										our cutting-edge investment technology.
+									</p>
+
+									<p class="fund-about-us__details__content__text">
+										Utilizing our technology, we carefully evaluate investment
+										risks, ensuring we invest only when the risk is minimal,
+										fostering utmost confidence and peace of mind.
+									</p>
+
+									<p class="fund-about-us__details__content__text">
+										So, you can rest easy knowing that your funds are always
+										secure with us.
+									</p>
+								</div>
+
+								<div class="fund-about-us__details__content__img__container-2">
+									<img
+										class="fund-about-us__details__content__img"
+										src="../../../images/upward-market-chart.svg"
+										alt="cutting-edge technology"
+									/>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- -------START OF Need Help? Section------ -->
+				<section class="plan-page__need-help__section">
+					<div class="plan-page__need-help__container">
+						<p class="plan-page__need-help__sub-header">
+							<span class="no-phrase__break">Do you have questions?</span>
+							<!-- <span class="no-phrase__break">you need help?</span> -->
+						</p>
+
+						<p class="plan-page__need-help__text">
+							Visit our
+							<a
+								class="plan-page__need-help__link hover-underline-animation"
+								href="../investment__faq/html__faq__investment.html"
+								>FAQ</a
+							>
+							page to get answers to your questions or
+							<a
+								class="plan-page__need-help__link hover-underline-animation"
+								href="../../contact/html__contact-us.html"
+								>contact us</a
+							>.
+						</p>
+					</div>
+				</section>
+			</main>
+
+			<!-- -------start of FOOTER section------- -->
+			<footer class="footer">
+				<!-- footer section1 -->
+				<div class="footer__section1-container">
+					<div class="footer__section1-part1__container">
+						<!-- footer sub-section for Products -->
+						<div class="footer__products section1-item">
+							<h3 class="footer__section1__sub-heading">Products</h3>
+
+							<ul class="footer__list-text list__no-style">
+								<li>
+									<a
+										class="footer__links pad-marg-0"
+										href="../../IAS/html__ias.html"
+										>Investment Analytics Software</a
+									>
+								</li>
+
+								<li>
+									<a
+										class="footer__links pad-marg-0"
+										href="../../signalapp/html__signalapp.html"
+										>Signal App</a
+									>
+								</li>
+
+								<li>
+									<a
+										class="footer__links pad-marg-0"
+										href="../../investment/investment__homepage/html__investment.html"
+										>Fund Management</a
+									>
+								</li>
+
+								<!-- a list item MAY be appended here using js-->
+							</ul>
+						</div>
+
+						<!-- footer sub-section for Company -->
+						<div class="footer__company section1-item">
+							<h3 class="footer__section1__sub-heading">Company</h3>
+
+							<ul class="footer__list-text list__no-style">
+								<li>
+									<a
+										class="footer__links pad-marg-0"
+										href="../../about-us/html__about-us.html"
+										>About Us</a
+									>
+								</li>
+
+								<li>
+									<a
+										class="footer__links pad-marg-0"
+										href="../../blog/html__blog.html"
+										>Blog</a
+									>
+								</li>
+
+								<li>
+									<a
+										class="footer__links pad-marg-0"
+										href="../investment__faq/html__investment__faq.html"
+										>FAQs</a
+									>
+								</li>
+
+								<li>
+									<a
+										class="footer__links pad-marg-0"
+										href="../../contact/html__contact-us.html"
+										>Contact Us</a
+									>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="footer__section1-part2__container">
+						<!-- footer sub-section for Legal -->
+						<div class="footer__legal section1-item">
+							<h3 class="footer__section1__sub-heading">Legal</h3>
+
+							<ul class="footer__list-text list__no-style">
+								<li>
+									<a
+										class="footer__links pad-marg-0"
+										href="../../terms-conditions/html__terms-conditions.html"
+										>Terms & Conditions</a
+									>
+								</li>
+
+								<li>
+									<a
+										class="footer__links pad-marg-0"
+										href="../../privacy-policy/html__privacy-policy.html"
+										>Privacy Policy</a
+									>
+								</li>
+							</ul>
+						</div>
+
+						<!-- footer sub-section for Contact details -->
+						<div class="footer__contact-details section1-item">
+							<h3
+								class="footer__section1__sub-heading contact-details visible__nooo"
+							>
+								Contact Us
+							</h3>
+
+							<ul class="footer__list-text list__no-style">
+								<li class="contact-email">
+									<a class="footer__links pad-marg-0 no-hover-effect-1"
+										>contact@questergate.com</a
+									>
+								</li>
+
+								<li class="contact-phone">+234 814 447 7866</li>
+							</ul>
+
+							<div class="socials__container contact-social">
+								<a href="#" class="socials__link" target="_blank"
+									><img
+										class="socials__link-image"
+										src="../../../images/facebook-symbol--smallest.jpg"
+										alt="facebook logo"
+									/>
+								</a>
+
+								<a href="#" class="socials__link" target="_blank"
+									><img
+										class="socials__link-image"
+										src="../../../images/LinkedIn_icon_circle--smallest.jpg"
+										alt="linkedin logo"
+									/>
+								</a>
+
+								<a href="#" class="socials__link" target="_blank"
+									><img
+										class="socials__link-image"
+										src="../../../images/instagram-logo-icon-7--smallest.jpg"
+										alt="instagram logo"
+									/>
+								</a>
+
+								<a href="#" class="socials__link" target="_blank"
+									><img
+										class="socials__link-image"
+										src="../../../images/twitter-X-symbol3.jpg"
+										alt="twitter logo"
+									/>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- <hr class="hr-horizontal-line"/> -->
+				<div class="footer-horizontal-line"></div>
+
+				<div class="footer__section2-container">
+					<div class="copyright">
+						<p class="footer__other-text">
+							© <span id="current__year"></span> Questergate. All rights
+							reserved. | RC-1814438
+						</p>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+		<script src="../../js-components/back-to-top.js"></script>
+		<script src="../../js-components/append__to__header-list__investment.js"></script>
+		<script src="../../js-components/header__on-scroll.js"></script>
+		<script src="../../js-components/header__hamburger.js"></script>
+
+		<script src="../../js-components/section__visible__on__scroll.js"></script>
+		<script src="../../js-components/footer__currentyear__auto.js"></script>
+		<script src="../../js-components/append__to__footer-list__investment.js"></script>
+		<script src="../../js-components/footer__remove__list-items.js"></script>
+	</body>
+</html>

@@ -43,12 +43,14 @@
     box-shadow: var(--gen-shadow-header);
 
     position: fixed;
-    padding-top: 0;
-    padding-bottom: 0;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
     z-index: 100;
 
     width: 100%;
     margin: 0 auto;
+    /* transition: all 1s ease-in-out; */
+    transition: none;
   }
 
   .fund-header__container {
@@ -109,7 +111,7 @@
 
     display: block;
     position: fixed;
-    top: -150%;
+    top: -700%;
     left: 0;
     z-index: 10;
     width: 100%;
@@ -383,7 +385,7 @@
     color: var(--clr-primary-800);
     background-color: var(--clr-pure-white);
 
-    transition: all 1s ease;
+    transition: all 1s ease-in-out;
     /* transition: none; */
 
 
@@ -404,8 +406,8 @@
     width: 100%;
     max-width: 2000px;
     margin: 0 auto;
-    padding-top: 0;
-    padding-bottom: 0;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
 
     background: var(--clr-header-bckgrd);
     box-shadow: var(--gen-shadow-header);
@@ -416,7 +418,7 @@
     transform: translateX(-50%);
     z-index: 100;
 
-    /* transition: none; */
+    transition: none;
 
     /* /////////// */
     .fund__header__burger {

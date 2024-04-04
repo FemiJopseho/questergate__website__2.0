@@ -9,16 +9,16 @@
 
 		<meta
 			name="description"
-			content="Learn how to use Questergate investment plans."
+			content="Grow your wealth with our investment plan."
 		/>
 
 		<!-- -----------explorer compatibility---------- -->
-		<meta http-equiv="X-UA-Compatible" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
 		<meta name="theme-color" content="#0C567B" />
 
 		<!-- --------Cache control meta tag------------ -->
-		<meta http-equiv="Cache-control" content="public" max-age="7776000" />
+		<meta http-equiv="Cache-control" content="public, max-age=7776000" />
 
 		<!-- ----------------Security---------------- -->
 		<meta http-equiv="X-Content-Type-Options" content="nosniff" />
@@ -86,13 +86,10 @@
 			rel="stylesheet"
 			href="../investment__multi-use__css/5-calculators.css"
 		/>
-		<link
-			rel="stylesheet"
-			href="../investment__multi-use__css/9-investment__heading__for__pages.css"
-		/>
+		<link rel="stylesheet" href="./invest__mini-hero__QG-6.css" />
 
-		<link rel="stylesheet" href="./savings__invest__plan__about-plan.css" />
-		<link rel="stylesheet" href="./savings__invest__banner.css" />
+		<link rel="stylesheet" href="./invest__plan__about-plan.css" />
+		<link rel="stylesheet" href="./invest__banner.css" />
 		<link
 			rel="stylesheet"
 			href="../investment__multi-use__css/8-need-help.css"
@@ -108,7 +105,7 @@
 		<script src="../../js-components/jquery-3.7.1.min.js"></script>
 
 		<!-- ----------Page Title---------- -->
-		<title>Questergate Investment Plan</title>
+		<title>QG-6 Investment plan</title>
 
 		<!-- -------------Favicon for page--------------- -->
 		<link
@@ -173,25 +170,17 @@
 						<ul class="fund-header__list">
 							<li class="fund-header__list__items">
 								<a
-									href="../investment__our--plans/html__Save__plan.html"
+									href="../investment__our--plans/html__invest__QG-12__plan.html"
 									class="fund-header__list__items-link"
-									>Save</a
+									>QG-12</a
 								>
 							</li>
 
-							<!-- <li class="fund-header__list__items">
-								<a
-									href="../investment__our--plans/html__invest__plan.html"
-									class="fund-header__list__items-link"
-									>Invest</a
-								>
-							</li> -->
-
 							<li class="fund-header__list__items">
 								<a
-									href="../investment__faq/html__investment__faq.html"
+									href="../investment__about--us/html__investment__about-us.html"
 									class="fund-header__list__items-link"
-									>Faq</a
+									>About Us</a
 								>
 							</li>
 
@@ -204,12 +193,16 @@
 							</li>
 
 							<!-- <li class="fund-header__list__items">
-            <a href="#" class="fund-header__list__items-link">Blog</a>
-          </li> -->
+								<a href="#" class="fund-header__list__items-link">Blog</a>
+							</li> -->
 
 							<!-- <li class="fund-header__list__items">
-            <a href="#" class="fund-header__list__items-link">About Us</a>
-          </li> -->
+								<a
+									href="../investment__about--us/html__investment__about-us.html"
+									class="fund-header__list__items-link"
+									>About Us</a
+								>
+							</li> -->
 
 							<!-- *----LOGIN-STATUS AUTHENTICATION NEEDED----* -->
 
@@ -271,120 +264,153 @@
 				<section class="fund-our-plans__banner__section">
 					<div class="fund-our-plans__banner__container">
 						<div class="fund-our-plans__banner__image__container">
-							<img
-								class="fund-our-plans__banner__image__mobile"
-								alt="lady sitting down relaxed"
-								loading="lazy"
-							/>
+							<picture class="fund-our-plans__banner__pic">
+								<source
+									class="phone-small"
+									type="image/webp"
+									media="(max-width: 350px)"
+									srcset="
+										../../../images/banner__2__ladysit__landscape-Phone-small-350-117.webp
+									"
+								/>
 
-							<img
-								class="fund-our-plans__banner__image__tablet-land"
-								alt="lady sitting down relaxed"
-								loading="lazy"
-							/>
+								<source
+									class="phone-large"
+									type="image/webp"
+									media="(max-width: 500px)"
+									srcset="
+										../../../images/banner__2__ladysit__landscape-Phone-large-500-167.webp
+									"
+								/>
 
-							<img
-								class="fund-our-plans__banner__image__desktop"
-								alt="lady sitting down relaxed"
-								loading="lazy"
-							/>
+								<source
+									class="tablet-portrait"
+									type="image/webp"
+									media="(max-width: 650px)"
+									srcset="
+										../../../images/banner__2__ladysit__landscape-Tablet-potrait-650-217.webp
+									"
+								/>
 
-							<script src="../../js-components/investment__our-plans-banner-img__insertion.js"></script>
+								<source
+									class="tablet-landscape"
+									type="image/webp"
+									media="(max-width: 875px)"
+									srcset="
+										../../../images/banner__2__ladysit__landscape-Tablet-land-875-292.webp
+									"
+								/>
+
+								<source
+									class="laptop-small"
+									type="image/webp"
+									media="(max-width: 1000px)"
+									srcset="
+										../../../images/banner__2__ladysit__landscape-Laptop-small-1000-333.webp
+									"
+								/>
+
+								<source
+									class="laptop-large"
+									type="image/webp"
+									srcset="
+										../../../images/banner__2__ladysit__landscape-Laptop-Large-1440-480.webp
+									"
+								/>
+
+								<!-- fallback -->
+								<img
+									class="fund-our-plans__banner__pic-img"
+									sizes="(max-width: 350px) 100vw, (max-width: 500px) 100vw, (max-width: 650px) 100vw, (max-width: 875px) 100vw, (max-width: 1000px) 100vw, 1440px"
+									srcset="
+										../../../images/banner__2__ladysit__landscape-Phone-small-350-117.jpg     350w,
+										../../../images/banner__2__ladysit__landscape-Phone-large-500-167.jpg     500w,
+										../../../images/banner__2__ladysit__landscape-Tablet-potrait-650-217.jpg  650w,
+										../../../images/banner__2__ladysit__landscape-Tablet-land-875-292.jpg     875w,
+										../../../images/banner__2__ladysit__landscape-Laptop-small-1000-333.jpg  1000w,
+										../../../images/banner__2__ladysit__landscape-Laptop-Large-1440-480.jpg  1440w
+									"
+									src="../../../images/banner__2__ladysit__landscape-Tablet-land-875-292.jpg"
+									loading="lazy"
+									decoding="async"
+									fetchpriority="high"
+								/>
+							</picture>
 						</div>
 					</div>
 				</section>
 
-				<!-- -------START OF Our Plans Header section------- -->
-				<section class="fund__heading-for-pages__section hidden">
-					<div class="fund__heading-for-pages__container">
-						<p class="fund__heading-for-pages__content-title">
-							Our Investment Plan
-						</p>
+				<!-- -------START OF Mini-Hero section------- -->
+				<section class="fund__mini-hero__section hidden">
+					<div class="fund__mini-hero__container">
+						<div class="fund__mini-hero__title__container">
+							<p class="fund__mini-hero__title">QG-6 Plan</p>
+						</div>
 
-						<p class="fund__heading-for-pages__content-subtitle">
-							Get access to the best interest on your investment with our highly
-							vetted investment plan.
+						<div class="fund__mini-hero__subtitle__container">
+							<p class="fund__mini-hero__subtitle">
+								Short term investment with great returns
+							</p>
+						</div>
+
+						<p class="fund__mini-hero__subtitle__extra-text">
+							Set aside funds to meet your short term financial goals. Earn up
+							to 17% in 6 months.
 						</p>
 					</div>
 				</section>
 
-				<!-- -------START OF ABOUT OUR INVESTMENT PLAN Section------ -->
+				<!-- -------START OF ABOUT QG-6 PLAN Section------ -->
 				<section class="about-plan__sav-inv__section">
 					<div class="about-plan__sav-inv__container">
-						<div class="about-plan__sav-inv__types">
-							<!-- *Fixed-investment plan -->
-							<div class="about-plan__sav-inv__features">
-								<h4 class="about-plan__sav-inv__features-header">
-									fixed QG-12 plan
-								</h4>
+						<!-- *QG-6 Plan -->
+						<div class="about-plan__sav-inv__features">
+							<ul class="about-plan__sav-inv__features-list">
+								<li class="about-plan__sav-inv__features-items">
+									<!-- <span class="about-plan__sav-inv__features-items-mark"
+										>✔</span
+									> -->
 
-								<ul class="about-plan__sav-inv__features-list">
-									<li class="about-plan__sav-inv__features-items">
-										<span class="about-plan__sav-inv__features-items-mark"
-											>✔</span
-										>
-
-										<span class="about-plan__sav-inv__features-items-text"
-											>Interest: 35% in 12 months.</span
-										>
-									</li>
-
-									<li class="about-plan__sav-inv__features-items">
-										<span class="about-plan__sav-inv__features-items-mark"
-											>✔</span
-										>
-
-										<span class="about-plan__sav-inv__features-items-text"
-											>Minimum capital: ₦100,000.</span
-										>
-									</li>
-
-									<li class="about-plan__sav-inv__features-items">
-										<span class="about-plan__sav-inv__features-items-mark"
-											>✔</span
-										>
-
-										<span class="about-plan__sav-inv__features-items-text"
-											>Maximum capital: ₦25,000,000.</span
-										>
-									</li>
-
-									<li class="about-plan__sav-inv__features-items">
-										<span class="about-plan__sav-inv__features-items-mark"
-											>✔</span
-										>
-
-										<span class="about-plan__sav-inv__features-items-text"
-											>Investment duration: 12 months.</span
-										>
-									</li>
-
-									<li class="about-plan__sav-inv__features-items">
-										<span class="about-plan__sav-inv__features-items-mark"
-											>✔</span
-										>
-
-										<span class="about-plan__sav-inv__features-items-text"
-											>Withdraw from your capital at any time.</span
-										>
-									</li>
-
-									<li class="about-plan__sav-inv__features-items">
-										<span class="about-plan__sav-inv__features-items-mark"
-											>✔</span
-										>
-
-										<span class="about-plan__sav-inv__features-items-text"
-											>Terminate investment at any time.</span
-										>
-									</li>
-								</ul>
-
-								<div class="about-plan__cta__container">
-									<a class="about-plan__cta__link" href="" target="_self"
-										>Start earning your interest Now</a
+									<span class="about-plan__sav-inv__features-items-text"
+										>Interest: 17% in 6 months.</span
 									>
-								</div>
+								</li>
+
+								<li class="about-plan__sav-inv__features-items">
+									<!-- <span class="about-plan__sav-inv__features-items-mark"
+										>✔</span
+									> -->
+
+									<span class="about-plan__sav-inv__features-items-text"
+										>Minimum capital: ₦100,000.</span
+									>
+								</li>
+
+								<li class="about-plan__sav-inv__features-items">
+									<!-- <span class="about-plan__sav-inv__features-items-mark"
+										>✔</span
+									> -->
+
+									<span class="about-plan__sav-inv__features-items-text"
+										>Investment duration: 6 months.</span
+									>
+								</li>
+
+								<li class="about-plan__sav-inv__features-items">
+									<!-- <span class="about-plan__sav-inv__features-items-mark"
+										>✔</span
+									> -->
+
+									<span class="about-plan__sav-inv__features-items-text"
+										>Terminate investment at any time.</span
+									>
+								</li>
+							</ul>
+
+							<div class="about-plan__cta__container">
+								<a class="about-plan__cta__link" href="" target="_self"
+									>Invest now to secure your funds</a
+								>
 							</div>
 						</div>
 					</div>
@@ -395,7 +421,7 @@
 				<section class="fund-calc__section">
 					<div class="fund-calc__container">
 						<div class="savings__investment__calc__wrapper">
-							<p class="fund-calc__title">investment calculator</p>
+							<!-- <p class="fund-calc__title">Investment Calculator</p> -->
 
 							<!-- *calculator for investment plans -->
 							<div
@@ -408,12 +434,13 @@
 									data-target="#calc-accordion-button-2-content"
 								>
 									<div class="fund-calc__accordion__button--head">
-										calculate your interest for investment plan
+										calculate your Investment interest
 									</div>
 
 									<div class="fund-calc__accordion__button--arrow"></div>
 								</button>
 
+								<!-- calculator form & result -->
 								<div
 									class="investment__calc__container"
 									id="calc-accordion-button-2-content"
@@ -455,7 +482,9 @@
 													choose a plan
 												</option>
 
-												<option value="qg__12">QG-12 (35% per annum)</option>
+												<option value="qg__6">QG-6 (17% in 6 months)</option>
+
+												<option value="qg__12">QG-12 (45% per annum)</option>
 											</select>
 
 											<button
@@ -478,37 +507,79 @@
 											calculator result:
 										</p>
 
-										<div
-											class="invest__result__roi--naira__wrapper calc__result__wrapper"
-										>
-											<div class="invest__result__roi--percent">ROI (%)</div>
+										<!-- calc__result basic info -->
+										<div class="investment__calc__result__basic-info">
+											<!-- duration -->
+											<div class="calc__result__wrapper">
+												<div class="investment__duration__result">
+													Duration:
+												</div>
 
-											<div class="invest__result__roi--percent__value">
-												₦ 0.00
+												<div class="investment__duration__result__value">
+													YYY
+												</div>
+											</div>
+
+											<div class="horizontal_line__calc__result"></div>
+
+											<!-- ROI for the plan -->
+											<div class="calc__result__wrapper">
+												<div class="investment__result__roi-for-plan">
+													Interest:
+												</div>
+
+												<div class="investment__result__roi--perday__value">
+													XYZ %
+												</div>
+											</div>
+
+											<div class="horizontal_line__calc__result"></div>
+
+											<div class="client__roi-capital"></div>
+
+											<!-- Capital/Amount Invested (₦) -->
+											<div
+												class="investment__result__roi--naira__wrapper calc__result__wrapper"
+											>
+												<div class="investment__result__roi--percent">
+													Your Capital:
+												</div>
+
+												<div class="investment__result__roi--percent__value">
+													₦ 0.00
+												</div>
+											</div>
+
+											<div class="horizontal_line__calc__result"></div>
+
+											<!-- ROI (₦) -->
+											<div class="calc__result__wrapper">
+												<div class="invest__result__roi--naira">
+													Your Interest:
+												</div>
+
+												<div class="invest__result__roi--naira__value">
+													₦ 0.00
+												</div>
+											</div>
+
+											<div class="horizontal_line__calc__result"></div>
+										</div>
+
+										<!-- Text about what you will earn -->
+										<div class="calc__result__wrapper">
+											<div class="invest__result__text">
+												At the end of this plan, you will get:
 											</div>
 										</div>
 
-										<div class="horizontal_line__calc__result"></div>
-
-										<div
-											class="invest__result__roi--naira__wrapper calc__result__wrapper"
-										>
-											<div class="invest__result__roi--naira">ROI (₦)</div>
-											<div class="invest__result__roi--naira__value">
-												₦ 0.00
-											</div>
-										</div>
-
-										<div class="horizontal_line__calc__result"></div>
-
-										<div
-											class="invest__result__roi--percent-naira__wrapper calc__result__wrapper"
-										>
-											<div class="invest__result__roi--percent-naira">
-												ROI + Capital
+										<!-- ROI + Capital -->
+										<div class="calc__result__wrapper">
+											<div class="client__total-amount__at__end">
+												Your Interest + Capital =
 											</div>
 
-											<div class="invest__result__roi--percent-naira__value">
+											<div class="client__total-amount__at__end__value">
 												₦ 0.00
 											</div>
 										</div>
@@ -554,14 +625,13 @@
 									</h4>
 
 									<p class="fund-get-started__text-steps-p">
-										You fund your account by adding money to your QG-wallet.
+										You fund your account by depositing Funds into your
+										<span class="sentence__no-wrap">QG-wallet</span>.
 									</p>
 								</div>
 
 								<div class="fund-get-started__text-steps">
-									<h4 class="fund-get-started__text-steps-header">
-										Save & Invest
-									</h4>
+									<h4 class="fund-get-started__text-steps-header">Invest</h4>
 
 									<p class="fund-get-started__text-steps-p">
 										You select a plan that suits your financial goal and
@@ -594,13 +664,15 @@
 							Visit our
 							<a
 								class="plan-page__need-help__link hover-underline-animation"
-								href="../investment__faq/html__faq__investment.html"
+								href="../investment__faq/html__investment__faq.html"
 								>FAQ</a
 							>
+
 							page to get answers to your questions or
+
 							<a
 								class="plan-page__need-help__link hover-underline-animation"
-								href="../../contact/html__contact-us.html"
+								href="../investment__contact/investment__contact.html"
 								>contact us</a
 							>.
 						</p>
@@ -637,7 +709,7 @@
 								<li>
 									<a
 										class="footer__links pad-marg-0"
-										href="../../investment/investment__homepage/html__investment.html"
+										href="../investment__homepage/html__investment.html"
 										>Fund Management</a
 									>
 								</li>
@@ -654,7 +726,7 @@
 								<li>
 									<a
 										class="footer__links pad-marg-0"
-										href="../../about-us/html__about-us.html"
+										href="../investment__about--us/html__investment__about-us.html"
 										>About Us</a
 									>
 								</li>
@@ -671,14 +743,14 @@
 									<a
 										class="footer__links pad-marg-0"
 										href="../investment__faq/html__investment__faq.html"
-										>FAQ</a
+										>FAQs</a
 									>
 								</li>
 
 								<li>
 									<a
 										class="footer__links pad-marg-0"
-										href="../../contact/html__contact-us.html"
+										href="../investment__contact/investment__contact.html"
 										>Contact Us</a
 									>
 								</li>
@@ -729,14 +801,16 @@
 							</ul>
 
 							<div class="socials__container contact-social">
-								<a href="#" class="socials__link" target="_blank"
+								<!-- facebook -->
+								<!-- <a href="#" class="socials__link" target="_blank"
 									><img
 										class="socials__link-image"
 										src="../../../images/facebook-symbol--smallest.jpg"
 										alt="facebook logo"
 									/>
-								</a>
+								</a> -->
 
+								<!-- linkedin -->
 								<a href="#" class="socials__link" target="_blank"
 									><img
 										class="socials__link-image"
@@ -745,6 +819,7 @@
 									/>
 								</a>
 
+								<!-- instagram -->
 								<a href="#" class="socials__link" target="_blank"
 									><img
 										class="socials__link-image"
@@ -753,13 +828,14 @@
 									/>
 								</a>
 
-								<a href="#" class="socials__link" target="_blank"
+								<!-- X -->
+								<!-- <a href="#" class="socials__link" target="_blank"
 									><img
 										class="socials__link-image"
 										src="../../../images/twitter-X-symbol3.jpg"
 										alt="twitter logo"
 									/>
-								</a>
+								</a> -->
 							</div>
 						</div>
 					</div>
@@ -785,7 +861,7 @@
 		<script src="../../js-components/header__hamburger.js"></script>
 		<script src="../../js-components/fund__calc__accordion.js"></script>
 		<script src="../../js-components/fund__calc__accordion__smooth__scroll__into__view.js"></script>
-		<script src="../../js-components/investment__calc__form__validation.js"></script>
+		<script src="../../js-components/savings__calc__form__validation.js"></script>
 		<script src="../../js-components/section__visible__on__scroll.js"></script>
 		<script src="../../js-components/footer__currentyear__auto.js"></script>
 		<script src="../../js-components/append__to__footer-list__investment.js"></script>

@@ -8,8 +8,8 @@ window.onscroll = function () {
 
 function scrollFunction() {
 	if (
-		document.body.scrollTop > 100 ||
-		document.documentElement.scrollTop > 100
+		document.body.scrollTop > 600 ||
+		document.documentElement.scrollTop > 600
 	) {
 		mybutton.style.opacity = "1";
 		mybutton.style.pointerEvents = "auto"; // Allow clicks on the button

@@ -1,0 +1,328 @@
+/* this css styles the general accordion behaviour for accordion__template__1 html & js */
+
+
+
+
+/** Mobile view */
+/* max-width: 500px */
+@media screen and (width <=31.25em) {
+
+  /** style always visible part of calc accordion */
+  .accordion__button__container {
+    /* outline: 2px solid rosybrown; */
+
+    width: 100%;
+
+    /* //////////////////// */
+    .accordion__button {
+      /* outline: 2px solid lime; */
+
+      width: 100%;
+      max-width: var(--width__900px);
+      margin: 0 auto;
+      padding: 0.5rem 1rem;
+      color: var(--clr-neutral-white-2);
+      text-align: center;
+      text-transform: capitalize;
+      cursor: pointer;
+
+      font-family: var(--ff-btn);
+      font-size: var(--fs-800);
+      font-weight: var(--fw-semi-bold);
+
+      background-color: var(--clr-primary-100);
+      background-image: linear-gradient(45deg,
+          var(--clr-primary-100),
+          var(--clr-primary-100),
+          var(--clr-primary-100),
+          var(--clr-primary-650));
+      border-radius: 12px;
+      border: none;
+
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center;
+
+      position: relative;
+
+      /* /////////////// */
+      &:hover {
+        filter: brightness(115%);
+        transform: translateY(-2px);
+      }
+    }
+
+    /* //////////////// */
+    .accordion__button--text {
+      /* outline: 2px solid rosybrown; */
+
+      margin-right: 4rem;
+    }
+
+    /* //////////// */
+    /* media for .accordion__button__text */
+    @media screen and (width > 410px) and (width < 436px) {
+      .accordion__button--text {
+        /* outline: 2px solid rosybrown; */
+
+        white-space: nowrap;
+      }
+    }
+
+    /* ////////////////// */
+    .accordion__button--arrow {
+      height: 15px;
+      width: 15px;
+      border: 3px solid var(--clr-neutral-white-2);
+      border-left: none;
+      border-top: none;
+
+      position: absolute;
+      top: 50%;
+      right: 20%;
+      transform: translate(-50%, -50%);
+      rotate: 45deg;
+
+      transition: all 200ms ease;
+
+      /* ////////////// */
+      /* media for .accordion__button--arrow */
+      @media screen and (width > 200px) and (width < 500px) {
+        right: 10%;
+      }
+    }
+  }
+}
+
+/*        */
+/*        */
+/*        */
+/*        */
+/*        */
+
+/* Mobile landscape & Tablet screens */
+/* (min-width > 500px ) & (max-width <= 875px) */
+@media screen and (width > 31.25em) and (width <=54.69em) {
+
+  /** style always visible part of calc accordion */
+  .accordion__button__container {
+    width: 100%;
+
+    /* //////////////////// */
+    .accordion__button {
+
+      width: 100%;
+      max-width: var(--width__900px);
+      margin: 0 auto;
+      padding: 1rem;
+      color: var(--clr-neutral-white-2);
+      text-align: center;
+      text-transform: capitalize;
+      cursor: pointer;
+
+      font-family: var(--ff-btn);
+      font-size: var(--fs-800);
+      font-weight: var(--fw-bold);
+
+      background-color: var(--clr-primary-100);
+      background-image: linear-gradient(45deg,
+          var(--clr-primary-100),
+          var(--clr-primary-100),
+          var(--clr-primary-100),
+          var(--clr-primary-650));
+      border-radius: 12px;
+      border: none;
+
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center;
+
+      position: relative;
+
+      /* /////////////// */
+      &:hover {
+        filter: brightness(115%);
+        transform: translateY(-2px);
+      }
+
+    }
+
+    /* //////////////// */
+    .accordion__button--text {
+      /* outline: 2px solid rosybrown; */
+
+      margin-right: 4rem;
+    }
+
+    /* ////////////////// */
+    .accordion__button--arrow {
+      height: 15px;
+      width: 15px;
+      border: 3px solid var(--clr-neutral-white-2);
+      border-left: none;
+      border-top: none;
+
+      position: absolute;
+      top: 50%;
+      right: 20%;
+      transform: translate(-50%, -50%);
+      rotate: 45deg;
+
+      transition: all 200ms ease;
+
+      /* ////////////// */
+      /* media for .accordion__button--arrow */
+      @media screen and (width > 500px) and (width < 600px) {
+        right: 10%;
+      }
+
+      /* ////////////// */
+      /* media for .accordion__button--arrow */
+      @media screen and (width > 600px) and (width < 700px) {
+        right: 15%;
+      }
+
+    }
+  }
+}
+
+/*        */
+/*        */
+/*        */
+/*        */
+/*        */
+
+/** Screens > 875px */
+@media screen and (width > 54.69em) {
+
+  /** style ALWAYS visible part of accordion */
+  .accordion__button__container {
+    width: 100%;
+
+    /* //////////////////// */
+    .accordion__button {
+      /* outline: 2px solid tomato; */
+
+      width: 100%;
+      max-width: var(--width__900px);
+      margin: 0 auto;
+      padding: 1rem;
+      color: var(--clr-neutral-white-2);
+      text-align: center;
+      text-transform: capitalize;
+      cursor: pointer;
+
+      font-family: var(--ff-btn);
+      font-size: var(--fs-700);
+      font-weight: var(--fw-bold);
+
+      background-color: var(--clr-primary-100);
+      background-image: linear-gradient(45deg,
+          var(--clr-primary-100),
+          var(--clr-primary-100),
+          var(--clr-primary-100),
+          var(--clr-primary-650));
+      border-radius: 12px;
+      border: none;
+
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center;
+
+      position: relative;
+
+      /* /////////////// */
+      &:hover {
+        filter: brightness(115%);
+        transform: translateY(-2px);
+      }
+    }
+
+    /* //////////////// */
+    .accordion__button--text {
+      /* outline: 2px solid rosybrown; */
+
+      margin-right: 4rem;
+    }
+
+    /* ////////////////// */
+    .accordion__button--arrow {
+      height: 15px;
+      width: 15px;
+      border: 3px solid var(--clr-neutral-white-2);
+      border-left: none;
+      border-top: none;
+
+      position: absolute;
+      top: 50%;
+      right: 20%;
+      transform: translate(-50%, -50%);
+      rotate: 45deg;
+
+      transition: all 200ms ease;
+    }
+  }
+}
+
+
+
+/* ///////////////////////// */
+/** WHEN CLOSED */
+/* ///////////////////////// */
+/* makes the height of the accordion Item to be 0 so it is not visible */
+.accordion__item {
+  outline: 2px dashed violet;
+
+  /* when button accordion is closed */
+  max-height: 0;
+
+  /* keeps the content from showing beneath the accordion-item when closed */
+  overflow: hidden;
+
+  /* controls the transition when closing-->going to this style */
+  transition: max-height 700ms ease;
+  will-change: max-height;
+}
+
+/* /////////////////////// */
+/** WHEN OPEN */
+/* ///////////////////// */
+/* changes the height of the accordion Item from 0 so it is visible */
+.accordion__button__container button[aria-expanded="true"]~.accordion__item {
+  /* outline: 2px dashed red; */
+
+  max-height: 50rem;
+
+  transition: max-height 2.5s ease;
+  will-change: max-height;
+}
+
+/* style the button when it is open */
+.accordion__button__container button[aria-expanded="true"] {
+  background-color: var(--clr-primary-200);
+  background-image: linear-gradient(45deg,
+      var(--clr-primary-200),
+      var(--clr-primary-200),
+      var(--clr-primary-200),
+      var(--clr-primary-650));
+}
+
+/* style the button arrow when button is open */
+.accordion__button__container button[aria-expanded="true"] .accordion__button__arrow {
+  height: 15px;
+  width: 15px;
+  border: 3px solid var(--clr-neutral-white-2);
+  border-right: none;
+  border-bottom: none;
+
+  position: absolute;
+  top: 65%;
+  transform: translate(-50%, -50%);
+  rotate: 45deg;
+}
