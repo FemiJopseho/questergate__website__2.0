@@ -77,7 +77,7 @@
     font-size: var(--fs-700);
     line-height: 1.5;
     letter-spacing: normal;
-    text-transform: capitalize;
+    text-transform: none;
     text-align: center;
     color: var(--clr-primary-650);
 
@@ -235,7 +235,7 @@
     font-size: var(--fs-600);
     line-height: 1.5;
     letter-spacing: normal;
-    text-transform: capitalize;
+    text-transform: none;
     text-align: center;
     color: var(--clr-primary-650);
   }
@@ -344,7 +344,6 @@
     margin-bottom: 5rem;
   }
 
-
   .training__cta__section {
     /* outline: 4px solid gold; */
 
@@ -385,7 +384,7 @@
     font-size: var(--fs-600);
     line-height: 1.5;
     letter-spacing: normal;
-    text-transform: capitalize;
+    text-transform: none;
     text-align: center;
     color: var(--clr-primary-650);
   }

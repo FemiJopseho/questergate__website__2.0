@@ -1,4 +1,4 @@
-// this js makes CTA_-1 open up the accordion of cta--accordion and dropdown the form
+// this code makes CTA-1 to expand the form CTA-3 when CTA-1 is clicked
 
 document.addEventListener("DOMContentLoaded", function () {
 	const button1 = document.getElementById("training__cta__1__button-id");
@@ -10,7 +10,8 @@ document.addEventListener("DOMContentLoaded", function () {
 	);
 
 	button1.addEventListener("click", function () {
-		button1.setAttribute("aria-expanded", "true"); // Setting aria-expanded of button1 to true
+		button1.setAttribute("aria-expanded", "true");
+		// Setting aria-expanded of button1 to true
 		if (button1.getAttribute("aria-expanded") === "true") {
 			expandAccordion();
 		}

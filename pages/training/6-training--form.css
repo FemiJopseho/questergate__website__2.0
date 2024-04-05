@@ -220,6 +220,8 @@
   .training-form__after-submit__container {
     /* outline: 2px dashed pink; */
 
+    width: 90%;
+    max-width: 400px;
     padding: 2rem 0.8rem 0.5rem 0.8rem;
     margin: 2rem 0.8rem 0 0.8rem;
 
@@ -245,7 +247,7 @@
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-    row-gap: 1.5rem;
+    row-gap: 2rem;
   }
 
   .training-form__after-submit__text-1,
@@ -259,7 +261,7 @@
     text-transform: none;
     text-align: center;
     color: black;
-    padding-bottom: 1.5rem;
+    padding-bottom: 2rem;
   }
 
   .training-form__after-submit__text-1 {
@@ -563,6 +565,8 @@
   .training-form__after-submit__container {
     /* outline: 2px dashed pink; */
 
+    width: 100%;
+    max-width: 400px;
     padding: 2rem 1rem 0.5rem 1rem;
     margin-top: 2rem;
 
@@ -588,7 +592,7 @@
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-    row-gap: 1.5rem;
+    row-gap: 2rem;
   }
 
   .training-form__after-submit__text-1,
@@ -602,7 +606,7 @@
     text-transform: none;
     text-align: center;
     color: black;
-    padding-bottom: 1.5rem;
+    padding-bottom: 2rem;
   }
 
   .training-form__after-submit__text-1 {
@@ -911,6 +915,8 @@
   .training-form__after-submit__container {
     /* outline: 2px dashed pink; */
 
+    width: 100%;
+    max-width: 400px;
     padding: 2rem 1rem 0.5rem 1rem;
     margin-top: 2rem;
 
@@ -950,7 +956,7 @@
     text-transform: none;
     text-align: center;
     color: black;
-    padding-bottom: 1.5rem;
+    padding-bottom: 2rem;
   }
 
   .training-form__after-submit__text-1 {
@@ -988,7 +994,7 @@
     /* outline: 2px solid red; */
 
     position: absolute;
-    bottom: 20%;
+    bottom: 15%;
     left: 45%;
     color: red;
     font-size: 1rem;
@@ -1026,7 +1032,6 @@
 
   /* controls the transition when closing-->going to this style */
   transition: max-height 1200ms ease-in-out;
-
 }
 
 /* /////////////////////// */
@@ -1035,8 +1040,7 @@
 /* style the button when it is open */
 .training__cta__content__container__forAccordion button[aria-expanded="true"],
 .training__cta__content__container__forAccordion-1 button[aria-expanded="true"] {
-  /* * other styles for this button can be found
-   in css file training--cta.css */
+  /* * other styles for this button can be found in css file training--cta.css */
 
   background-color: var(--clr-primary-200);
   background-image: linear-gradient(150deg,
@@ -1045,7 +1049,6 @@
       var(--clr-primary-200),
       var(--clr-primary-200),
       var(--clr-primary-200));
-
 
   /* ////////////// */
   &:hover {

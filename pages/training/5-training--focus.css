@@ -47,7 +47,7 @@
   .training__focus__header {
     /* outline: 2px solid purple; */
 
-    padding-bottom: 2rem;
+    padding-bottom: 3rem;
     width: 100%;
     max-width: 350px;
     margin: 0 auto;
@@ -94,7 +94,7 @@
     row-gap: 1rem;
 
     /* due to the arrow div that already added height */
-    padding-bottom: 0rem;
+    padding-bottom: 1rem;
   }
 
   .training__focus-card__list-items {
@@ -107,7 +107,7 @@
 
     font-family: var(--ff-primary);
     font-weight: var(--fw-semi-bold);
-    font-size: var(--fs-800);
+    font-size: var(--fs-700);
     line-height: 1.5;
     letter-spacing: normal;
     text-transform: none;
@@ -154,10 +154,15 @@
     /* outline: 2px solid gray; */
 
     font-weight: var(--fw-semi-bold);
-    font-size: var(--fs-800);
+    font-size: var(--fs-700);
     color: var(--clr-secondary-650);
-  }
+    padding-bottom: 1rem;
 
+    /* ///////////////////// */
+    @media screen and (width < 400px) {
+      font-size: var(--fs-800);
+    }
+  }
 }
 
 /*        */
@@ -211,7 +216,7 @@
   .training__focus__header {
     /* outline: 2px solid purple; */
 
-    padding-bottom: 2rem;
+    padding-bottom: 3rem;
     width: 75%;
     max-width: 500px;
     margin: 0 auto;
@@ -251,7 +256,7 @@
     row-gap: 1rem;
 
     /* due to the arrow div that already added height */
-    padding-bottom: 0rem;
+    padding-bottom: 1rem;
   }
 
   .training__focus-card__list-items {
@@ -307,6 +312,7 @@
     font-weight: var(--fw-semi-bold);
     font-size: var(--fs-700);
     color: var(--clr-secondary-650);
+    padding-bottom: 1rem;
   }
 }
 
@@ -361,7 +367,7 @@
   .training__focus__header {
     /* outline: 2px solid purple; */
 
-    padding-bottom: 1rem;
+    padding-bottom: 3rem;
     width: 100%;
     max-width: 500px;
     margin: 0 auto;
@@ -449,8 +455,8 @@
     font-weight: var(--fw-semi-bold);
     font-size: var(--fs-700);
     color: var(--clr-secondary-650);
+    padding-bottom: 1rem;
   }
-
 }
 
 
