@@ -4,8 +4,8 @@
   /* outline: 4px solid blue; */
 
   width: 100%;
-  max-width: var(--width__1440px);
-  margin: 0 auto;
+  /* max-width: var(--width__1440px);
+  margin: 0 auto; */
   padding: 0;
   background-color: var(--clr-gen-website-bckgrd-svg1);
 

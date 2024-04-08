@@ -2,17 +2,17 @@
 .training-hero__section {
   /* outline: 4px solid yellowgreen; */
 
-  width: var(--width__always-fill);
-  max-width: var(--width__1440px);
-  margin: 0 auto;
+  width: 100%;
+  /* max-width: var(--width__1440px);
+  margin: 0 auto; */
 }
 
 .training-hero__container {
   /* outline: 4px solid black; */
 
   width: 100%;
-  max-width: var(--width__1440px);
-  margin: 0 auto;
+  /* max-width: var(--width__1440px);
+  margin: 0 auto; */
 
   display: flex;
   flex-direction: row;
@@ -34,7 +34,8 @@
     margin-bottom: 8rem;
     /* margin-top: 40px; */
     height: 100vh;
-    max-height: 700px;
+    max-height: 750px;
+    min-height: 400px;
   }
 
   .training-hero__container {
@@ -42,6 +43,7 @@
 
     height: inherit;
     max-height: inherit;
+    min-height: inherit;
     padding: 0rem 0.5rem 0.5rem 0.5rem;
 
     justify-content: center;
@@ -85,6 +87,7 @@
     width: 100%;
     height: inherit;
     max-height: inherit;
+    min-height: inherit;
     position: relative;
 
     /* display: flex;

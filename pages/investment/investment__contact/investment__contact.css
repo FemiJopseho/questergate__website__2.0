@@ -26,6 +26,16 @@
 
       width: 100%;
     }
+  }
+
+  .contact-us__main-pic__text__container {
+    /* outline: 2px solid black; */
+
+    width: fit-content;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 10%;
+    left: 2%;
 
     /* ////////// */
     .contact-us__main-pic__text {
@@ -37,12 +47,6 @@
       line-height: 1.5;
       text-align: left;
       color: var(--clr-neutral-white-2);
-
-      position: absolute;
-      top: 50%;
-      left: 0.5%;
-      transform: translate(0, -50%);
-
 
       /* //////////// */
       @media screen and (width <=285px) {
@@ -481,6 +485,16 @@
 
       width: 100%;
     }
+  }
+
+  .contact-us__main-pic__text__container {
+    /* outline: 2px solid black; */
+
+    width: fit-content;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 10%;
+    left: 4%;
 
     /* ////////// */
     .contact-us__main-pic__text {
@@ -492,11 +506,6 @@
       line-height: 1.5;
       text-align: left;
       color: var(--clr-neutral-white-2);
-
-      position: absolute;
-      top: 50%;
-      left: 4%;
-      transform: translate(0, -50%);
 
       /* /////////// */
       @media screen and (width > 500px) and (width <=600px) {
@@ -896,16 +905,15 @@
   .contact-us__main-pic__section {
     /* outline: 4px solid gold; */
 
-    width: var(--width__always-fill);
-    max-width: var(--width__1440px);
-    margin: 0 auto;
+    width: 100%;
     padding: 0 0 8rem 0;
   }
 
   .contact-us__main-pic__container {
     /* outline: 3px solid green; */
 
-    width: 100%;
+    width: fit-content;
+    margin: 0 auto;
     position: relative;
 
     /* ////////// */
@@ -913,8 +921,23 @@
       /* outline: 2px solid red; */
 
       width: 100%;
-      /* min-height: 70dvh; */
+
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      align-items: center;
     }
+  }
+
+  .contact-us__main-pic__text__container {
+    /* outline: 2px solid black; */
+
+    width: fit-content;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
 
     /* ////////// */
     .contact-us__main-pic__text {
@@ -927,15 +950,9 @@
       text-align: left;
       color: var(--clr-neutral-white-2);
 
-      position: absolute;
-      top: 50%;
-      left: 5%;
-      transform: translate(0, -50%);
-
       /* /////////// */
       @media screen and (width < 1065px) {
         font-size: var(--fs-300);
-        left: 4%;
       }
     }
   }

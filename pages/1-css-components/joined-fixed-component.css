@@ -24,6 +24,9 @@ body {
   -webkit-font-smoothing: antialiased;
 
   background-color: var(--clr-gen-website-bckgrd);
+  background-image: url(../../images/Polygon-Luminary.svg);
+  background-repeat: repeat;
+  background-size: contain;
 }
 
 header,
@@ -87,10 +90,6 @@ h6 {
     width: 100%;
     min-width: 260px;
     margin: 0 auto;
-
-    background-image: url(../../images/Polygon-Luminary.svg);
-    background-repeat: repeat;
-    background-size: contain;
   }
 }
 
@@ -101,10 +100,6 @@ h6 {
     /* outline: 2px solid gold; */
 
     width: 100%;
-
-    background-image: url(../../images/Polygon-Luminary.svg);
-    background-repeat: repeat;
-    background-size: contain;
   }
 }
 
@@ -116,10 +111,6 @@ h6 {
     width: 100%;
     max-width: 2000px;
     margin: 0 auto;
-
-    background-image: url(../../images/Polygon-Luminary.svg);
-    background-repeat: repeat;
-    background-size: contain;
   }
 }
 
