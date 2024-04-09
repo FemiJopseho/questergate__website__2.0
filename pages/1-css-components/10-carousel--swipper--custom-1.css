@@ -406,7 +406,7 @@
     /* outline: 2px solid rebeccapurple; */
 
     /* will change with screen size */
-    font-size: 1rem;
+    font-size: 0.8rem;
     line-height: 1.5;
   }
 
@@ -436,7 +436,7 @@
 
   .client__review__name {
     /* will change with screen size */
-    font-size: 1rem;
+    font-size: 0.8rem;
     line-height: 1.0;
   }
 
@@ -444,7 +444,7 @@
     /* outline: 2px solid purple; */
 
     /* will change with screen size */
-    font-size: 0.8rem;
+    font-size: 0.6rem;
     line-height: 1.0;
   }
 
@@ -642,7 +642,7 @@
     /* outline: 2px solid rebeccapurple; */
 
     /* will change with screen size */
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     line-height: 1.5;
   }
 
@@ -672,7 +672,7 @@
 
   .client__review__name {
     /* will change with screen size */
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     line-height: 1.0;
   }
 
