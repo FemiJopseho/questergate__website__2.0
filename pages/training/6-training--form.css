@@ -760,7 +760,7 @@
 
     width: 100%;
     padding-bottom: 2rem;
-    padding-right: 3rem;
+    padding-right: 0rem;
 
     display: flex;
     flex-direction: row;
@@ -787,7 +787,27 @@
     color: var(--clr-primary-650);
   }
 
-  .training-form__elements__container input,
+  .training-form__elements__container input {
+    /* outline: 2px solid mediumseagreen; */
+
+    width: 100%;
+    max-width: 300px;
+    height: 35px;
+    padding-left: 0.4rem;
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-regular);
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 6px;
+    border: none;
+
+    /* /////////// */
+    &:active,
+    &:focus {
+      outline: 1px solid var(--clr-primary-650);
+    }
+  }
+
   .training-form__elements__container select,
   .training-form__elements__container select option {
 

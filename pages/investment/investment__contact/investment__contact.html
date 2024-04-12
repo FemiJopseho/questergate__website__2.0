@@ -442,51 +442,61 @@
 								method="post"
 							>
 								<div class="contact-form__form-section1__container">
-									<label for="your-fullname">
+									<label class="contact-form__input-parent" for="your-fullname">
 										<input
 											type="text"
 											name="fullname"
 											id="your-fullname"
 											class="your__fullname"
 											placeholder="Your name"
-											required
 										/>
+
+										<div class="error-message" id="error-full-name"></div>
 									</label>
 
-									<label for="your-email">
+									<label class="contact-form__input-parent" for="your-email">
 										<input
 											type="email"
 											name="email"
 											id="your-email"
 											class="your__email"
 											placeholder="Email"
-											required
 										/>
+
+										<div class="error-message" id="error-your-email"></div>
 									</label>
 
-									<label for="your-phonenumber">
+									<label
+										class="contact-form__input-parent"
+										for="your-phonenumber"
+									>
 										<input
 											type="tel"
 											name="phone-number"
 											id="your-phonenumber"
 											class="your__phonenumber"
 											placeholder="Phone number"
-											required
 										/>
+
+										<div class="error-message" id="error-phone-number"></div>
 									</label>
 								</div>
 
 								<div class="contact-form__form-section2__container">
-									<textarea
-										name="message"
-										id="yourmessage"
-										class="your__message"
-										cols="30"
-										rows="10"
-										placeholder="leave us a message"
-										maxlength="1000"
-										required
-									></textarea>
+									<div
+										class="contact-form__label-input__container contact-form__input-parent"
+									>
+										<textarea
+											name="message"
+											id="yourmessage"
+											class="your__message"
+											cols="30"
+											rows="10"
+											placeholder="leave us a message"
+										></textarea>
+
+										<div class="error-message" id="error-your-msg"></div>
+									</div>
 
 									<button class="contact-form__submit-button" type="submit">
 										Submit
@@ -696,7 +706,7 @@
 
 		<script
 			defer
-			src="../../js-components/contact-form__success-msg.js"
+			src="../../js-components/contact-form__validation.js"
 		></script>
 
 		<script
