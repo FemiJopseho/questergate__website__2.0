@@ -165,7 +165,7 @@
     /* outline: 2px solid pink; */
 
     padding: 0 0 0 0.5rem;
-    margin: 0 0 2rem 0;
+    margin: 0;
     width: 100%;
     height: 3rem;
     border-radius: 4px;
@@ -179,7 +179,7 @@
 
   /* ///////////// */
   select {
-    margin: 0 0 2rem 0;
+    margin: 0;
     padding: 0 0 0 0.5rem;
     width: 100%;
     height: 3rem;
@@ -200,8 +200,50 @@
     margin-top: 2rem;
 
     /* //////////// */
-    .invest__plan__submit,
-    .savings__plan__submit {
+    .invest__plan__form-1 {
+      /* outline: 2px solid blue; */
+
+      width: 100%;
+
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      row-gap: 1.5rem;
+    }
+
+    /* ////////////// */
+    .invest__plan__form-1__input-label__container {
+      /* outline: 2px solid orchid; */
+
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      align-items: center;
+      row-gap: 0rem;
+
+      /* position: relative; */
+    }
+
+    /* /////////// */
+    .error-message {
+      /* outline: 2px solid red; */
+
+      font-family: var(--ff-primary);
+      font-size: var(--fs-900);
+      font-weight: var(--fw-bold);
+      line-height: 1.5;
+      color: var(--clr-alert-error-600);
+      text-align: center;
+      /* position: absolute;
+      bottom: 0%; */
+    }
+
+    /* //////////// */
+    .invest__plan__submit {
       background-color: var(--clr-primary-100);
       color: var(--clr-neutral-white-2);
 
@@ -234,7 +276,7 @@
   .investment__calc__results__container {
     /* outline: 2px dashed pink; */
 
-    /* display: none; */
+    display: none;
     width: 100%;
     max-width: 400px;
     background-color: var(--clr-primary-100);
@@ -454,7 +496,7 @@
   /** investment & savings calc FORM */
   /* ////////////////// */
   label {
-    padding: 0 0 0.5rem 0;
+    padding-bottom: 0.5rem;
     text-transform: capitalize;
     border-radius: 4px;
     font-weight: var(--fw-bold);
@@ -468,7 +510,7 @@
     /* outline: 2px solid pink; */
 
     padding: 0 0 0 0.5rem;
-    margin: 0 0 2rem 0;
+    margin: 0;
     width: 100%;
     height: 3rem;
     border-radius: 4px;
@@ -482,7 +524,7 @@
 
   /* ///////////// */
   select {
-    margin: 0 0 2rem 0;
+    margin: 0;
     padding: 0 0 0 0.5rem;
     width: 100%;
     height: 3rem;
@@ -503,9 +545,8 @@
     margin-top: 2rem;
 
     /* //////////// */
-    /* .invest__plan__form-1,
-    .savings__plan__form-1 {
-      outline: 2px solid blue;
+    .invest__plan__form-1 {
+      /* outline: 2px solid blue; */
 
       width: 100%;
 
@@ -514,11 +555,35 @@
       flex-wrap: nowrap;
       justify-content: space-between;
       align-items: flex-start;
-    } */
+      row-gap: 2rem;
+    }
+
+    /* ////////////// */
+    .invest__plan__form-1__input-label__container {
+      /* outline: 2px solid orchid; */
+
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    /* /////////// */
+    .error-message {
+      /* outline: 2px solid red; */
+
+      font-family: var(--ff-primary);
+      font-size: var(--fs-900);
+      font-weight: var(--fw-bold);
+      line-height: 1.5;
+      color: var(--clr-alert-error-600);
+      text-align: center;
+    }
 
     /* //////////// */
-    .invest__plan__submit,
-    .savings__plan__submit {
+    .invest__plan__submit {
       background-color: var(--clr-primary-100);
       color: var(--clr-neutral-white-2);
 
@@ -551,7 +616,7 @@
   .investment__calc__results__container {
     /* outline: 2px dashed pink; */
 
-    /* display: none; */
+    display: none;
     width: 100%;
     max-width: 400px;
     margin: 0 auto;
@@ -787,7 +852,7 @@
     /* outline: 2px solid pink; */
 
     padding: 0 0 0 0.5rem;
-    margin: 0 0 2rem 0;
+    margin: 0;
     width: 100%;
     height: 3rem;
     border-radius: 4px;
@@ -801,7 +866,7 @@
 
   /* ///////////// */
   select {
-    margin: 0 0 2rem 0;
+    margin: 0;
     padding: 0 0 0 0.5rem;
     width: 100%;
     height: 3rem;
@@ -831,11 +896,35 @@
       flex-wrap: nowrap;
       justify-content: space-between;
       align-items: flex-start;
+      row-gap: 2rem;
+    }
+
+    /* ////////////// */
+    .invest__plan__form-1__input-label__container {
+      /* outline: 2px solid orchid; */
+
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    /* /////////// */
+    .error-message {
+      /* outline: 2px solid red; */
+
+      font-family: var(--ff-primary);
+      font-size: var(--fs-900);
+      font-weight: var(--fw-bold);
+      line-height: 1.5;
+      color: var(--clr-alert-error-600);
+      text-align: center;
     }
 
     /* //////////// */
-    .invest__plan__submit,
-    .savings__plan__submit {
+    .invest__plan__submit {
       background-color: var(--clr-primary-100);
       color: var(--clr-neutral-white-2);
 
@@ -849,7 +938,6 @@
       border-radius: 4px;
       text-transform: capitalize;
       cursor: pointer;
-
 
       /* ///////////// */
       &:hover {
@@ -868,9 +956,9 @@
   .investment__calc__results__container {
     /* outline: 2px dashed pink; */
 
-    /* display: none; */
+    display: none;
     background-color: var(--clr-primary-100);
-    flex-basis: 45%;
+    width: 45%;
     border-radius: 4px;
     color: var(--clr-neutral-white-2);
     padding: 2.5rem 1.5rem;

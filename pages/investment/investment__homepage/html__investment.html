@@ -372,7 +372,7 @@
 
 							<div class="fund-hero__content__text__container">
 								<p class="fund-hero__content__text">
-									Vetted investments with good interest
+									Access investments with good interest
 								</p>
 							</div>
 						</div>
@@ -477,42 +477,53 @@
 										<form
 											action=""
 											method="post"
+											target="_self"
+											accept-charset="UTF-8"
+											validate
+											autocomplete="on"
 											id="id__invest__plan__form-1"
 											class="invest__plan__form-1"
 										>
-											<label
-												class="invest__initial__deposit"
-												for="invest__initial__deposit"
-												>Capital (₦):</label
-											>
-											<input
-												type="number"
-												name="invest__initial__deposit"
-												id="id__invest__initial__deposit"
-												min="100000"
-												max="25000000"
-												placeholder="100000"
-												required
-											/>
+											<div class="invest__plan__form-1__input-label__container">
+												<label
+													class="invest__initial__deposit"
+													for="invest__initial__deposit"
+													>Capital (₦):</label
+												>
 
-											<label
-												class="choose__invest__plan"
-												for="choose__invest__plan"
-												>Choose an investment Plan:</label
-											>
-											<select
-												name="choose__invest__plan"
-												id="id__choose__invest__plan"
-												required
-											>
-												<option value="" disabled selected>
-													choose a plan
-												</option>
+												<input
+													type="text"
+													name="invest__initial__deposit"
+													id="id__invest__initial__deposit"
+													placeholder="100000"
+													pattern="^\d+(\.\d+)?$"
+												/>
 
-												<option value="qg__6">QG-6 (17% in 6 months)</option>
+												<div class="error-message" id="error__capital"></div>
+											</div>
 
-												<option value="qg__12">QG-12 (45% per annum)</option>
-											</select>
+											<div class="invest__plan__form-1__input-label__container">
+												<label
+													class="choose__invest__plan"
+													for="choose__invest__plan"
+													>Choose an investment Plan:</label
+												>
+
+												<select
+													name="choose__invest__plan"
+													id="id__choose__invest__plan"
+												>
+													<option value="" disabled selected>
+														choose a plan
+													</option>
+
+													<option value="qg__6">QG-6 (17% in 6 months)</option>
+
+													<option value="qg__12">QG-12 (45% per annum)</option>
+												</select>
+
+												<div class="error-message" id="error__investType"></div>
+											</div>
 
 											<button
 												type="submit"
@@ -542,7 +553,9 @@
 													Duration:
 												</div>
 
-												<div class="investment__duration__result__value">
+												<div
+													class="investment__duration__result__value result__value"
+												>
 													YYY
 												</div>
 											</div>
@@ -555,7 +568,9 @@
 													Interest:
 												</div>
 
-												<div class="investment__result__roi--perday__value">
+												<div
+													class="investment__result__roi--perday__value result__value"
+												>
 													XYZ %
 												</div>
 											</div>
@@ -568,11 +583,13 @@
 											<div
 												class="investment__result__roi--naira__wrapper calc__result__wrapper"
 											>
-												<div class="investment__result__roi--percent">
+												<div class="investment__result__capital">
 													Your Capital:
 												</div>
 
-												<div class="investment__result__roi--percent__value">
+												<div
+													class="investment__result__capital__value result__value"
+												>
 													₦ 0.00
 												</div>
 											</div>
@@ -585,7 +602,9 @@
 													Your Interest:
 												</div>
 
-												<div class="invest__result__roi--naira__value">
+												<div
+													class="invest__result__roi--naira__value result__value"
+												>
 													₦ 0.00
 												</div>
 											</div>
@@ -606,7 +625,9 @@
 												Your Interest + Capital =
 											</div>
 
-											<div class="client__total-amount__at__end__value">
+											<div
+												class="client__total-amount__at__end__value result__value"
+											>
 												₦ 0.00
 											</div>
 										</div>
@@ -1361,13 +1382,10 @@
 
 		<script
 			defer
-			src="../../js-components/savings__calc__form__validation.js"
-		></script>
-
-		<script
-			defer
 			src="../../js-components/investment__calc__form__validation.js"
 		></script>
+
+		<script src="../../js-components/investment__calc__form__result.js"></script>
 
 		<script
 			defer

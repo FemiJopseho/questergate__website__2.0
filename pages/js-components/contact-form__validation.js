@@ -68,7 +68,6 @@ function displaySuccessMessage() {
 	form.style.display = "none";
 	successMessage.style.display = "block";
 }
-
 // Ensure success message is well positioned on the screen
 function scrollToView__SuccessMessage() {
 	let offsetValue = 50;
@@ -80,7 +79,6 @@ function scrollToView__SuccessMessage() {
 	// Scroll to the desired position
 	window.scrollTo({ top: scrollPosition, behavior: "smooth" });
 }
-
 // Timer to Hide success message and display form like it was never filled
 function hideSuccessMessageAfterDelay() {
 	setTimeout(function () {
@@ -97,7 +95,7 @@ function hideSuccessMessageAfterDelay() {
 }
 
 // ///////////////////
-// *Code 2 - Form Validation
+// *Code 3 - Form Validation
 function validateForm() {
 	// Reset error messages
 	document.querySelectorAll(".error-message").forEach(function (el) {
@@ -110,28 +108,28 @@ function validateForm() {
 	if (fullNameInput.value.trim() === "") {
 		document.getElementById("error-full-name").innerHTML =
 			"Please enter your first name.";
-		scrollToAccordionForInvalidForm();
+		scrollToView__ErrorMessage();
 		isError = true; // Set isError to true
 	}
 
 	if (emailInput.value.trim() === "") {
 		document.getElementById("error-your-email").innerHTML =
 			"Please enter your email.";
-		scrollToAccordionForInvalidForm();
+		scrollToView__ErrorMessage();
 		isError = true; // Set isError to true
 	}
 
 	if (phoneInput.value.trim() === "") {
 		document.getElementById("error-phone-number").innerHTML =
 			"Please enter your phone number.";
-		scrollToAccordionForInvalidForm();
+		scrollToView__ErrorMessage();
 		isError = true; // Set isError to true
 	}
 
 	if (msgInput.value.trim() === "") {
 		document.getElementById("error-your-msg").innerHTML =
 			"Please enter your message.";
-		scrollToAccordionForInvalidForm();
+		scrollToView__ErrorMessage();
 		isError = true; // Set isError to true
 	}
 
@@ -140,12 +138,12 @@ function validateForm() {
 	if (fullNameInput.value.length < 3) {
 		document.getElementById("error-full-name").innerHTML =
 			"Enter minimum of 3 letters.";
-		scrollToAccordionForInvalidForm();
+		scrollToView__ErrorMessage();
 		isError = true; // Set isError to true
 	} else if (fullNameInput.value.length > 20) {
 		document.getElementById("error-full-name").innerHTML =
 			"Maximum of 20 letters exceeded.";
-		scrollToAccordionForInvalidForm();
+		scrollToView__ErrorMessage();
 		isError = true; // Set isError to true
 	}
 
@@ -156,7 +154,7 @@ function validateForm() {
 	if (!phoneRegex.test(phoneInput.value)) {
 		document.getElementById("error-phone-number").innerHTML =
 			"Please enter a valid phone number.";
-		scrollToAccordionForInvalidForm();
+		scrollToView__ErrorMessage();
 		isError = true; // Set isError to true
 	}
 
@@ -166,7 +164,7 @@ function validateForm() {
 	if (!emailRegex.test(emailInput.value)) {
 		document.getElementById("error-your-email").innerHTML =
 			"Please enter a valid email.";
-		scrollToAccordionForInvalidForm();
+		scrollToView__ErrorMessage();
 		isError = true; // Set isError to true
 	}
 
@@ -174,12 +172,12 @@ function validateForm() {
 	if (msgInput.value.length < 20) {
 		document.getElementById("error-your-msg").innerHTML =
 			"Enter minimum of 20 characters.";
-		scrollToAccordionForInvalidForm();
+		scrollToView__ErrorMessage();
 		isError = true; // Set isError to true
 	} else if (msgInput.value.length > 1000) {
 		document.getElementById("error-your-msg").innerHTML =
 			"Max. of 1000 characters exceeded.";
-		scrollToAccordionForInvalidForm();
+		scrollToView__ErrorMessage();
 		isError = true; // Set isError to true
 	}
 
@@ -197,8 +195,8 @@ function validateForm() {
 }
 
 // ///////////////////
-// *Code 2 - Scroll-into-view the INVALID Form Error Message
-function scrollToAccordionForInvalidForm() {
+// *Code 4 - Scroll-into-view the INVALID Form Error Message
+function scrollToView__ErrorMessage() {
 	let offsetValue = 70;
 
 	// Get the first error message element with a non-empty message

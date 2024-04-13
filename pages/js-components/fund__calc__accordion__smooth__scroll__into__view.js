@@ -34,7 +34,8 @@ document.addEventListener("DOMContentLoaded", function () {
 	});
 });
 
-// *when you click Savings Calc button
+// *when you click Savings Calc Submit/Calculate button
+// if savings calc form is validated, it scrolls-into-view the Savings Calc Result
 document.addEventListener("DOMContentLoaded", function () {
 	// Set the offset value (in pixels) from the top of the viewport
 	var offsetValue = 100;
@@ -95,27 +96,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	});
 });
 
-// *when you click Investment Calc button
-document.addEventListener("DOMContentLoaded", function () {
-	// Set the offset value (in pixels) from the top of the viewport
-	var offsetValue = 100;
-
-	// Get all elements with class A= "invest__plan__submit"
-	var buttons = document.querySelectorAll(".invest__plan__submit");
-
-	// Add click event listener to each button
-	buttons.forEach(function (button) {
-		button.addEventListener("click", function () {
-			// Get the element with class B= "investment__calc__results__container"
-			var startingPoint = document.querySelector(
-				".investment__calc__results__container"
-			);
-
-			// Calculate the scroll position by subtracting the offset value
-			var scrollPosition = startingPoint.offsetTop - offsetValue;
-
-			// Scroll to the startingPoint with the adjusted offset
-			window.scrollTo({ top: scrollPosition, behavior: "smooth" });
-		});
-	});
-});
+// *NOTE
+// the investment calc result scroll-into-view when
+// Invest calc form submit button is clicked & form is validated
+//can be found in the form validation for investment calculator form
