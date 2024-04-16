@@ -28,36 +28,47 @@ function handleFormSubmission(event) {
 	let isValid = validateForm();
 
 	if (isValid) {
-		submitFormData();
-		displaySuccessMessage();
-		scrollToView__SuccessMessage();
-		hideSuccessMessageAfterDelay();
+		// Get the form data
+		let formData = new FormData(event.target);
+
+		submitFormData(formData) // Pass the form as an argument
+			.then(() => {
+				displaySuccessMessage();
+				scrollToView__SuccessMessage();
+				hideSuccessMessageAfterDelay();
+			})
+			.catch((error) => {
+				// Handle error
+				console.error("Error:", error);
+			});
 	}
 }
 
 /////////////////////////
 // *Code 1 - Submitting form data
-// submit form data
-function submitFormData() {
-	// Get the form data
-	let formData = new FormData(form);
-
-	// Create an XMLHttpRequest object
-	let xhr = new XMLHttpRequest();
-
-	// Configure it: POST-request for the URL /submit
-	xhr.open("POST", "/submit", true);
-
-	// Send the form data as the body of the request
-	xhr.send(formData);
-
-	// Optional: Handle the response from the server
-	xhr.onreadystatechange = function () {
-		if (xhr.readyState === 4 && xhr.status === 200) {
-			// Handle the successful response, if needed
-			console.log(xhr.responseText);
-		}
-	};
+function submitFormData(formData) {
+	// Make a POST request using Fetch API
+	return fetch("/submit", {
+		method: "POST",
+		body: formData,
+	})
+		.then((response) => {
+			if (!response.ok) {
+				throw new Error("Network response was not ok");
+			}
+			// Check if the content type is JSON
+			const contentType = response.headers.get("content-type");
+			if (contentType && contentType.indexOf("application/json") !== -1) {
+				return response.json(); // Parse JSON response
+			} else {
+				// Handle other types of response here if needed
+				return response.text(); // Parse text response
+			}
+		})
+		.then((data) => {
+			// Handle successful response from the server
+			console.log("Server response:", data);
+		});
 }
 
 /////////////////////////

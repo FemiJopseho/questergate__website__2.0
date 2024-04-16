@@ -210,7 +210,6 @@
       flex-wrap: nowrap;
       justify-content: space-between;
       align-items: flex-start;
-      row-gap: 1.5rem;
     }
 
     /* ////////////// */
@@ -218,6 +217,8 @@
       /* outline: 2px solid orchid; */
 
       width: 100%;
+      padding-bottom: 1.2rem;
+      margin-bottom: 1rem;
       display: flex;
       flex-direction: column;
       flex-wrap: nowrap;
@@ -225,7 +226,7 @@
       align-items: center;
       row-gap: 0rem;
 
-      /* position: relative; */
+      position: relative;
     }
 
     /* /////////// */
@@ -238,8 +239,9 @@
       line-height: 1.5;
       color: var(--clr-alert-error-600);
       text-align: center;
-      /* position: absolute;
-      bottom: 0%; */
+
+      position: absolute;
+      bottom: 0%;
     }
 
     /* //////////// */
@@ -319,20 +321,24 @@
     }
 
     /* /////////////// */
-    .client__roi-capital {
+    .calc-for-extra-padding {
       padding-top: 2rem;
     }
 
     /* ///////////// */
     .investment__result__roi--percent,
+    .investment__result__capital,
     .invest__result__roi--naira,
     .client__total-amount__at__end {
+      /* outline: 2px solid red; */
+
       /* white-space: nowrap; */
-      padding-right: 2rem;
+      padding-right: 1.5rem;
     }
 
     /* ///////////// */
     .investment__result__roi--percent__value,
+    .investment__result__capital__value,
     .invest__result__roi--naira__value,
     .client__total-amount__at__end__value {
       white-space: nowrap;
@@ -555,7 +561,6 @@
       flex-wrap: nowrap;
       justify-content: space-between;
       align-items: flex-start;
-      row-gap: 2rem;
     }
 
     /* ////////////// */
@@ -563,11 +568,15 @@
       /* outline: 2px solid orchid; */
 
       width: 100%;
+      padding-bottom: 1.2rem;
+      margin-bottom: 1rem;
       display: flex;
       flex-direction: column;
       flex-wrap: nowrap;
       justify-content: flex-start;
       align-items: center;
+
+      position: relative;
     }
 
     /* /////////// */
@@ -580,6 +589,9 @@
       line-height: 1.5;
       color: var(--clr-alert-error-600);
       text-align: center;
+
+      position: absolute;
+      bottom: 0%;
     }
 
     /* //////////// */
@@ -663,12 +675,13 @@
     }
 
     /* /////////////// */
-    .client__roi-capital {
+    .calc-for-extra-padding {
       padding-top: 2rem;
     }
 
     /* ///////////// */
     .investment__result__roi--percent,
+    .investment__result__capital,
     .invest__result__roi--naira,
     .client__total-amount__at__end {
       /* white-space: nowrap; */
@@ -677,6 +690,7 @@
 
     /* ///////////// */
     .investment__result__roi--percent__value,
+    .investment__result__capital__value,
     .invest__result__roi--naira__value,
     .client__total-amount__at__end__value {
       white-space: nowrap;
@@ -896,7 +910,6 @@
       flex-wrap: nowrap;
       justify-content: space-between;
       align-items: flex-start;
-      row-gap: 2rem;
     }
 
     /* ////////////// */
@@ -904,11 +917,15 @@
       /* outline: 2px solid orchid; */
 
       width: 100%;
+      padding-bottom: 1.2rem;
+      margin-bottom: 1rem;
       display: flex;
       flex-direction: column;
       flex-wrap: nowrap;
       justify-content: flex-start;
       align-items: center;
+
+      position: relative;
     }
 
     /* /////////// */
@@ -921,6 +938,9 @@
       line-height: 1.5;
       color: var(--clr-alert-error-600);
       text-align: center;
+
+      position: absolute;
+      bottom: 0%;
     }
 
     /* //////////// */
@@ -998,12 +1018,13 @@
     }
 
     /* /////////////// */
-    .client__roi-capital {
+    .calc-for-extra-padding {
       padding-top: 2rem;
     }
 
     /* ///////////// */
     .investment__result__roi--percent,
+    .investment__result__capital,
     .invest__result__roi--naira,
     .client__total-amount__at__end {
       /* white-space: nowrap; */
@@ -1012,6 +1033,7 @@
 
     /* ///////////// */
     .investment__result__roi--percent__value,
+    .investment__result__capital__value,
     .invest__result__roi--naira__value,
     .client__total-amount__at__end__value {
       white-space: nowrap;

@@ -184,13 +184,13 @@
 								>
 							</li>
 
-							<li class="fund-header__list__items">
+							<!-- <li class="fund-header__list__items">
 								<a
 									href="../investment__how--tos/html__investment__how-tos.html"
 									class="fund-header__list__items-link"
 									>How-To</a
 								>
-							</li>
+							</li> -->
 
 							<!-- <li class="fund-header__list__items">
 								<a href="#" class="fund-header__list__items-link">Blog</a>
@@ -417,7 +417,6 @@
 				</section>
 
 				<!-- -------START OF CALCULATOR Section------ -->
-				<!-- *add the javascript to this from the backend that makes the calculator work -->
 				<section class="fund-calc__section">
 					<div class="fund-calc__container">
 						<div class="savings__investment__calc__wrapper">
@@ -450,42 +449,52 @@
 										<form
 											action=""
 											method="post"
+											target="_self"
+											accept-charset="UTF-8"
+											autocomplete="on"
 											id="id__invest__plan__form-1"
 											class="invest__plan__form-1"
 										>
-											<label
-												class="invest__initial__deposit"
-												for="invest__initial__deposit"
-												>Capital (₦):</label
-											>
-											<input
-												type="number"
-												name="invest__initial__deposit"
-												id="id__invest__initial__deposit"
-												min="100000"
-												max="25000000"
-												placeholder="100000"
-												required
-											/>
+											<div class="invest__plan__form-1__input-label__container">
+												<label
+													class="invest__initial__deposit"
+													for="invest__initial__deposit"
+													>Capital (₦):</label
+												>
 
-											<label
-												class="choose__invest__plan"
-												for="choose__invest__plan"
-												>Choose an investment Plan:</label
-											>
-											<select
-												name="choose__invest__plan"
-												id="id__choose__invest__plan"
-												required
-											>
-												<option value="" disabled selected>
-													choose a plan
-												</option>
+												<input
+													type="text"
+													name="invest__initial__deposit"
+													id="id__invest__initial__deposit"
+													placeholder="100000"
+													pattern="^\d+(\.\d+)?$"
+												/>
 
-												<option value="qg__6">QG-6 (17% in 6 months)</option>
+												<div class="error-message" id="error__capital"></div>
+											</div>
 
-												<option value="qg__12">QG-12 (45% per annum)</option>
-											</select>
+											<div class="invest__plan__form-1__input-label__container">
+												<label
+													class="choose__invest__plan"
+													for="choose__invest__plan"
+													>Choose an investment Plan:</label
+												>
+
+												<select
+													name="choose__invest__plan"
+													id="id__choose__invest__plan"
+												>
+													<option value="" disabled selected>
+														choose a plan
+													</option>
+
+													<option value="qg__6">QG-6 (17% in 6 months)</option>
+
+													<option value="qg__12">QG-12 (45% per annum)</option>
+												</select>
+
+												<div class="error-message" id="error__investType"></div>
+											</div>
 
 											<button
 												type="submit"
@@ -515,7 +524,9 @@
 													Duration:
 												</div>
 
-												<div class="investment__duration__result__value">
+												<div
+													class="investment__duration__result__value result__value"
+												>
 													YYY
 												</div>
 											</div>
@@ -528,24 +539,28 @@
 													Interest:
 												</div>
 
-												<div class="investment__result__roi--perday__value">
+												<div
+													class="investment__result__roi--perday__value result__value"
+												>
 													XYZ %
 												</div>
 											</div>
 
 											<div class="horizontal_line__calc__result"></div>
 
-											<div class="client__roi-capital"></div>
+											<div class="calc-for-extra-padding"></div>
 
 											<!-- Capital/Amount Invested (₦) -->
 											<div
 												class="investment__result__roi--naira__wrapper calc__result__wrapper"
 											>
-												<div class="investment__result__roi--percent">
+												<div class="investment__result__capital">
 													Your Capital:
 												</div>
 
-												<div class="investment__result__roi--percent__value">
+												<div
+													class="investment__result__capital__value result__value"
+												>
 													₦ 0.00
 												</div>
 											</div>
@@ -558,7 +573,9 @@
 													Your Interest:
 												</div>
 
-												<div class="invest__result__roi--naira__value">
+												<div
+													class="invest__result__roi--naira__value result__value"
+												>
 													₦ 0.00
 												</div>
 											</div>
@@ -579,7 +596,9 @@
 												Your Interest + Capital =
 											</div>
 
-											<div class="client__total-amount__at__end__value">
+											<div
+												class="client__total-amount__at__end__value result__value"
+											>
 												₦ 0.00
 											</div>
 										</div>
@@ -861,7 +880,7 @@
 		<script src="../../js-components/header__hamburger.js"></script>
 		<script src="../../js-components/fund__calc__accordion.js"></script>
 		<script src="../../js-components/fund__calc__accordion__smooth__scroll__into__view.js"></script>
-		<script src="../../js-components/savings__calc__form__validation.js"></script>
+		<script src="../../js-components/investment__calc__form__validation.js"></script>
 		<script src="../../js-components/section__visible__on__scroll.js"></script>
 		<script src="../../js-components/footer__currentyear__auto.js"></script>
 		<script src="../../js-components/append__to__footer-list__investment.js"></script>

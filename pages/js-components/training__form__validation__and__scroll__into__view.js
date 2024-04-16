@@ -40,11 +40,13 @@ function handleFormSubmit(event) {
 		// Get the form data
 		let formData = new FormData(event.target);
 
-		// Submit form data
-		submitFormData(formData);
-
-		// Display success message
-		showSuccessMessage();
+		submitFormData(formData)
+			.then(() => {
+				showSuccessMessage();
+			})
+			.catch((error) => {
+				console.error("There was a problem with the form submission:", error);
+			});
 	}
 }
 
@@ -52,22 +54,22 @@ function handleFormSubmit(event) {
 // *Code 1 - Submitting form data
 // submit form data
 function submitFormData(formData) {
-	// Create an XMLHttpRequest object
-	let xhr = new XMLHttpRequest();
-
-	// Configure it: POST-request for the URL /submit
-	xhr.open("POST", "/submit", true);
-
-	// Send the form data as the body of the request
-	xhr.send(formData);
-
-	// Optional: Handle the response from the server
-	xhr.onreadystatechange = function () {
-		if (xhr.readyState === 4 && xhr.status === 200) {
-			// Handle the successful response, if needed
-			console.log(xhr.responseText);
-		}
-	};
+	// Send a POST request with Fetch API
+	return fetch("/submit", {
+		method: "POST",
+		body: formData,
+	})
+		.then((response) => {
+			if (response.ok) {
+				return response.text(); // Parse response body as text
+			}
+			throw new Error("Network response was not ok.");
+		})
+		.catch((error) => {
+			// Handle error
+			console.error("There was a problem with the fetch operation:", error);
+			throw error; // Rethrow the error for the caller to handle
+		});
 }
 
 // ////////////////////

@@ -55,23 +55,31 @@ function validateInvestmentForm() {
 
 	// Validate capital input
 	let capital = parseFloat(capitalInput.value);
-	if (isNaN(capital) || capital < 100000 || capital > 25000000) {
+	// input < 100,000
+	if (isNaN(capital) || capital < 100000) {
 		document.getElementById("error__capital").innerHTML =
-			"Minimum Capital is 100,000 <br/> Maximum Capital is 25,000,000";
-		scrollToView__ErrorMessage();
+			"Minimum Capital is 100,000";
+		// scrollToView__ErrorMessage();
+		isError = true;
+	}
+	// input > 25million
+	if (capital > 25000000) {
+		document.getElementById("error__capital").innerHTML =
+			"Maximum Capital is 25,000,000";
+		// scrollToView__ErrorMessage();
 		isError = true;
 	}
 	// input length higher than 25million
 	if (capitalInput.value.length > 11 && capital > 25000000) {
 		document.getElementById("error__capital").innerHTML =
 			"Maximum Capital is 25million";
-		scrollToView__ErrorMessage();
+		// scrollToView__ErrorMessage();
 		isError = true;
 	}
 	// input length less than 25million
 	if (capitalInput.value.length > 11 && capital < 25000000) {
 		document.getElementById("error__capital").innerHTML = "Input is too long";
-		scrollToView__ErrorMessage();
+		// scrollToView__ErrorMessage();
 		isError = true;
 	}
 
@@ -79,17 +87,23 @@ function validateInvestmentForm() {
 	if (investPlanInput.value === "") {
 		document.getElementById("error__investType").innerHTML =
 			"Please select an investment plan";
-		scrollToView__ErrorMessage();
+		// scrollToView__ErrorMessage();
 		isError = true;
 	}
 
-	// If there's an error, show error message for 10 seconds
+	// If there's an error, show error message for 15 seconds
 	if (isError) {
+		// Clear previous error message timers
+		document.querySelectorAll(".error-message").forEach(function (el) {
+			clearTimeout(el.timer); // Clear previous timer
+		});
+
+		// Set new error message timers
 		setTimeout(function () {
 			document.querySelectorAll(".error-message").forEach(function (el) {
 				el.innerHTML = ""; // Clear error messages
 			});
-		}, 10000); // Show error message for 10 seconds
+		}, 15000); // Show error message for 15 seconds
 	}
 
 	return !isError; // Return true if there are no errors
@@ -97,28 +111,28 @@ function validateInvestmentForm() {
 
 // ///////////////////
 // *Code 3 - Scroll-into-view the INVALID Form Error Message
-function scrollToView__ErrorMessage() {
-	let offsetValue = 50;
+// function scrollToView__ErrorMessage() {
+// 	let offsetValue = 50;
 
-	// Get the first error message element with a non-empty message
-	let errorMessage = document.querySelector(".error-message:not(:empty)");
+// 	// Get the first error message element with a non-empty message
+// 	let errorMessage = document.querySelector(".error-message:not(:empty)");
 
-	// If an error message element is found, scroll to its parent container
-	if (errorMessage) {
-		let errorContainerId = errorMessage.id;
-		let startingPoint = document
-			.querySelector("#" + errorContainerId)
-			.closest(".investment__calc__container");
-		let scrollPosition = startingPoint.offsetTop - offsetValue;
-		window.scrollTo({ top: scrollPosition, behavior: "smooth" });
-	}
-}
+// 	// If an error message element is found, scroll to its parent container
+// 	if (errorMessage) {
+// 		let errorContainerId = errorMessage.id;
+// 		let startingPoint = document
+// 			.querySelector("#" + errorContainerId)
+// 			.closest(".investment__calc__container");
+// 		let scrollPosition = startingPoint.offsetTop - offsetValue;
+// 		window.scrollTo({ top: scrollPosition, behavior: "smooth" });
+// 	}
+// }
 
 // ///////////////////
 // *CODE 4 - scrolls-into-view the Investment Calc Result
 function scrollToView__InvestCalcResult() {
 	// Set the offset value (in pixels) from the top of the viewport
-	let offsetValue = 150;
+	let offsetValue = 160;
 
 	// Get the element with class B= "investment__calc__results__container"
 	let startingPoint = document.querySelector(
