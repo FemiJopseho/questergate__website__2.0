@@ -34,7 +34,7 @@
 
       font-family: var(--ff-secondary);
       font-weight: var(--fw-bold);
-      font-size: var(--fs-400);
+      font-size: var(--fs-550);
       line-height: var(--lh-600);
       color: var(--clr-primary-650);
     }
@@ -76,7 +76,7 @@
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-    row-gap: 2rem;
+    row-gap: 3rem;
 
     /* ////////// */
     /* re-order image & text in "...content__container-2" */
@@ -96,7 +96,8 @@
     .fund-about-us__details__content__img {
       /* outline: 2px solid blueviolet; */
 
-      width: 100%;
+      width: 99%;
+      margin: 0 auto;
     }
   }
 
@@ -119,7 +120,7 @@
       font-family: var(--ff-secondary);
       font-weight: var(--fw-bold);
       font-size: var(--fs-600);
-      line-height: var(--lh-430);
+      line-height: 1.5;
       color: var(--clr-primary-650);
     }
 

@@ -656,8 +656,8 @@ h6 {
 @media screen and (width <=31.25em) {
   #back-to-top {
     position: fixed;
-    bottom: 20px;
-    right: 10px;
+    bottom: 21.5%;
+    right: 2.4%;
     z-index: 99;
     font-size: 1rem;
     border: none;
@@ -695,8 +695,8 @@ h6 {
 @media screen and (width > 31.25em) and (width <=54.69em) {
   #back-to-top {
     position: fixed;
-    bottom: 20px;
-    right: 30px;
+    bottom: 21.5%;
+    right: 2.4%;
     z-index: 99;
     font-size: 1rem;
     border: none;
@@ -733,8 +733,8 @@ h6 {
 @media screen and (width > 54.69em) {
   #back-to-top {
     position: fixed;
-    bottom: 20px;
-    right: 30px;
+    bottom: 21.5%;
+    right: 2.4%;
     z-index: 99;
     font-size: 1rem;
     border: none;
