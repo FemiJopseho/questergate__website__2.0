@@ -35,73 +35,50 @@
 
 		<!-- -----------------CSS Resets-------------------- -->
 		<!-- Use Normalize Reset -->
-		<link rel="stylesheet" href="../../css-resets/normalize.css" />
+		<link rel="stylesheet" href="/questergatecapital/public/css/css-resets/normalize.css" />
 
 		<!-- -----------------FONTS (loaded for a start)-------------------- -->
-
-		<style type="text/css">
-			@font-face {
-				font-display: swap;
-				font-family: "Nunito";
-				font-style: normal;
-				font-weight: 400;
-
-				src: local("Nunito"),
-					url("../../utilities/fonts/nunito-v26-latin-regular.woff2")
-						format("woff2");
-			}
-
-			@font-face {
-				font-display: swap;
-				font-family: "Montagu Slab";
-				font-style: normal;
-				font-weight: 400;
-
-				src: local("Montagu Slab"),
-					url("../../utilities/fonts/nunito-v26-latin-regular.woff2")
-						format("woff2");
-			}
-		</style>
+		@include('generic.new_font_in_head')
 
 		<!-- -------Other stylesheets---------- -->
 
 		<link
 			rel="stylesheet"
-			href="../1-css-components/joined-fixed-component.css"
+			href="/questergatecapital/public/css/1-css-components/joined-fixed-component.css"
 		/>
-		<link rel="stylesheet" href="../1-css-components/6-utility-classes.css" />
+		
+		<link rel="stylesheet" href="/questergatecapital/public/css/1-css-components/6-utility-classes.css" />
+		
 		<link
 			rel="stylesheet"
-			href="../1-css-components/10-carousel--swipper--custom-1.css"
+			href="/questergatecapital/public/css/1-css-components/10-carousel--swipper--custom-1.css"
 		/>
 
-		<link rel="stylesheet" href="../training/0-training--header.css" />
-		<link rel="stylesheet" href="../training/1-training--hero.css" />
-		<link rel="stylesheet" href="../training/2-training--benefits.css" />
-		<link rel="stylesheet" href="../training/3-training--testimonials.css" />
-		<link rel="stylesheet" href="../training/4-training--cta.css" />
-		<link rel="stylesheet" href="../training/5-training--focus.css" />
-		<link rel="stylesheet" href="./7-training__payment__types.css" />
+			
+		<link rel="stylesheet" href="/questergatecapital/public/css/training/all__training__css__combined.css" />
 
-		<!-- --------------JQUERY ACCESS via CDN and via Local server----------------- -->
-		<!-- <script
-			src="https://code.jquery.com/jquery-3.7.1.min.js"
-			integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-			crossorigin="anonymous"
-		></script> -->
 
-		<script src="../js-components/jquery-3.7.1.min.js"></script>
-
+		<!-- <link rel="stylesheet" href="/questergatecapital/public/css/training/0-training--header.css" /> -->
+		
+		<!-- <link rel="stylesheet" href="/questergatecapital/public/css/training/1-training--hero.css" /> -->
+		
+		<!-- <link rel="stylesheet" href="/questergatecapital/public/css/training/2-training--benefits.css" /> -->
+		
+		<!-- <link rel="stylesheet" href="/questergatecapital/public/css/training/3-training--testimonials.css" /> -->
+		
+		<!-- <link rel="stylesheet" href="/questergatecapital/public/css/training/4-training--cta.css" /> -->
+		
+		<!-- <link rel="stylesheet" href="/questergatecapital/public/css/training/5-training--focus.css" /> -->
+		
+		<link rel="stylesheet" href="training-with-payment/7-training__payment__types.css" />
+		
+		
 		<!-- SWIPER -->
 		<link
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
 		/>
 
-		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-		<!-- End of SWIPER -->
-
-		<!-- <script src="../js-components/jquery-3.7.1.min.js"></script> -->
 
 		<!-- ----------Page Title---------- -->
 		<title>Questergate Training</title>
@@ -110,60 +87,22 @@
 		<link
 			rel="icon"
 			type="image/x-icon"
-			href="../../images/QG__favicon__no__background-Favicon-Phone-16-10.ico"
+			href="/questergatecapital/public/img/images/QG__favicon__no__background-Favicon-Phone-16-10.ico"
 			id="favicon"
 		/>
+		
+		      
+        <!-- IMPORTANT OLD HEAD CODE -->
+        
+        <meta name="csrf-token" content="{{ csrf_token() }}">
+        
 	</head>
 
 	<body>
-		<button
-			onclick="backToTop__Function()"
-			id="back-to-top"
-			class="back-to-top"
-			title="Go to top"
-		>
-			Top &#8593;
-		</button>
+		@include('generic.new_back_to_top_button')
 
 		<div class="gen-container">
-			<header class="training__header__section">
-				<nav class="training__header__container">
-					<a
-						class="training__header__picture__link"
-						href="../investment/investment__homepage/html__investment.html"
-					>
-						<picture class="training__header__picture">
-							<source
-								class="phone_tablet_laptop-small"
-								type="image/webp"
-								media="(max-width: 1440px)"
-								srcset="../../images/QG_LOGO_200-43.webp"
-							/>
-
-							<source
-								class="laptop-large"
-								type="image/webp"
-								srcset="../../images/QG_LOGO_350-76.webp"
-							/>
-
-							<!-- fallback -->
-							<img
-								class="training__header__picture-img"
-								sizes="(max-width: 1000px) 20vw, 1440px"
-								srcset="
-									../../images/QG_LOGO_200-43.png 1440w,
-									../../images/QG_LOGO_350-76.png
-								"
-								src="../../images/QG__LOGO-350-76.PNG"
-								alt="questergate logo"
-								loading="lazy"
-								decoding="async"
-								fetchpriority="high"
-							/>
-						</picture>
-					</a>
-				</nav>
-			</header>
+			@include('generic.new_header_training')
 
 			<main class="main">
 				<!-- -------START OF HERO section------- -->
@@ -212,7 +151,7 @@
 				<section class="training__benefit-for-you__section">
 					<div class="training__benefit-for-you__container">
 						<h2 class="training__benefit-card__header">
-							3 things you will learn <br />
+							The 3 Major skills you will develop <br />
 							<span class="training__benefit__header-span2"></span>
 						</h2>
 
@@ -220,15 +159,15 @@
 							<div class="training__benefit-card__content__container">
 								<ul class="training__benefit-card__list">
 									<li class="training__benefit-card__list-items">
-										How to create trading strategies that are long lasting.
+										Create trading strategies that are stable and long lasting.
 									</li>
 
 									<li class="training__benefit-card__list-items">
-										How to minimise loses and never lose your capital.
+										Minimise your loses and never lose your capital.
 									</li>
 
 									<li class="training__benefit-card__list-items">
-										How to maximise your profit and earn steady income.
+										Start earning an income from the financial market.
 									</li>
 								</ul>
 							</div>
@@ -269,20 +208,20 @@
 									<li
 										class="training__focus-card__list-items training__features-card__list-items"
 									>
-										Real time practical training (online).
+										12 weeks of real time training (online).
 									</li>
 
 									<li
 										class="training__focus-card__list-items training__features-card__list-items"
 									>
-										Access to over 30years of trading insights.
+										Access to over 30years of Trading insights.
 									</li>
 
-									<!-- <li
+									<li
 										class="training__focus-card__list-items training__features-card__list-items"
 									>
 										Access to Free Trading signals for a year.
-									</li> -->
+									</li>
 								</ul>
 							</div>
 						</div>
@@ -294,7 +233,7 @@
 					<div class="training__cta__1__container">
 						<div class="training__cta__1__content__container">
 							<p class="training__cta__content">
-								Choose the type of training you want
+								Start your journey to become a profitable trader
 							</p>
 
 							<a
@@ -783,54 +722,30 @@
 
 				<!-- -------START OF payment section------- -->
 				<section class="training__payment__section">
-					<p class="training__payment__section-title">
-						We offer four types of training programs
-					</p>
-
-					<!-- *for Beginners Traders' Training -->
-					<div
-						class="training__payment__container training__payment__container_row-1"
-					>
-						<!-- for Beginner one-on-one training -->
+					<div class="training__payment__container">
+						<!-- for one-on-one training -->
 						<div class="training__types__container">
 							<div class="training__types__card">
 								<div class="training__types__header-features__container">
-									<h3 class="training__types__header">
-										Beginners <br />
-										One-on-One Training
-									</h3>
+									<h3 class="training__types__header">One-on-One Training</h3>
 
 									<div class="training__types__features__list__container">
 										<ul class="training__types__features__list">
 											<li class="training__types__features__list-items">
-												Become a Pro in 3 months and start earning income.
-											</li>
-
-											<br />
-
-											<li
-												class="training__types__features__list-items training__payment__features__what-you-get"
-											>
-												What you get
+												Learn at your own pace.
 											</li>
 
 											<li class="training__types__features__list-items">
-												You learn at your own pace.
+												Customize your class schedule.
 											</li>
 
 											<li class="training__types__features__list-items">
-												Customise your class schedule.
+												Unlimited access to training Instructor.
 											</li>
 
 											<li class="training__types__features__list-items">
-												Live video training sessions.
-												<br />
-												(with access to recordings)
+												1 year of free trading signals.
 											</li>
-
-											<!-- <li class="training__types__features__list-items">
-												Your own private Instructor.
-											</li> -->
 										</ul>
 									</div>
 								</div>
@@ -840,57 +755,45 @@
 								<div class="training__types__cost__list__container">
 									<ul class="training__types__cost__list">
 										<li class="training__types__cost__list-items">
-											<b>Duration</b> <br />
-											3 months (online).
+											3 months online training.
 										</li>
 
 										<li class="training__types__cost__list-items">
-											<b>Fee</b> <br />
-											50,000 naira per month
+											Fee: ₦50,000 per month.
+										</li>
+
+										<li class="training__types__cost__list-items">
+											Live video classes
+											<br />
+											(with access to recordings)
 										</li>
 									</ul>
 								</div>
 
-								<!-- PAYSTACK INTEGRATION -->
-								<form class="training__paystack__payment__form">
-									<div class="training__paystack__form__label">Email</div>
-									<div class="training__paystack__form__input__div">
-										<input
-											class="training__paystack__form__input-text"
-											type="text"
-											id="email-address-50k"
-											required
-										/>
-									</div>
+                <form>
+                  <div>Email</div>
+                  <div style="margin-bottom: 10px;"><input type="text" id="email-address-50k"></div>
 
-									<div class="training__paystack__form__label">Amount</div>
-									<div class="training__paystack__form__input__div">
-										<input
-											class="training__paystack__form__input-amount"
-											type="tel"
-											id="amount-50k"
-											value="50,000 naira"
-											readonly
-										/>
-									</div>
-								</form>
+                  <div>Amount</div>
+                  <div style="margin-bottom: 10px;"><input type="tel" id="amount-50k" value="50000" readonly></div>
+                </form>
 
 								<div
 									class="training__types__cta__container training__one-on-one__cta__container"
 								>
 									<button
-										class="training__one-on-one__cta__button training__beginner__one-on-one__cta__button"
+										class="training__one-on-one__cta__button"
 										id="training__one-on-one__cta__button"
 										aria-expanded="false"
-										data-target="#beginner__one-on-one__payment-message"
-										onclick="payWithPaystack50K(event)"
+										data-target="#one-on-one__payment-message"
+                    onclick="payWithPaystack50K(event)"
 									>
 										Pay Now to Register
 									</button>
 
 									<div
-										class="training__one-on-one__payment-message__container training__payment__beginner__one-on-one__accordion__scroll-into-view"
-										id="beginner__one-on-one__payment-message"
+										class="training__one-on-one__payment-message__container training__payment__one-on-one__accordion__scroll-into-view"
+										id="one-on-one__payment-message"
 									>
 										<p class="training__payment-message__text-1">
 											Welcome Onboard!
@@ -905,11 +808,11 @@
 											Contact Us on Whatsapp:
 											<span class="training-whatsapp-link__container"
 												><a
-													href=""
+													href="https://wa.link/68pals"
 													class="training-whatsapp-link"
 													alt="training whatsapp link"
 													target="_blank"
-													>#################</a
+													>+234 814 447 7866</a
 												>
 											</span>
 										</p>
@@ -918,43 +821,28 @@
 							</div>
 						</div>
 
-						<!-- for Beginner group training -->
+						<!-- for group training -->
 						<div class="training__types__container">
 							<div class="training__types__card">
 								<div class="training__types__header-features__container">
-									<h3 class="training__types__header">
-										Beginners <br />
-										Group Training
-									</h3>
+									<h3 class="training__types__header">Group Training</h3>
 
 									<div class="training__types__features__list__container">
 										<ul class="training__types__features__list">
 											<li class="training__types__features__list-items">
-												Become a Pro in 3 months and start earning income.
-											</li>
-
-											<br />
-
-											<li
-												class="training__types__features__list-items training__payment__features__what-you-get"
-											>
-												What you get
+												Affordable learning fee.
 											</li>
 
 											<li class="training__types__features__list-items">
-												You learn within a group.
+												Easy class schedules.
 											</li>
 
 											<li class="training__types__features__list-items">
-												Live video training sessions.
-												<br />
-												(with access to recordings)
+												Access to training Instructor.
 											</li>
 
-											<li
-												class="training__types__features__list-items training__list-item-not-visible"
-											>
-												Cheaper training fee
+											<li class="training__types__features__list-items">
+												4 months of free trading signals.
 											</li>
 										</ul>
 									</div>
@@ -965,67 +853,49 @@
 								<div class="training__types__cost__list__container">
 									<ul class="training__types__cost__list">
 										<li class="training__types__cost__list-items">
-											<b>Duration</b> <br />
-											3 months (online)
+											3 months online training.
 										</li>
 
 										<li class="training__types__cost__list-items">
-											<b>Fee</b> <br />
-											6,000 naira per month
+											Fee: ₦6,000 per month.
 										</li>
 
-										<!-- <li class="training__types__cost__list-items">
+										<li class="training__types__cost__list-items">
 											Live video classes
 											<br />
 											(with access to recordings)
-										</li> -->
+										</li>
 									</ul>
 								</div>
-
-								<!-- PAYSTACK INTEGRATION -->
-								<form class="training__paystack__payment__form">
-									<div class="training__paystack__form__label">Email</div>
-									<div class="training__paystack__form__input__div">
-										<input
-											class="training__paystack__form__input-text"
-											type="text"
-											id="email-address-6k"
-											required
-										/>
-									</div>
-
-									<div class="training__paystack__form__label">Amount</div>
-									<div class="training__paystack__form__input__div">
-										<input
-											class="training__paystack__form__input-amount"
-											type="tel"
-											id="amount-6k"
-											value="6,000 naira"
-											readonly
-										/>
-									</div>
-								</form>
 
 								<div
 									class="training__types__cta__container training__group__cta__container"
 								>
-									<!-- <p class="training__group__sub-cta">
+									<p class="training__group__sub-cta">
 										Limited Slots: 19 slots remaining!
-									</p> -->
+									</p>
+
+                  <form>
+                    <div>Email</div>
+                    <div style="margin-bottom: 10px;"><input type="text" id="email-address-6k"></div>
+  
+                    <div>Amount</div>
+                    <div style="margin-bottom: 10px;"><input type="tel" id="amount-6k" value="6000" readonly></div>
+                  </form>
 
 									<button
-										class="training__group__cta__button training__beginner__group__cta__button"
+										class="training__group__cta__button"
 										id="training__group__cta__button"
 										aria-expanded="false"
-										data-target="#beginner__group__payment-message"
-										onclick="payWithPaystack6K(event)"
+										data-target="#group__payment-message"
+                    onclick="payWithPaystack6K(event)"
 									>
 										Pay Now to Register
 									</button>
 
 									<div
-										class="training__group__payment-message__container training__payment__beginner__group__accordion__scroll-into-view"
-										id="beginner__group__payment-message"
+										class="training__group__payment-message__container training__payment__group__accordion__scroll-into-view"
+										id="group__payment-message"
 									>
 										<p class="training__payment-message__text-1">
 											Welcome Onboard!
@@ -1040,272 +910,11 @@
 											Contact Us on Whatsapp:
 											<span class="training-whatsapp-link__container"
 												><a
-													href=""
+													href="https://wa.link/68pals"
 													class="training-whatsapp-link"
 													alt="training whatsapp link"
 													target="_blank"
-													>#################</a
-												>
-											</span>
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<!-- *for Demo & Live Traders' Training -->
-					<div
-						class="training__payment__container training__payment__container_row-2"
-					>
-						<!-- for Demo Trader one-on-one training -->
-						<div class="training__types__container">
-							<div class="training__types__card">
-								<div class="training__types__header-features__container">
-									<h3 class="training__types__header">
-										Demo Traders <br />
-										One-on-One Training
-									</h3>
-
-									<div class="training__types__features__list__container">
-										<ul class="training__types__features__list">
-											<li class="training__types__features__list-items">
-												Learn how to create profitable trading strategies and
-												make consistent profit.
-											</li>
-
-											<br />
-
-											<li
-												class="training__types__features__list-items training__payment__features__what-you-get"
-											>
-												What you get
-											</li>
-
-											<li class="training__types__features__list-items">
-												You learn at your own pace.
-											</li>
-
-											<li class="training__types__features__list-items">
-												Customise your class schedule.
-											</li>
-
-											<li class="training__types__features__list-items">
-												Live video training sessions.
-												<br />
-												(with access to recordings)
-											</li>
-
-											<!-- <li class="training__types__features__list-items">
-												Your own private Instructor.
-											</li> -->
-										</ul>
-									</div>
-								</div>
-
-								<div class="training__types__drawing-an-arrow"></div>
-
-								<div class="training__types__cost__list__container">
-									<ul class="training__types__cost__list">
-										<li class="training__types__cost__list-items">
-											<b>Duration</b> <br />
-											2 months (online)
-										</li>
-
-										<li class="training__types__cost__list-items">
-											<b>Fee:</b> <br />
-											50,000 naira per month
-										</li>
-									</ul>
-								</div>
-
-								<!-- PAYSTACK INTEGRATION -->
-								<form class="training__paystack__payment__form">
-									<div class="training__paystack__form__label">Email</div>
-									<div class="training__paystack__form__input__div">
-										<input
-											class="training__paystack__form__input-text"
-											type="text"
-											id="email-address-50k"
-											required
-										/>
-									</div>
-
-									<div class="training__paystack__form__label">Amount</div>
-									<div class="training__paystack__form__input__div">
-										<input
-											class="training__paystack__form__input-amount"
-											type="tel"
-											id="amount-50k"
-											value="50,000 naira"
-											readonly
-										/>
-									</div>
-								</form>
-
-								<div
-									class="training__types__cta__container training__one-on-one__cta__container"
-								>
-									<button
-										class="training__one-on-one__cta__button training__demo__one-on-one__cta__button"
-										id="training__one-on-one__cta__button"
-										aria-expanded="false"
-										data-target="#demo__one-on-one__payment-message"
-										onclick="payWithPaystack50K(event)"
-									>
-										Pay Now to Register
-									</button>
-
-									<div
-										class="training__one-on-one__payment-message__container training__payment__demo__one-on-one__accordion__scroll-into-view"
-										id="demo__one-on-one__payment-message"
-									>
-										<p class="training__payment-message__text-1">
-											Welcome Onboard!
-										</p>
-
-										<p class="training__payment-message__text-2">
-											To make payment and get more info about the One-on-One
-											training:
-										</p>
-
-										<p class="training__payment-message__text-3">
-											Contact Us on Whatsapp:
-											<span class="training-whatsapp-link__container"
-												><a
-													href=""
-													class="training-whatsapp-link"
-													alt="training whatsapp link"
-													target="_blank"
-													>#################</a
-												>
-											</span>
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<!-- for Live Trader one-on-one training -->
-						<div class="training__types__container">
-							<div class="training__types__card">
-								<div class="training__types__header-features__container">
-									<h3 class="training__types__header">
-										Live Traders <br />
-										One-on-One Training
-									</h3>
-
-									<div class="training__types__features__list__container">
-										<ul class="training__types__features__list">
-											<li class="training__types__features__list-items">
-												Learn how to create trading strategies, minimise losses,
-												and maximise your profit.
-											</li>
-
-											<br />
-
-											<li
-												class="training__types__features__list-items training__payment__features__what-you-get"
-											>
-												What you get
-											</li>
-
-											<li class="training__types__features__list-items">
-												You learn at your own pace.
-											</li>
-
-											<li class="training__types__features__list-items">
-												Customise your class schedule.
-											</li>
-
-											<li class="training__types__features__list-items">
-												Live video training sessions.
-												<br />
-												(with access to recordings)
-											</li>
-
-											<!-- <li class="training__types__features__list-items">
-												Your own private Instructor.
-											</li> -->
-										</ul>
-									</div>
-								</div>
-
-								<div class="training__types__drawing-an-arrow"></div>
-
-								<div class="training__types__cost__list__container">
-									<ul class="training__types__cost__list">
-										<li class="training__types__cost__list-items">
-											<b>Duration</b> <br />
-											1 month (online)
-										</li>
-
-										<li class="training__types__cost__list-items">
-											<b>Fee:</b> <br />
-											50,000 naira
-										</li>
-									</ul>
-								</div>
-
-								<!-- PAYSTACK INTEGRATION -->
-								<form class="training__paystack__payment__form">
-									<div class="training__paystack__form__label">Email</div>
-									<div class="training__paystack__form__input__div">
-										<input
-											class="training__paystack__form__input-text"
-											type="text"
-											id="email-address-50k"
-											required
-										/>
-									</div>
-
-									<div class="training__paystack__form__label">Amount</div>
-									<div class="training__paystack__form__input__div">
-										<input
-											class="training__paystack__form__input-amount"
-											type="tel"
-											id="amount-50k"
-											value="50,000 naira"
-											readonly
-										/>
-									</div>
-								</form>
-
-								<div
-									class="training__types__cta__container training__one-on-one__cta__container"
-								>
-									<button
-										class="training__one-on-one__cta__button training__live__one-on-one__cta__button"
-										id="training__one-on-one__cta__button"
-										aria-expanded="false"
-										data-target="#live__one-on-one__payment-message"
-										onclick="payWithPaystack50K(event)"
-									>
-										Pay Now to Register
-									</button>
-
-									<div
-										class="training__one-on-one__payment-message__container training__payment__live__one-on-one__accordion__scroll-into-view"
-										id="live__one-on-one__payment-message"
-									>
-										<p class="training__payment-message__text-1">
-											Welcome Onboard!
-										</p>
-
-										<p class="training__payment-message__text-2">
-											To make payment and get more info about the One-on-One
-											training:
-										</p>
-
-										<p class="training__payment-message__text-3">
-											Contact Us on Whatsapp:
-											<span class="training-whatsapp-link__container"
-												><a
-													href=""
-													class="training-whatsapp-link"
-													alt="training whatsapp link"
-													target="_blank"
-													>#################</a
+													>+234 814 447 7866</a
 												>
 											</span>
 										</p>
@@ -1318,197 +927,90 @@
 			</main>
 
 			<!-- -------start of FOOTER section------- -->
-			<footer class="footer">
-				<!-- footer section1 -->
-				<div class="footer__section1-container">
-					<div class="footer__section1-part1__container">
-						<!-- footer sub-section for Products -->
-						<div class="footer__products section1-item">
-							<h3 class="footer__section1__sub-heading">Products</h3>
-
-							<ul class="footer__list-text list__no-style">
-								<li>
-									<a
-										class="footer__links pad-marg-0"
-										href="../IAS/html__ias.html"
-										>Investment Analytics Software</a
-									>
-								</li>
-
-								<li>
-									<a
-										class="footer__links pad-marg-0"
-										href="../signalapp/html__signalapp.html"
-										>Signal App</a
-									>
-								</li>
-
-								<li>
-									<a
-										class="footer__links pad-marg-0"
-										href="../investment/investment__homepage/html__investment.html"
-										>Fund Management</a
-									>
-								</li>
-
-								<!-- a list item MAY be appended here using js-->
-							</ul>
-						</div>
-
-						<!-- footer sub-section for Company -->
-						<div class="footer__company section1-item">
-							<h3 class="footer__section1__sub-heading">Company</h3>
-
-							<ul class="footer__list-text list__no-style">
-								<li>
-									<a
-										class="footer__links pad-marg-0"
-										href="../investment/investment__about--us/html__investment__about-us.html"
-										>About Us</a
-									>
-								</li>
-
-								<li>
-									<a
-										class="footer__links pad-marg-0"
-										href="../blog/html__blog.html"
-										>Blog</a
-									>
-								</li>
-
-								<li>
-									<a
-										class="footer__links pad-marg-0"
-										href="../investment/investment__faq/html__investment__faq.html"
-										>FAQ</a
-									>
-								</li>
-
-								<li>
-									<a
-										class="footer__links pad-marg-0"
-										href="../investment/investment__contact/investment__contact.html"
-										>Contact Us</a
-									>
-								</li>
-							</ul>
-						</div>
-					</div>
-
-					<div class="footer__section1-part2__container">
-						<!-- footer sub-section for Legal -->
-						<div class="footer__legal section1-item">
-							<h3 class="footer__section1__sub-heading">Legal</h3>
-
-							<ul class="footer__list-text list__no-style">
-								<li>
-									<a
-										class="footer__links pad-marg-0"
-										href="../terms-conditions/html__terms-conditions.html"
-										>Terms & Conditions</a
-									>
-								</li>
-
-								<li>
-									<a
-										class="footer__links pad-marg-0"
-										href="../privacy-policy/html__privacy-policy.html"
-										>Privacy Policy</a
-									>
-								</li>
-							</ul>
-						</div>
-
-						<!-- footer sub-section for Contact details -->
-						<div class="footer__contact-details section1-item">
-							<h3
-								class="footer__section1__sub-heading contact-details visible__nooo"
-							>
-								Contact Us
-							</h3>
-
-							<ul class="footer__list-text list__no-style">
-								<li class="contact-email">
-									<a class="footer__links pad-marg-0 no-hover-effect-1"
-										>contact@questergate.com</a
-									>
-								</li>
-
-								<li class="contact-phone">+234 814 447 7866</li>
-							</ul>
-
-							<div class="socials__container contact-social">
-								<!-- facebook -->
-								<a
-									href="#"
-									class="socials__link"
-									id="remove__footer__social-face"
-									target="_blank"
-									><img
-										class="socials__link-image"
-										src="../../images/facebook-symbol--smallest.jpg"
-										alt="facebook logo"
-									/>
-								</a>
-
-								<!-- linkedin -->
-								<a href="#" class="socials__link" target="_blank"
-									><img
-										class="socials__link-image"
-										src="../../images/LinkedIn_icon_circle--smallest.jpg"
-										alt="linkedin logo"
-									/>
-								</a>
-
-								<!-- instagram -->
-								<a href="#" class="socials__link" target="_blank"
-									><img
-										class="socials__link-image"
-										src="../../images/instagram-logo-icon-7--smallest.jpg"
-										alt="instagram logo"
-									/>
-								</a>
-
-								<!-- X -->
-								<a
-									href="#"
-									class="socials__link"
-									id="remove__footer__social-x"
-									target="_blank"
-									><img
-										class="socials__link-image"
-										src="../../images/twitter-X-symbol3.jpg"
-										alt="twitter logo"
-									/>
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<!-- <hr class="hr-horizontal-line"/> -->
-				<div class="footer-horizontal-line"></div>
-
-				<div class="footer__section2-container">
-					<div class="copyright">
-						<p class="footer__other-text">
-							© <span id="current__year"></span> Questergate. All rights
-							reserved. | RC-1814438
-						</p>
-					</div>
-				</div>
-			</footer>
+			@include('generic.new_footer')
 		</div>
 
-		<script src="../js-components/header__on__scroll__with__training.js"></script>
-		<script src="../js-components/back-to-top.js"></script>
-		<script src="../js-components/section__visible__on__scroll.js"></script>
-		<script src="../js-components/numbers-count-up-1__training.js"></script>
-		<script src="../js-components/carousel--swipper--jbg-1.js"></script>
-		<script src="../js-components/training__payment__cta__accordion.js"></script>
-		<script src="../js-components/training__payment__cta__accordion__smooth__scroll__into__view.js"></script>
-		<script src="../js-components/footer__currentyear__auto.js"></script>
-		<script src="../js-components/append__to__footer-list.js"></script>
-		<script src="../js-components/footer__remove__list-items.js"></script>
+		<script src="/questergatecapital/public/js/js-components/header__on__scroll__with__training.js"></script>
+		<script src="/questergatecapital/public/js/js-components/back-to-top.js"></script>
+		<script src="/questergatecapital/public/js/js-components/section__visible__on__scroll.js"></script>
+		<script src="/questergatecapital/public/js/js-components/numbers-count-up-1__training.js"></script>
+		<script src="/questergatecapital/public/js/js-components/carousel--swipper--jbg-1.js"></script>
+		
+		<!-- ---These 2 Javascript controls the dropdown that would have appeared if we did not implement Paystack payment--- -->
+		<!-- <script src="/questergatecapital/public/js/js-components/training__payment__cta__accordion.js"></script> -->
+		<!-- <script src="/questergatecapital/public/js/js-components/training__payment__cta__accordion__smooth__scroll__into__view.js"></script> -->
+		
+		
+		<script src="/questergatecapital/public/js/js-components/footer__currentyear__auto.js"></script>
+		<!-- <script src="/questergatecapital/public/js/js-components/append__to__footer-list.js"></script> -->
+		<script src="/questergatecapital/public/js/js-components/footer__remove__list-items.js"></script>
+		
+		        
+		<!-- --------------JQUERY ACCESS via CDN and via Local server----------------- -->
+		<script
+			src="https://code.jquery.com/jquery-3.7.1.min.js"
+			integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+			crossorigin="anonymous"
+		></script>
+
+    <script src="https://js.paystack.co/v1/inline.js"></script>
+
+    <script>
+      const paymentForm = document.getElementById('paymentForm');
+      paymentForm.addEventListener("submit", payWithPaystack, false);
+
+      function payWithPaystack50K(e) {
+        console.log(e.target);
+        e.preventDefault();
+        const v = "50000";
+
+        let handler = PaystackPop.setup({
+          key: 'pk_test_cdecde0ab7d5be891a84933c9c3faf2077e853b0', // Replace with your public key
+          email: document.getElementById("email-address-50k").value,
+          amount: v * 100,
+          ref: ''+Math.floor((Math.random() * 1000000000) + 1), // generates a pseudo-unique reference. Please replace with a reference you generated. Or remove the line entirely so our API will generate one for you
+          // label: "Optional string that replaces customer email"
+          onClose: function(){
+            alert('Window closed.');
+          },
+          callback: function(response){
+            window.location.href = "https://questergate.com/training_payment_success_private";
+          }
+        });
+
+        handler.openIframe();
+      }
+
+      function payWithPaystack6K(e) {
+        console.log(e.target);
+        e.preventDefault();
+        const v = "6000";
+
+        let handler = PaystackPop.setup({
+          key: 'pk_test_cdecde0ab7d5be891a84933c9c3faf2077e853b0', // Replace with your public key
+          email: document.getElementById("email-address-6k").value,
+          amount: v * 100,
+          ref: ''+Math.floor((Math.random() * 1000000000) + 1), // generates a pseudo-unique reference. Please replace with a reference you generated. Or remove the line entirely so our API will generate one for you
+          // label: "Optional string that replaces customer email"
+          onClose: function(){
+            alert('Window closed.');
+          },
+          callback: function(response){
+            window.location.href = "https://questergate.com/training_payment_success_group";
+          }
+        });
+
+        handler.openIframe();
+      }
+    </script>
+
+
+		<!-- SWIPER -->
+
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<!-- End of SWIPER -->
+        
+        <script type="text/javascript"> window.$crisp=[];window.CRISP_WEBSITE_ID="59767aec-ab5f-49a2-9233-f872ade8029a";(function(){ d=document;s=d.createElement("script"); s.src="https://client.crisp.chat/l.js"; s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})(); </script>
+
 	</body>
 </html>

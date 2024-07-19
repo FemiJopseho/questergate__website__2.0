@@ -3,325 +3,445 @@
 /** Mobile view */
 /* max-width: 500px */
 @media screen and (width <=31.25em) {
-  .training__payment__section {
-    /* outline: 4px solid goldenrod; */
+	.training__payment__section {
+		/* outline: 4px solid goldenrod; */
 
-    padding-top: 1rem;
-    padding-bottom: 8rem;
-    width: 100%;
-  }
+		padding-top: 1rem;
+		padding-bottom: 8rem;
+		width: 100%;
+	}
 
-  .training__payment__container {
-    /* outline: 4px solid black; */
+	.training__payment__section-title {
+		/* outline: 2px solid blue; */
 
-    width: 100%;
+		width: 90%;
+		max-width: 400px;
+		margin: 0 auto;
+		padding: 0 0 2rem 0;
 
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: flex-start;
-    row-gap: 6rem;
-  }
+		font-family: var(--ff-primary);
+		font-weight: var(--fw-bold);
+		font-size: var(--fs-600);
+		line-height: 1.5;
+		letter-spacing: -3%;
+		text-transform: capitalize;
+		text-align: center;
+		color: var(--clr-tertiary-100);
+	}
 
-  /* styles the background and height of card */
-  .training__types__container {
-    /* outline: 2px solid red; */
+	.training__payment__container {
+		/* outline: 4px solid black; */
 
-    width: 95%;
-    max-width: 600px;
-    margin: 0 auto;
-    min-height: 300px;
-    padding-bottom: 1.5rem;
+		width: 100%;
 
-    border-radius: 12px;
-    border: 0.1px solid hsla(0, 0%, 0%, 0.2);
-    background-color: var(hsl(206, 5%, 90%, 1));
-    background-image: linear-gradient(150deg,
-        hsla(0, 0%, 100%, 1),
-        hsl(206, 5%, 90%, 1),
-        hsl(206, 5%, 90%, 1),
-        hsl(206, 5%, 90%, 1),
-        hsl(206, 5%, 90%, 1),
-        hsl(206, 5%, 90%, 1),
-        hsl(206, 5%, 90%, 1));
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: space-between;
+		align-items: flex-start;
+		row-gap: 6rem;
+	}
 
-    box-shadow: 0px 1px 1px hsla(0, 0%, 0%, 0.3);
-    box-shadow: 0px 2px 2px hsla(0, 0%, 0%, 0.3);
-    box-shadow: 0px 4px 4px hsla(0, 0%, 0%, 0.3);
-  }
+	.training__payment__container_row-1 {
+		/* outline: 4px solid green; */
 
-  .training__types__card {
-    /* outline: 2px solid green; */
+		padding-bottom: 6rem;
+	}
 
-    border-radius: 12px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
-  }
+	/* styles the background and height of card */
+	.training__types__container {
+		/* outline: 2px solid red; */
 
-  /* 1st half of the card */
-  .training__types__header-features__container {
-    /* outline: 2px solid maroon; */
+		width: 95%;
+		max-width: 600px;
+		margin: 0 auto;
+		min-height: 300px;
+		padding-bottom: 1.5rem;
 
-    width: 100%;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-    background-color: white;
-    padding-top: 2rem;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+		border-radius: 12px;
+		border: 0.1px solid hsla(0, 0%, 0%, 0.2);
+		background-color: var(hsl(206, 5%, 90%, 1));
+		background-image: linear-gradient(
+			150deg,
+			hsla(0, 0%, 100%, 1),
+			hsl(206, 5%, 90%, 1),
+			hsl(206, 5%, 90%, 1),
+			hsl(206, 5%, 90%, 1),
+			hsl(206, 5%, 90%, 1),
+			hsl(206, 5%, 90%, 1),
+			hsl(206, 5%, 90%, 1)
+		);
 
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-  }
+		box-shadow: 0px 1px 1px hsla(0, 0%, 0%, 0.3);
+		box-shadow: 0px 2px 2px hsla(0, 0%, 0%, 0.3);
+		box-shadow: 0px 4px 4px hsla(0, 0%, 0%, 0.3);
+	}
 
-  .training__types__header {
-    /* outline: 2px solid pink; */
+	.training__types__card {
+		/* outline: 2px solid green; */
 
-    width: 90%;
-    max-width: 350px;
-    margin: 0 auto;
-    padding-bottom: 1rem;
+		border-radius: 12px;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: space-between;
+		align-items: center;
+	}
 
-    font-family: var(--ff-primary);
-    font-weight: var(--fw-bold);
-    font-size: var(--fs-600);
-    line-height: 1.3;
-    letter-spacing: -3%;
-    text-transform: none;
-    text-align: center;
-    color: var(--clr-secondary-650);
-  }
+	/* 1st half of the card */
+	.training__types__header-features__container {
+		/* outline: 2px solid maroon; */
 
-  .training__types__features__list__container {
-    /* outline: 2px solid cyan; */
+		width: 100%;
+		border-top-left-radius: 12px;
+		border-top-right-radius: 12px;
+		background-color: white;
+		padding-top: 2rem;
+		padding-left: 0.5rem;
+		padding-right: 0.5rem;
 
-    width: 100%;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: center;
+		align-items: center;
+	}
 
-    background-color: white;
-    padding-bottom: 2rem;
-  }
+	.training__types__header {
+		/* outline: 2px solid pink; */
 
-  .training__types__features__list,
-  .training__types__cost__list {
-    /* outline: 2px solid brown; */
+		width: 90%;
+		max-width: 350px;
+		margin: 0 auto;
+		padding-bottom: 1rem;
 
-    width: 100%;
+		font-family: var(--ff-primary);
+		font-weight: var(--fw-bold);
+		font-size: var(--fs-600);
+		line-height: 1.3;
+		letter-spacing: -3%;
+		text-transform: none;
+		text-align: center;
+		color: var(--clr-secondary-650);
+	}
 
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    row-gap: 1rem;
-  }
+	.training__types__features__list__container {
+		/* outline: 2px solid cyan; */
 
-  .training__types__features__list-items,
-  .training__types__cost__list-items {
-    /* outline: 2px solid skyblue; */
+		width: 100%;
 
-    width: 100%;
-    padding: 0 0.5rem;
-    list-style: none;
+		background-color: white;
+		padding-bottom: 2rem;
+	}
 
-    font-family: var(--ff-primary);
-    font-weight: var(--fw-semi-bold);
-    font-size: var(--fs-800);
-    line-height: 1.5;
-    letter-spacing: normal;
-    text-transform: none;
-    text-align: center;
-    color: black;
-  }
+	.training__types__features__list,
+	.training__types__cost__list {
+		/* outline: 2px solid brown; */
 
-  /* kinda-middle of the card */
-  /* drawing the downward arrow */
-  .training__types__drawing-an-arrow {
-    width: 25px;
-    height: 25px;
-    margin: 0 auto;
-    border: 0px solid var(--clr-secondary-650);
-    background-color: hsl(206, 5%, 90%, 1);
+		width: 100%;
 
-    rotate: 45deg;
-    translate: 0 -12.5px;
-  }
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: center;
+		align-items: center;
+		row-gap: 1rem;
+	}
 
-  /* 2nd half of the card */
-  .training__types__cost__list__container {
-    /* outline: 2px solid magenta; */
+	.training__types__features__list-items,
+	.training__types__cost__list-items {
+		/* outline: 2px solid skyblue; */
 
-    width: 100%;
-    padding-bottom: 2rem;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-  }
+		width: 100%;
+		padding: 0 0.5rem;
+		list-style: none;
 
-  .training__types__cost__list-items {
-    font-weight: var(--fw-regular);
-    font-size: var(--fs-800);
-    color: var(--clr-secondary-650);
-  }
+		font-family: var(--ff-primary);
+		font-weight: var(--fw-semi-bold);
+		font-size: var(--fs-800);
+		line-height: 1.5;
+		letter-spacing: normal;
+		text-transform: none;
+		text-align: center;
+		color: black;
+	}
 
-  /* 3rd part of the card */
-  .training__types__cta__container {
-    /* outline: 2px solid blueviolet; */
+	.training__list-item-not-visible {
+		/* outline: 2px dotted black; */
 
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    row-gap: 0.5rem;
-  }
+		display: none;
+	}
 
-  .training__one-on-one__cta__button {
-    /* outline: 2px solid purple; */
+	.training__payment__features__what-you-get {
+		font-family: var(--ff-secondary);
+		font-weight: var(--fw-bold);
+		font-size: var(--fs-800);
+	}
 
-    margin-top: 0rem;
-  }
+	/* kinda-middle of the card */
+	/* drawing the downward arrow */
+	.training__types__drawing-an-arrow {
+		width: 25px;
+		height: 25px;
+		margin: 0 auto;
+		border: 0px solid var(--clr-secondary-650);
+		background-color: hsl(206, 5%, 90%, 1);
 
-  .training__group__sub-cta {
-    /* outline: 2px solid green; */
+		rotate: 45deg;
+		translate: 0 -12.5px;
+	}
 
-    font-family: var(--ff-primary);
-    font-weight: var(--fw-bold);
-    font-size: var(--fs-800);
-    line-height: 1.5;
-    letter-spacing: normal;
-    text-transform: capitalize;
-    text-align: center;
-    color: var(--clr-primary-650);
-  }
+	/* 2nd half of the card */
+	.training__types__cost__list__container {
+		/* outline: 2px solid magenta; */
 
-  .training__one-on-one__cta__button,
-  .training__group__cta__button {
-    /* outline: 2px solid pink; */
+		width: 100%;
+		padding-bottom: 2rem;
+		padding-left: 0.5rem;
+		padding-right: 0.5rem;
+	}
 
-    width: 80%;
-    max-width: 350px;
-    min-width: 200px;
-    margin-bottom: 1rem;
-    font-family: var(--ff-btn);
-    font-weight: var(--fw-bold);
-    font-size: var(--fs-800);
-    line-height: 1.5;
-    letter-spacing: normal;
-    text-transform: none;
-    text-align: center;
-    color: var(--clr-neutral-white-2);
+	.training__types__cost__list-items {
+		font-weight: var(--fw-regular);
+		font-size: var(--fs-800);
+		color: var(--clr-secondary-650);
+	}
 
-    background-color: var(--clr-secondary-650);
+	/* 3rd part of the card */
+	.training__types__cta__container {
+		/* outline: 2px solid blueviolet; */
 
-    padding: 1rem 1rem;
-    border-radius: 12px;
-    cursor: pointer;
-    border: 0.1px solid hsla(0, 0%, 0%, 0.1);
-    box-shadow: 0px 1px 1px hsla(0, 0%, 0%, 0.3);
-    box-shadow: 0px 2px 2px hsla(0, 0%, 0%, 0.3);
-    box-shadow: 0px 4px 4px hsla(0, 0%, 0%, 0.3);
-    box-shadow: 0px 8px 8px hsla(0, 0%, 0%, 0.3);
-    box-shadow: 0px 16px 16px hsla(0, 0%, 0%, 0.3);
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: center;
+		align-items: center;
+		row-gap: 0.5rem;
+	}
 
-    background-color: var(--clr-secondary-650);
-    background-image: linear-gradient(150deg,
-        var(--clr-secondary-500),
-        var(--clr-secondary-650),
-        var(--clr-secondary-650),
-        var(--clr-secondary-650),
-        var(--clr-secondary-650),
-        var(--clr-secondary-650),
-        var(--clr-secondary-650));
+	.training__one-on-one__cta__button {
+		/* outline: 2px solid purple; */
 
-    /* ////////////// */
-    &:hover {
-      color: black;
-      transition: all 300ms ease-in-out;
-    }
+		margin-top: 0rem;
+	}
 
-    /* /////////// */
-    &:active {
-      transform: translateY(8px);
+	.training__group__sub-cta {
+		/* outline: 2px solid green; */
 
-      box-shadow: 0px 1px 1px hsla(0, 0%, 0%, 0.3);
+		font-family: var(--ff-primary);
+		font-weight: var(--fw-bold);
+		font-size: var(--fs-800);
+		line-height: 1.5;
+		letter-spacing: normal;
+		text-transform: capitalize;
+		text-align: center;
+		color: var(--clr-primary-650);
+	}
 
-      background-image: linear-gradient(150deg,
-          var(--clr-secondary-650));
+	.training__one-on-one__cta__button,
+	.training__group__cta__button {
+		/* outline: 2px solid pink; */
 
-      transition: all 150ms ease-in-out;
-    }
-  }
+		width: 80%;
+		max-width: 350px;
+		min-width: 200px;
+		margin-bottom: 1rem;
+		font-family: var(--ff-btn);
+		font-weight: var(--fw-bold);
+		font-size: var(--fs-800);
+		line-height: 1.5;
+		letter-spacing: normal;
+		text-transform: none;
+		text-align: center;
+		color: var(--clr-neutral-white-2);
 
-  /* ////////////////////////////////// */
-  /* ///////////////////////////////////// */
-  /* *start of payment-message styling */
-  .training__one-on-one__payment-message__container,
-  .training__group__payment-message__container {
-    /* outline: 2px dashed pink; */
+		background-color: var(--clr-secondary-650);
 
-    width: 80%;
-    max-width: 400px;
-    padding-left: 0.8rem;
-    padding-right: 0.8rem;
+		padding: 1rem 1rem;
+		border-radius: 12px;
+		cursor: pointer;
+		border: 0.1px solid hsla(0, 0%, 0%, 0.1);
+		box-shadow: 0px 1px 1px hsla(0, 0%, 0%, 0.3);
+		box-shadow: 0px 2px 2px hsla(0, 0%, 0%, 0.3);
+		box-shadow: 0px 4px 4px hsla(0, 0%, 0%, 0.3);
+		box-shadow: 0px 8px 8px hsla(0, 0%, 0%, 0.3);
+		box-shadow: 0px 16px 16px hsla(0, 0%, 0%, 0.3);
 
-    border-radius: 12px;
-    border: 0px solid hsla(0, 0%, 0%, 0.2);
-    background-color: var(hsl(206, 5%, 90%, 1));
-    background-image: linear-gradient(150deg,
-        hsla(0, 0%, 100%, 1),
-        hsla(0, 0%, 100%, 1),
-        hsl(206, 5%, 90%, 1),
-        hsl(206, 5%, 90%, 1));
+		background-color: var(--clr-secondary-650);
+		background-image: linear-gradient(
+			150deg,
+			var(--clr-secondary-500),
+			var(--clr-secondary-650),
+			var(--clr-secondary-650),
+			var(--clr-secondary-650),
+			var(--clr-secondary-650),
+			var(--clr-secondary-650),
+			var(--clr-secondary-650)
+		);
 
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-  }
+		/* ////////////// */
+		&:hover {
+			color: black;
+			transition: all 300ms ease-in-out;
+		}
 
-  .training__payment-message__text-1,
-  .training__payment-message__text-2,
-  .training__payment-message__text-3 {
-    font-family: var(--ff-primary);
-    font-weight: var(--fw-regular);
-    font-size: var(--fs-800);
-    line-height: 1.5;
-    letter-spacing: normal;
-    text-transform: none;
-    text-align: center;
-    color: black;
-    padding-bottom: 1.5rem;
-  }
+		/* /////////// */
+		&:active {
+			transform: translateY(8px);
 
-  .training__payment-message__text-1 {
-    color: var(--clr-secondary-650);
-    font-weight: var(--fw-bold);
-    padding-top: 2rem;
-  }
+			box-shadow: 0px 1px 1px hsla(0, 0%, 0%, 0.3);
 
-  .training-whatsapp-link__container {
-    display: block;
-    text-align: center;
-  }
+			background-image: linear-gradient(150deg, var(--clr-secondary-650));
 
-  .training-whatsapp-link {
-    text-decoration: none;
-    font-weight: var(--fw-bold);
+			transition: all 150ms ease-in-out;
+		}
+	}
 
-    /* /////////////// */
-    &:hover {
-      text-decoration: underline;
-    }
-  }
+	/* Paystack payment section */
+	.training__paystack__payment__form {
+		/* outline: 2px solid green; */
 
+		width: 100%;
+		max-width: 300px;
+		margin: 0 auto;
+
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.training__paystack__form__label {
+		/* outline: 2px solid red; */
+
+		margin: 0 0 0.4rem 0;
+		width: 100%;
+
+		font-family: var(--ff-primary);
+		font-weight: var(--fw-bold);
+		font-size: var(--fs-800);
+		line-height: 1;
+		letter-spacing: normal;
+		text-transform: none;
+		text-align: center;
+		color: var(--clr-primary-650);
+	}
+
+	.training__paystack__form__input__div {
+		/* outline: 2px solid blue; */
+
+		width: 100%;
+		margin: 0 auto;
+		padding: 0 0 0.5rem 0;
+	}
+
+	.training__paystack__form__input-text {
+		/* outline: 2px solid yellow; */
+
+		text-align: center;
+		height: 2rem;
+		width: 100%;
+		padding-left: 0.4rem;
+		margin-bottom: 1rem;
+		border-radius: 10px;
+		border: none;
+
+		font-family: var(--ff-primary);
+		font-weight: var(--fw-semi-bold);
+		font-size: var(--fs-800);
+		line-height: 1;
+		letter-spacing: normal;
+		text-transform: none;
+		text-align: left;
+		color: var(--clr-primary-650);
+	}
+
+	.training__paystack__form__input-amount {
+		/* outline: 2px solid yellowgreen; */
+
+		text-align: center;
+		height: 2rem;
+		width: 100%;
+		margin-bottom: 1rem;
+		border-radius: 10px;
+		border: none;
+
+		font-family: var(--ff-primary);
+		font-weight: var(--fw-semi-bold);
+		font-size: var(--fs-800);
+		line-height: 1;
+		letter-spacing: normal;
+		text-transform: none;
+		text-align: center;
+		color: var(--clr-primary-650);
+	}
+
+	/* ////////////////////////////////// */
+	/* ///////////////////////////////////// */
+	/* *start of payment-message styling */
+	.training__one-on-one__payment-message__container,
+	.training__group__payment-message__container {
+		/* outline: 2px dashed pink; */
+
+		width: 80%;
+		max-width: 400px;
+		padding-left: 0.8rem;
+		padding-right: 0.8rem;
+
+		border-radius: 12px;
+		border: 0px solid hsla(0, 0%, 0%, 0.2);
+		background-color: var(hsl(206, 5%, 90%, 1));
+		background-image: linear-gradient(
+			150deg,
+			hsla(0, 0%, 100%, 1),
+			hsla(0, 0%, 100%, 1),
+			hsl(206, 5%, 90%, 1),
+			hsl(206, 5%, 90%, 1)
+		);
+
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.training__payment-message__text-1,
+	.training__payment-message__text-2,
+	.training__payment-message__text-3 {
+		font-family: var(--ff-primary);
+		font-weight: var(--fw-regular);
+		font-size: var(--fs-800);
+		line-height: 1.5;
+		letter-spacing: normal;
+		text-transform: none;
+		text-align: center;
+		color: black;
+		padding-bottom: 1.5rem;
+	}
+
+	.training__payment-message__text-1 {
+		color: var(--clr-secondary-650);
+		font-weight: var(--fw-bold);
+		padding-top: 2rem;
+	}
+
+	.training-whatsapp-link__container {
+		display: block;
+		text-align: center;
+	}
+
+	.training-whatsapp-link {
+		text-decoration: none;
+		font-weight: var(--fw-bold);
+
+		/* /////////////// */
+		&:hover {
+			text-decoration: underline;
+		}
+	}
 }
 
 /*        */
@@ -333,324 +453,444 @@
 /* Mobile landscape & Tablet Portrait screens */
 /* (min-width > 500px ) & (max-width <= 875px) */
 @media screen and (width > 31.25em) and (width <=54.69em) {
-  .training__payment__section {
-    /* outline: 4px solid goldenrod; */
+	.training__payment__section {
+		/* outline: 4px solid goldenrod; */
 
-    padding-top: 2rem;
-    padding-bottom: 10rem;
-    width: 100%;
-    max-width: var(--width__1440px);
-    margin: 0 auto;
-  }
+		padding-top: 2rem;
+		padding-bottom: 10rem;
+		width: 100%;
+		max-width: var(--width__1440px);
+		margin: 0 auto;
+	}
 
-  .training__payment__container {
-    /* outline: 4px solid black; */
+	.training__payment__section-title {
+		/* outline: 2px solid blue; */
 
-    width: 100%;
+		width: 100%;
+		max-width: 400px;
+		margin: 0 auto;
+		padding: 0 0 4rem 0;
 
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: flex-start;
-    row-gap: 6rem;
-  }
+		font-family: var(--ff-primary);
+		font-weight: var(--fw-bold);
+		font-size: var(--fs-600);
+		line-height: 1.5;
+		letter-spacing: -3%;
+		text-transform: capitalize;
+		text-align: center;
+		color: var(--clr-tertiary-100);
+	}
 
-  /* styles the background and height of card */
-  .training__types__container {
-    /* outline: 2px solid red; */
+	.training__payment__container {
+		/* outline: 4px solid black; */
 
-    width: 95%;
-    max-width: 600px;
-    margin: 0 auto;
-    min-height: 550px;
-    padding-bottom: 1.5rem;
+		width: 100%;
 
-    border-radius: 12px;
-    border: 0.1px solid hsla(0, 0%, 0%, 0.2);
-    background-color: var(hsl(206, 5%, 90%, 1));
-    background-image: linear-gradient(150deg,
-        hsla(0, 0%, 100%, 1),
-        hsl(206, 5%, 90%, 1),
-        hsl(206, 5%, 90%, 1),
-        hsl(206, 5%, 90%, 1),
-        hsl(206, 5%, 90%, 1),
-        hsl(206, 5%, 90%, 1),
-        hsl(206, 5%, 90%, 1));
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: space-between;
+		align-items: flex-start;
+		row-gap: 6rem;
+	}
 
-    box-shadow: 0px 1px 1px hsla(0, 0%, 0%, 0.3);
-    box-shadow: 0px 2px 2px hsla(0, 0%, 0%, 0.3);
-    box-shadow: 0px 4px 4px hsla(0, 0%, 0%, 0.3);
-  }
+	.training__payment__container_row-1 {
+		/* outline: 4px solid green; */
 
-  .training__types__card {
-    /* outline: 2px solid green; */
+		padding-bottom: 6rem;
+	}
 
-    border-radius: 12px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
-  }
+	/* styles the background and height of card */
+	.training__types__container {
+		/* outline: 2px solid red; */
 
-  /* 1st half of the card */
-  .training__types__header-features__container {
-    /* outline: 2px solid maroon; */
+		width: 95%;
+		max-width: 600px;
+		margin: 0 auto;
+		min-height: 550px;
+		padding-bottom: 1.5rem;
 
-    width: 100%;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-    background-color: white;
-    padding-top: 2rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
+		border-radius: 12px;
+		border: 0.1px solid hsla(0, 0%, 0%, 0.2);
+		background-color: var(hsl(206, 5%, 90%, 1));
+		background-image: linear-gradient(
+			150deg,
+			hsla(0, 0%, 100%, 1),
+			hsl(206, 5%, 90%, 1),
+			hsl(206, 5%, 90%, 1),
+			hsl(206, 5%, 90%, 1),
+			hsl(206, 5%, 90%, 1),
+			hsl(206, 5%, 90%, 1),
+			hsl(206, 5%, 90%, 1)
+		);
 
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-  }
+		box-shadow: 0px 1px 1px hsla(0, 0%, 0%, 0.3);
+		box-shadow: 0px 2px 2px hsla(0, 0%, 0%, 0.3);
+		box-shadow: 0px 4px 4px hsla(0, 0%, 0%, 0.3);
+	}
 
-  .training__types__header {
-    /* outline: 2px solid pink; */
+	.training__types__card {
+		/* outline: 2px solid green; */
 
-    width: 90%;
-    max-width: 500px;
-    margin: 0 auto;
-    padding-bottom: 2rem;
+		border-radius: 12px;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: space-between;
+		align-items: center;
+	}
 
-    font-family: var(--ff-primary);
-    font-weight: var(--fw-bold);
-    font-size: var(--fs-550);
-    line-height: 1.3;
-    letter-spacing: -3%;
-    text-transform: none;
-    text-align: center;
-    color: var(--clr-secondary-650);
-  }
+	/* 1st half of the card */
+	.training__types__header-features__container {
+		/* outline: 2px solid maroon; */
 
-  .training__types__features__list__container {
-    /* outline: 2px solid cyan; */
+		width: 100%;
+		border-top-left-radius: 12px;
+		border-top-right-radius: 12px;
+		background-color: white;
+		padding-top: 2rem;
+		padding-left: 1rem;
+		padding-right: 1rem;
 
-    width: 100%;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: center;
+		align-items: center;
+	}
 
-    background-color: white;
-    padding-bottom: 2rem;
-  }
+	.training__types__header {
+		/* outline: 2px solid pink; */
 
-  .training__types__features__list,
-  .training__types__cost__list {
-    /* outline: 2px solid brown; */
+		width: 90%;
+		max-width: 500px;
+		margin: 0 auto;
+		padding-bottom: 2rem;
 
-    width: 100%;
+		font-family: var(--ff-primary);
+		font-weight: var(--fw-bold);
+		font-size: var(--fs-550);
+		line-height: 1.3;
+		letter-spacing: -3%;
+		text-transform: none;
+		text-align: center;
+		color: var(--clr-secondary-650);
+	}
 
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    row-gap: 1rem;
-  }
+	.training__types__features__list__container {
+		/* outline: 2px solid cyan; */
 
-  .training__types__features__list-items,
-  .training__types__cost__list-items {
-    /* outline: 2px solid skyblue; */
+		width: 100%;
 
-    width: 100%;
-    padding: 0 0.8rem;
-    list-style: none;
+		background-color: white;
+		padding-bottom: 2rem;
+	}
 
-    font-family: var(--ff-primary);
-    font-weight: var(--fw-semi-bold);
-    font-size: var(--fs-700);
-    line-height: 1.5;
-    letter-spacing: normal;
-    text-transform: none;
-    text-align: center;
-    color: var(--clr-primary-650);
-  }
+	.training__types__features__list,
+	.training__types__cost__list {
+		/* outline: 2px solid brown; */
 
-  /* kinda-middle of the card */
-  /* drawing the downward arrow */
-  .training__types__drawing-an-arrow {
-    width: 40px;
-    height: 40px;
-    margin: 0 auto;
-    border: 0px solid var(--clr-secondary-650);
-    background-color: hsl(206, 5%, 90%, 1);
+		width: 100%;
 
-    rotate: 45deg;
-    translate: 0 -20px;
-  }
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: center;
+		align-items: center;
+		row-gap: 1rem;
+	}
 
-  /* 2nd half of the card */
-  .training__types__cost__list__container {
-    /* outline: 2px solid magenta; */
+	.training__types__features__list-items,
+	.training__types__cost__list-items {
+		/* outline: 2px solid skyblue; */
 
-    width: 100%;
-    padding-bottom: 2rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
+		width: 100%;
+		padding: 0 0.8rem;
+		list-style: none;
 
-  .training__types__cost__list-items {
-    font-weight: var(--fw-regular);
-    font-size: var(--fs-700);
-    color: var(--clr-secondary-650);
-  }
+		font-family: var(--ff-primary);
+		font-weight: var(--fw-semi-bold);
+		font-size: var(--fs-700);
+		line-height: 1.5;
+		letter-spacing: normal;
+		text-transform: none;
+		text-align: center;
+		color: var(--clr-primary-650);
+	}
 
-  /* 3rd part of the card */
-  .training__types__cta__container {
-    /* outline: 2px solid blueviolet; */
+	.training__list-item-not-visible {
+		/* outline: 2px dotted black; */
 
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    row-gap: 0.5rem;
-  }
+		display: none;
+	}
 
-  .training__one-on-one__cta__button {
-    /* outline: 2px solid purple; */
+	.training__payment__features__what-you-get {
+		font-family: var(--ff-secondary);
+		font-weight: var(--fw-bold);
+		font-size: var(--fs-700);
+	}
 
-    margin-top: 0rem;
-  }
+	/* kinda-middle of the card */
+	/* drawing the downward arrow */
+	.training__types__drawing-an-arrow {
+		width: 40px;
+		height: 40px;
+		margin: 0 auto;
+		border: 0px solid var(--clr-secondary-650);
+		background-color: hsl(206, 5%, 90%, 1);
 
-  .training__group__sub-cta {
-    /* outline: 2px solid green; */
+		rotate: 45deg;
+		translate: 0 -20px;
+	}
 
-    font-family: var(--ff-primary);
-    font-weight: var(--fw-bold);
-    font-size: var(--fs-800);
-    line-height: 1.5;
-    letter-spacing: normal;
-    text-transform: capitalize;
-    text-align: center;
-    color: var(--clr-primary-650);
-  }
+	/* 2nd half of the card */
+	.training__types__cost__list__container {
+		/* outline: 2px solid magenta; */
 
-  .training__one-on-one__cta__button,
-  .training__group__cta__button {
-    /* outline: 2px solid pink; */
+		width: 100%;
+		padding-bottom: 2rem;
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
 
-    margin-bottom: 1rem;
-    font-family: var(--ff-btn);
-    font-weight: var(--fw-bold);
-    font-size: var(--fs-700);
-    line-height: 1.5;
-    letter-spacing: normal;
-    text-transform: none;
-    text-align: center;
-    color: var(--clr-neutral-white-2);
+	.training__types__cost__list-items {
+		font-weight: var(--fw-regular);
+		font-size: var(--fs-700);
+		color: var(--clr-secondary-650);
+	}
 
-    background-color: var(--clr-secondary-650);
+	/* 3rd part of the card */
+	.training__types__cta__container {
+		/* outline: 2px solid blueviolet; */
 
-    padding: 1rem 2rem;
-    border-radius: 12px;
-    cursor: pointer;
-    border: 0.1px solid hsla(0, 0%, 0%, 0.1);
-    box-shadow: 0px 1px 1px hsla(0, 0%, 0%, 0.3);
-    box-shadow: 0px 2px 2px hsla(0, 0%, 0%, 0.3);
-    box-shadow: 0px 4px 4px hsla(0, 0%, 0%, 0.3);
-    box-shadow: 0px 8px 8px hsla(0, 0%, 0%, 0.3);
-    box-shadow: 0px 16px 16px hsla(0, 0%, 0%, 0.3);
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: center;
+		align-items: center;
+		row-gap: 0.5rem;
+	}
 
-    background-color: var(--clr-secondary-650);
-    background-image: linear-gradient(150deg,
-        var(--clr-secondary-500),
-        var(--clr-secondary-650),
-        var(--clr-secondary-650),
-        var(--clr-secondary-650),
-        var(--clr-secondary-650),
-        var(--clr-secondary-650),
-        var(--clr-secondary-650));
+	.training__one-on-one__cta__button {
+		/* outline: 2px solid purple; */
 
-    /* ////////////// */
-    &:hover {
-      color: black;
-      transition: all 300ms ease-in-out;
-    }
+		margin-top: 0rem;
+	}
 
-    /* /////////// */
-    &:active {
-      transform: translateY(8px);
+	.training__group__sub-cta {
+		/* outline: 2px solid green; */
 
-      box-shadow: 0px 1px 1px hsla(0, 0%, 0%, 0.3);
+		font-family: var(--ff-primary);
+		font-weight: var(--fw-bold);
+		font-size: var(--fs-800);
+		line-height: 1.5;
+		letter-spacing: normal;
+		text-transform: capitalize;
+		text-align: center;
+		color: var(--clr-primary-650);
+	}
 
-      background-image: linear-gradient(150deg,
-          var(--clr-secondary-650));
+	.training__one-on-one__cta__button,
+	.training__group__cta__button {
+		/* outline: 2px solid pink; */
 
-      transition: all 150ms ease-in-out;
-    }
-  }
+		margin-bottom: 1rem;
+		font-family: var(--ff-btn);
+		font-weight: var(--fw-bold);
+		font-size: var(--fs-700);
+		line-height: 1.5;
+		letter-spacing: normal;
+		text-transform: none;
+		text-align: center;
+		color: var(--clr-neutral-white-2);
 
-  /* ////////////////////////////////// */
-  /* ///////////////////////////////////// */
-  /* *start of payment-message styling */
-  .training__one-on-one__payment-message__container,
-  .training__group__payment-message__container {
-    /* outline: 2px dashed pink; */
+		background-color: var(--clr-secondary-650);
 
-    width: 90%;
-    max-width: 400px;
-    padding-left: 1rem;
-    padding-right: 1rem;
+		padding: 1rem 2rem;
+		border-radius: 12px;
+		cursor: pointer;
+		border: 0.1px solid hsla(0, 0%, 0%, 0.1);
+		box-shadow: 0px 1px 1px hsla(0, 0%, 0%, 0.3);
+		box-shadow: 0px 2px 2px hsla(0, 0%, 0%, 0.3);
+		box-shadow: 0px 4px 4px hsla(0, 0%, 0%, 0.3);
+		box-shadow: 0px 8px 8px hsla(0, 0%, 0%, 0.3);
+		box-shadow: 0px 16px 16px hsla(0, 0%, 0%, 0.3);
 
-    border-radius: 12px;
-    border: 0px solid hsla(0, 0%, 0%, 0.2);
-    background-color: var(hsl(206, 5%, 90%, 1));
-    background-image: linear-gradient(150deg,
-        hsla(0, 0%, 100%, 1),
-        hsla(0, 0%, 100%, 1),
-        hsl(206, 5%, 90%, 1),
-        hsl(206, 5%, 90%, 1));
+		background-color: var(--clr-secondary-650);
+		background-image: linear-gradient(
+			150deg,
+			var(--clr-secondary-500),
+			var(--clr-secondary-650),
+			var(--clr-secondary-650),
+			var(--clr-secondary-650),
+			var(--clr-secondary-650),
+			var(--clr-secondary-650),
+			var(--clr-secondary-650)
+		);
 
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-  }
+		/* ////////////// */
+		&:hover {
+			color: black;
+			transition: all 300ms ease-in-out;
+		}
 
-  .training__payment-message__text-1,
-  .training__payment-message__text-2,
-  .training__payment-message__text-3 {
-    font-family: var(--ff-primary);
-    font-weight: var(--fw-regular);
-    font-size: var(--fs-700);
-    line-height: 1.5;
-    letter-spacing: normal;
-    text-transform: none;
-    text-align: center;
-    color: black;
-    padding-bottom: 1.5rem;
-  }
+		/* /////////// */
+		&:active {
+			transform: translateY(8px);
 
-  .training__payment-message__text-1 {
-    color: var(--clr-secondary-650);
-    font-weight: var(--fw-bold);
-    padding-top: 2rem;
-  }
+			box-shadow: 0px 1px 1px hsla(0, 0%, 0%, 0.3);
 
-  .training-whatsapp-link__container {
-    display: block;
-    text-align: center;
-  }
+			background-image: linear-gradient(150deg, var(--clr-secondary-650));
 
-  .training-whatsapp-link {
-    text-decoration: none;
-    font-weight: var(--fw-bold);
+			transition: all 150ms ease-in-out;
+		}
+	}
 
-    /* /////////////// */
-    &:hover {
-      text-decoration: underline;
-    }
-  }
+	/* Paystack payment section */
+	.training__paystack__payment__form {
+		/* outline: 2px solid green; */
 
+		width: 100%;
+		max-width: 300px;
+		margin: 0 auto;
+
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.training__paystack__form__label {
+		/* outline: 2px solid red; */
+
+		margin: 0 0 0.4rem 0;
+		width: 100%;
+
+		font-family: var(--ff-primary);
+		font-weight: var(--fw-bold);
+		font-size: var(--fs-700);
+		line-height: 1;
+		letter-spacing: normal;
+		text-transform: none;
+		text-align: center;
+		color: var(--clr-primary-650);
+	}
+
+	.training__paystack__form__input__div {
+		/* outline: 2px solid blue; */
+
+		width: 100%;
+		margin: 0 auto;
+		padding: 0 0 0.5rem 0;
+	}
+
+	.training__paystack__form__input-text {
+		/* outline: 2px solid yellow; */
+
+		text-align: center;
+		height: 2rem;
+		width: 100%;
+		padding-left: 0.4rem;
+		margin-bottom: 1rem;
+		border-radius: 10px;
+		border: none;
+
+		font-family: var(--ff-primary);
+		font-weight: var(--fw-semi-bold);
+		font-size: var(--fs-700);
+		line-height: 1;
+		letter-spacing: normal;
+		text-transform: none;
+		text-align: left;
+		color: var(--clr-primary-650);
+	}
+
+	.training__paystack__form__input-amount {
+		/* outline: 2px solid yellowgreen; */
+
+		text-align: center;
+		height: 2rem;
+		width: 100%;
+		margin-bottom: 1rem;
+		border-radius: 10px;
+		border: none;
+
+		font-family: var(--ff-primary);
+		font-weight: var(--fw-semi-bold);
+		font-size: var(--fs-700);
+		line-height: 1;
+		letter-spacing: normal;
+		text-transform: none;
+		text-align: center;
+		color: var(--clr-primary-650);
+	}
+
+	/* ////////////////////////////////// */
+	/* ///////////////////////////////////// */
+	/* *start of payment-message styling */
+	.training__one-on-one__payment-message__container,
+	.training__group__payment-message__container {
+		/* outline: 2px dashed pink; */
+
+		width: 90%;
+		max-width: 400px;
+		padding-left: 1rem;
+		padding-right: 1rem;
+
+		border-radius: 12px;
+		border: 0px solid hsla(0, 0%, 0%, 0.2);
+		background-color: var(hsl(206, 5%, 90%, 1));
+		background-image: linear-gradient(
+			150deg,
+			hsla(0, 0%, 100%, 1),
+			hsla(0, 0%, 100%, 1),
+			hsl(206, 5%, 90%, 1),
+			hsl(206, 5%, 90%, 1)
+		);
+
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.training__payment-message__text-1,
+	.training__payment-message__text-2,
+	.training__payment-message__text-3 {
+		font-family: var(--ff-primary);
+		font-weight: var(--fw-regular);
+		font-size: var(--fs-700);
+		line-height: 1.5;
+		letter-spacing: normal;
+		text-transform: none;
+		text-align: center;
+		color: black;
+		padding-bottom: 1.5rem;
+	}
+
+	.training__payment-message__text-1 {
+		color: var(--clr-secondary-650);
+		font-weight: var(--fw-bold);
+		padding-top: 2rem;
+	}
+
+	.training-whatsapp-link__container {
+		display: block;
+		text-align: center;
+	}
+
+	.training-whatsapp-link {
+		text-decoration: none;
+		font-weight: var(--fw-bold);
+
+		/* /////////////// */
+		&:hover {
+			text-decoration: underline;
+		}
+	}
 }
 
 /*        */
@@ -661,333 +901,449 @@
 
 /** Screens > 875px */
 @media screen and (width > 54.69em) {
-  .training__payment__section {
-    /* outline: 4px solid goldenrod; */
+	.training__payment__section {
+		/* outline: 4px solid goldenrod; */
 
-    padding-top: 2rem;
-    padding-bottom: 12rem;
-    width: 100%;
-    max-width: var(--width__1440px);
-    margin: 0 auto;
-  }
+		padding-top: 2rem;
+		padding-bottom: 12rem;
+		width: 100%;
+		max-width: var(--width__1440px);
+		margin: 0 auto;
+	}
 
-  .training__payment__container {
-    /* outline: 4px solid black; */
+	.training__payment__section-title {
+		/* outline: 2px solid blue; */
 
-    width: 90%;
-    /* max-width: 900px; */
-    margin: 0 auto;
+		width: 100%;
+		max-width: 500px;
+		margin: 0 auto;
+		padding: 0 0 4rem 0;
 
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: flex-start;
-    column-gap: 3rem;
-    row-gap: 3rem;
+		font-family: var(--ff-primary);
+		font-weight: var(--fw-bold);
+		font-size: var(--fs-550);
+		line-height: 1.5;
+		letter-spacing: -3%;
+		text-transform: capitalize;
+		text-align: center;
+		color: var(--clr-tertiary-100);
+	}
 
-    /* ///////////////// */
-    @media screen and (width > 875px) and (width <=950px) {
-      flex-wrap: wrap;
-    }
-  }
+	.training__payment__container {
+		/* outline: 4px solid black; */
 
-  /* styles the background and height of card */
-  .training__types__container {
-    /* outline: 2px solid red; */
+		width: 90%;
+		/* max-width: 900px; */
+		margin: 0 auto;
 
-    flex-basis: 70%;
-    margin: 0 auto;
-    min-height: 625px;
-    padding-bottom: 2rem;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: space-between;
+		align-items: flex-start;
+		column-gap: 3rem;
+		row-gap: 3rem;
 
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-    border-radius: 12px;
-    border: 0.1px solid hsla(0, 0%, 0%, 0.2);
-    background-color: var(hsl(206, 5%, 90%, 1));
-    background-image: linear-gradient(150deg,
-        hsla(0, 0%, 100%, 1),
-        hsl(206, 5%, 90%, 1),
-        hsl(206, 5%, 90%, 1),
-        hsl(206, 5%, 90%, 1),
-        hsl(206, 5%, 90%, 1),
-        hsl(206, 5%, 90%, 1),
-        hsl(206, 5%, 90%, 1));
+		/* ///////////////// */
+		@media screen and (width > 875px) and (width <=950px) {
+			flex-wrap: wrap;
+		}
+	}
 
-    box-shadow: 0px 1px 1px hsla(0, 0%, 0%, 0.3);
-    box-shadow: 0px 2px 2px hsla(0, 0%, 0%, 0.3);
-    box-shadow: 0px 4px 4px hsla(0, 0%, 0%, 0.3);
-  }
+	.training__payment__container_row-1 {
+		/* outline: 4px solid green; */
 
-  .training__types__card {
-    /* outline: 2px solid green; */
+		padding-bottom: 6rem;
+	}
 
-    border-radius: 12px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
-  }
+	/* styles the background and height of card */
+	.training__types__container {
+		/* outline: 2px solid red; */
 
-  /* 1st half of the card */
-  .training__types__header-features__container {
-    /* outline: 2px solid maroon; */
+		flex-basis: 70%;
+		margin: 0 auto;
+		min-height: 625px;
+		padding-bottom: 2rem;
 
-    width: 100%;
-    background-color: white;
-    padding-top: 2rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
+		border-top-left-radius: 12px;
+		border-top-right-radius: 12px;
+		border-radius: 12px;
+		border: 0.1px solid hsla(0, 0%, 0%, 0.2);
+		background-color: var(hsl(206, 5%, 90%, 1));
+		background-image: linear-gradient(
+			150deg,
+			hsla(0, 0%, 100%, 1),
+			hsl(206, 5%, 90%, 1),
+			hsl(206, 5%, 90%, 1),
+			hsl(206, 5%, 90%, 1),
+			hsl(206, 5%, 90%, 1),
+			hsl(206, 5%, 90%, 1),
+			hsl(206, 5%, 90%, 1)
+		);
 
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-  }
+		box-shadow: 0px 1px 1px hsla(0, 0%, 0%, 0.3);
+		box-shadow: 0px 2px 2px hsla(0, 0%, 0%, 0.3);
+		box-shadow: 0px 4px 4px hsla(0, 0%, 0%, 0.3);
+	}
 
-  .training__types__header {
-    /* outline: 2px solid pink; */
+	.training__types__card {
+		/* outline: 2px solid green; */
 
-    width: 100%;
-    max-width: 500px;
-    margin: 0 auto;
-    padding-bottom: 2rem;
+		border-radius: 12px;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: space-between;
+		align-items: center;
+	}
 
-    font-family: var(--ff-primary);
-    font-weight: var(--fw-bold);
-    font-size: var(--fs-550);
-    line-height: 1.3;
-    letter-spacing: -3%;
-    text-transform: none;
-    text-align: center;
-    color: var(--clr-secondary-650);
-  }
+	/* 1st half of the card */
+	.training__types__header-features__container {
+		/* outline: 2px solid maroon; */
 
-  .training__types__features__list__container {
-    /* outline: 2px solid cyan; */
+		width: 100%;
+		background-color: white;
+		padding-top: 2rem;
+		padding-left: 1rem;
+		padding-right: 1rem;
+		border-top-left-radius: 12px;
+		border-top-right-radius: 12px;
 
-    width: 100%;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: center;
+		align-items: center;
+	}
 
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
-    background-color: white;
-    padding-bottom: 2rem;
-  }
+	.training__types__header {
+		/* outline: 2px solid pink; */
 
-  .training__types__features__list,
-  .training__types__cost__list {
-    /* outline: 2px solid brown; */
+		width: 100%;
+		max-width: 500px;
+		margin: 0 auto;
+		padding-bottom: 2rem;
 
-    width: 100%;
+		font-family: var(--ff-primary);
+		font-weight: var(--fw-bold);
+		font-size: var(--fs-550);
+		line-height: 1.3;
+		letter-spacing: -3%;
+		text-transform: none;
+		text-align: center;
+		color: var(--clr-secondary-650);
+	}
 
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    row-gap: 1rem;
-  }
+	.training__types__features__list__container {
+		/* outline: 2px solid cyan; */
 
-  .training__types__features__list-items,
-  .training__types__cost__list-items {
-    /* outline: 2px solid skyblue; */
+		width: 100%;
 
-    width: 100%;
-    list-style: none;
+		border-bottom-left-radius: 12px;
+		border-bottom-right-radius: 12px;
+		background-color: white;
+		padding-bottom: 2rem;
+	}
 
-    font-family: var(--ff-primary);
-    font-weight: var(--fw-semi-bold);
-    font-size: var(--fs-700);
-    line-height: 1.5;
-    letter-spacing: normal;
-    text-transform: none;
-    text-align: center;
-    color: var(--clr-primary-650);
-  }
+	.training__types__features__list,
+	.training__types__cost__list {
+		/* outline: 2px solid brown; */
 
-  /* kinda-middle of the card */
-  /* drawing the downward arrow */
-  .training__types__drawing-an-arrow {
-    width: 40px;
-    height: 40px;
-    margin: 0 auto;
-    border: none;
-    background-color: hsl(206, 5%, 90%, 1);
+		width: 100%;
 
-    rotate: 45deg;
-    translate: 0 -20px;
-  }
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: center;
+		align-items: center;
+		row-gap: 1rem;
+	}
 
-  /* 2nd half of the card */
-  .training__types__cost__list__container {
-    /* outline: 2px solid magenta; */
+	.training__types__features__list-items,
+	.training__types__cost__list-items {
+		/* outline: 2px solid skyblue; */
 
-    width: 100%;
-    padding-bottom: 2rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
+		width: 100%;
+		list-style: none;
 
-  .training__types__cost__list-items {
-    font-weight: var(--fw-semi-boldbold);
-    font-size: var(--fs-700);
-    color: var(--clr-secondary-650);
-  }
+		font-family: var(--ff-primary);
+		font-weight: var(--fw-semi-bold);
+		font-size: var(--fs-700);
+		line-height: 1.5;
+		letter-spacing: normal;
+		text-transform: none;
+		text-align: center;
+		color: var(--clr-primary-650);
+	}
 
-  /* 3rd part of the card */
-  .training__types__cta__container {
-    /* outline: 2px solid blueviolet; */
+	.training__list-item-not-visible {
+		/* outline: 2px dotted black; */
 
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    row-gap: 0.5rem;
-  }
+		visibility: hidden;
+	}
 
-  .training__one-on-one__cta__button {
-    /* outline: 2px solid purple; */
+	.training__payment__features__what-you-get {
+		font-family: var(--ff-secondary);
+		font-weight: var(--fw-bold);
+		font-size: var(--fs-600);
+	}
 
-    margin-top: 2rem;
-  }
+	/* kinda-middle of the card */
+	/* drawing the downward arrow */
+	.training__types__drawing-an-arrow {
+		width: 40px;
+		height: 40px;
+		margin: 0 auto;
+		border: none;
+		background-color: hsl(206, 5%, 90%, 1);
 
-  .training__group__sub-cta {
-    /* outline: 2px solid green; */
+		rotate: 45deg;
+		translate: 0 -20px;
+	}
 
-    font-family: var(--ff-primary);
-    font-weight: var(--fw-bold);
-    font-size: var(--fs-800);
-    line-height: 1.5;
-    letter-spacing: normal;
-    text-transform: capitalize;
-    text-align: center;
-    color: var(--clr-primary-650);
-  }
+	/* 2nd half of the card */
+	.training__types__cost__list__container {
+		/* outline: 2px solid magenta; */
 
-  .training__one-on-one__cta__button,
-  .training__group__cta__button {
-    /* outline: 2px solid pink; */
+		width: 100%;
+		padding-bottom: 2rem;
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
 
-    margin-bottom: 1rem;
-    font-family: var(--ff-btn);
-    font-weight: var(--fw-bold);
-    font-size: var(--fs-700);
-    line-height: 1.5;
-    letter-spacing: normal;
-    text-transform: none;
-    text-align: center;
-    color: var(--clr-neutral-white-2);
+	.training__types__cost__list-items {
+		font-weight: var(--fw-semi-boldbold);
+		font-size: var(--fs-700);
+		color: var(--clr-secondary-650);
+	}
 
-    background-color: var(--clr-secondary-650);
+	/* 3rd part of the card */
+	.training__types__cta__container {
+		/* outline: 2px solid blueviolet; */
 
-    padding: 1rem 2rem;
-    border-radius: 12px;
-    cursor: pointer;
-    border: 0.1px solid hsla(0, 0%, 0%, 0.1);
-    box-shadow: 0px 1px 1px hsla(0, 0%, 0%, 0.3);
-    box-shadow: 0px 2px 2px hsla(0, 0%, 0%, 0.3);
-    box-shadow: 0px 4px 4px hsla(0, 0%, 0%, 0.3);
-    box-shadow: 0px 8px 8px hsla(0, 0%, 0%, 0.3);
-    box-shadow: 0px 16px 16px hsla(0, 0%, 0%, 0.3);
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: center;
+		align-items: center;
+		row-gap: 0.5rem;
+	}
 
-    background-color: var(--clr-secondary-650);
-    background-image: linear-gradient(150deg,
-        var(--clr-secondary-500),
-        var(--clr-secondary-650),
-        var(--clr-secondary-650),
-        var(--clr-secondary-650),
-        var(--clr-secondary-650),
-        var(--clr-secondary-650),
-        var(--clr-secondary-650));
+	.training__group__sub-cta {
+		/* outline: 2px solid green; */
 
-    /* ////////////// */
-    &:hover {
-      color: black;
-      transition: all 300ms ease-in-out;
-    }
+		font-family: var(--ff-primary);
+		font-weight: var(--fw-bold);
+		font-size: var(--fs-800);
+		line-height: 1.5;
+		letter-spacing: normal;
+		text-transform: capitalize;
+		text-align: center;
+		color: var(--clr-primary-650);
+	}
 
-    /* /////////// */
-    &:active {
-      transform: translateY(8px);
+	.training__one-on-one__cta__button,
+	.training__group__cta__button {
+		/* outline: 2px solid pink; */
 
-      box-shadow: 0px 1px 1px hsla(0, 0%, 0%, 0.3);
+		margin-bottom: 1rem;
+		margin-top: 2rem;
+		font-family: var(--ff-btn);
+		font-weight: var(--fw-bold);
+		font-size: var(--fs-700);
+		line-height: 1.5;
+		letter-spacing: normal;
+		text-transform: none;
+		text-align: center;
+		color: var(--clr-neutral-white-2);
 
-      background-image: linear-gradient(150deg,
-          var(--clr-secondary-650));
+		background-color: var(--clr-secondary-650);
 
-      transition: all 150ms ease-in-out;
-    }
-  }
+		padding: 1rem 2rem;
+		border-radius: 12px;
+		cursor: pointer;
+		border: 0.1px solid hsla(0, 0%, 0%, 0.1);
+		box-shadow: 0px 1px 1px hsla(0, 0%, 0%, 0.3);
+		box-shadow: 0px 2px 2px hsla(0, 0%, 0%, 0.3);
+		box-shadow: 0px 4px 4px hsla(0, 0%, 0%, 0.3);
+		box-shadow: 0px 8px 8px hsla(0, 0%, 0%, 0.3);
+		box-shadow: 0px 16px 16px hsla(0, 0%, 0%, 0.3);
 
-  /* ////////////////////////////////// */
-  /* ///////////////////////////////////// */
-  /* *start of payment-message styling */
-  .training__one-on-one__payment-message__container,
-  .training__group__payment-message__container {
-    /* outline: 2px dashed pink; */
+		background-color: var(--clr-secondary-650);
+		background-image: linear-gradient(
+			150deg,
+			var(--clr-secondary-500),
+			var(--clr-secondary-650),
+			var(--clr-secondary-650),
+			var(--clr-secondary-650),
+			var(--clr-secondary-650),
+			var(--clr-secondary-650),
+			var(--clr-secondary-650)
+		);
 
-    width: 90%;
-    max-width: 400px;
-    padding-left: 1rem;
-    padding-right: 1rem;
+		/* ////////////// */
+		&:hover {
+			color: black;
+			transition: all 300ms ease-in-out;
+		}
 
-    border-radius: 12px;
-    border: 0px solid hsla(0, 0%, 0%, 0.2);
-    background-color: var(hsl(206, 5%, 90%, 1));
-    background-image: linear-gradient(150deg,
-        hsla(0, 0%, 100%, 1),
-        hsla(0, 0%, 100%, 1),
-        hsl(206, 5%, 90%, 1),
-        hsl(206, 5%, 90%, 1));
+		/* /////////// */
+		&:active {
+			transform: translateY(8px);
 
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-  }
+			box-shadow: 0px 1px 1px hsla(0, 0%, 0%, 0.3);
 
-  .training__payment-message__text-1,
-  .training__payment-message__text-2,
-  .training__payment-message__text-3 {
-    font-family: var(--ff-primary);
-    font-weight: var(--fw-regular);
-    font-size: var(--fs-700);
-    line-height: 1.5;
-    letter-spacing: normal;
-    text-transform: none;
-    text-align: center;
-    color: black;
-    padding-bottom: 1.5rem;
-  }
+			background-image: linear-gradient(150deg, var(--clr-secondary-650));
 
-  .training__payment-message__text-1 {
-    color: var(--clr-secondary-650);
-    font-weight: var(--fw-bold);
-    padding-top: 2rem;
-  }
+			transition: all 150ms ease-in-out;
+		}
+	}
 
-  .training-whatsapp-link__container {
-    display: block;
-    text-align: center;
-  }
+	/* Paystack payment section */
+	.training__paystack__payment__form {
+		/* outline: 2px solid green; */
 
-  .training-whatsapp-link {
-    text-decoration: none;
-    font-weight: var(--fw-bold);
+		width: 100%;
+		max-width: 300px;
+		margin: 0 auto;
 
-    /* /////////////// */
-    &:hover {
-      text-decoration: underline;
-    }
-  }
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.training__paystack__form__label {
+		/* outline: 2px solid red; */
+
+		margin: 0 0 0.4rem 0;
+		width: 100%;
+
+		font-family: var(--ff-primary);
+		font-weight: var(--fw-bold);
+		font-size: var(--fs-700);
+		line-height: 1;
+		letter-spacing: normal;
+		text-transform: none;
+		text-align: center;
+		color: var(--clr-primary-650);
+	}
+
+	.training__paystack__form__input__div {
+		/* outline: 2px solid blue; */
+
+		width: 100%;
+		margin: 0 auto;
+		padding: 0 0 0.5rem 0;
+	}
+
+	.training__paystack__form__input-text {
+		/* outline: 2px solid yellow; */
+
+		text-align: center;
+		height: 2rem;
+		width: 100%;
+		padding-left: 0.4rem;
+		margin-bottom: 1rem;
+		border-radius: 10px;
+		border: none;
+
+		font-family: var(--ff-primary);
+		font-weight: var(--fw-semi-bold);
+		font-size: var(--fs-700);
+		line-height: 1;
+		letter-spacing: normal;
+		text-transform: none;
+		text-align: left;
+		color: var(--clr-primary-650);
+	}
+
+	.training__paystack__form__input-amount {
+		/* outline: 2px solid yellowgreen; */
+
+		text-align: center;
+		height: 2rem;
+		width: 100%;
+		margin-bottom: 1rem;
+		border-radius: 10px;
+		border: none;
+
+		font-family: var(--ff-primary);
+		font-weight: var(--fw-semi-bold);
+		font-size: var(--fs-700);
+		line-height: 1;
+		letter-spacing: normal;
+		text-transform: none;
+		text-align: center;
+		color: var(--clr-primary-650);
+	}
+
+	/* ////////////////////////////////// */
+	/* ///////////////////////////////////// */
+	/* *start of payment-message styling */
+	.training__one-on-one__payment-message__container,
+	.training__group__payment-message__container {
+		/* outline: 2px dashed pink; */
+
+		width: 90%;
+		max-width: 400px;
+		padding-left: 1rem;
+		padding-right: 1rem;
+
+		border-radius: 12px;
+		border: 0px solid hsla(0, 0%, 0%, 0.2);
+		background-color: var(hsl(206, 5%, 90%, 1));
+		background-image: linear-gradient(
+			150deg,
+			hsla(0, 0%, 100%, 1),
+			hsla(0, 0%, 100%, 1),
+			hsl(206, 5%, 90%, 1),
+			hsl(206, 5%, 90%, 1)
+		);
+
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.training__payment-message__text-1,
+	.training__payment-message__text-2,
+	.training__payment-message__text-3 {
+		font-family: var(--ff-primary);
+		font-weight: var(--fw-regular);
+		font-size: var(--fs-700);
+		line-height: 1.5;
+		letter-spacing: normal;
+		text-transform: none;
+		text-align: center;
+		color: black;
+		padding-bottom: 1.5rem;
+	}
+
+	.training__payment-message__text-1 {
+		color: var(--clr-secondary-650);
+		font-weight: var(--fw-bold);
+		padding-top: 2rem;
+	}
+
+	.training-whatsapp-link__container {
+		display: block;
+		text-align: center;
+	}
+
+	.training-whatsapp-link {
+		text-decoration: none;
+		font-weight: var(--fw-bold);
+
+		/* /////////////// */
+		&:hover {
+			text-decoration: underline;
+		}
+	}
 }
 
 /*        */
@@ -997,90 +1353,89 @@
 /*        */
 /** ---ANIMATION--- */
 .training__types__drawing-an-arrow {
-  /* name of animation */
-  animation-name: payment--div_arrow_color_change;
+	/* name of animation */
+	animation-name: payment--div_arrow_color_change;
 
-  /* how long the animation will last */
-  animation-duration: 7s;
+	/* how long the animation will last */
+	animation-duration: 7s;
 
-  /* how long b4 animation starts */
-  animation-delay: 0ms;
+	/* how long b4 animation starts */
+	animation-delay: 0ms;
 
-  /* how many times the animation will run */
-  animation-iteration-count: infinite;
+	/* how many times the animation will run */
+	animation-iteration-count: infinite;
 
-  /* should it be played normal/reverse/alternate/alternate-reverse */
-  animation-direction: normal;
+	/* should it be played normal/reverse/alternate/alternate-reverse */
+	animation-direction: normal;
 
-  /* speed curve of animation */
-  animation-timing-function: ease-in-out;
+	/* speed curve of animation */
+	animation-timing-function: ease-in-out;
 
-  /* the styles animation will apply when b4 it start/after it ends/both  */
-  animation-fill-mode: none;
+	/* the styles animation will apply when b4 it start/after it ends/both  */
+	animation-fill-mode: none;
 }
 
 @keyframes payment--div_arrow_color_change {
-  0% {
-    background-color: transparent;
-    border-top: 0px;
-    border-right: 0;
-    border-bottom: 0px;
-    border-left: 0px;
-  }
+	0% {
+		background-color: transparent;
+		border-top: 0px;
+		border-right: 0;
+		border-bottom: 0px;
+		border-left: 0px;
+	}
 
-  20% {
-    background-color: white;
-    border-top: 0px;
-    border-right: 1px solid var(--clr-secondary-650);
-    border-bottom: 0px;
-    border-left: 0px;
-  }
+	20% {
+		background-color: white;
+		border-top: 0px;
+		border-right: 1px solid var(--clr-secondary-650);
+		border-bottom: 0px;
+		border-left: 0px;
+	}
 
-  40% {
-    background-color: white;
-    border-top: 0px;
-    border-right: 1px solid var(--clr-secondary-650);
-    border-bottom: 1px solid var(--clr-secondary-650);
-    border-left: 0px;
-  }
+	40% {
+		background-color: white;
+		border-top: 0px;
+		border-right: 1px solid var(--clr-secondary-650);
+		border-bottom: 1px solid var(--clr-secondary-650);
+		border-left: 0px;
+	}
 
+	50% {
+		background-color: transparent;
+		border-top: 0px;
+		border-right: 0px;
+		border-bottom: 0px;
+		border-left: 0px;
+	}
 
-  50% {
-    background-color: transparent;
-    border-top: 0px;
-    border-right: 0px;
-    border-bottom: 0px;
-    border-left: 0px;
-  }
+	60% {
+		background-color: hsl(206, 5%, 90%, 1);
+		border-top: 0px;
+		border-right: 0px;
+		border-bottom: 0px;
+		border-left: 1px solid var(--clr-secondary-650);
+	}
 
-  60% {
-    background-color: hsl(206, 5%, 90%, 1);
-    border-top: 0px;
-    border-right: 0px;
-    border-bottom: 0px;
-    border-left: 1px solid var(--clr-secondary-650);
-  }
+	80% {
+		background-color: hsl(206, 5%, 90%, 1);
+		border-top: 1px solid var(--clr-secondary-650);
+		border-right: 0px;
+		border-bottom: 0px;
+		border-left: 1px solid var(--clr-secondary-650);
+	}
 
-  80% {
-    background-color: hsl(206, 5%, 90%, 1);
-    border-top: 1px solid var(--clr-secondary-650);
-    border-right: 0px;
-    border-bottom: 0px;
-    border-left: 1px solid var(--clr-secondary-650);
-  }
-
-  100% {
-    background-color: transparent;
-    border-top: 0px;
-    border-right: 0px;
-    border-bottom: 0px;
-    border-left: 0px;
-  }
+	100% {
+		background-color: transparent;
+		border-top: 0px;
+		border-right: 0px;
+		border-bottom: 0px;
+		border-left: 0px;
+	}
 }
 
 .training__payment__container:hover {
-  /* this pause or play animation. you can use JS to do this or hover */
-  animation-play-state: paused;
+	/* this pause or play animation. you can use JS to do this or hover */
+	animation-play-state: paused;
 }
 
 /*        */
@@ -1095,18 +1450,18 @@
 /* makes the height of the accordion Item to be 0 so it is not visible */
 .training__one-on-one__payment-message__container,
 .training__group__payment-message__container {
-  /* outline: 2px dashed violet; */
+	/* outline: 2px dashed violet; */
 
-  /* when button accordion is closed */
-  /* max-height: 0;-- this is set by Javascript */
-  max-height: 0;
+	/* when button accordion is closed */
+	/* max-height: 0;-- this is set by Javascript */
+	max-height: 0;
 
-  /* keeps the content from showing beneath the accordion-item when closed */
-  overflow: hidden;
+	/* keeps the content from showing beneath the accordion-item when closed */
+	overflow: hidden;
 
-  /* controls the transition when closing-->going to this style */
-  transition: max-height 1200ms ease-in-out;
-  will-change: max-height;
+	/* controls the transition when closing-->going to this style */
+	transition: max-height 1200ms ease-in-out;
+	will-change: max-height;
 }
 
 /* /////////////////////// */
@@ -1115,33 +1470,33 @@
 /* style the button when it is open */
 .training__one-on-one__cta__container button[aria-expanded="true"],
 .training__group__cta__container button[aria-expanded="true"] {
-  /* * other styles for this button can be found
+	/* * other styles for this button can be found
    in css file training--cta.css */
 
-  background-color: var(--clr-primary-200);
-  background-image: linear-gradient(150deg,
-      var(--clr-primary-650),
-      var(--clr-primary-200),
-      var(--clr-primary-200),
-      var(--clr-primary-200),
-      var(--clr-primary-200));
+	background-color: var(--clr-primary-200);
+	background-image: linear-gradient(
+		150deg,
+		var(--clr-primary-650),
+		var(--clr-primary-200),
+		var(--clr-primary-200),
+		var(--clr-primary-200),
+		var(--clr-primary-200)
+	);
 
+	/* ////////////// */
+	&:hover {
+		color: white;
+		transition: all 300ms ease-in-out;
+	}
 
-  /* ////////////// */
-  &:hover {
-    color: white;
-    transition: all 300ms ease-in-out;
-  }
+	/* /////////// */
+	&:active {
+		transform: translateY(8px);
 
-  /* /////////// */
-  &:active {
-    transform: translateY(8px);
+		box-shadow: none;
 
-    box-shadow: none;
+		background-image: linear-gradient(150deg, var(--clr-primary-200));
 
-    background-image: linear-gradient(150deg,
-        var(--clr-primary-200));
-
-    transition: all 150ms ease-in-out;
-  }
+		transition: all 150ms ease-in-out;
+	}
 }

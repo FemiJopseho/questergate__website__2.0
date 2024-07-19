@@ -24,8 +24,14 @@ document.addEventListener("DOMContentLoaded", function () {
 			// Check if the accordion is not already expanded
 			if (button.getAttribute("aria-expanded") === "true") {
 				// Get the element with class B = "training__payment__one-on-one__accordion__scroll-into-view"
-				var startingPoint = document.querySelector(
-					".training__payment__one-on-one__accordion__scroll-into-view"
+				// var startingPoint = document.querySelector(
+				// 	".training__payment__one-on-one__accordion__scroll-into-view"
+				// );
+
+				var startingPoints = document.querySelectorAll(
+					".training__payment__live__one-on-one__accordion__scroll-into-view, " +
+						".training__payment__beginner__one-on-one__accordion__scroll-into-view, " +
+						".training__payment__demo__one-on-one__accordion__scroll-into-view"
 				);
 
 				// Calculate the scroll position by subtracting the offset value
@@ -52,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
 			if (button.getAttribute("aria-expanded") === "true") {
 				// Get the element with class B = "training__payment__group__accordion__scroll-into-view"
 				var startingPoint = document.querySelector(
-					".training__payment__group__accordion__scroll-into-view"
+					".training__payment__beginner__group__accordion__scroll-into-view"
 				);
 
 				// Calculate the scroll position by subtracting the offset value

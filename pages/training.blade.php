@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="csrf-token" content="{{ csrf_token() }}">
 
 		<!-- --------------search engine robots & SEO-------------- -->
 		<meta name="robots" content="index, follow" />
@@ -35,73 +36,47 @@
 
 		<!-- -----------------CSS Resets-------------------- -->
 		<!-- Use Normalize Reset -->
-		<link rel="stylesheet" href="../../css-resets/normalize.css" />
+		<link rel="stylesheet" href="/questergatecapital/public/css/css-resets/normalize.css" />
 
 		<!-- -----------------FONTS (loaded for a start)-------------------- -->
-
-		<style type="text/css">
-			@font-face {
-				font-display: swap;
-				font-family: "Nunito";
-				font-style: normal;
-				font-weight: 400;
-
-				src: local("Nunito"),
-					url("../../utilities/fonts/nunito-v26-latin-regular.woff2")
-						format("woff2");
-			}
-
-			@font-face {
-				font-display: swap;
-				font-family: "Montagu Slab";
-				font-style: normal;
-				font-weight: 400;
-
-				src: local("Montagu Slab"),
-					url("../../utilities/fonts/nunito-v26-latin-regular.woff2")
-						format("woff2");
-			}
-		</style>
+		@include('generic.new_font_in_head')
 
 		<!-- -------Other stylesheets---------- -->
 
 		<link
 			rel="stylesheet"
-			href="../1-css-components/joined-fixed-component.css"
+			href="/questergatecapital/public/css/1-css-components/joined-fixed-component.css"
 		/>
-		<link rel="stylesheet" href="../1-css-components/6-utility-classes.css" />
+		
+		<link rel="stylesheet" href="/questergatecapital/public/css/1-css-components/6-utility-classes.css" />
+		
 		<link
 			rel="stylesheet"
-			href="../1-css-components/10-carousel--swipper--custom-1.css"
+			href="/questergatecapital/public/css/1-css-components/10-carousel--swipper--custom-1.css"
 		/>
+		
+		<link 
+		    rel="stylesheet"
+		    href="/questergatecapital/public/css/training/all__training__css__combined.css"
+		    async
+	    />
 
-		<link rel="stylesheet" href="../training/0-training--header.css" />
-		<link rel="stylesheet" href="../training/1-training--hero.css" />
-		<link rel="stylesheet" href="../training/2-training--benefits.css" />
-		<link rel="stylesheet" href="../training/3-training--testimonials.css" />
-		<link rel="stylesheet" href="../training/4-training--cta.css" />
-		<link rel="stylesheet" href="../training/5-training--focus.css" />
-		<link rel="stylesheet" href="./7-training__payment__types.css" />
 
-		<!-- --------------JQUERY ACCESS via CDN and via Local server----------------- -->
-		<!-- <script
-			src="https://code.jquery.com/jquery-3.7.1.min.js"
-			integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-			crossorigin="anonymous"
-		></script> -->
+		<!-- <link rel="stylesheet" href="/questergatecapital/public/css/training/0-training--header.css" /> -->
+		
+		<!-- <link rel="stylesheet" href="/questergatecapital/public/css/training/1-training--hero.css" /> -->
+		
+		<!-- <link rel="stylesheet" href="/questergatecapital/public/css/training/2-training--benefits.css" /> -->
+		
+		<!-- <link rel="stylesheet" href="/questergatecapital/public/css/training/3-training--testimonials.css" /> -->
+		
+		<!-- <link rel="stylesheet" href="/questergatecapital/public/css/training/4-training--cta.css" /> -->
+		
+		<!-- <link rel="stylesheet" href="/questergatecapital/public/css/training/5-training--focus.css" /> -->
+		
+		<!-- <link rel="stylesheet" href="/questergatecapital/public/css/training/6-training--form.css" /> -->
+	
 
-		<script src="../js-components/jquery-3.7.1.min.js"></script>
-
-		<!-- SWIPER -->
-		<link
-			rel="stylesheet"
-			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-		/>
-
-		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-		<!-- End of SWIPER -->
-
-		<!-- <script src="../js-components/jquery-3.7.1.min.js"></script> -->
 
 		<!-- ----------Page Title---------- -->
 		<title>Questergate Training</title>
@@ -110,60 +85,22 @@
 		<link
 			rel="icon"
 			type="image/x-icon"
-			href="../../images/QG__favicon__no__background-Favicon-Phone-16-10.ico"
+			href="/questergatecapital/public/img/images/QG__favicon__no__background-Favicon-Phone-16-10.ico"
 			id="favicon"
 		/>
-	</head>
+		
+		      
+        <!-- IMPORTANT OLD HEAD CODE -->
+        
+        <meta name="csrf-token" content="{{ csrf_token() }}">
+        
+     </head>
 
 	<body>
-		<button
-			onclick="backToTop__Function()"
-			id="back-to-top"
-			class="back-to-top"
-			title="Go to top"
-		>
-			Top &#8593;
-		</button>
+		@include('generic.new_back_to_top_button')
 
 		<div class="gen-container">
-			<header class="training__header__section">
-				<nav class="training__header__container">
-					<a
-						class="training__header__picture__link"
-						href="../investment/investment__homepage/html__investment.html"
-					>
-						<picture class="training__header__picture">
-							<source
-								class="phone_tablet_laptop-small"
-								type="image/webp"
-								media="(max-width: 1440px)"
-								srcset="../../images/QG_LOGO_200-43.webp"
-							/>
-
-							<source
-								class="laptop-large"
-								type="image/webp"
-								srcset="../../images/QG_LOGO_350-76.webp"
-							/>
-
-							<!-- fallback -->
-							<img
-								class="training__header__picture-img"
-								sizes="(max-width: 1000px) 20vw, 1440px"
-								srcset="
-									../../images/QG_LOGO_200-43.png 1440w,
-									../../images/QG_LOGO_350-76.png
-								"
-								src="../../images/QG__LOGO-350-76.PNG"
-								alt="questergate logo"
-								loading="lazy"
-								decoding="async"
-								fetchpriority="high"
-							/>
-						</picture>
-					</a>
-				</nav>
-			</header>
+			@include('generic.new_header_training')
 
 			<main class="main">
 				<!-- -------START OF HERO section------- -->
@@ -177,6 +114,7 @@
 									>Beginner
 									<span class="hero__txt-content-header__part-x">to</span>
 								</span>
+
 								<span class="hero__txt-content-header__part-2"
 									>Profitable Trader</span
 								>
@@ -212,7 +150,7 @@
 				<section class="training__benefit-for-you__section">
 					<div class="training__benefit-for-you__container">
 						<h2 class="training__benefit-card__header">
-							3 things you will learn <br />
+							3 Trading skills you will learn <br />
 							<span class="training__benefit__header-span2"></span>
 						</h2>
 
@@ -220,15 +158,17 @@
 							<div class="training__benefit-card__content__container">
 								<ul class="training__benefit-card__list">
 									<li class="training__benefit-card__list-items">
-										How to create trading strategies that are long lasting.
+										Different ways to earn steady income from the financial
+										market.
 									</li>
-
+									
 									<li class="training__benefit-card__list-items">
-										How to minimise loses and never lose your capital.
+										Ways to minimise your loses and never wipeout your capital.
 									</li>
-
+									
 									<li class="training__benefit-card__list-items">
-										How to maximise your profit and earn steady income.
+										How to create trading strategies that are stable and
+										profitable.
 									</li>
 								</ul>
 							</div>
@@ -269,7 +209,7 @@
 									<li
 										class="training__focus-card__list-items training__features-card__list-items"
 									>
-										Real time practical training (online).
+										12 weeks of real time training (online).
 									</li>
 
 									<li
@@ -278,11 +218,11 @@
 										Access to over 30years of trading insights.
 									</li>
 
-									<!-- <li
+									<li
 										class="training__focus-card__list-items training__features-card__list-items"
 									>
-										Access to Free Trading signals for a year.
-									</li> -->
+										Access to Free trading signals for a year.
+									</li>
 								</ul>
 							</div>
 						</div>
@@ -294,7 +234,7 @@
 					<div class="training__cta__1__container">
 						<div class="training__cta__1__content__container">
 							<p class="training__cta__content">
-								Choose the type of training you want
+								Want to start earning income from the financial market?
 							</p>
 
 							<a
@@ -775,740 +715,608 @@
 					</div>
 				</section>
 
+				<!-- -------START OF payment section------- -->
+				<!-- removed -->
+
 				<!-- Move from CTA__1 to CTA__2 -->
 				<section
 					id="training__cta__2__section-id"
 					class="training__cta__2__section"
 				></section>
 
-				<!-- -------START OF payment section------- -->
-				<section class="training__payment__section">
-					<p class="training__payment__section-title">
-						We offer four types of training programs
-					</p>
-
-					<!-- *for Beginners Traders' Training -->
+				<!-- -------START OF Training CTA-3 section------- -->
+				<section class="training__cta__section">
 					<div
-						class="training__payment__container training__payment__container_row-1"
+						class="training__cta__container training__cta__accordion__scroll-into-view"
 					>
-						<!-- for Beginner one-on-one training -->
-						<div class="training__types__container">
-							<div class="training__types__card">
-								<div class="training__types__header-features__container">
-									<h3 class="training__types__header">
-										Beginners <br />
-										One-on-One Training
-									</h3>
+						<div
+							class="training__cta__content__container training__cta__content__container__forAccordion"
+						>
+							<p class="training__cta__content">
+								Become a profit-making Trader
+							</p>
 
-									<div class="training__types__features__list__container">
-										<ul class="training__types__features__list">
-											<li class="training__types__features__list-items">
-												Become a Pro in 3 months and start earning income.
-											</li>
-
-											<br />
-
-											<li
-												class="training__types__features__list-items training__payment__features__what-you-get"
-											>
-												What you get
-											</li>
-
-											<li class="training__types__features__list-items">
-												You learn at your own pace.
-											</li>
-
-											<li class="training__types__features__list-items">
-												Customise your class schedule.
-											</li>
-
-											<li class="training__types__features__list-items">
-												Live video training sessions.
-												<br />
-												(with access to recordings)
-											</li>
-
-											<!-- <li class="training__types__features__list-items">
-												Your own private Instructor.
-											</li> -->
-										</ul>
-									</div>
-								</div>
-
-								<div class="training__types__drawing-an-arrow"></div>
-
-								<div class="training__types__cost__list__container">
-									<ul class="training__types__cost__list">
-										<li class="training__types__cost__list-items">
-											<b>Duration</b> <br />
-											3 months (online).
-										</li>
-
-										<li class="training__types__cost__list-items">
-											<b>Fee</b> <br />
-											50,000 naira per month
-										</li>
-									</ul>
-								</div>
-
-								<!-- PAYSTACK INTEGRATION -->
-								<form class="training__paystack__payment__form">
-									<div class="training__paystack__form__label">Email</div>
-									<div class="training__paystack__form__input__div">
-										<input
-											class="training__paystack__form__input-text"
-											type="text"
-											id="email-address-50k"
-											required
-										/>
-									</div>
-
-									<div class="training__paystack__form__label">Amount</div>
-									<div class="training__paystack__form__input__div">
-										<input
-											class="training__paystack__form__input-amount"
-											type="tel"
-											id="amount-50k"
-											value="50,000 naira"
-											readonly
-										/>
-									</div>
-								</form>
-
-								<div
-									class="training__types__cta__container training__one-on-one__cta__container"
-								>
-									<button
-										class="training__one-on-one__cta__button training__beginner__one-on-one__cta__button"
-										id="training__one-on-one__cta__button"
-										aria-expanded="false"
-										data-target="#beginner__one-on-one__payment-message"
-										onclick="payWithPaystack50K(event)"
-									>
-										Pay Now to Register
-									</button>
-
-									<div
-										class="training__one-on-one__payment-message__container training__payment__beginner__one-on-one__accordion__scroll-into-view"
-										id="beginner__one-on-one__payment-message"
-									>
-										<p class="training__payment-message__text-1">
-											Welcome Onboard!
-										</p>
-
-										<p class="training__payment-message__text-2">
-											To make payment and get more info about the One-on-One
-											training:
-										</p>
-
-										<p class="training__payment-message__text-3">
-											Contact Us on Whatsapp:
-											<span class="training-whatsapp-link__container"
-												><a
-													href=""
-													class="training-whatsapp-link"
-													alt="training whatsapp link"
-													target="_blank"
-													>#################</a
-												>
-											</span>
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<!-- for Beginner group training -->
-						<div class="training__types__container">
-							<div class="training__types__card">
-								<div class="training__types__header-features__container">
-									<h3 class="training__types__header">
-										Beginners <br />
-										Group Training
-									</h3>
-
-									<div class="training__types__features__list__container">
-										<ul class="training__types__features__list">
-											<li class="training__types__features__list-items">
-												Become a Pro in 3 months and start earning income.
-											</li>
-
-											<br />
-
-											<li
-												class="training__types__features__list-items training__payment__features__what-you-get"
-											>
-												What you get
-											</li>
-
-											<li class="training__types__features__list-items">
-												You learn within a group.
-											</li>
-
-											<li class="training__types__features__list-items">
-												Live video training sessions.
-												<br />
-												(with access to recordings)
-											</li>
-
-											<li
-												class="training__types__features__list-items training__list-item-not-visible"
-											>
-												Cheaper training fee
-											</li>
-										</ul>
-									</div>
-								</div>
-
-								<div class="training__types__drawing-an-arrow"></div>
-
-								<div class="training__types__cost__list__container">
-									<ul class="training__types__cost__list">
-										<li class="training__types__cost__list-items">
-											<b>Duration</b> <br />
-											3 months (online)
-										</li>
-
-										<li class="training__types__cost__list-items">
-											<b>Fee</b> <br />
-											6,000 naira per month
-										</li>
-
-										<!-- <li class="training__types__cost__list-items">
-											Live video classes
-											<br />
-											(with access to recordings)
-										</li> -->
-									</ul>
-								</div>
-
-								<!-- PAYSTACK INTEGRATION -->
-								<form class="training__paystack__payment__form">
-									<div class="training__paystack__form__label">Email</div>
-									<div class="training__paystack__form__input__div">
-										<input
-											class="training__paystack__form__input-text"
-											type="text"
-											id="email-address-6k"
-											required
-										/>
-									</div>
-
-									<div class="training__paystack__form__label">Amount</div>
-									<div class="training__paystack__form__input__div">
-										<input
-											class="training__paystack__form__input-amount"
-											type="tel"
-											id="amount-6k"
-											value="6,000 naira"
-											readonly
-										/>
-									</div>
-								</form>
-
-								<div
-									class="training__types__cta__container training__group__cta__container"
-								>
-									<!-- <p class="training__group__sub-cta">
-										Limited Slots: 19 slots remaining!
-									</p> -->
-
-									<button
-										class="training__group__cta__button training__beginner__group__cta__button"
-										id="training__group__cta__button"
-										aria-expanded="false"
-										data-target="#beginner__group__payment-message"
-										onclick="payWithPaystack6K(event)"
-									>
-										Pay Now to Register
-									</button>
-
-									<div
-										class="training__group__payment-message__container training__payment__beginner__group__accordion__scroll-into-view"
-										id="beginner__group__payment-message"
-									>
-										<p class="training__payment-message__text-1">
-											Welcome Onboard!
-										</p>
-
-										<p class="training__payment-message__text-2">
-											To make payment and get more info about the Group
-											training:
-										</p>
-
-										<p class="training__payment-message__text-3">
-											Contact Us on Whatsapp:
-											<span class="training-whatsapp-link__container"
-												><a
-													href=""
-													class="training-whatsapp-link"
-													alt="training whatsapp link"
-													target="_blank"
-													>#################</a
-												>
-											</span>
-										</p>
-									</div>
-								</div>
-							</div>
+							<button
+								class="training__cta__button training__cta__accordion__button"
+								id="training__cta__accordion__button-id"
+								aria-expanded="false"
+								data-target="#training__cta__accordion__content"
+							>
+								Apply for the FREE training sessions
+							</button>
 						</div>
 					</div>
+				</section>
 
-					<!-- *for Demo & Live Traders' Training -->
+				<!-- -------START OF TRAINING FORM section------- -->
+				<section class="training-form__section">
 					<div
-						class="training__payment__container training__payment__container_row-2"
+						class="training-form__container training-form__container__forAccordion"
+						id="training__cta__accordion__content"
 					>
-						<!-- for Demo Trader one-on-one training -->
-						<div class="training__types__container">
-							<div class="training__types__card">
-								<div class="training__types__header-features__container">
-									<h3 class="training__types__header">
-										Demo Traders <br />
-										One-on-One Training
-									</h3>
+						<h2 class="training-form__header">Apply Here</h2>
 
-									<div class="training__types__features__list__container">
-										<ul class="training__types__features__list">
-											<li class="training__types__features__list-items">
-												Learn how to create profitable trading strategies and
-												make consistent profit.
-											</li>
+						<form
+							class="training-form"
+							name="qg-training-form"
+							action="#"
+							method="post"
+							id="training-form__form"
+						>
+						    @csrf
+						    
+						    <!-- first name -->
+							<div class="training-form__elements__container">
+								<label for="f-name">First Name:</label>
 
-											<br />
+								<input
+									type="text"
+									id="f-name"
+									name="firstName"
+									placeholder="first name"
+								/>
 
-											<li
-												class="training__types__features__list-items training__payment__features__what-you-get"
-											>
-												What you get
-											</li>
-
-											<li class="training__types__features__list-items">
-												You learn at your own pace.
-											</li>
-
-											<li class="training__types__features__list-items">
-												Customise your class schedule.
-											</li>
-
-											<li class="training__types__features__list-items">
-												Live video training sessions.
-												<br />
-												(with access to recordings)
-											</li>
-
-											<!-- <li class="training__types__features__list-items">
-												Your own private Instructor.
-											</li> -->
-										</ul>
-									</div>
-								</div>
-
-								<div class="training__types__drawing-an-arrow"></div>
-
-								<div class="training__types__cost__list__container">
-									<ul class="training__types__cost__list">
-										<li class="training__types__cost__list-items">
-											<b>Duration</b> <br />
-											2 months (online)
-										</li>
-
-										<li class="training__types__cost__list-items">
-											<b>Fee:</b> <br />
-											50,000 naira per month
-										</li>
-									</ul>
-								</div>
-
-								<!-- PAYSTACK INTEGRATION -->
-								<form class="training__paystack__payment__form">
-									<div class="training__paystack__form__label">Email</div>
-									<div class="training__paystack__form__input__div">
-										<input
-											class="training__paystack__form__input-text"
-											type="text"
-											id="email-address-50k"
-											required
-										/>
-									</div>
-
-									<div class="training__paystack__form__label">Amount</div>
-									<div class="training__paystack__form__input__div">
-										<input
-											class="training__paystack__form__input-amount"
-											type="tel"
-											id="amount-50k"
-											value="50,000 naira"
-											readonly
-										/>
-									</div>
-								</form>
-
-								<div
-									class="training__types__cta__container training__one-on-one__cta__container"
-								>
-									<button
-										class="training__one-on-one__cta__button training__demo__one-on-one__cta__button"
-										id="training__one-on-one__cta__button"
-										aria-expanded="false"
-										data-target="#demo__one-on-one__payment-message"
-										onclick="payWithPaystack50K(event)"
-									>
-										Pay Now to Register
-									</button>
-
-									<div
-										class="training__one-on-one__payment-message__container training__payment__demo__one-on-one__accordion__scroll-into-view"
-										id="demo__one-on-one__payment-message"
-									>
-										<p class="training__payment-message__text-1">
-											Welcome Onboard!
-										</p>
-
-										<p class="training__payment-message__text-2">
-											To make payment and get more info about the One-on-One
-											training:
-										</p>
-
-										<p class="training__payment-message__text-3">
-											Contact Us on Whatsapp:
-											<span class="training-whatsapp-link__container"
-												><a
-													href=""
-													class="training-whatsapp-link"
-													alt="training whatsapp link"
-													target="_blank"
-													>#################</a
-												>
-											</span>
-										</p>
-									</div>
-								</div>
+								<div class="error-message" id="error-f-name"></div>
 							</div>
+
+                            <!-- last name -->
+							<div class="training-form__elements__container">
+								<label for="l-name">Last Name:</label>
+
+								<input
+									type="text"
+									id="l-name"
+									name="lastName"
+									placeholder="last name"
+								/>
+
+								<div class="error-message" id="error-l-name"></div>
+							</div>
+
+                            <!-- email -->
+							<div class="training-form__elements__container">
+								<label for="your-email">Email:</label>
+
+								<input
+									type="email"
+									id="your-email"
+									name="email"
+									placeholder="email"
+								/>
+
+								<div class="error-message" id="error-your-email"></div>
+							</div>
+
+                            <!-- phone number -->
+							<div class="training-form__elements__container">
+								<label for="phone-number">Phone Number:</label>
+
+								<input
+									type="tel"
+									id="phone-number"
+									name="phoneNumber"
+									placeholder="phone number"
+								/>
+
+								<div class="error-message" id="error-phone-number"></div>
+							</div>
+
+                            <!-- country -->
+							<div class="training-form__elements__container">
+								<label for="your-country">Country:</label>
+
+								<input
+									type="text"
+									id="your-country"
+									name="country"
+									placeholder="your country"
+								/>
+
+								<div class="error-message" id="error-your-country"></div>
+							</div>
+
+                            <!-- knowledge level -->
+							<div class="training-form__elements__container">
+								<label class="trading-knowledge-level" for="knowledge-level"
+									>What is your current level of knowledge:</label
+								>
+
+								<select id="knowledge-level" name="knowledgeLevel">
+									<option value="" disabled selected>Select</option>
+									<option value="beginner">No trading experience</option>
+									<option value="demo-trader">
+										Only Demo trading experience
+									</option>
+									<option value="live-trader">Live trading experience</option>
+								</select>
+
+								<div class="error-message" id="error-knowledge-level"></div>
+							</div>
+
+                            <!-- confirm age -->
+							<div
+								class="training-form__elements__container training__confirm-age"
+							>
+								<label class="trading__confirm-age__label" for="confirm-age"
+									>Confirm that you are above 21years</label
+								>
+
+								<input
+									type="checkbox"
+									class="trading__confirm-age__inputbox"
+									id="confirm-age"
+									name="confirmAge"
+									value="qualifiedAged"
+								/>
+
+								<div class="error-message" id="error-confirm-age"></div>
+							</div>
+
+                            <!-- submit button -->
+							<input
+								type="button"
+								class="training-form__submit-button training-form__submit-button__forAccordion"
+								
+								value="Submit"
+								onclick="handleTrainingFormSubmission()"
+							/>
+						</form>
+
+
+                    <!-- Success message for training Form -->
+                        
+                        <!-- success mssg for beginner -->
+						<div
+							class="training-form__after-submit__container training-form__after-submit__container__forAccordion"
+							id="success-message-beginner"
+						>
+							<p class="training-form__after-submit__text-1">
+								Application Successful!
+							</p>
+							
+							<p class="training-form__after-submit__text-1">
+								<b>Beginner level</b>
+							</p>
+
+							<p class="training-form__after-submit__text-2">
+								Your 3 months training starts on:
+								<span class="training-start-date">12th July, 2024.</span>
+							</p>
+
+							<p class="training-form__after-submit__text-3">
+								<br />
+								<span style= "color: red;">Click the link below</span> to join the Whatsapp group and get your <b>training schedule</b>.
+								<br />
+								<br />
+								<span class="training-whatsapp-link__container"
+									><a
+										href="https://chat.whatsapp.com/HGhnO9EUFTgK9T2uPM9ZTN"
+										class="training-whatsapp-link"
+										alt="training whatsapp group name"
+										target="_blank"
+										>"Beginners - 3 months forex training"</a
+									>
+								</span>
+								<!-- <span class="training-whatsapp-link__container"
+									><a
+										href="https://wa.link/68pals"
+										class="training-whatsapp-link"
+										alt="training whatsapp group number"
+										target="_blank"
+										>+234 814 447 7866</a
+									>
+								</span> -->
+							</p>
 						</div>
+						
+						<!-- success mssg for Demo-experience -->
+						<div
+							class="training-form__after-submit__container training-form__after-submit__container__forAccordion"
+							id="success-message-demo-intermediate"
+						>
+							<p class="training-form__after-submit__text-1">
+								Application Successful!
+							</p>
 
-						<!-- for Live Trader one-on-one training -->
-						<div class="training__types__container">
-							<div class="training__types__card">
-								<div class="training__types__header-features__container">
-									<h3 class="training__types__header">
-										Live Traders <br />
-										One-on-One Training
-									</h3>
+							<p class="training-form__after-submit__text-1">
+								<b>Demo Trader level</b>
+							</p>
 
-									<div class="training__types__features__list__container">
-										<ul class="training__types__features__list">
-											<li class="training__types__features__list-items">
-												Learn how to create trading strategies, minimise losses,
-												and maximise your profit.
-											</li>
+							<p class="training-form__after-submit__text-2">
+								Your 3 months training starts on:
+								<span class="training-start-date">12th July, 2024.</span>
+							</p>
 
-											<br />
-
-											<li
-												class="training__types__features__list-items training__payment__features__what-you-get"
-											>
-												What you get
-											</li>
-
-											<li class="training__types__features__list-items">
-												You learn at your own pace.
-											</li>
-
-											<li class="training__types__features__list-items">
-												Customise your class schedule.
-											</li>
-
-											<li class="training__types__features__list-items">
-												Live video training sessions.
-												<br />
-												(with access to recordings)
-											</li>
-
-											<!-- <li class="training__types__features__list-items">
-												Your own private Instructor.
-											</li> -->
-										</ul>
-									</div>
-								</div>
-
-								<div class="training__types__drawing-an-arrow"></div>
-
-								<div class="training__types__cost__list__container">
-									<ul class="training__types__cost__list">
-										<li class="training__types__cost__list-items">
-											<b>Duration</b> <br />
-											1 month (online)
-										</li>
-
-										<li class="training__types__cost__list-items">
-											<b>Fee:</b> <br />
-											50,000 naira
-										</li>
-									</ul>
-								</div>
-
-								<!-- PAYSTACK INTEGRATION -->
-								<form class="training__paystack__payment__form">
-									<div class="training__paystack__form__label">Email</div>
-									<div class="training__paystack__form__input__div">
-										<input
-											class="training__paystack__form__input-text"
-											type="text"
-											id="email-address-50k"
-											required
-										/>
-									</div>
-
-									<div class="training__paystack__form__label">Amount</div>
-									<div class="training__paystack__form__input__div">
-										<input
-											class="training__paystack__form__input-amount"
-											type="tel"
-											id="amount-50k"
-											value="50,000 naira"
-											readonly
-										/>
-									</div>
-								</form>
-
-								<div
-									class="training__types__cta__container training__one-on-one__cta__container"
-								>
-									<button
-										class="training__one-on-one__cta__button training__live__one-on-one__cta__button"
-										id="training__one-on-one__cta__button"
-										aria-expanded="false"
-										data-target="#live__one-on-one__payment-message"
-										onclick="payWithPaystack50K(event)"
+							<p class="training-form__after-submit__text-3">
+								<br />
+								<span style= "color: red;">Click the link below</span> to join the Whatsapp group and get your <b>training schedule</b>.
+								<br />
+								<br />
+								<span class="training-whatsapp-link__container"
+									><a
+										href="https://chat.whatsapp.com/KffExWQsKY3Cf2Wutm2Daj"
+										class="training-whatsapp-link"
+										alt="training whatsapp group name"
+										target="_blank"
+										>"Demo Traders - 3 months forex training"</a
 									>
-										Pay Now to Register
-									</button>
-
-									<div
-										class="training__one-on-one__payment-message__container training__payment__live__one-on-one__accordion__scroll-into-view"
-										id="live__one-on-one__payment-message"
+								</span>
+								<!-- <span class="training-whatsapp-link__container"
+									><a
+										href="https://wa.link/68pals"
+										class="training-whatsapp-link"
+										alt="training whatsapp group number"
+										target="_blank"
+										>+234 814 447 7866</a
 									>
-										<p class="training__payment-message__text-1">
-											Welcome Onboard!
-										</p>
+								</span> -->
+							</p>
+						</div>
+						
+						<!-- success mssg for Live-experience -->
+						<div
+							class="training-form__after-submit__container training-form__after-submit__container__forAccordion"
+							id="success-message-live-intermediate"
+						>
+							<p class="training-form__after-submit__text-1">
+								Application Successful!
+							</p>
+							
+							<p class="training-form__after-submit__text-1">
+								<b>Live trading level</b>
+							</p>
 
-										<p class="training__payment-message__text-2">
-											To make payment and get more info about the One-on-One
-											training:
-										</p>
+							<p class="training-form__after-submit__text-2">
+								Your 3 months training starts on:
+								<span class="training-start-date">12th July, 2024.</span>
+							</p>
 
-										<p class="training__payment-message__text-3">
-											Contact Us on Whatsapp:
-											<span class="training-whatsapp-link__container"
-												><a
-													href=""
-													class="training-whatsapp-link"
-													alt="training whatsapp link"
-													target="_blank"
-													>#################</a
-												>
-											</span>
-										</p>
-									</div>
-								</div>
-							</div>
+							<p class="training-form__after-submit__text-3">
+								<br />
+								<span style= "color: red;">Click the link below</span> join the Whatsapp group and get your <b>training schedule</b>.
+								<br />
+								<br />
+								<span class="training-whatsapp-link__container"
+									><a
+										href="https://chat.whatsapp.com/GsKGUWGsPOo4gXyCw98nlM"
+										class="training-whatsapp-link"
+										alt="training whatsapp group name"
+										target="_blank"
+										>"Live Traders - 3 months forex training"</a
+									>
+								</span>
+								<!-- <span class="training-whatsapp-link__container"
+									><a
+										href="https://wa.link/68pals"
+										class="training-whatsapp-link"
+										alt="training whatsapp group number"
+										target="_blank"
+										>+234 814 447 7866</a
+									>
+								</span> -->
+							</p>
 						</div>
 					</div>
 				</section>
 			</main>
 
 			<!-- -------start of FOOTER section------- -->
-			<footer class="footer">
-				<!-- footer section1 -->
-				<div class="footer__section1-container">
-					<div class="footer__section1-part1__container">
-						<!-- footer sub-section for Products -->
-						<div class="footer__products section1-item">
-							<h3 class="footer__section1__sub-heading">Products</h3>
-
-							<ul class="footer__list-text list__no-style">
-								<li>
-									<a
-										class="footer__links pad-marg-0"
-										href="../IAS/html__ias.html"
-										>Investment Analytics Software</a
-									>
-								</li>
-
-								<li>
-									<a
-										class="footer__links pad-marg-0"
-										href="../signalapp/html__signalapp.html"
-										>Signal App</a
-									>
-								</li>
-
-								<li>
-									<a
-										class="footer__links pad-marg-0"
-										href="../investment/investment__homepage/html__investment.html"
-										>Fund Management</a
-									>
-								</li>
-
-								<!-- a list item MAY be appended here using js-->
-							</ul>
-						</div>
-
-						<!-- footer sub-section for Company -->
-						<div class="footer__company section1-item">
-							<h3 class="footer__section1__sub-heading">Company</h3>
-
-							<ul class="footer__list-text list__no-style">
-								<li>
-									<a
-										class="footer__links pad-marg-0"
-										href="../investment/investment__about--us/html__investment__about-us.html"
-										>About Us</a
-									>
-								</li>
-
-								<li>
-									<a
-										class="footer__links pad-marg-0"
-										href="../blog/html__blog.html"
-										>Blog</a
-									>
-								</li>
-
-								<li>
-									<a
-										class="footer__links pad-marg-0"
-										href="../investment/investment__faq/html__investment__faq.html"
-										>FAQ</a
-									>
-								</li>
-
-								<li>
-									<a
-										class="footer__links pad-marg-0"
-										href="../investment/investment__contact/investment__contact.html"
-										>Contact Us</a
-									>
-								</li>
-							</ul>
-						</div>
-					</div>
-
-					<div class="footer__section1-part2__container">
-						<!-- footer sub-section for Legal -->
-						<div class="footer__legal section1-item">
-							<h3 class="footer__section1__sub-heading">Legal</h3>
-
-							<ul class="footer__list-text list__no-style">
-								<li>
-									<a
-										class="footer__links pad-marg-0"
-										href="../terms-conditions/html__terms-conditions.html"
-										>Terms & Conditions</a
-									>
-								</li>
-
-								<li>
-									<a
-										class="footer__links pad-marg-0"
-										href="../privacy-policy/html__privacy-policy.html"
-										>Privacy Policy</a
-									>
-								</li>
-							</ul>
-						</div>
-
-						<!-- footer sub-section for Contact details -->
-						<div class="footer__contact-details section1-item">
-							<h3
-								class="footer__section1__sub-heading contact-details visible__nooo"
-							>
-								Contact Us
-							</h3>
-
-							<ul class="footer__list-text list__no-style">
-								<li class="contact-email">
-									<a class="footer__links pad-marg-0 no-hover-effect-1"
-										>contact@questergate.com</a
-									>
-								</li>
-
-								<li class="contact-phone">+234 814 447 7866</li>
-							</ul>
-
-							<div class="socials__container contact-social">
-								<!-- facebook -->
-								<a
-									href="#"
-									class="socials__link"
-									id="remove__footer__social-face"
-									target="_blank"
-									><img
-										class="socials__link-image"
-										src="../../images/facebook-symbol--smallest.jpg"
-										alt="facebook logo"
-									/>
-								</a>
-
-								<!-- linkedin -->
-								<a href="#" class="socials__link" target="_blank"
-									><img
-										class="socials__link-image"
-										src="../../images/LinkedIn_icon_circle--smallest.jpg"
-										alt="linkedin logo"
-									/>
-								</a>
-
-								<!-- instagram -->
-								<a href="#" class="socials__link" target="_blank"
-									><img
-										class="socials__link-image"
-										src="../../images/instagram-logo-icon-7--smallest.jpg"
-										alt="instagram logo"
-									/>
-								</a>
-
-								<!-- X -->
-								<a
-									href="#"
-									class="socials__link"
-									id="remove__footer__social-x"
-									target="_blank"
-									><img
-										class="socials__link-image"
-										src="../../images/twitter-X-symbol3.jpg"
-										alt="twitter logo"
-									/>
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<!-- <hr class="hr-horizontal-line"/> -->
-				<div class="footer-horizontal-line"></div>
-
-				<div class="footer__section2-container">
-					<div class="copyright">
-						<p class="footer__other-text">
-							© <span id="current__year"></span> Questergate. All rights
-							reserved. | RC-1814438
-						</p>
-					</div>
-				</div>
-			</footer>
+			@include('generic.new_footer')
 		</div>
 
-		<script src="../js-components/header__on__scroll__with__training.js"></script>
-		<script src="../js-components/back-to-top.js"></script>
-		<script src="../js-components/section__visible__on__scroll.js"></script>
-		<script src="../js-components/numbers-count-up-1__training.js"></script>
-		<script src="../js-components/carousel--swipper--jbg-1.js"></script>
-		<script src="../js-components/training__payment__cta__accordion.js"></script>
-		<script src="../js-components/training__payment__cta__accordion__smooth__scroll__into__view.js"></script>
-		<script src="../js-components/footer__currentyear__auto.js"></script>
-		<script src="../js-components/append__to__footer-list.js"></script>
-		<script src="../js-components/footer__remove__list-items.js"></script>
+        <!-- other scripts -->
+
+		<!-- --------------JQUERY ACCESS via CDN and via Local server----------------- -->
+	    <!-- <script
+			src="https://code.jquery.com/jquery-3.7.1.min.js"
+			integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+			crossorigin="anonymous"
+		></script> -->
+		
+		
+        <!-- SWIPER -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+		/>
+		
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+	    <!-- End of SWIPER -->
+
+		<script src="/questergatecapital/public/js/js-components/header__on__scroll__with__training.js"></script>
+		<script src="/questergatecapital/public/js/js-components/back-to-top.js"></script>
+		<script src="/questergatecapital/public/js/js-components/section__visible__on__scroll.js"></script>
+		<script src="/questergatecapital/public/js/js-components/numbers-count-up-1__training.js"></script>
+		<script src="/questergatecapital/public/js/js-components/carousel--swipper--jbg-1.js"></script>
+		<script src="/questergatecapital/public/js/js-components/training__cta__1__affect__cta-accordion.js"></script>
+		<script src="/questergatecapital/public/js/js-components/training__cta__accordion.js"></script>
+		<script src="/questergatecapital/public/js/js-components/training__cta__accordion__smooth__scroll__into__view.js"></script>
+		<!--<script src="/questergatecapital/public/js/js-components/training__form__validation__and__scroll__into__view.js"></script>-->
+		<script src="/questergatecapital/public/js/js-components/footer__currentyear__auto.js"></script>
+		<!-- <script src="/questergatecapital/public/js/js-components/append__to__footer-list.js"></script> -->
+		<script src="/questergatecapital/public/js/js-components/footer__remove__list-items.js"></script>
+		
+
+        <!-- Training Form Validation & sending form data to admin dashboard -->
+        <script>
+            let preFormText = document.getElementById("form__text");
+            let theForm = document.querySelector(".training-form");
+            
+            let successMessage = document.querySelector(".training-form__after-submit__container");
+            let successMessageBeginner = document.getElementById("success-message-beginner");
+            let successMessageDemoIntermediate = document.getElementById("success-message-demo-intermediate");
+            let successMessageLiveIntermediate = document.getElementById("success-message-live-intermediate");
+        
+            function handleTrainingFormSubmission() {
+                // Your form validation logic goes here
+                let isValid = validateForm();
+        
+                if (isValid) {
+                    submitTrainingForm();
+                }
+            }
+        
+            function submitTrainingForm() {
+                var _shost = window.location.host;
+                const protocol = window.location.protocol + "//";
+                const apiURL = protocol + _shost + "/";
+        
+                var ajaxPost = $.ajax({
+                    url: apiURL + "subscribe",
+                    method: "POST",
+                    data: $("#training-form__form").serialize(),
+                    dataType: "json",
+                    headers: { "X-CSRF-TOKEN": $('meta[name="csrf-token"]').attr("content") },
+                });
+        
+                ajaxPost.done(function (res) {
+                    displaySuccessMessage();
+                    scrollToView__SuccessMessage();
+                    hideSuccessMessageAfterDelay();
+                });
+        
+                ajaxPost.fail(function (res) {});
+            }
+        
+            function showSuccessMessage() {
+                displaySuccessMessage();
+                scrollToView__SuccessMessage();
+                hideSuccessMessageAfterDelay();
+            }
+        
+            function validateForm() {
+                // Reset error messages
+                document.querySelectorAll(".error-message").forEach(function (el) {
+                    el.innerHTML = "";
+                });
+        
+                let isError = false; // Flag to track if there is an error
+        
+                // Validation logic starts here:
+        
+                // Validation logic for First Name
+                const firstName = document.getElementById("f-name").value;
+                if (firstName.length === 0) {
+                    document.getElementById("error-f-name").innerHTML =
+                        "Please enter your first name.";
+                    scrollToView__ErrorMessage();
+                    isError = true; // Set isError to true
+                } else if (firstName.length < 3) {
+                    document.getElementById("error-f-name").innerHTML =
+                        "Enter minimum of 3 letters.";
+                    scrollToView__ErrorMessage();
+                    isError = true; // Set isError to true
+                } else if (firstName.length > 20) {
+                    document.getElementById("error-f-name").innerHTML =
+                        "Maximum of 20 letters exceeded.";
+                    scrollToView__ErrorMessage();
+                    isError = true; // Set isError to true
+                }
+        
+                // Validation logic for Last Name
+                const lastName = document.getElementById("l-name").value;
+                if (lastName.length === 0) {
+                    document.getElementById("error-l-name").innerHTML =
+                        "Please enter your last name.";
+                    scrollToView__ErrorMessage();
+                    isError = true; // Set isError to true
+                } else if (lastName.length < 3) {
+                    document.getElementById("error-l-name").innerHTML =
+                        "Enter minimum of 3 letters.";
+                    scrollToView__ErrorMessage();
+                    isError = true; // Set isError to true
+                } else if (lastName.length > 20) {
+                    document.getElementById("error-l-name").innerHTML =
+                        "Maximum of 20 letters exceeded.";
+                    scrollToView__ErrorMessage();
+                    isError = true; // Set isError to true
+                }
+        
+                // Your validation logic for Email
+                const email = document.getElementById("your-email").value;
+                const emailRegex = /^(?=.{7,81}$)[\w\.-]+@[\w\.-]+\.\w{2,4}$/;
+                if (!emailRegex.test(email)) {
+                    document.getElementById("error-your-email").innerHTML =
+                        "Please enter a valid email.";
+                    scrollToView__ErrorMessage();
+                    isError = true; // Set isError to true
+                }
+        
+                // Your validation logic for Phone Number
+                const phoneNumber = document.getElementById("phone-number").value;
+                const phoneRegex =
+                    /^(?=.{7,20}$)\+?\d{1,3}[\s-]?\(?\d{1,4}\)?[\s-]?\d{1,4}[\s-]?\d{1,4}$/;
+                if (!phoneRegex.test(phoneNumber)) {
+                    document.getElementById("error-phone-number").innerHTML =
+                        "Please enter a valid phone number.";
+                    scrollToView__ErrorMessage();
+                    isError = true; // Set isError to true
+                }
+        
+                // Your validation logic for Country
+                const country = document.getElementById("your-country").value;
+                if (country.length < 4) {
+                    document.getElementById("error-your-country").innerHTML =
+                        "Please enter your country.";
+                    scrollToView__ErrorMessage();
+                    isError = true; // Set isError to true
+                }
+        
+                // Your validation logic for Knowledge Level
+                const knowledgeLevel = document.getElementById("knowledge-level").value;
+                if (knowledgeLevel === "") {
+                    document.getElementById("error-knowledge-level").innerHTML =
+                        "Please select your knowledge level.";
+                    scrollToView__ErrorMessage();
+                    isError = true; // Set isError to true
+                }
+        
+                // Your validation logic for Confirm Age
+                const confirmAgeCheckbox = document.getElementById("confirm-age");
+                if (!confirmAgeCheckbox.checked) {
+                    document.getElementById("error-confirm-age").innerHTML =
+                        "Please confirm your age.";
+                    scrollToView__ErrorMessage();
+                    isError = true; // Set isError to true
+                }
+                // Validation logic ends here
+        
+                // If there's an error, show error message for 10 seconds
+                if (isError) {
+                    setTimeout(function () {
+                        document.querySelectorAll(".error-message").forEach(function (el) {
+                            el.innerHTML = ""; // Clear error messages
+                        });
+                    }, 10000); // Show error message for 10 seconds (10000 milliseconds)
+                }
+        
+                // If all validations pass
+                if (!isError) {
+                    return true;
+                }
+        
+                // Prevent the form from submitting (remove this line if you want the form to be submitted)
+                return false;
+            }
+        
+            function scrollToView__ErrorMessage() {
+                let offsetValue = 300;
+        
+                // Get the first error message element with a non-empty message
+                let errorMessage = document.querySelector(".error-message:not(:empty)");
+        
+                // If an error message element is found, scroll to its parent container
+                if (errorMessage) {
+                    let errorContainerId = errorMessage.id;
+                    let startingPoint = document
+                        .querySelector("#" + errorContainerId)
+                        .closest(".training-form__elements__container");
+                    let scrollPosition = startingPoint.offsetTop - offsetValue;
+                    window.scrollTo({ top: scrollPosition, behavior: "smooth" });
+                }
+            }
+        
+            // Timer to Hide success message and display form like it was never filled
+            function hideSuccessMessageAfterDelay() {
+                setTimeout(function () {
+                    let theForm = document.querySelector(".training-form");
+                    let formHeader = document.querySelector(".training-form__header");
+                    let accordionButton = document.getElementById("training__cta__accordion__button-id");
+
+                    // hide success message
+                    successMessage.style.display = "none";
+                    successMessageBeginner.style.display = "none";
+                    successMessageDemoIntermediate.style.display = "none";
+                    successMessageLiveIntermediate.style.display = "none";
+        
+                    // Reset the form to clear input fields
+                    theForm.reset();
+        
+                    // Show all the elements that were hidden due to showing the success message
+                    theForm.style.display = "flex";
+                    formHeader.style.display = "block";
+                    accordionButton.style.display = "flex";
+                }, 120000); // Show for 120 seconds
+            }
+        
+            function displaySuccessMessage() {
+                let theForm = document.querySelector(".training-form");
+                let formHeader = document.querySelector(".training-form__header");
+                let accordionButton = document.getElementById("training__cta__accordion__button-id");
+                
+                // Get the selected knowledge level
+                let knowledgeLevel = document.getElementById("knowledge-level").value;
+                
+                
+                // hide form, header and accordion button
+                theForm.style.display = "none";
+                formHeader.style.display = "none";
+                accordionButton.style.display = "none";
+                
+                
+                // show success message container
+                if (knowledgeLevel === "beginner") {
+                    successMessageBeginner.style.display = "block";
+                    successMessageDemoIntermediate.style.display = "none";
+                    successMessageLiveIntermediate.style.display = "none";
+                } else if (knowledgeLevel === "demo-trader") {
+                    successMessageDemoIntermediate.style.display = "block";
+                    successMessageBeginner.style.display = "none";
+                    successMessageLiveIntermediate.style.display = "none";
+                } else if (knowledgeLevel === "live-trader") {
+                    successMessageLiveIntermediate.style.display = "block";
+                    successMessageBeginner.style.display = "none";
+                    successMessageDemoIntermediate.style.display = "none";
+                }
+            }
+        
+            // Ensure success message is well positioned on the screen
+            function scrollToView__SuccessMessage() {
+            	let offsetValue = 100;
+            	let startingPoint = document.querySelector(".training__cta__section");
+            	let scrollPosition = startingPoint.offsetTop - offsetValue;
+            
+            	// Scroll to the desired position
+            	window.scrollTo({ top: scrollPosition, behavior: "smooth" });
+            }
+        
+            // Event listener for the form submission
+            theForm.addEventListener("submit", function (event) {
+                event.preventDefault(); // Prevent the default form submission
+        
+                handleTrainingFormSubmission(); // Call your custom form submission function
+            });
+        </script>
+
+		
+		   
+		
+		<!-- FROM OLD WEBSITE DESIGN -->
+		<script src="/questergatecapital/public/js/jquery.js"></script>
+        <script src="/questergatecapital/public/js/script.js?v=16"></script>
+
+        <script type="text/javascript"> window.$crisp=[];window.CRISP_WEBSITE_ID="59767aec-ab5f-49a2-9233-f872ade8029a";(function(){ d=document;s=d.createElement("script"); s.src="https://client.crisp.chat/l.js"; s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})(); </script>
+	
 	</body>
 </html>
