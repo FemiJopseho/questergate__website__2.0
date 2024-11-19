@@ -103,7 +103,7 @@
 		.hero__txt-content-header__part-1 {
 			/* outline: 2px solid greenyellow; */
 
-			color: var(--clr-grays-610);
+			color: var(--clr-primary-600);
 
 			/* ///////////////// */
 			@media screen and (width <=286px) {
@@ -307,7 +307,7 @@
 		.hero__txt-content-header__part-1 {
 			/* outline: 2px solid greenyellow; */
 
-			color: var(--clr-grays-610);
+			color: var(--clr-primary-600);
 
 			/* /////////////////// */
 			@media screen and (width >775px) and (width <=875px) {
@@ -493,7 +493,7 @@
 			/* outline: 2px solid greenyellow; */
 
 			font-size: var(--fs-100);
-			color: var(--clr-grays-610);
+			color: var(--clr-primary-600);
 			/* text-shadow: -2px 0px 2px var(--clr-grays-610), 1px 0px black, 0px -1px black,
 				0px 1px black; */
 

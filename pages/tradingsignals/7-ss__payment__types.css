@@ -1,4 +1,4 @@
-/* this contains the styling for training-payment for both One-On-One & Groups classes */
+/* this contains the styling for signal service (ss) subscription */
 
 /** Mobile view */
 /* max-width: 500px */
@@ -7,7 +7,7 @@
 		/* outline: 4px solid goldenrod; */
 
 		padding-top: 1rem;
-		padding-bottom: 8rem;
+		padding-bottom: 6rem;
 		width: 100%;
 	}
 
@@ -457,7 +457,7 @@
 		/* outline: 4px solid goldenrod; */
 
 		padding-top: 2rem;
-		padding-bottom: 10rem;
+		padding-bottom: 6rem;
 		width: 100%;
 		max-width: var(--width__1440px);
 		margin: 0 auto;
@@ -905,7 +905,7 @@
 		/* outline: 4px solid goldenrod; */
 
 		padding-top: 2rem;
-		padding-bottom: 12rem;
+		padding-bottom: 8rem;
 		width: 100%;
 		max-width: var(--width__1440px);
 		margin: 0 auto;

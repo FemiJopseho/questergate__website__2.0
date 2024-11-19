@@ -1,83 +1,83 @@
-/* contains style for header for the training section */
+/* contains style for header for the signal service (ss) section */
 
 .training__header__section {
-  /* outline: 4px solid blue; */
+	/* outline: 4px solid blue; */
 
-  width: 100%;
-  /* max-width: var(--width__1440px);
+	width: 100%;
+	/* max-width: var(--width__1440px);
   margin: 0 auto; */
-  padding: 0;
-  background-color: var(--clr-gen-website-bckgrd-svg1);
+	padding: 0;
+	background-color: var(--clr-gen-website-bckgrd-svg1);
 
-  position: fixed;
-  top: 0%;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 100;
+	position: fixed;
+	top: 0%;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 100;
 
-  /* Initially hide the header */
-  height: 0;
-  overflow: hidden;
+	/* Initially hide the header */
+	height: 0;
+	overflow: hidden;
 }
 
 .training__header__section.scrolled {
-  /* Add styles for the header when the page is scrolled */
-  height: auto;
-  padding: 0.2rem 0;
-  transition: height, padding 1s ease-in;
+	/* Add styles for the header when the page is scrolled */
+	height: auto;
+	padding: 0.2rem 0;
+	transition: height, padding 1s ease-in;
 }
 
 .training__header__container {
-  /* outline: 4px solid green; */
+	/* outline: 4px solid green; */
 
-  width: 100%;
-  max-width: var(--width__1440px);
-  margin: 0 auto;
+	width: 100%;
+	max-width: var(--width__1440px);
+	margin: 0 auto;
 
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-items: center;
-  justify-content: center;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: center;
 }
 
 .training__header__picture__link {
-  /* outline: 2px solid red; */
+	/* outline: 2px solid red; */
 
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-items: center;
-  justify-content: center;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: center;
 
-  /* //////////////// */
-  @media screen and (width <=500px) {
-    width: 140px;
-  }
+	/* //////////////// */
+	@media screen and (width <=500px) {
+		width: 140px;
+	}
 
-  /* //////////////// */
-  @media screen and (width > 500px) and (width <=875px) {
-    width: 180px;
-  }
+	/* //////////////// */
+	@media screen and (width > 500px) and (width <=875px) {
+		width: 180px;
+	}
 
-  /* //////////////// */
-  @media screen and (width > 875px) {
-    width: 230px;
-  }
+	/* //////////////// */
+	@media screen and (width > 875px) {
+		width: 230px;
+	}
 }
 
 .training__header__picture {
-  /* outline: 2px solid orange; */
+	/* outline: 2px solid orange; */
 
-  width: 100%;
+	width: 100%;
 
-  /* Initially hide the header */
-  height: 0;
-  overflow: hidden;
+	/* Initially hide the header */
+	height: 0;
+	overflow: hidden;
 }
 
 .training__header__picture.scrolled {
-  /* Add styles for the header picture when the page is scrolled */
-  height: auto;
-  transition: height 0.2s ease-in;
+	/* Add styles for the header picture when the page is scrolled */
+	height: auto;
+	transition: height 0.2s ease-in;
 }
